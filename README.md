@@ -16,7 +16,9 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [gen_laguerre_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gen_laguerre_rule/gen_laguerre_rule.html) computes and prints a generalized Gauss-Laguerre quadrature rule.
 
-[hermite_rule](https://people.sc.fsu.edu/~jburkardt/f_src/hermite_rule/hermite_rule.html) computes and prints a Gauss-Hermite quadrature ruleintlib contains routines for numerical estimation of integrals in 1d.
+[hermite_rule](https://people.sc.fsu.edu/~jburkardt/f_src/hermite_rule/hermite_rule.html) computes and prints a Gauss-Hermite quadrature rule
+
+[intlib](https://people.math.sc.edu/Burkardt/f_src/intlib/intlib.html) contains routines for numerical estimation of integrals in 1d.
 
 [jacobi_rule](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi_rule/jacobi_rule.html) computes and prints a Gauss-Jacobi quadrature rule.
 
