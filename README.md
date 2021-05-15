@@ -8,19 +8,17 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [chebyshev1_rule](https://people.sc.fsu.edu/~jburkardt/f_src/chebyshev1_rule/chebyshev1_rule.html) computes and prints a Gauss-Chebyshev type 1 quadrature rule.
 
-chebyshev2_rule computes and prints a Gauss-Chebyshev type 2 quadrature rule.
+[chebyshev2_rule](https://people.sc.fsu.edu/~jburkardt/f_src/chebyshev2_rule/chebyshev2_rule.html) computes and prints a Gauss-Chebyshev type 2 quadrature rule.
 
-clenshaw_curtis_rule_test
+[gegenbauer_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gegenbauer_rule/gegenbauer_rule.html) computes and prints a Gauss-Gegenbauer quadrature rule.
 
-gegenbauer_rule computes and prints a Gauss-Gegenbauer quadrature rule.
+[gen_hermite_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gen_hermite_rule/gen_hermite_rule.html) computes and prints a generalized Gauss-Hermite quadrature rule.
 
-gen_hermite_rule computes and prints a generalized Gauss-Hermite quadrature rule.
+[gen_laguerre_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gen_laguerre_rule/gen_laguerre_rule.html) computes and prints a generalized Gauss-Laguerre quadrature rule.
 
-gen_laguerre_rule computes and prints a generalized Gauss-Laguerre quadrature rule.
+[hermite_rule](https://people.sc.fsu.edu/~jburkardt/f_src/hermite_rule/hermite_rule.html) computes and prints a Gauss-Hermite quadrature ruleintlib contains routines for numerical estimation of integrals in 1d.
 
-hermite_rule computes and prints a Gauss-Hermite quadrature ruleintlib contains routines for numerical estimation of integrals in 1d.
-
-jacobi_rule computes and prints a Gauss-Jacobi quadrature rule.
+[jacobi_rule](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi_rule/jacobi_rule.html) computes and prints a Gauss-Jacobi quadrature rule.
 
 laguerre_rule computes and prints a Gauss-Laguerre quadrature rule.
 
