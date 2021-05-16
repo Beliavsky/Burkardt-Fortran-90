@@ -82,3 +82,5 @@ Constrained to a Hyper-Rectangle.
 # Root-finding
 
 [bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
+
+[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar nonlinear equation in a change of sign interval, using reverse communication (RC).
