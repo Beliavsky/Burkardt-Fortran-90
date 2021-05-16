@@ -10,6 +10,10 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [chebyshev2_rule](https://people.sc.fsu.edu/~jburkardt/f_src/chebyshev2_rule/chebyshev2_rule.html) computes and prints a Gauss-Chebyshev type 2 quadrature rule.
 
+[clenshaw_curtis_rule](https://people.sc.fsu.edu/~jburkardt/f_src/clenshaw_curtis_rule/clenshaw_curtis_rule.html) generates a Clenshaw Curtis quadrature rule based on user input.
+
+[fastgl](https://people.math.sc.edu/Burkardt/f_src/fastgl/fastgl.html) fast computation of the K-th value and weight of an N-point Gauss-Legendre quadrature rule, by Ignace Bogaert.
+
 [gegenbauer_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gegenbauer_rule/gegenbauer_rule.html) computes and prints a Gauss-Gegenbauer quadrature rule.
 
 [gen_hermite_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gen_hermite_rule/gen_hermite_rule.html) computes and prints a generalized Gauss-Hermite quadrature rule.
@@ -22,24 +26,32 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [jacobi_rule](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi_rule/jacobi_rule.html) computes and prints a Gauss-Jacobi quadrature rule.
 
-laguerre_rule computes and prints a Gauss-Laguerre quadrature rule.
+[kronrod](https://people.sc.fsu.edu/~jburkardt/f_src/kronrod/kronrod.html) computes both a Gauss quadrature rule of order N, and the Gauss-Kronrod rule of order 2*N+1.
 
-legendre_rule computes and prints a Gauss-Legendre quadrature rule.
+[laguerre_rule](https://people.sc.fsu.edu/~jburkardt/f_src/laguerre_rule/laguerre_rule.html) computes and prints a Gauss-Laguerre quadrature rule.
 
-legendre_rule_fast uses a fast (order n) algorithm to compute a Gauss-Legendre quadrature rule of given order.
+[legendre_rule](https://people.sc.fsu.edu/~jburkardt/f_src/legendre_rule/legendre_rule.html) computes and prints a Gauss-Legendre quadrature rule.
 
-line_ncc_rule computes a Newton Cotes Closed (ncc) quadrature rule for the line, that is, for an interval of the form [a,b], using equally spaced points which include the endpoints.
+[legendre_rule_fast](https://people.sc.fsu.edu/~jburkardt/f_src/legendre_rule_fast/legendre_rule_fast.html) uses a fast (order n) algorithm to compute a Gauss-Legendre quadrature rule of given order.
 
-line_nco_rule computes a Newton Cotes Open (nco) quadrature rule, using equally spaced points, over the interior of a line segment in 1d.
+[line_ncc_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_ncc_rule/line_ncc_rule.html) computes a Newton Cotes Closed (ncc) quadrature rule for the line, that is, for an interval of the form [a,b], using equally spaced points which include the endpoints.
 
-lognormal_rule computes and prints a quadrature rule for functions of a variable whose logarithm is normally distributed.
+[line_nco_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_nco_rule/line_nco_rule.html) computes a Newton Cotes Open (nco) quadrature rule, using equally spaced points, over the interior of a line segment in 1d.
 
-patterson_rule returns the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
+[patterson_rule](https://people.sc.fsu.edu/~jburkardt/f_src/patterson_rule/patterson_rule.html) returns the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
 
-patterson_rule_compute computes the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
+[patterson_rule_compute](https://people.math.sc.edu/Burkardt/f_src/patterson_rule_compute/patterson_rule_compute.html) computes the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
 
-quadrature_rules_clenshaw_curtis, a dataset directory which contains quadrature rules for integration on [-1,+1], using a Clenshaw Curtis rule.
+[quadmom](https://people.sc.fsu.edu/~jburkardt/f_src/quadmom/quadmom.html) computes a Gaussian quadrature rule for a weight function rho(x) based on the Golub-Welsch procedure that only requires knowledge of the moments of rho(x).
 
-quadrule defines 1-dimensional quadrature rules.
+[quadpack](https://people.math.sc.edu/Burkardt/f_src/quadpack/quadpack.html) estimates integrals using numerical quadrature, by Piessens, deDoncker-Kapenga, Ueberhuber, and Kahaner.
 
-truncated_normal_rule computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
+[quadrule](https://people.sc.fsu.edu/~jburkardt/f_src/quadrule/quadrule.html) defines 1-dimensional quadrature rules.
+
+[stroud](https://people.math.sc.edu/Burkardt/f_src/stroud/stroud.html) defines quadrature rules for various geometric shapes.
+
+[test_int](https://people.sc.fsu.edu/~jburkardt/f_src/test_int/test_int.html) contains a number of functions that may be used as test integrands for quadrature rules in 1D.
+
+[test_int_2d](https://people.sc.fsu.edu/~jburkardt/f_src/test_int/test_int.html) defines test integrands for 2D quadrature rules.
+
+[truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
