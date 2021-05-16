@@ -54,6 +54,12 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [test_int_2d](https://people.sc.fsu.edu/~jburkardt/f_src/test_int/test_int.html) defines test integrands for 2D quadrature rules.
 
+[toms341](https://people.math.sc.edu/Burkardt/f77_src/toms351/toms351.html) implements ACM TOMS algorithm 351, for modified Romberg quadrature.
+
+[toms370](https://people.math.sc.edu/Burkardt/f77_src/toms379/toms379.html) SQUANK (Simpson Quadrature Used Adaptively - Noise Killed).
+
+[toms468](https://people.math.sc.edu/Burkardt/f77_src/toms468/toms468.html) Automatic Numerical Integration Over a Finite Interval.
+
 [toms655](https://people.math.sc.edu/Burkardt/f_src/toms655/toms655.html) computes weights for interpolatory quadrature schemes, by Sylvan Elhay and Jaroslav Kautsky.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
