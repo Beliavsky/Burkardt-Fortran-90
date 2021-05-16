@@ -1,6 +1,21 @@
 # Burkardt Fortran 90
 Classification of John Burkardt's many Fortran 90 codes
 
+# Optimization
+
+[asa047](https://people.sc.fsu.edu/~jburkardt/f_src/asa047/asa047.html) minimize a scalar function of several variables using the Nelder-Mead algorithm, by R ONeill.
+
+[compass_search](https://people.sc.fsu.edu/~jburkardt/f_src/compass_search/compass_search.html) minimizes of a scalar function of several variables using compass search, a direct search algorithm that does not use derivatives.
+
+[praxis](https://people.sc.fsu.edu/~jburkardt/f_src/praxis/praxis.html) minimizes a scalar function of a vector argument, without needing derivative information, by Richard Brent.
+
+[test_opt](https://people.sc.fsu.edu/~jburkardt/f_src/test_opt/test_opt.html) defines test problems for the scalar function optimization problem.
+
+[test_opt_con](https://people.sc.fsu.edu/~jburkardt/f_src/test_opt_con/test_opt_con.html) Test Functions for Scalar Optimization
+Constrained to a Hyper-Rectangle.
+
+[toms611](https://github.com/johannesgerer/jburkardt-f/tree/master/toms611) minimizes a scalar functional of multiple variables.
+
 # Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
 
