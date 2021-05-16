@@ -78,3 +78,7 @@ Constrained to a Hyper-Rectangle.
 [toms655](https://people.math.sc.edu/Burkardt/f_src/toms655/toms655.html) computes weights for interpolatory quadrature schemes, by Sylvan Elhay and Jaroslav Kautsky.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
+
+# Root-finding
+
+[bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
