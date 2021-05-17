@@ -13,6 +13,14 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
+# Interpolation and Approximation
+
+[divdif](https://people.math.sc.edu/Burkardt/f_src/divdif/divdif.html) creates, prints and manipulates divided difference polynomials based on data tabulated at evenly spaced or unevenly spaced argument values.
+
+[hermite](https://people.math.sc.edu/Burkardt/f_src/hermite/hermite.html) constructs the Hermite polynomial which interpolates function and derivative values at given points.
+
+[interp](https://people.math.sc.edu/Burkardt/f_src/interp/interp.html) takes a set of data associated with successive values of a parameter, and produces an interpolating function which can be evaluated over a continuous range of the parameter.
+
 # Numerical Methods -- general
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
@@ -108,6 +116,8 @@ Constrained to a Hyper-Rectangle.
 [cubpack](https://people.math.sc.edu/Burkardt/f_src/cubpack/cubpack.html) estimates the integral of a function (or vector of functions) over a collection of N-dimensional hyperrectangles and simplices, by Alan Genz and Ronald Cools.
 
 [fastgl](https://people.math.sc.edu/Burkardt/f_src/fastgl/fastgl.html) fast computation of the K-th value and weight of an N-point Gauss-Legendre quadrature rule, by Ignace Bogaert.
+
+[filon](https://people.math.sc.edu/Burkardt/f_src/filon/filon.html) approximate integrals in which the integrand includes an oscillatory factor of sin(k*x) or cos(k*x).
 
 [gegenbauer_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gegenbauer_rule/gegenbauer_rule.html) computes and prints a Gauss-Gegenbauer quadrature rule.
 
