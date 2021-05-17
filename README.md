@@ -11,7 +11,7 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [blas](https://people.math.sc.edu/Burkardt/f_src/blas/blas.html) Basic Linear Algebra Subprograms.
 
-[condition](https://people.sc.fsu.edu/~jburkardt/f_src/condition/condition.html) computrd or estimatrd the condition number of a matrix.
+[condition](https://people.sc.fsu.edu/~jburkardt/f_src/condition/condition.html) computes or estimates the condition number of a matrix.
 
 # Linear Equations
 
