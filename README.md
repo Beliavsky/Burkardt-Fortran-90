@@ -1,6 +1,14 @@
 # Burkardt Fortran 90
 Classification of John Burkardt's many Fortran 90 codes
 
+# Linear Algebra
+
+[blas](https://people.math.sc.edu/Burkardt/f_src/blas/blas.html) Basic Linear Algebra Subprograms.
+
+# Linear Equations
+
+[linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html)
+
 # Numerical Methods
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
