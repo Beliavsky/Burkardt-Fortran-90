@@ -179,8 +179,22 @@ Constrained to a Hyper-Rectangle.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
 
+# Uniform Random Number Generation
+
+[asa183](https://people.sc.fsu.edu/~jburkardt/f_src/asa183/asa183.html) random number generator (RNG), by Wichman and Hill.
+
+[randlc](https://people.sc.fsu.edu/~jburkardt/f_src/randlc/randlc.html) random number generator (RNG) used by the NAS Parallel Benchmarks.
+
+[random_sorted](https://people.sc.fsu.edu/~jburkardt/f_src/random_sorted/random_sorted.html) create a vector of random values which are already sorted.
+
+[rnglib](https://people.sc.fsu.edu/~jburkardt/f_src/rnglib/rnglib.html) random number generators (RNG's) which can generate one or more streams of random numbers.
+
+[uniform](https://people.sc.fsu.edu/~jburkardt/f_src/uniform/uniform.html) random number generator is based on a simple, old, and limited linear congruential random number generator originally used in the IBM System 360.
+
 # Non-uniform Random Number Generation
 
 [pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
 
 [ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
+
+[ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
