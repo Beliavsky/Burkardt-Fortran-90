@@ -41,7 +41,13 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [dqed](https://people.math.sc.edu/Burkardt/f_src/dqed/dqed.html) solves (square) systems of nonlinear equations, or minimizes the residual in a set of nonlinear equations, using least squares, by Richard Hanson and Fred Krogh.
 
-[roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) 
+[roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
+
+# Optimization - One-Dimensional
+
+[local_min_rc](https://people.math.sc.edu/Burkardt/f_src/local_min_rc/local_min_rc.html) seeks a local minimum of a scalar function of a scalar variable, without requiring derivatives, or assuming the function is differentiable, using reverse communication (RC), by Richard Brent.
+
+[test_min](https://people.math.sc.edu/Burkardt/f_src/test_min/test_min.html) defines problems involving the minimization of a scalar function of a scalar argument.
 
 # Optimization
 
@@ -56,7 +62,11 @@ Classification of John Burkardt's many Fortran 90 codes
 [test_opt_con](https://people.sc.fsu.edu/~jburkardt/f_src/test_opt_con/test_opt_con.html) Test Functions for Scalar Optimization
 Constrained to a Hyper-Rectangle.
 
+[toms178](https://people.math.sc.edu/Burkardt/f_src/toms178/toms178.html) uses the Hooke-Jeeves direct search algorithm to seek the minimizing point of a function F(X) of several variables, by Arthur Kaupe.
+
 [toms611](https://github.com/johannesgerer/jburkardt-f/tree/master/toms611) minimizes a scalar functional of multiple variables.
+
+[uncmin](https://people.math.sc.edu/Burkardt/f77_src/uncmin/uncmin.html) seeks to minimize a scalar function of N variables.
 
 # Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
