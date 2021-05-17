@@ -93,6 +93,8 @@ Constrained to a Hyper-Rectangle.
 
 [clenshaw_curtis_rule](https://people.sc.fsu.edu/~jburkardt/f_src/clenshaw_curtis_rule/clenshaw_curtis_rule.html) generates a Clenshaw Curtis quadrature rule based on user input.
 
+[cubpack](https://people.math.sc.edu/Burkardt/f_src/cubpack/cubpack.html) estimates the integral of a function (or vector of functions) over a collection of N-dimensional hyperrectangles and simplices, by Alan Genz and Ronald Cools.
+
 [fastgl](https://people.math.sc.edu/Burkardt/f_src/fastgl/fastgl.html) fast computation of the K-th value and weight of an N-point Gauss-Legendre quadrature rule, by Ignace Bogaert.
 
 [gegenbauer_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gegenbauer_rule/gegenbauer_rule.html) computes and prints a Gauss-Gegenbauer quadrature rule.
@@ -118,6 +120,8 @@ Constrained to a Hyper-Rectangle.
 [line_ncc_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_ncc_rule/line_ncc_rule.html) computes a Newton Cotes Closed (ncc) quadrature rule for the line, that is, for an interval of the form [a,b], using equally spaced points which include the endpoints.
 
 [line_nco_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_nco_rule/line_nco_rule.html) computes a Newton Cotes Open (nco) quadrature rule, using equally spaced points, over the interior of a line segment in 1d.
+
+[nintlib](https://people.sc.fsu.edu/~jburkardt/f_src/nintlib/nintlib.html) estimates integrals over multi-dimensional regions.
 
 [patterson_rule](https://people.sc.fsu.edu/~jburkardt/f_src/patterson_rule/patterson_rule.html) returns the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
 
