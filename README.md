@@ -149,6 +149,30 @@ Constrained to a Hyper-Rectangle.
 
 # Probability Distributions
 
+[asa005](https://people.sc.fsu.edu/~jburkardt/f_src/asa005/asa005.html) evaluates the lower tail of the noncentral student's T cumulative density function (CDF), by BE Cooper.
+
+[asa066](https://people.sc.fsu.edu/~jburkardt/f_src/asa066/asa066.html) computes the cumulative density function (CDF) of the standard normal distribution, by David Hill.
+
+[asa076](https://people.sc.fsu.edu/~jburkardt/f_src/asa076/asa076.html) evaluates Owen's T function, by Young and Minder. The function T(h, a) gives the probability of the event (X > h and 0 < Y < aX) where X and Y are independent standard normal random variables.
+
+[asa111](https://people.sc.fsu.edu/~jburkardt/f_src/asa111/asa111.html) computes the percentage points of the normal probability density function, by Beasley and Springer.
+
 [asa152](https://people.sc.fsu.edu/~jburkardt/f_src/asa152/asa152.html) computes the cumulative probabilities associated with the hypergeometric probability distribution, by Richard Lund.
 
+[asa226](https://people.sc.fsu.edu/~jburkardt/f_src/asa226/asa226.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta Distribution, by Russell Lenth.
+
+[asa241](https://people.sc.fsu.edu/~jburkardt/f_src/asa241/asa241.html) computes the inverse of the Normal Cumulative Density Function (CDF), by Michael Wichura.
+
+[asa243](https://people.sc.fsu.edu/~jburkardt/f_src/asa243/asa243.html) computes the cumulative density function (CDF) of the noncentral Student's T probability density function, by Russell Lenth.
+
+[asa266](https://people.sc.fsu.edu/~jburkardt/f_src/asa266/asa266.html) estimates the parameters of a Dirichlet probability density function (PDF).
+
+[asa310](https://people.sc.fsu.edu/~jburkardt/f_src/asa310/asa310.html) computes the cumulative density function (CDF) of the noncentral Beta distribution, by Chattamvelli and Shanmugam.
+
+[beta_nc](https://people.sc.fsu.edu/~jburkardt/f_src/beta_nc/beta_nc.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta distribution.
+
 [cdflib](https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html) evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
+
+[owens](https://people.math.sc.edu/Burkardt/f_src/owens/owens.html) evaluates Owen's T function.
+
+[prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
