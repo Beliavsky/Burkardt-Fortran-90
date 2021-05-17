@@ -17,6 +17,8 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [bvls](https://people.sc.fsu.edu/~jburkardt/f_src/bvls/bvls.html) solves a least squares problem with bounds on the variables, by Charles Lawson and Richard Hanson.
 
+[lawson](https://people.math.sc.edu/Burkardt/f77_src/lawson/lawson.html) solve least squares problems.
+
 [linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html) analyze and solve linear equations and linear least-squares problems.
 
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
@@ -34,6 +36,12 @@ Classification of John Burkardt's many Fortran 90 codes
 [zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
 
 [zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
+
+# Nonlinear Equations
+
+[dqed](https://people.math.sc.edu/Burkardt/f_src/dqed/dqed.html) solves (square) systems of nonlinear equations, or minimizes the residual in a set of nonlinear equations, using least squares, by Richard Hanson and Fred Krogh.
+
+[roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) 
 
 # Optimization
 
