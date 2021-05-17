@@ -7,7 +7,7 @@ Classification of John Burkardt's many Fortran 90 codes
 
 # Linear Equations
 
-[linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html)
+[linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html) analyze and solve linear equations and linear least-squares problems.
 
 # Numerical Methods
 
