@@ -115,6 +115,8 @@ Constrained to a Hyper-Rectangle.
 
 [quadrule](https://people.sc.fsu.edu/~jburkardt/f_src/quadrule/quadrule.html) defines 1-dimensional quadrature rules.
 
+[romberg](https://people.math.sc.edu/Burkardt/f_src/romberg/romberg.html) Integral Estimation using Repeated Quadrature and Extrapolation.
+
 [stroud](https://people.math.sc.edu/Burkardt/f_src/stroud/stroud.html) defines quadrature rules for various geometric shapes.
 
 [test_int](https://people.sc.fsu.edu/~jburkardt/f_src/test_int/test_int.html) contains a number of functions that may be used as test integrands for quadrature rules in 1D.
