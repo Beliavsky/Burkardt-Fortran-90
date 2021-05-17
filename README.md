@@ -1,4 +1,3 @@
-# Burkardt Fortran 90
 Classification of John Burkardt's many Fortran 90 codes
 
 # Special Functions
@@ -14,6 +13,10 @@ Classification of John Burkardt's many Fortran 90 codes
 [toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
 # Interpolation and Approximation
+
+[barycentric_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/barycentric_interp_1d/barycentric_interp_1d.html) defines and evaluates the Lagrange polynomial p(x) which interpolates a set of data, so that p(x(i)) = y(i).
+
+[bivar](https://people.sc.fsu.edu/~jburkardt/f_src/bivar/bivar.html) interpolates scattered bivariate data, by Hiroshi Akima.
 
 [divdif](https://people.math.sc.edu/Burkardt/f_src/divdif/divdif.html) creates, prints and manipulates divided difference polynomials based on data tabulated at evenly spaced or unevenly spaced argument values.
 
