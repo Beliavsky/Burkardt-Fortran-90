@@ -198,3 +198,19 @@ Constrained to a Hyper-Rectangle.
 [ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
 
 [ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
+
+# Quasirandom Number Generation
+
+[faure](https://people.sc.fsu.edu/~jburkardt/f_src/faure/faure.html) Faure quasirandom sequence.
+
+[halton](https://people.sc.fsu.edu/~jburkardt/f_src/halton/halton.html) Halton Quasi Monte Carlo (QMC) sequence using a simple interface.
+
+[hammersley](https://people.sc.fsu.edu/~jburkardt/f_src/hammersley/hammersley.html) Hammersley Quasi Monte Carlo (QMC) sequence using a simple interface.
+
+[niederreiter](https://people.math.sc.edu/Burkardt/f_src/niederreiter/niederreiter.html) Niederreiter quasirandom sequence, using an "arbitrary" base.
+
+[niederreiter2](https://people.math.sc.edu/Burkardt/f_src/niederreiter2/niederreiter2.html) Niederreiter quasirandom sequence, using a base of 2.
+
+[sobol](https://people.math.sc.edu/Burkardt/f_src/sobol/sobol.html) Sobol quasirandom sequence, by Bennett Fox.
+
+[van_der_corput](https://people.math.sc.edu/Burkardt/f_src/van_der_corput/van_der_corput.html) van der Corput Quasi Monte Carlo (QMC) sequence, using a simple interface.
