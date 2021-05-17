@@ -1,7 +1,7 @@
 # Burkardt Fortran 90
 Classification of John Burkardt's many Fortran 90 codes
 
-# Numerical Methods
+# Numerical Methods -- general
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
 
