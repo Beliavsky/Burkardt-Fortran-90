@@ -1,19 +1,25 @@
 # Burkardt Fortran 90
 Classification of John Burkardt's many Fortran 90 codes
 
-# Linear Algebra
-
-[blas](https://people.math.sc.edu/Burkardt/f_src/blas/blas.html) Basic Linear Algebra Subprograms.
-
-# Linear Equations
-
-[linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html) analyze and solve linear equations and linear least-squares problems.
-
 # Numerical Methods
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
 
 [slatec](https://people.math.sc.edu/Burkardt/f_src/slatec/slatec.html) general purpose mathematical and statistical routines.
+
+# Linear Algebra
+
+[blas](https://people.math.sc.edu/Burkardt/f_src/blas/blas.html) Basic Linear Algebra Subprograms.
+
+[condition](https://people.sc.fsu.edu/~jburkardt/f_src/condition/condition.html) computrd or estimatrd the condition number of a matrix.
+
+# Linear Equations
+
+[bvls](https://people.sc.fsu.edu/~jburkardt/f_src/bvls/bvls.html) solves a least squares problem with bounds on the variables, by Charles Lawson and Richard Hanson.
+
+[linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html) analyze and solve linear equations and linear least-squares problems.
+
+[qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
 
 # Root-finding
 
