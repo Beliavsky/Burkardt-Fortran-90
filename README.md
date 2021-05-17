@@ -57,7 +57,7 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
 
-# Optimization - One-Dimensional
+# Optimization -- One-Dimensional
 
 [local_min_rc](https://people.math.sc.edu/Burkardt/f_src/local_min_rc/local_min_rc.html) seeks a local minimum of a scalar function of a scalar variable, without requiring derivatives, or assuming the function is differentiable, using reverse communication (RC), by Richard Brent.
 
@@ -147,3 +147,8 @@ Constrained to a Hyper-Rectangle.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
 
+# Probability Distributions
+
+[asa152](https://people.sc.fsu.edu/~jburkardt/f_src/asa152/asa152.html) computes the cumulative probabilities associated with the hypergeometric probability distribution, by Richard Lund.
+
+[cdflib](https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html) evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
