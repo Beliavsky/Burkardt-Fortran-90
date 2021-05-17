@@ -23,6 +23,20 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
 
+# Eigenvalues 
+
+[arpack](https://people.math.sc.edu/Burkardt/f_src/arpack/arpack.html) computes eigenvalues and eigenvectors of large matrices, by Richard Lehoucq, Danny Sorensen, Chao Yang.
+
+[eispack](https://people.sc.fsu.edu/~jburkardt/f77_src/eispack/eispack.html) calculates the eigenvalues and eigenvectors of a matrix.
+
+[jacobi_eigenvalue](https://people.math.sc.edu/Burkardt/f_src/jacobi_eigenvalue/jacobi_eigenvalue.html) computes the eigenvalues and eigenvectors of a real symmetric matrix.
+
+[power_method](https://people.math.sc.edu/Burkardt/f_src/power_method/power_method.html) Power Method for Eigenvalues and Eigenvectors.
+
+[test_eigen](https://people.math.sc.edu/Burkardt/f_src/test_eigen/test_eigen.html) Test Matrices for Eigenvalue Analysis.
+
+[toms384](https://people.math.sc.edu/Burkardt/f77_src/toms384/toms384.html) implements ACM TOMS algorithm 384, for computing the eigenvalues and eigenvectors of a symmetric matrix.
+
 # Root-finding
 
 [bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
