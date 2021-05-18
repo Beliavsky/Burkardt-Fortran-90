@@ -43,7 +43,23 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [newton_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/newton_interp_1d/newton_interp_1d.html) finds a polynomial interpolant to data using Newton divided differences.
 
+[pwl_approx_1d](https://people.sc.fsu.edu/~jburkardt/f_src/pwl_approx_1d/pwl_approx_1d.html) defines and evaluates a piecewise linear function, using NC "control points", which approximates a set of ND data points (x(i),y(i)).
+
+[pwl_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/pwl_interp_1d/pwl_interp_1d.html) interpolates a set of data with a piecewise linear function.
+
+[pwl_interp_2d](https://people.sc.fsu.edu/~jburkardt/f_src/pwl_interp_2d/pwl_interp_2d.html) evaluates a piecewise linear interpolant of data depending on a 2D argument, defined on on a product grid, so that p(x(i),y(j)) = z(i,j).
+
+[pwl_interp_2d_scattered](https://people.sc.fsu.edu/~jburkardt/f_src/pwl_interp_2d_scattered/pwl_interp_2d_scattered.html) produces a piecewise linear interpolant to 2D scattered data, that is, data that is not guaranteed to lie on a regular grid.
+
+[rbf_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/rbf_interp_1d/rbf_interp_1d.html) defines and evaluates radial basis function (RBF) interpolants to 1D data.
+
+[rbf_interp_2d](https://people.sc.fsu.edu/~jburkardt/f_src/rbf_interp_2d/rbf_interp_2d.html) defines and evaluates radial basis function (RBF) interpolants to 2D data.
+
+[rbf_interp_nd](https://people.sc.fsu.edu/~jburkardt/f_src/rbf_interp_nd/rbf_interp_nd.html) defines and evaluates radial basis function (RBF) interpolants to multidimensional data.
+
 [sparse_interp_nd](https://people.math.sc.edu/Burkardt/f_src/sparse_interp_nd/sparse_interp_nd.html) construct a sparse interpolant to a function f(x) of a multidimensional argument x.
+
+[shephard_interp_nd](https://people.sc.fsu.edu/~jburkardt/f_src/shepard_interp_nd/shepard_interp_nd.html) defines and evaluates Shepard interpolants to multidimensional data, based on inverse distance weighting.
 
 [test_interp_nd](https://people.math.sc.edu/Burkardt/f_src/test_interp_nd/test_interp_nd.html) rovides test functions for multidimensional interpolation.
 
