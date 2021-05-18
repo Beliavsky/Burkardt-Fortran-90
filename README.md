@@ -133,6 +133,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [condition](https://people.sc.fsu.edu/~jburkardt/f_src/condition/condition.html) computes or estimates the condition number of a matrix.
 
+[sparsekit](https://people.math.sc.edu/Burkardt/f_src/sparsekit/sparsekit.html) carries out a number of operations on sparse matrices, particularly conversion between various sparse formats.
+
 # Linear Equations
 
 [bvls](https://people.sc.fsu.edu/~jburkardt/f_src/bvls/bvls.html) solves a least squares problem with bounds on the variables, by Charles Lawson and Richard Hanson.
@@ -140,6 +142,8 @@ but, if i =/= j P(i)(X(j)) = 0
 [cg](https://people.sc.fsu.edu/~jburkardt/f_src/cg/cg.html) simple version of the conjugate gradient (CG) method for solving a system of linear equations of the form A*x=b, suitable for situations in which the matrix A is positive definite (only real, positive eigenvalues) and symmetric.
 
 [cg_rc](https://people.sc.fsu.edu/~jburkardt/f_src/cg_rc/cg_rc.html) conjugate gradient (CG) method for solving a positive definite sparse linear system A*x=b, using reverse communication (RC).
+
+[dlap](https://people.math.sc.edu/Burkardt/f_src/dlap/dlap.html) routines for solving sparse linear systems, by Anne Greenbaum and Mark Seager.
 
 [jacobi](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi/jacobi.html) Jacobi iteration for linear systems.
 
@@ -150,6 +154,8 @@ but, if i =/= j P(i)(X(j)) = 0
 [mgmres](https://people.sc.fsu.edu/~jburkardt/f_src/mgmres/mgmres.html) restarted Generalized Minimum Residual (GMRES) algorithm to solve a sparse linear system, using compressed row (CR) or sparse triplet (ST) format, by Lili Ju.
 
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
+
+[sparsepak](https://people.math.sc.edu/Burkardt/f_src/sparsepak/sparsepak.html) old version of the Waterloo Sparse Matrix Package that solves large sparse systems of linear equations.
 
 # Nonlinear Equations and Nonlinear Least Squares
 
