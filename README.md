@@ -22,9 +22,17 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [lau_np](https://people.sc.fsu.edu/~jburkardt/f_src/lau_np/lau_np.html) implements heuristic algorithms for certain "hard" problems, by Hang Tong Lau.
 
+[partial_digest](https://people.sc.fsu.edu/~jburkardt/f_src/partial_digest/partial_digest.html) 
+
 [partition_problem](https://people.sc.fsu.edu/~jburkardt/f_src/partition_problem/partition_problem.html) seeks solutions of the partition problem, splitting a set of integers into two subsets with equal sum.
 
+[subset](https://people.sc.fsu.edu/~jburkardt/f_src/subset/subset.html) enumerates, generates, randomizes, ranks and unranks combinatorial objects including combinations, compositions, Gray codes, index sets, partitions, permutations, polynomials, subsets, and Young tables.
+
 [subset_sum](https://people.sc.fsu.edu/~jburkardt/f_src/subset_sum/subset_sum.html) seeks solutions of the subset sum problem.
+
+[toms515](https://people.math.sc.edu/Burkardt/f_src/toms515/toms515.html) lists the subsets of size K selected from a set of size N, by Bill Buckles, Matthew Lybanon.
+
+[treepack](https://people.math.sc.edu/Burkardt/f_src/treepack/treepack.html) performs common calculations involving a special kind of graph known as a tree.
 
 [tsp_brute](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_brute/tsp_brute.html) solves small versions of the traveling salesman problem, using brute force.
 
