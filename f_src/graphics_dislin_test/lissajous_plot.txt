@@ -1,0 +1,17 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 22.07.2020  Time    : 10:12:55  Pageformat: USAP  <<
+ <<  Vectors : 3331        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: lissajous.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+22 July 2020  10:12:55.151 AM
+ 
+LISSAJOUS:
+  FORTRAN90 version
+  Use DISLIN routines to plot (X,Y) data as a plane curve.
+ 
+LISSAJOUS:
+  Normal end of execution.
+22 July 2020  10:12:55.162 AM

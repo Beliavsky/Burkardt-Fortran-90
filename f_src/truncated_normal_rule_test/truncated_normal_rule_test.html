@@ -1,0 +1,170 @@
+<html>
+
+  <head>
+    <title>
+      truncated_normal_rule_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      truncated_normal_rule_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>truncated_normal_rule_test</b>,
+      a FORTRAN90 code which 
+      calls truncated_normal_rule(), which
+      computes a quadrature rule for a normal probability density function (PDF),
+      sometimes called a Gaussian distribution, that has been
+      truncated to [A,+oo), (-oo,B] or [A,B].
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/truncated_normal_rule/truncated_normal_rule.html">
+      truncated_normal_rule</a>,
+      a FORTRAN90 code which 
+      computes a quadrature rule for a normal probability density function
+      (PDF), also called a Gaussian distribution, that has been
+      truncated to [A,+oo), (-oo,B] or [A,B].
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "truncated_normal_rule_test.sh">truncated_normal_rule_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "truncated_normal_rule_test.txt">truncated_normal_rule_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      "OPTION0" computes a quadrature rule for the normal distribution,
+      n = 5, mu = 1.0, sigma = 2.0;
+      <ul>
+        <li>
+          <a href = "option0_input.txt">option0_input.txt</a>,
+          the input file.
+        </li>
+        <li>
+          <a href = "option0_r.txt">option0_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option0_w.txt">option0_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option0_x.txt">option0_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      "OPTION1" computes a quadrature rule for the lower truncated normal distribution,
+      n = 9, mu = 2.0, sigma = 0.5, a = 0.0;
+      <ul>
+        <li>
+          <a href = "option1_input.txt">option1_input.txt</a>,
+          the input file.
+        </li>
+        <li>
+          <a href = "option1_r.txt">option1_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option1_w.txt">option1_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option1_x.txt">option1_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      "OPTION2" computes a quadrature rule for the upper truncated normal distribution,
+      n = 9, mu = 2.0, sigma = 0.5, b = 3.0;
+      <ul>
+        <li>
+          <a href = "option2_input.txt">option2_input.txt</a>,
+          the input file.
+        </li>
+        <li>
+          <a href = "option2_r.txt">option2_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option2_w.txt">option2_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option2_x.txt">option2_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      "OPTION3" computes a quadrature rule for the doubly truncated normal distribution,
+      n = 5, mu = 100.0, sigma = 25.0, a = 50.0, b = 100.0;
+      <ul>
+        <li>
+          <a href = "option3_input.txt">option3_input.txt</a>,
+          the input file.
+        </li>
+        <li>
+          <a href = "option3_r.txt">option3_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option3_w.txt">option3_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option3_x.txt">option3_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

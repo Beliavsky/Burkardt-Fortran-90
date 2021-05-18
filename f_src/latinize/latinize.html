@@ -1,0 +1,128 @@
+<html>
+
+  <head>
+    <title>
+      LATINIZE - Force a Dataset to be a Latin Hypercube
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LATINIZE <br> Force a Dataset to be a Latin Hypercube
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LATINIZE</b>,
+      a FORTRAN90 code which
+      adjusts an M dimensional dataset of N points
+      so that it forms a Latin hypercube.
+    </p>
+
+    <p>
+     On output, each row of the table will have the properties that:
+     <ol>
+        <li>
+          the minimum and maximum row values are the same as on input;
+        </li>
+        <li>
+          the row contains N evenly spaced values between the
+          minimum and maximum.
+        </li>
+        <li>
+          in each row, the elements retain their ordering.
+        </li>        
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages
+    </h3>
+
+    <p>
+      <b>LATINIZE</b> is available in
+      <a href = "../../c_src/latinize/latinize.html">a C version</a> and
+      <a href = "../../cpp_src/latinize/latinize.html">a C++ version</a> and
+      <a href = "../../f_src/latinize/latinize.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/latinize/latinize.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/latin_cover/latin_cover.html">
+      LATIN_COVER</a>,
+      a FORTRAN90 code which
+      produces N Latin squares which cover an NxN square,
+      or NxN Latin cubes which cover an NxNxN cube.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latinize_test/latinize_test.html">
+      latinize_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Michael McKay, William Conover, Richard Beckman,<br>
+          A Comparison of Three Methods for Selecting Values of Input
+          Variables in the Analysis of Output From a Computer Code,<br>
+          Technometrics,<br>
+          Volume 21, pages 239-245, 1979.
+        </li>
+        <li>
+          Yuki Saka, Max Gunzburger, John Burkardt,<br>
+          Latinized, Improved LHS, and CVT Point Sets in Hypercubes, <br>
+          International Journal of Numerical Analysis and Modeling,<br>
+          Volume 4, Number 3-4, 2007, pages 729-743,
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "latinize.f90">latinize.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "latinize.sh">latinize.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 24 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

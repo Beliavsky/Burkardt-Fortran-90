@@ -1,0 +1,32 @@
+06 April 2021   2:40:19.229 PM
+
+stiff_ode_test
+  FORTRAN90 version
+  Test stiff_ode using euler(), euler_backward(), midpoint().
+
+  Parameter values:
+    lambda =    50.0000    
+    t0     =    0.00000    
+    y0     =    0.00000    
+
+stiff_euler_test
+  Solve stiff ODE using the Euler method.
+ 
+  plot2: data stored in "stiff_euler_data1.txt" and "stiff_euler_data2.txt".
+  plot2: plot commands stored in "stiff_euler_commands.txt".
+
+stiff_backward_euler_test
+  Solve stiff ODE using the backward Euler method.
+ 
+  plot2: data stored in "stiff_euler_backward_data1.txt" and "stiff_euler_backward_data2.txt".
+  plot2: plot commands stored in "stiff_euler_backward_commands.txt".
+
+stiff_midpoint_test
+  Solve stiff ODE using the midpoint method.
+ 
+  plot2: data stored in "stiff_midpoint_data1.txt" and "stiff_midpoint_data2.txt".
+  plot2: plot commands stored in "stiff_midpoint_commands.txt".
+
+stiff_ode_test
+  Normal end of execution.
+06 April 2021   2:40:19.230 PM

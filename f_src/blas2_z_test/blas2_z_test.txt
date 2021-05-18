@@ -1,0 +1,22 @@
+01 June 2020   7:25:51.564 PM
+ 
+BLAS2_C_TEST
+  FORTRAN90 version
+  Test the BLAS library.
+ 
+TEST01
+  For a general matrix A,
+  ZGEMV computes y := alpha * A * x + beta * y
+ 
+  Result vector Y = 
+ 
+     283.000       72.0000    
+     300.000       3.00000    
+     300.000       3.00000    
+     300.000       3.00000    
+     355.000      -42.0000    
+ 
+BLAS2_C_TEST
+  Normal end of execution.
+ 
+01 June 2020   7:25:51.564 PM

@@ -1,0 +1,13 @@
+10 May 2021   9:34:50.423 AM
+
+constants_test():
+  FORTRAN90 version
+  Test constants(), with the interface:
+    call constants(g,c,h)
+
+      0.667384E-10,  0.299792E+09,  0.662607E-33 = constants()
+
+constants_test():
+  Normal end of execution.
+
+10 May 2021   9:34:50.423 AM

@@ -1,0 +1,975 @@
+April 15 2020   6:21:23.860 PM
+ 
+FFTPACK4_TEST
+  FORTRAN90 version
+  Test the FFTPACK4 library.
+ 
+TEST01
+  For complex fast Fourier transform,
+  CFFTI initializes the transform,
+  CFFTF does a forward transform;
+  CFFTB does a backward transform.
+ 
+  The number of data items is N =     4096
+ 
+  The original data:
+ 
+       1   -0.614234     -0.935539E-01
+       2     3.89605      -2.24796    
+       3     1.93334      0.786940E-01
+       4    -3.66225       2.65775    
+       5     1.48643       2.02132    
+       6     1.44817      -3.76069    
+       7    0.857940       3.41023    
+       8     2.82125       2.00891    
+......  ..............
+    4096    0.139254       1.63229    
+ 
+  The FFT coefficients:
+ 
+       1    -15.9579      -34.7682    
+       2     55.1262       350.447    
+       3    -20.1731      -114.112    
+       4     160.446       96.7610    
+       5    -263.474       32.3692    
+       6     26.9050       410.079    
+       7     254.240       40.4775    
+       8     22.0234      -20.7229    
+......  ..............
+    4096    -125.257       111.916    
+ 
+  The retrieved data:
+ 
+       1   -0.614234     -0.935535E-01
+       2     3.89605      -2.24796    
+       3     1.93334      0.786943E-01
+       4    -3.66225       2.65775    
+       5     1.48643       2.02132    
+       6     1.44817      -3.76069    
+       7    0.857940       3.41022    
+       8     2.82125       2.00891    
+......  ..............
+    4096    0.139254       1.63229    
+ 
+TEST02
+  For complex fast Fourier transform of 2D data:
+  CFFTF_2D computes the forward transform;
+  CFFTB_2D computes the backward transform.
+ 
+ 
+  Maximum error in CFFT2D calculation:
+ 
+  0.155599E-06
+ 
+TEST03
+  For real fast cosine quarter wave transform,
+  COSQI initializes the transform.
+  COSQF does a forward transform;
+  COSQB does a backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The cosine coefficients:
+ 
+       1     12868.0    
+       2    -4391.99    
+       3     2481.96    
+       4    -1772.67    
+       5     1418.06    
+       6    -1387.42    
+       7     943.652    
+       8    -1147.62    
+......  ..............
+    4096     59.3975    
+ 
+  The retrieved data:
+ 
+       1    0.772073E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323732E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+TEST04
+  For real slow quarter wave cosine transform,
+  R4_SQCTF does a forward transform;
+  R4_SQCTB does a backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The cosine coefficients:
+ 
+       1     2.48394    
+       2   -0.208955E-01
+       3   -0.590352E-03
+       4   -0.173473E-01
+       5    0.256728E-01
+       6   -0.368010E-01
+       7    0.236319E-02
+       8   -0.372593E-01
+......  ..............
+    4096    0.510974E-03
+ 
+  The retrieved data:
+ 
+       1    0.771619E-01
+       2     2.62041    
+       3     4.04643    
+       4     4.58376    
+       5    0.748294    
+       6    0.325511E-01
+       7     4.09521    
+       8     2.00050    
+......  ..............
+    4096     3.12847    
+ 
+TEST05
+  For real fast Fourier transform,
+  EZFFTI initializes the transform.
+  EZFFTF does a forward transform;
+  EZFFTB does a backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The A0 coefficient:
+ 
+   2.48395    
+ 
+  The A coefficients:
+ 
+       1   -0.118272E-02
+       2    0.513746E-01
+       3    0.469168E-02
+       4   -0.154338E-01
+       5    0.103383E-01
+       6    0.564502E-02
+       7   -0.289109E-02
+       8    0.516023E-02
+......  ..............
+    2048    0.109012E-01
+ 
+  The B coefficients:
+ 
+       1   -0.250245E-02
+       2    0.187339E-01
+       3   -0.153083E-01
+       4   -0.441338E-01
+       5   -0.930418E-01
+       6   -0.300123E-01
+       7   -0.536899E-02
+       8   -0.650863E-01
+......  ..............
+    2048     0.00000    
+ 
+  Retrieve data from FFT coeficients.
+ 
+  The retrieved data:
+ 
+       1    0.772066E-01
+       2     2.62027    
+       3     4.04650    
+       4     4.58353    
+       5    0.748800    
+       6    0.323900E-01
+       7     4.09514    
+       8     2.00046    
+......  ..............
+    4096     3.12914    
+ 
+TEST06
+  For real fast Fourier transform,
+  EZFFTI initializes the transform.
+  EZFFTF does a forward transform;
+  EZFFTB does a backward transform.
+ 
+  The number of data items is N = 3087
+  which is not a multiple of two!
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    3087     1.49917    
+ 
+  The A0 coefficient:
+ 
+   2.47633    
+ 
+  The A coefficients:
+ 
+       1   -0.951831E-02
+       2   -0.424015E-01
+       3   -0.561932E-01
+       4    0.310675E-01
+       5    0.125758E-01
+       6   -0.276491E-02
+       7   -0.320891E-01
+       8   -0.113404E-01
+......  ..............
+    1543    0.270934E-01
+ 
+  The B coefficients:
+ 
+       1   -0.289187E-01
+       2    0.292667E-01
+       3   -0.110144E-01
+       4   -0.513584E-01
+       5   -0.634945E-02
+       6   -0.674782E-01
+       7   -0.422185E-01
+       8   -0.520992E-02
+......  ..............
+    1543   -0.236175E-02
+ 
+  The retrieved data:
+ 
+       1    0.772088E-01
+       2     2.62027    
+       3     4.04642    
+       4     4.58355    
+       5    0.748821    
+       6    0.324694E-01
+       7     4.09511    
+       8     2.00043    
+......  ..............
+    3087     1.49927    
+ 
+TEST07
+  EZFFTF can take the Fourier transform of a real vector
+  of data.  In this case, the vector is
+ 
+    (1,1,1,...,1)
+ 
+  and the transform should be
+ 
+    (N,0,0,...,0),
+ 
+  where N is the number of entries,   36
+ 
+  The maximum error in computation is    0.00000    
+ 
+TEST08
+  For real data,
+  EZFFTF takes the fast Fourier transform forward.
+  R4_SFTF computes the "slow" Fourier transform forward.
+ 
+  The number of data values, N =   36
+ 
+  Fast    Slow
+ 
+  A coefficients:
+ 
+  0   2.25252       2.25252    
+  1  0.292827      0.292827    
+  2 -0.404824E-01 -0.404827E-01
+  3  0.697282E-01  0.697280E-01
+  4  0.515518E-02  0.515491E-02
+  5 -0.773520     -0.773520    
+  6  0.195033      0.195034    
+  7 -0.427018     -0.427018    
+  8 -0.466788     -0.466789    
+  9 -0.622368E-01 -0.622375E-01
+ 10  0.344655E-01  0.344637E-01
+ 11  0.130460      0.130459    
+ 12 -0.437985     -0.437983    
+ 13  0.204673      0.204674    
+ 14  0.593324E-01  0.593319E-01
+ 15 -0.310626     -0.310626    
+ 16 -0.320756     -0.320757    
+ 17 -0.283381     -0.283382    
+ 18 -0.441935E-01 -0.441934E-01
+ 
+  B coefficients:
+ 
+  1 -0.194480     -0.194480    
+  2 -0.174566E-01 -0.174566E-01
+  3 -0.185817     -0.185817    
+  4  0.366843      0.366842    
+  5  0.623549E-02  0.623649E-02
+  6  0.499148      0.499147    
+  7  0.128053      0.128054    
+  8  0.769980      0.769981    
+  9 -0.736449     -0.736449    
+ 10 -0.573319     -0.573319    
+ 11 -0.429597     -0.429597    
+ 12 -0.185460     -0.185457    
+ 13  0.440426      0.440427    
+ 14  0.109520      0.109518    
+ 15 -0.218820     -0.218818    
+ 16 -0.121010E-01 -0.121006E-01
+ 17 -0.304486     -0.304487    
+ 18   0.00000      0.581429E-07
+ 
+TEST09
+  EZFFTB can be used to recover a real data vector
+  from a Fourier coefficient vector.
+ 
+  In this test, the Fourier coefficient vector is:
+ 
+    (1,0,0,...,0)
+ 
+  and the recovered data vector should be
+ 
+    (1,1,1,...,1).
+ 
+  The maximum error in the computation was    0.00000    
+ 
+TEST10
+  RFFTF can compute the Fourier transform of a real
+  vector of data.  In this case, the vector is
+ 
+    (1,1,1,...,1)
+ 
+  and the transform should be
+ 
+    (N,0,0,...,0), 
+ 
+  where N is the number of entries, N =   36
+ 
+  The maximum error in computation is    0.00000    
+ 
+TEST11
+  RFFTB can recover a real vector of data from Fourier
+  coefficients.  In this case, the coefficients are:
+ 
+    (1,0,0,...,0)
+ 
+  and the data should be:
+ 
+    (1,1,1,...,1).
+ 
+  The maximum error in computation is    0.00000    
+ 
+TEST12
+  For real slow Fourier transform,
+  R4_SFTF computes the forward transform.
+  R4_SFTB computes the backward transform.
+ 
+  The number of data values, N =   36
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+      36     3.03064    
+ 
+  A (cosine) coefficients:
+ 
+  0   2.25252    
+  1  0.292827    
+  2 -0.404827E-01
+  3  0.697280E-01
+  4  0.515491E-02
+  5 -0.773520    
+  6  0.195034    
+  7 -0.427018    
+  8 -0.466789    
+  9 -0.622375E-01
+ 10  0.344637E-01
+ 11  0.130459    
+ 12 -0.437983    
+ 13  0.204674    
+ 14  0.593319E-01
+ 15 -0.310626    
+ 16 -0.320757    
+ 17 -0.283382    
+ 18 -0.441934E-01
+ 
+  B (sine) coefficients:
+ 
+  1 -0.194480    
+  2 -0.174566E-01
+  3 -0.185817    
+  4  0.366842    
+  5  0.623649E-02
+  6  0.499147    
+  7  0.128054    
+  8  0.769981    
+  9 -0.736449    
+ 10 -0.573319    
+ 11 -0.429597    
+ 12 -0.185457    
+ 13  0.440427    
+ 14  0.109518    
+ 15 -0.218818    
+ 16 -0.121006E-01
+ 17 -0.304487    
+ 18  0.581429E-07
+ 
+  The retrieved data:
+ 
+       1    0.772032E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748795    
+       6    0.323732E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+      36     3.03064    
+ 
+TEST13
+  For real fast sine quarter wave transform,
+  SINQI initializes the transform;
+  SINQF does a forward transform;
+  SINQB does a backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The sine coefficients:
+ 
+       1     13034.4    
+       2     4217.86    
+       3     2624.76    
+       4     1672.59    
+       5     1740.68    
+       6     1050.38    
+       7     1156.38    
+       8     698.936    
+......  ..............
+    4096     34.8584    
+ 
+  The retrieved data:
+ 
+       1    0.772069E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748798    
+       6    0.323730E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+TEST14
+  For real slow quarter wave sine transform,
+  R4_SQSTF does a forward transform;
+  R4_SQSTB does a backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The sine coefficients:
+ 
+       1    -1.57935    
+       2    0.125093E-02
+       3   -0.512465    
+       4   -0.940617E-02
+       5   -0.333387    
+       6    0.764845E-02
+       7   -0.237483    
+       8    0.220906E-01
+......  ..............
+    4096   -0.109011E-01
+ 
+  The retrieved data:
+ 
+       1    0.778130E-01
+       2     2.61933    
+       3     4.04760    
+       4     4.58278    
+       5    0.749410    
+       6    0.316739E-01
+       7     4.09542    
+       8     2.00079    
+......  ..............
+    4096     3.12902    
+ 
+TEST15
+  For real fast sine transform,
+  RSINTI initializes the transform.
+  RSINT does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The sine coefficients:
+ 
+       1     12941.2    
+       2    -10.3781    
+       3     4199.30    
+       4     76.7303    
+       5     2731.93    
+       6    -63.2816    
+       7     1945.92    
+       8    -181.740    
+......  ..............
+    4096     1.71474    
+ 
+  The retrieved data:
+ 
+       1    0.859199E-01
+       2     2.62091    
+       3     4.05121    
+       4     4.58378    
+       5    0.751088    
+       6    0.328984E-01
+       7     4.09664    
+       8     2.00071    
+......  ..............
+    4096     3.13701    
+ 
+TEST16
+  For double precision fast sine transform,
+  DSINTI initializes the transform.
+  DSINT does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The sine coefficients:
+ 
+       1     12941.2    
+       2    -10.3784    
+       3     4199.26    
+       4     76.7309    
+       5     2731.91    
+       6    -63.2820    
+       7     1945.89    
+       8    -181.739    
+......  ..............
+    4096     1.71064    
+ 
+  The retrieved data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+TEST17
+  For real slow sine transform,
+  R4_SST does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The sine coefficients:
+ 
+       1     12941.2    
+       2    -10.3625    
+       3     4199.26    
+       4     76.7292    
+       5     2731.91    
+       6    -63.2809    
+       7     1945.89    
+       8    -181.740    
+......  ..............
+    4096     1.66598    
+ 
+  The retrieved data:
+ 
+       1    0.771221E-01
+       2     2.62060    
+       3     4.04626    
+       4     4.58352    
+       5    0.749013    
+       6    0.320484E-01
+       7     4.09486    
+       8     2.00123    
+......  ..............
+    4096     3.12826    
+ 
+TEST18
+  For double precision slow sine transform,
+  R8_SST does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The sine coefficients:
+ 
+       1     12941.2    
+       2    -10.3784    
+       3     4199.26    
+       4     76.7309    
+       5     2731.91    
+       6    -63.2820    
+       7     1945.89    
+       8    -181.739    
+......  ..............
+    4096     1.71064    
+ 
+  The retrieved data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+TEST19
+  For real fast cosine transform,
+  RCOSTI initializes the transform.
+  RCOST does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The cosine coefficients:
+ 
+       1     20345.3    
+       2    -168.139    
+       3    -3.11040    
+       4    -139.038    
+       5     212.093    
+       6    -298.441    
+       7     21.3278    
+       8    -302.486    
+......  ..............
+    4096     92.3568    
+ 
+  The retrieved data:
+ 
+       1    0.790620E-01
+       2     2.62045    
+       3     4.04645    
+       4     4.58339    
+       5    0.748725    
+       6    0.323661E-01
+       7     4.09509    
+       8     2.00034    
+......  ..............
+    4096     3.12729    
+ 
+TEST20
+  For double precision fast cosine transform,
+  DCOSTI initializes the transform.
+  DCOST does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The cosine coefficients:
+ 
+       1     20345.3    
+       2    -168.139    
+       3    -3.11055    
+       4    -139.038    
+       5     212.092    
+       6    -298.441    
+       7     21.3277    
+       8    -302.487    
+......  ..............
+    4096     92.3539    
+ 
+  The retrieved data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+TEST21
+  For real slow cosine transform,
+  R4_SCT does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The cosine coefficients:
+ 
+       1     10174.2    
+       2    -171.180    
+       3    0.946808E-01
+       4    -142.085    
+       5     215.296    
+       6    -301.493    
+       7     24.5361    
+       8    -305.540    
+......  ..............
+    4096     44.6475    
+ 
+  The retrieved data:
+ 
+       1    0.766852E-01
+       2     2.61900    
+       3     4.04454    
+       4     4.58132    
+       5    0.748437    
+       6    0.323638E-01
+       7     4.09315    
+       8     1.99947    
+......  ..............
+    4096     3.12762    
+ 
+TEST22
+  For double precision slow cosine transform,
+  R8_SCT does a forward or backward transform.
+ 
+  The number of data items is N = 4096
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+  The cosine coefficients:
+ 
+       1     20347.8    
+       2    -168.160    
+       3    -3.11093    
+       4    -139.055    
+       5     212.118    
+       6    -298.478    
+       7     21.3303    
+       8    -302.524    
+......  ..............
+    4096     92.3652    
+ 
+  The retrieved data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+    4096     3.12914    
+ 
+TEST23
+  For real slow Hartley transform,
+  R4_SHT does a forward or backward transform.
+ 
+  The number of data items is N =   17
+ 
+  The original data:
+ 
+       1    0.772071E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748797    
+       6    0.323731E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+      17    0.888674    
+ 
+  The Hartley coefficients:
+ 
+       1     8.44179    
+       2   -0.573413E-01
+       3     1.33851    
+       4     1.14927    
+       5    -3.12759    
+       6    0.170665    
+       7    0.981543    
+       8   -0.738901    
+......  ..............
+      17   -0.932249    
+ 
+  The retrieved data:
+ 
+       1    0.772063E-01
+       2     2.62028    
+       3     4.04650    
+       4     4.58355    
+       5    0.748799    
+       6    0.323737E-01
+       7     4.09514    
+       8     2.00043    
+......  ..............
+      17    0.888674    
+ 
+FFTPACK4_TEST
+  Normal end of execution.
+ 
+April 15 2020   6:21:28.750 PM

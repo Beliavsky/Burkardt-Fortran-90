@@ -1,0 +1,52 @@
+28 July 2020   6:07:17.361 PM
+
+LOG_NORMAL_TRUNCATED_AB_TEST
+  FORTRAN90 version.
+  Test the LOG_NORMAL_TRUNCATED_AB library.
+
+LOG_NORMAL_TRUNCATED_AB_CDF_TEST
+  LOG_NORMAL_TRUNCATED_AB_CDF evaluates the Lognormal Truncated AB CDF
+  LOG_NORMAL_TRUNCATED_AB_CDF_INV inverts the Lognormal Truncated AB CDF.
+  LOG_NORMAL_TRUNCATED_AB_PDF evaluates the Lognormal Truncated AB PDF
+
+  PDF parameter MU =              0.500000    
+  PDF parameter SIGMA =            3.00000    
+  PDF parameter A =                1.64872    
+  PDF parameter B =                665.142    
+
+              X             PDF             CDF         CDF_INV
+
+     3.64375        0.738451E-01    0.218418         3.64375    
+     278.982        0.231325E-03    0.956318         278.982    
+     71.9026        0.175554E-02    0.829509         71.9026    
+     14.8427        0.143555E-01    0.561695         14.8427    
+     7.82823        0.311052E-01    0.415307         7.82823    
+     2.09078        0.132853        0.661187E-01     2.09078    
+     4.21879        0.628864E-01    0.257578         4.21879    
+     2.44921        0.112782        0.109957         2.44921    
+     1.92971        0.144196        0.438290E-01     1.92971    
+     21.1661        0.916677E-02    0.633966         21.1661    
+
+LOG_NORMAL_TRUNCATED_AB_SAMPLE_TEST
+  LOG_NORMAL_TRUNCATED_AB_MEAN computes the Log Normal Truncated AB mean
+  LOG_NORMAL_TRUNCATED_AB_SAMPLE samples the Log Normal Truncated AB distribution
+  LOG_NORMAL_TRUNCATED_AB_VARIANCE computes the Log Normal Truncated AB variance.
+
+  PDF parameter MU =              0.500000    
+  PDF parameter SIGMA =            3.00000    
+  PDF parameter A =                1.64872    
+  PDF parameter B =                665.142    
+
+  PDF mean =                       48.9182    
+  PDF variance =                   9451.08    
+
+  Sample size =       1000
+  Sample mean =        49.0829    
+  Sample variance =    9773.64    
+  Sample maximum =     629.881    
+  Sample minimum =     1.65963    
+
+LOG_NORMAL_TRUNCATED_AB_TEST
+  Normal end of execution.
+
+28 July 2020   6:07:17.362 PM

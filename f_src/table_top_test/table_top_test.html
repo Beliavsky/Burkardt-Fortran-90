@@ -1,0 +1,240 @@
+<html>
+
+  <head>
+    <title>
+      table_top_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      table_top_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>table_top_test</b>,
+      a FORTRAN90 code which
+      calls table_top(), which
+      displays patterns in a set of N points in M dimensions.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/table_top/table_top.html">
+      table_top</a>,
+      a FORTRAN90 code which
+      is given a table file of M-dimensional points, makes plots of all
+      coordinate pairs;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "table_top_test.sh">table_top_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "table_top_test.txt">table_top_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>POWERS.TXT</b> is a set of data that does not lie between 0 and
+      1.  (The TABLE_TOP program used to assume, in fact, that the
+      data did lie between 0 and 1.)  Test files you may copy include:
+      <ul>
+        <li>
+          <a href = "powers.txt">powers.txt</a>,
+          a set of 4 dimensional sample data.
+        </li>
+        <li>
+          <a href = "powers_output.txt">powers_output.txt</a>,
+          the printed output from running TABLE_TOP on the data.
+        </li>
+        <li>
+          <a href = "powers.png">powers.png</a>,
+          a PNG image of
+          the sample data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TABLE_TOP_INPUT.TXT</b> is a dummy set of data.  There are 10
+      4 dimensional points.  Test files you may copy include:
+      <ul>
+        <li>
+          <a href = "table_top_input.txt">table_top_input.txt</a>,
+          a set of 4 dimensional sample data.
+        </li>
+        <li>
+          <a href = "table_top_test.txt">table_top_test.txt</a>,
+          the printed output from running TABLE_TOP on the data.
+        </li>
+        <li>
+          <a href = "table_top_test.png">table_top_test.png</a>,
+          a PNG image of
+          the sample data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CVT_03_00007.TXT</b> is a set of 3 dimensional data, generated
+      by a centroidal Voronoi tessellation process.  We were interested
+      in seeing how the 2D projections looked.  Test files you may copy include:
+      <ul>
+        <li>
+          <a href = "cvt_03_00007.txt">cvt_03_00007.txt</a>,
+          a set of 3 dimensional sample data.
+        </li>
+        <li>
+          <a href = "cvt_03_00007_output.txt">cvt_03_00007_output.txt</a>,
+          the printed output from running TABLE_TOP on the data.
+        </li>
+        <li>
+          <a href = "cvt_03_00007.png">cvt_03_00007.png</a>,
+          a PNG image of
+          the sample data.
+        </li>
+        <li>
+          <a href = "cvt_03_00007.latin.txt">cvt_03_00007.latin.txt</a>,
+          a "latinized" version of the data set.
+        </li>
+        <li>
+          <a href = "cvt_03_00007.latin.png">cvt_03_00007.latin.png</a>,
+          a PNG image of
+          the "latinized" version of the data set.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CVT_03_00056.TXT</b> is 8 times as much data as CVT_03_00007.TXT.
+      We really hoped that we would see a pattern, and for once,
+      our hopes were rewarded.  The 2D projections clearly indicate
+      the formation of a roughly regular grid that divides the
+      faces into cells.  Test files you may copy include:
+      <ul>
+        <li>
+          <a href = "cvt_03_00056.txt">cvt_03_00056.txt</a>,
+          a set of 3 dimensional sample data.
+        </li>
+        <li>
+          <a href = "cvt_03_00056_output.txt">cvt_03_00056_output.txt</a>,
+          the printed output from running TABLE_TOP on the data.
+        </li>
+        <li>
+          <a href = "cvt_03_00056.png">cvt_03_00056.png</a>,
+          a PNG image of
+          the sample data.
+        </li>
+        <li>
+          <a href = "cvt_03_00056.latin.txt">cvt_03_00056.latin.txt</a>,
+          a "latinized" version of the data set.
+        </li>
+        <li>
+          <a href = "cvt_03_00056.latin.png">cvt_03_00056.latin.png</a>,
+          a PNG image of
+          the "latinized" version of the data set.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CVT_07_00100.TXT</b> is a set of 7 dimensional data, generated
+      by a centroidal Voronoi tessellation process.  It is desirable
+      to have the data points well spread out.  However, the facts of
+      7 dimensional geometry fight against this (let alone any defects
+      in the CVT algorithm)!  Test files you may copy include:
+      <ul>
+        <li>
+          <a href = "cvt_07_00100.txt">cvt_07_00100.txt</a>,
+          a set of 4 dimensional sample data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100_output.txt">cvt_07_00100_output.txt</a>,
+          the printed output from running TABLE_TOP on the data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100_0.png">cvt_07_00100_0.png</a>,
+          a PNG image of
+          the "page 0" of the sample data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100_1.png">cvt_07_00100_1.png</a>,
+          a PNG image of
+          the "page 1" of the sample data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100_2.png">cvt_07_00100_2.png</a>,
+          a PNG image of
+          the "page 2" of the sample data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100_3.png">cvt_07_00100_3.png</a>,
+          a PNG image of
+          the "page 3" of the sample data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100.latin.txt">cvt_07_00100.latin.txt</a>,
+          a "latinized" version of the data set.
+        </li>
+        <li>
+          <a href = "cvt_07_00100.latin_0.png">cvt_07_00100.latin_0.png</a>,
+          a PNG image of
+          the "page 0" of the "latinized" data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100.latin_1.png">cvt_07_00100.latin_1.png</a>,
+          a PNG image of
+          the "page 1" of the "latinized" data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100.latin_2.png">cvt_07_00100.latin_2.png</a>,
+          a PNG image of
+          the "page 2" of the "latinized" data.
+        </li>
+        <li>
+          <a href = "cvt_07_00100.latin_3.png">cvt_07_00100.latin_3.png</a>,
+          a PNG image of
+          the "page 3" of the "latinized" data.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 02 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

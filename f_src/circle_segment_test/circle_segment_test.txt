@@ -1,0 +1,271 @@
+ 9 June 2020   3:21:06.042 PM
+ 
+CIRCLE_SEGMENT_TEST
+  FORTRAN90 version
+  Test the CIRCLE_SEGMENT library.
+ 
+TEST01
+  CIRCLE_SEGMENT_AREA_FROM_HEIGHT computes the area of a circle segment.
+ 
+          R               H               Area
+ 
+        1.000000        1.000000        1.570796
+        1.000000        0.500000        0.614185
+        1.000000        0.250000        0.226656
+        1.000000        0.125000        0.081753
+        1.000000        0.062500        0.029185
+        1.000000        0.031250        0.010368
+        1.000000        0.015625        0.003674
+        1.000000        0.007812        0.001301
+        1.000000        0.003906        0.000460
+        1.000000        0.001953        0.000163
+        1.000000        0.000977        0.000058
+
+CIRCLE_SEGMENT_TEST05
+  For circle segment with a given radius R,
+  CIRCLE_SEGMENT_AREA_FROM_HEIGHT computes the area A, given the height.
+  CIRCLE_SEGMENT_HEIGHT_FROM_AREA computes height H, given the area.
+  Check that these functions are inverses of each other
+  using random values of R, A, and H.
+
+        R             H      =>     A    =>       H2
+
+      1.092091      2.088773      3.689558      2.088773
+      4.147546      4.659316     31.255434      4.659316
+      2.076535      0.274596      0.383139      0.274596
+      1.287889      0.283224      0.311686      0.283224
+      0.219145      0.277861      0.100860      0.277861
+
+        R             A      =>     H    =>       A2
+
+      0.308636      0.134527      0.284147      0.134527
+      2.006531      9.545549      2.833249      9.545548
+      3.986435      0.091781      0.084254      0.091781
+      4.487520     22.190306      3.425477     22.190306
+      0.472724      0.009560      0.038196      0.009560
+
+CIRCLE_SEGMENT_TEST06
+  CIRCLE_SEGMENT_SAMPLE_FROM_HEIGHT samples a circle segment.
+
+  Plot  100 points from several segments.
+
+ 
+  Created boundary file "sample01_boundary.txt".
+ 
+  Created data file "sample01_data.txt".
+  Created command file "sample01_commands.txt".
+ 
+  Created boundary file "sample02_boundary.txt".
+ 
+  Created data file "sample02_data.txt".
+  Created command file "sample02_commands.txt".
+ 
+  Created boundary file "sample03_boundary.txt".
+ 
+  Created data file "sample03_data.txt".
+  Created command file "sample03_commands.txt".
+ 
+  Created boundary file "sample04_boundary.txt".
+ 
+  Created data file "sample04_data.txt".
+  Created command file "sample04_commands.txt".
+
+TEST07
+  For circle segment with a given radius R,
+  CIRCLE_SEGMENT_ANGLE_FROM_HEIGHT computes the angle THETA, given the height.
+  CIRCLE_SEGMENT_HEIGHT_FROM_ANGLE computes height H, given the angle.
+  Check that these functions are inverses of each other
+  using random values of R, T, and H.
+
+        R             H      =>     T    =>       H2
+
+      1.092091      2.088773      5.440962      2.088773
+      4.147546      4.659316      3.389005      4.659316
+      2.076535      0.274596      1.040228      0.274596
+      1.287889      0.283224      1.351985      0.283224
+      0.219145      0.277861      3.684083      0.277861
+
+        R             T      =>     H    =>       T2
+
+      0.308636      2.824537      0.259913      2.824537
+      2.006531      4.741753      3.446041      4.741753
+      3.986435      0.011551      0.000066      0.011551
+      4.487520      2.203842      2.459685      2.203842
+      0.472724      0.085557      0.000432      0.085557
+ 
+TEST08
+  CIRCLE_SEGMENT_CONTAINS_POINT reports whether
+  a circle segment contains a point.
+ 
+  Pick a circle segment at random.
+  Compute 1000 sample points in the surrounding box.
+  Compare the area of the segment to the percentage of points
+  contained in the circle segment.
+ 
+       N       Omega1          Omega2           Area         Estimate
+ 
+    1000     1.37236         6.00872         2.81673         2.81200    
+    1000    0.776884         6.92149         3.14137         3.17600    
+    1000     2.78572         3.60979        0.450766E-01    0.360000E-01
+    1000     1.42744         1.71406        0.195431E-02     0.00000    
+    1000     5.36344         11.0425         3.12355         3.18000    
+
+CIRCLE_SEGMENT_TEST09
+  CIRCLE_SEGMENT_AREA_FROM_CHORD and
+  CIRCLE_SEGMENT_CENTROID_FROM_CHORD evaluate the area
+  and centroid of a circle segment, given R, C and P1:P2.
+
+  CIRCLE_SEGMENT_AREA_FROM_SAMPLE and
+  CIRCLE_SEGMENT_CENTROID_FROM_SAMPLE give us Monte Carlo estimates.
+
+  GQCIRCSEGM can estimate these values by quadrature.
+
+  Start easy, with R = 1, C = (0,0), and Theta centered.
+
+         Area          CentroidX    CentroidY
+
+    0.391457E-01    0.954429        0.370870E-15
+    0.391457E-01    0.954429        -0.00000    
+    0.367566E-01    0.954632        0.339091E-03
+
+TEST11:
+  CIRCLE_SEGMENT_ROTATION_FROM_CHORD is given the endpoints
+  of a chord, and is asked to determine the angle of the
+  central radius vector.
+
+  We make a table of all pairs of angles that are multiples
+  of pi/12, determine the corresponding chord endpoints, and
+  compute the rotation angle, also printed as a multiple of pi/12.
+
+     0.0   1.0   2.0   3.0   4.0   5.0   6.0   7.0   8.0   9.0  10.0  11.0  12.0
+
+ 0   6.0   0.5   1.0   1.5   2.0   2.5   3.0   3.5   4.0   4.5   5.0   5.5   6.0 
+ 1   6.5   7.0   1.5   2.0   2.5   3.0   3.5   4.0   4.5   5.0   5.5   6.0   6.5 
+ 2   7.0   7.5   8.0   2.5   3.0   3.5   4.0   4.5   5.0   5.5   6.0   6.5   7.0 
+ 3   7.5   8.0   8.5   9.0   3.5   4.0   4.5   5.0   5.5   6.0   6.5   7.0   7.5 
+ 4   8.0   8.5   9.0   9.5  10.0   4.5   5.0   5.5   6.0   6.5   7.0   7.5   8.0 
+ 5   8.5   9.0   9.5  10.0  10.5  11.0   5.5   6.0   6.5   7.0   7.5   8.0   8.5 
+ 6   9.0   9.5  10.0  10.5  11.0  11.5   0.0   6.5   7.0   7.5   8.0   8.5   9.0 
+ 7   9.5  10.0  10.5  11.0  11.5   0.0   0.5   1.0   7.5   8.0   8.5   9.0   9.5 
+ 8  10.0  10.5  11.0  11.5   0.0   0.5   1.0   1.5   2.0   8.5   9.0   9.5  10.0 
+ 9  10.5  11.0  11.5   0.0   0.5   1.0   1.5   2.0   2.5   3.0   9.5  10.0  10.5 
+10  11.0  11.5   0.0   0.5   1.0   1.5   2.0   2.5   3.0   3.5   4.0  10.5  11.0 
+11  11.5   0.0   0.5   1.0   1.5   2.0   2.5   3.0   3.5   4.0   4.5   5.0  11.5 
+12   6.0   0.5   1.0   1.5   2.0   2.5   3.0   3.5   4.0   4.5   5.0   5.5   6.0 
+
+TEST13
+  GAUSS computes the points and weights for a
+  Gauss quadrature rule, given the ALPHA and BETA
+  recursion coefficients.
+
+  LEGENDRE RULE
+  Point   Weight
+
+   -0.973907        0.666713E-01
+   -0.865063        0.149451    
+   -0.679410        0.219086    
+   -0.433395        0.269267    
+   -0.148874        0.295524    
+    0.148874        0.295524    
+    0.433395        0.269267    
+    0.679410        0.219086    
+    0.865063        0.149451    
+    0.973907        0.666713E-01
+
+  HERMITE RULE
+  Point   Weight
+
+    -3.43616        0.764043E-05
+    -2.53273        0.134365E-02
+    -1.75668        0.338744E-01
+    -1.03661        0.240139    
+   -0.342901        0.610863    
+    0.342901        0.610863    
+     1.03661        0.240139    
+     1.75668        0.338744E-01
+     2.53273        0.134365E-02
+     3.43616        0.764043E-05
+
+  LAGUERRE RULE
+  Point   Weight
+
+    0.137793        0.308441    
+    0.729455        0.401120    
+     1.80834        0.218068    
+     3.40143        0.620875E-01
+     5.55250        0.950152E-02
+     8.33015        0.753008E-03
+     11.8438        0.282592E-04
+     16.2793        0.424931E-06
+     21.9966        0.183956E-08
+     29.9207        0.991183E-12
+
+TEST14
+  R_JACOBI computes recursion coefficients ALPHA and BETA
+  Gauss quadrature rule, given the ALPHA and BETA
+  recursion coefficients.
+
+  Legendre weight
+  A =    0.00000      B =    0.00000    
+  Alpha          Beta
+
+     0.00000         2.00000    
+     0.00000        0.333333    
+     0.00000        0.266667    
+     0.00000        0.257143    
+     0.00000        0.253968    
+     0.00000        0.252525    
+     0.00000        0.251748    
+     0.00000        0.251282    
+     0.00000        0.250980    
+     0.00000        0.250774    
+
+  Chebyshev Type 1 weight
+  A =  -0.500000      B =  -0.500000    
+  Alpha          Beta
+
+     0.00000         3.14159    
+    -0.00000        0.500000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+    -0.00000        0.250000    
+
+  Chebyshev Type 2 weight
+  A =   0.500000      B =   0.500000    
+  Alpha          Beta
+
+     0.00000         1.57080    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+     0.00000        0.250000    
+
+  General Jacobi weight
+  A =   0.500000      B =    1.50000    
+  Alpha          Beta
+
+    0.250000         1.57080    
+    0.833333E-01    0.187500    
+    0.416667E-01    0.222222    
+    0.250000E-01    0.234375    
+    0.166667E-01    0.240000    
+    0.119048E-01    0.243056    
+    0.892857E-02    0.244898    
+    0.694444E-02    0.246094    
+    0.555556E-02    0.246914    
+    0.454545E-02    0.247500    
+ 
+CIRCLE_SEGMENT_TEST
+  Normal end of execution.
+ 
+ 9 June 2020   3:21:06.071 PM

@@ -1,0 +1,145 @@
+<html>
+
+  <head>
+    <title>
+      CONTINUED_FRACTION - Evaluation of Continued Fractions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CONTINUED_FRACTION <br> Evaluation of Continued Fractions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CONTINUED_FRACTION</b>,
+      a FORTRAN90 code which
+      implements some simple algorithms for dealing with simple and
+      generalized continued fractions.
+    </p>
+
+    <p>
+      Mathematically, continued fractions are infinite sums.  In general,
+      they are treated computationally as finite sums.  Here we will assume
+      that all such sums terminate at index N.
+    </p>
+
+    <p>
+      A simple continued fraction (SCF) is a representation of a number
+      R as:
+      <pre>
+        R = A0 + 1 / ( A1 + 1 / ( A2 + 1 / ( A3 + ... + 1 / AN )...)))
+      </pre>
+    </p>
+
+    <p>
+      A generalized continued fraction (GCF) is a representation of a number
+      R as:
+      <pre>
+        R = A0 + B1 / ( A1 + B2 / ( A2 + B3 / ( A3 + ... + BN / AN )...)))
+      </pre>
+    </p>
+
+    <p>
+      For either form of continued fraction, there are two tasks:
+      <ol>
+        <li>
+          Given a value R, determine an N-term SCF or GCF which is equal to,
+          or approximates, R.
+        </li>
+        <li>
+          Given the coefficients of an SCF or GCF, determine the sequence
+          of rational values represented by computing the partial sums.
+          The final sum is the value R.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      I don't care what you do with this code.
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CONTINUED_FRACTION</b> is available in
+      <a href = "../../c_src/continued_fraction/continued_fraction.html">a C version</a> and
+      <a href = "../../cpp_src/continued_fraction/continued_fraction.html">a C++ version</a> and
+      <a href = "../../f_src/continued_fraction/continued_fraction.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/continued_fraction/continued_fraction.html">a MATLAB version</a> and
+      <a href = "../../py_src/continued_fraction/continued_fraction.html">a Python version</a> and.
+    </p>
+
+    <h3 align = "center">
+      Related Software and Data:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/continued_fraction_test/continued_fraction_test.html">
+      continued_fraction_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/subset/subset.html">
+      SUBSET</a>,
+      a FORTRAN90 code which
+      enumerates, generates, randomizes, ranks and unranks combinatorial objects
+      including combinations, compositions, Gray codes, index sets, partitions, 
+      permutations, polynomials, subsets, and Young tables.  Backtracking 
+      routines are included to solve some combinatorial problems.  Some routines
+      for continued fractions are included.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Norman Richert,<br>
+          Strang's Strange Figures,<br>
+          American Mathematical Monthly,<br>
+          Volume 99, Number 2, February 1992, pages 101-107.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "continued_fraction.f90">continued_fraction.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "continued_fraction.sh">continued_fraction.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

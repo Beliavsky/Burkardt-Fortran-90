@@ -1,0 +1,97 @@
+12 September 2020  10:06:34.168 PM
+ 
+WEEKDAY_TEST:
+  FORTRAN90 version
+  Test the WEEKDAY library.
+
+JED_TO_WEEKDAY_TEST:
+  FORTRAN90 version
+  JED_TO_WEEKDAY determines the weekday
+  corresponding to a JED.
+
+             JED  W     W
+                  True  Computed
+
+  1507231.500000     1         1    0.0000
+  1660037.500000     4         4    0.0000
+  1746893.500000     4         4    0.0000
+  1770641.500000     1         1    0.0000
+  1892731.500000     4         4    0.0000
+  1931579.500000     2         2    7.0000
+  1974851.500000     7         7    0.0000
+  2091164.500000     1         1    0.0000
+  2121509.500000     1         1    0.0000
+  2155779.500000     6         6    0.0000
+  2174029.500000     7         7    0.0000
+  2191584.500000     6         6    0.0000
+  2195261.500000     1         1    0.0000
+  2229274.500000     1         1    0.0000
+  2245580.500000     4         4    0.0000
+  2266100.500000     7         7    0.0000
+  2288542.500000     7         7    0.0000
+  2290901.500000     7         7    0.0000
+  2323140.500000     4         4    0.0000
+  2334848.500000     1         1    0.0000
+  2348020.500000     6         6    0.0000
+  2366978.500000     1         1    0.0000
+  2385648.500000     2         2    7.0000
+  2392825.500000     4         4    0.0000
+  2416223.500000     1         1    0.0000
+  2425848.500000     1         1    0.0000
+  2430266.500000     2         2    7.0000
+  2430833.500000     2         2    7.0000
+  2431004.500000     5         5    0.0000
+  2448698.500000     3         3    0.0000
+  2450138.500000     1         1    0.0000
+  2465737.500000     4         4    0.0000
+  2486076.500000     1         1    0.0000
+
+JED_TO_WEEKDAY_TEST:
+  Normal end of execution.
+ 
+YMD_TO_WEEKDAY_COMMON_TEST
+  YMD_TO_WEEKDAY_COMMON returns the day of the week
+  for dates in the Common calendar:
+ 
+  YMD                   Weekday    Weekday
+                        Tabulated  Computed
+ 
+  BCE 587/07/30         Sunday     Sunday   
+  BCE 169/12/08         Wednesday  Wednesday
+  CE 70/09/26           Wednesday  Wednesday
+  CE 135/10/03          Sunday     Sunday   
+  CE 470/01/07          Wednesday  Wednesday
+  CE 576/05/18          Monday     Monday   
+  CE 694/11/07          Saturday   Saturday 
+  CE 1013/04/19         Sunday     Sunday   
+  CE 1066/10/14         Saturday   Saturday 
+  CE 1096/05/18         Sunday     Sunday   
+  CE 1190/03/16         Friday     Friday   
+  CE 1240/03/03         Saturday   Saturday 
+  CE 1288/03/26         Friday     Friday   
+  CE 1298/04/20         Sunday     Sunday   
+  CE 1391/06/04         Sunday     Sunday   
+  CE 1436/01/25         Wednesday  Wednesday
+  CE 1492/03/31         Saturday   Saturday 
+  CE 1553/09/09         Saturday   Saturday 
+  CE 1560/02/24         Saturday   Saturday 
+  CE 1648/06/10         Wednesday  Wednesday
+  CE 1680/06/30         Sunday     Sunday   
+  CE 1716/07/24         Friday     Friday   
+  CE 1768/06/19         Sunday     Sunday   
+  CE 1819/08/02         Monday     Monday   
+  CE 1839/03/27         Wednesday  Wednesday
+  CE 1903/04/19         Sunday     Sunday   
+  CE 1929/08/25         Sunday     Sunday   
+  CE 1941/09/29         Monday     Monday   
+  CE 1943/04/19         Monday     Monday   
+  CE 1943/10/07         Thursday   Thursday 
+  CE 1992/03/17         Tuesday    Tuesday  
+  CE 1996/02/25         Sunday     Sunday   
+  CE 2038/11/10         Wednesday  Wednesday
+  CE 2094/07/18         Sunday     Sunday   
+ 
+WEEKDAY_TEST:
+  Noraml end of execution.
+ 
+12 September 2020  10:06:34.168 PM

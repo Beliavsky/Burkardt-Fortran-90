@@ -1,0 +1,299 @@
+<html>
+
+  <head>
+    <title>
+      LEGENDRE_EXACTNESS - Exactness of Gauss-Legendre Quadrature Rules
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LEGENDRE_EXACTNESS <br> Exactness of Gauss-Legendre Quadrature Rules
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LEGENDRE_EXACTNESS</b>,
+      a FORTRAN90 code which
+      investigates the polynomial exactness of Gauss-Legendre
+      quadrature rules for the interval [-1,+1].
+    </p>
+
+    <p>
+      This program is actually appropriate for any quadrature
+      rule that estimates integrals on [-1,+1], and which does not including
+      a weighting function <b>w(x)</b> in the integral.  This includes:
+      <ul>
+        <li>
+          <i>Clenshaw-Curtis</i> rules;
+        </li>
+        <li>
+          <i>Fejer</i> rules of Type 1 or 2;
+        </li>
+        <li>
+          <i>Gauss-Legendre</i> rules;
+        </li>
+        <li>
+          <i>Gauss-Lobatto</i> rules (Gauss rule including both endpoints);
+        </li>
+        <li>
+          <i>Gauss-Patterson</i> rules;
+        </li>
+        <li>
+          <i>Gauss-Radau</i> rules (Gauss rule including one endpoint);
+        </li>
+        <li>
+          <i>Newton-Cotes</i> rules, open and closed forms;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Standard Gauss-Legendre quadrature assumes that the integrand we are
+      considering has a form like:
+      <pre>
+        Integral ( -1 &lt;= x &lt;= +1 ) f(x) dx
+      </pre>
+    </p>
+
+    <p>
+      A <i>standard Gauss-Legendre quadrature rule</i> is a set of <b>n</b>
+      positive weights <b>w</b> and abscissas <b>x</b> so that
+      <pre>
+        Integral ( -1 &lt;= x &lt;= +1 ) f(x) dx
+      </pre>
+      may be approximated by
+      <pre>
+        Sum ( 1 &lt;= I &lt;= N ) w(i) * f(x(i))
+      </pre>
+    </p>
+
+    <p>
+      For a standard Gauss-Legendre rule, polynomial exactness is defined in terms of
+      the function <b>f(x)</b>.  That is, we say the rule is exact for polynomials
+      up to degree DEGREE_MAX if, for any polynomial <b>f(x)</b> of that degree or
+      less, the quadrature rule will produce the exact value of
+      <pre>
+        Integral ( -1 &lt;= x &lt;= +1 ) f(x) dx
+      </pre>
+    </p>
+
+    <p>
+      The program starts at <b>DEGREE</b> = 0, and then
+      proceeds to <b>DEGREE</b> = 1, 2, and so on up to a maximum degree
+      <b>DEGREE_MAX</b> specified by the user.  At each value of <b>DEGREE</b>,
+      the program generates the corresponding monomial term, applies the
+      quadrature rule to it, and determines the quadrature error.  For comparison,
+      it also computes and prints the error for the trapezoid rule of the same order.
+      The program uses a scaling factor on each monomial so that the exact integral
+      should always be 1; therefore, each reported error can be compared
+      on a fixed scale.
+    </p>
+
+    <p>
+      The program is very flexible and interactive.  The quadrature rule
+      is defined by three files, to be read at input, and the
+      maximum degree top be checked is specified by the user as well.
+    </p>
+
+    <p>
+      Note that the three files that define the quadrature rule
+      are assumed to have related names, of the form
+      <ul>
+        <li>
+          <i>prefix</i>_<b>x.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>w.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>r.txt</b>
+        </li>
+      </ul>
+      When running the program, the user only enters the common <i>prefix</i>
+      part of the file names, which is enough information for the program
+      to find all three files.
+    </p>
+
+    <p>
+      For information on the form of these files, see the
+      <b>QUADRATURE_RULES</b> directory listed below.
+    </p>
+
+    <p>
+      The exactness results are written to an output file with the
+      corresponding name:
+      <ul>
+        <li>
+          <i>prefix</i>_<b>exact.txt</b>
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>legendre_exactness</b> <i>prefix</i> <i>degree_max</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>prefix</i> is the common prefix for the files containing the abscissa, weight
+          and region information of the quadrature rule;
+        </li>
+        <li>
+          <i>degree_max</i> is the maximum monomial degree to check.  This would normally be
+          a relatively small nonnegative number, such as 5, 10 or 15.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      If the arguments are not supplied on the command line, the
+      program will prompt for them.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LEGENDRE_EXACTNESS</b> is available in
+      <a href = "../../c_src/legendre_exactness/legendre_exactness.html">a C version</a> and
+      <a href = "../../cpp_src/legendre_exactness/legendre_exactness.html">a C++ version</a> and
+      <a href = "../../f_src/legendre_exactness/legendre_exactness.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/legendre_exactness/legendre_exactness.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cube_exactness/cube_exactness.html">
+      CUBE_EXACTNESS</a>,
+      a FORTRAN90 code which
+      investigates the polynomial exactness of quadrature rules
+      over the interior of a cube in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/exactness/exactness.html">
+      EXACTNESS</a>,
+      a FORTRAN90 code which
+      investigates the exactness of quadrature rules that estimate the
+      integral of a function with a density, such as 1, exp(-x) or
+      exp(-x^2), over an interval such as [-1,+1], [0,+oo) or (-oo,+oo).
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_exactness/hermite_exactness.html">
+      HERMITE_EXACTNESS</a>,
+      a FORTRAN90 code which
+      tests the polynomial exactness of Gauss-Hermite quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_exactness/laguerre_exactness.html">
+      LAGUERRE_EXACTNESS</a>,
+      a FORTRAN90 code which
+      tests the polynomial exactness of Gauss-Laguerre quadrature rules
+      for integration over [0,+oo) with density function exp(-x).
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_exactness_test/legendre_exactness_test.html">
+      legendre_exactness_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_rule/legendre_rule.html">
+      LEGENDRE_RULE</a>,
+      a FORTRAN90 code which
+      generates a Gauss-Legendre quadrature
+      rule on request.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_rule_fast/legendre_rule_fast.html">
+      LEGENDRE_RULE_FAST</a>,
+      a FORTRAN90 code which
+      uses a fast (order N) algorithm to compute a Gauss-Legendre quadrature rule of given order.
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules/quadrature_rules.html">
+      QUADRATURE_RULES</a>,
+      a dataset directory which
+      contains sets of files that define quadrature
+      rules over various 1D intervals or multidimensional hypercubes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_int/test_int.html">
+      TEST_INT</a>,
+      a FORTRAN90 code which
+      defines integrand functions that can be approximately integrated by a Gauss-Legendre rule.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "legendre_exactness.f90">legendre_exactness.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "legendre_exactness.sh">legendre_exactness.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 25 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

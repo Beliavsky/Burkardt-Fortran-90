@@ -1,0 +1,248 @@
+<html>
+
+  <head>
+    <title>
+      POLYGON_PROPERTIES - Compute Properties of an Arbitrary Polygon
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      POLYGON_PROPERTIES <br> Compute Properties of an Arbitrary Polygon
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>POLYGON_PROPERTIES</b>,
+      a FORTRAN90 code which
+      computes properties of an arbitrary polygon in the plane, defined
+      by a sequence of vertices, including 
+      <ul>
+        <li>
+          angles;
+        </li>
+        <li>
+          area;
+        </li>
+        <li>
+          centroid;
+        </li>
+        <li>
+          containment of a point;
+        </li>
+        <li>
+          diameter;
+        </li>
+        <li>
+          expand polygon outward by H;
+        </li>
+        <li>
+          inradius of regular polygon to area, outradius side length;
+        </li>
+        <li>
+          integral over polygon of 1, x, x^2, xy, y, y^2;
+        </li>
+        <li>
+          is polygon convex?;
+        </li>
+        <li>
+          lattice area;
+        </li>
+        <li>
+          outradius of regular polygon to area, inradius, side length;
+        </li>
+        <li>
+          perimeter;
+        </li>
+        <li>
+          point to polygon distance;
+        </li>
+        <li>
+          point to nearest point on polygon;
+        </li>
+        <li>
+          sampling uniformly;
+        </li>
+        <li>
+          side length of regular polygon to area, inradius, outradius;
+        </li>
+        <li>
+          triangulation (decomposition into N-3 triangles).
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>POLYGON_PROPERTIES</b> is available in
+      <a href = "../../c_src/polygon_properties/polygon_properties.html">a C version</a> and
+      <a href = "../../cpp_src/polygon_properties/polygon_properties.html">a C++ version</a> and
+      <a href = "../../f_src/polygon_properties/polygon_properties.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/polygon_properties/polygon_properties.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/geometry/geometry.html">
+      GEOMETRY</a>,
+      a FORTRAN90 code which
+      performs geometric calculations in 2, 3 and N dimensional space.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hypersphere_properties/hypersphere_properties.html">
+      HYPERSPHERE_PROPERTIES</a>,
+      a FORTRAN90 code which
+      carries out various operations for an M-dimensional hypersphere, including 
+      converting between Cartesian and spherical coordinates, 
+      stereographic projection, sampling the surface of the sphere, and
+      computing the surface area and volume.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_integrals/polygon_integrals.html">
+      POLYGON_INTEGRALS</a>,
+      a FORTRAN90 code which
+      returns the exact value of the integral of any monomial
+      over the interior of a polygon in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_monte_carlo/polygon_monte_carlo.html">
+      POLYGON_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      over the interior of a polygon in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_properties_test/polygon_properties_test.html">
+      polygon_properties_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_triangulate/polygon_triangulate.html">
+      POLYGON_TRIANGULATE</a>,
+      a FORTRAN90 code which
+      triangulates a possibly nonconvex polygon,
+      and which can use gnuplot to display the external edges and 
+      internal diagonals of the triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_properties/tetrahedron_properties.html">
+      TETRAHEDRON_PROPERTIES</a>,
+      a FORTRAN90 code which
+      computes properties of a given tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_properties/triangle_properties.html">
+      TRIANGLE_PROPERTIES</a>,
+      a FORTRAN90 code which
+      computes properties of a triangle
+      whose vertex coordinates are read from a file.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gerard Bashein, Paul Detmer,<br>
+          Centroid of a Polygon,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          AP Professional, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>      
+          SF Bockman,<br>
+          Generalizing the Formula for Areas of Polygons to Moments,<br>
+          American Mathematical Society Monthly,<br>
+          Volume 96, Number 2, February 1989, pages 131-132.
+        </li>
+        <li>
+          Adrian Bowyer, John Woodwark,<br>
+          A Programmer's Geometry,<br>
+          Butterworths, 1983,<br>
+          ISBN: 0408012420.
+        </li>
+        <li>
+          Peter Schorn, Frederick Fisher,<br>
+          Testing the Convexity of a Polygon,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          AP Professional, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>
+          Moshe Shimrat,<br>
+          Algorithm 112:
+          Position of Point Relative to Polygon,<br>
+          Communications of the ACM,<br>
+          Volume 5, Number 8, August 1962, page 434.
+        </li>
+        <li>
+          Allen VanGelder,<br>
+          Efficient Computation of Polygon Area and Polyhedron Volume,<br>
+          in Graphics Gems V, <br>
+          edited by Alan Paeth,<br>
+          AP Professional, 1995,<br>
+          ISBN: 0125434553,<br>
+          LC: T385.G6975.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "polygon_properties.f90">polygon_properties.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "polygon_properties.sh">polygon_properties.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

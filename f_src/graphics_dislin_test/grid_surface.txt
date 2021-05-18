@@ -1,0 +1,17 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 22.07.2020  Time    : 10:12:55  Pageformat: USAP  <<
+ <<  Vectors : 3480        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: grid_surface.png                                  <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+22 July 2020  10:12:55.020 AM
+ 
+GRID_SURFACE:
+  FORTRAN90 version
+  Use DISLIN to plot Z(X,Y) data as a surface.
+ 
+GRID_SURFACE:
+  Normal end of execution.
+22 July 2020  10:12:55.036 AM

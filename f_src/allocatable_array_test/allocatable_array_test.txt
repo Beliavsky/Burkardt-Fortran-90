@@ -1,0 +1,24 @@
+22 January 2020   1:20:44.318 PM
+ 
+allocatable_array_test:
+  FORTRAN90 version
+  Show how a main program can declare an allocatable array
+  which can then be allocated and set in a subroutine,
+  and then returned to the main program.
+ 
+  The array size is N =        7
+ 
+  The array contents:
+ 
+         1       101
+         2       202
+         3       303
+         4       404
+         5       505
+         6       606
+         7       707
+ 
+allocatable_array_test:
+  Normal end of execution.
+ 
+22 January 2020   1:20:44.318 PM

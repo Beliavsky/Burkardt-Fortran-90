@@ -1,0 +1,158 @@
+<html>
+
+  <head>
+    <title>
+      polygon_triangulate_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      polygon_triangulate_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>polygon_triangulate_test</b>,
+      a FORTRAN90 code which
+      calls polygon_triangulate(), which
+      triangulates a possibly nonconvex polygon in 2D,
+      and which can use gnuplot to display the external edges and 
+      internal diagonals of the triangulation.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/polygon_triangulate/polygon_triangulate.html">
+      polygon_triangulate</a>,
+      a FORTRAN90 code which
+      triangulates a possibly nonconvex polygon,
+      and which uses gnuplot() to display the external edges and 
+      internal diagonals of the triangulation.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "polygon_triangulate_test.f90">polygon_triangulate_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "polygon_triangulate_test.sh">polygon_triangulate_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "polygon_triangulate_test.txt">polygon_triangulate_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+    
+    <p>
+      <b>COMB</b> is an example of a "comb" polygon of 10 vertices
+      <ul>
+        <li>
+          <a href = "comb_nodes.txt">comb_nodes.txt</a>,
+          the vertex coordinates.
+        </li>
+        <li>
+          <a href = "comb_elements.txt">comb_elements.txt</a>,
+          triples of vertex indices that make up the triangulation.
+        </li>
+        <li>
+          <a href = "comb_edges.txt">comb_edges.txt</a>,
+          pairs of vertex coordinates that form external edges.
+        </li>
+        <li>
+          <a href = "comb_diagonals.txt">comb_diagonals.txt</a>,
+          pairs of vertex coordinates that form internal diagonals.
+        </li>
+        <li>
+          <a href = "comb.png">comb.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>HAND</b> outlines a hand using 59 vertices.
+      <ul>
+        <li>
+          <a href = "hand_nodes.txt">hand_nodes.txt</a>,
+          the vertex coordinates.
+        </li>
+        <li>
+          <a href = "hand_elements.txt">hand_elements.txt</a>,
+          triples of vertex indices that make up the triangulation.
+        </li>
+        <li>
+          <a href = "hand_edges.txt">hand_edges.txt</a>,
+          pairs of vertex coordinates that form external edges.
+        </li>
+        <li>
+          <a href = "hand_diagonals.txt">hand_diagonals.txt</a>,
+          pairs of vertex coordinates that form internal diagonals.
+        </li>
+        <li>
+          <a href = "hand.png">hand.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>I18</b> is an example of a complicated nonconvex polygon, using 18 vertices.
+      <ul>
+        <li>
+          <a href = "i18_nodes.txt">i18_nodes.txt</a>,
+          the vertex coordinates.
+        </li>
+        <li>
+          <a href = "i18_elements.txt">i18_elements.txt</a>,
+          triples of vertex indices that make up the triangulation.
+        </li>
+        <li>
+          <a href = "i18_edges.txt">i18_edges.txt</a>,
+          pairs of vertex coordinates that form external edges.
+        </li>
+        <li>
+          <a href = "i18_diagonals.txt">i18_diagonals.txt</a>,
+          pairs of vertex coordinates that form internal diagonals.
+        </li>
+        <li>
+          <a href = "i18.png">i18.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,206 @@
+<html>
+
+  <head>
+    <title>
+      SPARSE_GRID_HW - Sparse Grids for Uniform and Normal Weights - Heiss and Winschel
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SPARSE_GRID_HW <br> Sparse Grids for Uniform and Normal Weights <br> Heiss and Winschel
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SPARSE_GRID_HW</b>,
+      a FORTRAN90 code which 
+      can compute sparse grids for multidimensional integration,
+      based on 1D rules for the unit interval with unit weight function,
+      or for the real line with the Gauss-Hermite weight function.
+      The original MATLAB code is by Florian Heiss and Viktor Winschel.
+    </p>
+
+    <p>
+      The original version of this software, and other information,
+      is available at <a href = "http://sparse-grids.de/">
+                                 http://sparse-grids.de </a>.
+
+    <p>
+      Four built-in 1D families of quadrature rules are supplied, and the
+      user can extend the package by supplying any family of 1D quadrature
+      rules.
+    </p>
+
+    <p>
+      The built-in families are identified by a 3-letter key which is also
+      the name of the routine that returns members of the family:
+      <ul>
+        <li>
+          <b>gqu</b>, standard Gauss-Legendre quadrature rules, for
+          the unit interval [0,1], with weight function w(x) = 1.
+        </li>
+        <li>
+          <b>gqn</b>, standard Gauss-Hermite quadrature rules, for
+          the infinite interval (-oo,+oo), with weight function 
+          w(x) = exp(-x*x/2)/sqrt(2*pi).
+        </li>
+        <li>
+          <b>kpu</b>, Kronrod-Patterson quadrature rules, for
+          the unit interval [0,1], with weight function w(x) = 1.
+          These sacrifice some of the precision of <b>gqu</b> in
+          order to provide a family of nested rules.
+        </li>
+        <li>
+          <b>kpn</b>, Kronrod-Patterson quadrature rules, for
+          the infinite interval (-oo,+oo), with weight function 
+          w(x) = exp(-x*x/2)/sqrt(2*pi).
+          These sacrifice some of the precision of <b>gqn</b> in
+          order to provide a family of nested rules.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The user can build new sparse grids by supplying a 1D quadrature family.
+      Examples provided include:
+      <ul>
+        <li>
+          <b>cce_order</b>, Clenshaw-Curtis Exponential quadrature rules, for
+          the unit interval [0,1], with weight function w(x) = 1.
+          The K-th call returns the rule of order 1
+          if K is 1, and 2*(K-1)+1 otherwise.
+        </li>
+        <li>
+          <b>ccl_order</b>, Clenshaw-Curtis Linear quadrature rules, for
+          the unit interval [0,1], with weight function w(x) = 1.
+          The K-th call returns the rule of order 2*K-1.
+        </li>
+        <li>
+          <b>ccs_order</b>, slow Clenshaw-Curtis Slow quadrature rules, for
+          the unit interval [0,1], with weight function w(x) = 1.
+          The K-th call returns the rule of order 1
+          if K is 1, and otherwise a rule whose order N has the
+          form 2^E+1 and is the lowest such order with precision at least 2*K-1.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SPARSE_GRID_HW</b> is available in
+      <a href = "../../c_src/sparse_grid_hw/sparse_grid_hw.html">a C version</a> and
+      <a href = "../../cpp_src/sparse_grid_hw/sparse_grid_hw.html">a C++ version</a> and
+      <a href = "../../f_src/sparse_grid_hw/sparse_grid_hw.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/sparse_grid_hw/sparse_grid_hw.html">a MATLAB version</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/product_rule/product_rule.html">
+      PRODUCT_RULE</a>,
+      a FORTRAN90 code which
+      constructs a product quadrature rule from <i>identical</i> 1D factor rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 code which
+      defines quadrature rules for various intervals and weight functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sparse_grid_hw_test/sparse_grid_hw_test.html">
+      sparse_grid_hw_test</a>
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Original MATLAB code by Florian Heiss and Viktor Winschel.
+      FORTRAN90 version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          Alan Genz, Bradley Keister,<br>
+          Fully symmetric interpolatory rules for multiple integrals
+          over infinite regions with Gaussian weight,<br>
+          Journal of Computational and Applied Mathematics,<br>
+          Volume 71, 1996, pages 299-309.
+        </li>
+        <li>
+          Florian Heiss, Viktor Winschel,<br>
+          Likelihood approximation by numerical integration on sparse grids,<br>
+          Journal of Econometrics,<br>
+          Volume 144, Number 1, May 2008, pages 62-80.
+        </li>
+        <li>
+          Thomas Patterson,<br>
+          The optimal addition of points to quadrature formulae,<br>
+          Mathematics of Computation,<br>
+          Volume 22, Number 104, October 1968, pages 847-856.
+        </li>
+        <li>
+          Knut Petras,<br>
+          Smolyak Cubature of Given Polynomial Degree with Few Nodes
+          for Increasing Dimension,<br>
+          Numerische Mathematik,<br>
+          Volume 93, Number 4, February 2003, pages 729-753.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sparse_grid_hw.f90">sparse_grid_hw.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "sparse_grid_hw.sh">sparse_grid_hw.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 28 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

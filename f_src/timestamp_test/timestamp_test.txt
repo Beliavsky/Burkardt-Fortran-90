@@ -1,0 +1,58 @@
+09 September 2020   8:49:39.675 AM
+ 
+TIMESTAMP_TEST
+  FORTRAN90 version
+  Test the TIMESTAMP library.
+ 
+TEST01
+  TIMESTAMP prints out the current wallclock time,
+  including the year, month, day, hours, minutes,
+  seconds, thousandths of a second, and AM/PM.
+ 
+  This can be useful in keeping track of the date
+  of execution of a particular program
+  or to give a rough idea of the length of time
+  required to run a program.
+ 
+09 September 2020   8:49:39.675 AM
+ 
+TEST02
+  TIMESTRING returns the current wallclock time,
+  including the year, month, day, hours, minutes,
+  seconds, thousandths of a second, and AM/PM
+  in a string, which the user may print or manipulate.
+ 
+  TIMESTRING returned the value "09 September 2020   8:49:39.675 AM".
+ 
+TEST03
+  HMS_CURRENT_PRINT prints out the current HMS time
+  (hours, minutes, seconds, thousandths of a second,
+  and AM/PM) followed by a user-specified string.
+ 
+  This might be useful in figuring out what routines
+  are taking a long time.
+ 
+Wallclock:   8:49:39.675 AM    Call random_number 1000 times.
+Wallclock:   8:49:39.675 AM    Compute sine of random numbers.
+Wallclock:   8:49:39.676 AM    All done!
+  
+   Computed value =    9593.07910    
+ 
+TEST04
+  HMS_DELTA_PRINT prints out the delta HMS time
+  (hours, minutes, seconds, thousandths of a second,
+  and AM/PM) followed by a user-specified string.
+ 
+  This might be useful in figuring out what routines
+  are taking a long time.
+ 
+Delta Wallclock:  0:00:00.000    Zero out the clock.
+Delta Wallclock:  0:00:00.000    Time to compute random numbers.
+Delta Wallclock:  0:00:00.002    Time to compute sine of random numbers.
+  
+   Computed value =    95972.5234    
+ 
+TIMESTAMP_TEST
+  Normal end of execution.
+ 
+09 September 2020   8:49:39.678 AM

@@ -1,0 +1,64 @@
+ 7 July 2020  11:18:10.470 AM
+
+FEM_TO_TRIANGLE
+  FORTRAN90 version
+  Convert a 2D mesh from FEM to TRIANGLE format.
+
+  Read:
+  * "prefix"_nodes.txt, node coordinates.
+  * "prefix"_elements.txt, element connectivity.
+  Create:
+  * "prefix".node
+  * "prefix".ele
+ 
+  Read the header of "ell_nodes.txt".
+ 
+  Spatial dimension =        2
+  Number of points  =       65
+ 
+  Read the data in "ell_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2       
+  Col
+    1:   0.00000       0.00000    
+    2:   0.00000      0.500000    
+    3:  0.500000       0.00000    
+    4:   0.00000       1.00000    
+    5:  0.500000      0.500000    
+ 
+  Read the header of "ell_elements.txt".
+ 
+  Element order =        3
+  Number of elements =       96
+ 
+  Read the data in "ell_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3
+  Col
+ 
+    1:      1      3      2
+    2:      6      5      3
+    3:      4      2      5
+    4:      3      5      2
+    5:     23     22     10
+    6:     21      9     22
+    7:      6     10      9
+    8:     22      9     10
+    9:     19      7     20
+   10:      4      8      7
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+
+  Created "ell.node"
+  Created "ell.ele"
+ 
+FEM_TO_TRIANGLE
+  Normal end of execution.
+ 
+ 7 July 2020  11:18:10.474 AM

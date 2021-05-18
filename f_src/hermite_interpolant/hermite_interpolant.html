@@ -1,0 +1,213 @@
+<html>
+
+  <head>
+    <title>
+      hermite_interpolant - Hermite polynomial interpolating function and derivative values
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      hermite_interpolant <br> Hermite polynomial interpolating function and derivative values
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>hermite_interpolant</b>,
+      a FORTRAN90 library which
+      constructs the Hermite polynomial which interpolates function 
+      and derivative values at given points.
+    </p>
+
+    <p>
+      In other words, the user supplies <b>n</b> sets of data,
+      <b>(x(i),y(i),yp(i))</b>, and the algorithm determines a polynomial <b>p(x)</b>
+      such that, for 1 &lt;= <b>i</b> &lt;= <b>n</b>
+      <blockquote>
+        p(x(i)) = y(i) <br>
+        p'(x(i)) = yp(i)
+      </blockquote>
+    </p>
+
+    <p>
+      Note that <b>p(x)</b> is a "global" polynomial, not a piecewise polynomial.
+      Given <b>n</b> data points, <b>p(x)</b> will be a polynomial of degree 2<b>n</b>-1.
+      As the value <b>n</b> increases, the increasing degree of the interpolating
+      polynomial makes it liable to oscillations between the data, and eventually
+      to severe inaccuracy even at the data points.
+    </p>
+
+    <p>
+      Generally, the interpolation problem for a large number of data points should
+      be handled differently, for instance by piecewise polynomials.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>hermite_interpolant</b> is available in
+      <a href = "../../c_src/hermite_interpolant/hermite_interpolant.html">a C version</a> and
+      <a href = "../../cpp_src/hermite_interpolant/hermite_interpolant.html">a C++ version</a> and
+      <a href = "../../f_src/hermite_interpolant/hermite_interpolant.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/hermite_interpolant/hermite_interpolant.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev/chebyshev.html">
+      CHEBYSHEV</a>,
+      a FORTRAN90 library which
+      computes the Chebyshev interpolant/approximant to a given function
+      over an interval.
+    </p>
+
+    <p>
+      <a href = "../../f_src/divdif/divdif.html">
+      DIVDIF</a>,
+      a FORTRAN90 library which
+      computes interpolants by divided differences.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_cubic/hermite_cubic.html">
+      HERMITE_CUBIC</a>,
+      a FORTRAN90 library which
+      can compute the value, derivatives or integral of a Hermite cubic polynomial,
+      or manipulate an interpolating function made up of piecewise Hermite cubic
+      polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_interpolant_test/hermite_interpolant_test.html">
+      hermite_interpolant_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/interp/interp.html">
+      INTERP</a>,
+      a FORTRAN90 library which
+      can compute interpolants to data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lagrange_interp_1d/lagrange_interp_1d.html">
+      LAGRANGE_INTERP_1D</a>,
+      a FORTRAN90 library which
+      defines and evaluates the Lagrange polynomial p(x) 
+      which interpolates a set of data, so that p(x(i)) = y(i).
+    </p>
+
+    <p>
+      <a href = "../../f_src/pppack/pppack.html">
+      PPPACK</a>,
+      a FORTRAN90 library which
+      computes piecewise polynomial functions, including cubic splines.
+    </p>
+
+    <p>
+      <a href = "../../f_src/rbf_interp/rbf_interp.html">
+      RBF_INTERP</a>,
+      a FORTRAN90 library which
+      defines and evaluates radial basis interpolants to multidimensional data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spline/spline.html">
+      SPLINE</a>,
+      a FORTRAN90 library which
+      includes many routines to construct
+      and evaluate spline interpolants and approximants.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp/test_interp.html">
+      TEST_INTERP</a>,
+      a FORTRAN90 library which
+      defines a number of test problems for interpolation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms446/toms446.html">
+      TOMS446</a>,
+      a FORTRAN90 library which
+      manipulates Chebyshev series for interpolation and approximation;<br>
+      this is a version of ACM TOMS algorithm 446,
+      by Roger Broucke.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philip Davis,<br>
+          Interpolation and Approximation,<br>
+          Dover, 1975,<br>
+          ISBN: 0-486-62495-1,<br>
+          LC: QA221.D33
+        </li>
+        <li>
+          Carl deBoor,<br>
+          A Practical Guide to Splines,<br>
+          Springer, 2001,<br>
+          ISBN: 0387953663,<br>
+          LC: QA1.A647.v27.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "hermite_interpolant.f90">hermite_interpolant.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "hermite_interpolant.sh">hermite_interpolant.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 08 July 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

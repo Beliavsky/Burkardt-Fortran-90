@@ -1,0 +1,115 @@
+<html>
+
+  <head>
+    <title>
+      square_exactness_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      square_exactness_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>square_exactness_test</b>,
+      a FORTRAN90 code which
+      calls square_exactness(), which
+      investigates the polynomial exactness of quadrature rules for f(x,y) 
+      over the interior of a square (rectangle, quadrilateral) in 2D.
+    </p>
+
+    <p>
+      We assume that the integral to be approximated is of a Legendre
+      type, over a rectangular region:
+      <pre>
+        I(f) = integral ( c &lt;= y &lt;= d ) integral ( a &lt;= x &lt;= b ) f(x,y) dx dy
+      </pre>
+      and that such integrals are to be approximated by:
+      <pre>
+        Q(f) = sum ( 1 &lt;= i &lt;= N ) w(i) * f(x(i),y(i))
+      </pre>
+    </p>
+
+    <p>
+      To determine the exactness of a given quadrature rule, we simply compare 
+      the exact integral I(f) to the estimated integral Q(f) for a sequence of
+      monomials of increasing total degree D.  This sequence begins with:
+      <pre>
+        D = 0:              1
+        D = 1:          x        y
+        D = 2:      x^2     xy        x^2
+        D = 3:  x^3    x^2y     xy^2       y^3
+      </pre>
+      and the exactness of a quadrature rule is defined as the largest value 
+      of D such that I(f) and Q(f) are equal for all monomials up to and
+      including those of total degree D.
+    </p>
+
+    <p>
+      Note that if the 2D quadrature rule is formed as a product of
+      two 1D rules, then knowledge of the 1D exactness of the individual
+      factors gives sufficient information to determine the exactness
+      of the product rule, which will simply be the minimum of the exactnesses
+      of the two factor rules.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/square_exactness/square_exactness.html">
+      square_exactness</a>,
+      a FORTRAN90 code which
+      investigates the polynomial exactness of quadrature rules for f(x,y) 
+      over the interior of a square (rectangle/quadrilateral) in 2D.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "square_exactness_test.f90">square_exactness_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "square_exactness_test.sh">square_exactness_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "square_exactness_test.txt">square_exactness_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 30 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

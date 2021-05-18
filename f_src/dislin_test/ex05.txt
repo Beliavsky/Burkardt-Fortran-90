@@ -1,0 +1,18 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:23:29  Pageformat: USAP  <<
+ <<  Vectors : 6193        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex05.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+23 January 2020  10:23:29.454 AM
+ 
+EX05:
+  FORTRAN90 version
+  Demonstrate the creation of bar graphs.
+ 
+EX05:
+  Normal end of execution.
+ 
+23 January 2020  10:23:29.468 AM

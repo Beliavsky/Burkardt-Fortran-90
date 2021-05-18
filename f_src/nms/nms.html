@@ -1,0 +1,439 @@
+<html>
+
+  <head>
+    <title>
+      NMS - Numerical Analysis code
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      NMS <br> Numerical Analysis code
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>NMS</b>,
+      a FORTRAN90 code which
+      is a good beginner's
+      mathematical code, with well tested routines for standard problems.
+    </p>
+
+    <p>
+      NMS accompanies the text
+      "Numerical Methods and Software".  The book is a modern discussion
+      of current numerical algorithms and software.  The software that comes
+      with the book has been extracted from standard software libraries,
+      particularly the SLATEC code.  Thus the book is also a good
+      introduction to the use of a portion of the SLATEC code, which
+      does not have a widely available solid hardcopy reference.
+    </p>
+
+    <p>
+      In particular, <b>NMS</b> includes some or all of:
+      <ul>
+        <li>
+          BLAS1, the Basis Linear Algebra Subprograms, Level 1;
+        </li>
+        <li>
+          DDRIV, for integrating systems of ODE's;
+        </li>
+        <li>
+          FFTPACK, for Fast Fourier Transforms,<br>
+          (Paul Swarztrauber);
+        </li>
+        <li>
+          FNLIB, Wayne Fullerton's special function package,
+        </li>
+        <li>
+          FUNPACK, Daniel Amos's special function package,
+        </li>
+        <li>
+          LINPACK, for solving linear systems.
+        </li>
+        <li>
+          MACHINE, for reporting values of machine arithmetic constants.
+        </li>
+        <li>
+          PCHIP, Piecewise Cubic Hermite Interpolation Package,<br>
+          (Fritsch and Carlson);
+        </li>
+        <li>
+          QUADPACK, for approximate integration;
+        </li>
+        <li>
+          UNCMIN, for the unconstrained minimization of a function
+          of several variables.
+        </li>
+        <li>
+          XERROR, for handling run time errors.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>NMS</b> is available in
+      <a href = "../../f_src/nms/nms.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/distance_to_position/distance_to_position.html">
+      DISTANCE_TO_POSITION</a>,
+      a FORTRAN90 code which
+      estimates the positions of cities based on a city-to-city distance table.
+      It uses UNCMIN from NMS to solve this problem.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftpack5/fftpack5.html">
+      FFTPACK5</a>,
+      a FORTRAN90 code which
+      contains version 5 of FFTPACK.
+    </p>
+
+    <p>
+      <a href = "../../f_src/machine/machine.html">
+      MACHINE</a>,
+      a FORTRAN90 code which
+      reports the value of machine
+      arithmetic constants.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nms_test/nms_test.html">
+      nms_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ode/ode.html">
+      ODE</a>,
+      a FORTRAN90 code which
+      implements the Shampine and Gordon ODE solver.
+    </p>
+
+    <p>
+      <a href = "../../f_src/qr_solve/qr_solve.html">
+      QR_SOLVE</a>,
+      a FORTRAN90 code which
+      computes the least squares solution of a linear system A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadpack/quadpack.html">
+      QUADPACK</a>,
+      a FORTRAN90 code which
+      approximates integrals of functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/reactor_simulation/reactor_simulation.html">
+      REACTOR_SIMULATION</a>,
+      a FORTRAN90 code which
+      is a simple Monte Carlo simulation of the shielding effect of a slab
+      of a certain thickness in front of a neutron source.  This program was
+      provided as an example with the book "Numerical Methods and Software."
+    </p>
+
+    <p>
+      <a href = "../../f_src/rkf45/rkf45.html">
+      RKF45</a>,
+      a FORTRAN90 code which
+      is a Runge-Kutta-Fehlberg ODE solver.
+    </p>
+
+    <p>
+      <a href = "../../f_src/slatec/slatec.html">
+      SLATEC</a>,
+      a FORTRAN90 code which
+      evaluates many special functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/xerror/xerror.html">
+      XERROR</a>,
+      a FORTRAN90 code which
+      is designed to report and handle errors detected during program execution.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Donald Amos, SL Daniel, MK Weston,<br>
+          CDC 6600 subroutines IBESS and JBESS for Bessel functions
+          I(NU,X) and J(NU,X),<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 3, pages 76-92, 1977.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Richard Brent,<br>
+          Algorithms for Minimization without Derivatives,<br>
+          Dover, 2002,<br>
+          ISBN: 0-486-41998-3,<br>
+          LC: QA402.5.B74.
+        </li>
+        <li>
+          Roger Broucke,<br>
+          Algorithm 446:
+          Ten Subroutines for the Manipulation of Chebyshev Series,<br>
+          Communications of the ACM,<br>
+          Volume 16, Number 4, April 1973, pages 254-256.
+        </li>
+        <li>
+          Bill Buzbee,<br>
+          The SLATEC Common Math code,<br>
+          in Sources and Development of Mathematical Software,<br>
+          edited by Wayne Cowell,<br>
+          Prentice-Hall, 1984,<br>
+          ISBN: 0-13-823501-5,<br>
+          LC: QA76.95.S68.
+        </li>
+        <li>
+          Carl deBoor,<br>
+          A Practical Guide to Splines,<br>
+          Springer, 2001,<br>
+          ISBN: 0387953663,<br>
+          LC: QA1.A647.v27.
+        </li>
+        <li>
+          Jacob Dekker,<br>
+          Finding a Zero by Means of Successive Linear Interpolation,<br>
+          in Constructive Aspects of the Fundamental Theorem of Algebra,<br>
+          edited by Bruno Dejon, Peter Henrici,<br>
+          Wiley, 1969,<br>
+          ISBN: 0471203009,<br>
+          LC: QA212.C65.
+        </li>
+        <li>
+          John Dennis, Robert Schnabel,<br>
+          Numerical Methods for Unconstrained Optimization
+          and Nonlinear Equations,<br>
+          SIAM, 1996,<br>
+          ISBN13: 978-0-898713-64-0,<br>
+          LC: QA402.5.D44.
+        </li>
+        <li>
+          Jack Dongarra, Jim Bunch, Cleve Moler, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979,<br>
+          ISBN13: 978-0-898711-72-1,<br>
+          LC: QA214.L56.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 362-376.
+        </li>
+        <li>
+          Leslie Fox, Ian Parker,<br>
+          Chebyshev Polynomials in Numerical Analysis,<br>
+          Oxford Press, 1968,<br>
+          LC: QA297.F65.
+        </li>
+        <li>
+          Phyllis Fox, Andrew Hall, Norman Schryer,<br>
+          Algorithm 528:
+          Framework for a Portable code,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 4, Number 2, June 1978, page 176-188.
+        </li>
+        <li>
+          Fred Fritsch, Judy Butland,<br>
+          A Method for Constructing Local Monotone Piecewise
+          Cubic Interpolants,<br>
+          SIAM Journal on Scientific and Statistical Computing,<br>
+          Volume 5, Number 2, June 1984, pages 300-304.
+        </li>
+        <li>
+          Fred Fritsch, Ralph Carlson,<br>
+          Monotone Piecewise Cubic Interpolation,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 17, Number 2, April 1980, pages 238-246.
+        </li>
+        <li>
+          Charles Gear,<br>
+          Numerical Initial Value Problems in Ordinary Differential
+          Equations,<br>
+          Prentice-Hall, 1971,<br>
+          ISBN: 0136266061,<br>
+          LC: QA372.G4.
+        </li>
+        <li>
+          Ron Jones, David Kahaner,<br>
+          XERROR, The SLATEC Error Handling Package,<br>
+          Software: Practice and Experience,<br>
+          Volume 13, Number 3, 1983, pages 251-257.
+        </li>
+        <li>
+          David Kahaner, Cleve Moler, Steven Nash,<br>
+          Numerical Methods and Software,<br>
+          Prentice Hall, 1989,<br>
+          ISBN: 0-13-627258-4,<br>
+          LC: TA345.K34.
+        </li>
+        <li>
+          Charles Lawson, Richard Hanson, David Kincaid, Fred Krogh,<br>
+          Algorithm 539:
+          Basic Linear Algebra Subprograms for Fortran Usage,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 5, Number 3, September 1979, pages 308-323.
+        </li>
+        <li>
+          Pierre LEcuyer,<br>
+          Random Number Generation,<br>
+          in Handbook of Simulation,<br>
+          edited by Jerry Banks,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Peter Lewis, Allen Goodman, James Miller,<br>
+          A Pseudo-Random Number Generator for the System/360,<br>
+          IBM Systems Journal,<br>
+          Volume 8, Number 2, 1969, pages 136-143.
+        </li>
+        <li>
+          George Marsaglia, Wai Wan Tsang,<br>
+          A fast, easily implemented method for sampling from decreasing or
+          symmetric unimodal density functions,<br>
+          SIAM Journal of Scientific and Statistical Computing,<br>
+          Volume 5, Number 2, June 1984, pages 349-359.
+        </li>
+        <li>
+          Jorge More, Burton Garbow, Kenneth Hillstrom,<br>
+          User Guide for MINPACK-1,<br>
+          Technical Report ANL-80-74,<br>
+          Argonne National Laboratory, 1980.
+        </li>
+        <li>
+          Frank Olver,<br>
+          Tables of Bessel Functions of Moderate or Large Orders,<br>
+          NPL Mathematical Tables, Volume 6,<br>
+          Her Majesty's Stationery Office, London, 1962.
+        </li>
+        <li>
+          Robert Piessens, Elise deDoncker-Kapenga,
+          Christian Ueberhuber, David Kahaner,<br>
+          QUADPACK: A Subroutine Package for Automatic Integration,<br>
+          Springer, 1983,<br>
+          ISBN: 3540125531,<br>
+          LC: QA299.3.Q36.
+        </li>
+        <li>
+          Michael Powell,<br>
+          A Hybrid Method for Nonlinear Equations,<br>
+          in Numerical Methods for Nonlinear Algebraic Equations,<br>
+          edited by Philip Rabinowitz,<br>
+          Gordon and Breach, 1970,<br>
+          ISBN13: 978-0677142302,<br>
+          LC: QA218.N85.
+        </li>
+        <li>
+          Robert Schnabel, John Koontz, Barry Weiss,<br>
+          A modular system of algorithms for unconstrained minimization,<br>
+          Technical Report CU-CS-240-82,<br>
+          Computer Science Department,<br>
+          University of Colorado at Boulder, 1982.
+        </li>
+        <li>
+          Lawrence Shampine, Herman Watts,<br>
+          ZEROIN, a Root-Solving Routine,<br>
+          Technical Report: SC-TM-70-631,<br>
+          Sandia National Laboratories, September 1970.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Vectorizing the FFT's,<br>
+          in Parallel Computations,<br>
+          edited by Garry Rodrigue,<br>
+          Academic Press, 1982,<br>
+          ISBN: 0125921012,<br>
+          LC: QA76.6.P348.
+        </li>
+        <li>
+          Stephen Wolfram,<br>
+          The Mathematica Book,<br>
+          Fourth Edition,<br>
+          Cambridge University Press, 1999,<br>
+          ISBN: 0-521-64314-7,<br>
+          LC: QA76.95.W65.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "nms.f90">nms.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "nms.sh">nms.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body
+
+</html>

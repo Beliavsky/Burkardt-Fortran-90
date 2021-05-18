@@ -1,0 +1,1698 @@
+zoomin_report.txt  16 August 1998
+ 
+
+ZOOMIN contains a large selection of scalar zero finders, for 
+solving equations F(X)=0.  Most of these were collected from a 
+book by Traub.
+ 
+
+******************************************************************************80
+ 
+To use ZOOMIN, write a main program which sets the input variables
+and calls ZOOMIN as follows:
+ 
+call ZOOMIN(a,b,c,abserr,kmax,idif,ipoly,mult,nsub)
+ 
+the arguments have the following meanings-
+ 
+a, b, c - three starting points, which should be close to
+         the root for best results.  the program may rearrange
+         these points so that f(a) is minimum and the sign of f(b)
+         is opposite that of f(a) if possible.
+ 
+abserr - an error tolerance.  if successive steps are of size
+         less than abserr, or the function value of the current
+         estimate is less than abserr, the program accepts
+         the current estimate.
+ 
+kmax   - the maximum number of iterations for any method.
+         30 is a reasonable number.
+
+idif   - the highest derivative you have supplied, with acceptable
+         values from 0 to 3.  you must supply the function value
+         (idif=0).  if you have supplied all derivatives from
+         0 up to n, set idif=n.  whether or not you actually
+         supply the correct derivatives, you must write the
+         corresponding subroutines.  (see below).
+ 
+ipoly  - the polynomial degree of the function, if it is a
+         polynomial.  acceptable values are 2 or greater
+         for a polynomial, or 1 or less for non polynomial.
+         note that a linear function (ipoly=1) cannot
+         be handled by laguerre's method.
+  
+mult   - the suspected multiplicity of the root, if known.
+         acceptable values are 1 (for a single root), or
+         greater.  for f(x)=(x-3)*(x-3)*(x-7), you should
+         use mult=2 if you are seeking the root at x=3.
+ 
+nsub   - the number of sub-iterations to take in the two
+         methods which use them.  one method, for example,
+         evaluates the derivative at a point, and then
+         takes nsub newton-like steps, except that the
+         derivative is held fixed for those nsub steps.
+         acceptable values are 1 or greater.
+ 
+
+
+
+*********************************************************************
+
+Here is the output from a sample call to ZOOMIN:
+  
+
+ call zoomin to solve f(x)=(x+3)*(x+3)*(x-2)=0
+  
+  
+ ZOOMIN
+ A compilation of scalar zero finders,
+ based on the work of Joseph Traub.
+  
+ 1 point formulas use x1=   1.500000     fx1=  -10.12500    
+ 2 point formulas use x2=   4.000000     fx2=   98.00000    
+ 3 point formulas use x3=   1.000000     fx3=  -16.00000    
+  
+ User estimated multiplicity=           1
+ Polynomial degree=           3
+ Highest derivative supplied=           3
+ Error tolerance=  9.9999997E-06
+ Maximum number of steps=          30
+ Newton method substep parameter =           3
+  
+  
+ Technique                   Root               Steps
+  
+ 1.  One point iteration functions with memory
+  
+Secant                            2.00000           6
+Extended secant                   2.00000           6
+Muller                            2.00000           5
+Perp E 2,1                        2.00000           5
+Star E 2,1                        2.00000           5
+Finite difference Halley          2.00000           4
+Phi 1,2                           2.00000           3
+Perp E 1,2                        2.00000           3
+Star E 1,2                        2.00000           3
+Dagger E 1,2                      2.00000           3
+  
+ 2. One point iteration functions.
+  
+Newton                            2.00000           4
+E 3                               2.00000           3
+E 4                               2.00000           3
+Halley                            2.00000           3
+Psi 2,1                           2.00000           2
+Psi 1,2                           2.00000           3
+Cap Phi 0,3                       2.00000           2
+Reduced Cap Phi 0,4               2.00000           2
+Ostrowski square root             2.00000           2
+Euler                             2.00000           2
+Laguerre                          2.00000           1
+  
+ 3.  Multipoint iteration functions.
+  
+Traub first                       2.00000           4
+Traub second                      2.00000           2
+Traub twelfth                     2.00000           3
+Traub thirteenth                  2.00000           2
+Traub third, NSUB=  3             2.00000           3
+Traub fourth, NSUB=  3            2.00000           2
+Newton-secant                     2.00000           3
+Traub sixth                       2.00000           3
+Traub seventh                     2.00000           3
+Traub eighth                      2.00000           3
+Traub ninth                       2.00000           2
+Traub type 1, form 10             2.00000           3
+Traub type 1, form 11             2.00000           3
+Traub fourteenth                  2.00000           2
+Traub fifteenth                   2.00000           2
+Traub sixteenth                   2.00000           2
+King, BETA=0                      2.00000           2
+King, BETA=1                      2.00000           2
+King, BETA=2                      2.00000           3
+Jarratt                           2.00000           2
+  
+ 4.  Multiple root methods, multiplicity known.
+  
+Traub Script E 2                  2.00000           4
+Traub Script E 3                  2.00000           3
+Traub Script E 4                  2.00000           3
+Traub Star E 1,1(f)               2.00000           6
+  
+ 5.  Multiple root methods, multiplicity unknown.
+  
+Traub E 2(U)                      2.00000           4  mult=   1.000    
+Traub Phi 1,1(U)                  2.00000           3  mult=   1.000    
+Traub third                       2.00000           4  mult=   1.000    
+Van de Vel                        2.00000           2  mult=   1.003    
+Improved Van de Vel               2.00000           4  mult=   1.000    
+  
+ 6. Bisection methods
+  
+Bisection                         2.00000          18
+Regula falsi                      2.00000          20
+Bisection-secant                  1.99998          11
+Bisection-secant-inv quad         2.00000           5
+
+ 
+*********************************************************************
+ 
+A Compilation of Iterative Methods for the Solution of an Equation
+in One Variable 
+
+Harold A Deiss
+ 
+
+Introduction
+ 
+This compilation of iterative techniques to solve an equation in
+one variable is a result of a National Science Foundation funded
+program at the University of Pittsburgh.  This program enabled high
+school teachers, such as myself, to share the work and experiences
+involved in research.  It was my privilege to work under the guidance
+of Professor Werner Rheinboldt whose inspiration, knowledge, and 
+clarity of explanations made this compilation possible.  It is my 
+hope that the algorithms and basic code may be useful to researchers
+and practitioners in this field.
+ 
+
+*********************************************************************
+ 
+1) One point iteration functions with memory
+ 
+*********************************************************************
+ 
+1.1)  Secant method, PHI(1,1)
+ 
+
+Comments: 
+
+  Inverse interpolation.
+  Traub also classifies this as Capital Phi(1,1), Perp E(1,1), Star E(1,1).  
+  Its order is almost as high as Newton's method but needs no derivative.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,fx1)
+  function(f)
+ 
+Step: 
+
+  fx := f(x)
+  d1 := ( fx - fx1 ) / ( x - x1 )
+  xn := x - fx / d1
+ 
+Output:
+
+  memory(x,fx)
+  iterate(xn)
+ 
+order=0.5*(1.0+sqrt(5)), roughly 1.62
+ 
+ 
+1.2)  higher order secant method - Phi(2,1)
+ 
+Traub, sections 4.22 and 6.12
+ 
+Comments: 
+
+  Inverse interpolation - 
+  Phi(2,1) does not require the evaluation of derivatives; 
+  Its use is indicated if the cost of evaluating f' is high.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,x2,fx1,fx2,d1)
+  function(f)
+ 
+Step:
+  
+  fx := f(x)
+  d2 := d1
+  d1 := (fx - fx1)/(x - x1)
+  xn := x - fx/d1 + (fx*fx1/(fx-fx2))*(1.0/d1 - 1.0/d2)
+ 
+Output:
+
+  memory(x,x1,fx,fx1,d1)
+  iterate(xn)
+ 
+order=1.84
+ 
+ 
+1.3) Phi(1,2) method
+ 
+Traub, section 4.22 and 6.12
+ 
+Comments: 
+  Inverse interpolation;
+  Although it uses no more information per step than the Newton method, 
+  it enjoys a considerably higher order.
+ 
+Input:
+  
+  iterate(x)
+  memory(x1,fx1,dfx1)
+  functions(f,f')
+ 
+Step:   
+
+  fx := f(x)
+  dfx := f'(x)
+  c := fx-fx1
+  d := c/(x-x1)
+  h := 1/c*(1/dfx - 1/d) - fx1/(c*c)*(1/dfx + 1/dfx1 -2/d)
+  xn := x - fx/dfx + fx*fx*h
+ 
+Output: 
+
+  memory(x,fx,dfx)
+  iterate(xn)
+ 
+order=1 + sqrt(3), approximately 2.73
+ 
+ 
+1.4)  Capital Phi(2,1)
+ 
+Traub, sections 4.23 and 10.21
+ 
+Comments: 
+
+  Direct interpolation.
+  This iterative function differs only in form from Muller's iterative 
+  function over which it enjoys a number of advantages.  
+  Its use is indicated if the cost of evaluating f' is high.
+ 
+Input:  
+
+  iterate(x)
+  memory(x1,x2,fx1,fx2,d1)
+  function(f)
+ 
+Step:   
+
+  fx := f(x)
+  d2 := d1
+  d1 := (fx-fx1)/(x-x1)
+  d2 := (d1-d2)/(x-x2)
+  z := d1 + (x-x1)*d2
+  xn := x - 2.0*fx/(z + sqrt(z*z - 4.0*fx*d2))
+ 
+Output: 
+
+  memory(x,x1,fx,fx1,d1)
+  iterate(xn)
+ 
+order=1.84
+ 
+ 
+1.5) perp E(2,1) method
+ 
+Traub, sections 6.23 and 6.24
+ 
+Comments: 
+
+  Inverse interpolation in which f' is estimated.  
+  Its use is indicated if the cost of evaluating f' is high.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,x2,fx1,fx2,d1)
+  function(f)
+ 
+Step:
+
+  fx := f(x)
+  d2 := d1
+  d1 := (fx-fx1)/(x-x1)
+  d := (fx-fx2)/(x-x2)
+  xn := x-fx*(1/d1 + 1/d - 1/d2)
+ 
+Output:
+
+  memory(x,x1,fx,fx1,d1)
+  iterate(xn)
+ 
+order=1.84
+ 
+ 
+1.6)  perp E(1,2) method
+ 
+Traub, sections 6.23 and 6.24
+ 
+Comments: 
+
+  Inverse interpolation in which f" is estimated.
+  Although it uses no more information per step than Newton's method,
+  it enjoys a considereably higher order.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,fx1,dfx1)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d := (fx-fx1)/(x-x1)
+  z := 2/dfx + 1/dfx1 - 3/d
+  xn := x - fx/dfx + fx*fx*z/(fx-fx1)
+ 
+Output:
+
+  memory(x,fx,dfx)
+  iterate(xn)
+ 
+order=2.73
+ 
+ 
+1.7)  star e 2,1 method
+ 
+Traub, sections 6.22 and 6.24
+ 
+Comments: 
+  Inverse interpolation in which f' is estimated.  
+  Its use is indicated if the cost of evaluation f' is high.
+ 
+Input:  
+
+  iterate(x)
+  memory(x1,x2,fx1,fx2,d1)
+  function(f)
+ 
+Step:   
+
+  fx := f(x)
+  d2 := d1
+  d1 := (fx-fx1)/(x-x1)
+  d := (fx-fx2)/(x-x2)
+  xn := x - fx/(d1 + d - d2)
+ 
+Output: 
+
+  memory(x,x1,fx,fx1,d1)
+  iterate(xn)
+ 
+order=1.84
+ 
+ 
+1.8)  star e 1,2 method
+ 
+Traub, sections 6.22 and 6.24
+ 
+Comments: 
+
+  Inverse interpolation in which f" is estimated.  
+  Although it uses no more information per step than Newton's method, it 
+  enjoys a considerably higher order.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,fx1,dfx1)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  d := (fx-fx1)/(x-x1)
+  z := 2*dfx + dfx1 - 3*d
+  xn := x - u - u*u*z/(dfx*(x-x1))
+ 
+Output:
+
+  memory(x,fx,dfx)
+  iterate(xn)
+ 
+order=2.73
+ 
+ 
+1.9)   dagger e 1,2 method
+ 
+Traub, section 6.33
+ 
+Comments: 
+
+  Inverse interpolation which estimates f".  
+  This iterative function does not reuse the old information at fx1.  
+  It is of somewhat simpler form than Star E 1,2 but has lower order.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,dfx1)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  d := (dfx-dfx1)/(x-x1)
+  xn := x - u - 0.5*u*u*d/dfx
+ 
+Output:
+
+  memory(x,dfx)
+  iterate(xn)
+ 
+order=1+sqrt(2), approximately 2.41
+ 
+ 
+1.10) finite difference halley's method
+ 
+Traub, section 10.21
+ 
+Comments: 
+
+  Inverse interpolation.
+  This is a finite difference analog of Halley's iterative function
+ 
+Input: 
+
+  iterate(x)
+  memory(x1,x2,fx1,fx2,d1)
+  function(f)
+ 
+Step: 
+
+  fx := f(x)
+  d2 := d1
+  d1 := (fx-fx1)/(x-x1)
+  d2 := (d1-d2)/(x-x2)
+  d := d1 - fx1*d2/d1
+  xn := x - fx/d
+ 
+Output:
+
+  memory(x,x1,fx,fx1,d1)
+  iterate(xn)
+ 
+order=1.84
+ 
+*********************************************************************
+ 
+2)  one point iteration functions
+ 
+*********************************************************************
+ 
+2.1) Newton's method
+ 
+Traub, sections 4.3 and 5.1
+ 
+Comments: 
+
+  Newton's method is also classified by Traub as Phi 0,2, Capital Phi 0,2, 
+  and Psi 1,0.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  x := x - fx/dfx
+ 
+Output:
+
+  iterate(x)
+ 
+order=2
+ 
+ 
+2.2)  E3 method
+ 
+Traub, sections 4.3 and 5.1
+ 
+Comments: 
+
+  Same as Phi 0,3, Psi 2,0.  
+  E3 is particularly suitable if F satisfies a second order differential equation.
+ 
+Input:
+
+  iterate(x)
+  function(f,f',f")
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  x := x - u*(1.0 + v*u)
+ 
+Output:
+
+  iterate(x)
+ 
+order=3
+ 
+ 
+2.3)  e4 method
+ 
+Traub, section 5.1
+ 
+Comments: 
+
+  same as Phi 0,4, Psi 3,0
+ 
+Input:
+
+  iterate(x)
+  function(f,f',f",f"')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  d3fx := f"'(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  w := d3fx/(6*dfx)
+  x := x - u*(1.0 + u*(v + u*(2*v*v - w)))
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+2.4)  Halley's method
+ 
+Traub, sections 5.2 and 5.33; paper by g. alefeld
+ 
+Comments: 
+
+  Rational approximation.  Traub classifies as Psi 1,1.
+ 
+Input: 
+
+  iterate(x)
+  function(f,f',f")
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  x := x - u/(1.0 - v*u)
+ 
+Output:
+
+  iterate(x)
+ 
+order=3
+ 
+ 
+2.5)  Psi 2,1 method
+ 
+Traub, section 5.2
+ 
+Comments: 
+
+  Rational approximation
+ 
+Input:
+
+  iterate(x)
+  function(f,f',f",f"')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  d3fx := f"'(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  w := d3fx/(6*dfx)
+  x := x - u*(v - (v*v - w)*u)/(v - (2*v*v - w)*u)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+2.6)  Psi 1,2 method
+ 
+Traub, sections 5.2 and 5.33
+ 
+Comments: 
+
+  Rational approximation
+ 
+Input:
+
+  iterate(x)
+  function(f,f',f",f"')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  d3fx := f"'(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  w := d3fx/(6*dfx)
+  x := x - u/(1.0 - u*(v + (v*v - w)*u))
+ 
+Output:
+
+   iterate(x)
+ 
+order=4
+
+ 
+2.7) Capital Phi 0,3
+ 
+Traub, sections 5.31 and 5.32
+ 
+Comments: 
+
+  Direct interpolation
+ 
+Input: 
+
+  iterate(x)
+  function(f,f',f")
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  x := x - 2*u/(1.0 + sqrt(1.0 - 4*u*v))
+ 
+Output:
+
+  iterate(x)
+ 
+order=3
+ 
+ 
+2.8) reduced degree capital Phi 0,4
+ 
+Traub, section 5.33
+ 
+Comments: 
+
+  Direct interpolation with Newton substitution
+ 
+Input: 
+
+  iterate(x)
+  function(f,f',f",f"')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f"(x)
+  d2fx := f"(x)
+  d3fx := f"'(x)
+  u := fx/dfx
+  v := d2fx/(2*dfx)
+  w := d3fx/(6*dfx)
+  x := x - 2*u/(1.0 + sqrt(1.0 - 4*u*(v - u*w)))
+ 
+Output: iterate(x)
+ 
+order=4
+ 
+ 
+2.9)  a family of one point iteration functions
+ 
+Eldon Hanson and Merrell Patrick,
+A family of root finding methods,
+numerical mathematics, volume 27, 1977.
+ 
+Comments: 
+
+  The general form is:
+
+    xn=x-(beta+1)*f(x)/(beta*f'(x)+-sqrt((f'(x))**2-(beta+1)*f(x)*f"(x)))
+    no method in class is asymptotically best for all f.
+ 
+    typical values for the parameter beta are:
+ 
+    Ostrowski:        beta=0
+    Euler method:     beta=1
+    Laguerre method:  if f is a polynomial of degree n, beta=1/(n-1)
+    Halley method:    beta=-1
+    Newton method:    beta tends to 0  (this method has a varying beta)
+ 
+Input: 
+
+  iterate(x)
+  parameter(beta)
+  function(f,f',f")
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  x := x-(beta+1)*fx/(beta*dfx+sqrt(dfx*dfx-(beta+1)*fx*d2fx))
+ 
+Output:
+
+  iterate(x)
+ 
+order=3 for simple roots for any fixed finite beta.
+(order=2 for Newton's method).
+ 
+*********************************************************************
+ 
+3) multipoint iteration functions
+ 
+*********************************************************************
+ 
+3.1)  first function
+ 
+Traub, sections 8.22, 8.4, and 9.31; see also page 236, function 1
+ 
+Comments: 
+
+  Uses chord at iteration point parallel to tangent line at Newton's point.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step:
+
+  fx := f(x)
+  dfx := f'(x)
+  z := x - fx/dfx
+  dfz := f'(z)
+  x := x - fx/dfz
+ 
+Output:
+
+  iterate(x)
+ 
+order=3
+ 
+ 
+3.2)  second function
+ 
+Traub, section 8.34; see also page 236, function 3
+ 
+Comments: 
+
+  The case NSUB=1 is Newton's method.  
+  The case NSUB=2 is derived in section 9.21.  
+  The case NSUB=4 is derived in 9.22. 
+  The iterative function is recursively formed.  This represents one 
+  Newton step followed by NSUB-1 chord Newton steps with the same 
+  derivative value.
+ 
+Input:
+
+  iterate(x)
+  parameter(nsub)
+  function(f,f')
+ 
+Step: 
+
+  z := x
+  dfx := f'(x)
+  DO I=1, nsub
+    fz := f(z)
+    z := z-fz/dfx
+  end do
+ 
+Output:
+
+  iterate(z)
+ 
+order=nsub+1
+ 
+3.3)  a family of functions
+ 
+Traub, sections 8.22 and 9.31; pages 236-237, functions 2, 12, 13
+ 
+Comments: 
+
+  Typical values for parameters c and d are:
+
+    c = 1/2, d = 1, function 2 on page 236
+    order=3
+ 
+    c = 1/4, d = 2/3, function 12 on page 237
+    order=3
+  
+    c = 5/12, d = 6/7, function 13 on page 237
+    order=3
+ 
+  Uses chord drawn at point on tangent line c*distance from
+  original x and Newton iteration, parallel to tangent line at z.
+ 
+Input:
+
+  iterate(x)
+  parameter(c,d)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  z := x - d*u
+  dfz := f'(z)
+  x := x - (c*u + (1 - c)*fx/dfz)
+ 
+Output:
+
+  iterate(x)
+ 
+ 
+3.4)  fourth method
+ 
+Traub, section 8.34; also see page 236, function 4.
+ 
+Comments: 
+
+  The iterative function is itself recursively formed.
+ 
+Input:
+
+  iterate(x)
+  parameter(nsub)
+  function(f,f',f")
+ 
+Step:
+
+  z := x
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  u := fx/dfx
+  do I=1,NSUB
+    fz := f(z)
+    z := z - fz/(dfx - d2fx*u)
+  end do
+ 
+Output:
+
+  iterate(z)
+ 
+order=2*nsub
+c2=-f"/(2*f')
+c3=c2*((-f*(f"'/f'-(f"/f')**2))/(2*f') + (c2)**2)
+cj=((-f*(f"'/f'-(f"/f')**2))/(2*f'))(j-3)*c3, for j over 3
+ 
+3.5)  Newton-secant iterative function.
+ 
+Traub, sections 8.4 and 8.5; also see page 236, function 5
+ 
+Comments: 
+
+  Intersection with the x-axis of the secant line through
+  (x,f(x)) and (x-u,f(x-u)).
+ 
+Input: 
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  fxu := f(x - u)
+  x := x - u + u*fxu/(fxu - fx)
+ 
+Output:
+
+  iterate(x)
+ 
+order=3
+ 
+ 
+3.6)  a family of multipoint iteration functions
+ 
+Traub, section 8.4; see also page 236, functions 6 and 7.
+ 
+Comments: 
+
+  Typical values for the parameters a, b, c, and d are:
+ 
+    a = 2, b = 3, c = 1, and d = 1, function 6 on page 236
+    order=3
+ 
+    a = 4, b = 7, c = 3, and d = 2/3, function 7 on page 236
+    order=3
+ 
+Input:
+
+  iterate(x)
+  parameter(a,b,c,d)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  dfxu := f'(x - d*u)
+  x := x - (u/(a*dfx))*(b*dfx - c*dfxu)
+ 
+Output: iterate(x)
+ 
+3.7)  seventh function
+ 
+Traub, section 8.4; see also page 237, function 8.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  dfxu := f'(x - (2/3)*u)
+  x := x - 4*fx/(dfx + 3*dfxu)
+ 
+Output:
+
+  iterate(x)
+ 
+order=3
+ 
+ 
+3.8) eighth method
+ 
+Traub, section 8.5; see also page 237, function 9.
+ 
+Comments: 
+
+  Iteration is of fourth order even though it uses but two
+  evaluations of f and one of f'.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  fxu := f(x - u)
+  x := x - u + u*fxu/(2*fxu - fx)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+3.9)  type 1 functions
+ 
+Traub, sections 9.21 and 9.22;
+see also page 237, functions 10 and 11.
+ 
+Comments: 
+
+  Rho=0.5*(1-sqrt(5)).  Typical values for the parameter A are:
+ 
+    a = 0, function 10 on page 237
+    order=3
+ 
+    a = 1, function 11 on page 237
+    order=4
+ 
+    constant: rho = 0.5*(1 - sqrt(5.0))
+ 
+Input:
+
+  iterate(x)
+  parameter(a)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  fxu := f(x+rho*u)
+  z := x-fxu/(rho*rho*dfx)
+  fz := f(z)
+  x := z-a*fz/dfx
+ 
+Output:
+
+  iterate(x)
+ 
+ 
+3.10)  tenth function
+ 
+Traub, section 9.32; see also page 237, function 14.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  dfxu := f'(x - u)
+  z := x - 0.25*(u + fx/dfxu)
+  dfz := f'(z)
+  x := x - (1/6)*(u + fx/dfxu + 4*fx/dfz)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+3.11)  eleventh function
+ 
+Traub, section 9.32; see also page 238, function 15.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  dfxu := f'(x - u)
+  z := x - (2/9)*(2*u + fx/dfxu)
+  dfz := f'(z)
+  x := x - 0.25*(u + 3*fx/dfz)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+3.12)  twelfth function
+ 
+Traub, section 9.32; see also page 238, function 16.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  dfxu := f'(x - (1/3)*u)
+  z := x - 2*fx/(3*dfxu)
+  dfz := f'(z)
+  x := x - 0.25*(u + 3*fx/dfz)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+3.13)  a family of fourth order methods
+ 
+R F King,
+a family of fourth order methods for nonlinear equations,
+siam journal, vol 10, no. 5 (1973).
+ 
+Comments: 
+
+  Each method of the family is of fourth order and needs two
+  function evaluations and one derivative per full step.
+ 
+  Some common members of this family are with beta = 0, 1, and 2.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+  parameter(beta)
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  w := x - fx/dfx
+  fw := f(w)
+  uw := fw/dfx
+  x := w - uw*(fx + beta*fw)/(fx + (beta-2)*fw)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+3.14)  fourteenth function
+ 
+P Jarratt,
+some fourth-order multipoint iterative methods for solving equations,
+mathematics of computations, vol. 20, no. 95 (1966) pg. 434-437
+ 
+Comments: 
+
+  Computationally attractive methods in problems where the
+  evaluation of f'(x) is rapid compared with f(x).  
+  Such problems as when f(x) is defined by an integral.
+ 
+Input:
+
+  iterate(x)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  z := x - 2*u/3
+  dfx := f'(z)
+  x := x - u/2 + fx/(dfx - 3*dfz)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+*********************************************************************
+ 
+4) multiple roots, multiplicity given beforehand
+ 
+*********************************************************************
+ 
+4.1)  script e2 method
+ 
+Traub, sections 7.3 and 7.4
+ 
+Comments: 
+
+  This is the well-known modification of Newton's method for
+  multiplicity M greater than or equal to 1.
+ 
+Input:
+
+  iterate(x)
+  parameter(m=multiplicity)
+  function(f,f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  x := x - m*u
+ 
+Output: 
+
+  iterate(x)
+ 
+order=2
+ 
+ 
+4.2)  script e3 method
+ 
+Traub, sections 7.3 and 7.4
+ 
+Input:
+
+  iterate(x)
+  parameter(m=multiplicity)
+  function(f,f',f")
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  u := fx/dfx
+  a2 := d2fx/(2*dfx)
+  x := x - m*u*(0.5*(3 - m) + m*a2*u)
+ 
+Output: 
+
+  iterate(x)
+ 
+order=3
+
+ 
+4.3)  script e4 method
+ 
+Traub, sections 7.3 and 7.4.
+ 
+Input:
+
+  iterate(x)
+  parameter(m=multiplicity)
+  function(f,f',f",f"')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  d3fx := f"'(x)
+  u := fx/dfx
+  a2 := d2fx/(2*dfx)
+  a3 := d3fx/(6*dfx)
+  x := x - m*u*((m*m - 6*m + 11)/6 + m*(2 - m)*a2*u +
+                     m*m*(2*a2*a2 - a3)*u*u)
+ 
+Output:
+
+  iterate(x)
+ 
+order=4
+ 
+ 
+4.4)  *e1,1(f) method
+ 
+Traub, section 7.6
+ 
+Comments: 
+
+  This algorithm behaves as though f were replaced by f**(1/m), 
+  so a root of multiplicity m becomes a simple root.
+  The method is then the secant algorithm on the new function.
+ 
+Input:
+
+  iterate(x)
+  memory(x1,fx1)
+  parameter(m=multiplicity)
+  function(f)
+ 
+Step: 
+
+  fx := f(x)**(1/m)
+  d := (fx-fx1)/(x-x1)
+  xn := x - fx/d
+ 
+Output:
+
+  memory(x,fx)
+  iterate(x)
+ 
+order=0.5*(1+sqrt(5))
+ 
+*********************************************************************
+ 
+5)  multiple root, multiplicity to be determined
+ 
+*********************************************************************
+ 
+5.1)  e2(u) method
+ 
+Traub, section 7.1; see also page 235, function 1.
+ 
+Comments: 
+
+  Newton's method with f replaced by U.  
+  E2 requires evaluation of f, f', f" at each step.
+ 
+Input:
+
+  iterate(x)
+  function(f,f',f")
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  d2fx := f"(x)
+  u := fx/dfx
+  m := (dfx*dfx)/(dfx*dfx-fx*d2fx)
+  x := x-m*u
+ 
+Output: 
+
+  iterate(x)
+ 
+order=2
+ 
+ 
+5.2)  Phi 1,1 (u) method
+ 
+Traub, section 7.6
+ 
+Comments: 
+
+  Same as Capital Phi 1,1(u).
+ 
+Input:
+
+  iterate(x)
+  memory(u1)
+  function(f, f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  fu := f(u)
+  fu1 := f(u1)
+  m := (u-u1)/(fu-fu1)
+  x := x-m*u
+ 
+Output:
+
+  memory(u)
+  iterate(x)
+ 
+order=(1+sqrt(5))/2
+ 
+ 
+5.3)  third function
+ 
+Traub, section 7.8; see also page 235, function 3 at bottom.
+ 
+Comments: 
+
+  The order of this iterative function is incommensurate with our scale.  
+  The quantity ln(f)/ln(u) converges to m.
+ 
+Input:
+
+  iterate(x)
+  function(f, f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  m := ln//fx///ln//u//
+  x := x - u*m
+ 
+Output:
+
+  iterate(x)
+ 
+convergence analysis:  (ei+1/ei)*ln//ei// ~ - ln(m*//f(m)(6)/m!//1/m)
+ 
+ 
+5.4) van de vel iteration
+ 
+Comments: 
+
+  If initial x is not close enough, m may become negative and diverge.  
+  Since m = 1 is most frequent, initial m of one is usually chosen.
+ 
+general root finding algorithm:
+ 
+1)  perform Newton or secant to get initial close guess.
+2)  iteration on x until m may be safely rounded to an integer.
+3)  once m is found refine approximation of 6 to one of basic
+iterations.
+ 
+Input:
+
+  iterate(x, m)
+  function(f, f')
+ 
+Step: 
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  z := x - m*u
+  fz := f(z)
+  dfz := f'(z)
+  u1 := fz/dfz
+  m := m*u/(u-u1)
+  x := z - m*u1
+ 
+Output:
+
+  iterate(x,m)
+ 
+order=1+sqrt(5)
+ 
+ 
+5.5)  improved van de vel iteration
+ 
+Comments: 
+
+  One point method with memory.  
+  Algorithm begins with one preliminary quasi-Newton step: x1 = x - m*u.
+ 
+Input:
+
+  iterate(x,m)
+  memory(x1,u1)
+  function(f, f')
+ 
+Step:
+
+  fx := f(x)
+  dfx := f'(x)
+  u := fx/dfx
+  m := m*u1/(u1-u)
+  xn := x - m*u
+ 
+Output:
+
+  memory(x,u)
+  iterate(x,m)
+ 
+order=(1+sqrt(5))/2
+ 
+*********************************************************************
+ 
+6) bisection methods
+ 
+*********************************************************************
+ 
+6.1) bisection
+ 
+Comments: 
+
+  Requires a change of sign interval.  
+  Guaranteed convergence, but requires K steps to get K accurate binary digits.
+ 
+Input:
+
+  iterates(xpos,xneg)
+  function(f)
+ 
+Step:
+
+  step=0.5*(xpos-xneg)
+  xnew=xneg+step
+  fx=f(xnew)
+  if(fx.gt.0.0)then
+    xpos=xnew
+  else
+    xneg=xnew
+  endif
+ 
+Output:
+
+  iterates(xpos,xneg)
+ 
+6.2) regula falsi
+ 
+Comments: 
+
+  Requires a change of sign interval.  
+  Guaranteed convergence, but it may be very slow, slower than bisection.
+ 
+Input:
+
+  iterates(xpos,xneg)
+  function(f)
+ 
+Step: 
+
+  step=-f(xneg)*(xpos-xneg)/(f(xpos)-f(xneg))
+  xnew=xneg+step
+  fx=f(xnew)
+  if(fx.gt.0.0)then
+    xpos=xnew
+  else
+    xneg=xnew
+  endif
+ 
+Output:
+
+  iterates(xpos,xneg)
+ 
+6.3) rheinboldt bisection-secant
+ 
+Comments: 
+
+  Requires a change of sign interval.  
+  Combines the guaranteed convergence of bisection with the speed of the
+  secant method.
+ 
+Input:  
+
+  iterates(a,b)
+  function(f)
+  tolerance(abserr)
+ 
+init  : i=0
+  t=0.5*abs(a-b)
+  c=b
+ 
+Step:   if(abs(f(a)).gt.abs(f(b))then
+    c=a
+    a=b
+    b=c
+  em=0.5*(b-a)
+  if(abs(em).le.abserr)done
+  p=(a-c)*f(a)
+  q=f(c)-f(a)
+  if(p.lt.0)then
+    p=-p
+    q=-q
+  c=a
+  i=i+1
+  if(i.le.3)go to 20
+  if(8*abs(em).gt.t)then
+    a=a+em
+    go to 22
+  else
+    i=0
+    t=em
+  if(p.le.abs(q)*tol)then
+    a=a+sign(em)*abserr
+    go to 22
+     20 if(p.lt.q*em)then
+    a=a+p/q
+  else
+    a=a+em
+  if(sign(f(a)).eq.sign(f(b))then
+    b=c
+     22 done step
+ 
+Output: 
+
+  iterates(a,b)
+ 
+6.4) rheinboldt bisection-secant-inverse quadratic
+ 
+Comments: 
+
+  Requires a change of sign interval.  
+  Combines the guaranteed convergence of bisection with the speed of the
+  secant and inverse quadratic methods.
+ 
+Input:
+
+  iterates(a,b)
+  function(f)
+  tolerance(abserr)
+ 
+init  : i=0
+  t=0.5*abs(a-b)
+  c=b
+ 
+Step:   if(abs(f(a)).gt.abs(f(b))then
+    c=a
+    a=b
+    b=c
+  em=0.5*(b-a)
+  if(abs(em).le.abserr)done
+ 
+  set up secant or regula falsi step
+ 
+  if(2*abs(c-a).lt.abs(b-a))then
+    ps=(a-c)*f(a)
+    qs=f(c)-f(a)
+  else
+    ps=(a-b)*f(a)
+    qs=f(b)-f(a)
+  if(ps.lt.0)then
+    ps=-ps
+    qs=-qs
+ 
+  set up inverse quadratic step
+ 
+  piq=0.0
+  qiq=0.0
+  if(b.ne.c)then
+    u=f(a)/f(c)
+    v=f(c)/f(b)
+    w=f(a)/f(b)
+    piq=u*(2.0*em*v*(v-w)-(a-c)*(w-1.0))
+    qiq=(u-1.0)*(v-1.0)*(w-1.0)
+    if(piq.gt.0.0)qiq=-qiq
+    piq=abs(piq)
+ 
+  save old minimal point, check for forced bisection
+ 
+  c=a
+  i=i+1
+  if(i.le.3)go to 20
+  if(8*abs(em).gt.t)then
+    a=a+em
+    go to 22
+  else
+    i=0
+    t=em
+ 
+  choose step of highest order that stays within
+  interval and is not too large or small
+ 
+  stpmin=(abs(a)+abs(em)+1)*abserr
+     20 if(piq.lt.1.5*em*qiq.and.abs(piq).gt.abs(qiq)*stpmin)then
+    step=piq/qiq
+  else if(ps.lt.qs*em.and.abs(ps).gt.abs(qs)*stpmin)then
+    a=a+ps/qs
+  else
+    a=a+em
+  if(sign(f(a)).eq.sign(f(b))then
+    b=c
+     22 done step
+ 
+Output:
+
+  iterates(a,b)
+ 
+ 

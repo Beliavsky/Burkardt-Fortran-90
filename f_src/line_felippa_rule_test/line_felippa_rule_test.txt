@@ -1,0 +1,154 @@
+27 July 2020  12:54:48.407 PM
+ 
+LINE_FELIPPA_RULE_TEST
+  FORTRAN90 version
+  Test the LINE_FELIPPA_RULE library.
+ 
+LINE_MONOMIAL_TEST
+  For a line segment in 1D,
+  LINE_MONOMIAL returns the exact value of the
+  integral of X^ALPHA
+ 
+  Volume =    1.00000    
+ 
+     ALPHA      INTEGRAL
+ 
+         0     1.00000    
+         1    0.500000    
+         2    0.333333    
+         3    0.250000    
+         4    0.200000    
+ 
+LINE_QUAD_TEST
+  For a line segment in 1D,
+  we approximate monomial integrals with:
+  LINE_UNIT_O01, a 1 point rule.
+  LINE_UNIT_O02, a 2 point rule.
+  LINE_UNIT_O03, a 3 point rule.
+  LINE_UNIT_O04, a 4 point rule.
+  LINE_UNIT_O05, a 5 point rule.
+ 
+  Monomial exponent:     0
+ 
+       1     1.00000    
+       2     1.00000    
+       3     1.00000    
+       4     1.00000    
+       5     1.00000    
+ 
+   Exact     1.00000    
+ 
+  Monomial exponent:     1
+ 
+       1    0.500000    
+       2    0.500000    
+       3    0.500000    
+       4    0.500000    
+       5    0.500000    
+ 
+   Exact    0.500000    
+ 
+  Monomial exponent:     2
+ 
+       1    0.250000    
+       2    0.333333    
+       3    0.333333    
+       4    0.333333    
+       5    0.333333    
+ 
+   Exact    0.333333    
+ 
+  Monomial exponent:     3
+ 
+       1    0.125000    
+       2    0.250000    
+       3    0.250000    
+       4    0.250000    
+       5    0.250000    
+ 
+   Exact    0.250000    
+ 
+  Monomial exponent:     4
+ 
+       1    0.625000E-01
+       2    0.194444    
+       3    0.200000    
+       4    0.200000    
+       5    0.200000    
+ 
+   Exact    0.200000    
+ 
+  Monomial exponent:     5
+ 
+       1    0.312500E-01
+       2    0.152778    
+       3    0.166667    
+       4    0.166667    
+       5    0.166667    
+ 
+   Exact    0.166667    
+ 
+  Monomial exponent:     6
+ 
+       1    0.156250E-01
+       2    0.120370    
+       3    0.142500    
+       4    0.142857    
+       5    0.142857    
+ 
+   Exact    0.142857    
+ 
+  Monomial exponent:     7
+ 
+       1    0.781250E-02
+       2    0.949074E-01
+       3    0.123750    
+       4    0.125000    
+       5    0.125000    
+ 
+   Exact    0.125000    
+ 
+  Monomial exponent:     8
+ 
+       1    0.390625E-02
+       2    0.748457E-01
+       3    0.108458    
+       4    0.111088    
+       5    0.111111    
+ 
+   Exact    0.111111    
+ 
+  Monomial exponent:     9
+ 
+       1    0.195312E-02
+       2    0.590278E-01
+       3    0.955625E-01
+       4    0.998980E-01
+       5    0.100000    
+ 
+   Exact    0.100000    
+ 
+  Monomial exponent:    10
+ 
+       1    0.976562E-03
+       2    0.465535E-01
+       3    0.844563E-01
+       4    0.906414E-01
+       5    0.909077E-01
+ 
+   Exact    0.909091E-01
+ 
+  Monomial exponent:    11
+ 
+       1    0.488281E-03
+       2    0.367155E-01
+       3    0.747698E-01
+       4    0.827964E-01
+       5    0.833255E-01
+ 
+   Exact    0.833333E-01
+ 
+LINE_FELIPPA_RULE_TEST
+  Normal end of execution.
+ 
+27 July 2020  12:54:48.407 PM

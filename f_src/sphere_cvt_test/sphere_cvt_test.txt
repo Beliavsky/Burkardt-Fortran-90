@@ -1,0 +1,232 @@
+28 August 2020   7:33:34.666 PM
+ 
+SPHERE_CVT
+  FORTRAN90 version
+ 
+  A sample problem for the probabilistic
+  Spherical Centroidal Voronoi Tessellation algorithm.
+ 
+  Given a unit sphere in 3D, the problem is to determine
+  a set of GENERATORS, that is, a set of points which 
+  lie on the sphere, and which implicitly define a
+  division of the surface into Voronoi cells.
+  It is also desired that each generator point actually
+  be the centroid of its cell.
+ 
+RANDOM_INITIALIZE
+  Initialize RANDOM_NUMBER with user SEED =    123456789
+ 
+  Initialize the Voronoi cell generators by...
+  ...RANDOM POINTS.
+ 
+  Initial generators:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1:  0.531581     -0.632668     -0.563163    
+    2: -0.391669      0.117016      0.912635    
+    3:  0.639999     -0.395090      0.659018    
+    4: -0.810400     -0.572736      0.123391    
+    5:  0.368816      0.913938     -0.169386    
+    6:  0.358541E-01 -0.495684     -0.867763    
+    7: -0.697713      0.527373     -0.484844    
+    8:  0.247350      0.574702     -0.780086    
+    9: -0.365542     -0.184422     -0.912342    
+   10: -0.646284      0.714514      0.267931    
+   11: -0.356599     -0.323273     -0.876546    
+   12: -0.641503      0.760453     -0.100922    
+   13:  0.226276      0.953854     -0.197387    
+   14: -0.190515     -0.839208      0.509347    
+   15:  0.593990      0.541902      0.594574    
+   16: -0.261309E-01  0.815913E-01 -0.996323    
+   17:  0.275400     -0.540478      0.795008    
+   18:  0.431476     -0.851310     -0.298495    
+   19:  0.541520      0.221765     -0.810910    
+   20: -0.565417E-01 -0.224786     -0.972766    
+   21:  0.591507      0.366493      0.718194    
+   22:  0.128026     -0.720348      0.681695    
+   23: -0.193897E-01 -0.656827     -0.753792    
+   24: -0.622344E-01  0.161092     -0.984975    
+   25:  0.707956     -0.518633     -0.479394    
+   26:  0.480128E-01 -0.563137      0.824967    
+   27:  0.467465E-01 -0.633082     -0.772672    
+   28: -0.796409      0.526950     -0.296743    
+   29:  0.707680     -0.286643      0.645775    
+   30: -0.818436     -0.336530     -0.465735    
+   31:  0.917496      0.103160      0.384133    
+   32: -0.992343     -0.687880E-02  0.123325    
+ 
+SPHERE_CVT Algorithm parameters:
+-------------------------
+ 
+  The number of Voronoi cells to generate:       32
+  Number of iterations to determine CVT:     2000
+  Number of sampling points:                  32000
+  Sampling is done in batches of size       1000000
+  Sample is done by RANDOM points.
+ 
+STEP =        1
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =      5.23428    
+  Average =   0.163571    
+  Minimum =   0.298931E-01
+  Maximum =   0.304774    
+ 
+STEP =        2
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =      1.94224    
+  Average =   0.606950E-01
+  Minimum =   0.151744E-01
+  Maximum =   0.149519    
+ 
+STEP =        3
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =      1.26452    
+  Average =   0.395162E-01
+  Minimum =   0.683401E-02
+  Maximum =   0.831501E-01
+ 
+STEP =        4
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.873184    
+  Average =   0.272870E-01
+  Minimum =   0.440864E-02
+  Maximum =   0.615864E-01
+ 
+STEP =        5
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.679096    
+  Average =   0.212217E-01
+  Minimum =   0.572194E-02
+  Maximum =   0.427356E-01
+ 
+STEP =      200
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.265344    
+  Average =   0.829199E-02
+  Minimum =   0.467783E-03
+  Maximum =   0.173782E-01
+ 
+STEP =      400
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.254609    
+  Average =   0.795653E-02
+  Minimum =   0.186674E-02
+  Maximum =   0.165284E-01
+ 
+STEP =      600
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.255718    
+  Average =   0.799119E-02
+  Minimum =   0.102124E-02
+  Maximum =   0.188281E-01
+ 
+STEP =      800
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.261664    
+  Average =   0.817700E-02
+  Minimum =   0.147042E-02
+  Maximum =   0.174122E-01
+ 
+STEP =     1000
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.241812    
+  Average =   0.755663E-02
+  Minimum =   0.142561E-02
+  Maximum =   0.150017E-01
+ 
+STEP =     1200
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.266404    
+  Average =   0.832512E-02
+  Minimum =   0.246899E-02
+  Maximum =   0.171556E-01
+ 
+STEP =     1400
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.294127    
+  Average =   0.919146E-02
+  Minimum =   0.482903E-03
+  Maximum =   0.203457E-01
+ 
+STEP =     1600
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.253836    
+  Average =   0.793237E-02
+  Minimum =   0.155175E-02
+  Maximum =   0.152814E-01
+ 
+STEP =     1800
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.268526    
+  Average =   0.839144E-02
+  Minimum =   0.152276E-02
+  Maximum =   0.185618E-01
+ 
+STEP =     2000
+  Discrepancy between generator and centroid
+ 
+  Generator motions:
+ 
+  Total =     0.282571    
+  Average =   0.883036E-02
+  Minimum =   0.101920E-02
+  Maximum =   0.226029E-01
+ 
+  Total motion of generators from initial to final:
+ 
+ 
+  Generator motions:
+ 
+  Total =      13.2036    
+  Average =   0.412613    
+  Minimum =   0.738400E-01
+  Maximum =   0.829091    
+ 
+SPHERE_CVT_MAIN
+  Normal end of execution.
+ 
+28 August 2020   7:34:00.516 PM

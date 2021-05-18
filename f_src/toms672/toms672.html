@@ -1,0 +1,191 @@
+<html>
+
+  <head>
+    <title>
+      toms672
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      toms672
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>toms672</b>,
+      a FORTRAN90 code which
+      computes a quadrature rule which is a maximally accurate extension of a
+      given quadrature rule.
+    </p>
+
+    <p>
+      That is, we suppose we have a quadrature rule that uses N points, and
+      that we wish to compute a new quadrature rule, which uses N+M points.
+      The new rule is required to include the original N points of the old rule.
+    </p>
+
+    <p>
+      This kind of procedure is analogous to the process by which the
+      nested Gauss-Patterson rules were developed.  Thus, one use of the
+      software is to try to develop nested families of rules for other
+      weight functions, or starting from other initial rules.
+    </p>
+
+    <p>
+      In certain cases, this algorithm <i>may</i> be able to extend the given
+      rule in a way which produces a rule with the maximum possible precision.
+      (However, it is also possible that the extension cannot be made.)
+    </p>
+
+    <p>
+      By calling this algorithm repeatedly, it is possible to compute a family
+      of nested quadrature rules of any order.  Nested rules can be efficient when
+      function evaluations are expensive, and a series of integral estimates must
+      be made to estimate accuracy, or to detect convergence.
+    </p>
+
+    <p>
+      The text of many ACM TOMS algorithms is available online
+      through ACM:
+              <a href = "http://calgo.acm.org">
+                         http://calgo.acm.org/</a> 
+      or NETLIB:
+      <a href = "http://www.netlib.org/toms/index.html">
+      http://www.netlib.org/toms/index.html</a>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>toms672</b> is available in
+      <a href = "../../f_src/toms672/toms672.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/int_exactness/int_exactness.html">
+      INT_EXACTNESS</a>,
+      a FORTRAN90 code which
+      checks the polynomial exactness
+      of a 1-dimensional quadrature rule for a finite interval.
+    </p>
+
+    <p>
+      <a href = "../../f_src/kronrod/kronrod.html">
+      KRONROD</a>,
+      a FORTRAN90 code which
+      can compute a Gauss and Gauss-Kronrod pair of quadrature rules
+      of arbitrary order,
+      by Robert Piessens, Maria Branders.
+    </p>
+
+    <p>
+      <a href = "../../f_src/patterson_rule/patterson_rule.html">
+      PATTERSON_RULE</a>,
+      a FORTRAN90 code which
+      returns a Gauss-Patterson quadrature rule of specified order.
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules/quadrature_rules.html">
+      QUADRATURE_RULES</a>,
+      a dataset directory which
+      contains sets of files that define quadrature
+      rules over various 1D intervals or multidimensional hypercubes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 code which
+      defines quadrature rules on a
+      variety of intervals with different weight functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms672_test/toms672_test.html">
+      toms672_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gene Golub, Thomas Robertson,<br>
+          A generalized Bairstow Algorithm,<br>
+          Communications of the ACM,<br>
+          Volume 10, Number 6, June 1967, pages 371-373.
+        </li>
+        <li>
+          Thomas Patterson,<br>
+          The Optimal Addition of Points to Quadrature Formulae,<br>
+          Mathematics of Computation,<br>
+          Volume 22, Number 104, October 1968, pages 847-856.
+        </li>
+        <li>
+          Thomas Patterson,<br>
+          An algorithm for generating interpolatory quadrature rules of the highest degree
+          of precision with preassigned nodes for general weight functions,<br>
+          Transactions on Mathematical Software,<br>
+          Volume 15, Number 2, June 1989, pages 123-136.
+        </li>
+        <li>
+          Thomas Patterson,<br>
+          Algorithm 672:
+          EXTEND: generation of interpolatory quadrature rules of the highest degree
+          of precision with preassigned nodes for general weight functions,<br>
+          Transactions on Mathematical Software,<br>
+          Volume 15, Number 2, June 1989, pages 137-143.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "toms672.f90">toms672.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "toms672.sh">toms672.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 March 2021.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

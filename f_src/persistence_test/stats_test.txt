@@ -1,0 +1,32 @@
+10 May 2021   9:34:50.483 AM
+
+stats_test():
+  FORTRAN90 version
+  Test stats(), with the interface:
+    [n,sum,min,mean,max,var,std] = stats(x)
+
+    Call 10 times with random values
+    Compare results with MATLAB vector calculation.
+  0.218418    
+  0.956318    
+  0.829509    
+  0.561695    
+  0.415307    
+  0.661187E-01
+  0.257578    
+  0.109957    
+  0.438290E-01
+  0.633966    
+
+      n1    =   10, n2    =   10
+      sum1  =    4.09270    , sum2  =    4.09270    
+      min1  =   0.438290E-01, min2  =   0.438290E-01
+      mean1 =   0.409270    , mean2 =   0.409270    
+      max1  =   0.956318    , max2  =   0.956318    
+      var1  =   0.105549    , var2  =   0.105549    
+      std1  =   0.324883    , std2  =   0.324883    
+
+stats_test():
+  Normal end of execution.
+
+10 May 2021   9:34:50.483 AM

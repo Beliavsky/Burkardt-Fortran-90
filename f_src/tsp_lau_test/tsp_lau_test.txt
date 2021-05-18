@@ -1,0 +1,26 @@
+10 September 2020   6:24:56.878 PM
+ 
+TSP_LAU_TEST
+  FORTRAN90 version
+  Test the TSP_LAU library.
+ 
+TEST01
+  TSP is a heuristic algorithm
+  for the traveling salesman problem.
+ 
+  COMPUTED RESULTS:
+ 
+  1 13  2 15  9  5  7  3 12 14 10  8  6  4 11
+ 
+  Path length =    291.000    
+ 
+  CORRECT RESULTS:
+ 
+  1 13  2 15  9  5  7  3 12 14 10  8  6  4 11
+ 
+  Path length =    291.000    
+ 
+TSP_LAU_TEST
+  Normal end of execution.
+ 
+10 September 2020   6:24:56.878 PM

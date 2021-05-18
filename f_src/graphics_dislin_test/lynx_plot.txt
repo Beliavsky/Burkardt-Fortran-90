@@ -1,0 +1,17 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 22.07.2020  Time    : 10:12:55  Pageformat: USAL  <<
+ <<  Vectors : 2511        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: lynx_plot.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+22 July 2020  10:12:55.294 AM
+ 
+LYNX_PLOT:
+  FORTRAN90 version
+  Use DISLIN routines to plot (X,Y) data as a curve.
+ 
+LYNX_PLOT:
+  Normal end of execution.
+22 July 2020  10:12:55.303 AM

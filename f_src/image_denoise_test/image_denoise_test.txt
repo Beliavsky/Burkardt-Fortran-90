@@ -1,0 +1,22 @@
+18 July 2020   8:40:56.068 AM
+ 
+IMAGE_DENOISE_TEST
+  FORTRAN90 version
+  Test the IMAGE_DENOISE library.
+ 
+TEST01:
+  GRAY_MEDIAN_NEWS uses a NEWS median filter
+  on a noisy grayscale image.
+ 
+  The input file is "glassware_noisy.ascii.pgm".
+ 
+  Number of rows =           428
+  Number of columns =        320
+  Maximum pixel intensity =  255
+ 
+  Wrote denoised image to "glassware_median_news.ascii.pgm".
+ 
+IMAGE_DENOISE_TEST
+  Normal end of execution.
+ 
+18 July 2020   8:40:56.105 AM

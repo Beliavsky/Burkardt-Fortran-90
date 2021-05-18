@@ -1,0 +1,133 @@
+<html>
+
+  <head>
+    <title>
+      svd_basis_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      svd_basis_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>svd_basis_test</b>,
+      a FORTRAN90 code which
+      calls svd_basis(), which
+      applies the singular value decomposition to
+      a set of data vectors, to extract the leading "modes" of the data.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/svd_basis/svd_basis.html">
+      svd_basis</a>,
+      a FORTRAN90 code which
+      applies the Singular Value Decomposition (SVD) 
+      to a collection of data vectors, extracting dominant modes;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "svd_basis_test.sh">svd_basis_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "svd_basis_test.txt">svd_basis_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "input.txt">input.txt</a>,
+          five lines of input that define a run.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The input data consists of 5 files:
+      <ul>
+        <li>
+          <a href = "data01.txt">data01.txt</a>,
+          input data file #1.
+        </li>
+        <li>
+          <a href = "data02.txt">data02.txt</a>,
+          input data file #2.
+        </li>
+        <li>
+          <a href = "data03.txt">data03.txt</a>,
+          input data file #3.
+        </li>
+        <li>
+          <a href = "data04.txt">data04.txt</a>,
+          input data file #4.
+        </li>
+        <li>
+          <a href = "data05.txt">data05.txt</a>,
+          input data file #5.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The output data consists of 4 files, the first containing the
+      average, and the next three containing the SVD basis vectors:
+      <ul>
+        <li>
+          <a href = "svd_000.txt">svd_000.txt</a>,
+          output SVD file #0 (contains the average, which was
+          requested by the user in the input file.).
+        </li>
+        <li>
+          <a href = "svd_001.txt">svd_001.txt</a>,
+          output SVD file #1.
+        </li>
+        <li>
+          <a href = "svd_002.txt">svd_002.txt</a>,
+          output SVD file #2.
+        </li>
+        <li>
+          <a href = "svd_003.txt">svd_003.txt</a>,
+          output SVD file #3.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

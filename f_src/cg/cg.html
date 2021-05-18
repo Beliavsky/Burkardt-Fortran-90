@@ -1,0 +1,147 @@
+<html>
+
+  <head>
+    <title>
+      CG - Conjugate Gradient (CG) Solver for Linear Systems
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CG <br> Conjugate Gradient (CG) Solver for Linear Systems
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CG</b>,
+      a FORTRAN90 code which
+      implements a simple version of the conjugate gradient (CG) method
+      for solving a system of linear equations of the form A*x=b, 
+      suitable for situations in which the matrix A is positive definite
+      (only real, positive eigenvalues) and symmetric.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CG</b> is available in
+      <a href = "../../c_src/cg/cg.html">a C version</a> and
+      <a href = "../../cpp_src/cg/cg.html">a C++ version</a> and
+      <a href = "../../f_src/cg/cg.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/cg/cg.html">a MATLAB version</a> and
+      <a href = "../../py_src/cg/cg.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cg_test/cg_test.html">
+      cg_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/cg_rc/cg_rc.html">
+      CG_RC</a>,
+      a FORTRAN90 code which
+      implements the conjugate gradient method for solving 
+      a positive definite sparse linear system A*x=b, 
+      using reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_poisson_cg/fem2d_poisson_cg.html">
+      FEM2D_POISSON_CG</a>,
+      a FORTRAN90 code which
+      solves Poisson's equation on a triangulated region,
+      using the finite element method (FEM), 
+      sparse storage, and a conjugate gradient solver.  
+    </p>
+
+    <p>
+      <a href = "../../f_src/sparse_display/sparse_display.html">
+      SPARSE_DISPLAY</a>,
+      a FORTRAN90 code which
+      can read information defining a matrix of numbers and display
+      the sparsity pattern or location of the nonzero elements using
+      gnuplot.  This operation is already available in the built-in 
+      MATLAB "spy" command.
+    </p>
+
+    <p>
+      <a href = "../../f_src/wathen/wathen.html">
+      WATHEN</a>,
+      a FORTRAN90 code which
+      compares storage schemes (full, banded, sparse triplet) and 
+      solution strategies (Linpack full, Linpack banded, conjugate gradient) 
+      for linear systems involving the Wathen matrix, which can arise when 
+      solving a problem using the finite element method (FEM).
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Frank Beckman,<br>
+          The Solution of Linear Equations by the Conjugate Gradient Method,<br>
+          in Mathematical Methods for Digital Computers,<br>
+          edited by John Ralston, Herbert Wilf,<br>
+          Wiley, 1967,<br>
+          ISBN: 0471706892,<br>
+          LC: QA76.5.R3.
+        </li>
+        <li>
+          Jonathan Shewchuk,<br>
+          An introduction to the conjugate gradient method without the 
+          agonizing pain,
+          Edition 1.25, August 1994.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cg.f90">cg.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "cg.sh">cg.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

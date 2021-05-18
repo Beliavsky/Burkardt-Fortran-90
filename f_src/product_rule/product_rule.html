@@ -1,0 +1,319 @@
+<html>
+
+  <head>
+    <title>
+      PRODUCT_RULE - Multidimensional Quadrature Rule Creation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      PRODUCT_RULE <br> Multidimensional Quadrature Rule Creation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>PRODUCT_RULE</b>,
+      a FORTRAN90 code which
+      creates a multidimensional quadrature rule by using
+      a product of <i>distinct</i> one-dimensional quadrature rules.
+    </p>
+
+    <p>
+      The program reads a single input file, which contains a list
+      that defines the 1D rules to be used as factors.
+    </p>
+
+    <p>
+      Each 1D rule is stored in three files, an "X", "W", and "R" file,
+      which are assumed to share a common filename prefix, so that
+      the files defined by a given <i>prefix</i> have the form:
+      <ul>
+        <li>
+          <i>prefix</i>_<b>x.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>w.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>r.txt</b>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      For instance, let us suppose we want to compute a 2D product rule
+      formed from a 3 point Clenshaw Curtis rule and a 2 point
+      Gauss-Legendre rule.  If the prefixes for these files were
+      "cc_d1_o003" and "gl_d1_o002" respectively, then the input
+      file to the program would read as follows:
+      <pre>
+        cc_d1_o003
+        gl_d1_o002
+      </pre>
+      When the program read the first 1D rule, it would be searching for
+      three files:
+      <ul>
+        <li>
+          <b>cc_d1_o003_x.txt</b>
+        </li>
+        <li>
+          <b>cc_d1_o003_w.txt</b>
+        </li>
+        <li>
+          <b>cc_d1_o003_r.txt</b>
+        </li>
+      </ul>
+      and similarly for the second file.
+    </p>
+
+    <p>
+      Once the program has computed the multidimensional product rule,
+      it again writes out three files describing the product rule,
+      with a common filename prefix specified by the user, which
+      might be, for instance, <i>product</i>, in which case the files
+      would be:
+      <ul>
+        <li>
+          <b>product_x.txt</b>
+        </li>
+        <li>
+          <b>product_w.txt</b>
+        </li>
+        <li>
+          <b>product_r.txt</b>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      For information on the form of these files, see the
+      <b>QUADRATURE_RULES</b> directory listed below.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>product_rule</b> ( <i>list_file</i>, <i>product_prefix</i> )
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>list_file</i> is the name of the file containing the list of filename
+          prefixes that can be used to locate the X, W and R files
+          of each 1D quadrature rule.
+        </li>
+        <li>
+          <i>product_prefix</i> is the prefix to be used when writing out the X, W and R
+          files of the computed multidimensional product rule.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      If the arguments are not supplied on the command line, the
+      program will prompt for them.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>PRODUCT_RULE</b> is available in
+      <a href = "../../c_src/product_rule/product_rule.html">a C version</a> and
+      <a href = "../../cpp_src/product_rule/product_rule.html">a C++ version</a> and
+      <a href = "../../f_src/product_rule/product_rule.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/product_rule/product_rule.html">a MATLAB version</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/chebyshev1_rule/chebyshev1_rule.html">
+      CHEBYSHEV1_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a Gauss-Chebyshev type 1 quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev2_rule/chebyshev2_rule.html">
+      CHEBYSHEV2_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a Gauss-Chebyshev type 2 quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/clenshaw_curtis_rule/clenshaw_curtis_rule.html">
+      CLENSHAW_CURTIS_RULE</a>,
+      a FORTRAN90 code which
+      defines a Clenshaw Curtis quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_rule/gegenbauer_rule.html">
+      GEGENBAUER_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a Gauss-Gegenbauer quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gen_hermite_rule/gen_hermite_rule.html">
+      GEN_HERMITE_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a generalized Gauss-Hermite quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gen_laguerre_rule/gen_laguerre_rule.html">
+      GEN_LAGUERRE_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a generalized Gauss-Laguerre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_rule/hermite_rule.html">
+      HERMITE_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a Gauss-Hermite quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi_rule/jacobi_rule.html">
+      JACOBI_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a Gauss-Jacobi quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_rule/laguerre_rule.html">
+      LAGUERRE_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a Gauss-Laguerre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_rule/legendre_rule.html">
+      LEGENDRE_RULE</a>,
+      a FORTRAN90 code which
+      computes a Gauss-Legendre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lognormal_rule/lognormal_rule.html">
+      LOGNORMAL_RULE</a>,
+      a FORTRAN90 code which
+      can compute and print a quadrature rule for functions of a variable
+      whose logarithm is normally distributed.
+    </p>
+
+    <p>
+      <a href = "../../f_src/patterson_rule/patterson_rule.html">
+      PATTERSON_RULE</a>,
+      a FORTRAN90 code which
+      returns the points and weights of a 1D Gauss-Patterson quadrature rule 
+      of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
+    </p>
+
+    <p>
+      <a href = "../../f_src/power_rule/power_rule.html">
+      POWER_RULE</a>,
+      a FORTRAN90 code which
+      constructs a power rule, that is, a product quadrature rule 
+      from identical 1D factor rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/product_rule_test/product_rule_test.html">
+      product_rule_test</a>
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules/quadrature_rules.html">
+      QUADRATURE_RULES</a>,
+      a dataset directory which
+      contains sets of files that define quadrature
+      rules over various 1D intervals or multidimensional hypercubes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 code which
+      defines quadrature rules on a
+      variety of intervals with different weight functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/truncated_normal_rule/truncated_normal_rule.html">
+      TRUNCATED_NORMAL_RULE</a>,
+      a FORTRAN90 code which 
+      computes a quadrature rule for a normal probability density function (PDF),
+      also called a Gaussian distribution, that has been
+      truncated to [A,+oo), (-oo,B] or [A,B].
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "product_rule.f90">product_rule.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "product_rule.sh">product_rule.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

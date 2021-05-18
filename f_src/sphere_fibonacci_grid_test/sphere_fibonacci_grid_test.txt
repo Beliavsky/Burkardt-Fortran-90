@@ -1,0 +1,41 @@
+29 August 2020  10:09:40.282 AM
+
+SPHERE_FIBONACCI_GRID_PRB
+  FORTRAN90 version
+  Test the SPHERE_FIBONACCI_GRID library.
+
+SPHERE_FIBONACCI_GRID_POINTS_TEST
+  SPHERE_FIBONACCI_GRID_POINTS computes points on a sphere
+  that lie on a Fibonacci spiral.
+
+  Number of points NG = 1000
+ 
+  Part of the grid array:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1: -0.225281E-01 -0.386198E-01 -0.999000    
+    2: -0.700116E-01  0.330058E-01 -0.997000    
+    3:  0.345279E-01  0.937167E-01 -0.995000    
+    4:  0.113977     -0.309876E-01 -0.993000    
+    5: -0.236915E-01 -0.131749     -0.991000    
+    6: -0.147312      0.133511E-01 -0.989000    
+    7:  0.457560E-03  0.160720     -0.987000    
+    8:  0.171936      0.145963E-01 -0.985000    
+    9:  0.314659E-01 -0.180889     -0.983000    
+   10: -0.187499     -0.498316E-01 -0.981000    
+
+SPHERE_FIBONACCI_GRID_DISPLAY_TEST
+  SPHERE_FIBONACCI_GRID_DISPLAY displays points
+  on a sphere that lie on a Fibonacci spiral.
+
+  Number of points NG = 1000
+ 
+  Created data file "sphere_fibonacci_grid_n1000_data.txt".
+  Created command file "sphere_fibonacci_grid_n1000_commands.txt".
+
+SPHERE_FIBONACCI_GRID_PRB
+  Normal end of execution.
+
+29 August 2020  10:09:40.286 AM

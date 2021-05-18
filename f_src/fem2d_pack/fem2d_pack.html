@@ -1,0 +1,211 @@
+<html>
+
+  <head>
+    <title>
+      FEM2D_PACK - Finite Element Routines
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FEM2D_PACK <br> Finite Element Routines
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FEM2D_PACK</b>,
+      a FORTRAN90 code which
+      contains utility routines for 2D finite element calculations.
+    </p>
+
+    <p>
+      The emphasis is on simplicity and clarity.
+      Primarily, the 2D planar case is handled, with a choice
+      of low order triangular ("T") and quadrilateral ("Q") elements.
+    </p>
+
+    <p>
+      A few routines are included for computing a "sphere grid",
+      that is, a finite element mesh on the surface of a sphere.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FEM2D_PACK</b> is available in
+      <a href = "../../c_src/fem2d_pack/fem2d_pack.html">a C version</a> and
+      <a href = "../../cpp_src/fem2d_pack/fem2d_pack.html">a C++ version</a> and
+      <a href = "../../f_src/fem2d_pack/fem2d_pack.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fem2d_pack/fem2d_pack.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem_basis/fem_basis.html">
+      FEM_BASIS</a>,
+      a FORTRAN90 code which
+      can define and evaluate basis functions for any degree
+      in an M-dimensional simplex (1D interval, 2D triangle,
+      3D tetrahedron, and higher dimensional generalizations.)
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem1d_pack/fem1d_pack.html">
+      FEM1D_PACK</a>,
+      a FORTRAN90 code which
+      contains utilities for 1D finite element calculations.
+    </p>
+
+    <p>
+      <a href = "../../data/fem2d/fem2d.html">
+      FEM2D</a>,
+      a data directory which
+      contains examples of 2D FEM files,
+      text files that describe a 2D finite element geometry
+      and associated nodal values;
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_heat/fem2d_heat.html">
+      FEM2D_HEAT</a>,
+      a FORTRAN90 code which
+      solves the 2D time dependent heat equation on the unit square.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_pack_test/fem2d_pack_test.html">
+      fem2d_pack_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_poisson/fem2d_poisson.html">
+      FEM2D_POISSON</a>,
+      a FORTRAN90 code which
+      solves the 2D Poisson equation on a square, using the finite element method.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_sample/fem2d_sample.html">
+      FEM2D_SAMPLE</a>,
+      a FORTRAN90 code which
+      evaluates a finite element function defined on an order 3 or order 6 triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem3d_pack/fem3d_pack.html">
+      FEM3D_PACK</a>,
+      a FORTRAN90 code which
+      contains utilities for 3D finite element calculations.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Jack Dongarra, Jim Bunch, Cleve Moler, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979,<br>
+          ISBN13: 978-0-898711-72-1.
+        </li>
+        <li>
+          Vladimir Krylov,<br>
+          Approximate Calculation of Integrals,<br>
+          Dover, 2006,<br>
+          ISBN: 0486445798.
+        </li>
+        <li>
+          Hans Rudolf Schwarz,<br>
+          Finite Element Methods,<br>
+          Academic Press, 1988,<br>
+          ISBN: 0126330107,<br>
+          LC: TA347.F5.S3313.
+        </li>
+        <li>
+          Gilbert Strang, George Fix,<br>
+          An Analysis of the Finite Element Method,<br>
+          Cambridge, 1973,<br>
+          ISBN: 096140888X,<br>
+          LC: TA335.S77.
+        </li>
+        <li>
+          Arthur Stroud,<br>
+          Approximate Calculation of Multiple Integrals,<br>
+          Prentice Hall, 1971,<br>
+          ISBN: 0130438936,<br>
+          LC: QA311.S85.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+        <li>
+          Olgierd Zienkiewicz,<br>
+          The Finite Element Method,<br>
+          Sixth Edition,<br>
+          Butterworth-Heinemann, 2005,<br>
+          ISBN: 0750663200,<br>
+          TA640.2.Z54.
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem2d_pack.f90">fem2d_pack.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "fem2d_pack.sh">fem2d_pack.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 08 July 2020.
+    </i>
+
+  </body>
+
+</html>

@@ -1,0 +1,75 @@
+21 April 2020  12:50:55.118 PM
+
+etdrk4_test
+  FORTRAN90 version
+  Test etdrk4.
+
+burgers_etdrk4_test
+  burgers_etdrk4() solves the Burgers equation
+  using the ETD RK4 method.
+
+gnuplot_surface:
+  FORTRAN90 version
+ 
+  gnuplot_surface: data stored in "burgers_etdrk4_data.txt".
+  gnuplot_surface: plot commands stored in "burgers_etdrk4_commands.txt".
+
+cheb_test:
+  Compute the Chebyshev differentiation matrix
+  and grid.
+ 
+  Chebyshev points:
+ 
+         1:    1.0000000    
+         2:   0.80901699    
+         3:   0.30901699    
+         4:  -0.30901699    
+         5:  -0.80901699    
+         6:   -1.0000000    
+ 
+  Chebyshev differentiation matrix.
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:   8.50000      -10.4721       2.89443      -1.52786       1.10557    
+    2:   2.61803      -1.17082         -2.        0.894427     -0.618034    
+    3: -0.723607          2.       -0.170820      -1.61803      0.894427    
+    4:  0.381966     -0.894427       1.61803      0.170820         -2.      
+    5: -0.276393      0.618034     -0.894427          2.         1.17082    
+    6:  0.500000      -1.10557       1.52786      -2.89443       10.4721    
+ 
+  Col          6      
+  Row
+ 
+    1: -0.500000    
+    2:  0.276393    
+    3: -0.381966    
+    4:  0.723607    
+    5:  -2.61803    
+    6:  -8.50000    
+
+kdv_etdrk4_test
+  kdv_etdrk4() solves the Korteweg-deVries equation
+  using the ETD RK4 method.
+
+gnuplot_surface:
+  FORTRAN90 version
+ 
+  gnuplot_surface: data stored in "kdv_etdrk4_data.txt".
+  gnuplot_surface: plot commands stored in "kdv_etdrk4_commands.txt".
+
+kdv_ift_test
+  kdv_ift() solves the Korteweg-deVries equation
+  using the FFT method with an integrating factor.
+
+gnuplot_surface:
+  FORTRAN90 version
+ 
+  gnuplot_surface: data stored in "kdv_ift_data.txt".
+  gnuplot_surface: plot commands stored in "kdv_ift_commands.txt".
+
+etdrk4_test
+  Normal end of execution.
+
+21 April 2020  12:51:09.586 PM

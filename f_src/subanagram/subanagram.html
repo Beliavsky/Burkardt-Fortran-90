@@ -1,0 +1,199 @@
+<html>
+
+  <head>
+    <title>
+      SUBANAGRAM - Program to Find Subanagrams
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SUBANAGRAM <br> Program to Find Subanagrams
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SUBANAGRAM</b>,
+      a FORTRAN90 code which
+      creates a list of subanagrams of a master word;
+      the user can require that the subanagrams be at least a given number
+      of letters in length.
+    </p>
+
+    <p>
+      For instance, given the minimum length requirement of 4 letters,
+      and the master word <i>sprite</i>,
+      there are as many as 85 subanagrams, including:
+      <pre>
+        ires
+        pert
+        pest
+        pets
+        pier
+        piers
+        pies
+        ...(more)...
+        tires
+        tries
+        trip
+        tripe
+        trips
+      </pre>
+    </p>
+
+    <p>
+      The program simply opens a large "dictionary file" containing a list of words,
+      and checks whether any word in the file matches the length requirement,
+      and is a subanagram of the master word.
+    </p>
+
+    <p>
+      Every word list has
+      peculiarities, that is, it includes words that a user may reject,
+      and it omits words that a user might have accepted.  Hence the output
+      of this program is only a reasonable estimate of the subanagrams of
+      a given word; a user must examine the list carefully and may find
+      many words that need to be deleted, and may think of others that could
+      be added.
+    </p>
+
+    <p>
+      Textropolis is an iPhone application which presents you with the name
+      of a city and asks for as many words as you can form, using only the
+      letters in the city name.  It also wants the words to be at least
+      4 letters long.  This program can be used to generate a list of
+      candidate words for Textropolis's puzzles.  However, Textropolis's
+      dictionary file is quite different from the one used by this program, so
+      many words found by this program are rejected, and Textropolis
+      allows some words unknown to the dictionary file used by this program.
+    </p>
+
+    <h3 align = "center">
+      Dedication:
+    </h3>
+
+    <p>
+      <i>
+        This program is dedicated to Vivian Benton.
+      </i>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>subanagram</b> <i>min_length</i> <i>master_word</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>min_length</i> is the minimum length (number of letters) allowed
+          in any subanagram of the master word; 3, 4 or 5 are typical values;
+        </li>
+        <li>
+          <i>master_word</i> is the master word, which doesn't actually have
+          to be a word, but which should contain no blanks.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SUBANAGRAM</b> is available in
+      <a href = "../../f_src/subanagram/subanagram.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/anagram/anagram.html">
+      ANAGRAM</a>,
+      a C++ program which
+      computes anagrams of a word or phrase.
+    </p>
+
+    <p>
+      <a href = "../../c_src/ladders/ladders.html">
+      LADDERS</a>,
+      a C program which
+      seeks to transform one five letter word into another, by changing
+      one letter at a time, using only legitimate English words.  This
+      puzzle was invented by Lewis Carroll, who called it "Doublets", but
+      it is also known as "Word Ladders" or "Word Gold".  The program 
+      is by Donald Knuth.
+    </p>
+
+    <p>
+      <a href = "../../f_src/puzzles/puzzles.html">
+      PUZZLES</a>,
+      FORTRAN90 codes which
+      were used to solve puzzles.
+    </p>
+
+    <p>
+      <a href = "../../f_src/subanagram_test/subanagram_test.html">
+      subanagram_test</a>
+    </p>
+
+    <p>
+      <a href = "../../datasets/words/words.html">
+      WORDS</a>,
+      a dataset directory which
+      contains lists of words.
+    </p>
+
+    <p>
+      <a href = "../../f_src/wordsnake/wordsnake.html">
+      WORDSNAKE</a>,
+      a FORTRAN90 code which
+      rearranges a list of words so that
+      they have maximum overlap;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "subanagram.f90">subanagram.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "subanagram.sh">subanagram.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

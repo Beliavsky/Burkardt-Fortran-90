@@ -1,0 +1,166 @@
+<html>
+
+  <head>
+    <title>
+      predator_prey_ode
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      predator_prey_ode
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>predator_prey_ode</b>,
+      a FORTRAN90 code which 
+      solves a pair of ordinary differential equations (ODE)
+      that model a pair of predator and prey populations.
+    </p>
+
+    <p>
+      The physical system under consideration is a pair of animal populations.
+    </p>
+
+    <p>
+      The PREY reproduce rapidly; for each animal alive at the beginning of the
+      year, two more will be born by the end of the year.  The prey do not have
+      a natural death rate; instead, they only die by being eaten by the predator.
+      Every prey animal has 1 chance in 1000 of being eaten in a given year by
+      a given predator.
+    </p>
+
+    <p>
+      The PREDATORS only die of starvation, but this happens very quickly.
+      If unfed, a predator will tend to starve in about 1/10 of a year.
+      On the other hand, the predator reproduction rate is dependent on
+      eating prey, and the chances of this depend on the number of available prey.
+    </p>
+
+    <p>
+      The resulting differential equations can be written:
+      <pre>
+        PREY(0) = 5000         
+        PRED(0) =  100
+  
+        d PREY / dT =    2 * PREY(T) - 0.001 * PREY(T) * PRED(T)
+        d PRED / dT = - 10 * PRED(T) + 0.002 * PREY(T) * PRED(T)
+      </pre>
+      Here, the initial values (5000,100) are a somewhat arbitrary starting point.
+    </p>
+
+    <p>
+      The pair of ordinary differential equations that result have an interesting
+      behavior.  For certain choices of the interaction coefficients (such as
+      those given here), the populations of predator and prey will tend to 
+      a periodic oscillation.  The two populations will be out of phase; the
+      number of prey will rise, then after a delay, the predators will rise 
+      as the prey begins to fall, causing the predator population to crash again.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>predator_prey_ode</b> is available in
+      <a href = "../../c_src/predator_prey_ode/predator_prey_ode.html">a C version</a> and
+      <a href = "../../cpp_src/predator_prey_ode/predator_prey_ode.html">a C++ version</a> and
+      <a href = "../../f_src/predator_prey_ode/predator_prey_ode.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/predator_prey_ode/predator_prey_ode.html">a MATLAB version</a> and
+      <a href = "../../octave_src/predator_prey_ode/predator_prey_ode.html">an Octave version</a> and
+      <a href = "../../py_src/predator_prey_ode/predator_prey_ode.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/lorenz_ode/lorenz_ode.html">
+      lorenz_ode</a>,
+      a FORTRAN90 code which
+      approximates solutions to the Lorenz system,
+      creating output files that can be displayed by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/predator_prey_ode_test/predator_prey_ode_test.html">
+      predator_prey_ode_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/spring_ode/spring_ode.html">
+      spring_ode</a>,
+      a FORTRAN90 code which
+      shows how line printer graphics can be used to make a crude illustration
+      of a solution of the ordinary differential equation (ODE) that describes
+      the motion of a weight attached to a spring.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stiff_ode/stiff_ode.html">
+      stiff_ode</a>,
+      a FORTRAN90 code which 
+      considers an ordinary differential equation (ODE) which is
+      an example of a stiff ODE.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          George Lindfield, John Penny,<br>
+          Numerical Methods Using MATLAB,<br>
+          Second Edition,<br>
+          Prentice Hall, 1999,<br>
+          ISBN: 0-13-012641-1,<br>
+          LC: QA297.P45.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "predator_prey_ode.f90">predator_prey_ode.f90</a>, 
+          the source code.
+        </li>
+        <li>
+          <a href = "predator_prey_ode.sh">predator_prey_ode.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

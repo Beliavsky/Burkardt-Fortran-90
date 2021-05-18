@@ -1,0 +1,109 @@
+<html>
+
+  <head>
+    <title>
+      fem3d_sample_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem3d_sample_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem3d_sample_test</b>,
+      a FORTRAN90 code which
+      calls fem3d_sample(), which
+      can evaluate a finite element function of a 3D argument.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem3d_sample/fem3d_sample.html">
+      fem3d_sample</a>,
+      a FORTRAN90 code which
+      evaluates a function defined on a 3D tetrahedral mesh
+      as part of the finite element method (FEM).
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem3d_sample_test.sh">fem3d_sample_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem3d_sample_test.txt">fem3d_sample_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SQ</b> is FEM data for the function f(x,y,z)=x^2+2*y^2-z^2, on a 5x5x5 grid
+      of nodes in the cube [0,4]x[0,4]x[0,4], organized into linear tetrahedrons.
+      The sample data seeks the values of this function on a 4x4x4
+      evenly spaced grid.
+      <ul>
+        <li>
+          <a href = "fem_sq_nodes.txt">fem_sq_nodes.txt</a>,
+          defines the FEM nodes.
+        </li>
+        <li>
+          <a href = "fem_sq_elements.txt">fem_sq_elements.txt</a>,
+          defines the FEM elements.
+        </li>
+        <li>
+          <a href = "fem_sq_values.txt">fem_sq_values.txt</a>,
+          defines the FEM nodal values.
+        </li>
+        <li>
+          <a href = "sample_sq_nodes.txt">sample_sq_nodes.txt</a>,
+          defines the sample nodes.
+        </li>
+        <li>
+          <a href = "sample_sq_values.txt">sample_sq_values.txt</a>,
+          defines the sample nodal values.
+        </li>
+        <li>
+          <a href = "sample_sq_values_exact.txt">sample_sq_values_exact.txt</a>,
+          the exact values of the function at the sample nodes.  This should be
+          compared with the values determined from the FEM function.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 08 July2 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

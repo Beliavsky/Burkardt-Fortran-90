@@ -1,0 +1,60 @@
+19 August 2020   7:44:58.159 AM
+
+POLYGON_TRIANGULATE_TEST
+  FORTRAN90 version.
+  Test the POLYGON_TRIANGULATE library.
+
+TEST01
+  Triangulate the comb_10 polygon.
+ 
+  Triangles
+ 
+  Row        1       2       3
+  Col
+ 
+    1:       3       1       2
+    2:       5       3       4
+    3:       7       5       6
+    4:       9       7       8
+    5:      10       7       9
+    6:       3      10       1
+    7:       5      10       3
+    8:       7      10       5
+
+TEST02
+  Read polygon coordinates in "comb_nodes.txt"
+  Write triangulation to "comb_elements.txt"
+
+TEST02
+  Read polygon coordinates in "hand_nodes.txt"
+  Write triangulation to "hand_elements.txt"
+
+TEST02
+  Read polygon coordinates in "i18_nodes.txt"
+  Write triangulation to "i18_elements.txt"
+
+TEST03
+  Read node coordinates in "comb_nodes.txt"
+
+  Write edges to "comb_edges.txt"
+  Write diagonals to "comb_diagonals.txt"
+  Write gnuplot commands to "comb_commands.txt"
+
+TEST03
+  Read node coordinates in "hand_nodes.txt"
+
+  Write edges to "hand_edges.txt"
+  Write diagonals to "hand_diagonals.txt"
+  Write gnuplot commands to "hand_commands.txt"
+
+TEST03
+  Read node coordinates in "i18_nodes.txt"
+
+  Write edges to "i18_edges.txt"
+  Write diagonals to "i18_diagonals.txt"
+  Write gnuplot commands to "i18_commands.txt"
+
+POLYGON_TRIANGULATE_TEST
+  Normal end of execution.
+
+19 August 2020   7:44:58.163 AM

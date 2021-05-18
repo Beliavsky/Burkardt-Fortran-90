@@ -1,0 +1,48 @@
+August  2 2020  10:04:06.645 PM
+ 
+MD
+  FORTRAN90 version
+  A molecular dynamics program.
+ 
+  Enter ND, the spatial dimension (2 or 3 ):
+ 
+  Enter NP, the number of particles (500, for instance):
+ 
+  Enter STEP_NUM, the number of time steps (500, for instance):
+ 
+  ND, the spatial dimension, is        3
+  NP, the number of particles in the simulation is     1000
+  STEP_NUM, the number of time steps, is      400
+  DT, the size of each time step, is   0.100000E-03
+ 
+  Initializing positions, velocities, and accelerations.
+ 
+  Computing initial forces and energies.
+ 
+  At each step, we report the potential and kinetic energies.
+  The sum of these energies should be a constant.
+  As an accuracy check, we also print the relative error
+  in the total energy.
+ 
+      Step      Potential       Kinetic        (P+K-E0)/E0
+                Energy P        Energy K       Relative Energy Error
+ 
+         0     498081.         0.00000         0.00000    
+        40     498081.        0.586318E-01    0.196328E-10
+        80     498080.        0.243781        0.179783E-10
+       120     498080.        0.555623        0.133952E-10
+       160     498080.        0.994304        0.436779E-11
+       200     498079.         1.56003       -0.106316E-10
+       240     498078.         2.25307       -0.331114E-10
+       280     498078.         3.07375       -0.646122E-10
+       320     498077.         4.02246       -0.106532E-09
+       360     498076.         5.09965       -0.160440E-09
+       400     498074.         6.30583       -0.227920E-09
+ 
+  Elapsed cpu time for main computation:
+     3.57027     seconds
+ 
+MD:
+  Normal end of execution.
+ 
+August  2 2020  10:04:10.224 PM

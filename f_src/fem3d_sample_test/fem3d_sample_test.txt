@@ -1,0 +1,25 @@
+ 
+FEM3D_SAMPLE
+  FORTRAN90 version
+ 
+  Read files defining an FEM function of 3 arguments.
+  Read a file of sample arguments.
+  Write a file of function values at the arguments.
+ 
+  The FEM node dimension is               3
+  The FEM node number is                125
+  The FEM element order is                4
+  The FEM element number is             384
+  The FEM value order is                  1
+  the FEM value number is               125
+  The element neighbor array has been computed.
+ 
+  Sample node spatial dimension is        3
+  Sample node number is                  64
+ 
+  Interpolated FEM data written to "sample_sq_values.txt".
+ 
+FEM3D_SAMPLE
+  Normal end of execution.
+ 
+ 8 July 2020   9:37:38.261 PM

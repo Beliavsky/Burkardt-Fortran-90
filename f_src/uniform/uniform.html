@@ -1,0 +1,376 @@
+<html>
+
+  <head>
+    <title>
+      UNIFORM - Uniform Random Number Generation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      UNIFORM <br> Uniform Random Number Generation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>UNIFORM</b>,
+      a FORTRAN90 code which
+      returns a sequence of uniformly distributed pseudorandom numbers.
+    </p>
+
+    <p>
+      The fundamental underlying random number generator
+      is based on a simple, old, and limited linear congruential random
+      number generator originally used in the IBM System 360.  If you want
+      state of the art random number generation, look elsewhere!
+    </p>
+
+    <p>
+      FORTRAN90 already has the <b>random_number</b> function, which can
+      return pseudorandom numbers rapidly, in bulk, and generally with
+      less correlation than UNIFORM provides.
+    </p>
+
+    <p>
+      However, this library makes it possible to compare certain computations
+      that use uniform random numbers, written in C, C++, FORTRAN77,
+      FORTRAN90, Mathematica, MATLAB or Python.
+    </p>
+
+    <p>
+      Various types of random data can be computed.  The routine names
+      are chosen to indicate the corresponding type:
+      <ul>
+        <li>
+          <b>B</b>, an integer binary value of 0 or 1.
+        </li>
+        <li>
+          <b>C4</b>, complex ( kind = 4 )
+        </li>
+        <li>
+          <b>C8</b>, complex ( kind = 8 )
+        </li>
+        <li>
+          <b>CH</b>, character
+        </li>
+        <li>
+          <b>I4</b>, integer ( kind = 4 )
+        </li>
+        <li>
+          <b>L4</b>, logical
+        </li>
+        <li>
+          <b>R4</b>, real ( kind = 4 )
+        </li>
+        <li>
+          <b>R8</b>, real ( kind = 8 )
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      In some cases, a one dimensional vector or two dimensional
+      array of values is to be generated, and part of the name
+      will therefore include:
+      <ul>
+        <li>
+          <b>VEC</b>, vector;
+        </li>
+        <li>
+          <b>MAT</b>, a matrix of data;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The underlying random numbers are generally defined over some
+      unit interval or region.  Routines are available which return
+      these "unit" values, while other routines allow the user to
+      specify limits between which the unit values are rescaled.
+      The name of a routine will usually include a tag
+      suggestig which is the case:
+      <ul>
+        <li>
+          <b>01</b>, the data lies in a nit interval or region;
+        </li>
+        <li>
+          <b>AB</b>, the data  lies in a scaled interval or region;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The random number generator embodied here is not very sophisticated.
+      It will not have the best properties of distribution, noncorrelation
+      and long period.  It is not the purpose of this library to achieve
+      such worthy goals.  This is simply a reasonably portable library
+      that can be implemented in various languages, on various machines,
+      and for which it is possible, for instance, to regard the output
+      as a function of the seed, and moreover, to work directly with
+      the sequence of seeds, if necessary.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>UNIFORM</b> is available in
+      <a href = "../../c_src/uniform/uniform.html">a C version</a> and
+      <a href = "../../cpp_src/uniform/uniform.html">a C++ version</a> and
+      <a href = "../../f_src/uniform/uniform.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/uniform/uniform.html">a MATLAB version</a> and
+      <a href = "../../py_src/uniform/uniform.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa183/asa183.html">
+      ASA183</a>,
+      a FORTRAN90 code which
+      implements the Wichman-Hill random number generator (RNG).
+    </p>
+
+    <p>
+      <a href = "../../f_src/faure/faure.html">
+      FAURE</a>,
+      a FORTRAN90 code which
+      computes elements of a Faure quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90_random/f90_random.html">
+      F90_RANDOM</a>,
+      FORTRAN90 codes which
+      illustrate the use of Fortran's random number generator routines.
+    </p>
+
+    <p>
+      <a href = "../../f_src/halton/halton.html">
+      HALTON</a>,
+      a FORTRAN90 code which
+      computes elements of a Halton quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hammersley/hammersley.html">
+      HAMMERSLEY</a>,
+      a FORTRAN90 code which
+      computes elements of a Hammersley Quasi Monte Carlo (QMC) sequence,
+      using a simple interface.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ieee_uniform_sample/ieee_uniform_sample.html">
+      IEEE_UNIFORM_SAMPLE</a>,
+      a FORTRAN90 code which
+      tries to uniformly sample the discrete set of values that represent the
+      legal IEEE real numbers;
+    </p>
+
+    <p>
+      <a href = "../../f_src/ihs/ihs.html">
+      IHS</a>,
+      a FORTRAN90 code which
+      computes elements of an improved distributed Latin hypercube dataset.
+    </p>
+
+    <p>
+      <a href = "../../f_src/niederreiter2/niederreiter2.html">
+      NIEDERREITER2</a>,
+      a FORTRAN90 code which
+      computes elements of a Niederreiter quasirandom sequence with base 2.
+    </p>
+
+    <p>
+      <a href = "../../f_src/normal/normal.html">
+      NORMAL</a>,
+      a FORTRAN90 code which
+      computes elements of a sequence of pseudorandom normally distributed values.
+    </p>
+
+    <p>
+      <a href = "../../f_src/randlc/randlc.html">
+      RANDLC</a>,
+      a FORTRAN90 code which
+      generates a sequence of pseudorandom numbers,
+      used by the NAS Benchmark programs.
+    </p>
+
+    <p>
+      <a href = "../../f_src/random_mpi/random_mpi.html">
+      RANDOM_MPI</a>,
+      a FORTRAN90 code which
+      demonstrates one way to generate the same sequence of random numbers
+      for both sequential execution and parallel execution under MPI.
+    </p>
+
+    <p>
+      <a href = "../../f_src/random_sorted/random_sorted.html">
+      RANDOM_SORTED</a>,
+      a FORTRAN90 code which
+      generates vectors of random values which are already sorted.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ranlib/ranlib.html">
+      RANLIB</a>,
+      a FORTRAN90 code which
+      produces random samples from Probability Density Functions (PDF's), 
+      including Beta, Chi-square Exponential, F, Gamma, Multivariate normal,
+      Noncentral chi-square, Noncentral F, Univariate normal, random permutations,
+      Real uniform, Binomial, Negative Binomial, Multinomial, Poisson
+      and Integer uniform,
+      by Barry Brown and James Lovato.
+    </p>
+
+    <p>
+      <a href = "../../f_src/rnglib/rnglib.html">
+      RNGLIB</a>,
+      a FORTRAN90 code which
+      implements a random number generator (RNG) with splitting facilities,
+      allowing multiple independent streams to be computed,
+      by L'Ecuyer and Cote.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sobol/sobol.html">
+      SOBOL</a>,
+      a FORTRAN90 code which
+      computes elements of a Sobol quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform_test/uniform_test.html">
+      uniform_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/van_der_corput/van_der_corput.html">
+      VAN_DER_CORPUT</a>,
+      a FORTRAN90 code which
+      computes elements of a van der Corput quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ziggurat/ziggurat.html">
+      ZIGGURAT</a>,
+      a FORTRAN90 code which
+      generates points from a uniform, normal or exponential distribution, using
+      the ziggurat method.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 362-376.
+        </li>
+        <li>
+          Donald Knuth,<br>
+          The Art of Computer Programming,<br>
+          Volume 2, Seminumerical Algorithms,<br>
+          Third Edition,<br>
+          Addison Wesley, 1997,<br>
+          ISBN: 0201896842,<br>
+          LC: QA76.6.K64.
+        </li>
+        <li>
+          Pierre LEcuyer,<br>
+          Random Number Generation,<br>
+          in Handbook of Simulation,<br>
+          edited by Jerry Banks,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Peter Lewis, Allen Goodman, James Miller,<br>
+          A Pseudo-Random Number Generator for the System/360,<br>
+          IBM Systems Journal,<br>
+          Volume 8, Number 2, 1969, pages 136-143.
+        </li>
+        <li>
+          Stephen Park, Keith Miller,<br>
+          Random Number Generators: Good Ones are Hard to Find,<br>
+          Communications of the ACM,<br>
+          Volume 31, Number 10, October 1988, pages 1192-1201.
+        </li>
+        <li>
+          Eric Weisstein,<br>
+          CRC Concise Encyclopedia of Mathematics,<br>
+          CRC Press, 2002,<br>
+          Second edition,<br>
+          ISBN: 1584883472,<br>
+          LC: QA5.W45.
+        </li>
+        <li>
+          Barry Wilkinson, Michael Allen,<br>
+          Parallel Programming:
+          Techniques and Applications Using Networked Workstations and Parallel Computers,<br>
+          Prentice Hall,<br>
+          ISBN: 0-13-140563-2,<br>
+          LC: QA76.642.W54.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "uniform.f90">uniform.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "uniform.sh">uniform.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

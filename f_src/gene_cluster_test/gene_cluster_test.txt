@@ -1,0 +1,144 @@
+11 July 2020  10:35:17.804 AM
+ 
+GENE_CLUSTER
+  FORTRAN90 version
+  Arrange gene expression data into clusters.
+ 
+ 
+Enter the name of the data file
+ 
+  Data will be read from the file i1039.dat
+ 
+FILE_COLUMN_COUNT - Warning!
+  The file does not seem to contain any data.
+ 
+  Spatial dimension is            0
+  Number of data points is        0
+ 
+Enter lower and upper number of clusters
+ 
+  CLUSTER_HI exceeds number of points.
+ 
+  The program will try to determine the minimum energy
+  of a clustering, for cluster sizes in the range:
+             1           0
+ 
+Enter number of different random configurations to check
+ 
+  For each number of clusters, the number of
+  distinct initial random configurations to be checked
+  will be        60
+ 
+Enter the number of energy iterations
+ 
+  For each initial random configuration, the number of
+  times the program will recompute the cluster centers,
+  cluster components, and energy is       40
+ 
+  Minimum and maximum data values:
+ 
+ 
+  Cluster  Minimum    Maximum
+  Size     Energy     Energy
+ 
+ 
+Energy table:
+ 
+Cluster              Energy
+Size      Energy     /point    Sqrt(E/Pt)
+ 
+ 
+  Data is to be normalized.
+ 
+ 
+  Minimum and maximum data values:
+ 
+ 
+  Cluster  Minimum    Maximum
+  Size     Energy     Energy
+ 
+ 
+Energy table:
+ 
+Cluster              Energy
+Size      Energy     /point    Sqrt(E/Pt)
+ 
+ 
+GENE_CLUSTER
+  Normal end of execution.
+
+11 July 2020  10:35:17.804 AM
+11 July 2020  10:35:17.808 AM
+ 
+GENE_CLUSTER
+  FORTRAN90 version
+  Arrange gene expression data into clusters.
+ 
+ 
+Enter the name of the data file
+ 
+  Data will be read from the file i1650.dat
+ 
+FILE_COLUMN_COUNT - Fatal error!
+  Could not open the file:
+    i1650.dat
+ 
+FILE_LINE_COUNT - Fatal error!
+  Could not open the file:i1650.dat
+ 
+  Spatial dimension is           -1
+  Number of data points is       -1
+ 
+Enter lower and upper number of clusters
+ 
+  CLUSTER_HI exceeds number of points.
+ 
+  The program will try to determine the minimum energy
+  of a clustering, for cluster sizes in the range:
+             1          -1
+ 
+Enter number of different random configurations to check
+ 
+  For each number of clusters, the number of
+  distinct initial random configurations to be checked
+  will be        20
+ 
+Enter the number of energy iterations
+ 
+  For each initial random configuration, the number of
+  times the program will recompute the cluster centers,
+  cluster components, and energy is       20
+ 
+  Minimum and maximum data values:
+ 
+ 
+  Cluster  Minimum    Maximum
+  Size     Energy     Energy
+ 
+ 
+Energy table:
+ 
+Cluster              Energy
+Size      Energy     /point    Sqrt(E/Pt)
+ 
+ 
+  Data is to be normalized.
+ 
+ 
+  Minimum and maximum data values:
+ 
+ 
+  Cluster  Minimum    Maximum
+  Size     Energy     Energy
+ 
+ 
+Energy table:
+ 
+Cluster              Energy
+Size      Energy     /point    Sqrt(E/Pt)
+ 
+ 
+GENE_CLUSTER
+  Normal end of execution.
+
+11 July 2020  10:35:17.809 AM

@@ -1,0 +1,20 @@
+28 August 2020   8:25:08.563 PM
+ 
+SPHERE_DELAUNAY
+  FORTRAN90 version
+  Given a set of XYZ points on the sphere,
+  compute the Delaunay triangulation.
+ 
+XYZ_READ:
+  Read      100 text lines from gen_00100.xyz
+  Read      100 sets of (X,Y,Z) coordinates.
+ 
+TRPLOT created the triangulation plot file: "gen_00100.eps".
+ 
+TR_TO_XYZL:
+  Wrote the Delaunay XYZL file "gen_00100.xyzl".
+ 
+SPHERE_DELAUNAY
+  Normal end of execution.
+ 
+28 August 2020   8:25:08.566 PM

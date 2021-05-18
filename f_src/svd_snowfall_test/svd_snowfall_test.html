@@ -1,0 +1,230 @@
+<html>
+
+  <head>
+    <title>
+      svd_snowfall_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      svd_snowfall_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>svd_snowfall_test</b>,
+      a FORTRAN90 code which
+      calls svd_snowfall(), which
+      demonstrates the use of the Singular Value Decomposition (SVD)
+      to analyze a set of historical snowfall data,
+      with plots created by GNUPLOT.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/svd_snowfall/svd_snowfall.html">
+      svd_snowfall</a>,
+      a FORTRAN90 code which
+      reads a file containing historical snowfall data and 
+      analyzes the data with the Singular Value Decomposition (SVD),
+      and plots created by gnuplot().
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "svd_snowfall_test.f90">svd_snowfall_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "svd_snowfall_test.sh">svd_snowfall_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "svd_snowfall_test.txt">svd_snowfall_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The snowfall data itself must be read into the program from a file:
+      <ul>
+        <li>
+          <a href = "snowfall.txt">snowfall.txt</a>, 
+          the snowfall data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The second test function writes "command" and "data" files that can be used
+      by gnuplot to create plots.
+      <ul>
+        <li>
+          <a href = "singular_values_commands.txt">singular_values_commands.txt</a>, 
+          a command file.
+        </li>
+        <li>
+          <a href = "singular_values_data.txt">singular_values_data.txt</a>, 
+          a data file.
+        </li>
+        <li>
+          <a href = "singular_values.png">singular_values.png</a>, 
+          the resulting plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The third test function writes "command" and "data" files that can be used
+      by gnuplot to create plots.
+      <ul>
+        <li>
+          <a href = "approx_commands.txt">approx_commands.txt</a>, 
+          a command file.
+        </li>
+        <li>
+          <a href = "approx_data.txt">approx_data.txt</a>, 
+          a data file.
+        </li>
+        <li>
+          <a href = "approx0.png">approx0.png</a>, 
+          the 2012 snowfall (red).
+        </li>
+        <li>
+          <a href = "approx1.png">approx1.png</a>, 
+          the 2012 snowfall (red) and rank 1 approximation (blue).
+        </li>
+        <li>
+          <a href = "approx2.png">approx2.png</a>, 
+          the 2012 snowfall (red) and rank 2 approximation (blue).
+        </li>
+        <li>
+          <a href = "approx3.png">approx3.png</a>, 
+          the 2012 snowfall (red) and rank 3 approximation (blue).
+        </li>
+        <li>
+          <a href = "approx4.png">approx4.png</a>, 
+          the 2012 snowfall (red) and rank 4 approximation (blue).
+        </li>
+        <li>
+          <a href = "approx5.png">approx5.png</a>, 
+          the 2012 snowfall (red) and rank 5 approximation (blue).
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The fourth test function writes "command" and "data" files that can be used
+      by gnuplot to create plots of the first 6 U modes, which form a basis
+      for average snowfall as a function of the month.
+      <ul>
+        <li>
+          <a href = "umode_commands.txt">umode_commands.txt</a>, 
+          a command file.
+        </li>
+        <li>
+          <a href = "umode_data.txt">umode_data.txt</a>, 
+          a data file.
+        </li>
+        <li>
+          <a href = "umode1.png">umode1.png</a>, 
+          basis vector 1 for snowfall as a function of month.
+        </li>
+        <li>
+          <a href = "umode2.png">umode2.png</a>, 
+          basis vector 2 for snowfall as a function of month.
+        </li>
+        <li>
+          <a href = "umode3.png">umode3.png</a>, 
+          basis vector 3 for snowfall as a function of month.
+        </li>
+        <li>
+          <a href = "umode4.png">umode4.png</a>, 
+          basis vector 4 for snowfall as a function of month.
+        </li>
+        <li>
+          <a href = "umode5.png">umode5.png</a>, 
+          basis vector 5 for snowfall as a function of month.
+        </li>
+        <li>
+          <a href = "umode6.png">umode6.png</a>, 
+          basis vector 6 for snowfall as a function of month.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The fifth test function writes "command" and "data" files that can be used
+      by gnuplot to create plots of the first 6 V modes, which form a basis
+      for total yearly snowfall behavior as a function of the year.
+      <ul>
+        <li>
+          <a href = "vmode_commands.txt">vmode_commands.txt</a>, 
+          a command file.
+        </li>
+        <li>
+          <a href = "vmode_data.txt">vmode_data.txt</a>, 
+          a data file.
+        </li>
+        <li>
+          <a href = "vmode1.png">vmode1.png</a>, 
+          basis vector 1 for total yearly snowfall as a function of year.
+        </li>
+        <li>
+          <a href = "vmode2.png">vmode2.png</a>, 
+          basis vector 2 for total yearly snowfall as a function of year.
+        </li>
+        <li>
+          <a href = "vmode3.png">vmode3.png</a>, 
+          basis vector 3 for total yearly snowfall as a function of year.
+        </li>
+        <li>
+          <a href = "vmode4.png">vmode4.png</a>, 
+          basis vector 4 for total yearly snowfall as a function of year.
+        </li>
+        <li>
+          <a href = "vmode5.png">vmode5.png</a>, 
+          basis vector 5 for total yearly snowfall as a function of year.
+        </li>
+        <li>
+          <a href = "umode6.png">umode6.png</a>, 
+          basis vector 6 for snowfall as a function of month.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,2851 @@
+June 10 2020   7:38:01.237 PM
+
+COMBO_TEST
+  FORTRAN90 version
+  Test the COMBO library.
+
+BACKTRACK_TEST
+  BACKTRACK supervises a backtrack search.
+  Here, we search for an arrangement of nonattacking
+  queens on a chessboard.
+
+   8   4   1   3   6   2   7   5
+   8   3   1   6   2   5   7   4
+   8   2   5   3   1   7   4   6
+   8   2   4   1   7   5   3   6
+   7   5   3   1   6   8   2   4
+   7   4   2   8   6   1   3   5
+   7   4   2   5   8   1   3   6
+   7   3   8   2   5   1   6   4
+   7   3   1   6   8   5   2   4
+   7   2   6   3   1   4   8   5
+   7   2   4   1   8   5   3   6
+   7   1   3   8   6   4   2   5
+   6   8   2   4   1   7   5   3
+   6   4   7   1   8   2   5   3
+   6   4   7   1   3   5   2   8
+   6   4   2   8   5   7   1   3
+   6   4   1   5   8   2   7   3
+   6   3   7   4   1   8   2   5
+   6   3   7   2   8   5   1   4
+   6   3   7   2   4   8   1   5
+   6   3   5   8   1   4   2   7
+   6   3   5   7   1   4   2   8
+   6   3   1   8   5   2   4   7
+   6   3   1   8   4   2   7   5
+   6   3   1   7   5   8   2   4
+   6   2   7   1   4   8   5   3
+   6   2   7   1   3   5   8   4
+   6   1   5   2   8   3   7   4
+   5   8   4   1   7   2   6   3
+   5   8   4   1   3   6   2   7
+   5   7   4   1   3   8   6   2
+   5   7   2   6   3   1   8   4
+   5   7   2   6   3   1   4   8
+   5   7   2   4   8   1   3   6
+   5   7   1   4   2   8   6   3
+   5   7   1   3   8   6   4   2
+   5   3   8   4   7   1   6   2
+   5   3   1   7   2   8   6   4
+   5   3   1   6   8   2   4   7
+   5   2   8   1   4   7   3   6
+   5   2   6   1   7   4   8   3
+   5   2   4   7   3   8   6   1
+   5   2   4   6   8   3   1   7
+   5   1   8   6   3   7   2   4
+   5   1   8   4   2   7   3   6
+   5   1   4   6   8   2   7   3
+   4   8   5   3   1   7   2   6
+   4   8   1   5   7   2   6   3
+   4   8   1   3   6   2   7   5
+   4   7   5   3   1   6   8   2
+   4   7   5   2   6   1   3   8
+   4   7   3   8   2   5   1   6
+   4   7   1   8   5   2   6   3
+   4   6   8   3   1   7   5   2
+   4   6   8   2   7   1   3   5
+   4   6   1   5   2   8   3   7
+   4   2   8   6   1   3   5   7
+   4   2   8   5   7   1   3   6
+   4   2   7   5   1   8   6   3
+   4   2   7   3   6   8   5   1
+   4   2   7   3   6   8   1   5
+   4   2   5   8   6   1   3   7
+   4   1   5   8   6   3   7   2
+   4   1   5   8   2   7   3   6
+   3   8   4   7   1   6   2   5
+   3   7   2   8   6   4   1   5
+   3   7   2   8   5   1   4   6
+   3   6   8   2   4   1   7   5
+   3   6   8   1   5   7   2   4
+   3   6   8   1   4   7   5   2
+   3   6   4   2   8   5   7   1
+   3   6   4   1   8   5   7   2
+   3   6   2   7   5   1   8   4
+   3   6   2   7   1   4   8   5
+   3   6   2   5   8   1   7   4
+   3   5   8   4   1   7   2   6
+   3   5   7   1   4   2   8   6
+   3   5   2   8   6   4   7   1
+   3   5   2   8   1   7   4   6
+   3   1   7   5   8   2   4   6
+   2   8   6   1   3   5   7   4
+   2   7   5   8   1   4   6   3
+   2   7   3   6   8   5   1   4
+   2   6   8   3   1   4   7   5
+   2   6   1   7   4   8   3   5
+   2   5   7   4   1   8   6   3
+   2   5   7   1   3   8   6   4
+   2   4   6   8   3   1   7   5
+   1   7   5   8   2   4   6   3
+   1   7   4   6   8   2   5   3
+   1   6   8   3   7   4   2   5
+   1   5   8   6   3   7   2   4
+
+BAL_SEQ_CHECK TEST
+  BAL_SEQ_CHECK checks N and T(1:2*N).
+
+  Check?   N    T(1:2*N)
+
+       T   5           0           0           1           0           1
+       F   5           1           1           0           1           0
+       F   5           0           0           1           0           1
+
+BAL_SEQ_ENUM_TEST
+  BAL_SEQ_ENUM enumerates balanced sequences of N items.
+
+   N     #
+
+   0       1
+   1       1
+   2       2
+   3       5
+   4      14
+   5      42
+   6     132
+   7     429
+   8    1430
+   9    4862
+  10   16796
+
+BAL_SEQ_RANK_TEST
+  BAL_SEQ_RANK ranks a balanced sequence of N items.
+ 
+  Element to be ranked:
+ 
+       1         0
+       2         0
+       3         1
+       4         0
+       5         1
+       6         1
+       7         0
+       8         0
+       9         1
+      10         1
+
+  Computed rank:       21
+
+BAL_SEQ_SUCCESSOR_TEST
+  BAL_SEQ_SUCCESSOR lists balanced sequences of N items, one at a time.
+      0   0 0 0 0 0 1 1 1 1 1
+      1   0 0 0 0 1 0 1 1 1 1
+      2   0 0 0 0 1 1 0 1 1 1
+      3   0 0 0 0 1 1 1 0 1 1
+      4   0 0 0 0 1 1 1 1 0 1
+      5   0 0 0 1 0 0 1 1 1 1
+      6   0 0 0 1 0 1 0 1 1 1
+      7   0 0 0 1 0 1 1 0 1 1
+      8   0 0 0 1 0 1 1 1 0 1
+      9   0 0 0 1 1 0 0 1 1 1
+     10   0 0 0 1 1 0 1 0 1 1
+     11   0 0 0 1 1 0 1 1 0 1
+     12   0 0 0 1 1 1 0 0 1 1
+     13   0 0 0 1 1 1 0 1 0 1
+     14   0 0 1 0 0 0 1 1 1 1
+     15   0 0 1 0 0 1 0 1 1 1
+     16   0 0 1 0 0 1 1 0 1 1
+     17   0 0 1 0 0 1 1 1 0 1
+     18   0 0 1 0 1 0 0 1 1 1
+     19   0 0 1 0 1 0 1 0 1 1
+     20   0 0 1 0 1 0 1 1 0 1
+     21   0 0 1 0 1 1 0 0 1 1
+     22   0 0 1 0 1 1 0 1 0 1
+     23   0 0 1 1 0 0 0 1 1 1
+     24   0 0 1 1 0 0 1 0 1 1
+     25   0 0 1 1 0 0 1 1 0 1
+     26   0 0 1 1 0 1 0 0 1 1
+     27   0 0 1 1 0 1 0 1 0 1
+     28   0 1 0 0 0 0 1 1 1 1
+     29   0 1 0 0 0 1 0 1 1 1
+     30   0 1 0 0 0 1 1 0 1 1
+     31   0 1 0 0 0 1 1 1 0 1
+     32   0 1 0 0 1 0 0 1 1 1
+     33   0 1 0 0 1 0 1 0 1 1
+     34   0 1 0 0 1 0 1 1 0 1
+     35   0 1 0 0 1 1 0 0 1 1
+     36   0 1 0 0 1 1 0 1 0 1
+     37   0 1 0 1 0 0 0 1 1 1
+     38   0 1 0 1 0 0 1 0 1 1
+     39   0 1 0 1 0 0 1 1 0 1
+     40   0 1 0 1 0 1 0 0 1 1
+     41   0 1 0 1 0 1 0 1 0 1
+
+BAL_SEQ_TO_TABLEAU_TEST
+  BAL_SEQ_TO_TABLEAU converts a balanced
+  sequence to a tableau;
+ 
+  Balanced sequence:
+           0           0           1           1           0
+           0           1           1
+ 
+  Tableau:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       2       5       6
+    2:       3       4       7       8
+
+BAL_SEQ_UNRANK_TEST
+  BAL_SEQ_UNRANK unranks a balanced sequence of N items.
+
+  The element of rank       21
+
+     0 0 1 0 1 1 0 0 1 1
+
+BELL_NUMBERS_TEST
+  BELL_NUMBERS computes Bell numbers.
+
+         N        BELL(N)    BELL_NUMBERS(N)
+
+         0             1             1
+         1             1             1
+         2             2             2
+         3             5             5
+         4            15            15
+         5            52            52
+         6           203           203
+         7           877           877
+         8          4140          4140
+         9         21147         21147
+        10        115975        115975
+
+CYCLE_CHECK TEST
+  CYCLE_CHECK checks a permutation in cycle form.
+
+  Permutation in cycle form:
+  Number of cycles is    3
+
+    
+     5
+    
+     1     3     8     6
+    
+     2     4     7
+  Check = F
+
+  Permutation in cycle form:
+  Number of cycles is    0
+
+  Check = F
+
+  Permutation in cycle form:
+  Number of cycles is    3
+
+    
+     5
+    
+     1     3     8     6
+    
+     2     4
+  Check = F
+
+  Permutation in cycle form:
+  Number of cycles is    3
+
+    
+     5
+    
+     1     3    12     6
+    
+     2     4     7
+  Check = F
+
+  Permutation in cycle form:
+  Number of cycles is    3
+
+    
+     5
+    
+     1     3     8     5
+    
+     2     4     7
+  Check = F
+
+  Permutation in cycle form:
+  Number of cycles is    3
+
+    
+     5
+    
+     1     3     8     6
+    
+     2     4     7
+  Check = T
+
+CYCLE_TO_PERM_TEST
+  CYCLE_TO_PERM converts a permutation from
+  cycle to array form;
+
+  Cycle form:
+  Number of cycles is        3
+
+       4   2   5   3   1
+       6
+       7
+ 
+  Corresponding permutation:
+ 
+   1   2   3   4   5   6   7
+   4   5   1   2   3   6   7
+
+DIST_ENUM_TEST
+  DIST_ENUM enumerates distributions of N indistinguishable
+  objects among M distinguishable slots:
+
+      N:      0       1       2       3       4       5
+   M
+   0:         0       0       0       0       0       0
+   1:         1       1       1       1       1       1
+   2:         1       2       3       4       5       6
+   3:         1       3       6      10      15      21
+   4:         1       4      10      20      35      56
+   5:         1       5      15      35      70     126
+   6:         1       6      21      56     126     252
+   7:         1       7      28      84     210     462
+   8:         1       8      36     120     330     792
+   9:         1       9      45     165     495    1287
+  10:         1      10      55     220     715    2002
+
+DIST_NEXT_TEST
+  DIST_NEXT produces the next
+  distribution of M indistinguishable
+  objects among K distinguishable slots.
+
+  Number of:
+    indistinguishable objects =        5
+    distinguishable slots =            3
+    distributions is                  21
+
+        1    0    0    5
+        2    0    1    4
+        3    0    2    3
+        4    0    3    2
+        5    0    4    1
+        6    0    5    0
+        7    1    0    4
+        8    1    1    3
+        9    1    2    2
+       10    1    3    1
+       11    1    4    0
+       12    2    0    3
+       13    2    1    2
+       14    2    2    1
+       15    2    3    0
+       16    3    0    2
+       17    3    1    1
+       18    3    2    0
+       19    4    0    1
+       20    4    1    0
+       21    5    0    0
+
+EDGE_CHECK TEST
+  EDGE_CHECK checks a graph described by edges.
+
+  Check?  Nodes  Edges    EdgeList
+
+
+  F  -5   3
+ 
+  Edge list of graph:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       3
+    2:       2       3       1
+
+  F   3  -1
+ 
+  Edge list of graph:
+ 
+  (None)
+
+  F   3   3
+ 
+  Edge list of graph:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       3
+    2:       2       3       4
+
+  F   3   3
+ 
+  Edge list of graph:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       3
+    2:       2       2       1
+
+  F   3   3
+ 
+  Edge list of graph:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       2
+    2:       2       3       1
+
+  T   3   3
+ 
+  Edge list of graph:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       3
+    2:       2       3       1
+
+EDGE_DEGREE_TEST
+  EDGE_DEGREE determines the degree of each node in a graph.
+ 
+  The edge array:
+ 
+  Col        1       2       3       4       5
+  Row
+ 
+    1:       1       2       2       3       4
+    2:       2       3       4       4       5
+ 
+  The degree vector:
+ 
+       1         1
+       2         3
+       3         2
+       4         3
+       5         1
+
+EDGE_ENUM_TEST
+  EDGE_ENUM enumerates the maximum number of edges
+  possible in a graph of NODE_NUM nodes.
+
+   NODE_NUM    EDGE_NUM(max)
+
+          1           0
+          2           1
+          3           3
+          4           6
+          5          10
+          6          15
+          7          21
+          8          28
+          9          36
+         10          45
+
+GRAY_CODE_CHECK TEST
+  GRAY_CODE_CHECK checks N and T(1:N).
+
+  Check?   N    T(1:N)
+
+       1   5   0 1 1 0 1
+       0   5   1 0 7 1 0
+       1   5   1 1 1 1 1
+
+GRAY_CODE_ENUM_TEST
+  GRAY_CODE_ENUM enumerates Gray codes
+
+   N    Enum(N)
+
+   0       1
+   1       2
+   2       4
+   3       8
+   4      16
+   5      32
+   6      64
+   7     128
+   8     256
+   9     512
+  10    1024
+
+GRAY_CODE_RANK_TEST
+  GRAY_CODE_RANK ranks Gray codes.
+ 
+  Element to be ranked:
+ 
+       1         1
+       2         1
+       3         0
+       4         0
+       5         0
+
+  Computed rank:       16
+
+GRAY_CODE_SUCCESSOR_TEST
+  GRAY_CODE_SUCCESSOR lists Gray codes one by one.
+        0    0    0    0    0    0
+        1    0    0    0    0    1
+        2    0    0    0    1    1
+        3    0    0    0    1    0
+        4    0    0    1    1    0
+        5    0    0    1    1    1
+        6    0    0    1    0    1
+        7    0    0    1    0    0
+        8    0    1    1    0    0
+        9    0    1    1    0    1
+       10    0    1    1    1    1
+       11    0    1    1    1    0
+       12    0    1    0    1    0
+       13    0    1    0    1    1
+       14    0    1    0    0    1
+       15    0    1    0    0    0
+       16    1    1    0    0    0
+       17    1    1    0    0    1
+       18    1    1    0    1    1
+       19    1    1    0    1    0
+       20    1    1    1    1    0
+       21    1    1    1    1    1
+       22    1    1    1    0    1
+       23    1    1    1    0    0
+       24    1    0    1    0    0
+       25    1    0    1    0    1
+       26    1    0    1    1    1
+       27    1    0    1    1    0
+       28    1    0    0    1    0
+       29    1    0    0    1    1
+       30    1    0    0    0    1
+       31    1    0    0    0    0
+
+GRAY_CODE_UNRANK_TEST
+  GRAY_CODE_UNRANK unranks a Gray code.
+
+  The element of rank       16
+
+        1    1    0    0    0
+
+I4_CHOOSE_TEST
+  I4_CHOOSE computes binomial coefficients.
+      -1      -1       0
+      -1       0       0
+      -1       1       0
+      -1       2       0
+      -1       3       0
+      -1       4       0
+      -1       5       0
+       0      -1       0
+       0       0       1
+       0       1       0
+       0       2       0
+       0       3       0
+       0       4       0
+       0       5       0
+       1      -1       0
+       1       0       1
+       1       1       1
+       1       2       0
+       1       3       0
+       1       4       0
+       1       5       0
+       2      -1       0
+       2       0       1
+       2       1       2
+       2       2       1
+       2       3       0
+       2       4       0
+       2       5       0
+       3      -1       0
+       3       0       1
+       3       1       3
+       3       2       3
+       3       3       1
+       3       4       0
+       3       5       0
+       4      -1       0
+       4       0       1
+       4       1       4
+       4       2       6
+       4       3       4
+       4       4       1
+       4       5       0
+       5      -1       0
+       5       0       1
+       5       1       5
+       5       2      10
+       5       3      10
+       5       4       5
+       5       5       1
+
+I4_FACTORIAL_TEST:
+  I4_FACTORIAL evaluates the factorial function.
+
+     X       Exact F       FACTORIAL(X)
+
+   1           1           1
+   2           2           2
+   3           6           6
+   4          24          24
+   5         120         120
+   6         720         720
+   7        5040        5040
+   8       40320       40320
+   9      362880      362880
+  10     3628800     3628800
+  11    39916800    39916800
+  12   479001600   479001600
+
+I4_FALL_TEST:
+  I4_FALL evaluates the falling factorial function:
+
+         M         N      Exact         I4_FALL(M,N)
+
+         5         0             1             1
+         5         1             5             5
+         5         2            20            20
+         5         3            60            60
+         5         4           120           120
+         5         5           120           120
+         5         6             0             0
+        50         0             1             1
+        10         1            10            10
+      4000         1          4000          4000
+        10         2            90            90
+        18         3          4896          4896
+         4         4            24            24
+        98         3        912576        912576
+         1         7             0             0
+
+I4VEC_BACKTRACK_TEST
+  I4VEC_BACKTRACK uses backtracking, seeking a vector X
+  of N values which satisfies some condition.
+
+  In this demonstration, we have 8 integers W(I).
+  We seek all subsets that sum to 53.
+  X(I) is 0 or 1 if the entry is skipped or used.
+
+   1      53:    15  22  16
+   2      53:    15  14  16   8
+   3      53:    22  14   9   8
+
+  Done!
+ 
+I4VEC_DOT_PRODUCT_TEST
+  I4VEC_DOT_PRODUCT computes the dot product of two I4VECs.
+ 
+  The vector A:
+ 
+       1         2
+       2        10
+       3         9
+       4         6
+       5         4
+ 
+  The vector B:
+ 
+       1         0
+       2         2
+       3         1
+       4         0
+       5         6
+
+  The dot product is   53
+
+I4VEC_PART1_TEST:
+  I4VEC_PART1 partitions an integer N into NPART parts.
+
+  Partition N = 17 into NPART =  5 parts:
+
+ 
+  The partition:
+ 
+       1        13
+       2         1
+       3         1
+       4         1
+       5         1
+
+I4VEC_PART2_TEST:
+  I4VEC_PART2 partitions an integer N into NPART parts.
+
+  Partition N = 17 into NPART =  5 parts:
+
+ 
+  The partition:
+ 
+       1         4
+       2         4
+       3         3
+       4         3
+       5         3
+
+I4VEC_SEARCH_BINARY_A_TEST
+  I4VEC_SEARCH_BINARY_A searches a ascending sorted vector.
+ 
+  Ascending sorted array:
+ 
+       1         0
+       2         1
+       3         1
+       4         2
+       5         3
+       6         4
+       7         5
+       8         6
+       9         7
+      10         8
+
+  Now search for an instance of the value        5
+
+  The value occurs at index =        7
+
+I4VEC_SEARCH_BINARY_D_TEST
+  I4VEC_SEARCH_BINARY_D searches a descending 
+ sorted vector.
+ 
+  Descending sorted array:
+ 
+       1         8
+       2         7
+       3         6
+       4         5
+       5         4
+       6         3
+       7         2
+       8         1
+       9         1
+      10         0
+
+  Now search for an instance of the value        5
+
+  The value occurs at index =        4
+
+I4VEC_SORT_INSERT_A_TEST
+  I4VEC_SORT_INSERT_A ascending sorts an I4VEC;
+ 
+  Before ascending sort:
+ 
+       1         6
+       2         7
+       3         1
+       4         0
+       5         4
+       6         3
+       7         2
+       8         1
+       9         5
+      10         8
+ 
+  After ascending sort:
+ 
+       1         0
+       2         1
+       3         1
+       4         2
+       5         3
+       6         4
+       7         5
+       8         6
+       9         7
+      10         8
+
+I4VEC_SORT_INSERT_D_TEST
+  I4VEC_SORT_INSERT_D descending sorts an I4VEC.
+ 
+  Before descending sort:
+ 
+       1         6
+       2         7
+       3         1
+       4         0
+       5         4
+       6         3
+       7         2
+       8         1
+       9         5
+      10         8
+ 
+  After descending sort:
+ 
+       1         8
+       2         7
+       3         6
+       4         5
+       5         4
+       6         3
+       7         2
+       8         1
+       9         1
+      10         0
+ 
+I4VEC_UNIFORM_AB_TEST
+  I4VEC_UNIFORM_AB computes pseudorandom values 
+  in an interval [A,B].
+ 
+  The lower endpoint A =         -100
+  The upper endpoint B =          200
+  The initial seed is    123456789
+ 
+  The random vector:
+ 
+       1       -35
+       2       187
+       3       149
+       4        69
+       5        25
+       6       -81
+       7       -23
+       8       -67
+       9       -87
+      10        90
+      11       -82
+      12        35
+      13        20
+      14       127
+      15       139
+      16      -100
+      17       170
+      18         5
+      19       -72
+      20       -96
+
+KNAPSACK_01_TEST
+  KNAPSACK_01 solves the 0/1 knapsack problem.
+
+  Object, Profit, Mass, "Profit Density"
+
+       1   24.000   12.000    2.000
+       2   13.000    7.000    1.857
+       3   23.000   11.000    2.091
+       4   15.000    8.000    1.875
+       5   16.000    9.000    1.778
+
+  After reordering by Profit Density:
+
+  Object, Profit, Mass, "Profit Density"
+
+       1   23.000   11.000    2.091
+       2   24.000   12.000    2.000
+       3   15.000    8.000    1.875
+       4   13.000    7.000    1.857
+       5   16.000    9.000    1.778
+
+  Total mass restriction is  26.000
+
+  Object, Density, Choice, Profit, Mass
+
+     1  2.091  1.000 23.000 11.000
+     2  2.000  0.000  0.000  0.000
+     3  1.875  1.000 15.000  8.000
+     4  1.857  1.000 13.000  7.000
+     5  1.778  0.000  0.000  0.000
+
+  Total:             51.000 26.000
+
+KNAPSACK_RATIONAL_TEST
+  KNAPSACK_RATIONAL solves the rational knapsack problem.
+
+  Object, Profit, Mass, "Profit Density"
+
+     1 24.000 12.000  2.000
+     2 13.000  7.000  1.857
+     3 23.000 11.000  2.091
+     4 15.000  8.000  1.875
+     5 16.000  9.000  1.778
+
+  After reordering by Profit Density:
+
+  Object, Profit, Mass, "Profit Density"
+
+     1 23.000 11.000  2.091
+     2 24.000 12.000  2.000
+     3 15.000  8.000  1.875
+     4 13.000  7.000  1.857
+     5 16.000  9.000  1.778
+
+  Total mass restriction is  26.000
+
+  Object, Density, Choice, Profit, Mass
+
+     1  2.091  1.000 23.000 11.000
+     2  2.000  1.000 24.000 12.000
+     3  1.875  0.375  5.625  3.000
+     4  1.857  0.000  0.000  0.000
+     5  1.778  0.000  0.000  0.000
+
+  Total:             52.625 26.000
+
+KNAPSACK_REORDER_TEST
+  KNAPSACK_REORDER reorders the knapsack data.
+
+  Object, Profit, Mass, "Profit Density"
+
+       1   24.000   12.000    2.000
+       2   13.000    7.000    1.857
+       3   23.000   11.000    2.091
+       4   15.000    8.000    1.875
+       5   16.000    9.000    1.778
+
+  After reordering by Profit Density:
+
+  Object, Profit, Mass, "Profit Density"
+
+       1   23.000   11.000    2.091
+       2   24.000   12.000    2.000
+       3   15.000    8.000    1.875
+       4   13.000    7.000    1.857
+       5   16.000    9.000    1.778
+
+KSUBSET_COLEX_CHECK TEST
+  KSUBSET_COLEX_CHECK checks a K subset of an N set.
+ 
+  Subset:
+  (empty vector)
+  N =    5, K =   -1
+  Check = F
+ 
+  Subset:
+           5           3           2
+  N =    0, K =    3
+  Check = F
+ 
+  Subset:
+           5           2           3
+  N =    5, K =    3
+  Check = F
+ 
+  Subset:
+           7           3           2
+  N =    5, K =    3
+  Check = F
+ 
+  Subset:
+           5           3           2
+  N =    5, K =    3
+  Check = T
+ 
+  Subset:
+  (empty vector)
+  N =    5, K =    0
+  Check = T
+ 
+  Subset:
+  (empty vector)
+  N =    0, K =    0
+  Check = T
+
+KSUBSET_COLEX_RANK_TEST
+  KSUBSET_COLEX_RANK ranks
+  K-subsets of an N set,
+  using the colexicographic ordering.
+ 
+  The element to be ranked:
+           5           3           1
+
+  The rank is computed as        5
+
+KSUBSET_COLEX_SUCCESSOR_TEST:
+  KSUBSET_COLEX_SUCCESSOR lists
+  K-subsets of an N set,
+  using the colexicographic ordering.
+        0    3    2    1
+        1    4    2    1
+        2    4    3    1
+        3    4    3    2
+        4    5    2    1
+        5    5    3    1
+        6    5    4    1
+        7    5    4    2
+        8    5    4    3
+
+KSUBSET_COLEX_UNRANK_TEST
+  KSUBSET_COLEX_UNRANK unranks
+  K-subsets of an N set
+  using the colexicographic ordering.
+ 
+  The element of rank 5:
+           5           3           1
+
+KSUBSET_ENUM_TEST
+  KSUBSET_ENUM enumerates K subsets of an N set.
+
+      K:      0       1       2       3       4       5
+   N
+   0:         1
+   1:         1       1
+   2:         1       2       1
+   3:         1       3       3       1
+   4:         1       4       6       4       1
+   5:         1       5      10      10       5       1
+   6:         1       6      15      20      15       6
+   7:         1       7      21      35      35      21
+   8:         1       8      28      56      70      56
+   9:         1       9      36      84     126     126
+  10:         1      10      45     120     210     252
+
+KSUBSET_LEX_CHECK TEST
+  KSUBSET_LEX_CHECK checks a K subset of an N set.
+ 
+  Subset:
+  (empty vector)
+  N =    5, K =   -1
+  Check = F
+ 
+  Subset:
+           2           3           5
+  N =    0, K =    3
+  Check = F
+ 
+  Subset:
+           3           2           5
+  N =    5, K =    3
+  Check = F
+ 
+  Subset:
+           2           3           7
+  N =    5, K =    3
+  Check = F
+ 
+  Subset:
+           2           3           5
+  N =    5, K =    3
+  Check = T
+ 
+  Subset:
+  (empty vector)
+  N =    5, K =    0
+  Check = T
+ 
+  Subset:
+  (empty vector)
+  N =    0, K =    0
+  Check = T
+
+KSUBSET_LEX_RANK
+  KSUBSET_LEX_RANK ranks K-subsets of an N set,
+  using the lexicographic ordering.
+
+  The rank of the element:
+
+    1    4    5
+
+  is computed as        5
+
+KSUBSET_LEX_SUCCESSOR_TEST
+  KSUBSET_LEX_SUCCESSOR lists K-subsets of an N set,
+  using the lexicographic ordering.
+    0    1    2    3
+    1    1    2    4
+    2    1    2    5
+    3    1    3    4
+    4    1    3    5
+    5    1    4    5
+    6    2    3    4
+    7    2    3    5
+    8    2    4    5
+    9    3    4    5
+
+KSUBSET_LEX_UNRANK_TEST
+  KSUBSET_LEX_UNRANK unranks K-subsets of an N set
+  using the lexicographic ordering.
+
+  The element of rank        5
+
+    1    4    5
+
+KSUBSET_REVDOOR_RANK_TEST
+  KSUBSET_REVDOOR_RANK ranks K-subsets of an N set,
+  using the revolving door ordering.
+
+
+  The rank of the element:
+
+    2    4    5
+
+  is computed as        5
+
+KSUBSET_REVDOOR_SUCCESSOR_TEST
+  KSUBSET_REVDOOR_SUCCESSOR lists
+  K-subsets of an N set,
+  using the revolving door ordering.
+
+    0    1    2    3
+    1    1    3    4
+    2    2    3    4
+    3    1    2    4
+    4    1    4    5
+    5    2    4    5
+    6    3    4    5
+    7    1    3    5
+    8    2    3    5
+    9    1    2    5
+
+KSUBSET_REVDOOR_UNRANK_TEST
+  KSUBSET_REVDOOR_UNRANK unranks K-subsets of an N set,
+  using the revolving door ordering.
+
+
+  The element of rank        5
+
+    2    4    5
+
+MARRIAGE_TEST
+  MARRIAGE arranges a set of stable marriages
+  given a set of preferences.
+
+  Man, Wife's rank, Wife
+
+       1       3       1
+       2       4       4
+       3       3       5
+       4       2       3
+       5       3       2
+
+  Woman, Husband's rank, Husband
+
+       1       2       1
+       2       2       5
+       3       2       4
+       4       2       2
+       5       3       3
+
+  Correct result:
+
+  M:W 1  2  3  4  5
+   1  +  .  .  .  .
+   2  .  .  .  +  .
+   3  .  .  .  .  +
+   4  .  .  +  .  .
+   5  .  +  .  .  .
+
+MOUNTAIN_TEST
+  MOUNTAIN computes mountain numbers.
+
+   Y    MXY
+
+   0     42   0  14   0   5   0   2   0   1   0   1
+   1      0  42   0  14   0   5   0   2   0   1   0
+   2     90   0  28   0   9   0   3   0   1   0   0
+   3      0  48   0  14   0   4   0   1   0   0   0
+   4     75   0  20   0   5   0   1   0   0   0   0
+   5      0  27   0   6   0   1   0   0   0   0   0
+
+NPART_ENUM_TEST
+  NPART_ENUM enumerates partitions of N into PART_NUM parts.
+
+   PART_NUM:  1       2       3       4       5       6
+   N
+   0:  
+   1:         1
+   2:         1       1
+   3:         1       1       1
+   4:         1       2       1       1
+   5:         1       2       2       1       1
+   6:         1       3       3       2       1       1
+   7:         1       3       4       3       2       1
+   8:         1       4       5       5       3       2
+   9:         1       4       7       6       5       3
+  10:         1       5       8       9       7       5
+
+NPART_RSF_LEX_RANDOM_TEST
+  NPART_RSF_LEX_RANDOM produces random examples.
+  of partitions of N with NPART parts
+  in reverse standard form.
+
+    1    4    7
+    4    4    4
+    3    4    5
+    2    4    6
+    2    2    8
+    1    2    9
+    1    5    6
+    1    3    8
+    1    2    9
+    2    5    5
+
+NPART_RSF_LEX_RANK_TEST
+  NPART_RSF_LEX_RANK ranks partitions of N with NPART parts
+  in reverse standard form.
+
+  The rank of the element:
+
+    1    5    6
+
+  is computed as        4
+
+NPART_RSF_LEX_SUCCESSOR_TEST
+  NPART_RSF_LEX_SUCCESSOR lists partitions of N with NPART parts
+  in reverse standard form.
+    0    1    1   10
+    1    1    2    9
+    2    1    3    8
+    3    1    4    7
+    4    1    5    6
+    5    2    2    8
+    6    2    3    7
+    7    2    4    6
+    8    2    5    5
+    9    3    3    6
+   10    3    4    5
+   11    4    4    4
+
+NPART_RSF_LEX_UNRANK_TEST
+  NPART_RSF_LEX_UNRANK unranks partitions of N with NPART parts
+  in reverse standard form.
+
+  The element of rank        4
+
+    1    5    6
+
+NPART_SF_LEX_SUCCESSOR_TEST
+  NPART_SF_LEX_SUCCESSOR lists
+  partitions of N with NPART parts
+  in standard form.
+
+  For N =       12
+  and NPART =        3
+  the number of partitions is       12
+
+    0    4    4    4
+    1    5    4    3
+    2    5    5    2
+    3    6    3    3
+    4    6    4    2
+    5    6    5    1
+    6    7    3    2
+    7    7    4    1
+    8    8    2    2
+    9    8    3    1
+   10    9    2    1
+   11   10    1    1
+
+NPART_TABLE_TEST
+  NPART_TABLE tabulates partitions
+  of N with NPART parts;
+
+    I P(I,0) P(I,1) P(I,2) P(I,3) P(I,4) P(I,5)
+
+    0    1    0    0    0    0   11
+    1    0    1    0    0    0    0
+    2    0    1    1    0    0    0
+    3    0    1    1    1    0    0
+    4    0    1    2    1    1    0
+    5    0    1    2    2    1    1
+    6    0    1    3    3    2    1
+    7    0    1    3    4    3    2
+    8    0    1    4    5    5    3
+    9    0    1    4    7    6    5
+   10    0    1    5    8    9    7
+
+PART_ENUM_TEST
+  PART_ENUM enumerates partitions of N.
+
+   N     #
+
+   0       1
+   1       1
+   2       2
+   3       3
+   4       5
+   5       8
+   6      11
+   7      15
+   8      22
+   9      30
+  10      42
+
+PART_RSF_CHECK TEST
+  PART_RSF_CHECK checks a reverse standard form partition.
+
+  Partition in RSF form.
+  Partition of N =    0
+  Number of parts NPART =    4
+           1           4           4           6
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    0
+  (empty vector)
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+          -9           4           4          16
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+           6           4           4           1
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+           1           4           5           6
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+           1           4           4           6
+  Check = T
+
+PART_SF_CHECK TEST
+  PART_SF_CHECK checks a standard form partition.
+
+  Partition in RSF form.
+  Partition of N =    0
+  Number of parts NPART =    4
+           6           4           4           1
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    0
+  (empty vector)
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+          16           4           4          -9
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+           1           4           4           6
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+           6           5           4           1
+  Check = F
+
+  Partition in RSF form.
+  Partition of N =   15
+  Number of parts NPART =    4
+           6           4           4           1
+  Check = T
+
+PART_SF_CONJUGATE_TEST
+  PART_SF_CONJUGATE produces the conjugate of a partition.
+
+  Partitions of N =        8
+   0      1  1  1  1  1  1  1  1
+  Con:    8
+   1      2  1  1  1  1  1  1
+  Con:    7  1
+   2      2  2  1  1  1  1
+  Con:    6  2
+   3      2  2  2  1  1
+  Con:    5  3
+   4      2  2  2  2
+  Con:    4  4
+   5      3  1  1  1  1  1
+  Con:    6  1  1
+   6      3  2  1  1  1
+  Con:    5  2  1
+   7      3  2  2  1
+  Con:    4  3  1
+   8      3  3  1  1
+  Con:    4  2  2
+   9      3  3  2
+  Con:    3  3  2
+  10      4  1  1  1  1
+  Con:    5  1  1  1
+  11      4  2  1  1
+  Con:    4  2  1  1
+  12      4  2  2
+  Con:    3  3  1  1
+  13      4  3  1
+  Con:    3  2  2  1
+  14      4  4
+  Con:    2  2  2  2
+  15      5  1  1  1
+  Con:    4  1  1  1  1
+  16      5  2  1
+  Con:    3  2  1  1  1
+  17      5  3
+  Con:    2  2  2  1  1
+  18      6  1  1
+  Con:    3  1  1  1  1  1
+  19      6  2
+  Con:    2  2  1  1  1  1
+  20      7  1
+  Con:    2  1  1  1  1  1  1
+  21      8
+  Con:    1  1  1  1  1  1  1  1
+
+PART_SF_MAJORIZE_TEST
+  PART_SF_MAJORIZE determines if one partition
+  majorizes another.
+
+  Partitions of N =        8
+
+  A:    2  2  2  1  1
+  B:    3  1  1  1  1  1
+  C:    2  2  1  1  1  1
+
+  A compare B:       -2
+  B compare C:        1
+  C compare A:       -1
+  C compare C:        0
+
+PART_SUCCESSOR_TEST
+  PART_SUCCESSOR produces partitions of N.
+
+  Partitions of N =        8
+
+  For N =        8
+  the number of partitions is       22
+
+   0     1  1  1  1  1  1  1  1
+   1     2  1  1  1  1  1  1
+   2     2  2  1  1  1  1
+   3     2  2  2  1  1
+   4     2  2  2  2
+   5     3  1  1  1  1  1
+   6     3  2  1  1  1
+   7     3  2  2  1
+   8     3  3  1  1
+   9     3  3  2
+  10     4  1  1  1  1
+  11     4  2  1  1
+  12     4  2  2
+  13     4  3  1
+  14     4  4
+  15     5  1  1  1
+  16     5  2  1
+  17     5  3
+  18     6  1  1
+  19     6  2
+  20     7  1
+  21     8
+
+PART_TABLE_TEST
+  PART_TABLE tabulates partitions of N.
+
+   0     1
+   1     1
+   2     2
+   3     3
+   4     5
+   5     7
+   6    11
+   7    15
+   8    22
+   9    30
+  10    42
+
+PARTN_ENUM_TEST
+  PARTN_ENUM enumerates partitions of N with maximum part NMAX.
+
+   NMAX:      1       2       3       4       5       6
+   N
+   0:  
+   1:         1
+   2:         1       1
+   3:         1       1       1
+   4:         1       2       1       1
+   5:         1       2       2       1       1
+   6:         1       3       3       2       1       1
+   7:         1       3       4       3       2       1
+   8:         1       4       5       5       3       2
+   9:         1       4       7       6       5       3
+  10:         1       5       8       9       7       5
+
+PARTN_SF_CHECK TEST
+  PARTN_SF_CHECK checks a standard form partition
+  of N with largest entry NMAX.
+
+  Partition in SF form.
+  Partition of N =    0
+  Maximum entry NMAX =    6
+  Number of parts NPART =    4
+           6           4           4           1
+  Check = F
+
+  Partition in SF form.
+  Partition of N =   15
+  Maximum entry NMAX =    6
+  Number of parts NPART =    0
+  (empty vector)
+  Check = F
+
+  Partition in SF form.
+  Partition of N =   15
+  Maximum entry NMAX =    6
+  Number of parts NPART =    4
+           6           6           6          -3
+  Check = F
+
+  Partition in SF form.
+  Partition of N =   15
+  Maximum entry NMAX =    6
+  Number of parts NPART =    4
+           8           4           2           1
+  Check = F
+
+  Partition in SF form.
+  Partition of N =   15
+  Maximum entry NMAX =    6
+  Number of parts NPART =    4
+           1           4           4           6
+  Check = F
+
+  Partition in SF form.
+  Partition of N =   15
+  Maximum entry NMAX =    6
+  Number of parts NPART =    4
+           6           5           4           1
+  Check = F
+
+  Partition in SF form.
+  Partition of N =   15
+  Maximum entry NMAX =    6
+  Number of parts NPART =    4
+           6           4           4           1
+  Check = T
+
+PARTN_SUCCESSOR_TEST
+  PARTN_SUCCESSOR lists partitions of N with maximum element NMAX:
+   0     4  1  1  1  1  1  1  1
+   1     4  2  1  1  1  1  1
+   2     4  2  2  1  1  1
+   3     4  2  2  2  1
+   4     4  3  1  1  1  1
+   5     4  3  2  1  1
+   6     4  3  2  2
+   7     4  3  3  1
+   8     4  4  1  1  1
+   9     4  4  2  1
+  10     4  4  3
+
+  Repeat, but list RSF conjugated partitions.
+
+   0     1  1  1  8
+   1     1  1  2  7
+   2     1  1  3  6
+   3     1  1  4  5
+   4     1  2  2  6
+   5     1  2  3  5
+   6     1  2  4  4
+   7     1  3  3  4
+   8     2  2  2  5
+   9     2  2  3  4
+  10     2  3  3  3
+
+PARTITION_GREEDY_TEST
+  PARTITION_GREEDY partitions an integer vector into
+  two subsets with nearly equal sum.
+
+
+Data set #1 partitioned:
+
+            10
+       9
+       8
+             7
+             5
+       5
+             3
+       3
+             2
+       2
+
+  Sums:
+
+    27    27
+
+
+  Data set #2 partitioned:
+
+        1003
+   885
+   854
+         771
+   734
+         486
+         281
+   121
+          83
+    62
+
+  Sums:
+
+  2656  2624
+
+PERM_CHECK TEST
+  PERM_CHECK checks a permutation.
+ 
+  Permutation:
+           5           1           8           3           4
+  Check = F
+ 
+  Permutation:
+           5           1           4           3           4
+  Check = F
+ 
+  Permutation:
+           5           1           2           3           4
+  Check = T
+
+PERM_ENUM_TEST
+  PERM_ENUM enumerates permutations of N items.
+
+   N       #
+
+   0         1
+   1         1
+   2         2
+   3         6
+   4        24
+   5       120
+   6       720
+   7      5040
+   8     40320
+   9    362880
+  10   3628800
+
+PERM_INV_TEST
+  PERM_INV inverts a permutation of the integers:
+ 
+  The permutation P is
+ 
+   1   2   3   4
+   3   1   2   4
+ 
+  The inverse permutation Q is
+ 
+   1   2   3   4
+   2   3   1   4
+ 
+  The product R = P * Q is
+ 
+   1   2   3   4
+   1   2   3   4
+
+PERM_LEX_RANK_TEST
+  PERM_LEX_RANK ranks permutations of the integers,
+  using the lexicographic ordering.
+ 
+  The element:
+ 
+   1   2   3   4
+   3   1   2   4
+
+  The rank is computed as       12
+
+PERM_LEX_SUCCESSOR_TEST
+  PERM_LEX_SUCCESSOR lists permutations of the integers,
+  using the lexicographic ordering.
+
+    0    1    2    3    4
+    1    1    2    4    3
+    2    1    3    2    4
+    3    1    3    4    2
+    4    1    4    2    3
+    5    1    4    3    2
+    6    2    1    3    4
+    7    2    1    4    3
+    8    2    3    1    4
+    9    2    3    4    1
+   10    2    4    1    3
+   11    2    4    3    1
+   12    3    1    2    4
+   13    3    1    4    2
+   14    3    2    1    4
+   15    3    2    4    1
+   16    3    4    1    2
+   17    3    4    2    1
+   18    4    1    2    3
+   19    4    1    3    2
+   20    4    2    1    3
+   21    4    2    3    1
+   22    4    3    1    2
+   23    4    3    2    1
+
+PERM_LEX_UNRANK_TEST
+  PERM_LEX_UNRANK unranks permutations of the integers,
+  using the lexicographic ordering.
+
+ 
+  The element of rank 12:
+ 
+   1   2   3   4
+   3   1   2   4
+
+PERM_MUL_TEST
+  PERM_MUL multiplies two permutations.
+ 
+  The permutation P:
+ 
+   1   2   3   4
+   3   1   2   4
+ 
+  The permutation Q:
+ 
+   1   2   3   4
+   2   3   1   4
+ 
+  The product R = P * Q is
+ 
+   1   2   3   4
+   1   2   3   4
+
+PERM_PARITY_TEST
+  PERM_PARITY computes the parity of a permutation.
+ 
+  The permutation P:
+ 
+   1   2   3   4   5
+   2   5   1   3   4
+
+  The parity is    0
+ 
+  The permutation P:
+ 
+   1   2   3   4   5
+   3   2   1   4   5
+
+  The parity is    1
+ 
+  The permutation P:
+ 
+   1   2   3   4   5
+   1   4   3   2   5
+
+  The parity is    1
+ 
+  The permutation P:
+ 
+   1   2   3   4   5
+   3   5   2   4   1
+
+  The parity is    1
+ 
+  The permutation P:
+ 
+   1   2   3   4   5
+   5   3   2   4   1
+
+  The parity is    0
+
+PERM_PRINT_TEST
+  PERM_PRINT prints a permutation of (1,...,N).
+ 
+  The 1-based permutation:
+ 
+   1   2   3   4   5   6   7
+   7   2   4   1   5   3   6
+
+PERM_RANDOM_TEST
+  PERM_RANDOM produces a random permutation of (1,...,N);
+  For this test, N =        5
+
+           2           5           1           3           4
+           3           2           1           4           5
+           1           4           3           2           5
+           3           5           2           4           1
+           5           3           2           4           1
+
+PERM_TJ_RANK_TEST
+  PERM_TJ_RANK ranks permutations of the integers
+  using the Trotter-Johnson ordering.
+ 
+  The element to be ranked:
+ 
+   1   2   3   4
+   4   3   2   1
+
+  The rank is computed as       12
+
+PERM_TJ_SUCCESSOR_TEST
+  PERM_TJ_SUCCESSOR lists permutations of the integers
+  using the Trotter-Johnson ordering.
+    0    1    2    3    4
+    1    1    2    4    3
+    2    1    4    2    3
+    3    4    1    2    3
+    4    4    1    3    2
+    5    1    4    3    2
+    6    1    3    4    2
+    7    1    3    2    4
+    8    3    1    2    4
+    9    3    1    4    2
+   10    3    4    1    2
+   11    4    3    1    2
+   12    4    3    2    1
+   13    3    4    2    1
+   14    3    2    4    1
+   15    3    2    1    4
+   16    2    3    1    4
+   17    2    3    4    1
+   18    2    4    3    1
+   19    4    2    3    1
+   20    4    2    1    3
+   21    2    4    1    3
+   22    2    1    4    3
+   23    2    1    3    4
+
+PERM_TJ_UNRANK_TEST
+  PERM_TJ_UNRANK unranks permutations of the integers
+  using the Trotter-Johnson ordering:
+ 
+  The element of rank 12:
+ 
+   1   2   3   4
+   4   3   2   1
+
+PERM_TO_CYCLE
+  PERM_TO_CYCLE converts a permutation from
+  array to cycle form.
+ 
+  "Random" permutation:
+ 
+   1   2   3   4   5   6   7
+   4   5   1   2   3   6   7
+
+  Corresponding cycle form:
+  Number of cycles is        3
+
+       4   2   5   3   1
+       6
+       7
+
+PRUEFER_CHECK TEST
+  PRUEFER_CHECK checks a Pruefer code.
+
+  Check?   N    T(1:2*N)
+
+       F   2  (empty vector)
+       T   3           1
+       F   4           5           2
+       T   5           5           1           3
+
+PRUEFER_ENUM_TEST
+  PRUEFER_ENUM enumerates trees on N nodes, using the Pruefer code
+
+   N         #
+
+   0           0
+   1           0
+   2           1
+   3           3
+   4          16
+   5         125
+   6        1296
+   7       16807
+   8      262144
+   9     4782969
+  10   100000000
+
+PRUEFER_RANK_TEST
+  PRUEFER_RANK ranks Pruefer codes.
+
+  The rank of the element:
+
+    3    1
+
+  is computed as        8
+
+PRUEFER_SUCCESSOR_TEST
+  PRUEFER_SUCCESSOR lists Pruefer codes.
+    0    1    1
+    1    1    2
+    2    1    3
+    3    1    4
+    4    2    1
+    5    2    2
+    6    2    3
+    7    2    4
+    8    3    1
+    9    3    2
+   10    3    3
+   11    3    4
+   12    4    1
+   13    4    2
+   14    4    3
+   15    4    4
+
+PRUEFER_TO_TREE_TEST
+  PRUEFER_TO_TREE converts a Pruefer code to a tree;
+
+  Random Pruefer code of rank       27
+    2    1    3
+
+  Edge list for the corresponding tree:
+
+    1    5    2
+    2    4    1
+    3    2    3
+    4    3    1
+
+  Corresponding Pruefer code:
+    2    1    3
+
+  Random Pruefer code of rank      119
+    5    4    5
+
+  Edge list for the corresponding tree:
+
+    1    3    5
+    2    2    4
+    3    4    5
+    4    5    1
+
+  Corresponding Pruefer code:
+    5    4    5
+
+  Random Pruefer code of rank      103
+    5    1    4
+
+  Edge list for the corresponding tree:
+
+    1    3    5
+    2    5    1
+    3    2    4
+    4    4    1
+
+  Corresponding Pruefer code:
+    5    1    4
+
+  Random Pruefer code of rank       70
+    3    5    1
+
+  Edge list for the corresponding tree:
+
+    1    4    3
+    2    3    5
+    3    5    1
+    4    2    1
+
+  Corresponding Pruefer code:
+    3    5    1
+
+  Random Pruefer code of rank       51
+    3    1    2
+
+  Edge list for the corresponding tree:
+
+    1    5    3
+    2    4    1
+    3    3    2
+    4    2    1
+
+  Corresponding Pruefer code:
+    3    1    2
+
+PRUEFER_UNRANK_TEST
+  PRUEFER_UNRANK unranks Pruefer codes.
+
+  The element of rank        8
+
+    3    1
+
+QUEENS_TEST
+  QUEENS produces nonattacking queens
+  on a chessboard using a backtrack search.
+
+   8   4   1   3   6   2   7   5
+   8   3   1   6   2   5   7   4
+   8   2   5   3   1   7   4   6
+   8   2   4   1   7   5   3   6
+   7   5   3   1   6   8   2   4
+   7   4   2   8   6   1   3   5
+   7   4   2   5   8   1   3   6
+   7   3   8   2   5   1   6   4
+   7   3   1   6   8   5   2   4
+   7   2   6   3   1   4   8   5
+   7   2   4   1   8   5   3   6
+   7   1   3   8   6   4   2   5
+   6   8   2   4   1   7   5   3
+   6   4   7   1   8   2   5   3
+   6   4   7   1   3   5   2   8
+   6   4   2   8   5   7   1   3
+   6   4   1   5   8   2   7   3
+   6   3   7   4   1   8   2   5
+   6   3   7   2   8   5   1   4
+   6   3   7   2   4   8   1   5
+   6   3   5   8   1   4   2   7
+   6   3   5   7   1   4   2   8
+   6   3   1   8   5   2   4   7
+   6   3   1   8   4   2   7   5
+   6   3   1   7   5   8   2   4
+   6   2   7   1   4   8   5   3
+   6   2   7   1   3   5   8   4
+   6   1   5   2   8   3   7   4
+   5   8   4   1   7   2   6   3
+   5   8   4   1   3   6   2   7
+   5   7   4   1   3   8   6   2
+   5   7   2   6   3   1   8   4
+   5   7   2   6   3   1   4   8
+   5   7   2   4   8   1   3   6
+   5   7   1   4   2   8   6   3
+   5   7   1   3   8   6   4   2
+   5   3   8   4   7   1   6   2
+   5   3   1   7   2   8   6   4
+   5   3   1   6   8   2   4   7
+   5   2   8   1   4   7   3   6
+   5   2   6   1   7   4   8   3
+   5   2   4   7   3   8   6   1
+   5   2   4   6   8   3   1   7
+   5   1   8   6   3   7   2   4
+   5   1   8   4   2   7   3   6
+   5   1   4   6   8   2   7   3
+   4   8   5   3   1   7   2   6
+   4   8   1   5   7   2   6   3
+   4   8   1   3   6   2   7   5
+   4   7   5   3   1   6   8   2
+   4   7   5   2   6   1   3   8
+   4   7   3   8   2   5   1   6
+   4   7   1   8   5   2   6   3
+   4   6   8   3   1   7   5   2
+   4   6   8   2   7   1   3   5
+   4   6   1   5   2   8   3   7
+   4   2   8   6   1   3   5   7
+   4   2   8   5   7   1   3   6
+   4   2   7   5   1   8   6   3
+   4   2   7   3   6   8   5   1
+   4   2   7   3   6   8   1   5
+   4   2   5   8   6   1   3   7
+   4   1   5   8   6   3   7   2
+   4   1   5   8   2   7   3   6
+   3   8   4   7   1   6   2   5
+   3   7   2   8   6   4   1   5
+   3   7   2   8   5   1   4   6
+   3   6   8   2   4   1   7   5
+   3   6   8   1   5   7   2   4
+   3   6   8   1   4   7   5   2
+   3   6   4   2   8   5   7   1
+   3   6   4   1   8   5   7   2
+   3   6   2   7   5   1   8   4
+   3   6   2   7   1   4   8   5
+   3   6   2   5   8   1   7   4
+   3   5   8   4   1   7   2   6
+   3   5   7   1   4   2   8   6
+   3   5   2   8   6   4   7   1
+   3   5   2   8   1   7   4   6
+   3   1   7   5   8   2   4   6
+   2   8   6   1   3   5   7   4
+   2   7   5   8   1   4   6   3
+   2   7   3   6   8   5   1   4
+   2   6   8   3   1   4   7   5
+   2   6   1   7   4   8   3   5
+   2   5   7   4   1   8   6   3
+   2   5   7   1   3   8   6   4
+   2   4   6   8   3   1   7   5
+   1   7   5   8   2   4   6   3
+   1   7   4   6   8   2   5   3
+   1   6   8   3   7   4   2   5
+   1   5   8   6   3   7   2   4
+ 
+R8_CHOOSE_TEST
+  R8_CHOOSE evaluates C(N,K).
+ 
+         N         K       CNK
+ 
+         0         0     1.00000    
+ 
+         1         0     1.00000    
+         1         1     1.00000    
+ 
+         2         0     1.00000    
+         2         1     2.00000    
+         2         2     1.00000    
+ 
+         3         0     1.00000    
+         3         1     3.00000    
+         3         2     3.00000    
+         3         3     1.00000    
+ 
+         4         0     1.00000    
+         4         1     4.00000    
+         4         2     6.00000    
+         4         3     4.00000    
+         4         4     1.00000    
+ 
+         5         0     1.00000    
+         5         1     5.00000    
+         5         2     10.0000    
+         5         3     10.0000    
+         5         4     5.00000    
+         5         5     1.00000    
+ 
+R8_GAMMA_LOG_TEST:
+  R8_GAMMA_LOG computes the Log(Gamma()) function.
+ 
+          X            GAMMA_LOG(X)   R8_GAMMA_LOG(X)
+ 
+        0.200000     1.524063822430784         1.524063822430784    
+        0.400000    0.7966778177017837        0.7966778177017837    
+        0.600000    0.3982338580692348        0.3982338580692349    
+        0.800000    0.1520596783998375        0.1520596783998376    
+        1.000000     0.000000000000000         0.000000000000000    
+        1.100000   -0.4987244125983972E-01   -0.4987244125983976E-01
+        1.200000   -0.8537409000331583E-01   -0.8537409000331585E-01
+        1.300000   -0.1081748095078604       -0.1081748095078605    
+        1.400000   -0.1196129141723712       -0.1196129141723713    
+        1.500000   -0.1207822376352452       -0.1207822376352453    
+        1.600000   -0.1125917656967557       -0.1125917656967558    
+        1.700000   -0.9580769740706586E-01   -0.9580769740706586E-01
+        1.800000   -0.7108387291437215E-01   -0.7108387291437215E-01
+        1.900000   -0.3898427592308333E-01   -0.3898427592308337E-01
+        2.000000     0.000000000000000         0.000000000000000    
+        3.000000    0.6931471805599453        0.6931471805599454    
+        4.000000     1.791759469228055         1.791759469228055    
+       10.000000     12.80182748008147         12.80182748008147    
+       20.000000     39.33988418719949         39.33988418719949    
+       30.000000     71.25703896716801         71.25703896716800    
+
+R8VEC_BACKTRACK_TEST
+  R8VEC_BACKTRACK uses backtracking, seeking a vector X
+  of N values which satisfies some condition.
+
+  In this demonstration, we have 8 integers W(I).
+  We seek all subsets that sum to 53.
+  X(I) is 0 or 1 if the entry is skipped or used.
+
+   1      53.00:     15.00   22.00   16.00
+   2      53.00:     15.00   14.00   16.00    8.00
+   3      53.00:     22.00   14.00    9.00    8.00
+
+  Done!
+
+RGF_CHECK TEST
+  RGF_CHECK checks a restricted growth function.
+ 
+  RGF:
+  (empty vector)
+  Check = F
+ 
+  RGF:
+           0           1           2           3           4
+           5           6
+  Check = F
+ 
+  RGF:
+           1           3           5           8           9
+          10          12
+  Check = F
+ 
+  RGF:
+           1           2           3           1           4
+           5           4
+  Check = T
+
+RGF_ENUM_TEST
+  RGF_ENUM enumerates restricted growth functions.
+
+   N     #
+
+   0       1
+   1       1
+   2       2
+   3       5
+   4      15
+   5      52
+   6     203
+   7     877
+   8    4140
+   9   21147
+  10  115975
+
+RGF_G_TABLE_TEST
+  RGF_G_TABLE tabulates generalized restricted
+  growth functions.
+
+     1     1     1     1     1     1     1
+     1     2     3     4     5     6
+     2     5    10    17    26
+     5    15    37    77
+    15    52   151
+    52   203
+   203
+
+RGF_RANK_TEST
+  RGF_RANK ranks restricted growth functions.
+
+  The rank of the element:
+
+    1    2    1    3
+
+  is computed as        7
+
+RGF_SUCCESSOR_TEST
+  RGF_SUCCESSOR lists restricted growth functions.
+    0    1    1    1    1
+    1    1    1    1    2
+    2    1    1    2    1
+    3    1    1    2    2
+    4    1    1    2    3
+    5    1    2    1    1
+    6    1    2    1    2
+    7    1    2    1    3
+    8    1    2    2    1
+    9    1    2    2    2
+   10    1    2    2    3
+   11    1    2    3    1
+   12    1    2    3    2
+   13    1    2    3    3
+   14    1    2    3    4
+
+RGF_TO_SETPART_TEST
+  RGF_TO_SETPART converts a balanced
+  sequence to a restricted growth function;
+
+  Restricted growth function:
+
+ 1 1 1 1 1 2 1 3
+
+  Corresponding set partition
+
+   1   2   3   4   5   7
+   6
+   8
+
+RGF_UNRANK_TEST
+  RGF_UNRANK unranks restricted growth functions.
+
+  The element of rank        7
+
+    1    2    1    3
+
+SETPART_CHECK TEST
+  SETPART_CHECK checks a set partition.
+
+  The set partition
+  M =    0
+  NSUB =    3
+
+   3   6
+   1   4   7
+   2   5   8
+  Check = F
+
+  The set partition
+  M =    8
+  NSUB =    0
+
+  Check = F
+
+  The set partition
+  M =    8
+  NSUB =    3
+
+   3   6
+   1   4   7   2   5   8
+
+  Check = F
+
+  The set partition
+  M =    8
+  NSUB =    3
+
+   3   6
+   1   4   9
+   2   5   8
+  Check = F
+
+  The set partition
+  M =    8
+  NSUB =    3
+
+   3   6
+   1   4   6
+   2   5   8
+  Check = F
+
+  The set partition
+  M =    8
+  NSUB =    3
+
+   3   6
+   1   4   7
+   2   5   8
+  Check = T
+
+SETPART_ENUM
+  SETPART_ENUM enumerates set partitions.
+
+     1     1
+     2     2
+     3     5
+     4    15
+     5    52
+     6   203
+
+SETPART_TO_RGF_TEST
+  SETPART_TO_RGF converts a restricted growth
+  function to a balanced sequence.
+
+  The set partition
+
+   1   2   3   4   5   7
+   6
+   8
+
+  Corresponding restricted growth function:
+
+ 1 1 1 1 1 2 1 3
+
+STIRLING_NUMBERS1_TEST
+  STIRLING_NUMBERS1 computes a table of Stirling
+  numbers of the first kind.
+
+    I S(I,0) S(I,1) S(I,2) S(I,3) S(I,4) S(I,5)
+
+    0    1    0    0    0    0    0    0
+    1    0    1    0    0    0    0    0
+    2    0   -1    1    0    0    0    0
+    3    0    2   -3    1    0    0    0
+    4    0   -6   11   -6    1    0    0
+    5    0   24  -50   35  -10    1    0
+    6    0 -120  274 -225   85  -15    1
+
+STIRLING_NUMBERS2_TEST
+  STIRLING_NUMBERS2 computes a table of Stirling
+  numbers of the second kind.
+
+    I S(I,0) S(I,1) S(I,2) S(I,3) S(I,4) S(I,5)
+
+    0    1    0    0    0    0    0    0
+    1    0    1    0    0    0    0    0
+    2    0    1    1    0    0    0    0
+    3    0    1    3    1    0    0    0
+    4    0    1    7    6    1    0    0
+    5    0    1   15   25   10    1    0
+    6    0    1   31   90   65   15    1
+\n
+SUBSET_CHECK TEST
+  SUBSET_CHECK checks a subset.
+ 
+  Subset:
+  (empty vector)
+  Check =     F
+ 
+  Subset:
+           1           2           0
+  Check =     F
+ 
+  Subset:
+           1           0           0           1           0
+  Check =     T
+
+SUBSET_COLEX_RANK_TEST
+  SUBSET_COLEX_RANK ranks all subsets of a set,
+  using the colexicographic ordering.
+
+  The rank of the element:
+
+    0    1    0    1    0
+
+  is computed as       10
+
+SUBSET_COLEX_SUCCESSOR_TEST
+  SUBSET_COLEX_SUCCESSOR lists all subsets of a set,
+  using the colexicographic ordering.
+    0    0    0    0    0    0
+    1    1    0    0    0    0
+    2    0    1    0    0    0
+    3    1    1    0    0    0
+    4    0    0    1    0    0
+    5    1    0    1    0    0
+    6    0    1    1    0    0
+    7    1    1    1    0    0
+    8    0    0    0    1    0
+    9    1    0    0    1    0
+   10    0    1    0    1    0
+   11    1    1    0    1    0
+   12    0    0    1    1    0
+   13    1    0    1    1    0
+   14    0    1    1    1    0
+   15    1    1    1    1    0
+   16    0    0    0    0    1
+   17    1    0    0    0    1
+   18    0    1    0    0    1
+   19    1    1    0    0    1
+   20    0    0    1    0    1
+   21    1    0    1    0    1
+   22    0    1    1    0    1
+   23    1    1    1    0    1
+   24    0    0    0    1    1
+   25    1    0    0    1    1
+   26    0    1    0    1    1
+   27    1    1    0    1    1
+   28    0    0    1    1    1
+   29    1    0    1    1    1
+   30    0    1    1    1    1
+   31    1    1    1    1    1
+
+SUBSET_COLEX_UNRANK_TEST
+  SUBSET_COLEX_UNRANK unranks all subsets of a set,
+  using the colexicographic ordering.
+
+  The element of rank       10
+
+    0    1    0    1    0
+
+SUBSET_COMPLEMENT_TEST
+  SUBSET_COMPLEMENT returns the complement of a subset.
+ 
+  Subset S1:
+           0           1           1           1           0
+ 
+  S2 = complement of S1:
+           1           0           0           0           1
+
+SUBSET_DISTANCE_TEST
+  SUBSET_DISTANCE computes the distance between subsets.
+ 
+  Subset S1:
+           0           1           1           1           0
+ 
+  Subset S2:
+           0           0           0           0           1
+
+  Distance =    5
+
+SUBSET_ENUM_TEST
+  SUBSET_ENUM enumerates subsets of a set of N items.
+
+   N     #
+
+   0       1
+   1       2
+   2       4
+   3       8
+   4      16
+   5      32
+   6      64
+   7     128
+   8     256
+   9     512
+  10    1024
+
+SUBSET_INTERSECT_TEST
+  SUBSET_INTERSECT computes the intersection of subsets.
+ 
+  Subset S1:
+           0           1           1           1           0
+           0           0
+ 
+  Subset S2:
+           0           0           1           0           0
+           0           1
+ 
+  Intersect:
+           0           0           1           0           0
+           0           0
+
+SUBSET_LEX_RANK_TEST
+  SUBSET_LEX_RANK ranks all subsets of a set,
+  using the lexicographic ordering.
+
+  The rank of the element:
+
+    0    1    0    1    0
+
+  is computed as       10
+
+SUBSET_LEX_SUCCESSOR_TEST
+  SUBSET_LEX_SUCCESSOR lists all subsets of a set,
+  using the lexicographic ordering.
+    0    0    0    0    0    0
+    1    0    0    0    0    1
+    2    0    0    0    1    0
+    3    0    0    0    1    1
+    4    0    0    1    0    0
+    5    0    0    1    0    1
+    6    0    0    1    1    0
+    7    0    0    1    1    1
+    8    0    1    0    0    0
+    9    0    1    0    0    1
+   10    0    1    0    1    0
+   11    0    1    0    1    1
+   12    0    1    1    0    0
+   13    0    1    1    0    1
+   14    0    1    1    1    0
+   15    0    1    1    1    1
+   16    1    0    0    0    0
+   17    1    0    0    0    1
+   18    1    0    0    1    0
+   19    1    0    0    1    1
+   20    1    0    1    0    0
+   21    1    0    1    0    1
+   22    1    0    1    1    0
+   23    1    0    1    1    1
+   24    1    1    0    0    0
+   25    1    1    0    0    1
+   26    1    1    0    1    0
+   27    1    1    0    1    1
+   28    1    1    1    0    0
+   29    1    1    1    0    1
+   30    1    1    1    1    0
+   31    1    1    1    1    1
+
+SUBSET_LEX_UNRANK_TEST
+  SUBSET_LEX_UNRANK unranks all subsets of a set,
+  using the lexicographic ordering.
+
+  The element of rank       10
+
+    0    1    0    1    0
+
+SUBSET_RANDOM_TEST
+  SUBSET_RANDOM returns a random subset.
+           0           1           1           1           0
+           0           0           0           0           1
+           0           0           0           1           1
+           0           1           0           0           0
+           1           1           0           0           0
+           1           0           0           1           0
+           1           1           1           0           1
+           1           0           1           0           0
+           1           0           1           0           0
+           1           0           0           1           1
+
+SUBSET_UNION_TEST
+  SUBSET_UNION computes the union of subsets.
+ 
+  Subset S1:
+           0           1           1           1           0
+           0           0
+ 
+  Subset S2:
+           0           0           1           0           0
+           0           1
+ 
+  Union:
+           0           1           1           1           0
+           0           1
+
+SUBSET_WEIGHT_TEST
+  SUBSET_WEIGHT returns the weight of a subset.
+ 
+  Subset S:
+           0           1           1           1           0
+
+  Subset weight is    3
+
+SUBSET_XOR_TEST
+  SUBSET_XOR computes the exclusive OR of subsets.
+ 
+  Subset S1:
+           0           1           1           1           0
+           0           0
+ 
+  Subset S2:
+           0           0           1           0           0
+           0           1
+ 
+  XOR:
+           0           1           0           1           0
+           0           1
+
+SUBSETSUM_SWAP_TEST
+  SUBSETSUM_SWAP seeks a solution of the subset
+  sum problem using pair swapping.
+
+  The desired sum is   17
+
+    A(I), INDEX(I)
+
+     30    0
+     12    1
+     11    0
+      8    0
+      8    0
+      7    0
+      3    1
+
+  The achieved sum is       15
+
+TABLEAU_CHECK TEST
+  TABLEAU_CHECK checks a 2xN tableau.
+
+  Check?
+
+
+      Check = F
+ 
+  Tableau:
+ 
+  (None)
+
+      Check = F
+ 
+  Tableau:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       2       3       4
+    2:       2       4       7       9
+
+      Check = F
+ 
+  Tableau:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       3       5       3
+    2:       2       4       5       3
+
+      Check = F
+ 
+  Tableau:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       3       4       5
+    2:       2       4       5       3
+
+      Check = T
+ 
+  Tableau:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       3       6       7
+    2:       3       4       7       8
+
+TABLEAU_ENUM_TEST
+  TABLEAU_ENUM enumerates tableaus on N nodes.
+
+   N       #
+
+   0       1
+   1       1
+   2       2
+   3       5
+   4      14
+   5      42
+   6     132
+   7     429
+   8    1430
+   9    4862
+  10   16796
+
+TABLEAU_TO_BAL_SEQ_TEST
+  TABLEAU_TO_BAL_SEQ converts a tableau
+  to a balanced sequence.
+ 
+  Tableau:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       2       5       6
+    2:       3       4       7       8
+ 
+  Balanced sequence:
+           0           0           1           1           0
+           0           1           1
+
+TREE_CHECK TEST
+  TREE_CHECK checks a tree.
+
+  Check?
+
+
+      Check = F
+ 
+  Tree:
+ 
+  (None)
+
+      Check = T
+ 
+  Tree:
+ 
+  Col        1       2
+  Row
+ 
+    1:       1       2
+    2:       2       3
+
+      Check = F
+ 
+  Tree:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:      -1       3       4       5
+    2:      -2       4       5       3
+
+      Check = T
+ 
+  Tree:
+ 
+  Col        1       2       3       4       5
+  Row
+ 
+    1:       1       2       3       4       5
+    2:       3       3       4       5       6
+
+TREE_ENUM_TEST
+  TREE_ENUM enumerates trees on N nodes.
+
+   N         #
+
+   0           0
+   1           1
+   2           1
+   3           3
+   4          16
+   5         125
+   6        1296
+   7       16807
+   8      262144
+   9     4782969
+  10   100000000
+
+TREE_RANK_TEST
+  TREE_RANK ranks trees.
+
+  The rank of the element:
+
+      4    3    2
+      3    1    1
+
+  is computed as        8
+
+TREE_SUCCESSOR_TEST
+  TREE_SUCCESOR lists trees.
+    0      4    3    2
+           1    1    1
+    1      4    3    2
+           1    2    1
+    2      4    2    3
+           1    3    1
+    3      3    2    4
+           1    4    1
+    4      4    3    2
+           2    1    1
+    5      4    3    2
+           2    2    1
+    6      4    2    3
+           2    3    1
+    7      3    2    4
+           2    4    1
+    8      4    3    2
+           3    1    1
+    9      4    3    2
+           3    2    1
+   10      4    2    3
+           3    3    1
+   11      2    3    4
+           3    4    1
+   12      3    4    2
+           4    1    1
+   13      3    4    2
+           4    2    1
+   14      2    4    3
+           4    3    1
+   15      3    2    4
+           4    4    1
+
+TREE_TO_PRUEFER_TEST
+  TREE_TO_PRUEFER converts a tree to a Pruefer code.
+
+  Random Pruefer code of rank       27
+    2    1    3
+
+  Edge list for the corresponding tree:
+
+    1    5    2
+    2    4    1
+    3    2    3
+    4    3    1
+
+  Corresponding Pruefer code:
+    2    1    3
+
+  Random Pruefer code of rank      119
+    5    4    5
+
+  Edge list for the corresponding tree:
+
+    1    3    5
+    2    2    4
+    3    4    5
+    4    5    1
+
+  Corresponding Pruefer code:
+    5    4    5
+
+  Random Pruefer code of rank      103
+    5    1    4
+
+  Edge list for the corresponding tree:
+
+    1    3    5
+    2    5    1
+    3    2    4
+    4    4    1
+
+  Corresponding Pruefer code:
+    5    1    4
+
+  Random Pruefer code of rank       70
+    3    5    1
+
+  Edge list for the corresponding tree:
+
+    1    4    3
+    2    3    5
+    3    5    1
+    4    2    1
+
+  Corresponding Pruefer code:
+    3    5    1
+
+  Random Pruefer code of rank       51
+    3    1    2
+
+  Edge list for the corresponding tree:
+
+    1    5    3
+    2    4    1
+    3    3    2
+    4    2    1
+
+  Corresponding Pruefer code:
+    3    1    2
+
+TREE_UNRANK_TEST
+  TREE_UNRANK unranks trees.
+
+  The element of rank        8
+
+      4    3    2
+      3    1    1
+
+COMBO_TEST
+  Normal end of execution.
+
+June 10 2020   7:38:01.241 PM

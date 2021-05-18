@@ -1,0 +1,84 @@
+09 April 2021   9:34:26.840 PM
+ 
+fsolve_test():
+  FORTRAN90 version
+  Test fsolve(), which solves systems of nonlinear equations.
+ 
+fsolve_test1():
+  fsolve() solves a nonlinear system of 1 equation.
+ 
+  Initial X and F(X)
+ 
+     1     0.00000        -5.00000    
+ 
+  Satisfactory computation.
+ 
+  Final X and F(X)
+ 
+     1     4.27523       -0.590983E-10
+ 
+fsolve_test2():
+  fsolve() solves a nonlinear system of 2 equations.
+ 
+  Initial X and F(X)
+ 
+     1     3.00000        -13.0000    
+     2     0.00000         11.0000    
+ 
+  Satisfactory computation.
+ 
+  Final X and F(X)
+ 
+     1     1.00000       -0.961951E-10
+     2     1.00000       -0.123539E-09
+ 
+fsolve_test3():
+  fsolve() solves a nonlinear system of 4 equations.
+ 
+  Initial X and F(X)
+ 
+     1     0.00000         1.00000    
+     2     0.00000         4.00000    
+     3     0.00000         9.00000    
+     4     0.00000         16.0000    
+ 
+  Returned value of INFO =      4
+ 
+  Final X and F(X)
+ 
+     1     1.00000        0.493038E-31
+     2     2.00000        0.197215E-30
+     3     3.00000         0.00000    
+     4     4.00000        0.788861E-30
+ 
+fsolve_test4():
+  fsolve() solves a nonlinear system of 8 equations.
+ 
+  Initial X and F(X)
+ 
+     1     0.00000         1.00000    
+     2     0.00000         1.00000    
+     3     0.00000         1.00000    
+     4     0.00000         1.00000    
+     5     0.00000         1.00000    
+     6     0.00000         1.00000    
+     7     0.00000         1.00000    
+     8     0.00000         1.00000    
+ 
+  Satisfactory computation.
+ 
+  Final X and F(X)
+ 
+     1   -0.570470       -0.851213E-06
+     2   -0.681140        0.160753E-05
+     3   -0.700429       -0.116446E-05
+     4   -0.700672        0.174651E-06
+     5   -0.691736        0.110893E-05
+     6   -0.665768       -0.159886E-05
+     7   -0.596029        0.739477E-06
+     8   -0.416411       -0.560667E-07
+ 
+fsolve_test():
+  Normal end of execution.
+ 
+09 April 2021   9:34:26.840 PM

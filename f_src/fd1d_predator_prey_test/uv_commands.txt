@@ -1,0 +1,15 @@
+# uv_commands.txt
+#
+# Usage:
+#  gnuplot < uv_commands.txt
+#
+set term png
+set output "uv.png"
+set xlabel "<---X--->"
+set ylabel "Population"
+set title "Predator and Prey Distributions"
+set grid
+set style data lines
+plot "uv_data.txt" using 1:2 lw 3 linecolor rgb "blue",\
+     "uv_data.txt" using 1:3 lw 3 linecolor rgb "red"
+quit

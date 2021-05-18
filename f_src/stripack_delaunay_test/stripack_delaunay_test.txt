@@ -1,0 +1,58 @@
+31 August 2020   9:41:01.866 AM
+ 
+STRIPACK_DELAUNAY
+  FORTRAN90 version
+ 
+  Read a file of (X,Y,Z) coordinates of points on
+  the unit sphere.
+ 
+  Call STRIPACK to compute the Delaunay triangulation.
+ 
+  Write a file of triplets (N1,N2,N3) of nodes defining
+  the Delaunay triangulation.
+ 
+  Read the header of "sphere_grid_icos1_f1.xyz".
+ 
+  Spatial dimension =        3
+  Number of nodes   =       12
+ 
+  Read the node coordinate data in "sphere_grid_icos1_f1.xyz".
+ 
+  Initial part of the node coordinate array:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   0.850651      0.525731       0.00000    
+    2   0.850651     -0.525731       0.00000    
+    3   0.525731       0.00000      0.850651    
+    4   0.525731       0.00000     -0.850651    
+    5    0.00000      0.850651      0.525731    
+    6    0.00000     -0.850651      0.525731    
+    7    0.00000      0.850651     -0.525731    
+    8    0.00000     -0.850651     -0.525731    
+    9  -0.525731       0.00000      0.850651    
+   10  -0.525731       0.00000     -0.850651    
+   11  -0.850651      0.525731       0.00000    
+   12  -0.850651     -0.525731       0.00000    
+ 
+  Computed the triangulation.
+  Number of triangles is       20
+ 
+  3 by 5 portion of triangulation data:
+ 
+  Row        1       2       3
+  Col
+ 
+    1        1       7       5
+    2        1       5       3
+    3        1       3       2
+    4        1       2       4
+    5        1       4       7
+ 
+  Wrote the triangulation data to "triangulation.txt".
+ 
+STRIPACK_DELAUNAY
+  Normal end of execution.
+ 
+31 August 2020   9:41:01.868 AM

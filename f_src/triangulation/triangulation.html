@@ -1,0 +1,280 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION - Triangulation of 2D data
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION <br> Triangulation of 2D data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION</b>,
+      a FORTRAN90 code which
+      computes a triangulation of
+      a set of points in 2D, and carries out various other related
+      operations on triangulations of order 3 or 6.
+    </p>
+
+    <p>
+      The mesh is the collection of triangles.  Each triangle
+      is termed an "element".  The points used to define the shape of the
+      triangle (the corners, and sometimes a few more points) are called
+      the "nodes".
+    </p>
+
+    <p>
+      Routines are available to:
+      <ul>
+        <li>
+          evaluate "quality measures" for the mesh;
+        </li>
+        <li>
+          create a "node neighbor array" for each node;
+        </li>
+        <li>
+          create an "element neighbor array" for each element;
+        </li>
+        <li>
+          estimate the integral of a function over the region covered by the mesh;
+        </li>
+        <li>
+          plot the nodes and elements of a mesh;
+        </li>
+        <li>
+          determine the parts of the mesh that lie on the boundary;
+        </li>
+        <li>
+          sample points at random from the region covered by the mesh;
+        </li>
+        <li>
+          search a mesh to determine which element contains a point.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Since triangulations are often used to define a finite element
+      mesh, which in turn defines a sparse matrix, there are routines
+      available which can define the sparse compressed column arrays
+      needed for a sparse matrix associated with a mesh of order 3
+      or 6.  The special case of the Taylor-Hood mixed element is also
+      handled, which is essentially an order 6 grid counted twice
+      and an order 3 grid that only uses the vertices of the order 6 grid.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION</b> is available in
+      <a href = "../../c_src/triangulation/triangulation.html">a C version</a> and
+      <a href = "../../cpp_src/triangulation/triangulation.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation/triangulation.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation/triangulation.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt_triangulation/cvt_triangulation.html">
+      CVT_TRIANGULATION</a>,
+      a FORTRAN90 code which
+      uses routines from the <b>test_triangulation</b> library
+      to create a CVT-based triangularization.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mesh_bandwidth/mesh_bandwidth.html">
+      MESH_BANDWIDTH</a>,
+      a FORTRAN90 code which
+      returns the geometric bandwidth associated with a mesh of
+      elements of any order and in a space of arbitrary dimension.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mesh_to_xml/mesh_to_xml.html">
+      MESH_TO_XML</a>,
+      a FORTRAN90 code which
+      reads information defining a 1D, 2D or 3D mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding XML file for input
+      to DOLFIN or FENICS.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_delaunay/table_delaunay.html">
+      TABLE_DELAUNAY</a>,
+      a FORTRAN90 code which
+      triangulates a set of nodes whose coordinates are stored in a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_triangulation/test_triangulation.html">
+      TEST_TRIANGULATION</a>,
+      a FORTRAN90 code which
+      sets up a number of triangulation test problems.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_test/triangulation_test.html">
+      triangulation_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_l2q/triangulation_l2q.html">
+      TRIANGULATION_L2Q</a>,
+      a FORTRAN90 code which
+      reads data defining a 3-node triangulation and generates
+      midside nodes and writes out the corresponding 6-node triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_plot/triangulation_plot.html">
+      TRIANGULATION_PLOT</a>,
+      a FORTRAN90 code which
+      reads data defining a triangulation and creates a
+      PostScript image of the nodes and triangles.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_q2l/triangulation_q2l.html">
+      TRIANGULATION_Q2L</a>,
+      a FORTRAN90 code which
+      reads data defining a 6-node triangulation, and subdivides
+      each triangle into 4 3-node triangles, writing the resulting
+      triangulation to a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quad/triangulation_quad.html">
+      TRIANGULATION_QUAD</a>,
+      a FORTRAN90 code which
+      estimates the integral of a function over a triangulated region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quality/triangulation_quality.html">
+      TRIANGULATION_QUALITY</a>,
+      a FORTRAN90 code which
+      reads data defining a triangulation and computes a number
+      of quality measures.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Franz Aurenhammer,<br>
+          Voronoi diagrams -
+          a study of a fundamental geometric data structure,<br>
+          ACM Computing Surveys,<br>
+          Volume 23, Number 3, September 1991, pages 345-405.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Marc deBerg, Marc Krevald, Mark Overmars,
+          Otfried Schwarzkopf,<br>
+          Computational Geometry,<br>
+          Springer, 2000,<br>
+          ISBN: 3-540-65620-0,<br>
+          LC: QA448.D38.C65.
+        </li>
+        <li>
+          Barry Joe, <br>
+          GEOMPACK - a software package for the generation of meshes
+          using geometric algorithms, <br>
+          Advances in Engineering Software,<br>
+          Volume 13, Number 5, 1991, pages 325-331.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          Atsuyuki Okabe, Barry Boots, Kokichi Sugihara, Sung Nok Chiu,<br>
+          Spatial Tessellations:
+          Concepts and Applications of Voronoi Diagrams,<br>
+          Second Edition,<br>
+          Wiley, 2000,<br>
+          ISBN: 0-471-98635-6,<br>
+          LC: QA278.2.O36.
+        </li>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, June 2004, pages 329-345.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation.f90">triangulation.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "triangulation.sh">triangulation.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

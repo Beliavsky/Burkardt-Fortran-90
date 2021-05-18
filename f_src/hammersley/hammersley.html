@@ -1,0 +1,234 @@
+<html>
+
+  <head>
+    <title>
+      HAMMERSLEY - The Hammersley Quasi Monte Carlo (QMC) Sequence
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      HAMMERSLEY <br> The Hammersley Quasi Monte Carlo (QMC) Sequence
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>HAMMERSLEY</b>,
+      a FORTRAN90 library which
+      computes elements of a Hammersley Quasi Monte Carlo (QMC) sequence
+      using a simple interface.
+    </p>
+
+    <p>
+      A more sophisticated library is available in HAMMERSLEY_ADVANCED,
+      but I find this simple version to be preferable for everyday use!
+    </p>
+
+    <p>
+      The standard M-dimensional Hammersley sequence based on N is simply 
+      composed of a first component of successive fractions 0/N, 1/N, ..., N/N, 
+      paired with M-1 1-dimensional van der Corput sequences, using as bases 
+      the first M-1 primes.
+    </p>
+
+    <p>
+      The HAMMERSLEY function will return the M-dimensional element of this
+      sequence with index I.
+    </p>
+
+    <p>
+      The HAMMERSLEY_SEQUENCE function will return the M-dimensional elements 
+      of this sequence with indices I1 through I2.
+    </p>
+
+    <p>
+      The HAMMERSLEY_INVERSE function accepts an M-dimensional value, presumably
+      computed by HAMMERSLEY, and returns its original index I.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>HAMMERSLEY</b> is available in
+      <a href = "../../c_src/hammersley/hammersley.html">a C version</a> and
+      <a href = "../../cpp_src/hammersley/hammersley.html">a C++ version</a> and
+      <a href = "../../f_src/hammersley/hammersley.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/hammersley/hammersley.html">a MATLAB version</a> and
+      <a href = "../../py_src/hammersley/hammersley.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt/cvt.html">
+      CVT</a>,
+      a FORTRAN90 library which
+      computes elements of a Centroidal Voronoi Tessellation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/faure/faure.html">
+      FAURE</a>,
+      a FORTRAN90 library which
+      computes elements of a Faure sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/halton/halton.html">
+      HALTON</a>,
+      a FORTRAN90 library which
+      computes elements of a Halton Quasi Monte Carlo (QMC) sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hammersley_test/hammersley_test.html">
+      hammersley_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ihs/ihs.html">
+      IHS</a>,
+      a FORTRAN90 library which
+      computes elements of
+      an improved distributed Latin hypercube dataset.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latin_center/latin_center.html">
+      LATIN_CENTER</a>,
+      a FORTRAN90 library which
+      computes elements of a
+      Latin Hypercube dataset, choosing center points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latin_edge/latin_edge.html">
+      LATIN_EDGE</a>,
+      a FORTRAN90 library which
+      computes elements of a Latin Hypercube dataset, choosing edge points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latin_random/latin_random.html">
+      LATIN_RANDOM</a>,
+      a FORTRAN90 library which
+      computes elements of a Latin Hypercube dataset, choosing
+      points at random.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lattice_rule/lattice_rule.html">
+      LATTICE_RULE</a>,
+      a FORTRAN90 library which
+      approximates multidimensional integrals using lattice rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lcvt/lcvt.html">
+      LCVT</a>,
+      a FORTRAN90 library which
+      computes a latinized Centroidal Voronoi Tessellation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/niederreiter2/niederreiter2.html">
+      NIEDERREITER2</a>,
+      a FORTRAN90 library which
+      computes elements of a Niederreiter sequence
+      using base 2.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sobol/sobol.html">
+      SOBOL</a>,
+      a FORTRAN90 library which
+      computes elements of a Sobol sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms647/toms647.html">
+      TOMS647</a>,
+      a FORTRAN90 library which
+      is a version of ACM TOMS algorithm 647,
+      for evaluating Faure, Hammersley and Sobol sequences.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 library which
+      computes elements of a uniform pseudorandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/van_der_corput/van_der_corput.html">
+      VAN_DER_CORPUT</a>,
+      a FORTRAN90 library which
+      computes elements of a 1D van der Corput Quasi Monte Carlo (QMC) sequence
+      using a simple interface.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          John Hammersley,
+          Monte Carlo methods for solving multivariable problems,
+          Proceedings of the New York Academy of Science,
+          Volume 86, 1960, pages 844-874.
+        </li>
+        <li>
+          Ladislav Kocis, William Whiten,<br>
+          Computational Investigations of Low-Discrepancy Sequences,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 23, Number 2, 1997, pages 266-294.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "hammersley.f90">hammersley.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "hammersley.sh">hammersley.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 12 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,626 @@
+<html>
+
+  <head>
+    <title>
+      SUBSET - Combinatorial Routines
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SUBSET <br> Combinatorial Routines
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SUBSET</b>,
+      a FORTRAN90 code which
+      enumerates, generates, randomizes, ranks and unranks combinatorial objects
+      including combinations, compositions, Gray codes, index sets, partitions, 
+      permutations, polynomials, subsets, and Young tables.  Backtracking 
+      routines are included to solve some combinatorial problems.  Other
+      routines handled continued fractions, and Diophantine equations.
+    </p>
+
+    <p>
+      These include the enumeration, generation, random
+      selection, ranking and unranking of
+      <ul>
+        <li>
+          <b>COMP</b>, compositions of an integer N into K parts;
+        </li>
+        <li>
+          <b>COMPNZ</b>, compositions of an integer N into K parts,
+          with no zero parts;
+        </li>
+        <li>
+          <b>EQUIV</b>'s, partitions of a set of N objects;
+        </li>
+        <li>
+          <b>I4_PARTITION</b>'s, partitions of an integer;
+        </li>
+        <li>
+          <b>I4POLY</b>'s, integer polynomials in factorial, Newton,
+          power sum, or Taylor form;
+        </li>
+        <li>
+          <b>I4VEC</b>'s, integer vectors;
+        </li>
+        <li>
+          <b>KSUB</b>'s, subsets of size K, from a set of N objects;
+        </li>
+        <li>
+          <b>MULTIPERM</b>'s, permutations of the N objects, some of which
+          are indistinguishable.
+        </li>
+        <li>
+          <b>PERM</b>'s, permutations of the first N integers;
+        </li>
+        <li>
+          <b>R8POLY</b>'s, real polynomials in factorial, Newton,
+          power sum, or Taylor form;
+        </li>
+        <li>
+          <b>KSUB</b>'s, subsets of a set of N objects;
+        </li>
+        <li>
+          vectors whose entries range from 1 to N;
+        </li>
+        <li>
+          <b>YTB</b>'s, Young tables;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Other objects considered include
+      <ul>
+        <li>
+          the Bell numbers,
+        </li>
+        <li>
+          Catalan numbers,
+        </li>
+        <li>
+          congruence equations.
+        </li>
+        <li>
+          continued fractions,
+        </li>
+        <li>
+          <b>DEC</b>'s, decimal numbers represented as a mantissa and a power of 10;
+        </li>
+        <li>
+          <b>DERANGE</b>'s, derangements (permutations that leave no element in place),
+        </li>
+        <li>
+          <b>DVEC</b>'s, decimal numbers represented as a vector of digits;
+        </li>
+        <li>
+          falling factorials (20*19*18...),
+        </li>
+        <li>
+          <b>GRAY</b>, Gray codes,
+        </li>
+        <li>
+          matrix permanents (similar to determinants, but harder to compute,
+          if you can believe that),
+        </li>
+        <li>
+          Morse-Thue numbers,
+        </li>
+        <li>
+          pentagonal numbers,
+        </li>
+        <li>
+          Pythagorean triples,
+        </li>
+        <li>
+          <b>RAT</b>'s, rational numbers represented as a pair of integers;
+        </li>
+        <li>
+          rising factorials (7*8*9...).
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>subset</b> is available in
+      <a href = "../../c_src/subset/subset.html">a C version</a> and
+      <a href = "../../cpp_src/subset/subset.html">a C++ version</a> and
+      <a href = "../../f_src/subset/subset.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/subset/subset.html">a MATLAB version</a> and
+      <a href = "../../octave_src/subset/subset.html">an Octave version</a> and
+      <a href = "../../py_src/subset/subset.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/backtrack_binary_rc/backtrack_binary_rc.html">
+      BACKTRACK_BINARY_RC</a>,
+      a FORTRAN90 code which
+      carries out a backtrack search for a set of binary decisions, using
+      reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../f_src/change_making/change_making.html">
+      CHANGE_MAKING</a>,
+      a FORTRAN90 code which
+      considers the change making problem,
+      in which a given sum is to be formed using coins of various denominations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/combination_lock/combination_lock.html">
+      COMBINATION_LOCK</a>,
+      a FORTRAN90 code which
+      simulates the process of determining the secret combination of a lock.
+    </p>
+
+    <p>
+      <a href = "../../f_src/combo/combo.html">
+      COMBO</a>,
+      a FORTRAN90 code which
+      includes many combinatorial routines.
+    </p>
+
+    <p>
+      <a href = "../../f_src/floyd/floyd.html">
+      FLOYD</a>,
+      a FORTRAN90 code which
+      implements Floyd's algorithm for finding the shortest distance between pairs of
+      nodes on a directed graph.
+    </p>
+
+    <p>
+      <a href = "../../f_src/grafpack/grafpack.html">
+      GRAFPACK</a>,
+      a FORTRAN90 code which
+      carries out operations on abstract graphs.
+    </p>
+
+    <p>
+      <a href = "../../f_src/knapsack_01/knapsack_01.html">
+      KNAPSACK_01</a>,
+      a FORTRAN90 code which
+      uses brute force to solve small versions of the 0/1 knapsack problem;
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_product_polynomial/legendre_product_polynomial.html">
+      LEGENDRE_PRODUCT_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      defines Legendre product polynomials, creating a multivariate 
+      polynomial as the product of univariate Legendre polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/monomial/monomial.html">
+      MONOMIAL</a>,
+      a FORTRAN90 code which
+      enumerates, lists, ranks, unranks and randomizes multivariate monomials 
+      in a space of M dimensions, with total degree less than N,
+      equal to N, or lying within a given range.
+    </p>
+
+    <p>
+      <a href = "../../f_src/partial_digest/partial_digest.html">
+      PARTIAL_DIGEST</a>,
+      a FORTRAN90 code which
+      solves the partial digest problem.
+    </p>
+
+    <p>
+      <a href = "../../f_src/partition_problem/partition_problem.html">
+      PARTITION_PROBLEM</a>,
+      a FORTRAN90 code which
+      seeks solutions of the partition problem, splitting a set of integers into
+      two subsets with equal sum.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polynomial/polynomial.html">
+      POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      adds, multiplies, differentiates, evaluates and prints multivariate 
+      polynomials in a space of M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/subset/subset.html">
+      subset</a>,
+      a FORTRAN90 code which
+      enumerates, generates, randomizes, ranks and unranks combinatorial objects
+      including combinations, compositions, Gray codes, index sets, partitions, 
+      permutations, polynomials, subsets, and Young tables.  Backtracking 
+      routines are included to solve some combinatorial problems.  Some routines
+      for continued fractions are included.
+    </p>
+
+    <p>
+      <a href = "../../f_src/subset_test/subset_test.html">
+      subset_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/subset_sum/subset_sum.html">
+      SUBSET_SUM</a>,
+      a FORTRAN90 code which
+      seeks solutions of the subset sum problem.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms515/toms515.html">
+      TOMS515</a>,
+      a FORTRAN90 code which
+      can select subsets of size K from a set of size N.
+      This is a version of ACM TOMS Algorithm 515,
+      by Bill Buckles, Matthew Lybanon.
+    </p>
+
+    <p>
+      <a href = "../../f_src/treepack/treepack.html">
+      TREEPACK</a>,
+      a FORTRAN90 code which
+      carries out computations on trees, 
+      a simple kind of graph that is minimally connected.
+    </p>
+
+    <p>
+      <a href = "../../f_src/unicycle/unicycle.html">
+      UNICYCLE</a>,
+      a FORTRAN90 code which
+      considers permutations containing a single cycle, sometimes called 
+      cyclic permutations.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Walter Ball,<br>
+          Mathematical Recreations and Essays,<br>
+          Macmillan, 1962,<br>
+          ISBN: 1417921269,<br>
+          LC: QA95.B2.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Bill Buckles, Matthew Lybanon,<br>
+          Algorithm 515:
+          Generation of a Vector from the Lexicographical Index,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 3, Number 2, June 1977, pages 180-182.
+        </li>
+        <li>
+          Tom Christiansen, Nathan Torkington,<br>
+          Perl Cookbook,<br>
+          O'Reilly, 2003,<br>
+          ISBN: 0596003137,<br>
+          LC: QA76.73.P22.C38.
+        </li>
+        <li>
+          William Cody, Kenneth Hillstrom,<br>
+          Chebyshev Approximations for the Natural Logarithm of the
+          Gamma Function,
+          Mathematics of Computation,<br>
+          Volume 21, Number 98, April 1967, pages 198-203.
+        </li>
+        <li>
+          John Conway, Richard Guy,<br>
+          The Book of Numbers,<br>
+          Springer, 1998,<br>
+          ISBN: 038797993X,<br>
+          LC: QA241.C6897.
+        </li>
+        <li>
+          David Crouse,<br>
+          Remark on Algorithm 515,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 33, Number 2, Article 15, June 2007.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 362-376.
+        </li>
+        <li>
+          Laurent Habsieger, Maxim Kazarian, Sergei Lando,<br>
+          On the Second Number of Plutarch,<br>
+          American Mathematical Monthly,<br>
+          Volume 105, Number 5, May 1998, page 446.
+        </li>
+        <li>
+          John Halton,<br>
+          On the efficiency of certain quasi-random sequences of points
+          in evaluating multi-dimensional integrals,<br>
+          Numerische Mathematik,<br>
+          Volume 2, Number 1, December 1960, pages 84-90.
+        </li>
+        <li>
+          John Hammersley,<br>
+          Monte Carlo methods for solving multivariable problems,<br>
+          Proceedings of the New York Academy of Science,<br>
+          Volume 86, 1960, pages 844-874.
+        </li>
+        <li>
+          John Hart, Ward Cheney, Charles Lawson, Hans Maehly,
+          Charles Mesztenyi, John Rice, Henry Thacher,
+          Christoph Witzgall,<br>
+          Computer Approximations,<br>
+          Wiley, 1968,<br>
+          LC: QA297.C64.
+        </li>
+        <li>
+          Brian Hayes,<br>
+          Third Base,<br>
+          American Scientist,<br>
+          Volume 89, Number 6, November-December 2001, pages 490-494.
+        </li>
+        <li>
+          Mark Herkommer,<br>
+          Number Theory, A Programmer's Guide,<br>
+          McGraw Hill, 1999,<br>
+          ISBN: 0-07-913074-7.
+        </li>
+        <li>
+          Karla Hoffman, Douglas Shier,<br>
+          Algorithm 564:
+          A Test Problem Generator for Discrete Linear L1
+          Approximation Problems,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 6, Number 4, December 1980, pages 615-617.
+        </li>
+        <li>
+          Donald Knuth,<br>
+          The Art of Computer Programming,<br>
+          Volume 3, Sorting and Searching,<br>
+          Second Edition,<br>
+          Addison Wesley, 1998,<br>
+          ISBN: 0201896850,<br>
+          LC: QA76.6.K64.
+        </li>
+        <li>
+          Hang Tong Lau,<br>
+          Algorithms on Graphs,<br>
+          Tab Books, 1989,<br>
+          ISBN: 0830634290,<br>
+          LC: QA166.L38
+        </li>
+        <li>
+          Pierre LEcuyer,<br>
+          Random Number Generation,<br>
+          in Handbook of Simulation,<br>
+          edited by Jerry Banks,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Peter Lewis, Allen Goodman, James Miller,<br>
+          A Pseudo-Random Number Generator for the System/360,<br>
+          IBM Systems Journal,<br>
+          Volume 8, 1969, pages 136-143.
+        </li>
+        <li>
+          Charles Mifsud,<br>
+          Algorithm 154,
+          Combination in Lexicographic Order,<br>
+          Communications of the ACM,<br>
+          Volume 6, Number 3, March 1963, page 103.
+        </li>
+        <li>
+          mil_std_1753,<br>
+          Military Standard 1753,<br>
+          FORTRAN, DoD Supplement To American National Standard X3.9-1978,<br>
+          9 November 1978.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          Robert Owens,<br>
+          Sums of Powers of Integers,<br>
+          Mathematics Magazine,<br>
+          Volume 65, Number 1, February 1992, pages 38-40.
+        </li>
+        <li>
+          Norman Richert,<br>
+          Strang's Strange Figures,<br>
+          American Mathematical Monthly,<br>
+          Volume 99, Number 2, February 1992, pages 101-107.
+        </li>
+        <li>
+          James Sandeson,<br>
+          Testing Ecological Patterns,<br>
+          American Scientist,<br>
+          Volume 88, Number 4, July-August 2000, pages 332-339.
+        </li>
+        <li>
+          Ian Saunders,<br>
+          Algorithm AS 205,<br>
+          Enumeration of R x C Tables with Repeated Row Totals,<br>
+          Applied Statistics,<br>
+          Volume 33, Number 3, 1984, pages 340-352.
+        </li>
+        <li>
+          Robert Sedgewick,<br>
+          Algorithms in C,<br>
+          Addison-Wesley, 1990,<br>
+          ISBN: 0-201-51425-7,<br>
+          LC: QA76.73.C15S43.
+        </li>
+        <li>
+          Raymond Seroul,<br>
+          Programming for Mathematicians,<br>
+          Springer, 2000,<br>
+          ISBN: 3-540-66422-X,<br>
+          LC: QA76.6.S465.
+        </li>
+        <li>
+          Mok-Kong Shen,<br>
+          Algorithm 202:
+          Generation of Permutations in Lexicographical Order,<br>
+          Communications of the ACM,<br>
+          Volume 6, Number 9, September 1963, page 517.
+        </li>
+        <li>
+          Richard Stanley,<br>
+          Hipparchus, Plutarch, Schroeder, and Hough,<br>
+          American Mathematical Monthly,<br>
+          Volume 104, Number 4, April 1997, pages 344-350.
+        </li>
+        <li>
+          Dennis Stanton, Dennis White,<br>
+          Constructive Combinatorics,<br>
+          Springer, 1986,<br>
+          ISBN: 0387963472,<br>
+          LC: QA164.S79.
+        </li>
+        <li>
+          Ian Stewart,<br>
+          A Neglected Number,<br>
+          Scientific American, <br>
+          Volume 274, pages 102-102, June 1996.
+        </li>
+        <li>
+          Ian Stewart,<br>
+          Math Hysteria,<br>
+          Oxford, 2004,<br>
+          ISBN: 0198613369,<br>
+          LC: QA95.S7255.
+        </li>
+        <li>
+          James Sylvester,<br>
+          Question 7382,
+          Mathematical Questions with their Solutions,<br>
+          Educational Times,<br>
+          Volume 41, page 21, 1884.
+        </li>
+        <li>
+          Hale Trotter,<br>
+          Algorithm 115:
+          PERM,<br>
+          Communications of the Association for Computing Machinery,<br>
+          Volume 5, Number 8, August 1962, pages 434-435.
+        </li>
+        <li>
+          Johannes vanderCorput,<br>
+          Verteilungsfunktionen I & II,<br>
+          Proceedings of the Koninklijke Nederlandsche Akademie
+          van Wetenschappen,<br>
+          Volume 38, 1935, pages 813-820, pages 1058-1066.
+        </li>
+        <li>
+          Jack vanLint, Richard Wilson,<br>
+          A Course in Combinatorics,<br>
+          Cambridge, 1992,<br>
+          ISBN: 0-521-42260-4,<br>
+          LC: QA164.L56.
+        </li>
+        <li>
+          Eric Weisstein,<br>
+          CRC Concise Encyclopedia of Mathematics,<br>
+          CRC Press, 2002,<br>
+          Second edition,<br>
+          ISBN: 1584883472,<br>
+          LC: QA5.W45
+        </li>
+        <li>
+          Stephen Wolfram,<br>
+          The Mathematica Book,<br>
+          Fourth Edition,<br>
+          Cambridge University Press, 1999,<br>
+          ISBN: 0-521-64314-7,<br>
+          LC: QA76.95.W65.
+        </li>
+        <li>
+          ML Wolfson, HV Wright,<br>
+          ACM Algorithm 160:
+          Combinatorial of M Things Taken N at a Time,<br>
+          Communications of the ACM,<br>
+          Volume 6, Number 4, April 1963, page 161.
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3,<br>
+          LC: QA47.M315.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "subset.f90">subset.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "subset.sh">subset.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 October 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

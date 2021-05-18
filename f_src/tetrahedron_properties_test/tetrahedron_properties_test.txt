@@ -1,0 +1,791 @@
+ 8 September 2020   7:07:32.497 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_cap.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_cap.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   -13.1607       0.00000       0.00000    
+    2    13.1607       0.00000       0.00000    
+    3    0.00000       22.7951       0.00000    
+    4    0.00000       7.59836      0.100000E-01
+ 
+  CENTROID:    0.00000       7.59836      0.250000E-02
+ 
+  CIRCUM_RADIUS =    11547.0    
+  CIRCUM_CENTER:    0.00000       7.59836      -11547.0    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1    0.13160731E-02
+         2    0.13160734E-02
+         3     3.1393131    
+         4    0.13160734E-02
+         5     3.1393131    
+         6     3.1393131    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1    0.75405432E-01
+         2    0.75405449E-01
+         3     179.86939    
+         4    0.75405449E-01
+         5     179.86939    
+         6     179.86939    
+
+  EDGE AB:     26.3215       0.00000       0.00000    
+  EDGE AC:     13.1607       22.7951       0.00000    
+  EDGE AD:     13.1607       7.59836      0.100000E-01
+  EDGE BC:    -13.1607       22.7951       0.00000    
+  EDGE BD:    -13.1607       7.59836      0.100000E-01
+  EDGE CD:     0.00000      -15.1967      0.100000E-01
+ 
+  EDGE_LENGTHS
+ 
+         1     26.321474    
+         2     26.321483    
+         3     15.196715    
+         4     26.321483    
+         5     15.196715    
+         6     15.196721    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    1.04720       1.04720       1.04720    
+    2   0.523599      0.523599       2.09439    
+    3   0.523599      0.523599       2.09439    
+    4   0.523599      0.523599       2.09439    
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    60.0000       60.0000       60.0000    
+    2    30.0000       30.0000       120.000    
+    3    30.0000       30.0000       120.000    
+    4    30.0000       30.0000       120.000    
+ 
+  FACE_AREAS
+ 
+         1     300.00000    
+         2     100.00008    
+         3     100.00009    
+         4     100.00009    
+ 
+  IN_RADIUS =   0.500000E-02
+  IN_CENTER:    0.00000       7.59836      0.500000E-02
+ 
+  QUALITY1 =   0.129904E-05
+ 
+  QUALITY2 =   0.930604E-03
+ 
+  QUALITY3 =   0.900703E-02
+ 
+  QUALITY4 =   0.647842E-03
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1    0.35264105E-03
+         2    0.35264105E-03
+         3    0.35264068E-03
+         4     6.2763468    
+ 
+  VOLUME =    1.00000    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.498 PM
+ 8 September 2020   7:07:32.501 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_equilateral.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_equilateral.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    1.00000       1.00000       1.00000    
+    2   -1.00000      -1.00000       1.00000    
+    3   -1.00000       1.00000      -1.00000    
+    4    1.00000      -1.00000      -1.00000    
+ 
+  CENTROID:    0.00000       0.00000       0.00000    
+ 
+  CIRCUM_RADIUS =    1.73205    
+  CIRCUM_CENTER:    0.00000       0.00000       0.00000    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1     1.2309594    
+         2     1.2309594    
+         3     1.2309594    
+         4     1.2309594    
+         5     1.2309594    
+         6     1.2309594    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1     70.528779    
+         2     70.528779    
+         3     70.528779    
+         4     70.528779    
+         5     70.528779    
+         6     70.528779    
+
+  EDGE AB:    -2.00000      -2.00000       0.00000    
+  EDGE AC:    -2.00000       0.00000      -2.00000    
+  EDGE AD:     0.00000      -2.00000      -2.00000    
+  EDGE BC:     0.00000       2.00000      -2.00000    
+  EDGE BD:     2.00000       0.00000      -2.00000    
+  EDGE CD:     2.00000      -2.00000       0.00000    
+ 
+  EDGE_LENGTHS
+ 
+         1     2.8284271    
+         2     2.8284271    
+         3     2.8284271    
+         4     2.8284271    
+         5     2.8284271    
+         6     2.8284271    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    1.04720       1.04720       1.04720    
+    2    1.04720       1.04720       1.04720    
+    3    1.04720       1.04720       1.04720    
+    4    1.04720       1.04720       1.04720    
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    60.0000       60.0000       60.0000    
+    2    60.0000       60.0000       60.0000    
+    3    60.0000       60.0000       60.0000    
+    4    60.0000       60.0000       60.0000    
+ 
+  FACE_AREAS
+ 
+         1     3.4641016    
+         2     3.4641016    
+         3     3.4641016    
+         4     3.4641016    
+ 
+  IN_RADIUS =   0.577350    
+  IN_CENTER:    0.00000       0.00000       0.00000    
+ 
+  QUALITY1 =    1.00000    
+ 
+  QUALITY2 =    1.00000    
+ 
+  QUALITY3 =    1.00000    
+ 
+  QUALITY4 =    1.00000    
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1    0.55128560    
+         2    0.55128560    
+         3    0.55128560    
+         4    0.55128560    
+ 
+  VOLUME =    2.66667    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.502 PM
+ 8 September 2020   7:07:32.506 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_needle.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_needle.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    0.00000       0.00000       0.00000    
+    2   0.100000       0.00000       0.00000    
+    3    0.00000      0.100000       0.00000    
+    4    0.00000       0.00000       600.000    
+ 
+  CENTROID:   0.250000E-01  0.250000E-01   150.000    
+ 
+  CIRCUM_RADIUS =    300.000    
+  CIRCUM_CENTER:   0.500000E-01  0.500000E-01   300.000    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1     1.5707963    
+         2     1.5707963    
+         3     1.5707963    
+         4     1.5706785    
+         5    0.78539817    
+         6    0.78539817    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1     90.000000    
+         2     90.000000    
+         3     90.000000    
+         4     89.993248    
+         5     45.000000    
+         6     45.000000    
+
+  EDGE AB:    0.100000       0.00000       0.00000    
+  EDGE AC:     0.00000      0.100000       0.00000    
+  EDGE AD:     0.00000       0.00000       600.000    
+  EDGE BC:   -0.100000      0.100000       0.00000    
+  EDGE BD:   -0.100000       0.00000       600.000    
+  EDGE CD:     0.00000     -0.100000       600.000    
+ 
+  EDGE_LENGTHS
+ 
+         1    0.10000000    
+         2    0.10000000    
+         3     600.00000    
+         4    0.14142136    
+         5     600.00001    
+         6     600.00001    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    1.57080      0.785398      0.785398    
+    2    1.57080       1.57063      0.166667E-03
+    3    1.57080       1.57063      0.166667E-03
+    4    1.57068       1.57068      0.235702E-03
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    90.0000       45.0000       45.0000    
+    2    90.0000       89.9905      0.954930E-02
+    3    90.0000       89.9905      0.954930E-02
+    4    89.9932       89.9932      0.135047E-01
+ 
+  FACE_AREAS
+ 
+         1    0.50000000E-02
+         2     30.000000    
+         3     30.000000    
+         4     42.426407    
+ 
+  IN_RADIUS =   0.292879E-01
+  IN_CENTER:   0.292879E-01  0.292879E-01  0.292879E-01
+ 
+  QUALITY1 =   0.292879E-03
+ 
+  QUALITY2 =   0.239135E-03
+ 
+  QUALITY3 =   0.231120E-04
+ 
+  QUALITY4 =   0.255155E-07
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1     1.5707963    
+         2    0.78528032    
+         3    0.78528032    
+         4    0.13888888E-07
+ 
+  VOLUME =    1.00000    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.507 PM
+ 8 September 2020   7:07:32.509 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_right.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_right.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    0.00000       0.00000       0.00000    
+    2    1.00000       0.00000       0.00000    
+    3    0.00000       2.00000       0.00000    
+    4    0.00000       0.00000       3.00000    
+ 
+  CENTROID:   0.250000      0.500000      0.750000    
+ 
+  CIRCUM_RADIUS =    1.87083    
+  CIRCUM_CENTER:   0.500000       1.00000       1.50000    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1     1.5707963    
+         2     1.5707963    
+         3     1.5707963    
+         4     1.2810446    
+         5     1.1278853    
+         6    0.54109953    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1     90.000000    
+         2     90.000000    
+         3     90.000000    
+         4     73.398450    
+         5     64.623066    
+         6     31.002719    
+
+  EDGE AB:     1.00000       0.00000       0.00000    
+  EDGE AC:     0.00000       2.00000       0.00000    
+  EDGE AD:     0.00000       0.00000       3.00000    
+  EDGE BC:    -1.00000       2.00000       0.00000    
+  EDGE BD:    -1.00000       0.00000       3.00000    
+  EDGE CD:     0.00000      -2.00000       3.00000    
+ 
+  EDGE_LENGTHS
+ 
+         1     1.0000000    
+         2     2.0000000    
+         3     3.0000000    
+         4     2.2360680    
+         5     3.1622777    
+         6     3.6055513    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    1.57080       1.10715      0.463648    
+    2    1.57080       1.24905      0.321751    
+    3    1.57080      0.982794      0.588003    
+    4    1.42890       1.05165      0.661043    
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    90.0000       63.4349       26.5651    
+    2    90.0000       71.5651       18.4349    
+    3    90.0000       56.3099       33.6901    
+    4    81.8699       60.2551       37.8750    
+ 
+  FACE_AREAS
+ 
+         1     1.0000000    
+         2     1.5000000    
+         3     3.0000000    
+         4     3.5000000    
+ 
+  IN_RADIUS =   0.333333    
+  IN_CENTER:   0.333333      0.333333      0.333333    
+ 
+  QUALITY1 =   0.534522    
+ 
+  QUALITY2 =   0.452911    
+ 
+  QUALITY3 =   0.594310    
+ 
+  QUALITY4 =   0.180311    
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1     1.5707963    
+         2    0.83813358    
+         3    0.25134782    
+         4    0.98188482E-01
+ 
+  VOLUME =    1.00000    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.509 PM
+ 8 September 2020   7:07:32.510 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_sliver.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_sliver.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   -15.0000       0.00000       0.00000    
+    2    15.0000       0.00000       0.00000    
+    3    0.00000       10.0000      0.100000E-01
+    4    0.00000      -10.0000      0.100000E-01
+ 
+  CENTROID:    0.00000       0.00000      0.500000E-02
+ 
+  CIRCUM_RADIUS =    6250.01    
+  CIRCUM_CENTER:    0.00000       0.00000      -6250.00    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1     3.1395927    
+         2    0.12018500E-02
+         3    0.12018500E-02
+         4    0.12018500E-02
+         5    0.12018500E-02
+         6     3.1402593    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1     179.88541    
+         2    0.68860934E-01
+         3    0.68860934E-01
+         4    0.68860934E-01
+         5    0.68860934E-01
+         6     179.92361    
+
+  EDGE AB:     30.0000       0.00000       0.00000    
+  EDGE AC:     15.0000       10.0000      0.100000E-01
+  EDGE AD:     15.0000      -10.0000      0.100000E-01
+  EDGE BC:    -15.0000       10.0000      0.100000E-01
+  EDGE BD:    -15.0000      -10.0000      0.100000E-01
+  EDGE CD:     0.00000      -20.0000       0.00000    
+ 
+  EDGE_LENGTHS
+ 
+         1     30.000000    
+         2     18.027759    
+         3     18.027759    
+         4     18.027759    
+         5     18.027759    
+         6     20.000000    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   0.588003      0.588003       1.96559    
+    2   0.588003      0.588003       1.96559    
+    3    1.17601      0.982794      0.982794    
+    4    1.17601      0.982794      0.982794    
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    33.6901       33.6901       112.620    
+    2    33.6901       33.6901       112.620    
+    3    67.3801       56.3099       56.3099    
+    4    67.3801       56.3099       56.3099    
+ 
+  FACE_AREAS
+ 
+         1     150.00007    
+         2     150.00007    
+         3     150.00003    
+         4     150.00003    
+ 
+  IN_RADIUS =   0.500000E-02
+  IN_CENTER:    0.00000       0.00000      0.500000E-02
+ 
+  QUALITY1 =   0.239999E-05
+ 
+  QUALITY2 =   0.816496E-03
+ 
+  QUALITY3 =   0.960039E-02
+ 
+  QUALITY4 =   0.741646E-03
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1    0.40370073E-03
+         2    0.40370073E-03
+         3    0.10703669E-02
+         4    0.10703669E-02
+ 
+  VOLUME =    1.00000    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.511 PM
+ 8 September 2020   7:07:32.512 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_spindle.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_spindle.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   -100.000       0.00000       0.00000    
+    2    100.000       0.00000       0.00000    
+    3    0.00000       1.00000      0.150000E-01
+    4    0.00000      -1.00000      0.150000E-01
+ 
+  CENTROID:    0.00000       0.00000      0.750000E-02
+ 
+  CIRCUM_RADIUS =    333300.    
+  CIRCUM_CENTER:    0.00000       0.00000      -333300.    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1     3.1115949    
+         2    0.14999625E-01
+         3    0.14999625E-01
+         4    0.14999625E-01
+         5    0.14999625E-01
+         6     3.1412927    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1     178.28126    
+         2    0.85941521    
+         3    0.85941521    
+         4    0.85941521    
+         5    0.85941521    
+         6     179.98281    
+
+  EDGE AB:     200.000       0.00000       0.00000    
+  EDGE AC:     100.000       1.00000      0.150000E-01
+  EDGE AD:     100.000      -1.00000      0.150000E-01
+  EDGE BC:    -100.000       1.00000      0.150000E-01
+  EDGE BD:    -100.000      -1.00000      0.150000E-01
+  EDGE CD:     0.00000      -2.00000       0.00000    
+ 
+  EDGE_LENGTHS
+ 
+         1     200.00000    
+         2     100.00500    
+         3     100.00500    
+         4     100.00500    
+         5     100.00500    
+         6     2.0000000    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   0.100008E-01  0.100008E-01   3.12159    
+    2   0.100008E-01  0.100008E-01   3.12159    
+    3   0.199993E-01   1.56080       1.56080    
+    4   0.199993E-01   1.56080       1.56080    
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   0.573003      0.573003       178.854    
+    2   0.573003      0.573003       178.854    
+    3    1.14588       89.4271       89.4271    
+    4    1.14588       89.4271       89.4271    
+ 
+  FACE_AREAS
+ 
+         1     100.01125    
+         2     100.01125    
+         3     100.00000    
+         4     100.00000    
+ 
+  IN_RADIUS =   0.749958E-02
+  IN_CENTER:    0.00000       0.00000      0.750042E-02
+ 
+  QUALITY1 =   0.675030E-07
+ 
+  QUALITY2 =   0.183701E-03
+ 
+  QUALITY3 =   0.311981E-03
+ 
+  QUALITY4 =   0.275561E-05
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1    0.14999625E-05
+         2    0.14999625E-05
+         3    0.29699250E-01
+         4    0.29699250E-01
+ 
+  VOLUME =    1.00000    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.512 PM
+ 8 September 2020   7:07:32.513 PM
+ 
+TETRAHEDRON_PROPERTIES:
+  FORTRAN90 version:
+  Determine properties of a tetrahedron.
+ 
+  Read the header of "tet_wedge.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+  Number of points NODE_NUM =        4
+ 
+  Read the data in "tet_wedge.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2             3      
+  Col
+ 
+    1    0.00000       0.00000       0.00000    
+    2    200.000     -0.500000E-01   0.00000    
+    3    200.000      0.500000E-01   0.00000    
+    4    0.00000       0.00000      0.300000    
+ 
+  CENTROID:    100.000       0.00000      0.750000E-01
+ 
+  CIRCUM_RADIUS =    100.000    
+  CIRCUM_CENTER:    100.000       0.00000      0.150000    
+ 
+  DIHEDRAL_ANGLES (radians)
+ 
+         1     1.5707963    
+         2     1.5707963    
+         3    0.49999999E-03
+         4    0.14999989E-02
+         5     1.5707960    
+         6     1.5707960    
+ 
+  DIHEDRAL_ANGLES (degrees)
+ 
+         1     90.000000    
+         2     90.000000    
+         3    0.28647889E-01
+         4    0.85943605E-01
+         5     89.999979    
+         6     89.999979    
+
+  EDGE AB:     200.000     -0.500000E-01   0.00000    
+  EDGE AC:     200.000      0.500000E-01   0.00000    
+  EDGE AD:     0.00000       0.00000      0.300000    
+  EDGE BC:     0.00000      0.100000       0.00000    
+  EDGE BD:    -200.000      0.500000E-01  0.300000    
+  EDGE CD:    -200.000     -0.500000E-01  0.300000    
+ 
+  EDGE_LENGTHS
+ 
+         1     200.00001    
+         2     200.00001    
+         3    0.30000000    
+         4    0.10000000    
+         5     200.00023    
+         6     200.00023    
+ 
+  FACE_ANGLES (radians)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   0.500000E-03   1.57055       1.57055    
+    2    1.57080      0.150000E-02   1.56930    
+    3    1.57080      0.150000E-02   1.56930    
+    4    1.57055       1.57055      0.499999E-03
+ 
+  FACE_ANGLES (degrees)
+ 
+  Row          1             2             3      
+  Col
+ 
+    1   0.286479E-01   89.9857       89.9857    
+    2    90.0000      0.859436E-01   89.9141    
+    3    90.0000      0.859436E-01   89.9141    
+    4    89.9857       89.9857      0.286479E-01
+ 
+  FACE_AREAS
+ 
+         1     10.000000    
+         2     30.000001    
+         3     30.000001    
+         4     10.000011    
+ 
+  IN_RADIUS =   0.375000E-01
+  IN_CENTER:    150.000       0.00000      0.375000E-01
+ 
+  QUALITY1 =   0.112500E-02
+ 
+  QUALITY2 =   0.918557E-03
+ 
+  QUALITY3 =   0.156006E-03
+ 
+  QUALITY4 =   0.917181E-03
+ 
+  SOLID_ANGLES (steradians)
+ 
+         1    0.49999999E-03
+         2    0.14996239E-02
+         3    0.14996239E-02
+         4    0.49924999E-03
+ 
+  VOLUME =    1.00000    
+ 
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+ 
+ 8 September 2020   7:07:32.513 PM

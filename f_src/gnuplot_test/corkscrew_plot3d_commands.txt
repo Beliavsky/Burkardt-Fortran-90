@@ -1,0 +1,15 @@
+# corkscrew_plot3d_commands.txt
+#
+# Usage:
+#  gnuplot < corkscrew_plot3d_commands.txt
+#
+set term png
+set output "corkscrew_plot3d_plot3d.png"
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+set title "Corkscrew curve"
+set grid
+set style data lines
+splot "corkscrew_plot3d_data.txt" using 1:2:3 with lines
+quit

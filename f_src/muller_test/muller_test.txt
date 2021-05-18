@@ -1,0 +1,125 @@
+05 June 2020   9:44:54.950 AM
+ 
+muller_test:
+  FORTRAN90 version
+  muller uses Muller's method, with complex arithmetic,
+  to solve a nonlinear equation.
+ 
+TEST01:
+  Demonstrate muller on F(X) = X*X+9.
+ 
+ 
+MULLER:
+  Muller's method (complex root version)
+ 
+ 
+  Iteration     x_real              x_imag             ||fx||           ||disc||
+ 
+    -2        0.5000000000        0.5000000000        9.0138781887
+    -1        0.0000000000        1.0000000000        8.0000000000
+     0        1.0000000000        0.0000000000       10.0000000000
+     1        0.0000000000       -3.0000000000        0.0000000000       18.0000000000
+ 
+C8_MULLER:
+  Absolute convergence of |F(X)|.
+ 
+TEST01:
+  muller returned the root X
+ 
+     X   =         0.0000000000       -3.0000000000
+ 
+  with function value F(X):
+ 
+    FX   =         0.0000000000        0.0000000000
+  ||FX|| =         0.0000000000
+ 
+TEST02:
+  Demonstrate muller on F(X) = (X*X+4)*(X-10)*(X+20).
+ 
+ 
+MULLER:
+  Muller's method (complex root version)
+ 
+ 
+  Iteration     x_real              x_imag             ||fx||           ||disc||
+ 
+    -2        0.5000000000        0.5000000000      786.3827391926
+    -1        0.0000000000        1.0000000000      603.7458074389
+     0        1.0000000000        0.0000000000      945.0000000000
+     1        0.0242802733        2.0507061379       46.6853784403   292576.8813244862
+     2       -0.0016499786        1.9990380412        1.5656742803  7255213.6000903565
+     3       -0.0000011428        2.0000011261        0.0013154356     2477.9662226890
+     4        0.0000000000        2.0000000000        0.0000000022        0.0000258907
+ 
+C8_MULLER:
+  Absolute convergence of the X increment.
+ 
+TEST02:
+  muller returned the root X
+ 
+     X   =         0.0000000000        2.0000000000
+ 
+  with function value F(X):
+ 
+    FX   =        -0.0000000000       -0.0000000022
+  ||FX|| =         0.0000000022
+ 
+TEST03:
+  Demonstrate muller on Zhelyazkov's function.
+ 
+ 
+MULLER:
+  Muller's method (complex root version)
+ 
+ 
+  Iteration     x_real              x_imag             ||fx||           ||disc||
+ 
+    -2        0.5000000000        0.5000000000        1.7780343017
+    -1        0.0000000000        1.0000000000        2.7212864609
+     0        1.0000000000        0.0000000000        1.1398341819
+     1        1.5705799215       -0.0000004486        0.0000012222        3.6964136697
+     2        1.5705798926        0.0000000000        0.0000000000       16.6875551235
+ 
+C8_MULLER:
+  Absolute convergence of |F(X)|.
+ 
+TEST03:
+  muller returned the root X
+ 
+     X   =         1.5705798926        0.0000000000
+ 
+  with function value F(X):
+ 
+    FX   =        -0.0000000000        0.0000000000
+  ||FX|| =         0.0000000000
+ 
+ 
+MULLER:
+  Muller's method (complex root version)
+ 
+ 
+  Iteration     x_real              x_imag             ||fx||           ||disc||
+ 
+    -2       -1.0000000000        2.0000000000        8.4140172656
+    -1        1.0000000000        2.0000000000        6.7016733534
+     0        0.0000000000        1.0000000000        2.7212864609
+     1       -0.5802520858       -0.0000000937        0.0000002667      118.2853729480
+     2       -0.5802520567       -0.0000000000        0.0000000000      128.4099686054
+ 
+C8_MULLER:
+  Absolute convergence of the X increment.
+ 
+TEST03:
+  muller returned the root X
+ 
+     X   =        -0.5802520567       -0.0000000000
+ 
+  with function value F(X):
+ 
+    FX   =        -0.0000000000        0.0000000000
+  ||FX|| =         0.0000000000
+ 
+MULLER_TEST:
+  Normal end of execution.
+
+05 June 2020   9:44:54.950 AM

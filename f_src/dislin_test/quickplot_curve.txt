@@ -1,0 +1,20 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:23:31  Pageformat: USAL  <<
+ <<  Vectors : 2453        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: quickplot_curve.png                               <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ <<<< Warning 3: Incorrect level in disfin!   ( 0)
+23 January 2020  10:23:31.185 AM
+ 
+QUICKPLOT_CURVE:
+  FORTRAN90 version
+  Demonstrate the DISLIN "quickplot" command QPLOT
+  to plot a curve.
+ 
+QUICKPLOT_CURVE:
+  Normal end of execution.
+ 
+23 January 2020  10:23:31.191 AM

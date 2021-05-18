@@ -1,0 +1,32 @@
+29 June 2020  10:53:52.817 AM
+ 
+FD1D_HEAT_IMPLICIT
+  FORTRAN90 version
+ 
+  Finite difference solution of
+  the time dependent 1D heat equation
+ 
+    Ut - k * Uxx = F(x,t)
+
+  for space interval A <= X <= B with boundary conditions
+ 
+    U(A,t) = UA(t)
+    U(B,t) = UB(t)
+ 
+  and time interval T0 <= T <= T1 with initial condition
+ 
+    U(X,T0) = U0(X).
+ 
+  A second order difference approximation is used for Uxx.
+ 
+  A first order backward Euler difference approximation
+  is used for Ut.
+ 
+  X data written to "x.txt".
+  T data written to "t.txt".
+  U data written to "u.txt".
+ 
+FD1D_HEAT_IMPLICIT
+  Normal end of execution.
+
+29 June 2020  10:53:52.819 AM

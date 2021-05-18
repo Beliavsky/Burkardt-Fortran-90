@@ -1,0 +1,91 @@
+10 September 2020   8:27:52.698 PM
+ 
+UPC_TEST
+  FORTRAN90 version
+  Test the UPC library.
+ 
+CH_IS_DIGIT_TEST
+  CH_IS_DIGIT is TRUE if a character represents a digit.
+
+   C      CH_IS_DIGIT(C)
+
+  "0"  T
+  "1"  T
+  "2"  T
+  "3"  T
+  "4"  T
+  "5"  T
+  "6"  T
+  "7"  T
+  "8"  T
+  "9"  T
+  "X"  F
+  "?"  F
+  " "  F
+ 
+CH_TO_DIGIT_TEST
+  CH_TO_DIGIT: character -> decimal digit
+
+   C      CH_TO_DIGIT(C)
+
+  "0"         0
+  "1"         1
+  "2"         2
+  "3"         3
+  "4"         4
+  "5"         5
+  "6"         6
+  "7"         7
+  "8"         8
+  "9"         9
+  "X"        -1
+  "?"        -1
+  " "        -1
+ 
+S_TO_DIGITS_TEST
+  S_TO_DIGITS: string -> digit vector
+
+  Test string: "34E94-70.6"
+ 
+  Extracted 5 digits:
+ 
+         1:             3
+         2:             4
+         3:             9
+         4:             4
+         5:             7
+
+  Test string: "34E94-70.6"
+ 
+  Extracted 7 digits:
+ 
+         1:             3
+         2:             4
+         3:             9
+         4:             4
+         5:             7
+         6:             0
+         7:             6
+ 
+UPC_CHECK_DIGIT_CALCULATE_TEST
+  UPC_CHECK_DIGIT_CALCULATE calculates the 12-th digit
+  (the check digit) of a UPC.
+
+  Check digit of "6-39382-00039-3" is 3, expecting 3
+  Check digit of "0 43000 18170" is 6, expecting 6
+  Check digit of "30074660601" is 7, expecting 7
+  Check digit of "24689753124" is 5, expecting 5
+  Check digit of "13579864213" is 9, expecting 9
+ 
+UPC_IS_VALID_TEST
+  UPC_IS_VALID reports whether a UPC is valid.
+
+  Validity of "6-39382-00039-3" is T, expecting T
+  Validity of "6-39352-00039-3" is F, expecting F
+  Validity of "0 43000 18170 6" is T, expecting T
+  Validity of "0 43000 18170 9" is F, expecting F
+ 
+UPC_TEST
+  Normal end of execution.
+ 
+10 September 2020   8:27:52.698 PM

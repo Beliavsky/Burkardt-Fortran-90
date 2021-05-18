@@ -1,0 +1,24 @@
+10 September 2020  11:11:31.063 AM
+
+TRIANGLE_TO_FEM
+  FORTRAN90 version:
+  Read a mesh description created by TRIANGLE:
+  * "prefix".node, node coordinates.
+  * "prefix".ele, element connectivity.
+  Write two simple FEM files listing nodes and elements.
+  * "prefix"_nodes.txt, node coordinates.
+  * "prefix"_elements.txt, element connectivity.
+
+  Size information from TRIANGLE files:
+  Spatial dimension M =    2
+  Number of nodes NODE_NUM =   21
+  NODE_ATT_NUM =    0
+  NODE_MARKER_NUM =    1
+  Number of elements ELEMENT_NUM =   24
+  Element order ELEMENT_ORDER =    3
+  ELEMENT_ATT_NUM =    0
+
+TRIANGLE_TO_FEM:
+  Normal end of execution.
+
+10 September 2020  11:11:31.064 AM

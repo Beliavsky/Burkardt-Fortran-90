@@ -1,0 +1,18 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 22.07.2020  Time    : 10:12:54  Pageformat: USAP  <<
+ <<  Vectors : 8820        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: circle_scatters.png                               <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+22 July 2020  10:12:54.741 AM
+ 
+CIRCLE_SCATTERS:
+  FORTRAN90 version
+  Use DISLIN routines to make a scatterplot.
+ 
+CIRCLE_SCATTERS:
+  Normal end of execution.
+
+22 July 2020  10:12:54.753 AM

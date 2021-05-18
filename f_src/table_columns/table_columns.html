@@ -1,0 +1,184 @@
+<html>
+
+  <head>
+    <title>
+      table_columns
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      table_columns
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>table_columns</b>,
+      a FORTRAN90 code which 
+      extracts specified columns of data from a text file.
+    </p>
+
+    <p>
+      The file is presumed to consist of lines of data.  
+      Blank lines are ok, and are copied to the output file.  Lines beginning
+      with a '#' in column 1 are treated as comments, and are copied
+      to the output file.
+    </p>
+
+    <p>
+      Each line of data contains several words, separated by one or more
+      spaces or TAB characters.  The first word in each line is the first 
+      "column", and so on.  <b>TABLE_COLUMNS</b> is given a specificiation of
+      which columns are to be copied, in what order, and how often,
+      and copies the necessary information from each line of the input
+      file to the output file.
+    </p>
+
+    <p>
+      The specification of columns is simple.  You can simply list
+      every column you want, separated by spaces, or if there are
+      several consecutive columns in a row, you can use a colon
+      to indicate a range.  
+    </p>
+
+    <p>
+      The program can be used in command line form:
+      <blockquote>
+        <b>table_columns</b>  <i>column_spec filein  fileout</i>
+      </blockquote>
+      or can be invoked interactively with no arguments, in which case
+      the program will request information from the user.
+    </p>
+
+    <p>
+      For example, let us suppose that <i>file.txt</i> contains the lines:
+      <pre>
+        CAT RED   APPLE 9.5
+        MOUSE  BLUE   ORANGE 
+        DOG purple  Banana   34.7
+      </pre>
+    </p>
+
+    <p>
+      Then the command 
+      <blockquote>
+        <b>table_columns</b> </i>2 file.txt mydata.txt</i>
+      </blockquote>
+      will copy the following data into <i>mydata.txt</i>:
+      <pre>
+        RED
+        BLUE
+        purple
+      </pre>
+    </p>
+
+    <p>
+      The command 
+      <blockquote>
+        <b>table_columns</b> </i>2 3 2 file.txt mydata.txt</i>
+      </blockquote>
+      will create the file:
+      <pre>
+        RED APPLE RED
+        BLUE ORANGE BLUE
+        purple Banana purple
+      </pre>
+    </p>
+
+    <p>
+      The command 
+      <blockquote>
+        <b>table_columns</b> </i>2:4 2 2 file.txt mydata.txt</i>
+      </blockquote>
+      will create the file:
+      <pre>
+        RED   APPLE 9.5 RED RED
+        BLUE   ORANGE *** BLUE BLUE
+        purple  Banana   34.7 purple purple
+      </pre>
+    </p>
+
+    <p>
+      If some lines of the file do not have the full number of columns,
+      then the program will print a "***" string for that value, which
+      occurred in the last example above.
+    </p>
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TABLE_COLUMNS</b> is available in
+      <a href = "../../f_src/table_columns/table_columns.html">a FORTRAN90 version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/table_columns_test/table_columns_test.html">
+      table_columns_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_io/table_io.html">
+      TABLE_IO</a>,
+      a FORTRAN90 code which 
+      supplies the routines used to read the TABLE file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_quality/table_quality.html">
+      TABLE_QUALITY</a>,
+      a FORTRAN90 code which
+      reads a file of points and computes the quality of dispersion.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_top/table_top.html">
+      TABLE_TOP</a>, 
+      a FORTRAN90 code which
+      reads a table file of M-dimensional data and
+      make a table of plots of all pairs of coordinates.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "table_columns.f90">table_columns.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "table_columns.sh">table_columns.sh</a>, 
+          commands to compile the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 02 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

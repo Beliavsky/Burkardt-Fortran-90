@@ -1,0 +1,18 @@
+25 April 2020  12:47:18.778 PM
+
+euler_test
+  FORTRAN90 version
+  Test euler().
+
+euler_humps_test:
+ x(1) =    0.0000000000000000     
+ Y0 =    5.1764705882352935     
+ x(1) =    0.0000000000000000     
+ 
+  euler_humps_test: data stored in "euler_humps_data.txt".
+  euler_humps_test: plot commands stored in "euler_humps_commands.txt".
+
+euler_test:
+  Normal end of execution.
+
+25 April 2020  12:47:18.778 PM

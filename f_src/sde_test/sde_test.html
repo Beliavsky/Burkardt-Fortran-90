@@ -1,0 +1,230 @@
+<html>
+
+  <head>
+    <title>
+      sde_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      sde_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>sde_test</b>,
+      a FORTRAN90 code which 
+      calls sde(), which
+      illustrates the properties of stochastic differential equations and some
+      algorithms for handling them,
+      making graphics files for processing and display by gnuplot,
+      by Desmond Higham.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/sde/sde.html">
+      sde</a>,
+      a FORTRAN90 code which
+      illustrates properties of 
+      stochastic ordinary differential equations (SODE), and
+      common algorithms for their analysis, including the Euler method,
+      the Euler-Maruyama method, and the Milstein method,
+      by Desmond Higham;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sde_test.f90">sde_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "sde_test.sh">sde_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "sde_test.txt">sde_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The calling program creates various data and command files which
+      can be used with GNUPLOT to create images.
+      <ul>
+        <li>
+          <a href = "bpath_commands.txt">bpath_commands.txt</a>,
+          commands to plot the data from BPATH.
+        </li>
+        <li>
+          <a href = "bpath_data.txt">bpath_data.txt</a>,
+          data from BPATH.
+        </li>
+        <li>
+          <a href = "bpath.png">bpath.png</a>,
+          a plot of the BPATH data.
+        </li>
+        <li>
+          <a href = "bpath_average_commands.txt">bpath_average_commands.txt</a>,
+          commands to plot the data from BPATH_AVERAGE.
+        </li>
+        <li>
+          <a href = "bpath_average_data.txt">bpath_average_data.txt</a>,
+          data from BPATH_AVERAGE.
+        </li>
+        <li>
+          <a href = "bpath_average.png">bpath_average.png</a>,
+          a plot of the BPATH_AVERAGE data.
+        </li>
+        <li>
+          <a href = "chain_commands.txt">chain_commands.txt</a>,
+          commands to plot the data from CHAIN.
+        </li>
+        <li>
+          <a href = "chain_data.txt">chain_data.txt</a>,
+          data from CHAIN.
+        </li>
+        <li>
+          <a href = "chain.png">chain.png</a>,
+          a plot of the CHAIN data.
+        </li>
+        <li>
+          <a href = "em_commands.txt">em_commands.txt</a>,
+          commands to plot the data from EM.
+        </li>
+        <li>
+          <a href = "em1_data.txt">em1_data.txt</a>,
+          data from EM.
+        </li>
+        <li>
+          <a href = "em2_data.txt">em2_data.txt</a>,
+          data from EM.
+        </li>
+        <li>
+          <a href = "em.png">em.png</a>,
+          a plot of the EM data.
+        </li>
+        <li>
+          <a href = "emstrong_commands.txt">emstrong_commands.txt</a>,
+          commands to plot the data from EMSTRONG.
+        </li>
+        <li>
+          <a href = "emstrong_data.txt">emstrong_data.txt</a>,
+          data from EMSTRONG.
+        </li>
+        <li>
+          <a href = "emstrong.png">emstrong.png</a>,
+          a plot of the EMSTRONG data.
+        </li>
+        <li>
+          <a href = "emweak0_commands.txt">emweak0_commands.txt</a>,
+          commands to plot the data from EMWEAK with the standard EM method.
+        </li>
+        <li>
+          <a href = "emweak0_data.txt">emweak0_data.txt</a>,
+          data from EMWEAK with the standard EM method.
+        </li>
+        <li>
+          <a href = "emweak0.png">emweak0.png</a>,
+          a plot of the data from EMWEAK with the standard EM method.
+        </li>
+        <li>
+          <a href = "emweak1_commands.txt">emweak1_commands.txt</a>,
+          commands to plot the data from EMWEAK with the weak EM method.
+        </li>
+        <li>
+          <a href = "emweak1_data.txt">emweak1_data.txt</a>,
+          data from EMWEAK with the weak EM method.
+        </li>
+        <li>
+          <a href = "emweak1.png">emweak1.png</a>,
+          a plot of the data from EMWEAK with the weak EM method.
+        </li>
+        <li>
+          <a href = "milstrong_commands.txt">milstrong_commands.txt</a>,
+          commands to plot the MILSTRONG data.
+        </li>
+        <li>
+          <a href = "milstrong_data.txt">milstrong_data.txt</a>,
+          data from MILSTRONG.
+        </li>
+        <li>
+          <a href = "milstrong.png">milstrong.png</a>,
+          a plot of the strong convergence data from MILSTRONG.
+        </li>
+        <li>
+          <a href = "stab_asymptotic_commands.txt">stab_asymptotic_commands.txt</a>,
+          commands to plot the STAB_ASYMPTOTIC data.
+        </li>
+        <li>
+          <a href = "stab_asymptotic_data1.txt">stab_asymptotic_data1.txt</a>,
+          data from STAB_ASYMPTOTIC.
+        </li>
+        <li>
+          <a href = "stab_asymptotic_data2.txt">stab_asymptotic_data2.txt</a>,
+          data from STAB_ASYMPTOTIC.
+        </li>
+        <li>
+          <a href = "stab_asymptotic_data3.txt">stab_asymptotic_data3.txt</a>,
+          data from STAB_ASYMPTOTIC.
+        </li>
+        <li>
+          <a href = "stab_asymptotic.png">stab_asymptotic.png</a>,
+          a plot of the asymptotic stability results from STAB_ASYMPTOTIC.
+        </li>
+        <li>
+          <a href = "stab_meansquare_commands.txt">stab_meansquare_commands.txt</a>,
+          commands to plot the STAB_MEANSQUARE data.
+        </li>
+        <li>
+          <a href = "stab_meansquare_data1.txt">stab_meansquare_data1.txt</a>,
+          data from STAB_MEANSQUARE.
+        </li>
+        <li>
+          <a href = "stab_meansquare_data2.txt">stab_meansquare_data2.txt</a>,
+          data from STAB_MEANSQUARE.
+        </li>
+        <li>
+          <a href = "stab_meansquare_data3.txt">stab_meansquare_data3.txt</a>,
+          data from STAB_MEANSQUARE.
+        </li>
+        <li>
+          <a href = "stab_meansquare.png">stab_meansquare.png</a>,
+          a plot of the meansquare stability results from STAB_MEANSQUARE.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

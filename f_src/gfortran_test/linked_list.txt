@@ -1,0 +1,46 @@
+ 
+January 23 2020  10:48:46.494 AM
+ 
+LINKED_LIST:
+  FORTRAN90 version.
+ 
+  Demonstrate how pointers can be used to define
+  and manipulate a linked list.
+ 
+TEST01
+  Create, one at a time, a sequence of integers.
+  As each integer is created, insert it into a sorted
+  list.  Print the list at the end.
+ 
+  We carry out this task using a linked list.
+ 
+  Initial data generation:
+ 
+         1       836
+         2       123
+         3       329
+         4       936
+         5       170
+         6       580
+         7       710
+         8       433
+         9       518
+        10       335
+ 
+  Contents of sorted linked list:
+ 
+         1         2       123
+         2         5       170
+         3         3       329
+         4        10       335
+         5         8       433
+         6         9       518
+         7         6       580
+         8         7       710
+         9         1       836
+        10         4       936
+ 
+LINKED_LIST:
+  Normal end of execution.
+ 
+January 23 2020  10:48:46.494 AM

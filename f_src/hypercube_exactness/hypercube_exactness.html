@@ -1,0 +1,252 @@
+<html>
+
+  <head>
+    <title>
+      HYPERCUBE_EXACTNESS - Exactness of Multidimensional Quadrature
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      HYPERCUBE_EXACTNESS <br> Exactness of Multidimensional Quadrature
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>HYPERCUBE_EXACTNESS</b>,
+      a FORTRAN90 program which
+      investigates the polynomial exactness of a quadrature rule 
+      over the interior of the hypercube in M dimensions.
+    </p>
+
+    <p>
+      The polynomial exactness of a quadrature rule is defined as the
+      highest total degree D such that the quadrature rule is
+      guaranteed to integrate exactly all polynomials of total degree
+      <b>DEGREE_MAX</b> or less, ignoring roundoff.  The total degree of a polynomial
+      is the maximum of the degrees of all its monomial terms.  The degree
+      of a monomial term is the sum of the exponents.  Thus, for instance,
+      the <b>DEGREE</b> of
+      <blockquote><b>
+        x<sup>2</sup>y z<sup>5</sup>
+      </b></blockquote>
+      is 2+1+5=8.
+    </p>
+
+    <p>
+      To be thorough, the program starts at <b>DEGREE</b> = 0, and then
+      proceeds to <b>DEGREE</b> = 1, 2, and so on up to a maximum degree
+      <b>DEGREE_MAX</b> specified by the user.  At each value of <b>DEGREE</b>,
+      the program generates every possible monomial term, applies the
+      quadrature rule to it, and determines the quadrature error.  The program
+      uses a scaling factor on each monomial so that the exact integral
+      should always be 1; therefore, each reported error can be compared
+      on a fixed scale.
+    </p>
+
+    <p>
+      The program is very flexible and interactive.  The quadrature rule
+      is defined by three files, to be read at input, and the
+      maximum degree is specified by the user as well.
+    </p>
+
+    <p>
+      Note that the three files that define the quadrature rule
+      are assumed to have related names, of the form
+      <ul>
+        <li>
+          <i>prefix</i>_<b>x.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>w.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>r.txt</b>
+        </li>
+      </ul>
+      When running the program, the user only enters the common <i>prefix</i>
+      part of the file names, which is enough information for the program
+      to find all three files.
+    </p>
+
+    <p>
+      The exactness results are written to an output file with the
+      corresponding name:
+      <ul>
+        <li>
+          <i>prefix</i>_<b>exact.txt</b>
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>hypercube_exactness</b> <i>prefix</i> <i>degree_max</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>prefix</i> is the common prefix for the files containing the abscissa, weight
+          and region information of the quadrature rule;
+        </li>
+        <li>
+          <i>degree_max</i> is the maximum total monomial degree to check.  This should be
+          a relatively small nonnegative number, particularly if the
+          spatial dimension is high.  A value of 5 or 10 might be
+          reasonable, but a value of 50 or 100 is probably never a
+          good input!
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      If the arguments are not supplied on the command line, the
+      program will prompt for them.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>HYPERCUBE_EXACTNESS</b> is available in
+      <a href = "../../c_src/hypercube_exactness/hypercube_exactness.html">a C version</a> and
+      <a href = "../../cpp_src/hypercube_exactness/hypercube_exactness.html">a C++ version</a> and
+      <a href = "../../f_src/hypercube_exactness/hypercube_exactness.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/hypercube_exactness/hypercube_exactness.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cube_exactness/cube_exactness.html">
+      CUBE_EXACTNESS</a>,
+      a FORTRAN90 library which
+      investigates the polynomial exactness of quadrature rules
+      over the interior of a cube in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hypercube_exactness_test/hypercube_exactness_test.html">
+      hypercube_exactness_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/hypercube_grid/hypercube_grid.html">
+      HYPERCUBE_GRID</a>,
+      a FORTRAN90 library which
+      computes a grid of points
+      over the interior of a hypercube in M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pyramid_exactness/pyramid_exactness.html">
+      PYRAMID_EXACTNESS</a>,
+      a FORTRAN90 program which
+      investigates the polynomial exactness of a quadrature rule 
+      over the interior of the unit pyramid in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_exactness/sphere_exactness.html">
+      SPHERE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the polynomial exactness of a quadrature rule 
+      over the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/square_exactness/square_exactness.html">
+      SQUARE_EXACTNESS</a>,
+      a FORTRAN90 library which
+      investigates the polynomial exactness of quadrature rules for f(x,y) 
+      over the interior of a rectangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_exactness/tetrahedron_exactness.html">
+      TETRAHEDRON_EXACTNESS</a>,
+      a FORTRAN90 program which
+      investigates the polynomial exactness of a quadrature rule for the tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_exactness/triangle_exactness.html">
+      TRIANGLE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      investigates the polynomial exactness of a quadrature rule 
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/wedge_exactness/wedge_exactness.html">
+      WEDGE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      investigates the monomial exactness of a quadrature rule 
+      over the interior of the unit wedge in 3D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "hypercube_exactness.f90">hypercube_exactness.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "hypercube_exactness.sh">hypercube_exactness.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 16 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

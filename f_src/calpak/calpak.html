@@ -1,0 +1,346 @@
+<html>
+
+  <head>
+    <title>
+      CALPAK - Calendar Calculations
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CALPAK <br> Calendar Calculations
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CALPAK</b>,
+      a FORTRAN90 code which
+      computes various simple calendrical quantities.
+    </p>
+
+    <p>
+      These include converting
+      from day-number/year to day/month/year format, calculating the time
+      difference between two dates, finding the day of the week of a given date,
+      and other feats.
+    </p>
+
+    <p>
+      Some common methods of marking the date include:
+      <ul>
+        <li>
+          <b>JED</b>, the Julian Ephemeris Date, a count of days since
+          a long time ago;
+        </li>
+        <li>
+          <b>YMD</b>, for "year, month, day";
+        </li>
+        <li>
+          <b>YJ</b>, for "year, day number".
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      While there have been many calendars over the years, it
+      is instructive to contemplate just the crazy story of our
+      current "common" calendar.  To this day, people disagree about
+      whether there was a year 0, although the Julian calendar
+      was a Roman invention, and Dionysius Exiguus, who gets the
+      blame for shifting the Julian calendar's starting date to
+      the birth year of Christ four hundred years afterwards, didn't
+      have an accurate idea of when that was.
+    </p>
+
+    <p>
+      There was a
+      controversial shift from the Julian to the Gregorian calendar,
+      which took place <i>piecemeal</i> throughout the Catholic
+      world, with several countries actually switching back and
+      forth more than once, and with England holding out on the
+      old system until after George Washington was born (which
+      means he was born on February 11 AND February 22).
+    </p>
+
+    <p>
+      People didn't agree on when the year started, so that January and
+      February, in particular, were a little murky about which
+      year they belonged to, and the year sometimes started
+      around March 22, near the vernal equinox.
+    </p>
+
+    <p>
+      There are a number of side issues, including
+      <ul>
+        <li>
+          determining the day of the week of a given date;
+        </li>
+        <li>
+          determining the number of days between two dates;
+        </li>
+        <li>
+          the computation of the date of certain holidays;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CALPAK</b> is available in
+      <a href = "../../c_src/calpak/calpak.html">a C version</a> and
+      <a href = "../../cpp_src/calpak/calpak.html">a C++ version</a> and
+      <a href = "../../f_src/calpak/calpak.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/calpak/calpak.html">a MATLAB version</a> and
+      <a href = "../../py_src/calpak/calpak.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/analemma/analemma.html">
+      ANALEMMA</a>,
+      a FORTRAN90 code which
+      evaluates the equation of time, a formula for the difference between
+      the uniform 24 hour day and the actual position of the sun, 
+      based on a program by Brian Tung.
+    </p>
+
+    <p>
+      <a href = "../../f_src/calendar_nyt/calendar_nyt.html">
+      CALENDAR_NYT</a>,
+      a FORTRAN90 code which
+      shows the correspondence between dates and the New York Times volume and
+      issue number;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/calendar_rd/calendar_rd.html">
+      CALENDAR_RD</a>,
+      a C++ code which
+      computes the representation of a given date in a
+      number of calendrical systems,
+      by Edward Reingold and Nachum Dershowitz
+    </p>
+
+    <p>
+      <a href = "../../f_src/calpak_test/calpak_test.html">
+      calpak_test</a>
+    </p>
+
+    <p>
+      <a href = "../../datasets/dates/dates.html">
+      DATES</a>,
+      a dataset directory which
+      contains lists of dates in various calendar systems.
+    </p>
+
+    <p>
+      <a href = "../../f_src/doomsday/doomsday.html">
+      DOOMSDAY</a>,
+      a FORTRAN90 code which
+      is given the year, month and day of a date, and uses
+      John Conway's doomsday algorithm to determine the corresponding 
+      day of the week.
+    </p>
+
+    <p>
+      <a href = "../../f_src/weekday/weekday.html">
+      WEEKDAY</a>,
+      a FORTRAN90 code which
+      determines the day of the week for a given day.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Anonymous,<br>
+          A Correction; Welcome to 51,254,<br>
+          The New York Times,<br>
+          01 January 2000, Volume 149, Issue 51254.
+        </li>
+        <li>
+          James Barron,<br>
+          What's in a Number? 143 Years of News,<br>
+          The New York Times,<br>
+          14 March 1995, Volume 144, Issue 50000.
+        </li>
+        <li>
+          Bonnie Blackburn, Leofranc Holford-Stevens,<br>
+          The Oxford Companion to the Year,<br>
+          Oxford, 1999,<br>
+          ISBN: 0192142313,<br>
+          LC: CE73.B553.
+        </li>
+        <li>
+          Lewis Carroll (Charles Dodgson),<br>
+          To Find the Day of the Week for Any Given Date,<br>
+          Nature, 31 March 1887.
+        </li>
+        <li>
+          John Conway,<br>
+          Tomorrow is the Day After Doomsday,<br>
+          Eureka,<br>
+          Volume 36, October 1973, pages 28-31.
+        </li>
+        <li>
+          Peter Duffett-Smith,<br>
+          Practical Astronomy With Your Calculator,<br>
+          Third Edition,<br>
+          Cambridge University Press, 1996,<br>
+          ISBN: 0-521-35699-7,<br>
+          LC: QB62.5.D83.
+        </li>
+        <li>
+          Donald Knuth,<br>
+          The Art of Computer Programming,<br>
+          Volume 1, Fundamental Algorithms,<br>
+          Third Edition,<br>
+          Addison-Wesley, 1997,<br>
+          ISBN: 0201896834,<br>
+          LC: QA76.6.K64.
+        </li>
+        <li>
+          Donald Knuth,<br>
+          The Calculation of Easter,<br>
+          Communications of the ACM,<br>
+          Volume 5, Number 4, April 1962, pages 209-210.
+        </li>
+        <li>
+          Gary Meisters,<br>
+          Lewis Carroll's Day-of-the-Week Algorithm,<br>
+          Math Horizons,<br>
+          November 2002, pages 24-25.
+        </li>
+        <li>
+          Lance Latham,<br>
+          Standard C Date/Time code,<br>
+          Programming the World's Calendars and Clocks,<br>
+          Miller Freeman, 1998,<br>
+          ISBN: 0-87930-496-0.
+        </li>
+        <li>
+          The New York Times,<br>
+          Page One, 1896-1996, A Special Commemorative Edition Celebrating the
+          100th Anniversary of the Purchase of the New York Times by Adolph S Ochs,<br>
+          Galahad Books, 1996,<br>
+          ISBN: 0-88365-961-1,<br>
+          LC: D411.P25.
+        </li>
+        <li>
+          The New York Times,<br>
+          The Complete First Pages, 1851-2008,<br>
+          Black Dog & Leventhal Publishers, 2008,<br>
+          ISBN13: 978-1-57912-749-7,<br>
+          LC: D351.N53.
+        </li>
+        <li>
+          Thomas OBeirne,<br>
+          Puzzles and Paradoxes,<br>
+          Oxford University Press, 1965,<br>
+          LC: QA95.O2.
+        </li>
+        <li>
+          Frank Parise, editor,<br>
+          The Book of Calendars,<br>
+          Gorgias, 2002,<br>
+          ISBN: 1931956766,<br>
+          LC: CE11.K4.
+        </li>
+        <li>
+          William Press, Brian Flannery, Saul Teukolsky, William Vetterling,<br>
+          Numerical Recipes in FORTRAN: The Art of Scientific Computing,<br>
+          Second Edition,<br>
+          Cambridge University Press, 1992,<br>
+          ISBN: 0-521-43064-X,<br>
+          LC: QA297.N866.
+        </li>
+        <li>
+          Edward Reingold, Nachum Dershowitz,<br>
+          Calendrical Calculations: The Millennium Edition,<br>
+          Cambridge University Press, 2001,<br>
+          ISBN: 0-521-77752-6,<br>
+          LC: CE12.R45.
+        </li>
+        <li>
+          Edward Reingold, Nachum Dershowitz,<br>
+          Calendrical Calculations I,<br>
+          Software - Practice and Experience,<br>
+          Volume 20, Number 9, September 1990, pages 899-928.<br>
+        </li>
+        <li>
+          Edward Reingold, Nachum Dershowitz, Stewart Clamen,<br>
+          Calendrical Calculations, II: Three Historical Calendars,<br>
+          Software - Practice and Experience,<br>
+          Volume 23, Number 4, pages 383-404, April 1993.
+        </li>
+        <li>
+          Edward Richards,<br>
+          Mapping Time, The Calendar and Its History,<br>
+          Oxford, 1999,<br>
+          ISBN: 0-19-850413-6,<br>
+          LC: CE11.R5.
+        </li>
+        <li>
+          Ian Stewart,<br>
+          Easter is a Quasicrystal,<br>
+          Scientific American,<br>
+          Volume 284, Number 3, March 2001, pages 80-83.
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3,<br>
+          LC: QA47.M315.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "calpak.f90">calpak.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "calpak.sh">calpak.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 05 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

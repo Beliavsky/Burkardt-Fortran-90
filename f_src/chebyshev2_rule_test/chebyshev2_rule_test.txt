@@ -1,0 +1,42 @@
+June  8 2020   3:42:42.535 PM
+ 
+CHEBYSHEV2_RULE
+  FORTRAN90 version
+ 
+  Compute a Gauss-Chebyshev type 2 rule for
+ 
+    Integral ( A <= x <= B ) f(x)  sqrt ( ( x - A ) * ( B - x ) ) dx
+ 
+  of order ORDER.
+ 
+  The user specifies ORDER, A, B, and FILENAME.
+ 
+  ORDER is the number of points.
+ 
+  A is the left endpoint.
+ 
+  B is the right endpoint.
+ 
+  FILENAME is used to generate 3 files:
+ 
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+ 
+  ORDER =        5
+  A =   -1.00000    
+  B =    1.00000    
+  FILENAME = "cheby2_o5".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "cheby2_o5".
+ 
+  Weight file will be   "cheby2_o5_w.txt".
+  Abscissa file will be "cheby2_o5_x.txt".
+  Region file will be   "cheby2_o5_r.txt".
+ 
+CHEBYSHEV2_RULE:
+  Normal end of execution.
+ 
+June  8 2020   3:42:42.535 PM

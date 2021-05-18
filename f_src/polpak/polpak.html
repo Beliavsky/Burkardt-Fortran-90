@@ -1,0 +1,471 @@
+<html>
+
+  <head>
+    <title>
+      POLPAK - Recursive Polynomials
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      POLPAK <br> Recursive Polynomials
+    </h1>
+
+    <hr>
+ 
+    <p>
+      <b>POLPAK</b>,
+      a FORTRAN90 code which 
+      evaluates a variety of mathematical functions, including
+      Chebyshev, Gegenbauer, Hermite, Jacobi, Laguerre, Legendre polynomials,
+      and the Collatz sequence.
+    </p>
+
+    <p>
+      It includes routines to evaluate the 
+      recursively defined polynomial families of
+      <ul>
+        <li>
+          Bernoulli
+        </li>
+        <li>
+          Bernstein
+        </li>
+        <li>
+          Cardan
+        </li>
+        <li>
+          Charlier
+        </li>
+        <li>
+          Chebyshev
+        </li>
+        <li>
+          Euler
+        </li>
+        <li>
+          Gegenbauer
+        </li>
+        <li>
+          Hermite
+        </li>
+        <li>
+          Jacobi
+        </li>
+        <li>
+          Krawtchouk
+        </li>
+        <li>
+          Laguerre
+        </li>
+        <li>
+          Legendre
+        </li>
+        <li>
+          Meixner
+        </li>
+        <li>
+          Zernike
+        </li>
+      </ul>  
+      A variety of other polynomials and functions have been added.
+      In a few cases, the new <i>recursive</i> feature of FORTRAN90
+      has been used (but NOT for the factorial function!)
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>POLPAK</b> is available in
+      <a href = "../../c_src/polpak/polpak.html">a C version</a> and
+      <a href = "../../cpp_src/polpak/polpak.html">a C++ version</a> and
+      <a href = "../../f_src/polpak/polpak.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/polpak/polpak.html">a MATLAB version</a> and
+      <a href = "../../py_src/polpak/polpak.html">a Python version</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Bernstein polynomials;
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_polynomial/chebyshev_polynomial.html">
+      CHEBYSHEV_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Chebyshev polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/clausen/clausen.html">
+      CLAUSEN</a>,
+      a FORTRAN90 code which
+      evaluates a Chebyshev interpolant to the Clausen function Cl2(x).
+    </p>
+
+    <p>
+      <a href = "../../f_src/cordic/cordic.html">
+      CORDIC</a>,
+      a FORTRAN90 code which
+      uses the CORDIC method to compute certain elementary functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fn/fn.html">
+      FN</a>,
+      a FORTRAN90 code which
+      evaluates elementary and special functions,
+      by Wayne Fullerton.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_polynomial/gegenbauer_polynomial.html">
+      GEGENBAUER_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Gegenbauer polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_polynomial/hermite_polynomial.html">
+      HERMITE_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the physicist's Hermite polynomial, the probabilist's Hermite polynomial,
+      the Hermite function, and related functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi_polynomial/jacobi_polynomial.html">
+      JACOBI_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Jacobi polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_polynomial/laguerre_polynomial.html">
+      LAGUERRE_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Laguerre polynomial, the generalized Laguerre polynomials,
+      and the Laguerre function.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_polynomial/legendre_polynomial.html">
+      LEGENDRE_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Legendre polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_product_polynomial/legendre_product_polynomial.html">
+      LEGENDRE_PRODUCT_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      defines Legendre product polynomials, creating a multivariate 
+      polynomial as the product of univariate Legendre polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lobatto_polynomial/lobatto_polynomial.html">
+      LOBATTO_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates Lobatto polynomials, similar to Legendre polynomials
+      except that they are zero at both endpoints.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polpak_test/polpak_test.html">
+      polpak_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/special_functions/special_functions.html">
+      SPECIAL_FUNCTIONS</a>,
+      a FORTRAN90 code which
+      computes the Beta, Error, Gamma, Lambda, Psi functions,
+      the Airy, Bessel I, J, K and Y, Hankel, Jacobian elliptic, Kelvin, Mathieu, 
+      Struve functions,
+      spheroidal angular functions, parabolic cylinder functions,
+      hypergeometric functions,
+      the Bernoulli and Euler numbers,
+      the Hermite, Laguerre and Legendre polynomials, 
+      the cosine, elliptic, exponential, Fresnel and sine integrals,
+      by Shanjie Zhang, Jianming Jin;
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 code which 
+      contains a few test values of many functions.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Robert Banks,<br>
+          Slicing Pizzas, Racing Turtles, and Further Adventures in Applied Mathematics,<br>
+          Princeton, 1999,<br>
+          ISBN13: 9780691059471,<br>
+          LC: QA93.B358.
+        </li>
+        <li>
+          Frank Benford,<br>
+          The Law of Anomalous Numbers,<br>
+          Proceedings of the American Philosophical Society,<br>
+          Volume 78, 1938, pages 551-572.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Chad Brewbaker,<br>
+          Lonesum (0,1)-matrices and poly-Bernoulli numbers of negative
+          index,<br>
+          Master of Science Thesis,<br>
+          Computer Science Department,<br>
+          Iowa State University, 2005.
+        </li>
+        <li>
+          William Briggs, Van Emden Henson,<br>
+          The DFT: An Owner's Manual for the Discrete Fourier Transform,<br> 
+          SIAM, 1995,<br>
+          ISBN13: 978-0-898713-42-8,<br>
+          LC: QA403.5.B75.
+        </li>
+        <li>
+          Theodore Chihara,<br>
+          An Introduction to Orthogonal Polynomials,<br>
+          Gordon and Breach, 1978,<br>
+          ISBN: 0677041500,<br>
+          LC: QA404.5 C44.
+        </li>
+        <li>
+          William Cody,<br>
+          Rational Chebyshev Approximations for the Error Function,<br>
+          Mathematics of Computation,<br>
+          Volume 23, Number 107, July 1969, pages 631-638.
+        </li>
+        <li>
+          Robert Corless, Gaston Gonnet, David Hare, David Jeffrey, 
+          Donald Knuth,<br>
+          On the Lambert W Function,<br>
+          Advances in Computational Mathematics,<br>
+          Volume 5, Number 1, December 1996, pages 329-359.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 362-376.
+        </li>
+        <li>
+          Walter Gautschi,<br>
+          Orthogonal Polynomials: Computation and Approximation,<br>
+          Oxford, 2004,<br>
+          ISBN: 0-19-850672-4,<br>
+          LC: QA404.5 G3555.
+        </li>
+        <li>
+          Ralph Hartley,<br>
+          A More Symmetrical Fourier Analysis Applied to Transmission 
+          Problems,<br>
+          Proceedings of the Institute of Radio Engineers,<br>
+          Volume 30, 1942, pages 144-150.
+        </li>
+        <li>
+          Brian Hayes,<br>
+          The Vibonacci Numbers,<br>
+          American Scientist,<br>
+          Volume 87, Number 4, July-August 1999, pages 296-301.
+        </li>
+        <li>
+          Brian Hayes,<br>
+          Why W?,<br>
+          American Scientist,<br>
+          Volume 93, Number 2, March-April 2005, pages 104-108.
+        </li>
+        <li>
+          Ted Hill,<br>
+          The First Digit Phenomenon,<br>
+          American Scientist,<br>
+          Volume 86, Number 4, July/August 1998, pages 358-363.
+        </li>
+        <li>
+          Douglas Hofstadter,<br>
+          Goedel, Escher, Bach,<br>
+          Basic Books, 1979,<br>
+          ISBN: 0465026567,<br>
+          LC: QA9.8H63.
+        </li>
+        <li>
+          Masanobu Kaneko,<br>
+          Poly-Bernoulli Numbers,<br>
+          Journal Theorie des Nombres Bordeaux,<br>
+          Volume 9, Number 1, 1997, pages 221-228.
+        </li>
+        <li>
+          Cleve Moler,<br>
+          Trigonometry is a Complex Subject,<br>
+          MATLAB News and Notes, Summer 1998.
+        </li>
+        <li>
+          Thomas Osler,<br>
+          Cardan Polynomials and the Reduction of Radicals,<br>
+          Mathematics Magazine, <br>
+          Volume 74, Number 1, February 2001, pages 26-32.
+        </li>
+        <li>
+          J Simoes Pereira,<br>
+          Algorithm 234: Poisson-Charliers Polynomials,<br>
+          Communications of the ACM,<br>
+          Volume 7, Number 7, July 1964, page 420.
+        </li>
+        <li>
+          Charles Pinter,<br>
+          A Book of Abstract Algebra,<br>
+          Second Edition,<br>
+          McGraw Hill, 2003,<br>
+          ISBN: 0072943505,<br>
+          LC: QA162.P56.
+        </li>
+        <li>
+          Ralph Raimi,<br>
+          The Peculiar Distribution of First Digits,<br>
+          Scientific American,<br>
+          December 1969, pages 109-119.
+        </li>
+        <li>
+          Dennis Stanton, Dennis White,<br>
+          Constructive Combinatorics,<br>
+          Springer, 1986,<br>
+          ISBN: 0387963472,<br>
+          LC: QA164.S79.
+        </li>
+        <li>
+          Gabor Szego,<br>
+          Orthogonal Polynomials,<br>
+          American Mathematical Society, 1992,<br>
+          ISBN: 0821810235,<br>
+          LC: QA3.A5.v23.
+        </li>
+        <li>
+          Daniel Velleman, Gregory Call,<br>
+          Permutations and Combination Locks,<br>
+          Mathematics Magazine,<br>
+          Volume 68, Number 4, October 1995, pages 243-253.
+        </li>
+        <li>
+          Divakar Viswanath,<br>
+          Random Fibonacci sequences and the number 1.13198824,<br>
+          Mathematics of Computation,<br>
+          Volume 69, Number 231, July 2000, pages 1131-1155.
+        </li>
+        <li>
+          Michael Waterman,<br>
+          Introduction to Computational Biology,<br>
+          Chapman and Hall, 1995,<br>
+          ISBN: 0412993910,<br>
+          LC: QH438.4.M33.W38.
+        </li>
+        <li>
+          Eric Weisstein,<br>
+          CRC Concise Encyclopedia of Mathematics,<br>
+          CRC Press, 2002,<br>
+          Second edition,<br>
+          ISBN: 1584883472,<br>
+          LC: QA5.W45
+        </li>
+        <li>
+          Stephen Wolfram,<br>
+          The Mathematica Book,<br>
+          Fourth Edition,<br>
+          Cambridge University Press, 1999,<br>
+          ISBN: 0-521-64314-7,<br>
+          LC: QA76.95.W65.
+        </li>
+        <li>
+          ML Wolfson, HV Wright,<br>
+          ACM Algorithm 160: Combinatorial of M Things Taken N at a Time,<br>
+          Communications of the ACM,<br>
+          Volume 6, Number 4, April 1963, page 161.
+        </li>
+        <li>
+          Shanjie Zhang, Jianming Jin,<br>
+          Computation of Special Functions,<br>
+          Wiley, 1996,<br>
+          ISBN: 0-471-11963-6,<br>
+          LC: QA351.C45.
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3,<br>
+          LC: QA47.M315.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "polpak.f90">polpak.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "polpak.sh">polpak.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

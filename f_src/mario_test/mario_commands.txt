@@ -1,0 +1,431 @@
+# mario_commands.txt
+#
+# Usage:
+#  gnuplot < mario_commands.txt
+#
+set term png
+set output "mario.png"
+set title "MARIO"
+set xrange [ -1.5 : 14.5 ]
+set yrange [ 0 : 16 ]
+set size square
+unset border
+unset tics
+set nokey
+set object    1 rect from  0,15 to  1,16 back
+set object    1 rect fc rgb "white" fillstyle solid 1.0
+set object    2 rect from  1,15 to  2,16 back
+set object    2 rect fc rgb "white" fillstyle solid 1.0
+set object    3 rect from  2,15 to  3,16 back
+set object    3 rect fc rgb "white" fillstyle solid 1.0
+set object    4 rect from  3,15 to  4,16 back
+set object    4 rect fc rgb "red" fillstyle solid 1.0
+set object    5 rect from  4,15 to  5,16 back
+set object    5 rect fc rgb "red" fillstyle solid 1.0
+set object    6 rect from  5,15 to  6,16 back
+set object    6 rect fc rgb "red" fillstyle solid 1.0
+set object    7 rect from  6,15 to  7,16 back
+set object    7 rect fc rgb "red" fillstyle solid 1.0
+set object    8 rect from  7,15 to  8,16 back
+set object    8 rect fc rgb "red" fillstyle solid 1.0
+set object    9 rect from  8,15 to  9,16 back
+set object    9 rect fc rgb "red" fillstyle solid 1.0
+set object   10 rect from  9,15 to 10,16 back
+set object   10 rect fc rgb "white" fillstyle solid 1.0
+set object   11 rect from 10,15 to 11,16 back
+set object   11 rect fc rgb "white" fillstyle solid 1.0
+set object   12 rect from 11,15 to 12,16 back
+set object   12 rect fc rgb "white" fillstyle solid 1.0
+set object   13 rect from 12,15 to 13,16 back
+set object   13 rect fc rgb "white" fillstyle solid 1.0
+set object   14 rect from  0,14 to  1,15 back
+set object   14 rect fc rgb "white" fillstyle solid 1.0
+set object   15 rect from  1,14 to  2,15 back
+set object   15 rect fc rgb "white" fillstyle solid 1.0
+set object   16 rect from  2,14 to  3,15 back
+set object   16 rect fc rgb "red" fillstyle solid 1.0
+set object   17 rect from  3,14 to  4,15 back
+set object   17 rect fc rgb "red" fillstyle solid 1.0
+set object   18 rect from  4,14 to  5,15 back
+set object   18 rect fc rgb "red" fillstyle solid 1.0
+set object   19 rect from  5,14 to  6,15 back
+set object   19 rect fc rgb "red" fillstyle solid 1.0
+set object   20 rect from  6,14 to  7,15 back
+set object   20 rect fc rgb "red" fillstyle solid 1.0
+set object   21 rect from  7,14 to  8,15 back
+set object   21 rect fc rgb "red" fillstyle solid 1.0
+set object   22 rect from  8,14 to  9,15 back
+set object   22 rect fc rgb "red" fillstyle solid 1.0
+set object   23 rect from  9,14 to 10,15 back
+set object   23 rect fc rgb "red" fillstyle solid 1.0
+set object   24 rect from 10,14 to 11,15 back
+set object   24 rect fc rgb "red" fillstyle solid 1.0
+set object   25 rect from 11,14 to 12,15 back
+set object   25 rect fc rgb "red" fillstyle solid 1.0
+set object   26 rect from 12,14 to 13,15 back
+set object   26 rect fc rgb "white" fillstyle solid 1.0
+set object   27 rect from  0,13 to  1,14 back
+set object   27 rect fc rgb "white" fillstyle solid 1.0
+set object   28 rect from  1,13 to  2,14 back
+set object   28 rect fc rgb "white" fillstyle solid 1.0
+set object   29 rect from  2,13 to  3,14 back
+set object   29 rect fc rgb "brown" fillstyle solid 1.0
+set object   30 rect from  3,13 to  4,14 back
+set object   30 rect fc rgb "brown" fillstyle solid 1.0
+set object   31 rect from  4,13 to  5,14 back
+set object   31 rect fc rgb "brown" fillstyle solid 1.0
+set object   32 rect from  5,13 to  6,14 back
+set object   32 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   33 rect from  6,13 to  7,14 back
+set object   33 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   34 rect from  7,13 to  8,14 back
+set object   34 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   35 rect from  8,13 to  9,14 back
+set object   35 rect fc rgb "black" fillstyle solid 1.0
+set object   36 rect from  9,13 to 10,14 back
+set object   36 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   37 rect from 10,13 to 11,14 back
+set object   37 rect fc rgb "white" fillstyle solid 1.0
+set object   38 rect from 11,13 to 12,14 back
+set object   38 rect fc rgb "white" fillstyle solid 1.0
+set object   39 rect from 12,13 to 13,14 back
+set object   39 rect fc rgb "white" fillstyle solid 1.0
+set object   40 rect from  0,12 to  1,13 back
+set object   40 rect fc rgb "white" fillstyle solid 1.0
+set object   41 rect from  1,12 to  2,13 back
+set object   41 rect fc rgb "brown" fillstyle solid 1.0
+set object   42 rect from  2,12 to  3,13 back
+set object   42 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   43 rect from  3,12 to  4,13 back
+set object   43 rect fc rgb "brown" fillstyle solid 1.0
+set object   44 rect from  4,12 to  5,13 back
+set object   44 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   45 rect from  5,12 to  6,13 back
+set object   45 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   46 rect from  6,12 to  7,13 back
+set object   46 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   47 rect from  7,12 to  8,13 back
+set object   47 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   48 rect from  8,12 to  9,13 back
+set object   48 rect fc rgb "black" fillstyle solid 1.0
+set object   49 rect from  9,12 to 10,13 back
+set object   49 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   50 rect from 10,12 to 11,13 back
+set object   50 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   51 rect from 11,12 to 12,13 back
+set object   51 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   52 rect from 12,12 to 13,13 back
+set object   52 rect fc rgb "white" fillstyle solid 1.0
+set object   53 rect from  0,11 to  1,12 back
+set object   53 rect fc rgb "white" fillstyle solid 1.0
+set object   54 rect from  1,11 to  2,12 back
+set object   54 rect fc rgb "brown" fillstyle solid 1.0
+set object   55 rect from  2,11 to  3,12 back
+set object   55 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   56 rect from  3,11 to  4,12 back
+set object   56 rect fc rgb "brown" fillstyle solid 1.0
+set object   57 rect from  4,11 to  5,12 back
+set object   57 rect fc rgb "brown" fillstyle solid 1.0
+set object   58 rect from  5,11 to  6,12 back
+set object   58 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   59 rect from  6,11 to  7,12 back
+set object   59 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   60 rect from  7,11 to  8,12 back
+set object   60 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   61 rect from  8,11 to  9,12 back
+set object   61 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   62 rect from  9,11 to 10,12 back
+set object   62 rect fc rgb "black" fillstyle solid 1.0
+set object   63 rect from 10,11 to 11,12 back
+set object   63 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   64 rect from 11,11 to 12,12 back
+set object   64 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   65 rect from 12,11 to 13,12 back
+set object   65 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   66 rect from  0,10 to  1,11 back
+set object   66 rect fc rgb "white" fillstyle solid 1.0
+set object   67 rect from  1,10 to  2,11 back
+set object   67 rect fc rgb "brown" fillstyle solid 1.0
+set object   68 rect from  2,10 to  3,11 back
+set object   68 rect fc rgb "brown" fillstyle solid 1.0
+set object   69 rect from  3,10 to  4,11 back
+set object   69 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   70 rect from  4,10 to  5,11 back
+set object   70 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   71 rect from  5,10 to  6,11 back
+set object   71 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   72 rect from  6,10 to  7,11 back
+set object   72 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   73 rect from  7,10 to  8,11 back
+set object   73 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   74 rect from  8,10 to  9,11 back
+set object   74 rect fc rgb "black" fillstyle solid 1.0
+set object   75 rect from  9,10 to 10,11 back
+set object   75 rect fc rgb "black" fillstyle solid 1.0
+set object   76 rect from 10,10 to 11,11 back
+set object   76 rect fc rgb "black" fillstyle solid 1.0
+set object   77 rect from 11,10 to 12,11 back
+set object   77 rect fc rgb "black" fillstyle solid 1.0
+set object   78 rect from 12,10 to 13,11 back
+set object   78 rect fc rgb "white" fillstyle solid 1.0
+set object   79 rect from  0, 9 to  1,10 back
+set object   79 rect fc rgb "white" fillstyle solid 1.0
+set object   80 rect from  1, 9 to  2,10 back
+set object   80 rect fc rgb "white" fillstyle solid 1.0
+set object   81 rect from  2, 9 to  3,10 back
+set object   81 rect fc rgb "white" fillstyle solid 1.0
+set object   82 rect from  3, 9 to  4,10 back
+set object   82 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   83 rect from  4, 9 to  5,10 back
+set object   83 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   84 rect from  5, 9 to  6,10 back
+set object   84 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   85 rect from  6, 9 to  7,10 back
+set object   85 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   86 rect from  7, 9 to  8,10 back
+set object   86 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   87 rect from  8, 9 to  9,10 back
+set object   87 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   88 rect from  9, 9 to 10,10 back
+set object   88 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   89 rect from 10, 9 to 11,10 back
+set object   89 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object   90 rect from 11, 9 to 12,10 back
+set object   90 rect fc rgb "white" fillstyle solid 1.0
+set object   91 rect from 12, 9 to 13,10 back
+set object   91 rect fc rgb "white" fillstyle solid 1.0
+set object   92 rect from  0, 8 to  1, 9 back
+set object   92 rect fc rgb "white" fillstyle solid 1.0
+set object   93 rect from  1, 8 to  2, 9 back
+set object   93 rect fc rgb "white" fillstyle solid 1.0
+set object   94 rect from  2, 8 to  3, 9 back
+set object   94 rect fc rgb "red" fillstyle solid 1.0
+set object   95 rect from  3, 8 to  4, 9 back
+set object   95 rect fc rgb "red" fillstyle solid 1.0
+set object   96 rect from  4, 8 to  5, 9 back
+set object   96 rect fc rgb "blue" fillstyle solid 1.0
+set object   97 rect from  5, 8 to  6, 9 back
+set object   97 rect fc rgb "red" fillstyle solid 1.0
+set object   98 rect from  6, 8 to  7, 9 back
+set object   98 rect fc rgb "red" fillstyle solid 1.0
+set object   99 rect from  7, 8 to  8, 9 back
+set object   99 rect fc rgb "red" fillstyle solid 1.0
+set object  100 rect from  8, 8 to  9, 9 back
+set object  100 rect fc rgb "red" fillstyle solid 1.0
+set object  101 rect from  9, 8 to 10, 9 back
+set object  101 rect fc rgb "white" fillstyle solid 1.0
+set object  102 rect from 10, 8 to 11, 9 back
+set object  102 rect fc rgb "white" fillstyle solid 1.0
+set object  103 rect from 11, 8 to 12, 9 back
+set object  103 rect fc rgb "white" fillstyle solid 1.0
+set object  104 rect from 12, 8 to 13, 9 back
+set object  104 rect fc rgb "white" fillstyle solid 1.0
+set object  105 rect from  0, 7 to  1, 8 back
+set object  105 rect fc rgb "white" fillstyle solid 1.0
+set object  106 rect from  1, 7 to  2, 8 back
+set object  106 rect fc rgb "red" fillstyle solid 1.0
+set object  107 rect from  2, 7 to  3, 8 back
+set object  107 rect fc rgb "red" fillstyle solid 1.0
+set object  108 rect from  3, 7 to  4, 8 back
+set object  108 rect fc rgb "red" fillstyle solid 1.0
+set object  109 rect from  4, 7 to  5, 8 back
+set object  109 rect fc rgb "blue" fillstyle solid 1.0
+set object  110 rect from  5, 7 to  6, 8 back
+set object  110 rect fc rgb "red" fillstyle solid 1.0
+set object  111 rect from  6, 7 to  7, 8 back
+set object  111 rect fc rgb "red" fillstyle solid 1.0
+set object  112 rect from  7, 7 to  8, 8 back
+set object  112 rect fc rgb "blue" fillstyle solid 1.0
+set object  113 rect from  8, 7 to  9, 8 back
+set object  113 rect fc rgb "red" fillstyle solid 1.0
+set object  114 rect from  9, 7 to 10, 8 back
+set object  114 rect fc rgb "red" fillstyle solid 1.0
+set object  115 rect from 10, 7 to 11, 8 back
+set object  115 rect fc rgb "red" fillstyle solid 1.0
+set object  116 rect from 11, 7 to 12, 8 back
+set object  116 rect fc rgb "white" fillstyle solid 1.0
+set object  117 rect from 12, 7 to 13, 8 back
+set object  117 rect fc rgb "white" fillstyle solid 1.0
+set object  118 rect from  0, 6 to  1, 7 back
+set object  118 rect fc rgb "red" fillstyle solid 1.0
+set object  119 rect from  1, 6 to  2, 7 back
+set object  119 rect fc rgb "red" fillstyle solid 1.0
+set object  120 rect from  2, 6 to  3, 7 back
+set object  120 rect fc rgb "red" fillstyle solid 1.0
+set object  121 rect from  3, 6 to  4, 7 back
+set object  121 rect fc rgb "red" fillstyle solid 1.0
+set object  122 rect from  4, 6 to  5, 7 back
+set object  122 rect fc rgb "blue" fillstyle solid 1.0
+set object  123 rect from  5, 6 to  6, 7 back
+set object  123 rect fc rgb "blue" fillstyle solid 1.0
+set object  124 rect from  6, 6 to  7, 7 back
+set object  124 rect fc rgb "blue" fillstyle solid 1.0
+set object  125 rect from  7, 6 to  8, 7 back
+set object  125 rect fc rgb "blue" fillstyle solid 1.0
+set object  126 rect from  8, 6 to  9, 7 back
+set object  126 rect fc rgb "red" fillstyle solid 1.0
+set object  127 rect from  9, 6 to 10, 7 back
+set object  127 rect fc rgb "red" fillstyle solid 1.0
+set object  128 rect from 10, 6 to 11, 7 back
+set object  128 rect fc rgb "red" fillstyle solid 1.0
+set object  129 rect from 11, 6 to 12, 7 back
+set object  129 rect fc rgb "red" fillstyle solid 1.0
+set object  130 rect from 12, 6 to 13, 7 back
+set object  130 rect fc rgb "white" fillstyle solid 1.0
+set object  131 rect from  0, 5 to  1, 6 back
+set object  131 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  132 rect from  1, 5 to  2, 6 back
+set object  132 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  133 rect from  2, 5 to  3, 6 back
+set object  133 rect fc rgb "red" fillstyle solid 1.0
+set object  134 rect from  3, 5 to  4, 6 back
+set object  134 rect fc rgb "blue" fillstyle solid 1.0
+set object  135 rect from  4, 5 to  5, 6 back
+set object  135 rect fc rgb "yellow" fillstyle solid 1.0
+set object  136 rect from  5, 5 to  6, 6 back
+set object  136 rect fc rgb "blue" fillstyle solid 1.0
+set object  137 rect from  6, 5 to  7, 6 back
+set object  137 rect fc rgb "blue" fillstyle solid 1.0
+set object  138 rect from  7, 5 to  8, 6 back
+set object  138 rect fc rgb "yellow" fillstyle solid 1.0
+set object  139 rect from  8, 5 to  9, 6 back
+set object  139 rect fc rgb "blue" fillstyle solid 1.0
+set object  140 rect from  9, 5 to 10, 6 back
+set object  140 rect fc rgb "red" fillstyle solid 1.0
+set object  141 rect from 10, 5 to 11, 6 back
+set object  141 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  142 rect from 11, 5 to 12, 6 back
+set object  142 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  143 rect from 12, 5 to 13, 6 back
+set object  143 rect fc rgb "white" fillstyle solid 1.0
+set object  144 rect from  0, 4 to  1, 5 back
+set object  144 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  145 rect from  1, 4 to  2, 5 back
+set object  145 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  146 rect from  2, 4 to  3, 5 back
+set object  146 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  147 rect from  3, 4 to  4, 5 back
+set object  147 rect fc rgb "blue" fillstyle solid 1.0
+set object  148 rect from  4, 4 to  5, 5 back
+set object  148 rect fc rgb "blue" fillstyle solid 1.0
+set object  149 rect from  5, 4 to  6, 5 back
+set object  149 rect fc rgb "blue" fillstyle solid 1.0
+set object  150 rect from  6, 4 to  7, 5 back
+set object  150 rect fc rgb "blue" fillstyle solid 1.0
+set object  151 rect from  7, 4 to  8, 5 back
+set object  151 rect fc rgb "blue" fillstyle solid 1.0
+set object  152 rect from  8, 4 to  9, 5 back
+set object  152 rect fc rgb "blue" fillstyle solid 1.0
+set object  153 rect from  9, 4 to 10, 5 back
+set object  153 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  154 rect from 10, 4 to 11, 5 back
+set object  154 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  155 rect from 11, 4 to 12, 5 back
+set object  155 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  156 rect from 12, 4 to 13, 5 back
+set object  156 rect fc rgb "white" fillstyle solid 1.0
+set object  157 rect from  0, 3 to  1, 4 back
+set object  157 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  158 rect from  1, 3 to  2, 4 back
+set object  158 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  159 rect from  2, 3 to  3, 4 back
+set object  159 rect fc rgb "blue" fillstyle solid 1.0
+set object  160 rect from  3, 3 to  4, 4 back
+set object  160 rect fc rgb "blue" fillstyle solid 1.0
+set object  161 rect from  4, 3 to  5, 4 back
+set object  161 rect fc rgb "blue" fillstyle solid 1.0
+set object  162 rect from  5, 3 to  6, 4 back
+set object  162 rect fc rgb "blue" fillstyle solid 1.0
+set object  163 rect from  6, 3 to  7, 4 back
+set object  163 rect fc rgb "blue" fillstyle solid 1.0
+set object  164 rect from  7, 3 to  8, 4 back
+set object  164 rect fc rgb "blue" fillstyle solid 1.0
+set object  165 rect from  8, 3 to  9, 4 back
+set object  165 rect fc rgb "blue" fillstyle solid 1.0
+set object  166 rect from  9, 3 to 10, 4 back
+set object  166 rect fc rgb "blue" fillstyle solid 1.0
+set object  167 rect from 10, 3 to 11, 4 back
+set object  167 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  168 rect from 11, 3 to 12, 4 back
+set object  168 rect fc rgb "#FFEBCD" fillstyle solid 1.0
+set object  169 rect from 12, 3 to 13, 4 back
+set object  169 rect fc rgb "white" fillstyle solid 1.0
+set object  170 rect from  0, 2 to  1, 3 back
+set object  170 rect fc rgb "white" fillstyle solid 1.0
+set object  171 rect from  1, 2 to  2, 3 back
+set object  171 rect fc rgb "white" fillstyle solid 1.0
+set object  172 rect from  2, 2 to  3, 3 back
+set object  172 rect fc rgb "blue" fillstyle solid 1.0
+set object  173 rect from  3, 2 to  4, 3 back
+set object  173 rect fc rgb "blue" fillstyle solid 1.0
+set object  174 rect from  4, 2 to  5, 3 back
+set object  174 rect fc rgb "blue" fillstyle solid 1.0
+set object  175 rect from  5, 2 to  6, 3 back
+set object  175 rect fc rgb "white" fillstyle solid 1.0
+set object  176 rect from  6, 2 to  7, 3 back
+set object  176 rect fc rgb "white" fillstyle solid 1.0
+set object  177 rect from  7, 2 to  8, 3 back
+set object  177 rect fc rgb "blue" fillstyle solid 1.0
+set object  178 rect from  8, 2 to  9, 3 back
+set object  178 rect fc rgb "blue" fillstyle solid 1.0
+set object  179 rect from  9, 2 to 10, 3 back
+set object  179 rect fc rgb "blue" fillstyle solid 1.0
+set object  180 rect from 10, 2 to 11, 3 back
+set object  180 rect fc rgb "white" fillstyle solid 1.0
+set object  181 rect from 11, 2 to 12, 3 back
+set object  181 rect fc rgb "white" fillstyle solid 1.0
+set object  182 rect from 12, 2 to 13, 3 back
+set object  182 rect fc rgb "white" fillstyle solid 1.0
+set object  183 rect from  0, 1 to  1, 2 back
+set object  183 rect fc rgb "white" fillstyle solid 1.0
+set object  184 rect from  1, 1 to  2, 2 back
+set object  184 rect fc rgb "brown" fillstyle solid 1.0
+set object  185 rect from  2, 1 to  3, 2 back
+set object  185 rect fc rgb "brown" fillstyle solid 1.0
+set object  186 rect from  3, 1 to  4, 2 back
+set object  186 rect fc rgb "brown" fillstyle solid 1.0
+set object  187 rect from  4, 1 to  5, 2 back
+set object  187 rect fc rgb "white" fillstyle solid 1.0
+set object  188 rect from  5, 1 to  6, 2 back
+set object  188 rect fc rgb "white" fillstyle solid 1.0
+set object  189 rect from  6, 1 to  7, 2 back
+set object  189 rect fc rgb "white" fillstyle solid 1.0
+set object  190 rect from  7, 1 to  8, 2 back
+set object  190 rect fc rgb "white" fillstyle solid 1.0
+set object  191 rect from  8, 1 to  9, 2 back
+set object  191 rect fc rgb "brown" fillstyle solid 1.0
+set object  192 rect from  9, 1 to 10, 2 back
+set object  192 rect fc rgb "brown" fillstyle solid 1.0
+set object  193 rect from 10, 1 to 11, 2 back
+set object  193 rect fc rgb "brown" fillstyle solid 1.0
+set object  194 rect from 11, 1 to 12, 2 back
+set object  194 rect fc rgb "white" fillstyle solid 1.0
+set object  195 rect from 12, 1 to 13, 2 back
+set object  195 rect fc rgb "white" fillstyle solid 1.0
+set object  196 rect from  0, 0 to  1, 1 back
+set object  196 rect fc rgb "brown" fillstyle solid 1.0
+set object  197 rect from  1, 0 to  2, 1 back
+set object  197 rect fc rgb "brown" fillstyle solid 1.0
+set object  198 rect from  2, 0 to  3, 1 back
+set object  198 rect fc rgb "brown" fillstyle solid 1.0
+set object  199 rect from  3, 0 to  4, 1 back
+set object  199 rect fc rgb "brown" fillstyle solid 1.0
+set object  200 rect from  4, 0 to  5, 1 back
+set object  200 rect fc rgb "white" fillstyle solid 1.0
+set object  201 rect from  5, 0 to  6, 1 back
+set object  201 rect fc rgb "white" fillstyle solid 1.0
+set object  202 rect from  6, 0 to  7, 1 back
+set object  202 rect fc rgb "white" fillstyle solid 1.0
+set object  203 rect from  7, 0 to  8, 1 back
+set object  203 rect fc rgb "white" fillstyle solid 1.0
+set object  204 rect from  8, 0 to  9, 1 back
+set object  204 rect fc rgb "brown" fillstyle solid 1.0
+set object  205 rect from  9, 0 to 10, 1 back
+set object  205 rect fc rgb "brown" fillstyle solid 1.0
+set object  206 rect from 10, 0 to 11, 1 back
+set object  206 rect fc rgb "brown" fillstyle solid 1.0
+set object  207 rect from 11, 0 to 12, 1 back
+set object  207 rect fc rgb "brown" fillstyle solid 1.0
+set object  208 rect from 12, 0 to 13, 1 back
+set object  208 rect fc rgb "white" fillstyle solid 1.0
+plot -1 with lines

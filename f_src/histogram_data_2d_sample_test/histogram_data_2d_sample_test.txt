@@ -1,0 +1,29 @@
+15 July 2020  10:13:29.280 AM
+ 
+HISTOGRAM_DATA_2D_SAMPLE:
+  FORTRAN90 version
+  Generate sample data using a discrete PDF.
+ 
+TEST01
+  Consider data skewed toward the upper left corner
+  of the unit square.
+  Generate 1000 samples
+  PDF data is on a   20 by   20 grid.
+ 
+  PDF data sums to    2.88230    
+ 
+  Wrote sample data to file "test01.txt".
+ 
+TEST02
+  Consider data suggested by the shape and density of Iowa.
+  Generate 1000 samples
+  PDF data is on a   12 by    8 grid.
+ 
+  PDF data sums to    3200.00    
+ 
+  Wrote sample data to file "test02.txt".
+ 
+HISTOGRAM_DATA_2D_SAMPLE:
+  Normal end of execution.
+ 
+15 July 2020  10:13:29.288 AM

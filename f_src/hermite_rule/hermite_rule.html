@@ -1,0 +1,366 @@
+<html>
+
+  <head>
+    <title>
+      HERMITE_RULE - Gauss-Hermite Quadrature Rules
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      HERMITE_RULE <br> Gauss-Hermite Quadrature Rules
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>HERMITE_RULE</b>,
+      a FORTRAN90 program which
+      computes and print a Gauss-Hermite quadrature rule
+      for estimating the integral of a function with density exp(-x^2)
+      over the interval (-oo,+oo).
+    </p>
+
+    <p>
+      The rule is written to three files for easy use as input
+      to other programs.
+    </p>
+
+    <p>
+      The <i>Gauss-Hermite quadrature rule</i> is used as follows:
+      <pre>
+        c * Integral ( -oo < x < +oo ) f(x) exp ( - b * ( x - a )^2 ) dx
+      </pre>
+      is to be approximated by
+      <pre>
+        Sum ( 1 &lt;= i &lt;= order ) w(i) * f(x(i))
+      </pre>
+      Generally, a Gauss-Hermite quadrature rule of <i>n</i> points will
+      produce the exact integral when f(x) is a polynomial of degree
+      <i>2n-1</i> or less.
+    </p>
+
+    <p>
+      The value of C in front of the integral depends on the user's
+      choice of the SCALE parameter:
+      <ul>
+        <li>
+          <i>scale=0</i>, then C = 1; this is the standard choice for
+          Gauss-Hermite quadrature.
+        </li>
+        <li>
+          <i>scale=1</i>, then C is a normalization factor so that
+          f(x)=1 will integrate to 1.  This implies in turn that the
+          weights will sum to 1.  This choice is appropriate when
+          using the rule to compute probabilities.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>hermite_rule</b> <i>n</i> <i>a</i> <i>b</i> <i>scale</i> <i>filename</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>n</i> is the number of points in the quadrature rule.
+        </li>
+        <li>
+          <i>a</i> is the center point (default 0);
+        </li>
+        <li>
+          <i>b</i> is the scale factor (default 1);
+        </li>
+        <li>
+          <i>scale</i> is the normalization option (0/1).  If 1,
+          then the weights are normalized to have unit sum;
+        </li>
+        <li>
+          <i>filename</i> specifies the output filenames:
+          <i>filename</i><b>_w.txt</b>,
+          <i>filename</i><b>_x.txt</b>, and <i>filename</i><b>_r.txt</b>,
+          containing the weights, abscissas, and interval limits.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>HERMITE_RULE</b> is available in
+      <a href = "../../c_src/hermite_rule/hermite_rule.html">a C version</a> and
+      <a href = "../../cpp_src/hermite_rule/hermite_rule.html">a C++ version</a> and
+      <a href = "../../f_src/hermite_rule/hermite_rule.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/hermite_rule/hermite_rule.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/alpert_rule/alpert_rule.html">
+      ALPERT_RULE</a>,
+      a FORTRAN90 library which
+      can set up an Alpert quadrature rule for functions which are 
+      regular, log(x) singular, or 1/sqrt(x) singular.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ccn_rule/ccn_rule.html">
+      CCN_RULE</a>,
+      a FORTRAN90 program which
+      defines a nested Clenshaw Curtis quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev1_rule/chebyshev1_rule.html">
+      CHEBYSHEV1_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Chebyshev type 1 quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev2_rule/chebyshev2_rule.html">
+      CHEBYSHEV2_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Chebyshev type 2 quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/clenshaw_curtis_rule/clenshaw_curtis_rule.html">
+      CLENSHAW_CURTIS_RULE</a>,
+      a FORTRAN90 program which
+      defines a Clenshaw Curtis quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_rule/gegenbauer_rule.html">
+      GEGENBAUER_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Gegenbauer quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gen_hermite_rule/gen_hermite_rule.html">
+      GEN_HERMITE_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a generalized Gauss-Hermite quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gen_laguerre_rule/gen_laguerre_rule.html">
+      GEN_LAGUERRE_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a generalized Gauss-Laguerre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_exactness/hermite_exactness.html">
+      HERMITE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the polynomial exactness of Gauss-Hermite quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_polynomial/hermite_polynomial.html">
+      HERMITE_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the physicist's Hermite polynomial, the probabilist's Hermite polynomial,
+      the Hermite function, and related functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_rule_test/hermite_rule_test.html">
+      hermite_rule_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi_rule/jacobi_rule.html">
+      JACOBI_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Jacobi quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_rule/laguerre_rule.html">
+      LAGUERRE_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Laguerre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_rule/legendre_rule.html">
+      LEGENDRE_RULE</a>,
+      a FORTRAN90 program which
+      computes a Gauss-Legendre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_rule_fast/legendre_rule_fast.html">
+      LEGENDRE_RULE_FAST</a>,
+      a FORTRAN90 program which
+      uses a fast (order N) algorithm to compute a Gauss-Legendre quadrature 
+      rule of given order.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lognormal_rule/lognormal_rule.html">
+      LOGNORMAL_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a quadrature rule for functions of a variable
+      whose logarithm is normally distributed.
+    </p>
+
+    <p>
+      <a href = "../../f_src/patterson_rule/patterson_rule.html">
+      PATTERSON_RULE</a>,
+      a FORTRAN90 program which
+      returns the points and weights of a 1D Gauss-Patterson quadrature rule 
+      of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
+    </p>
+
+    <p>
+      <a href = "../../f_src/patterson_rule_compute/patterson_rule_compute.html">
+      PATTERSON_RULE_COMPUTE</a>,
+      a FORTRAN90 program which
+      computes the points and weights of a 1D Gauss-Patterson quadrature rule 
+      of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules_hermite_physicist/quadrature_rules_hermite_physicist.html">
+      QUADRATURE_RULES_HERMITE_PHYSICIST</a>,
+      a dataset directory which
+      contains Gauss-Hermite quadrature rules, for integration
+      on the interval (-oo,+oo), with weight function exp(-x^2).
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules_hermite_probabilist/quadrature_rules_hermite_probabilist.html">
+      QUADRATURE_RULES_HERMITE_PROBABILIST</a>,
+      a dataset directory which
+      contains Gauss-Hermite quadrature rules, for integration
+      on the interval (-oo,+oo), with weight function exp(-x^2/2).
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules_hermite_unweighted/quadrature_rules_hermite_unweighted.html">
+      QUADRATURE_RULES_HERMITE_UNWEIGHTED</a>,
+      a dataset directory which
+      contains Gauss-Hermite quadrature rules, for integration
+      on the interval (-oo,+oo), with weight function 1.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 library which
+      contains 1-dimensional quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/truncated_normal_rule/truncated_normal_rule.html">
+      TRUNCATED_NORMAL_RULE</a>,
+      a FORTRAN90 program which 
+      computes a quadrature rule for a normal distribution that has been
+      truncated to [A,+oo), (-oo,B] or [A,B].
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+        <li>
+          Sylvan Elhay, Jaroslav Kautsky,<br>
+          Algorithm 655:
+          IQPACK,
+          FORTRAN Subroutines for the Weights of Interpolatory Quadrature,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 13, Number 4, December 1987, pages 399-415.
+        </li>
+        <li>
+          Jaroslav Kautsky, Sylvan Elhay,<br>
+          Calculation of the Weights of Interpolatory Quadratures,<br>
+          Numerische Mathematik,<br>
+          Volume 40, 1982, pages 407-422.
+        </li>
+        <li>
+          Roger Martin, James Wilkinson,<br>
+          The Implicit QL Algorithm,<br>
+          Numerische Mathematik,<br>
+          Volume 12, Number 5, December 1968, pages 377-383.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "hermite_rule.f90">hermite_rule.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "hermite_rule.sh">hermite_rule.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

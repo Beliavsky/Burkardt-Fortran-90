@@ -1,0 +1,76 @@
+14 July 2020  10:44:01.498 AM
+ 
+HERMITE_EXACTNESS
+  FORTRAN90 version
+  Investigate the polynomial exactness of a Gauss-Hermite
+  quadrature rule by integrating weighted 
+  monomials up to a given degree over the (-oo,+oo) interval.
+ 
+HERMITE_EXACTNESS: User input:
+  Quadrature rule X file = "hermite_probabilist_010_x.txt".
+  Quadrature rule W file = "hermite_probabilist_010_w.txt".
+  Quadrature rule R file = "hermite_probabilist_010_r.txt".
+  Maximum degree to check =       10
+ 
+  Spatial dimension =        1
+  Number of points  =       10
+ 
+  The quadrature rule to be tested is
+  a Gauss-Hermite rule
+  of ORDER =       10
+ 
+  OPTION = 4, the probabilist normalized weighted rule for:
+  Integral ( -oo < x < +oo ) f(x) * exp(-x*x/2)/sqrt(2pi) dx
+ 
+  Weights W:
+ 
+  w( 1) =   0.4310652630718288E-05
+  w( 2) =   0.7580709343122178E-03
+  w( 3) =   0.1911158050077029E-01
+  w( 4) =   0.1354837029802677    
+  w( 5) =   0.3446423349320192    
+  w( 6) =   0.3446423349320192    
+  w( 7) =   0.1354837029802677    
+  w( 8) =   0.1911158050077029E-01
+  w( 9) =   0.7580709343122178E-03
+  w(10) =   0.4310652630718288E-05
+ 
+  Abscissas X:
+ 
+  x( 1) =   -4.859462828332313    
+  x( 2) =   -3.581823483551928    
+  x( 3) =   -2.484325841638955    
+  x( 4) =   -1.465989094391158    
+  x( 5) =  -0.4849357075154977    
+  x( 6) =   0.4849357075154977    
+  x( 7) =    1.465989094391158    
+  x( 8) =    2.484325841638955    
+  x( 9) =    3.581823483551928    
+  x(10) =    4.859462828332313    
+ 
+  Region R:
+ 
+  r( 1) =  -0.1000000000000000E+31
+  r( 2) =   0.1000000000000000E+31
+ 
+  A Gauss-Hermite rule would be able to exactly
+  integrate monomials up to and including degree =       19
+ 
+  Degree          Error
+ 
+   0        0.0000000000000002
+   1        0.0000000000000000
+   2        0.0000000000000002
+   3        0.0000000000000000
+   4        0.0000000000000003
+   5        0.0000000000000001
+   6        0.0000000000000007
+   7        0.0000000000000018
+   8        0.0000000000000012
+   9        0.0000000000000071
+  10        0.0000000000000024
+ 
+HERMITE_EXACTNESS:
+  Normal end of execution.
+ 
+14 July 2020  10:44:01.499 AM

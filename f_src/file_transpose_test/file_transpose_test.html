@@ -1,0 +1,119 @@
+<html>
+
+  <head>
+    <title>
+      file_transpose_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      file_transpose_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>file_transpose_test</b>,
+      a FORTRAN90 code which
+      calls file_transpose(), which
+      creates a "transposed" copy of a file, in which, essentially, the I-th
+      word of the J-th line becomes the J-th word of the I-th line.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/file_transpose/file_transpose.html">
+      file_transpose</a>,
+      a FORTRAN90 code which
+      makes a transposed copy of a file, where the I-th word of the J-th line
+      becomes the J-th word of the I-th line.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "file_transpose_test.sh">file_transpose_test.sh</a>, 
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>PIGS</b> is a simple demonstration of the code.
+      <ul>
+        <li>
+          <a href = "pigs.txt">pigs.txt</a>,
+          a simple file of 3 lines of 4 words, 4 words, and 3 words respectively.
+        </li>
+        <li>
+          <a href = "pigs_transposed.txt">pigs_transposed.txt</a>,
+          the transposed file, containing 4 lines of 3 words, 3 words, 3 words and 2 words
+          respectively.  Because the lines are almost all the same length, it's not hard
+          to read the story this way.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>STORY</b> suggests that the code is not so useful when working with
+      ragged text.
+      <ul>
+        <li>
+          <a href = "story.txt">story.txt</a>,
+          a file containing blank lines and lines of greatly varying numbers of words.
+        </li>
+        <li>
+          <a href = "story_transposed.txt">story_transposed.txt</a>,
+          the transposed file.  Because the input text was "ragged", it's not easy to
+          read the text now, nor would it be easy to reconstruct the original file!
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MATRIX</b> illustrates how a numeric table or matrix can be transposed.
+      In fact, this is the application for which the FILE_TRANSPOSE code was written.
+      <ul>
+        <li>
+          <a href = "matrix.txt">matrix.txt</a>,
+          a file containing 30 lines, each containing 10 numeric values.
+        </li>
+        <li>
+          <a href = "matrix_transposed.txt">matrix_transposed.txt</a>,
+          the transposed file, with 10 lines of 30 values.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

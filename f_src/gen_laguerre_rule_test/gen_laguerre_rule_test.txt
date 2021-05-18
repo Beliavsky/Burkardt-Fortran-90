@@ -1,0 +1,38 @@
+11 July 2020   4:30:44.691 PM
+ 
+GEN_LAGUERRE_RULE
+  FORTRAN90 version
+ 
+  Compute a generalized Gauss-Laguerre rule for approximating
+    Integral ( a <= x < +oo ) |x-a|^ALPHA exp(-B*(x-a)) f(x) dx
+  of order ORDER.
+ 
+  The user specifies ORDER, ALPHA, A, B, and FILENAME.
+ 
+  ORDER is the number of points.
+  ALPHA is the exponent of |X|.
+  A is the left endpoint, (typically 0).
+  B is the scale factor, (typically 1).
+  FILENAME is used to generate 3 files:
+  * filename_w.txt - the weight file
+  * filename_x.txt - the abscissa file.
+  * filename_r.txt - the region file.
+ 
+  ORDER =        4
+  ALPHA =   0.500000    
+  A =    0.00000    
+  B =    1.00000    
+  FILENAME = "gen_lag_o4_a0.5".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "gen_lag_o4_a0.5".
+ 
+  Weight file will be   "gen_lag_o4_a0.5_w.txt".
+  Abscissa file will be "gen_lag_o4_a0.5_x.txt".
+  Region file will be   "gen_lag_o4_a0.5_r.txt".
+ 
+GEN_LAGUERRE_RULE:
+  Normal end of execution.
+ 
+11 July 2020   4:30:44.692 PM

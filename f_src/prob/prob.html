@@ -1,0 +1,354 @@
+<html>
+
+  <head>
+    <title>
+      PROB - Probability Density Functions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      PROB <br> Probability Density Functions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>PROB</b>,
+      a FORTRAN90 code which
+      handles various discrete and
+      continuous probability density functions
+      ("PDF's").
+    </p>
+
+    <p>
+      For a discrete variable X, PDF(X) is the probability that the value
+      X will occur; for a continuous variable, PDF(X) is the probability
+      density of X, that is, the probability of a value between X and X+dX
+      is PDF(X) * dX.
+    </p>
+
+    <p>
+      The corresponding cumulative density functions or "CDF"'s are also
+      handled.  For a discrete or continuous variable, CDF(X) is the
+      probability that the variable takes on a value less than or equal to X.
+    </p>
+
+    <p>
+      In some cases, the inverse of the CDF can easily be computed.
+      If
+      <pre><b>
+        X = CDF_INV ( P )
+      </b></pre>
+      then we are asserting that the value <b>X</b> has a cumulative
+      probability density function of <b>P</b>, in other words,
+      the probability that the variable is less than or equal to <b>X</b>
+      is <b>P</b>.  If the CDF cannot be analytically inverted, there
+      are simple ways to try to estimate the inverse.  Depending on
+      the PDF, these methods may be rapid and accurate, or not.
+    </p>
+
+    <p>
+      For most distributions, the <i>mean</i> or "average value" or
+      "expected value" is also available.  For a discrete variable, MEAN
+      is simply the sum of the products X * PDF(X); for a continuous
+      variable, MEAN is the integral of X * PDF(X) over the range.
+      For the distributions covered here, the means are known beforehand,
+      and no summation or integration is required.
+    </p>
+
+    <p>
+      For most distributions, the <i>variance</i> is available.  For a
+      discrete variable, the variance is the sum of the products
+      ( X - MEAN )^2 * PDF(X); for a continuous variable, the
+      variance is the integral of ( X - MEAN )^2 * PDF(X) over the range.
+      The square root of the variance is known as the <i>standard
+      deviation</i>.  For the distributions covered here, the variances are
+      often known beforehand, and no summation or integration is required.
+    </p>
+
+    <p>
+      For many of the distributions, it is possible to repeatedly
+      request "samples", that is, a pseudorandom sequence of realizations
+      of the PDF.  These samples are always associated with an integer
+      seed, which controls the calculation.  Using the same seed as input
+      will guarantee the same sample value on output.  Ultimately, a
+      random number generator must be invoked internally.  In most cases,
+      the current code will call a routine called <b>R8_UNIFORM_01</b>,
+      which uses a very basic, and old, random number generator.
+      You may prefer a different random number generator
+      for this purpose.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>PROB</b> is available in
+      <a href = "../../c_src/prob/prob.html">a C version</a> and
+      <a href = "../../cpp_src/prob/prob.html">a C++ version</a> and
+      <a href = "../../f_src/prob/prob.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/prob/prob.html">a MATLAB version</a> and
+      <a href = "../../py_src/prob/prob.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa005/asa005.html">
+      ASA005</a>,
+      a FORTRAN90 code which
+      evaluates the CDF of the noncentral T distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa066/asa066.html">
+      ASA066</a>,
+      a FORTRAN90 code which
+      evaluates the CDF of the normal distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa076/asa076.html">
+      ASA076</a>,
+      a FORTRAN90 code which
+      evaluates the Owen's T function, needed to compute the CDF of the
+      noncentral T distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa091/asa091.html">
+      ASA091</a>,
+      a FORTRAN90 code
+      which evaluates the percentage points of the Chi-Squared distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa111/asa111.html">
+      ASA111</a>,
+      a FORTRAN90 code which
+      evaluates the percentage points of the normal distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa152/asa152.html">
+      ASA152</a>,
+      a FORTRAN90 code which
+      evaluates point and cumulative probabilities associated with the
+      hypergeometric distribution;
+      this is Applied Statistics Algorithm 152;
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa226/asa226.html">
+      ASA226</a>,
+      a FORTRAN90 code which
+      evaluates the CDF of the noncentral Beta distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa241/asa241.html">
+      ASA241</a>,
+      a FORTRAN90 code which
+      evaluates the percentage points of the normal distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa243/asa243.html">
+      ASA243</a>,
+      a FORTRAN90 code which
+      evaluates the CDF of the noncentral T distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa266/asa266.html">
+      ASA266</a>,
+      a FORTRAN90 code which
+      evaluates various properties of the Dirichlet probability density function;
+      this is Applied Statistics Algorithm 266;
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa310/asa310.html">
+      ASA310</a>,
+      a FORTRAN90 code which
+      computes the CDF of the noncentral Beta distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/beta_nc/beta_nc.html">
+      BETA_NC</a>,
+      a FORTRAN90 code which
+      evaluates the CDF of the noncentral Beta distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/cdflib/cdflib.html">
+      CDFLIB</a>,
+      a FORTRAN90 code which
+      evaluates the cumulative density function (CDF), inverse CDF,
+      and certain other inverse functions, for distributions including
+      beta, binomial, chi-square, noncentral chi-square, F, noncentral F,
+      gamma, negative binomial, normal, Poisson, and students T,
+      by Barry Brown, James Lovato, Kathy Russell.
+    </p>
+
+    <p>
+      <a href = "../../f_src/discrete_pdf_sample_2d/discrete_pdf_sample_2d.html">
+      DISCRETE_PDF_SAMPLE_2D</a>,
+      a FORTRAN90 code which
+      demonstrates how to construct a Probability Density Function (PDF)
+      from a table of sample data, and then to use that PDF to create new samples.
+    </p>
+
+    <p>
+      <a href = "../../f_src/log_normal/log_normal.html">
+      LOG_NORMAL</a>,
+      a FORTRAN90 code which 
+      returns quantities associated with the log normal Probability
+      Distribution Function (PDF).
+    </p>
+
+    <p>
+      <a href = "../../f_src/normal/normal.html">
+      NORMAL</a>,
+      a FORTRAN90 code which
+      samples the normal distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/prob_test/prob_test.html">
+      prob_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/random_data/random_data.html">
+      RANDOM_DATA</a>,
+      a FORTRAN90 code which
+      generates sample points for
+      various probability distributions, spatial dimensions, and geometries;
+    </p>
+
+    <p>
+      <a href = "../../f_src/ranlib/ranlib.html">
+      RANLIB</a>,
+      a FORTRAN90 code which
+      produces random samples from Probability Density Functions (PDF's), 
+      including Beta, Chi-square Exponential, F, Gamma, Multivariate normal,
+      Noncentral chi-square, Noncentral F, Univariate normal, random permutations,
+      Real uniform, Binomial, Negative Binomial, Multinomial, Poisson
+      and Integer uniform,
+      by Barry Brown and James Lovato.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 code which
+      contains sample values for a number of distributions.
+    </p>
+
+    <p>
+      <a href = "../../f77_src/toms441/toms441.html">
+      TOMS441</a>,
+      a FORTRAN77 library which
+      samples the dipole distribution;<br>
+      this is ACM TOMS algorithm 441.
+    </p>
+
+    <p>
+      <a href = "../../f_src/truncated_normal/truncated_normal.html">
+      TRUNCATED_NORMAL</a>,
+      a FORTRAN90 code which 
+      works with the truncated normal distribution over [A,B], or
+      [A,+oo) or (-oo,B], returning the probability density function (PDF),
+      the cumulative density function (CDF), the inverse CDF, the mean,
+      the variance, and sample values.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 code which
+      samples the uniform distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ziggurat/ziggurat.html">
+      ZIGGURAT</a>,
+      a FORTRAN90 code which
+      generates points from a uniform, normal or exponential distribution, using
+      the ziggurat method.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Jerry Banks, editor,<br>
+          Handbook of Simulation,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "prob.f90">prob.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "prob.sh">prob.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

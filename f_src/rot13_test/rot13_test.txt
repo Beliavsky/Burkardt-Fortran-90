@@ -1,0 +1,29 @@
+25 August 2020   8:56:42.430 AM
+
+ROT13_TEST
+  FORTRAN90 version.
+  Test the ROT13 library.
+
+  call S_TO_ROT13 ( S1, S2 ).
+
+  -------------------S1-------------------  -------------------S2-------------------
+
+  "abcdefghijklmnopqrstuvwxyz"              "nopqrstuvwxyzabcdefghijklm"            
+  "Cher"                                    "Pure"                                  
+  "James Thurston Howell III"               "Wnzrf Guhefgba Ubjryy VVV"             
+  "The bill is $1,205,837.49 so pay now!"   "Gur ovyy vf $6,750,382.94 fb cnl abj!" 
+
+  call ROT13 ( S1, S2 ).
+  call ROT13 ( S2, S3 ).
+
+  -------------------S1-------------------  -------------------S3-------------------
+
+  "abcdefghijklmnopqrstuvwxyz"              "abcdefghijklmnopqrstuvwxyz"            
+  "Cher"                                    "Cher"                                  
+  "James Thurston Howell III"               "James Thurston Howell III"             
+  "The bill is $1,205,837.49 so pay now!"   "The bill is $1,205,837.49 so pay now!" 
+
+ROT13_TEST
+  Normal end of execution.
+
+25 August 2020   8:56:42.431 AM

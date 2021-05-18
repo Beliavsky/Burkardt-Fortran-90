@@ -1,0 +1,89 @@
+<html>
+
+  <head>
+    <title>
+      lagrange_nd_test
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      lagrange_nd_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>lagrange_nd_test</b>,
+      a FORTRAN90 code which
+      calls lagrange_nd(), which
+      is given a set of ND points X(*) in D-dimensional space, and constructs
+      a family of ND Lagrange polynomials P(*)(X), associating polynomial P(i)
+      with point X(i), such that, for 1 <= i <= ND,
+      <pre>
+        P(i)(X(i)) = 1
+      </pre>
+      but, if i =/= j
+      <pre>
+        P(i)(X(j)) = 0
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/lagrange_nd/lagrange_nd.html">
+      lagrange_nd</a>,
+      a FORTRAN90 code which
+      implements several multivariate Lagrange interpolation schemes
+      developed by Tomas Sauer.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "lagrange_nd_test.f90">lagrange_nd_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "lagrange_nd_test.sh">lagrange_nd_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "lagrange_nd_test.txt">lagrange_nd_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>
+

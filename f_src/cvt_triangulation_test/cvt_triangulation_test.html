@@ -1,0 +1,473 @@
+<html>
+
+  <head>
+    <title>
+      cvt_triangulation_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      cvt_triangulation_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>cvt_triangulation_test</b>
+      a FORTRAN90 code which
+      calls cvt_triangulation(), which
+      applies Centroidal Voronoi Tessellation (CVT) methods to produce 
+      triangularizations of various test regions.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt_triangulation/cvt_triangulation.html">
+      cvt_triangulation</a>,
+      a FORTRAN90 code which
+      constructs a Centroidal Voronoi Tessellation (CVT) triangulation 
+      for certain regions from the test_triangulation() set of examples.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cvt_triangulation_test.sh">cvt_triangulation_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "cvt_triangulation_test.txt">cvt_triangulation_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      There are some files for use with the PLOT_POINTS code:
+      <ul>
+        <li>
+          <a href = "plot_points_input.txt">plot_points_input.txt</a>,
+          contains the input commands to PLOT_POINTS to make the plots.
+        </li>
+        <li>
+          <a href = "plot_points.txt">plot_points.txt</a>,
+          contains the printed output from PLOT_POINTS.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 1</b> is the circle:
+      <ul>
+        <li>
+          <a href = "cvt_p01.txt">cvt_p01.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p01.png">cvt_p01.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p01_dot.png">cvt_p01_dot.png</a>,
+          a PNG image of
+          the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p01_del.png">cvt_p01_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 2</b> is the circle with a circular hole:
+      <ul>
+        <li>
+          <a href = "cvt_p02.txt">cvt_p02.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p02.png">cvt_p02.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p02_dot.png">cvt_p02_dot.png</a>,
+          a PNG image of
+          the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p02_del.png">cvt_p02_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 3</b> is the square with a circular hole:
+      <ul>
+        <li>
+          <a href = "cvt_p03.txt">cvt_p03.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p03.png">cvt_p03.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p03_del.png">cvt_p03_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+        <li>
+          <a href = "cvt_p03_hbf.txt">cvt_p03_hbf.txt</a>,
+          the coordinates of points generated
+          using hexagonal initialization, an expanded boundary
+          and fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p03_hbf.png">cvt_p03_hbf.png</a>,
+          a <a href = "../../png/png.html">PNG</a> image of
+          the points generated
+          using hexagonal initialization, an expanded boundary
+          and fixed points.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 4</b> is the hexagon with a hexagonal hole:
+      <ul>
+        <li>
+          <a href = "cvt_p04.txt">cvt_p04.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p04.png">cvt_p04.png</a>,
+          a <a href = "../../png/png.html">PNG</a> image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p04_del.png">cvt_p04_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 5</b> is the horn:
+      <ul>
+        <li>
+          <a href = "cvt_p05.txt">cvt_p05.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p05.png">cvt_p05.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p05_del.png">cvt_p05_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 6</b> is the superellipse with the superelliptical hole:
+      <ul>
+        <li>
+          <a href = "cvt_p06.txt">cvt_p06.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p06.png">cvt_p06.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p06_del.png">cvt_p06_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 7</b> is the "bicycle seat":
+      <ul>
+        <li>
+          <a href = "cvt_p07.txt">cvt_p07.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p07.png">cvt_p07.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p07_del.png">cvt_p07_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+
+    <p>
+      <b>Region 8</b> is the pie slice:
+      <ul>
+        <li>
+          <a href = "cvt_p08.txt">cvt_p08.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p08_boundary.png">cvt_p08_boundary.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p08_boundary_fixed.png">cvt_p08_boundary_fixed.png</a>,
+          a PNG image of
+          the points and the region's boundary, with fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p08_del.png">cvt_p08_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+        <li>
+          <a href = "cvt_p08_fixed_del.png">cvt_p08_fixed_del.png</a>,
+          a PNG image of
+          the Delaunay mesh, with fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p08_hex.png">cvt_p08_hex.png</a>,
+          a PNG image of
+          the initial points from a hex grid.
+        </li>
+        <li>
+          <a href = "cvt_p08_hbf.png">cvt_p08_hbf.png</a>,
+          a PNG image of
+          the mesh using hexagonal initialization, boundary constraints,
+          and fixed points.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 9</b> is the square with two hexagonal holes:
+      <ul>
+        <li>
+          <a href = "cvt_p09.txt">cvt_p09.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p09.png">cvt_p09.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p09_del.png">cvt_p09_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 10</b> is the unit square:
+      <ul>
+        <li>
+          <a href = "cvt_p10.txt">cvt_p10.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p10.png">cvt_p10.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p10_del.png">cvt_p10_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 11</b> is the L-shaped region:
+      <ul>
+        <li>
+          <a href = "cvt_p11.txt">cvt_p11.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p11.png">cvt_p11.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p11_boundary.png">cvt_p11_boundary.png</a>,
+          a PNG image of
+          the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p11_boundary_fixed.png">cvt_p11_boundary_fixed.png</a>,
+          a PNG image of
+          the region's boundary with fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p11_del.png">cvt_p11_del.png</a>,
+          a PNG image of
+          the Delaunay mesh.
+        </li>
+        <li>
+          <a href = "cvt_p11_fixed_del.png">cvt_p11_fixed_del.png</a>,
+          a PNG image of
+          the Delaunay mesh, using fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p11_hex.png">cvt_p11_hex.png</a>,
+          a PNG image of
+          hexagonal points in the region.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 12</b> is the H-shaped region:
+      <ul>
+        <li>
+          <a href = "cvt_p12.txt">cvt_p12.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p12.png">cvt_p12.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p12_boundary.png">cvt_p12_boundary.png</a>,
+          a PNG image of
+          the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p12_boundary_fixed.png">cvt_p12_boundary_fixed.png</a>,
+          a PNG image of
+          the region's boundary with fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p12_fixed_del.png">cvt_p12_fixed_del.png</a>,
+          a PNG image of
+          the Delaunay mesh, using fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p12_hex.png">cvt_p12_hex.png</a>,
+          a PNG image of
+          hexagonal points in the region.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 13</b> is the fork:
+      <ul>
+        <li>
+          <a href = "cvt_p13.txt">cvt_p13.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p13.png">cvt_p13.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p13_boundary.png">cvt_p13_boundary.png</a>,
+          a PNG image of
+          the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p13_fixed_del.png">cvt_p13_fixed_del.png</a>,
+          a PNG image of
+          the Delaunay mesh, using fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p13_hex.png">cvt_p13_hex.png</a>,
+          a PNG image of
+          hexagonal points in the region.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Region 14</b> is Lake Alpha, with Beta Island:
+      <ul>
+        <li>
+          <a href = "cvt_p14.txt">cvt_p14.txt</a>,
+          a text file containing the CVT points.
+        </li>
+        <li>
+          <a href = "cvt_p14.png">cvt_p14.png</a>,
+          a PNG image of
+          the points and the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p14_boundary.png">cvt_p14_boundary.png</a>,
+          a PNG image of
+          the region's boundary.
+        </li>
+        <li>
+          <a href = "cvt_p14_boundary_fixed.png">cvt_p14_boundary_fixed.png</a>,
+          a PNG image of
+          the region's boundary with fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p14_fixed_del.png">cvt_p14_fixed_del.png</a>,
+          a PNG image of
+          the Delaunay mesh, using fixed points.
+        </li>
+        <li>
+          <a href = "cvt_p14_hex.png">cvt_p14_hex.png</a>,
+          a PNG image of
+          hexagonal points in the region.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 15 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

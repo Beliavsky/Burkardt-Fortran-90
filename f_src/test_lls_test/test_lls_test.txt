@@ -1,0 +1,26 @@
+ 3 September 2020   4:58:03.439 PM
+ 
+TEST_LLS_TEST
+  FORTRAN90 version
+  Test the TEST_LLS library.
+ 
+TEST01
+  Get each least squares test and compute the maximum residual.
+  The L2 norm of the residual MUST be no greater than
+  the L2 norm of the right hand side, else 0 is a better solution.
+ 
+  Number of problems =    6
+ 
+  Index     M     N     ||B||         ||X||         ||R||
+ 
+      1     5     3     6.205         5.461         1.075    
+      2     6     3     537.6         194.8         5.222    
+      3     5     3     40.37         10.84        0.5477E-06
+      4     3     5     232.1         7.416         0.000    
+      5    10    10     1.000        0.1534E+08    0.9673E-10
+      6    10    10     1.000         1.000        0.4958E-15
+ 
+TEST_LLS_TEST
+  Normal end of execution.
+ 
+ 3 September 2020   4:58:03.439 PM

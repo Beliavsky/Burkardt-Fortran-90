@@ -1,0 +1,206 @@
+<html>
+
+  <head>
+    <title>
+      COLORED_NOISE - 1/F^alpha Power Law Noise Generation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      COLORED_NOISE <br> 1/F^alpha Power Law Noise Generation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>COLORED_NOISE</b>,
+      is a FORTRAN90 code which
+      generates sequences that simulate 
+      1/f^alpha power law noise.  This includes white noise (alpha = 0),
+      pink noise (alpha = 1) and brown noise or Brownian motion (alpha = 2),
+      but also values of alpha between 0 and 2.
+    </p>
+
+    <p>
+      The original code listing by Kasdin referenced a number of functions from
+      the Numerical Recipes code (FOUR1, FREE_VECTOR, GASDEV, RAN1, REALFT, 
+      VECTOR).  Numerical Recipes is a proprietary code whose components
+      cannot be freely distributed.  Moreover, the referenced functions
+      have some peculiarities of implementation (the FFT is not normalized;
+      the FFT data must be a power of 2 in order; the code uses single
+      precision real arithmetic).  
+    </p>
+
+    <p>
+      In the code presented here, references to Numerical Recipes functions
+      have been replaced by references to, and the source code of, 
+      nonproprietary code.  In particular, the Fourier
+      transform is implemented by a "slow Fourier transform" method,
+      and by simple uniform and normal random number generators.
+      You are welcome to make an efficient code by replacing these
+      routines.  The purpose of this posting is primarily to demonstrate 
+      the method.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>COLORED_NOISE</b> is available in
+      <a href = "../../c_src/colored_noise/colored_noise.html">a C version</a> and
+      <a href = "../../cpp_src/colored_noise/colored_noise.html">a C++ version</a> and
+      <a href = "../../f_src/colored_noise/colored_noise.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/colored_noise/colored_noise.html">a MATLAB version</a> and
+      <a href = "../../py_src/colored_noise/colored_noise.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/colored_noise_test/colored_noise_test.html">
+      colored_noise_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/correlation/correlation.html">
+      CORRELATION</a>,
+      a FORTRAN90 code which
+      contains examples of statistical correlation functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/normal/normal.html">
+      NORMAL</a>,
+      a FORTRAN90 code which
+      computes elements of a sequence of pseudorandom normally distributed values.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pink_noise/pink_noise.html">
+      PINK_NOISE</a>, 
+      a FORTRAN90 code which
+      computes a "pink noise" signal obeying a 1/f power law.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sde/sde.html">
+      SDE</a>,
+      a FORTRAN90 code which
+      illustrates the properties of stochastic differential equations, and
+      common algorithms for their analysis,
+      by Desmond Higham;
+    </p>
+
+    <p>
+      <a href = "../../f_src/sftpack/sftpack.html">
+      SFTPACK</a>,
+      a FORTRAN90 code which
+      implements the "slow" Fourier transform, intended as a teaching
+      tool and comparison with the fast Fourier transform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stochastic_rk/stochastic_rk.html">
+      STOCHASTIC_RK</a>, 
+      a FORTRAN90 code which
+      applies a Runge-Kutta scheme to a stochastic differential equation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 code which 
+      computes elements of a uniform pseudorandom sequence.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Martin Gardner,<br>
+          White and brown music, fractal curves and one-over-f fluctuations,<br>
+          Scientific American,<br>
+          Volume 238, Number 4, April 1978, pages 16-32.
+        </li>
+        <li>
+          Jeremy Kasdin,<br>
+          Discrete Simulation of Colored Noise and Stochastic Processes
+          and 1/f^a Power Law Noise Generation,<br>
+          Proceedings of the IEEE,<br>
+          Volume 83, Number 5, 1995, pages 802-827.
+        </li>
+        <li>
+          Edoardo Milotti,<br>
+          1/f noise: a pedagogical review,<br>
+          arXiv:physics/0204033.
+        </li>
+        <li>
+          Sophocles Orfanidis,<br>
+          Introduction to Signal Processing,<br>
+          Prentice-Hall, 1995,<br>
+          ISBN: 0-13-209172-0,<br>
+          LC: TK5102.5.O246.
+        </li>
+        <li>
+          William Press,<br>
+          Flicker Noises in Astronomy and Elsewhere,<br>
+          Comments on Astrophysics,<br>
+          Volume 7, Number 4, 1978, pages 103-119.
+        </li>
+        <li>
+          Miroslav Stoyanov, Max Gunzburger, John Burkardt,<br>
+          Pink Noise, 1/f^alpha Noise, and Their Effect on Solutions
+          of Differential Equations,<br>
+          International Journal for Uncertainty Quantification,<br>
+          Volume 1, Number 3, pages 257-278, 2011.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "colored_noise.f90">colored_noise.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "colored_noise.sh">colored_noise.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,23 @@
+01 August 2020  10:20:35.617 AM
+ 
+NAS:
+  FORTRAN90 version
+ 
+                The NAS kernel benchmark program
+ 
+ Program        Error          FP Ops        Seconds     MFLOPS
+ 
+ BTRIX        2.5033E-13     3.2197E+08      0.5394      596.87
+ CFFT2D       1.3326E-13     4.9807E+08      0.6632      750.99
+ CHOLSKY      2.8784E-12     2.2103E+08      0.5868      376.66
+ EMIT         2.0694E-15     2.2604E+08      0.1747     1293.64
+ GMTRY        1.8918E-13     2.2650E+08      0.4134      547.84
+ MXM          3.4313E-15     4.1943E+08      0.4378      958.04
+ VPENTA       8.4523E-15     2.5943E+08      0.5234      495.69
+ 
+ Total        3.4651E-12     2.1725E+09      3.3388      650.67
+ 
+NAS:
+  Normal end of execution.
+ 
+01 August 2020  10:20:39.012 AM

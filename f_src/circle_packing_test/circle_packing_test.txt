@@ -1,0 +1,114 @@
+ 9 June 2020  10:43:40.368 AM
+ 
+circle_packing
+  FORTRAN90 version
+  Perform the circle packing test.
+ 
+  The data will be read from "halton_02_00010.txt".
+ 
+  The spatial dimension is      2
+ 
+  The number of points is     10
+ 
+ 
+ 
+  The input data file has been read.
+ 
+  Number of dimensions is      2
+  Number of points is     10
+  Circles are NOT required to stay in the unit square.
+ 
+  Average radius =  0.1196
+  Minimum radius =  0.0804
+  Maximum radius =  0.1672
+  Circle volume =   0.4837
+ 
+  Number of dimensions is      2
+  Number of points is     10
+  Circles are required to stay in the unit square.
+ 
+  Average radius =  0.1048
+  Minimum radius =  0.0370
+  Maximum radius =  0.2095
+  Circle volume =   0.4090
+ 
+circle_packing:
+  Normal end of execution.
+ 
+ 9 June 2020  10:43:40.368 AM
+ 9 June 2020  10:43:40.371 AM
+ 
+circle_packing
+  FORTRAN90 version
+  Perform the circle packing test.
+ 
+  The data will be read from "halton_02_00100.txt".
+ 
+  The spatial dimension is      2
+ 
+  The number of points is    100
+ 
+ 
+ 
+  The input data file has been read.
+ 
+  Number of dimensions is      2
+  Number of points is    100
+  Circles are NOT required to stay in the unit square.
+ 
+  Average radius =  0.0388
+  Minimum radius =  0.0202
+  Maximum radius =  0.0872
+  Circle volume =   0.5416
+ 
+  Number of dimensions is      2
+  Number of points is    100
+  Circles are required to stay in the unit square.
+ 
+  Average radius =  0.0338
+  Minimum radius =  0.0000
+  Maximum radius =  0.0749
+  Circle volume =   0.4067
+ 
+circle_packing:
+  Normal end of execution.
+ 
+ 9 June 2020  10:43:40.400 AM
+ 9 June 2020  10:43:40.402 AM
+ 
+circle_packing
+  FORTRAN90 version
+  Perform the circle packing test.
+ 
+  The data will be read from "halton_02_01000.txt".
+ 
+  The spatial dimension is      2
+ 
+  The number of points is   1000
+ 
+ 
+ 
+  The input data file has been read.
+ 
+  Number of dimensions is      2
+  Number of points is   1000
+  Circles are NOT required to stay in the unit square.
+ 
+  Average radius =  0.0107
+  Minimum radius =  0.0043
+  Maximum radius =  0.0316
+  Circle volume =   0.4299
+ 
+  Number of dimensions is      2
+  Number of points is   1000
+  Circles are required to stay in the unit square.
+ 
+  Average radius =  0.0103
+  Minimum radius =  0.0000
+  Maximum radius =  0.0278
+  Circle volume =   0.3959
+ 
+circle_packing:
+  Normal end of execution.
+ 
+ 9 June 2020  10:43:50.177 AM

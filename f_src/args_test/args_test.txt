@@ -1,0 +1,24 @@
+22 January 2020   1:20:45.377 PM
+ 
+ARGS
+  FORTRAN90 version
+ 
+  Demonstrate the use of command line argument
+  routines in a FORTRAN program.
+  These include GETARG and IARGC.
+ 
+  ARGS was called with IARGC() =        3 arguments.
+ 
+  CALL GETARG(I,ARG) returns the arguments:
+ 
+  I     ARG 
+ 
+    0  args                
+    1  1                   
+    2  apple               
+    3  3.1415              
+ 
+ARGS:
+  Normal end of execution.
+ 
+22 January 2020   1:20:45.377 PM

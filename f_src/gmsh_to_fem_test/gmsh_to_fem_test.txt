@@ -1,0 +1,20 @@
+11 July 2020   7:24:32.518 PM
+
+GMSH_TO_FEM
+  FORTRAN90 version:
+  Read a mesh description created by GMSH:
+  * "prefix".msh, the mesh data file.
+  Write two simple FEM files listing nodes and elements.
+  * "prefix"_nodes.txt, node coordinates.
+  * "prefix"_elements.txt, element connectivity.
+
+  Size information from GMSH files:
+  Spatial dimension M =    2
+  Number of nodes NODE_NUM =   21
+  Number of elements ELEMENT_NUM =   24
+  Element order ELEMENT_ORDER =    3
+
+GMSH_TO_FEM:
+  Normal end of execution.
+
+11 July 2020   7:24:32.519 PM

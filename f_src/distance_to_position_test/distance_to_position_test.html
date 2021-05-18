@@ -1,0 +1,138 @@
+<html>
+
+  <head>
+    <title>
+      DISTANCE_TO_POSITION - Estimate city positions from distance tables.
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      DISTANCE_TO_POSITION <br> Estimate city positions from distance tables.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>DISTANCE_TO_POSITION</b>,
+      a FORTRAN90 code which
+      estimates the positions of cities given a city-to-city distance table.
+    </p>
+
+    <p>
+      In 2D, the problem is singular.  In particular, the position of one
+      city is completely arbitrary, and one component of a second city is
+      completely arbitrary (and a third city's position can be "flipped"
+      about the line connecting cities one and two).  To remove some of this
+      singularity, the code assigns city #1 the position (0,0) and city #2
+      is given a 0 Y coordinate.  
+    </p>
+
+    <p>
+      In N-dimensional space, a similar set of constraints must be placed
+      on the first N cities, or the least squares solver is likely to fail.
+      (That is, we specify all N components of the first city to be 0, 
+      N-1 components of the second one, and so on, up to the N-th city
+      which has a single 0 component).
+    </p>
+
+    <p>
+      The computations carried out by this code assume that the cities
+      lie on a plane.  If the distance data is for international cities,
+      the effect of spherical geometry may make the planar approximation
+      very bad.
+    </p>
+
+    <p>
+      Once the nonlinear least squares problem is set up, the routine
+      UNCMIN from the NMS software package is called to compute a solution.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>distance_to_position</b> <i>distance.txt</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>distance.txt</i> is the distance information
+        </li>
+      </ul>
+      estimates the positions of the cities, and writes out a position table in 
+      <i>distance.coord.txt</i>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+    
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/distance_to_position/distance_to_position.html">
+      distance_to_position</a>,
+      a FORTRAN90 code which
+      estimates the positions of cities based on a city-to-city 
+      distance table.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "distance_to_position_test.sh">distance_to_position_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "distance_to_position_test.txt">distance_to_position_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "grid04_xy.txt">grid04_xy.txt</a>,
+          positions of 4 points on a grid.
+        </li>
+        <li>
+          <a href = "grid04_dist.txt">grid04_dist.txt</a>,
+          the distance table for the points.
+        </li>
+        <li>
+          <a href = "grid04_dist.coord.txt">grid04_dist.coord.txt</a>,
+          the estimated positions of the points, based on the distance table.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

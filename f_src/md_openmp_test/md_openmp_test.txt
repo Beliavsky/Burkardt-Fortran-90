@@ -1,0 +1,144 @@
+04 August 2020   3:36:37.402 PM
+ 
+MD_OPENMP
+  FORTRAN90/OpenMP version
+ 
+  A molecular dynamics program.
+ 
+  NP, the number of particles in the simulation is      500
+  STEP_NUM, the number of time steps, is     5000
+  DT, the size of each time step, is   0.100000E-01
+ 
+  The number of processors available is:        8
+  The number of threads available is:           1
+ 
+  Initializing positions, velocities, and accelerations.
+ 
+  Computing initial forces and energies.
+         0     124386.         0.00000         0.00000    
+       500     123981.         1095.87        0.555636E-02
+      1000     124477.         912.602        0.807068E-02
+      1500     124635.         830.109        0.867867E-02
+      2000     124692.         795.020        0.885796E-02
+      2500     124714.         782.491        0.893422E-02
+      3000     124731.         770.994        0.897231E-02
+      3500     124735.         769.281        0.899443E-02
+      4000     124740.         766.525        0.901179E-02
+      4500     124742.         766.600        0.902471E-02
+      5000     124745.         764.612        0.903441E-02
+ 
+  Elapsed time for main computation:
+     265.763     seconds
+ 
+MD_OPENMP
+  Normal end of execution.
+ 
+04 August 2020   3:41:03.226 PM
+04 August 2020   3:41:03.228 PM
+ 
+MD_OPENMP
+  FORTRAN90/OpenMP version
+ 
+  A molecular dynamics program.
+ 
+  NP, the number of particles in the simulation is      500
+  STEP_NUM, the number of time steps, is     5000
+  DT, the size of each time step, is   0.100000E-01
+ 
+  The number of processors available is:        8
+  The number of threads available is:           2
+ 
+  Initializing positions, velocities, and accelerations.
+ 
+  Computing initial forces and energies.
+         0     124410.         0.00000         0.00000    
+       500     123781.         1432.23        0.645283E-02
+      1000     124421.         1131.20        0.917963E-02
+      1500     124639.         979.203        0.971097E-02
+      2000     124694.         946.697        0.988942E-02
+      2500     124712.         938.860        0.997127E-02
+      3000     124726.         930.521        0.100183E-01
+      3500     124731.         930.054        0.100508E-01
+      4000     124738.         924.572        0.100692E-01
+      4500     124741.         923.896        0.100829E-01
+      5000     124744.         922.198        0.100929E-01
+ 
+  Elapsed time for main computation:
+     138.487     seconds
+ 
+MD_OPENMP
+  Normal end of execution.
+ 
+04 August 2020   3:43:21.743 PM
+04 August 2020   3:43:21.744 PM
+ 
+MD_OPENMP
+  FORTRAN90/OpenMP version
+ 
+  A molecular dynamics program.
+ 
+  NP, the number of particles in the simulation is      500
+  STEP_NUM, the number of time steps, is     5000
+  DT, the size of each time step, is   0.100000E-01
+ 
+  The number of processors available is:        8
+  The number of threads available is:           4
+ 
+  Initializing positions, velocities, and accelerations.
+ 
+  Computing initial forces and energies.
+         0     124424.         0.00000         0.00000    
+       500     123964.         1257.42        0.640301E-02
+      1000     124520.         998.399        0.879141E-02
+      1500     124675.         889.872        0.916927E-02
+      2000     124704.         872.451        0.926098E-02
+      2500     124723.         859.636        0.930825E-02
+      3000     124732.         854.850        0.933952E-02
+      3500     124736.         852.470        0.935964E-02
+      4000     124738.         853.048        0.937531E-02
+      4500     124742.         850.362        0.938640E-02
+      5000     124742.         851.027        0.939576E-02
+ 
+  Elapsed time for main computation:
+     73.0003     seconds
+ 
+MD_OPENMP
+  Normal end of execution.
+ 
+04 August 2020   3:44:34.765 PM
+04 August 2020   3:44:34.767 PM
+ 
+MD_OPENMP
+  FORTRAN90/OpenMP version
+ 
+  A molecular dynamics program.
+ 
+  NP, the number of particles in the simulation is      500
+  STEP_NUM, the number of time steps, is     5000
+  DT, the size of each time step, is   0.100000E-01
+ 
+  The number of processors available is:        8
+  The number of threads available is:           8
+ 
+  Initializing positions, velocities, and accelerations.
+ 
+  Computing initial forces and energies.
+         0     124396.         0.00000         0.00000    
+       500     123898.         1254.64        0.608224E-02
+      1000     124499.         997.525        0.884132E-02
+      1500     124663.         883.484        0.924154E-02
+      2000     124705.         858.992        0.938847E-02
+      2500     124712.         859.284        0.944323E-02
+      3000     124725.         850.481        0.947981E-02
+      3500     124729.         850.670        0.951001E-02
+      4000     124734.         848.896        0.953375E-02
+      4500     124739.         845.456        0.955066E-02
+      5000     124739.         846.923        0.956410E-02
+ 
+  Elapsed time for main computation:
+     51.5123     seconds
+ 
+MD_OPENMP
+  Normal end of execution.
+ 
+04 August 2020   3:45:26.291 PM

@@ -1,0 +1,147 @@
+<html>
+
+  <head>
+    <title>
+      LEBESGUE - Estimate the Lebesgue Constant
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LEBESGUE <br> Estimate the Lebesgue Constant
+    </h1>
+
+    <hr>
+ 
+    <p>
+      <b>LEBESGUE</b>,
+      a FORTRAN90 code which
+      is given a set of nodes in 1D, and
+      plots the Lebesgue function, and estimates the Lebesgue constant,
+      which measures the maximum magnitude of the potential error 
+      of Lagrange polynomial interpolation, and which uses gnuplot to
+      make plots of the Lebesgue function.
+    </p>
+
+    <p>
+      Any set of nodes in the real line X(I), for 1 <= I <= N, defines
+      a corresponding set of Lagrange basis functions:
+      <pre>
+        L(I)(X) = product ( 1 <= J <= N, J /= I ) ( X    - X(J) ) 
+                / product ( 1 <= J <= N, J /= I ) ( X(I) - X(J) )
+      </pre>
+      with the property that 
+      <pre>
+        L(I)(X(J)) = 0 if I /= J
+                     1 if I  = J
+      </pre>
+    </p>
+
+    <p>
+      The Lebesgue function is formed by the sum of the absolute values of
+      these Lagrange basis functions:
+      <pre>
+        LF(X) = sum ( 1 <= I <= N ) | L(I)(X) |
+      </pre>
+      and the Lebesgue constant LC is the maximum value of LF(X) over the
+      interpolation interval, which is typically X(1) to X(N), or
+      min ( X(*) ), max ( X(*) ), or [-1,+1], or some user-defined interval.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LEBESGUE</b> is available in
+      <a href = "../../c_src/lebesgue/lebesgue.html">a C version</a> and
+      <a href = "../../cpp_src/lebesgue/lebesgue.html">a C++ version</a> and
+      <a href = "../../f_src/lebesgue/lebesgue.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/lebesgue/lebesgue.html">a MATLAB version</a> and
+      <a href = "../../py_src/lebesgue/lebesgue.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      write data and command files so that gnuplot() can create plots.
+    </p>
+
+    <p>
+      <a href = "../../f_src/interp/interp.html">
+      INTERP</a>,
+      a FORTRAN90 code which
+      can be used for parameterizing and interpolating data;
+    </p>
+
+    <p>
+      <a href = "../../f_src/lebesgue_test/lebesgue_test.html">
+      lebesgue_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 code which
+      defines quadrature rules for approximating an integral over a 1D domain.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+    
+    <p>
+      <ol>
+        <li>
+          Jean-Paul Berrut, Lloyd Trefethen,<br>
+          Barycentric Lagrange Interpolation,<br>
+          SIAM Review,<br>
+          Volume 46, Number 3, September 2004, pages 501-517.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "lebesgue.f90">lebesgue.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "lebesgue.sh">lebesgue.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 25 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

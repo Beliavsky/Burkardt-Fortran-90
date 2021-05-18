@@ -1,0 +1,166 @@
+<html>
+
+  <head>
+    <title>
+      colored_noise_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      colored_noise_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>colored_noise_test</b>,
+      a FORTRAN90 code which
+      calls colored_noise(), which
+      generates sequences that simulate 
+      1/f^alpha power law noise.  This includes white noise (alpha = 0),
+      pink noise (alpha = 1) and brown noise or Brownian motion (alpha = 2),
+      but also values of alpha between 0 and 2.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/colored_noise/colored_noise.html">
+      colored_noise</a>,
+      a FORTRAN90 code which
+      generates samples of colored noise obeying a 1/f^alpha power law.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "colored_noise_test.f90">colored_noise_test.f90</a>
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "colored_noise_test.sh">colored_noise_test.sh</a>
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "colored_noise_test.txt">colored_noise_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ALPHA</b> is a sequence of 9 sets of data, for ALPHA = 0.00 to ALPHA
+      = 2.00, each time computing a sequence of 128 values, and using the
+      same sequence of random numbers.  This makes the effect of ALPHA
+      very clear.
+      <ul>
+        <li>
+          <a href = "make_plots.m">make_plots.m</a>
+          a MATLAB program which reads the "txt" files and makes plots.
+        </li>
+        <li>
+          <a href = "alpha_0.00.txt">alpha_0.00.txt</a>
+          values for ALPHA = 0.00.
+        </li>
+        <li>
+          <a href = "alpha_0.00.png">alpha_0.00.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_0.25.txt">alpha_0.25.txt</a>
+          values for ALPHA = 0.25.
+        </li>
+        <li>
+          <a href = "alpha_0.25.png">alpha_0.25.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_0.50.txt">alpha_0.50.txt</a>
+          values for ALPHA = 0.50.
+        </li>
+        <li>
+          <a href = "alpha_0.50.png">alpha_0.50.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_0.75.txt">alpha_0.75.txt</a>
+          values for ALPHA = 0.75.
+        </li>
+        <li>
+          <a href = "alpha_0.75.png">alpha_0.75.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_1.00.txt">alpha_1.00.txt</a>
+          values for ALPHA = 1.00.
+        </li>
+        <li>
+          <a href = "alpha_1.00.png">alpha_1.00.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_1.25.txt">alpha_1.25.txt</a>
+          values for ALPHA = 1.25.
+        </li>
+        <li>
+          <a href = "alpha_1.25.png">alpha_1.25.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_1.50.txt">alpha_1.50.txt</a>
+          values for ALPHA = 1.50.
+        </li>
+        <li>
+          <a href = "alpha_1.50.png">alpha_1.50.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_1.75.txt">alpha_1.75.txt</a>
+          values for ALPHA = 1.75.
+        </li>
+        <li>
+          <a href = "alpha_1.75.png">alpha_1.75.png</a>,
+          a plot.
+        </li>
+        <li>
+          <a href = "alpha_2.00.txt">alpha_2.00.txt</a>
+          values for ALPHA = 2.00.
+        </li>
+        <li>
+          <a href = "alpha_2.00.png">alpha_2.00.png</a>,
+          a plot.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

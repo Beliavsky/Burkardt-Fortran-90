@@ -1,0 +1,33 @@
+12 June 2020   6:51:02.001 AM
+
+COSINE_TRANSFORM_TEST
+  MATLAB version.
+  Test the COSINE_TRANSFORM library.
+
+COSINE_TRANSFORM_TEST01:
+  COSINE_TRANSFORM_DATA does a cosine transform of data
+  defined by a vector.
+
+  Apply the transform, then its inverse.
+  Let R be a random N vector.
+  Let S be the transform of D.
+  Let T be the transform of E.
+  Then R and T will be equal.
+
+     I      R(I)        S(I)        T(I)
+
+     1    0.218418    1.830309    0.218418
+     2    0.956318    0.493766    0.956318
+     3    0.829509    0.205323    0.829509
+     4    0.561695   -0.534515    0.561695
+     5    0.415307   -0.189003    0.415307
+     6    0.066119   -0.440911    0.066119
+     7    0.257578    0.020582    0.257578
+     8    0.109957   -0.377745    0.109957
+     9    0.043829   -0.053802    0.043829
+    10    0.633966    0.046265    0.633966
+
+COSINE_TRANSFORM_TEST
+  Normal end of execution.
+
+12 June 2020   6:51:02.001 AM

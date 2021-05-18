@@ -1,0 +1,17 @@
+STOP f90_stop_test1: fatal error, sum exceeds 250.
+20 May 2020  12:04:29.197 PM
+ 
+f90_stop_test1
+  FORTRAN90 version
+  Demonstrate how a FORTRAN90 program can print a
+  message when a STOP is executed.
+STOP 13
+20 May 2020  12:04:29.247 PM
+ 
+f90_stop_test2
+  FORTRAN90 version
+  Demonstrate how a FORTRAN90 program can return an
+  integer program status value to the calling environment.
+ 
+f90_stop_test2 - Fatal error!
+  Sum exceeds 250.

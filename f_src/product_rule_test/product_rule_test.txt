@@ -1,0 +1,20 @@
+August 19 2020   9:14:19.917 PM
+ 
+PRODUCT_RULE
+  FORTRAN90 version
+ 
+  Create a multidimensional product rule
+  as a product of distinct 1D integration rules.
+ 
+  Number of points in 1D rule =        3
+ 
+  Number of points in 1D rule =        2
+ 
+  Creating product quadrature rule X file = "ccgl_d2_o3x2_x.txt".
+  Creating product quadrature rule W file = "ccgl_d2_o3x2_w.txt".
+  Creating product quadrature rule R file = "ccgl_d2_o3x2_r.txt".
+ 
+PRODUCT_RULES:
+  Normal end of execution.
+ 
+August 19 2020   9:14:19.919 PM

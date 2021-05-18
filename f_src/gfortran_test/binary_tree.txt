@@ -1,0 +1,44 @@
+ 
+January 23 2020  10:48:45.903 AM
+ 
+BINARY_TREE:
+  FORTRAN90 version.
+ 
+  Demonstrate how pointers can be used to define
+  and manipulate a binary tree.
+ 
+TEST01
+  Create, one at a time, a sequence of integers.
+  As each integer is created, insert it into a sorted
+  binary tree.  Print the binary tree at the end.
+ 
+  Initial data generation:
+ 
+         1       953
+         2       895
+         3       220
+         4       492
+         5       698
+         6       355
+         7        10
+         8        60
+         9       988
+        10       115
+ 
+  Contents of sorted binary tree:
+ 
+         7        10
+         8        60
+        10       115
+         3       220
+         6       355
+         4       492
+         5       698
+         2       895
+         1       953
+         9       988
+ 
+BINARY_TREE:
+  Normal end of execution.
+ 
+January 23 2020  10:48:45.903 AM

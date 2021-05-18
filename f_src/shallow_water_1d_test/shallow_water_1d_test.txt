@@ -1,0 +1,22 @@
+26 August 2020  11:32:48.280 AM
+ 
+SHALLOW_WATER_1D
+  FORTRAN90 version
+ 
+  NX =     41
+  NT =    100
+  X_LENGTH =    1.00000    
+  T_LENGTH =   0.200000    
+  G =    9.80000    
+ DX =    2.5000000000000001E-002
+ DT =    2.0000000000000000E-003
+ 
+  X  values saved in file "sw1d_x.txt".
+  T  values saved in file "sw1d_t.txt".
+  H  values saved in file "sw1d_h.txt".
+  UH values saved in file "sw1d_uh.txt".
+ 
+SHALLOW_WATER_1D:
+  Normal end of execution.
+ 
+26 August 2020  11:32:48.288 AM

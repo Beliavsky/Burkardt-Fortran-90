@@ -1,0 +1,128 @@
+<html>
+
+  <head>
+    <title>
+      SPARSE_DISPLAY - Sparsity Pattern of a Matrix
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SPARSE_DISPLAY <br> Sparsity Pattern of a Matrix
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SPARSE_DISPLAY</b>,
+      a FORTRAN90 code which
+      can read information defining a matrix of numbers and display
+      the sparsity pattern or location of the nonzero elements using
+      gnuplot.  This operation is already available in the built-in 
+      MATLAB "spy" command.
+    </p>
+
+    <p>
+      The user can call "spy_ge" and pass in a matrix, in general (GE) format;
+      the routine will then locate the nonzero entries, and write out a
+      data file and a command file which together can be used to instruct
+      gnuplot to create a sparsity plot.
+    </p>
+
+    <p>
+      If the user already has a file containing a list of pairs of indices
+      (I,J) corresponding to nonzero matrix entries, then the user can call 
+      "spy_file", which will write out a command file only.  Together, the
+      user data file and the command file can be used to instruct
+      gnuplot to create a sparsity plot.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SPARSE_DISPLAY</b> is available in
+      <a href = "../../c_src/sparse_display/sparse_display.html">a C version</a> and
+      <a href = "../../cpp_src/sparse_display/sparse_display.html">a C++ version</a> and
+      <a href = "../../f_src/sparse_display/sparse_display.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/sparse_display/sparse_display.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cg/cg.html">
+      CG</a>,
+      a FORTRAN90 code which
+      implements a simple version of the conjugate gradient (CG) method
+      for solving a system of linear equations of the form A*x=b, 
+      suitable for situations in which the matrix A is positive definite
+      (only real, positive eigenvalues) and symmetric.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      write data and command files so that gnuplot() can create plots.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sparse_display_test/sparse_display_test.html">
+      sparse_display_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/wathen/wathen.html">
+      WATHEN</a>,
+      a FORTRAN90 code which
+      compares storage schemes (full, banded, sparse triplet) and 
+      solution strategies (Linpack full, Linpack banded, 
+      conjugate gradient (CG)) for linear systems involving the Wathen matrix,
+      which can arise when solving a problem using the 
+      finite element method (FEM).
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sparse_display.f90">sparse_display.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "sparse_display.sh">sparse_display.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 28 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

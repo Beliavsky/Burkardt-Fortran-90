@@ -1,0 +1,105 @@
+<html>
+
+  <head>
+    <title>
+      fem1d_project_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem1d_project_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem1d_project_test</b>,
+      a FORTRAN90 program which
+      calls fem1d_project(), which
+      computes the projection of data onto a given 1D finite element mesh.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem1d_project/fem1d_project.html">
+      fem1d_project</a>,
+      a FORTRAN90 code which
+      projects a function into a function space associated with the 
+      finite element method (FEM), using least squares or projection
+      methods, especially for cases in which data must be transferred
+      from one mesh to another.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem1d_project_test.sh">fem1d_project_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem1d_project_test.txt">fem1d_project_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>POWERS</b> starts with sample data for the vector function f(x)=[ 1, x, x^2], on a grid
+      of 11 equally spaced nodes from 0 to 10, and projects this onto a piecewise linear
+      grid of 6 equally spaced nodes from 0 to 10.
+      <ul>
+        <li>
+          <a href = "sample_powers_nodes.txt">sample_powers_nodes.txt</a>,
+          the sample nodes.
+        </li>
+        <li>
+          <a href = "sample_powers_values.txt">sample_powers_values.txt</a>,
+          the sample nodal values.
+        </li>
+        <li>
+          <a href = "fem_powers_nodes.txt">fem_powers_nodes.txt</a>,
+          the FEM nodes.
+        </li>
+        <li>
+          <a href = "fem_powers_elements.txt">fem_powers_elements.txt</a>,
+          the FEM elements.
+        </li>
+        <li>
+          <a href = "fem_powers_values.txt">fem_powers_values.txt</a>,
+          the projected FEM nodal values.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

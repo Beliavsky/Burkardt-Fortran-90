@@ -1,0 +1,292 @@
+<html>
+
+  <head>
+    <title>
+      TEST_TET_MESH - Mesh Generation Test Regions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_TET_MESH <br> Mesh Generation Test Regions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_TET_MESH</b>,
+      a FORTRAN90 code which
+      sets test problems for mesh generation ("tetrahedralization")
+      in 3D.
+    </p>
+
+    <p>
+      As far as possible, a uniform and abstract approach has been used.
+      For each test region, a number of routines are provided, via which
+      it is possible for the user to determine many things about the region.
+      Often, just one or two routines would be needed for a particular
+      purpose.  The names of the routines, and their purposes are:
+      <ul>
+        <li>
+          <b>BOUNDARY_NEAREST:</b> returns the nearest point on the boundary
+          of the region to a given point or set of points;
+        </li>
+        <li>
+          <b>BOUNDARY_PROJECT:</b> projects exterior points onto the boundary.
+        </li>
+        <li>
+          <b>BOUNDARY_SEGMENT:</b> returns a sequence of roughly equally spaced
+          points that lie on one particular boundary segment;
+        </li>
+        <li>
+          <b>BOUNDARY_SEGMENT_LENGTH:</b> returns the "length" (number of
+          nodes) of a particular boundary segment.  This simply counts
+          the number of points needed to trace or approximate the
+          boundary segment;
+        </li>
+        <li>
+          <b>BOUNDARY_SEGMENT_NUM:</b> returns the number of boundary segments.
+          Simple regions have one boundary segment.  A region with one hole
+          has two, and so on;
+        </li>
+        <li>
+          <b>BOX:</b> returns a bounding box for the region.  All points in
+          the region are within this box;
+        </li>
+        <li>
+          <b>DENSITY:</b> the value of the mesh density function at any
+          point in the region.  If this is not constant, then high values
+          correspond to places where many more mesh points should be placed;
+        </li>
+        <li>
+          <b>ELEMENT_SIZE:</b> returns a requested typical element size.  This
+          refers to the average size of the triangles formed by a triangulation
+          of the points;
+        </li>
+        <li>
+          <b>FIXED_NUM:</b> returns the number of points which must be
+          included as nodes of the mesh (which may be zero);
+        </li>
+        <li>
+          <b>FIXED_POINTS:</b> returns the coordinates of the points which
+          must be included as nodes of the mesh;
+        </li>
+        <li>
+          <b>HEADER:</b> prints a brief description of the problem;
+        </li>
+        <li>
+          <b>HOLE_NUM:</b> returns the number of "holes" in the region;
+        </li>
+        <li>
+          <b>HOLE_POINT:</b> returns the coordinates of one point in a hole
+          (useful when TRIANGLE is to be invoked);
+        </li>
+        <li>
+          <b>INSIDE:</b> reports which of a given set of points are
+          inside the region.
+        </li>
+        <li>
+          <b>SAMPLE:</b> returns a set of sample points from the region,
+          chosen with uniform probability;
+        </li>
+        <li>
+          <b>SDIST:</b> returns the signed distance to the boundary of
+          the region for each of a set of input points.
+          (a positive distance means the point is outside the region,
+           a negative distance means it is inside);
+          <i>(Not ready for problems 4, 5, 6, 7, 8, 9 )</i>
+        </li>
+        <li>
+          <b>TITLE:</b> a title for the problem;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The test problems include:
+      <ol>
+        <li>
+          The 3x1x1 channel;
+        </li>
+        <li>
+          The vertical cylinder, R = 1, H = 4;
+        </li>
+        <li>
+          The unit cube;
+        </li>
+        <li>
+          The unit sphere;
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      MATLAB has a command
+      <b>delaunay3()</b> that can compute the tet mesh for a set of 3D points.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_TET_MESH</b> is available in
+      <a href = "../../f_src/test_tet_mesh/test_tet_mesh.html">a FORTRAN90 version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt_tet_mesh/cvt_tet_mesh.html">
+      CVT_TET_MESH</a>,
+      a FORTRAN90 code which
+      uses CVT methods to compute a tet mesh in a region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/geompack/geompack.html">
+      GEOMPACK</a>,
+      a FORTRAN90 code which
+      contains a routine
+      <b>DTRIS3</b> that can compute the tet mesh for a set of 3D points,
+      as well as the adjacency information.
+    </p>
+
+    <p>
+      <a href = "../../f_src/keast/keast.html">
+      KEAST</a>,
+      a FORTRAN90 code which
+      defines a number of quadrature rules
+      for a tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_tet_mesh/table_tet_mesh.html">
+      TABLE_TET_MESH</a>,
+      a FORTRAN90 code which
+      can compute the tet mesh for a given set of points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_tet_mesh_test/test_tet_mesh_test.html">
+      test_tet_mesh_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh/tet_mesh.html">
+      TET_MESH</a>,
+      a FORTRAN90 code which
+      is useful for tet mesh calculations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_l2q/tet_mesh_l2q.html">
+      TET_MESH_L2Q</a>,
+      a FORTRAN90 code which
+      converts a linear to quadratic tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order4/tet_mesh_order4.html">
+      TET_MESH_ORDER4</a>,
+      a data directory which
+      contains a description and
+      examples of a tet mesh using order 4 elements.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order10/tet_mesh_order10.html">
+      TET_MESH_ORDER10</a>,
+      a data directory which
+      contains a description and
+      examples of a tet mesh using order 10 elements.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_q2l/tet_mesh_q2l.html">
+      TET_MESH_Q2L</a>,
+      a FORTRAN90 code which
+      converts a quadratic to linear tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a FORTRAN90 code which
+      computes the quality of a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_rcm/tet_mesh_rcm.html">
+      TET_MESH_RCM</a>,
+      a FORTRAN90 code which
+      takes a tet mesh and
+      relabels the nodes to reduce the bandwidth of the
+      corresponding adjacency matrix.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">
+      TET_MESH_TET_NEIGHBORS</a>,
+      a FORTRAN90 code which
+      computes the tetrahedral adjacency information.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, June 2004, pages 329-345.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_tet_mesh.f90">test_tet_mesh.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "test_tet_mesh.sh">test_tet_mesh.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 05 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

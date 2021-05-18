@@ -1,0 +1,9 @@
+input
+panjandrum.txt
+output
+all_caps.txt
+icap
+1
+go
+quit
+

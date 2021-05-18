@@ -1,0 +1,19 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:23:30  Pageformat: USAP  <<
+ <<  Vectors : 4949        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex14.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+23 January 2020  10:23:30.617 AM
+ 
+EX14:
+  FORTRAN90 version
+  Demonstrate the use of TeX instructions to
+  create mathematical formulas.
+ 
+EX14:
+  Normal end of execution.
+ 
+23 January 2020  10:23:30.624 AM

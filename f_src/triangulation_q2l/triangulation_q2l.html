@@ -1,0 +1,276 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_Q2L - 6-Node Triangulation to 3-Node Triangulation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_Q2L <br> 6-Node Triangulation to 3-Node Triangulation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_Q2L</b>,
+      a FORTRAN90 code which
+      reads information 
+      describing a triangulation of a set of points using 6-node
+      ("quadratic") triangles, and creates a 3-node ("linear")
+      triangulation.
+    </p>
+
+    <p>
+      The same nodes are used, but each 6-node triangle is broken
+      up into four smaller 3-node triangles.
+    </p>
+
+    <p>
+      Thus, the program might be given the following 4 triangles:
+      <pre>
+        11-12-13-14-15
+         |\    |\    |
+         | \   | \   |
+         6  7  8  9 10
+         |   \ |   \ |
+         |    \|    \|
+         1--2--3--4--5
+      </pre>
+    </p>
+
+    <p>
+      It would make a new triangulation involving 16 triangles:
+      <pre>
+        11-12-13-14-15
+         |\ |\ |\ |\ |
+         | \| \| \| \|
+         6--7--8--9-10
+         |\ |\ |\ |\ |
+         | \| \| \| \|
+         1--2--3--4--5
+      </pre>
+    </p>
+
+    <p> 
+      The input and output files use the simple TABLE format;
+      comment lines begin with a "#" character.  Otherwise, each line
+      of the file contains one set of information, either the coordinates
+      of a node (for a node file), or the indices of nodes that make up
+      a triangle, (for a triangle file).
+    </p>
+
+    <p> 
+      The input file <i>prefix</i>_elements.txt</i> contains the triangle information
+      for the 6-node triangulation.  Each line contains the indices of six
+      nodes that form a triangle, in counterclockwise order.  The first three
+      indices are the vertices, in counterclockwise order.  The fourth
+      index is the midside node between vertices 1 and 2, the fifth
+      the midside between vertices 2 and 3, and the sixth the midside
+      between vertices 3 and 1.  
+    </p>
+
+    <p> 
+      The output file <i>prefix</i>_q2l_elements.txt contains the triangle 
+      information for the 3-node triangulation.  The vertices for
+      each triangle are listed in counterclockwise order.  There are
+      4 times as many triangles in this triangulation.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_q2l</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common filename prefix:
+      <ul>
+        <li>
+          <i>prefix</i>_nodes.txt contains the node coordinates (not needed by this program),
+        </li>
+        <li>
+          <i>prefix</i>_elements.txt contains the quadratic element definitions.
+        </li>
+        <li>
+          <i>prefix</i>_q2l_elements.txt will contain the linear element 
+          definitions, based on the same set of nodes.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_Q2L</b> is available in
+      <a href = "../../cpp_src/triangulation_q2l/triangulation_q2l.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation_q2l/triangulation_q2l.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_q2l/triangulation_q2l.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/mesh_to_xml/mesh_to_xml.html">
+      MESH_TO_XML</a>,
+      a FORTRAN90 code which
+      reads information defining a 1D, 2D or 3D mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding XML file for input
+      to DOLFIN or FENICS.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation/triangulation.html">
+      TRIANGULATION</a>,
+      a FORTRAN90 code which
+      carries out various operations on order 3 ("linear") or order 6 
+      ("quadratic") triangulations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_boundary_nodes/triangulation_boundary_nodes.html">
+      TRIANGULATION_BOUNDARY_NODES</a>,
+      a FORTRAN90 code which
+      reads data defining a triangulation, determines which nodes
+      lie on the boundary, and writes their coordinates to a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_histogram/triangulation_histogram.html">
+      TRIANGULATION_HISTOGRAM</a>, 
+      a FORTRAN90 code which 
+      computes histograms of data over a triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_l2q/triangulation_l2q.html">
+      TRIANGULATION_L2Q</a>,
+      a FORTRAN90 code which
+      reads data defining a 3-node triangulation and generates
+      midside nodes and writes out the corresponding 6-node triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_mask/triangulation_mask.html">
+      TRIANGULATION_MASK</a>, 
+      a FORTRAN90 code which
+      takes an existing triangulation and deletes triangles and
+      their corresponding nodes as requested by the user.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_node_to_element/triangulation_node_to_element.html">
+      TRIANGULATION_NODE_TO_ELEMENT</a>,
+      a FORTRAN90 code which 
+      reads files describing a set of nodes, their triangulation, and the
+      value of one or more quantities at each node, and outputs a file
+      that averages the quantities for each element.  This operation 
+      in effect creates an "order1" finite element model of the data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_orient/triangulation_orient.html">
+      TRIANGULATION_ORIENT</a>, 
+      a FORTRAN90 code which
+      reads data defining a triangulation, makes sure that
+      every triangle has positive orientation, and if not, writes a
+      corrected triangle file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_plot/triangulation_plot.html">
+      TRIANGULATION_PLOT</a>, 
+      a FORTRAN90 code which
+      reads data defining a triangulation and creates a
+      PostScript image of the nodes and triangles.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quad/triangulation_quad.html">
+      TRIANGULATION_QUAD</a>, 
+      a FORTRAN90 code which
+      estimates the integral of a function over a triangulated region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_q2l_test/triangulation_q2l_test.html">
+      triangulation_q2l_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quality/triangulation_quality.html">
+      TRIANGULATION_QUALITY</a>, 
+      a FORTRAN90 code which
+      reads data defining a triangulation and computes a number
+      of quality measures.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Marc deBerg, Marc Krevald, Mark Overmars,
+          Otfried Schwarzkopf,<br>
+          Computational Geometry,<br>
+          Springer, 2000.
+        </li>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry,<br>
+          Cambridge University Press,<br>
+          Second Edition, 1998.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_q2l.f90">triangulation_q2l.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "triangulation_q2l.sh">triangulation_q2l.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

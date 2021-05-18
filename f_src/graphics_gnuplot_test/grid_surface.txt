@@ -1,0 +1,12 @@
+22 July 2020  10:30:33.077 AM
+
+grid_surface:
+  FORTRAN90 version
+  Make a surface plot Z(X,Y) for a 41x41 table.
+ 
+  grid_surface: data stored in "grid_surface_data.txt".
+  grid_surface: plot commands stored in "grid_surface_commands.txt".
+
+grid_surface:
+  Normal end of execution.
+22 July 2020  10:30:33.080 AM

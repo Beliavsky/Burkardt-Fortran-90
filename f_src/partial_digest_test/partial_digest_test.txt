@@ -1,0 +1,225 @@
+ 4 August 2020  10:26:58.644 AM
+ 
+PARTIAL_DIGEST_TEST:
+  FORTRAN90 version
+  Test the PARTIAL_DIGEST library.
+
+FIND_DISTANCES_TEST:
+  FIND_DISTANCES takes a candidate location Y
+  and determines whether its distance to each point
+  in the X array is listed in the L array.
+ 
+  Initial L array:
+ 
+         1            13
+         2            15
+         3            38
+         4            90
+         5             2
+         6            25
+         7            77
+         8            23
+         9            75
+        10            52
+
+  Consider Y =   77
+
+  This Y is acceptable
+ 
+  New X array:
+ 
+         1             0
+         2            90
+         3            77
+ 
+  New L array:
+ 
+         1            52
+         2            15
+         3            38
+         4             2
+         5            25
+         6            23
+         7            75
+
+  Consider Y =   35
+
+  This Y is not acceptable
+ 
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values 
+  in an interval [A,B].
+ 
+  The lower endpoint A =         -100
+  The upper endpoint B =          200
+  The initial seed is    123456789
+ 
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+ 
+I4VEC_MAX_LAST_TEST
+  I4VEC_MAX_LAST identifies the largest element in an
+  I4VEC, and moves it to the final entry.
+ 
+  Input vector:
+ 
+         1             7
+         2            29
+         3            25
+         4            17
+         5            13
+         6             2
+         7             8
+         8             4
+         9             2
+        10            20
+ 
+  Maximum:                        29
+ 
+  Output vector:
+ 
+         1             7
+         2            25
+         3            17
+         4            13
+         5             2
+         6             8
+         7             4
+         8             2
+         9            20
+        10            29
+ 
+I4VEC_PRINT_TEST
+  I4VEC_PRINT prints an I4VEC
+ 
+  The I4VEC:
+ 
+         1            91
+         2            92
+         3            93
+         4            94
+
+PARTIAL_DIGEST_RECUR_TEST01
+  PARTIAL_DIGEST_RECUR generates solutions to the partial
+  digest problem, using recursion
+
+  The number of objects to place is N =        5
+
+  The original placement was 0,3,6,8,10.
+  These placements generate the following distances:
+ 
+  Distance array:
+ 
+         1             2
+         2             2
+         3             3
+         4             3
+         5             4
+         6             5
+         7             6
+         8             7
+         9             8
+        10            10
+
+  PARTIAL_DIGEST_RECUR may recover the original placements
+  from the pairwise distances.  It may also find other
+  placements that have the same distance array.
+ 
+  Solution:
+ 
+         1             0
+         2            10
+         3             8
+         4             3
+         5             6
+ 
+  Solution:
+ 
+         1             0
+         2            10
+         3             2
+         4             7
+         5             4
+ 4 August 2020  10:26:58.644 AM
+
+PARTIAL_DIGEST_RECUR_TEST02:
+  PARTIAL_DIGEST_RECUR generates solutions to the partial
+  digest problem, using recursion
+  TEST_PARTIAL_DIGEST creates test problems for the
+  partial digest problem.
+
+  Number of nodes =    6
+  Maximum distance =   20
+ 
+  Locations:
+ 
+         1             0
+         2             5
+         3            12
+         4            17
+         5            19
+         6            20
+ 
+  Distances:
+ 
+         1             1
+         2             2
+         3             3
+         4             5
+         5             5
+         6             7
+         7             7
+         8             8
+         9            12
+        10            12
+        11            14
+        12            15
+        13            17
+        14            19
+        15            20
+ 
+  Solution:
+ 
+         1             0
+         2            20
+         3            19
+         4            17
+         5             5
+         6            12
+ 
+  Solution:
+ 
+         1             0
+         2            20
+         3             1
+         4             3
+         5            15
+         6             8
+
+PARTIAL_DIGEST_RECUR_TEST02:
+  Normal end of execution.
+
+ 4 August 2020  10:26:58.645 AM
+ 
+PARTIAL_DIGEST_TEST:
+  Normal end of execution.
+ 
+ 4 August 2020  10:26:58.645 AM

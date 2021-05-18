@@ -1,0 +1,260 @@
+ 1 August 2020   9:44:29.523 PM
+ 
+NORMAL_TEST
+  FORTRAN90 version;
+  Test the NORMAL library.
+ 
+C4_NORMAL_01_TEST
+  C4_NORMAL_01 computes pseudorandom complex values 
+  with a Normal 01 circular distribution.
+ 
+  SEED =    123456789
+ 
+         1      1.67904043     -0.47276828
+         2     -0.56605971     -0.23112425
+         3      1.21293426      0.53503716
+         4      1.26938057      1.04954267
+         5     -1.66608632     -1.86522818
+         6     -2.24246383      0.73580933
+         7      0.03967521     -1.35073555
+         8      0.67306828      0.00777484
+         9     -0.27512738      0.37494034
+        10      2.16400480      0.18559982
+ 
+C8_NORMAL_01_TEST
+  C8_NORMAL_01 computes pseudorandom double precision
+  complex values with Normal 01 circular distribution.
+ 
+  SEED =    123456789
+ 
+         1      1.67904026     -0.47276880
+         2     -0.56605981     -0.23112413
+         3      1.21293422      0.53503714
+         4      1.26938063      1.04954267
+         5     -1.66608667     -1.86522772
+         6     -2.24246404      0.73580928
+         7      0.03967492     -1.35073558
+         8      0.67306820      0.00777484
+         9     -0.27512735      0.37494027
+        10      2.16400479      0.18559983
+
+I4_NORMAL_AB_TEST
+  I4_NORMAL_AB computes integer pseudonormal values 
+  with mean MU and standard deviation SIGMA.
+
+  MU =    70.0000    
+  SIGMA =    10.0000    
+  SEED =    123456789
+
+         1        87
+         2        64
+         3        82
+         4        83
+         5        53
+         6        48
+         7        70
+         8        77
+         9        67
+        10        92
+ 
+R4_NORMAL_01_TEST
+  R4_NORMAL_01 computes normal pseudorandom values 
+  with mean 0.0 and standard deviation 1.0.
+ 
+  SEED =    123456789
+ 
+         1      1.67904043
+         2     -0.56605971
+         3      1.21293426
+         4      1.26938057
+         5     -1.66608632
+         6     -2.24246383
+         7      0.03967521
+         8      0.67306828
+         9     -0.27512738
+        10      2.16400480
+ 
+R4_NORMAL_AB_TEST
+  R4_NORMAL_AB computes real pseudonormal values 
+  with mean MU and standard deviation SIGMA.
+ 
+  MU =    10.0000    
+  SIGMA =    2.00000    
+  SEED =    123456789
+ 
+         1     13.35808086
+         2      8.86788082
+         3     12.42586899
+         4     12.53876114
+         5      6.66782761
+         6      5.51507235
+         7     10.07935047
+         8     11.34613609
+         9      9.44974518
+        10     14.32800961
+ 
+R4_UNIFORM_01_TEST
+  R4_UNIFORM_01 samples a uniform random
+  distribution in [0,1].
+ 
+  SEED =    123456789
+
+   1    0.218418    
+   2    0.956318    
+   3    0.829509    
+   4    0.561695    
+   5    0.415307    
+   6    0.661187E-01
+   7    0.257578    
+   8    0.109957    
+   9    0.438290E-01
+  10    0.633966    
+ 
+R8_NORMAL_01_TEST
+  R8_NORMAL_01 computes pseudonormal values 
+  with mean 0.0 and standard deviation 1.0.
+ 
+  SEED =    123456789
+ 
+         1     1.67904    
+         2   -0.566060    
+         3     1.21293    
+         4     1.26938    
+         5    -1.66609    
+         6    -2.24246    
+         7    0.396749E-01
+         8    0.673068    
+         9   -0.275127    
+        10     2.16400    
+ 
+R8_NORMAL_AB_TEST
+  R8_NORMAL_AB computes pseudonormal values 
+  with mean MU and standard deviation SIGMA.
+ 
+  MU =    10.0000    
+  SIGMA =    2.00000    
+  SEED =    123456789
+ 
+         1     13.35808051
+         2      8.86788038
+         3     12.42586843
+         4     12.53876126
+         5      6.66782665
+         6      5.51507192
+         7     10.07934984
+         8     11.34613639
+         9      9.44974530
+        10     14.32800958
+ 
+R8_UNIFORM_01_TEST
+  R8_UNIFORM_01 samples a uniform random
+  distribution in [0,1].
+ 
+  SEED =    123456789
+
+   1    0.218418    
+   2    0.956318    
+   3    0.829509    
+   4    0.561695    
+   5    0.415307    
+   6    0.661187E-01
+   7    0.257578    
+   8    0.109957    
+   9    0.438290E-01
+  10    0.633966    
+ 
+R8MAT_NORMAL_01_TEST
+  R8MAT_NORMAL_01 returns a matrix of Normal 01 values.
+ 
+  SEED =    123456789
+ 
+  Matrix of Normal 01 values:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1:   1.67904      0.535037      -2.24246      0.777484E-02
+    2: -0.472769       1.26938      0.735809     -0.275127    
+    3: -0.566060       1.04954      0.396749E-01  0.374940    
+    4: -0.231124      -1.66609      -1.35074       2.16400    
+    5:   1.21293      -1.86523      0.673068      0.185600    
+ 
+R8MAT_NORMAL_AB_TEST
+  R8MAT_NORMAL_AB returns a matrix of Normal AB values.
+ 
+  MU =    100.000    
+  SIGMA =    5.00000    
+  SEED =    123456789
+ 
+  Matrix of Normal AB values:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1:   108.395       102.675       88.7877       100.039    
+    2:   97.6362       106.347       103.679       98.6244    
+    3:   97.1697       105.248       100.198       101.875    
+    4:   98.8444       91.6696       93.2463       110.820    
+    5:   106.065       90.6739       103.365       100.928    
+ 
+R8VEC_NORMAL_01_TEST
+  R8VEC_NORMAL_01 computes a vector of Normal 01 values.
+ 
+  SEED =    123456789
+ 
+  Vector of Normal 01 values:
+ 
+         1:    1.6790403    
+         2:  -0.47276880    
+         3:  -0.56605981    
+         4:  -0.23112413    
+         5:    1.2129342    
+         6:   0.53503714    
+         7:    1.2693806    
+         8:    1.0495427    
+         9:   -1.6660867    
+        10:   -1.8652277    
+ 
+R8VEC_NORMAL_AB_TEST
+  R8VEC_NORMAL_AB computes a vector of Normal AB values.
+ 
+  MU =    15.0000    
+  SIGMA =   0.250000    
+  SEED =    123456789
+ 
+  Vector of Normal AB values:
+ 
+         1:    15.419760    
+         2:    14.881808    
+         3:    14.858485    
+         4:    14.942219    
+         5:    15.303234    
+         6:    15.133759    
+         7:    15.317345    
+         8:    15.262386    
+         9:    14.583478    
+        10:    14.533693    
+ 
+R8VEC_UNIFORM_01_TEST
+  R8VEC_UNIFORM_01 returns a random R8VEC 
+  with entries in [0,1].
+ 
+  SEED =    123456789
+ 
+  Random R8VEC:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+         8:   0.10995679    
+         9:   0.43828998E-01
+        10:   0.63396571    
+ 
+NORMAL_TEST
+  Normal end of execution.
+ 
+ 1 August 2020   9:44:29.523 PM

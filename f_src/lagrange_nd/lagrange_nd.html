@@ -1,0 +1,192 @@
+<html>
+
+  <head>
+    <title>
+      LAGRANGE_ND - Multivariate Lagrange Interpolation
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      LAGRANGE_ND <br> Multivariate Lagrange Interpolation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LAGRANGE_ND</b>,
+      a FORTRAN90 code which
+      is given a set of ND points X(*) in D-dimensional space, and constructs
+      a family of ND Lagrange polynomials P(*)(X), associating polynomial P(i)
+      with point X(i), such that, for 1 <= i <= ND,
+      <pre>
+        P(i)(X(i)) = 1
+      </pre>
+      but, if i =/= j
+      <pre>
+        P(i)(X(j)) = 0
+      </pre>
+    </p>
+
+    <p>
+      The library currently includes the following primary routines:
+      <ul>
+        <li>
+          <b>LAGRANGE_COMPLETE</b> requires that the number of data points
+          ND is exactly <b>equal</b> to R, the number of monomials in D dimensions
+          of total degree N or less;
+        </li>
+        <li>
+          <b>LAGRANGE_COMPLETE2</b>, a version of LAGRANGE_COMPLETE with
+          improved "pivoting";
+        </li>
+        <li>
+          <b>LAGRANGE_PARTIAL</b> allows the number of data points
+          ND to be <b>less than or equal</b> to R, the number of monomials 
+          in D dimensions of total degree N or less;
+        </li>
+        <li>
+          <b>LAGRANGE_PARTIAL2</b>, a version of LAGRANGE_PARTIAL
+          with improved "pivoting".
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The set of ND polynomials P(*)(X) are returned as a set of three arrays:
+      <ul>
+        <li>
+          <b>PO(i)</b> contains the order, the number of nonzero coefficients,
+          for polynomial i;
+        </li>
+        <li>
+          <b>PC(i,j)</b> contains the coefficient of the j-th term in 
+          polynomial i;
+        </li>
+        <li>
+          <b>PE(i,j)</b> contains a code for the exponents of the monomial
+          associated with the j-th term in polynomial i.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Each value of PE(i,j) is an exponent codes which can be converted 
+      to a vector of exponents that define a monomial.  For example,
+      if we are working in spatial dimension D=3, then if PE(i,j)=13,
+      the corresponding exponent vector is (0,2,1), so 
+      this means that the j-th term in polynomial i is 
+      <pre>
+        PC(i,j) * x^0 y^2 z^1
+      </pre>
+      An exponent code can be converted to an exponent vector by calling
+      mono_unrank_grlex().
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LAGRANGE_ND</b> is available in
+      <a href = "../../cpp_src/lagrange_nd/lagrange_nd.html">a C++ version</a> and
+      <a href = "../../f_src/lagrange_nd/lagrange_nd.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/lagrange_nd/lagrange_nd.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/lagrange_interp_nd/lagrange_interp_nd.html">
+      LAGRANGE_INTERP_ND</a>,
+      a FORTRAN90 code which
+      defines and evaluates the Lagrange polynomial p(x) 
+      which interpolates a set of multivariate data, so that p(x(i)) = y(i).
+    </p>
+
+    <p>
+      <a href = "../../f_src/lagrange_nd_test/lagrange_nd_test.html">
+      lagrange_nd_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/sparse_interp_nd/sparse_interp_nd.html">
+      SPARSE_INTERP_ND</a>
+      a FORTRAN90 code which
+      can be used to define a sparse interpolant to a function f(x) of a 
+      multidimensional argument.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp_nd/test_interp_nd.html">
+      TEST_INTERP_ND</a>,
+      a FORTRAN90 code which
+      defines test problems for interpolation of data z(x),
+      depending on an M-dimensional argument.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philip Davis,<br>
+          Interpolation and Approximation,<br>
+          Dover, 1975,<br>
+          ISBN: 0-486-62495-1,<br>
+          LC: QA221.D33
+        </li>
+        <li>
+          Tomas Sauer, Yuan Xu,<br>
+          On multivariate Lagrange interpolation,<br>
+          Mathematics of Computation,<br>
+          Volume 64, Number 211, July 1995, pages 1147-1170.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "lagrange_nd.f90">lagrange_nd.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "lagrange_nd.sh">lagrange_nd.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>
+

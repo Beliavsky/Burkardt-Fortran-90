@@ -1,0 +1,46 @@
+July  7 2020  11:11:38.216 AM
+ 
+FEM_TO_MESH
+  FORTRAN90 version.
+  Read a set of FEM files;
+  Write a corresponding MESH file.
+ 
+  Reading FEM files:
+    "ell_nodes.txt".
+    "ell_elements.txt".
+    "ell_boundary_node_mask.txt".
+ 
+  Spatial dimension         =        2
+  Number of nodes           =       65
+  Number of elements        =       96
+  Element order             =        3
+ 
+  Writing MESH file: "ell.mesh".
+ 
+FEM_TO_MESH
+  Normal end of execution.
+ 
+July  7 2020  11:11:38.218 AM
+July  7 2020  11:11:38.222 AM
+ 
+FEM_TO_MESH
+  FORTRAN90 version.
+  Read a set of FEM files;
+  Write a corresponding MESH file.
+ 
+  Reading FEM files:
+    "p01_nodes.txt".
+    "p01_elements.txt".
+    "p01_boundary_node_mask.txt".
+ 
+  Spatial dimension         =        3
+  Number of nodes           =      584
+  Number of elements        =     2568
+  Element order             =        4
+ 
+  Writing MESH file: "p01.mesh".
+ 
+FEM_TO_MESH
+  Normal end of execution.
+ 
+July  7 2020  11:11:38.252 AM

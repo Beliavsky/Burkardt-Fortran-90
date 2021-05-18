@@ -1,0 +1,68 @@
+31 August 2020   4:00:09.656 PM
+ 
+SVD_TRUNCATED:
+  FORTRAN90 version
+  Demonstrate the use of the truncated or economy-size
+  Singular Value Decomposition (SVD) for cases where
+  the sizes of M and N are very different.
+ 
+SVD_TRUNCATED_U_TEST
+  M =        4
+  N =        3
+ 
+  A:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.218418      0.415307      0.438290E-01
+    2:  0.956318      0.661187E-01  0.633966    
+    3:  0.829509      0.257578      0.617272E-01
+    4:  0.561695      0.109957      0.449539    
+ 
+SVD_TRUNCATED_U:
+  DGESVD computation was successful.
+ 
+  Maximum error |A - U*S*V'| =   0.333067E-15
+ 
+  Recomputed A = U * S * V':
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.218418      0.415307      0.438290E-01
+    2:  0.956318      0.661187E-01  0.633966    
+    3:  0.829509      0.257578      0.617272E-01
+    4:  0.561695      0.109957      0.449539    
+ 
+SVD_TRUNCATED_V_TEST
+  M =        3
+  N =        4
+ 
+  A:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1:  0.218418      0.561695      0.257578      0.633966    
+    2:  0.956318      0.415307      0.109957      0.617272E-01
+    3:  0.829509      0.661187E-01  0.438290E-01  0.449539    
+ 
+SVD_TRUNCATED_V:
+  DGESVD computation was successful.
+ 
+  Maximum error |A - U*S*V'| =   0.777156E-15
+ 
+  Recomputed A = U * S * V':
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1:  0.218418      0.561695      0.257578      0.633966    
+    2:  0.956318      0.415307      0.109957      0.617272E-01
+    3:  0.829509      0.661187E-01  0.438290E-01  0.449539    
+ 
+SVD_TRUNCATED:
+  Normal end of execution.
+ 
+31 August 2020   4:00:09.658 PM

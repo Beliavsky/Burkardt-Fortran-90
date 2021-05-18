@@ -1,0 +1,40 @@
+14 July 2020   6:49:19.273 PM
+ 
+HERMITE_RULE
+  FORTRAN90 version
+ 
+  Compute a Gauss-Hermite quadrature rule for
+    Integral ( -oo < x < +oo ) f(x) rho(x) dx
+  where the weight rho(x) is:
+    exp ( - b * ( x - a )^2 ) * sqrt ( b / pi ) dx
+  using N points.
+ 
+  The user specifies N, A, B, SCALE, and FILENAME.
+ 
+  * N is the number of points (usually odd).
+  * A is the center point (usually 0.0):
+  * B is a scale factor (usually 0.5 or 1.0);
+  * SCALE is 1 if the weights are to be normalized.
+  * FILENAME is used to generate 3 files:
+  ** filename_w.txt - the weight file
+  ** filename_x.txt - the abscissa file.
+  ** filename_r.txt - the region file.
+ 
+  N =            4
+  A =        0.00000    
+  B =        1.00000    
+  SCALE =        0
+  FILENAME = "herm_o4".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "herm_o4".
+ 
+  Weight file will be   "herm_o4_w.txt".
+  Abscissa file will be "herm_o4_x.txt".
+  Region file will be   "herm_o4_r.txt".
+ 
+HERMITE_RULE:
+  Normal end of execution.
+ 
+14 July 2020   6:49:19.274 PM

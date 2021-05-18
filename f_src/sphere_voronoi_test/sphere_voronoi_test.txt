@@ -1,0 +1,41 @@
+30 August 2020   9:14:48.277 AM
+ 
+SPHERE_VORONOI
+  FORTRAN90 version
+  Given a set of XYZ points on the sphere,
+  compute the Voronoi diagram.
+ 
+XYZ_READ:
+  Read       10 text lines from gen_00010.xyz
+  Read       10 sets of (X,Y,Z) coordinates.
+ 
+POLY_COUNT_MAX
+  Highest order polygon is        5
+ 
+POLY_COUNT
+  Number of polygons of each shape.
+ 
+  Faces =          10
+  Vertices =       16
+  Edges =          24
+ 
+  Check Euler's formula:
+  F+V-E-2 =         0
+ 
+     Sides    Number
+ 
+         4         2
+         5         8
+ 
+VRPLOT created the Voronoi plot file: "gen_00010.eps".
+ 
+VR_TO_XYZF:
+  Wrote the Voronoi XYZ file "gen_00010.voronoi.xyz".
+ 
+VR_TO_XYZF:
+  Wrote the Voronoi XYZF file "gen_00010.voronoi.xyzf".
+ 
+SPHERE_VORONOI
+  Normal end of execution.
+ 
+30 August 2020   9:14:48.278 AM

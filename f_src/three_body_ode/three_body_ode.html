@@ -1,0 +1,181 @@
+<html>
+
+  <head>
+    <title>
+      three_body_ode - Planar Three Body Problem Simulation
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      three_body_ode <br> Planar Three Body Problem Simulation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>three_body_ode</b>,
+      a FORTRAN90 code which
+      simulates the solution of the planar three body problem.
+    </p>
+
+    <p>
+      Three bodies, regarded as point masses, are constrained to lie in a plane.
+      The masses of each body are given, as are the positions and velocities
+      at a starting time T = 0.  The bodies move in accordance with the gravitational
+      force between them.
+    </p>
+
+    <p>
+      The force exerted on the 0-th body by the 1st body can be written:
+      <pre>
+        F = - m0 m1 ( p0 - p1 ) / |p0 - p1|^3
+      </pre>
+      assuming that units have been normalized to that the gravitational
+      coefficient is 1.  Newton's laws of motion can be written:
+      <pre>  
+        m0 p0'' = - m0 m1 ( p0 - p1 ) / |p0 - p1|^3 
+                  - m0 m2 ( p0 - p2 ) / |p0 - p2|^3
+  
+        m1 p1'' = - m1 m0 ( p1 - p0 ) / |p1 - p0|^3 
+                  - m1 m2 ( p1 - p2 ) / |p1 - p2|^3
+  
+        m2 p2'' = - m2 m0 ( p2 - p0 ) / |p2 - p0|^3 
+                  - m2 m1 ( p2 - p1 ) / |p2 - p1|^3
+      </pre>
+    </p>
+
+    <p>
+      Letting
+      <pre>
+        y1 = p0(x)
+        y2 = p0(y)
+        y3 = p0'(x)
+        y4 = p0'(y)
+      </pre>
+      and using similar definitions for p1 and p2, the 3 second order vector 
+      equations can be rewritten as 12 first order equations.  In particular,
+      the first four are:
+      <pre>
+        y1' = y3
+        y2' = y4
+        y3' = - m1 ( y1 - y5  ) / |(y1,y2) - (y5,y6) |^3 
+              - m2 ( y1 - y9  ) / |(y1,y2) - (y9,y10)|^3
+        y4' = - m1 ( y2 - y6  ) / |(y1,y2) - (y5,y6) |^3 
+              - m2 ( y2 - y10 ) / |(y1,y2) - (y9,y10)|^3
+      </pre>
+      and so on.
+      This first order system can be integrated by a standard ODE solver.
+    </p>
+
+    <p>
+      Note that when any two bodies come close together, the solution changes
+      very rapidly, and very small steps must be taken by the ODE solver.
+      For this system, the first near collision occurs around T=15.8299, and
+      the results produced by the ODE solver will not be very accurate after
+      that point.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>three_body_ode</b> is available in
+      <a href = "../../c_src/three_body_ode/three_body_ode.html">a C version</a> and
+      <a href = "../../cpp_src/three_body_ode/three_body_ode.html">a C++ version</a> and
+      <a href = "../../f_src/three_body_ode/three_body_ode.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/three_body_ode/three_body_ode.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/rkf45/rkf45.html">
+      RKF45</a>,
+      a FORTRAN90 code which
+      implements the Runge-Kutta-Fehlberg ODE solver.
+    </p>
+
+    <p>
+      <a href = "../../f_src/three_body_ode_test/three_body_ode_test.html">
+      three_body_ode_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/two_body_ode/two_body_ode.html">
+      two_body_ode</a>,
+      a FORTRAN90 code which
+      simulates the behavior of two bodies, constrained to lie in a plane,
+      moving under the influence of gravity, with one body much more massive 
+      than the other, creating graphics files for processing by gnuplot.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Original MATLAB version by Dominik Gruntz, Joerg Waldvogel;
+      FORTRAN90 version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Dominik Gruntz, Joerg Waldvogel,<br>
+          "Orbits in the Planar Three-Body Problem",<br>
+          Walter Gander, Jiri Hrebicek,<br>
+          Solving Problems in Scientific Computing using Maple and Matlab,<br>
+          Springer, 1997,<br>
+          ISBN: 3-540-61793-0,<br>
+          LC: Q183.9.G36.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "three_body_ode.f90">three_body_ode.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "three_body_ode.sh">three_body_ode.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 09 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

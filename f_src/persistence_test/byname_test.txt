@@ -1,0 +1,36 @@
+10 May 2021   9:34:50.368 AM
+
+byname_test():
+  FORTRAN90 version
+  Test byname(), with the interface:
+    call byname(action,name,value_in,value_out)
+
+    byname ( "print", "*" )
+  alpha =    1.00000    
+  beta  =    2.00000    
+  gamma =    3.00000    
+    alpha = byname ( "set", "alpha", 1.0 )
+    beta = byname ( "set", "beta", 99 )
+    byname ( "set", "gamma", alpha + beta )
+    byname ( "print", "*" )
+  alpha =    1.00000    
+  beta  =    99.0000    
+  gamma =    100.000    
+    gamma = byname ( "get", "gamma" )
+    byname ( "set", "gamma", 2.0*gamma )
+    byname ( "print", "gamma" )
+  gamma =    200.000    
+    byname ( "print", "*" )
+  alpha =    1.00000    
+  beta  =    99.0000    
+  gamma =    200.000    
+    byname ( "reset" )
+    byname ( "print", "*" )
+  alpha =    1.00000    
+  beta  =    2.00000    
+  gamma =    3.00000    
+
+byname_test():
+  Normal end of execution.
+
+10 May 2021   9:34:50.368 AM

@@ -1,0 +1,2111 @@
+ 5 September 2020  11:13:11.927 AM
+ 
+TEST_TRIANGULATION_TEST
+  FORTRAN90 version
+  Test the TEST_TRIANGULATION library.
+ 
+TEST01
+  P00_TEST_NUM reports the number of problems.
+  P00_TITLE returns a title for each problem.
+  P00_HEADER prints some information about each problem.
+ 
+  The number of tests available =     15
+ 
+  Test number:             1
+  Title:             "#1: The unit circle."
+ 
+P01:
+  Strang and Persson example #1
+  The unit circle.
+  Radius =    1.00000    
+  Center =    0.00000       0.00000    
+ 
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             0
+  Number of holes =                    0
+ 
+  Test number:             2
+  Title:             "#2: The circle with concentric circular hole."
+ 
+P02:
+  Strang and Persson example #2
+  The unit circle, with a concentric hole.
+  Radius1 =    1.00000    
+  Radius2 =   0.400000    
+  Center =    0.00000       0.00000    
+ 
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =             0
+  Number of holes =                    1
+ 
+  Test number:             3
+  Title:             "#3: The unit square with circular hole."
+ 
+P03:
+  Strang and Persson example #3
+  The unit square, with a hole.
+ 
+  The hole is a concentric circle of radius 0.4.
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =             4
+  Number of holes =                    1
+ 
+  Test number:             4
+  Title:             "#4: The unit hexagon with hexagonal hole."
+ 
+P04:
+  Strang and Persson example #4
+  The hexagon with hexagonal hole.
+ 
+  Radius of outer hexagon R1 =    1.00000    
+  Radius of outer hexagon R2 =   0.500000    
+ 
+  A uniform mesh density is requested.
+  Element sizes tried were ?
+ 
+  Number of boundary segments =        2
+  Number of fixed points =            12
+  Number of holes =                    1
+ 
+  Test number:             5
+  Title:             "#5: The horn."
+ 
+P05:
+  Strang and Persson example #5
+  The horn.
+ 
+  Circle C1 has center = (0,0)
+  Radius R1 =    1.00000    
+ 
+  Circle C2 has center = (-0.4,0)
+  Radius R2 =   0.550000    
+ 
+  Points in the region are:
+    in C1 and not in C2 and have 0 <= Y.
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             4
+  Number of holes =                    0
+ 
+  Test number:             6
+  Title:             "#6: The superellipse with superelliptical hole."
+ 
+P06:
+  Strang and Persson example #6
+  Superellipse with superelliptical hole.
+ 
+  Radius R1 =    1.00000    
+  Radius R2 =   0.500000    
+ 
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =             0
+  Number of holes =                    1
+ 
+  Test number:             7
+  Title:             "#7: Bicycle seat (implicit)."
+ 
+P07:
+  Strang and Persson example #7
+  Bicycle seat (implicit).
+ 
+  A uniform mesh density is requested.
+  The boundary is formed by two algebraic expressions.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             2
+  Number of holes =                    0
+ 
+  Test number:             8
+  Title:             "#8: Pie slice with notch and hole."
+ 
+P08:
+  Strang and Persson example #8
+  Pie slice with notch and hole.
+ 
+  The pie rim is a portion of a circle C1
+  with CENTER1 =    0.00000       0.00000    
+  and radius R1 =    1.00000    
+ 
+  The interior hole is a circle C2
+  with CENTER2 =   0.600000       0.00000    
+  and radius R2 =   0.100000    
+ 
+  A uniform mesh density is requested.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =             6
+  Number of holes =                    1
+ 
+  Test number:             9
+  Title:             "#9: Jeff Borggaard's Box with 2 hexagonal holes."
+ 
+P09:
+  Jeff Borggaard's example
+  A square with 2 hexagonal holes.
+ 
+  The square has "center" at   0.500000      0.500000    
+  and "radius" R1 =   0.500000    
+ 
+  Hexagon 1 has "center" at   0.250000      0.750000    
+  and "radius" R2 =   0.100000    
+ 
+  Hexagon 2 has "center" at   0.600000      0.400000    
+  and "radius" R3 =   0.100000    
+ 
+  A uniform mesh density is requested.
+ 
+  Number of boundary segments =        3
+  Number of fixed points =            16
+  Number of holes =                    2
+ 
+  Test number:            10
+  Title:             "#10: The unit square."
+ 
+P10:
+  The unit square.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             4
+  Number of holes =                    0
+ 
+  Test number:            11
+  Title:             "#11: The L-shaped region."
+ 
+P11:
+  The L-shaped region.
+ 
+  The lower left corner of the indentation is
+  P =   0.500000      0.500000    
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             6
+  Number of holes =                    0
+ 
+  Test number:            12
+  Title:             "#12: John Shadid's H-shaped region."
+ 
+P12:
+  John Shadid's H-shaped region.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =            12
+  Number of holes =                    0
+ 
+  Test number:            13
+  Title:             "#13: The Sandia Fork region."
+ 
+P13:
+  The Sandia Fork region.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             8
+  Number of holes =                    0
+ 
+  Test number:            14
+  Title:             "#14: Marcus Garvie's Lake Alpha with Beta Island."
+ 
+P14:
+  Marcus Garvie's Lake Alpha and Beta island.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =           101
+  Number of holes =                    1
+ 
+  Test number:            15
+  Title:             "#15: Sangbum Kim's forward step."
+ 
+P15:
+  Sangbum Kim's forward step.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             8
+  Number of holes =                    0
+ 
+TEST02
+  P00_TEST_NUM reports the number of problems.
+  P00_SAMPLE returns sample points from the region.
+ 
+  Test number         =       1
+  Title:              = "#1: The unit circle."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.182719      0.908686    
+        0.882655     -0.248530    
+        0.168080     -0.307982    
+       -0.802429E-01 -0.327634E-01
+       -0.439650      0.258865    
+        0.873988      0.385525    
+       -0.160461E-01  0.336759    
+        0.457004      0.377857    
+        0.872951      0.246665    
+       -0.344310     -0.385464    
+        0.770117      0.314621    
+       -0.712087      0.233654    
+       -0.755233      0.539294    
+        0.197782E-01 -0.673352    
+        0.279579     -0.913133    
+        0.773199      0.893149E-02
+        0.347621     -0.260987    
+       -0.516254      0.703544    
+        0.522130      0.352660    
+        0.428907      0.367860E-01
+ 
+ 
+  Test number         =       2
+  Title:              = "#2: The circle with concentric circular hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.185100      0.920532    
+        0.895921     -0.252265    
+        0.245863     -0.450509    
+       -0.377553     -0.154156    
+       -0.530260      0.312216    
+        0.880668      0.388471    
+       -0.240566E-01  0.504875    
+        0.520067      0.429999    
+        0.887855      0.250877    
+       -0.413022     -0.462389    
+        0.797059      0.325628    
+       -0.755239      0.247813    
+       -0.764908      0.546203    
+        0.215989E-01 -0.735337    
+        0.281730     -0.920157    
+        0.813733      0.939971E-02
+        0.451474     -0.338959    
+       -0.529031      0.720957    
+        0.582130      0.393186    
+        0.559785      0.480110E-01
+ 
+ 
+  Test number         =       3
+  Title:              = "#3: The unit square with circular hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+       -0.563163      0.912635    
+        0.659018      0.123391    
+       -0.169386     -0.867763    
+       -0.484844     -0.780086    
+       -0.912342      0.267931    
+       -0.876546     -0.100922    
+       -0.197387      0.509347    
+        0.594574     -0.996323    
+        0.795008     -0.298495    
+       -0.810910     -0.972766    
+        0.718194      0.681695    
+       -0.753792     -0.984975    
+       -0.479394      0.824967    
+       -0.772672     -0.296743    
+        0.645775     -0.465735    
+        0.384133      0.123325    
+        0.722432     -0.924124E-01
+        0.823954      0.195834    
+       -0.622091      0.522984    
+       -0.206023     -0.629372    
+ 
+ 
+  Test number         =       4
+  Title:              = "#4: The unit hexagon with hexagonal hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.659018      0.123391    
+       -0.484844     -0.780086    
+       -0.876546     -0.100922    
+       -0.197387      0.509347    
+        0.795008     -0.298495    
+       -0.479394      0.824967    
+       -0.772672     -0.296743    
+        0.645775     -0.465735    
+        0.722432     -0.924124E-01
+        0.823954      0.195834    
+       -0.622091      0.522984    
+       -0.206023     -0.629372    
+       -0.574140      0.428942    
+       -0.764586     -0.401342    
+        0.490606     -0.382650    
+        0.523461     -0.186061    
+        0.877499      0.124177    
+       -0.964360      0.220645E-02
+       -0.456553      0.717145    
+       -0.292185     -0.761384    
+ 
+ 
+  Test number         =       5
+  Title:              = "#5: The horn."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.659018      0.561695    
+       -0.876546      0.449539    
+       -0.197387      0.754673    
+        0.594574      0.183837E-02
+        0.795008      0.350752    
+        0.645775      0.267132    
+        0.384133      0.561662    
+        0.722432      0.453794    
+       -0.622091      0.761492    
+        0.148732      0.367027    
+        0.234410      0.361529    
+       -0.574140      0.714471    
+        0.490606      0.308675    
+        0.523461      0.406970    
+       -0.916181      0.368851    
+       -0.456553      0.858573    
+        0.225895      0.809519    
+        0.174179      0.215492    
+        0.536113      0.723297    
+       -0.103962      0.855176    
+ 
+ 
+  Test number         =       6
+  Title:              = "#6: The superellipse with superelliptical hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+       -0.563163      0.912635    
+        0.659018      0.123391    
+       -0.169386     -0.867763    
+       -0.484844     -0.780086    
+       -0.912342      0.267931    
+       -0.876546     -0.100922    
+       -0.197387      0.509347    
+        0.795008     -0.298495    
+        0.718194      0.681695    
+       -0.479394      0.824967    
+       -0.772672     -0.296743    
+        0.645775     -0.465735    
+        0.722432     -0.924124E-01
+        0.823954      0.195834    
+       -0.622091      0.522984    
+       -0.206023     -0.629372    
+       -0.574140      0.428942    
+       -0.764586     -0.401342    
+        0.650006      0.649320    
+       -0.876276      0.421561    
+ 
+ 
+  Test number         =       7
+  Title:              = "#7: Bicycle seat (implicit)."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+         5.17592      -1.62983    
+        -1.33035      -4.60329    
+        -3.80796      -4.34026    
+        -7.16552      -1.19621    
+        -1.55028     -0.471959    
+         6.24398      -2.89549    
+         5.64068      0.450847E-01
+        -6.06855      -2.89023    
+         5.07190      -3.39721    
+         3.01697      -1.63003    
+         5.67396      -2.27724    
+         6.47132      -1.41250    
+        -4.88589     -0.431048    
+        -1.61810      -3.88812    
+         1.16814      -2.79784    
+         1.84105      -2.83083    
+        -4.50929     -0.713173    
+        -6.00505      -3.20403    
+         5.10513     -0.520396E-01
+        -6.88226     -0.735317    
+ 
+ 
+  Test number         =       8
+  Title:              = "#8: Pie slice with notch and hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.829509      0.319359E-01
+        0.897504     -0.772563E-01
+        0.859097      0.176436    
+        0.822887     -0.120541    
+        0.861216     -0.239181E-01
+        0.911977      0.506855E-01
+        0.825003      0.168056    
+        0.745303     -0.990371E-01
+        0.899373      0.136417    
+        0.761731     -0.481561E-01
+        0.178200E-01  0.571071E-03
+        0.612948      0.160219    
+        0.587090     -0.147272    
+        0.768056      0.115587    
+        0.945017      0.211743    
+        0.481067     -0.107507    
+        0.902640      0.868812E-01
+        0.740790     -0.227249E-01
+        0.775651     -0.712986E-01
+        0.563260      0.105871    
+ 
+ 
+  Test number         =       9
+  Title:              = "#9: Jeff Borggaard's Box with 2 hexagonal holes."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.218418      0.956318    
+        0.829509      0.561695    
+        0.415307      0.661187E-01
+        0.257578      0.109957    
+        0.438290E-01  0.633966    
+        0.617272E-01  0.449539    
+        0.401306      0.754673    
+        0.797287      0.183837E-02
+        0.897504      0.350752    
+        0.945448E-01  0.136169E-01
+        0.859097      0.840847    
+        0.123104      0.751236E-02
+        0.260303      0.912484    
+        0.113664      0.351629    
+        0.822887      0.267132    
+        0.692066      0.561662    
+        0.861216      0.453794    
+        0.911977      0.597917    
+        0.396988      0.185314    
+        0.117707      0.299329    
+ 
+ 
+  Test number         =      10
+  Title:              = "#10: The unit square."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.218418      0.956318    
+        0.829509      0.561695    
+        0.415307      0.661187E-01
+        0.257578      0.109957    
+        0.438290E-01  0.633966    
+        0.617272E-01  0.449539    
+        0.401306      0.754673    
+        0.797287      0.183837E-02
+        0.897504      0.350752    
+        0.945448E-01  0.136169E-01
+        0.859097      0.840847    
+        0.123104      0.751236E-02
+        0.260303      0.912484    
+        0.113664      0.351629    
+        0.822887      0.267132    
+        0.692066      0.561662    
+        0.861216      0.453794    
+        0.911977      0.597917    
+        0.188955      0.761492    
+        0.396988      0.185314    
+ 
+ 
+  Test number         =      11
+  Title:              = "#11: The L-shaped region."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.109209      0.956318    
+        0.414755      0.561695    
+        0.207654      0.661187E-01
+        0.128789      0.109957    
+        0.219145E-01  0.633966    
+        0.530864      0.224769    
+        0.200653      0.754673    
+        0.398643      0.183837E-02
+        0.948752      0.175376    
+        0.547272      0.680845E-02
+        0.429548      0.840847    
+        0.561552      0.375618E-02
+        0.130151      0.912484    
+        0.556832      0.175814    
+        0.911444      0.133566    
+        0.346033      0.561662    
+        0.930608      0.226897    
+        0.955989      0.298958    
+        0.594477      0.380746    
+        0.198494      0.185314    
+ 
+ 
+  Test number         =      12
+  Title:              = "#12: John Shadid's H-shaped region."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.527302      0.369540    
+        0.414755      0.561695    
+        0.780740      0.661187E-01
+        0.128789      0.109957    
+        0.219145E-01  0.633966    
+        0.648148      0.449539    
+        0.200653      0.754673    
+        0.398643      0.183837E-02
+        0.961564      0.350752    
+        0.660454      0.136169E-01
+        0.429548      0.840847    
+        0.671164      0.751236E-02
+        0.130151      0.912484    
+        0.667624      0.351629    
+        0.933583      0.267132    
+        0.346033      0.561662    
+        0.947956      0.453794    
+        0.966991      0.597917    
+        0.695858      0.761492    
+        0.198494      0.185314    
+ 
+ 
+  Test number         =      13
+  Title:              = "#13: The Sandia Fork region."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+         12.3104      0.751236    
+         57.4366       36.7027    
+         61.7205       36.1529    
+         74.5303       30.8675    
+         15.2384       11.4319    
+         20.6653       21.2924    
+         54.0539       83.2281    
+         53.1111       37.9977    
+         49.0323       85.4159    
+         84.8580       8.31430    
+         56.5026       39.4392    
+         53.8036       77.5243    
+         50.9806       30.5324    
+         52.9502       34.4293    
+         53.0101       40.6241    
+         46.6644       87.8359    
+         68.4731       27.8111    
+         67.9375       26.1012    
+         68.8186       33.7421    
+         42.4428       36.6481    
+ 
+ 
+  Test number         =      14
+  Title:              = "#14: Marcus Garvie's Lake Alpha with Beta Island."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+         321.774       188.242    
+         237.547       216.912    
+         314.298       638.556    
+         239.002       741.764    
+         160.697       374.965    
+         539.422       319.705    
+         469.564       512.327    
+         559.889       441.781    
+         311.992       266.195    
+         406.711       385.035    
+         429.587       381.440    
+         162.855       340.761    
+         497.992       346.873    
+         506.764       411.158    
+         245.100       706.506    
+         288.986       223.027    
+         210.353       284.252    
+         356.890       336.173    
+         320.156       247.644    
+         495.582       443.289    
+ 
+ 
+  Test number         =      15
+  Title:              = "#15: Sangbum Kim's forward step."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  The sample points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.184183      0.956318    
+        0.295092     -0.438305    
+         2.15307      0.661187E-01
+        -5.42422     -0.890043    
+        -7.56171     -0.366034    
+        -1.38273      0.449539    
+        -3.98694     -0.245327    
+       -0.271305E-01 -0.998162    
+         6.97504      0.350752    
+        -1.05455      0.136169E-01
+        0.590969     -0.159153    
+       -0.768961      0.751236E-02
+        -5.39697     -0.875163E-01
+       -0.863360      0.351629    
+         6.22887      0.267132    
+        -1.07934     -0.438338    
+         6.61216      0.453794    
+         7.11977      0.597917    
+       -0.110453      0.761492    
+        -4.03012     -0.814686    
+ 
+ 
+TEST03
+  P00_BOUNDARY_NEAREST returns the nearest boundary
+  point for a set of points.
+ 
+ 
+  Test number         =       1
+  Title:              = "#1: The unit circle."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.182719        0.908686    
+    0.197134        0.980377    
+ 
+    0.882655       -0.248530    
+    0.962570       -0.271032    
+ 
+    0.168080       -0.307982    
+    0.479049       -0.877788    
+ 
+   -0.802429E-01   -0.327634E-01
+   -0.925802       -0.378008    
+ 
+   -0.439650        0.258865    
+   -0.861723        0.507380    
+ 
+    0.873988        0.385525    
+    0.914940        0.403589    
+ 
+   -0.160461E-01    0.336759    
+   -0.475947E-01    0.998867    
+ 
+    0.457004        0.377857    
+    0.770686        0.637215    
+ 
+    0.872951        0.246665    
+    0.962320        0.271918    
+ 
+   -0.344310       -0.385464    
+   -0.666173       -0.745798    
+ 
+    0.770117        0.314621    
+    0.925727        0.378193    
+ 
+   -0.712087        0.233654    
+   -0.950157        0.311771    
+ 
+   -0.755233        0.539294    
+   -0.813814        0.581125    
+ 
+    0.197782E-01   -0.673352    
+    0.293602E-01   -0.999569    
+ 
+    0.279579       -0.913133    
+    0.292761       -0.956186    
+ 
+    0.773199        0.893149E-02
+    0.999933        0.115506E-01
+ 
+    0.347621       -0.260987    
+    0.799700       -0.600400    
+ 
+   -0.516254        0.703544    
+   -0.591603        0.806229    
+ 
+    0.522130        0.352660    
+    0.828685        0.559715    
+ 
+    0.428907        0.367860E-01
+    0.996342        0.854531E-01
+ 
+ 
+  Test number         =       2
+  Title:              = "#2: The circle with concentric circular hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.185100        0.920532    
+    0.197134        0.980377    
+ 
+    0.895921       -0.252265    
+    0.962570       -0.271032    
+ 
+    0.245863       -0.450509    
+    0.191620       -0.351115    
+ 
+   -0.377553       -0.154156    
+   -0.370321       -0.151203    
+ 
+   -0.530260        0.312216    
+   -0.344689        0.202952    
+ 
+    0.880668        0.388471    
+    0.914940        0.403589    
+ 
+   -0.240566E-01    0.504875    
+   -0.190379E-01    0.399547    
+ 
+    0.520067        0.429999    
+    0.308275        0.254886    
+ 
+    0.887855        0.250877    
+    0.962320        0.271918    
+ 
+   -0.413022       -0.462389    
+   -0.266469       -0.298319    
+ 
+    0.797059        0.325628    
+    0.925727        0.378193    
+ 
+   -0.755239        0.247813    
+   -0.950157        0.311771    
+ 
+   -0.764908        0.546203    
+   -0.813814        0.581125    
+ 
+    0.215989E-01   -0.735337    
+    0.293602E-01   -0.999569    
+ 
+    0.281730       -0.920157    
+    0.292761       -0.956186    
+ 
+    0.813733        0.939971E-02
+    0.999933        0.115506E-01
+ 
+    0.451474       -0.338959    
+    0.319880       -0.240160    
+ 
+   -0.529031        0.720957    
+   -0.591603        0.806229    
+ 
+    0.582130        0.393186    
+    0.828685        0.559715    
+ 
+    0.559785        0.480110E-01
+    0.398537        0.341812E-01
+ 
+ 
+  Test number         =       3
+  Title:              = "#3: The unit square with circular hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+   -0.563163        0.912635    
+   -0.563163         1.00000    
+ 
+    0.659018        0.123391    
+    0.393168        0.736145E-01
+ 
+   -0.169386       -0.867763    
+   -0.169386        -1.00000    
+ 
+   -0.484844       -0.780086    
+   -0.484844        -1.00000    
+ 
+   -0.912342        0.267931    
+    -1.00000        0.267931    
+ 
+   -0.876546       -0.100922    
+    -1.00000       -0.100922    
+ 
+   -0.197387        0.509347    
+   -0.144538        0.372973    
+ 
+    0.594574       -0.996323    
+    0.594574        -1.00000    
+ 
+    0.795008       -0.298495    
+     1.00000       -0.298495    
+ 
+   -0.810910       -0.972766    
+   -0.810910        -1.00000    
+ 
+    0.718194        0.681695    
+     1.00000        0.681695    
+ 
+   -0.753792       -0.984975    
+   -0.753792        -1.00000    
+ 
+   -0.479394        0.824967    
+   -0.479394         1.00000    
+ 
+   -0.772672       -0.296743    
+    -1.00000       -0.296743    
+ 
+    0.645775       -0.465735    
+     1.00000       -0.465735    
+ 
+    0.384133        0.123325    
+    0.380854        0.122272    
+ 
+    0.722432       -0.924124E-01
+     1.00000       -0.924124E-01
+ 
+    0.823954        0.195834    
+     1.00000        0.195834    
+ 
+   -0.622091        0.522984    
+    -1.00000        0.522984    
+ 
+   -0.206023       -0.629372    
+   -0.124441       -0.380150    
+ 
+ 
+  Test number         =       4
+  Title:              = "#4: The unit hexagon with hexagonal hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.659018        0.123391    
+    0.433013        0.123391    
+ 
+   -0.484844       -0.780086    
+   -0.533424       -0.808134    
+ 
+   -0.876546       -0.100922    
+   -0.925436       -0.129149    
+ 
+   -0.197387        0.509347    
+   -0.143993        0.416865    
+ 
+    0.795008       -0.298495    
+    0.819500       -0.312636    
+ 
+   -0.479394        0.824967    
+   -0.512627        0.844155    
+ 
+   -0.772672       -0.296743    
+   -0.814675       -0.320993    
+ 
+    0.645775       -0.465735    
+    0.709774       -0.502686    
+ 
+    0.722432       -0.924124E-01
+    0.890592       -0.189500    
+ 
+    0.823954        0.195834    
+    0.871190        0.223105    
+ 
+   -0.622091        0.522984    
+   -0.679064        0.555878    
+ 
+   -0.206023       -0.629372    
+   -0.984977E-01   -0.443132    
+ 
+   -0.574140        0.428942    
+   -0.707797        0.506110    
+ 
+   -0.764586       -0.401342    
+   -0.767361       -0.402943    
+ 
+    0.490606       -0.382650    
+    0.418769       -0.258224    
+ 
+    0.523461       -0.186061    
+    0.433013       -0.186061    
+ 
+    0.877499        0.124177    
+    0.915605        0.146177    
+ 
+   -0.964360        0.220645E-02
+   -0.990135        0.170874E-01
+ 
+   -0.456553        0.717145    
+   -0.553605        0.773178    
+ 
+   -0.292185       -0.761384    
+   -0.292185       -0.866025    
+ 
+ 
+  Test number         =       5
+  Title:              = "#5: The horn."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.659018        0.561695    
+    0.761067        0.648673    
+ 
+   -0.876546        0.449539    
+   -0.889806        0.456339    
+ 
+   -0.197387        0.754673    
+   -0.140705        0.965798    
+ 
+    0.594574        0.183837E-02
+    0.594574         0.00000    
+ 
+    0.795008        0.350752    
+    0.914912        0.403653    
+ 
+    0.645775        0.267132    
+    0.568890        0.247493    
+ 
+    0.384133        0.561662    
+    0.412964        0.582314    
+ 
+    0.722432        0.453794    
+    0.846798        0.531914    
+ 
+   -0.622091        0.761492    
+   -0.632660        0.774430    
+ 
+    0.148732        0.367027    
+    0.431207        0.555964    
+ 
+    0.234410        0.361529    
+    0.468827        0.495115    
+ 
+   -0.574140        0.714471    
+   -0.626399        0.779503    
+ 
+    0.490606        0.308675    
+    0.544859        0.327478    
+ 
+    0.523461        0.406970    
+    0.515079        0.403275    
+ 
+   -0.916181        0.368851    
+   -0.927644        0.373465    
+ 
+   -0.456553        0.858573    
+   -0.469505        0.882930    
+ 
+    0.225895        0.809519    
+    0.211666        0.791116    
+ 
+    0.174179        0.215492    
+    0.174179         0.00000    
+ 
+    0.536113        0.723297    
+    0.595469        0.803378    
+ 
+   -0.103962        0.855176    
+   -0.728742E-01    0.944981    
+ 
+ 
+  Test number         =       6
+  Title:              = "#6: The superellipse with superelliptical hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+   -0.563163        0.912635    
+   -0.575375        0.971397    
+ 
+    0.659018        0.123391    
+    0.499569        0.121119    
+ 
+   -0.169386       -0.867763    
+   -0.170035       -0.999791    
+ 
+   -0.484844       -0.780086    
+   -0.513765       -0.982107    
+ 
+   -0.912342        0.267931    
+   -0.998676        0.269630    
+ 
+   -0.876546       -0.100922    
+   -0.999974       -0.101050    
+ 
+   -0.197387        0.509347    
+   -0.196622        0.496984    
+ 
+    0.795008       -0.298495    
+    0.997851       -0.304245    
+ 
+    0.718194        0.681695    
+    0.874616        0.802549    
+ 
+   -0.479394        0.824967    
+   -0.500292        0.983956    
+ 
+   -0.772672       -0.296743    
+   -0.997885       -0.303051    
+ 
+    0.645775       -0.465735    
+    0.458239       -0.368338    
+ 
+    0.722432       -0.924124E-01
+    0.499862       -0.910665E-01
+ 
+    0.823954        0.195834    
+    0.999622        0.197182    
+ 
+   -0.622091        0.522984    
+   -0.442106        0.394807    
+ 
+   -0.206023       -0.629372    
+   -0.197684       -0.496917    
+ 
+   -0.574140        0.428942    
+   -0.458130        0.368547    
+ 
+   -0.764586       -0.401342    
+   -0.992248       -0.418412    
+ 
+    0.650006        0.649320    
+    0.841973        0.839815    
+ 
+   -0.876276        0.421561    
+   -0.991258        0.431013    
+ 
+ 
+  Test number         =       7
+  Title:              = "#7: Bicycle seat (implicit)."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+     5.17592        -1.62983    
+     4.19253       -0.496754    
+ 
+    -1.33035        -4.60329    
+    -1.33527        -4.99582    
+ 
+    -3.80796        -4.34026    
+    -3.91862        -4.69015    
+ 
+    -7.16552        -1.19621    
+    -7.30254        -1.26315    
+ 
+    -1.55028       -0.471959    
+    -1.79433       -0.221678    
+ 
+     6.24398        -2.89549    
+     6.29605        -2.93518    
+ 
+     5.64068        0.450847E-01
+     5.24306        0.506111    
+ 
+    -6.06855        -2.89023    
+    -6.23161        -3.01842    
+ 
+     5.07190        -3.39721    
+     5.44951        -3.84112    
+ 
+     3.01697        -1.63003    
+     3.06525       -0.997087    
+ 
+     5.67396        -2.27724    
+     6.39528        -2.80189    
+ 
+     6.47132        -1.41250    
+     7.06206        -1.73160    
+ 
+    -4.88589       -0.431048    
+    -4.58468       -0.127364    
+ 
+    -1.61810        -3.88812    
+    -1.64384        -4.99040    
+ 
+     1.16814        -2.79784    
+     1.18750        -4.99739    
+ 
+     1.84105        -2.83083    
+     2.68787       -0.898822    
+ 
+    -4.50929       -0.713173    
+    -4.26052       -0.436650    
+ 
+    -6.00505        -3.20403    
+    -6.04844        -3.24133    
+ 
+     5.10513       -0.520396E-01
+     4.88483        0.171585    
+ 
+    -6.88226       -0.735317    
+    -7.43237       -0.990232    
+ 
+ 
+  Test number         =       8
+  Title:              = "#8: Pie slice with notch and hole."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.829509        0.319359E-01
+    0.900000         0.00000    
+ 
+    0.897504       -0.772563E-01
+    0.937380       -0.373802E-01
+ 
+    0.859097        0.176436    
+    0.845657        0.226593    
+ 
+    0.822887       -0.120541    
+    0.797900       -0.213797    
+ 
+    0.861216       -0.239181E-01
+    0.900000         0.00000    
+ 
+    0.911977        0.506855E-01
+    0.931331        0.313313E-01
+ 
+    0.825003        0.168056    
+    0.811752        0.217508    
+ 
+    0.745303       -0.990371E-01
+    0.682632       -0.563208E-01
+ 
+    0.899373        0.136417    
+    0.988691        0.149964    
+ 
+    0.761731       -0.481561E-01
+    0.695842       -0.285373E-01
+ 
+    0.178200E-01    0.571071E-03
+    0.167691E-01    0.449326E-02
+ 
+    0.612948        0.160219    
+    0.611943        0.163970    
+ 
+    0.587090       -0.147272    
+    0.584580       -0.156638    
+ 
+    0.768056        0.115587    
+    0.745503        0.199757    
+ 
+    0.945017        0.211743    
+    0.975805        0.218642    
+ 
+    0.481067       -0.107507    
+    0.475718       -0.127468    
+ 
+    0.902640        0.868812E-01
+    0.944761        0.447605E-01
+ 
+    0.740790       -0.227249E-01
+    0.698722       -0.159348E-01
+ 
+    0.775651       -0.712986E-01
+    0.692658       -0.376108E-01
+ 
+    0.563260        0.105871    
+    0.567215        0.944730E-01
+ 
+ 
+  Test number         =       9
+  Title:              = "#9: Jeff Borggaard's Box with 2 hexagonal holes."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.218418        0.956318    
+    0.218418         1.00000    
+ 
+    0.829509        0.561695    
+     1.00000        0.561695    
+ 
+    0.415307        0.661187E-01
+    0.415307         0.00000    
+ 
+    0.257578        0.109957    
+    0.257578         0.00000    
+ 
+    0.438290E-01    0.633966    
+     0.00000        0.633966    
+ 
+    0.617272E-01    0.449539    
+     0.00000        0.449539    
+ 
+    0.401306        0.754673    
+    0.350000        0.750000    
+ 
+    0.797287        0.183837E-02
+    0.797287         0.00000    
+ 
+    0.897504        0.350752    
+     1.00000        0.350752    
+ 
+    0.945448E-01    0.136169E-01
+    0.945448E-01     0.00000    
+ 
+    0.859097        0.840847    
+     1.00000        0.840847    
+ 
+    0.123104        0.751236E-02
+    0.123104         0.00000    
+ 
+    0.260303        0.912484    
+    0.260303        0.836603    
+ 
+    0.113664        0.351629    
+     0.00000        0.351629    
+ 
+    0.822887        0.267132    
+    0.673188        0.353561    
+ 
+    0.692066        0.561662    
+    0.650000        0.486603    
+ 
+    0.861216        0.453794    
+     1.00000        0.453794    
+ 
+    0.911977        0.597917    
+     1.00000        0.597917    
+ 
+    0.396988        0.185314    
+    0.396988         0.00000    
+ 
+    0.117707        0.299329    
+     0.00000        0.299329    
+ 
+ 
+  Test number         =      10
+  Title:              = "#10: The unit square."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.218418        0.956318    
+    0.467519-309    0.956318    
+ 
+    0.829509        0.561695    
+     1.00000        0.561695    
+ 
+    0.415307        0.661187E-01
+    0.415307         0.00000    
+ 
+    0.257578        0.109957    
+    0.257578         0.00000    
+ 
+    0.438290E-01    0.633966    
+     0.00000        0.633966    
+ 
+    0.617272E-01    0.449539    
+     0.00000        0.449539    
+ 
+    0.401306        0.754673    
+    0.401306        0.754673    
+ 
+    0.797287        0.183837E-02
+    0.797287         0.00000    
+ 
+    0.897504        0.350752    
+     1.00000        0.350752    
+ 
+    0.945448E-01    0.136169E-01
+    0.945448E-01     0.00000    
+ 
+    0.859097        0.840847    
+     1.00000        0.840847    
+ 
+    0.123104        0.751236E-02
+    0.123104         0.00000    
+ 
+    0.260303        0.912484    
+    0.260303        0.912484    
+ 
+    0.113664        0.351629    
+     0.00000        0.351629    
+ 
+    0.822887        0.267132    
+     1.00000        0.267132    
+ 
+    0.692066        0.561662    
+     1.00000        0.561662    
+ 
+    0.861216        0.453794    
+     1.00000        0.453794    
+ 
+    0.911977        0.597917    
+     1.00000        0.597917    
+ 
+    0.188955        0.761492    
+     0.00000        0.761492    
+ 
+    0.396988        0.185314    
+    0.396988         0.00000    
+ 
+ 
+  Test number         =      11
+  Title:              = "#11: The L-shaped region."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.109209        0.956318    
+    0.109209         1.00000    
+ 
+    0.414755        0.561695    
+    0.500000        0.561695    
+ 
+    0.207654        0.661187E-01
+    0.207654         0.00000    
+ 
+    0.128789        0.109957    
+    0.128789         0.00000    
+ 
+    0.219145E-01    0.633966    
+     0.00000        0.633966    
+ 
+    0.530864        0.224769    
+    0.530864         0.00000    
+ 
+    0.200653        0.754673    
+     0.00000        0.754673    
+ 
+    0.398643        0.183837E-02
+    0.398643         0.00000    
+ 
+    0.948752        0.175376    
+     1.00000        0.175376    
+ 
+    0.547272        0.680845E-02
+    0.547272         0.00000    
+ 
+    0.429548        0.840847    
+    0.500000        0.840847    
+ 
+    0.561552        0.375618E-02
+    0.561552         0.00000    
+ 
+    0.130151        0.912484    
+    0.130151         1.00000    
+ 
+    0.556832        0.175814    
+    0.556832         0.00000    
+ 
+    0.911444        0.133566    
+     1.00000        0.133566    
+ 
+    0.346033        0.561662    
+    0.500000        0.561662    
+ 
+    0.930608        0.226897    
+     1.00000        0.226897    
+ 
+    0.955989        0.298958    
+     1.00000        0.298958    
+ 
+    0.594477        0.380746    
+    0.594477        0.500000    
+ 
+    0.198494        0.185314    
+    0.198494         0.00000    
+ 
+ 
+  Test number         =      12
+  Title:              = "#12: John Shadid's H-shaped region."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.527302        0.369540    
+    0.527302        0.375000    
+ 
+    0.414755        0.561695    
+    0.500000        0.561695    
+ 
+    0.780740        0.661187E-01
+    0.780740         0.00000    
+ 
+    0.128789        0.109957    
+    0.128789         0.00000    
+ 
+    0.219145E-01    0.633966    
+     0.00000        0.633966    
+ 
+    0.648148        0.449539    
+    0.625000        0.449539    
+ 
+    0.200653        0.754673    
+     0.00000        0.754673    
+ 
+    0.398643        0.183837E-02
+    0.398643         0.00000    
+ 
+    0.961564        0.350752    
+     1.00000        0.350752    
+ 
+    0.660454        0.136169E-01
+    0.660454         0.00000    
+ 
+    0.429548        0.840847    
+    0.500000        0.840847    
+ 
+    0.671164        0.751236E-02
+    0.671164         0.00000    
+ 
+    0.130151        0.912484    
+    0.130151         1.00000    
+ 
+    0.667624        0.351629    
+    0.625000        0.375000    
+ 
+    0.933583        0.267132    
+     1.00000        0.267132    
+ 
+    0.346033        0.561662    
+    0.500000        0.561662    
+ 
+    0.947956        0.453794    
+     1.00000        0.453794    
+ 
+    0.966991        0.597917    
+     1.00000        0.597917    
+ 
+    0.695858        0.761492    
+    0.625000        0.761492    
+ 
+    0.198494        0.185314    
+    0.198494         0.00000    
+ 
+ 
+  Test number         =      13
+  Title:              = "#13: The Sandia Fork region."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+     12.3104        0.751236    
+     10.0079        0.797129    
+ 
+     57.4366         36.7027    
+     57.9433         39.2034    
+ 
+     61.7205         36.1529    
+     62.3356         38.0504    
+ 
+     74.5303         30.8675    
+     74.8864         31.3156    
+ 
+     15.2384         11.4319    
+     12.0020         12.4962    
+ 
+     20.6653         21.2924    
+     17.6286         23.4966    
+ 
+     54.0539         83.2281    
+     55.0000         83.2281    
+ 
+     53.1111         37.9977    
+     55.0000         39.6863    
+ 
+     49.0323         85.4159    
+     45.0000         85.4159    
+ 
+     84.8580         8.31430    
+     88.9085         9.28043    
+ 
+     56.5026         39.4392    
+     56.5072         39.4672    
+ 
+     53.8036         77.5243    
+     55.0000         77.5243    
+ 
+     50.9806         30.5324    
+     50.9630         29.9845    
+ 
+     52.9502         34.4293    
+     52.5613         29.8905    
+ 
+     53.0101         40.6241    
+     55.0000         40.6241    
+ 
+     46.6644         87.8359    
+     45.0000         87.8359    
+ 
+     68.4731         27.8111    
+     66.5989         24.9895    
+ 
+     67.9375         26.1012    
+     66.9913         24.7244    
+ 
+     68.8186         33.7421    
+     69.4834         34.9342    
+ 
+     42.4428         36.6481    
+     41.9216         39.1758    
+ 
+ 
+  Test number         =      14
+  Title:              = "#14: Marcus Garvie's Lake Alpha with Beta Island."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+     321.774         188.242    
+     326.370         184.246    
+ 
+     237.547         216.912    
+     221.120         207.903    
+ 
+     314.298         638.556    
+     315.682         640.567    
+ 
+     239.002         741.764    
+     238.696         742.068    
+ 
+     160.697         374.965    
+     141.043         388.608    
+ 
+     539.422         319.705    
+     575.416         328.265    
+ 
+     469.564         512.327    
+     490.386         556.714    
+ 
+     559.889         441.781    
+     565.637         441.320    
+ 
+     311.992         266.195    
+     283.304         277.170    
+ 
+     406.711         385.035    
+     400.994         328.424    
+ 
+     429.587         381.440    
+     412.591         327.252    
+ 
+     162.855         340.761    
+     125.723         366.538    
+ 
+     497.992         346.873    
+     475.441         290.688    
+ 
+     506.764         411.158    
+     558.007         406.866    
+ 
+     245.100         706.506    
+     266.257         712.110    
+ 
+     288.986         223.027    
+     270.685         255.554    
+ 
+     210.353         284.252    
+     235.140         287.952    
+ 
+     356.890         336.173    
+     375.550         319.158    
+ 
+     320.156         247.644    
+     357.246         251.294    
+ 
+     495.582         443.289    
+     562.901         426.550    
+ 
+ 
+  Test number         =      15
+  Title:              = "#15: Sangbum Kim's forward step."
+  Spatial dimension M =       2
+  Number of samples N =      20
+  Initial SEED:       =     123456789
+ 
+ 
+  Pairs of Point and Nearest Boundary Point:
+  (This data can be passed to the PLOT_POINTS
+  routine and plotted with the DASH option.)
+ 
+    0.184183        0.956318    
+    -8.00000        0.956318    
+ 
+    0.295092       -0.438305    
+    -8.00000       -0.438305    
+ 
+     2.15307        0.661187E-01
+    -8.00000        0.661187E-01
+ 
+    -5.42422       -0.890043    
+    -8.00000       -0.890043    
+ 
+    -7.56171       -0.366034    
+    -8.00000       -0.366034    
+ 
+    -1.38273        0.449539    
+    -8.00000        0.449539    
+ 
+    -3.98694       -0.245327    
+    -8.00000       -0.245327    
+ 
+   -0.271305E-01   -0.998162    
+    -8.00000       -0.998162    
+ 
+     6.97504        0.350752    
+    -8.00000        0.350752    
+ 
+    -1.05455        0.136169E-01
+    -8.00000        0.136169E-01
+ 
+    0.590969       -0.159153    
+    -8.00000       -0.159153    
+ 
+   -0.768961        0.751236E-02
+    -8.00000        0.751236E-02
+ 
+    -5.39697       -0.875163E-01
+    -8.00000       -0.875163E-01
+ 
+   -0.863360        0.351629    
+    -8.00000        0.351629    
+ 
+     6.22887        0.267132    
+    -8.00000        0.267132    
+ 
+    -1.07934       -0.438338    
+    -8.00000       -0.438338    
+ 
+     6.61216        0.453794    
+    -8.00000        0.453794    
+ 
+     7.11977        0.597917    
+    -8.00000        0.597917    
+ 
+   -0.110453        0.761492    
+    -8.00000        0.761492    
+ 
+    -4.03012       -0.814686    
+    -8.00000       -0.814686    
+ 
+ 
+TEST04
+  P00_BOUNDARY_EPS makes an EPS file containing
+  an image of the boundary.
+ 
+  The boundary will be drawn to an absolute fineness
+  of H =   0.494066-323
+ 
+  The boundary nodes will NOT be shown.
+ 
+  Test number         =      1
+  Title:              = "#1: The unit circle."
+  H                   =   0.100000    
+  Boundary image file is "p01_boundary.eps".
+ 
+  Test number         =      2
+  Title:              = "#2: The circle with concentric circular hole."
+  H                   =   0.100000    
+  Boundary image file is "p02_boundary.eps".
+ 
+  Test number         =      3
+  Title:              = "#3: The unit square with circular hole."
+  H                   =   0.100000    
+  Boundary image file is "p03_boundary.eps".
+ 
+  Test number         =      4
+  Title:              = "#4: The unit hexagon with hexagonal hole."
+  H                   =   0.866025E-01
+  Boundary image file is "p04_boundary.eps".
+ 
+  Test number         =      5
+  Title:              = "#5: The horn."
+  H                   =   0.500000E-01
+  Boundary image file is "p05_boundary.eps".
+ 
+  Test number         =      6
+  Title:              = "#6: The superellipse with superelliptical hole."
+  H                   =   0.100000    
+  Boundary image file is "p06_boundary.eps".
+ 
+  Test number         =      7
+  Title:              = "#7: Bicycle seat (implicit)."
+  H                   =   0.300000    
+  Boundary image file is "p07_boundary.eps".
+ 
+  Test number         =      8
+  Title:              = "#8: Pie slice with notch and hole."
+  H                   =   0.258819E-01
+  Boundary image file is "p08_boundary.eps".
+ 
+  Test number         =      9
+  Title:              = "#9: Jeff Borggaard's Box with 2 hexagonal holes."
+  H                   =   0.500000E-01
+  Boundary image file is "p09_boundary.eps".
+ 
+  Test number         =     10
+  Title:              = "#10: The unit square."
+  H                   =   0.500000E-01
+  Boundary image file is "p10_boundary.eps".
+ 
+  Test number         =     11
+  Title:              = "#11: The L-shaped region."
+  H                   =   0.500000E-01
+  Boundary image file is "p11_boundary.eps".
+ 
+  Test number         =     12
+  Title:              = "#12: John Shadid's H-shaped region."
+  H                   =   0.500000E-01
+  Boundary image file is "p12_boundary.eps".
+ 
+  Test number         =     13
+  Title:              = "#13: The Sandia Fork region."
+  H                   =    5.00000    
+  Boundary image file is "p13_boundary.eps".
+ 
+  Test number         =     14
+  Title:              = "#14: Marcus Garvie's Lake Alpha with Beta Island."
+  H                   =    26.7000    
+  Boundary image file is "p14_boundary.eps".
+ 
+  Test number         =     15
+  Title:              = "#15: Sangbum Kim's forward step."
+  H                   =   0.100000    
+  Boundary image file is "p15_boundary.eps".
+ 
+TEST05
+  P00_POINTS_EPS makes an EPS file containing an
+  image of a set of points, and the boundary.
+ 
+  Test number         =       1
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.500000E-01
+  Title:              = "#1: The unit circle."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p01_points.eps".
+ 
+  Test number         =       2
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.500000E-01
+  Title:              = "#2: The circle with concentric circular hole."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p02_points.eps".
+ 
+  Test number         =       3
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.500000E-01
+  Title:              = "#3: The unit square with circular hole."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p03_points.eps".
+ 
+  Test number         =       4
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.500000E-01
+  Title:              = "#4: The unit hexagon with hexagonal hole."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p04_points.eps".
+ 
+  Test number         =       5
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.500000E-01
+  Title:              = "#5: The horn."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p05_points.eps".
+ 
+  Test number         =       6
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.500000E-01
+  Title:              = "#6: The superellipse with superelliptical hole."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p06_points.eps".
+ 
+  Test number         =       7
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.392699    
+  Title:              = "#7: Bicycle seat (implicit)."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p07_points.eps".
+ 
+  Test number         =       8
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.250000E-01
+  Title:              = "#8: Pie slice with notch and hole."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p08_points.eps".
+ 
+  Test number         =       9
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.250000E-01
+  Title:              = "#9: Jeff Borggaard's Box with 2 hexagonal holes."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p09_points.eps".
+ 
+  Test number         =      10
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.250000E-01
+  Title:              = "#10: The unit square."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p10_points.eps".
+ 
+  Test number         =      11
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.250000E-01
+  Title:              = "#11: The L-shaped region."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p11_points.eps".
+ 
+  Test number         =      12
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.250000E-01
+  Title:              = "#12: John Shadid's H-shaped region."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p12_points.eps".
+ 
+  Test number         =      13
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =     2.50000    
+  Title:              = "#13: The Sandia Fork region."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p13_points.eps".
+ 
+  Test number         =      14
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =     16.3500    
+  Title:              = "#14: Marcus Garvie's Lake Alpha with Beta Island."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p14_points.eps".
+ 
+  Test number         =      15
+  Spatial dimension   =       2
+  Relative spacing    =    0.250000E-01
+  Actual spacing H    =    0.400000    
+  Title:              = "#15: Sangbum Kim's forward step."
+ DEBUG :about to allocate
+ DEBUG :about to sample
+ DEBUG :about to EPS
+  Boundary image file is "p15_points.eps".
+ 
+TEST06
+  P00_POLY_WRITE creates a POLY file out of the
+  boundary data for each problem.
+ 
+  The number of tests available =     15
+ 
+TEST07
+  P00_HEX_GRID returns points inside a region that
+    lie on a hexagonal grid.
+ 
+  P00_HEX_GRID_COUNT counts the number of hex
+    grid points inside a region.
+  DTABLE_WRITE writes sets of points to a file.
+ 
+  We use a hex grid spacing of H =   0.250000E-01
+ 
+  P00_HEX_GRID_COUNT reports that the number of
+  hex grid points will be    409
+ 
+  A few of the points:
+ 
+  Row         1             2       
+  Col
+ 
+        0.487500      0.216506E-01
+        0.475000      0.138778E-16
+        0.487500     -0.216506E-01
+        0.500000      0.433013E-01
+        0.475000      0.433013E-01
+ 
+ 
+  The hex grid points were written to the file "p08_hex_grid_points.txt".
+ 
+TEST_TRIANGULATION_TEST
+  Normal end of execution.
+ 
+ 5 September 2020  11:13:11.943 AM

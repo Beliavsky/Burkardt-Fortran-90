@@ -1,0 +1,166 @@
+<html>
+
+  <head>
+    <title>
+      CUDA_LOOP - Demonstrate How CUDA Blocks and Threads Allocate Tasks
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CUDA_LOOP <br> Demonstrate How CUDA Blocks and Threads Allocate Tasks
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CUDA_LOOP</b>,
+      a FORTRAN90 code which
+      demonstrates how the user's choice of CUDA blocks and threads determines
+      how the user's tasks will be distributed across the GPU.
+    </p>
+
+    <p>
+      A CUDA kernel "kernel()" is invoked by a command of the form
+      <pre>    
+      kernel << blocks, threads >> ( args )
+      </pre>
+      where blocks and threads are each vectors of up to 3 values,
+      listing the number of blocks and number of threads to be used.
+    </p>
+
+    <p>
+      If a problem involves N tasks, then tasks are allotted to 
+      specific CUDA processes in an organized fashion.  Some processes
+      may get no tasks, one task, or multiple tasks.  
+    </p>
+
+    <p>
+      Each process is given variables that can be used to determine
+      the tasks to be performed:
+      <ul>
+        <li>
+          <b>gridDim.x, gridDim.y, gridDim.z:</b> the block dimensions as
+          given by the user in "blocks";
+        </li>
+        <li>
+          <b>blockDim.x, blockDim.y, blockDim.z:</b> the thread dimensions as
+          given by the user in "threads";
+        </li>
+        <li>
+          <b>blockIdx.x, blockIdx.y, blockId.z:</b> the block indices for this process.
+        </li>
+        <li>
+          <b>threadIdx.x, threadIdx.y, threadIdx.z:</b> the thread indices for this process.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Essentially, a process can determine its linear index K by:
+      <pre>
+      K = threadIdx.x
+        +  blockdim.x  * threadIdx.y
+        +  blockDim.x  *  blockDim.y  * threadIdx.z
+        +  blockDim.x  *  blockDim.y  *  blockDim.z  * blockIdx.x
+        +  blockDim.x  *  blockDim.y  *  blockDim.z  *  gridDim.x  * blockIdx.y
+        +  blockDim.x  *  blockDim.y  *  blockDim.z  *  gridDim.x  *  gridDim.y  * blockIdx.z
+      </pre>
+      It should use this index as follow:
+      <pre>
+      Set task T = K.
+
+      while ( T < N )
+        carry out task T;
+        T = T + blockDim.x * blockDim.y * blockDim.z * gridDim.x * gridDim.y * gridDim.z.
+      </pre>
+    <p>
+
+    <p>
+      The CUDA_LOOP program suggests how a specific set of block and thread 
+      parameters would determine the assignment of individual tasks to CUDA processes.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CUDA_LOOP</b> is available in
+      <a href = "../../c_src/cuda_loop/cuda_loop.html">a C version</a> and
+      <a href = "../../cpp_src/cuda_loop/cuda_loop.html">a C++ version</a> and
+      <a href = "../../f_src/cuda_loop/cuda_loop.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/cuda_loop/cuda_loop.html">a MATLAB version</a> and
+      <a href = "../../py_src/cuda_loop/cuda_loop.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs and Data:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cuda_loop_test/cuda_loop_test.html">
+      cuda_loop_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          John Cheng, Max Grossman, Ty McKercher,<br>
+          Professional CUDA C Programming,<br>
+          John Wiley, 2014,<br>
+          ISBN: 978-1-118-73932-7.
+        </li>
+        <li>
+          Jason Sanders, Edward Kandrot,<br>
+          CUDA by Example,<br>
+          Addison Wesley, 2010,<br>
+          ISBN: 978-0-13-138768-3,<br>
+          LC: QA76.76.A65S255 2010.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cuda_loop.f90">cuda_loop.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "cuda_loop.sh">cuda_loop.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

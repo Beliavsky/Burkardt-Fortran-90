@@ -1,0 +1,19 @@
+# grid_surface_commands.txt
+#
+# Usage:
+#  gnuplot < grid_surface_commands.txt
+#
+set term png
+set output "grid_surface.png"
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+set title "Grid Surface"
+set view 77, 77
+set xyplane -0.5
+set hidden3d
+set timestamp
+set grid
+set style data lines
+splot "grid_surface_data.txt" with lines
+quit

@@ -1,0 +1,86 @@
+solid MYSOLID
+  facet normal     0.00000         0.00000        -1.00000    
+    outer loop
+      vertex       0.00000         0.00000         0.00000    
+      vertex       0.00000         1.00000         0.00000    
+      vertex       1.00000         0.00000         0.00000    
+    end loop
+  end facet
+  facet normal     0.00000         0.00000        -1.00000    
+    outer loop
+      vertex       1.00000         0.00000         0.00000    
+      vertex       0.00000         1.00000         0.00000    
+      vertex       1.00000         1.00000         0.00000    
+    end loop
+  end facet
+  facet normal     0.00000        -1.00000         0.00000    
+    outer loop
+      vertex       0.00000         0.00000         0.00000    
+      vertex       1.00000         0.00000         1.00000    
+      vertex       0.00000         0.00000         1.00000    
+    end loop
+  end facet
+  facet normal     0.00000        -1.00000         0.00000    
+    outer loop
+      vertex       0.00000         0.00000         0.00000    
+      vertex       1.00000         0.00000         0.00000    
+      vertex       1.00000         0.00000         1.00000    
+    end loop
+  end facet
+  facet normal     0.00000         1.00000         0.00000    
+    outer loop
+      vertex       0.00000         1.00000         0.00000    
+      vertex       0.00000         1.00000         1.00000    
+      vertex       1.00000         1.00000         0.00000    
+    end loop
+  end facet
+  facet normal     0.00000         1.00000         0.00000    
+    outer loop
+      vertex       1.00000         1.00000         0.00000    
+      vertex       0.00000         1.00000         1.00000    
+      vertex       1.00000         1.00000         1.00000    
+    end loop
+  end facet
+  facet normal     0.00000         0.00000         1.00000    
+    outer loop
+      vertex       0.00000         0.00000         1.00000    
+      vertex       1.00000         0.00000         1.00000    
+      vertex       1.00000         1.00000         1.00000    
+    end loop
+  end facet
+  facet normal     0.00000         0.00000         1.00000    
+    outer loop
+      vertex       0.00000         0.00000         1.00000    
+      vertex       1.00000         1.00000         1.00000    
+      vertex       0.00000         1.00000         1.00000    
+    end loop
+  end facet
+  facet normal    -1.00000         0.00000         0.00000    
+    outer loop
+      vertex       0.00000         0.00000         0.00000    
+      vertex       0.00000         0.00000         1.00000    
+      vertex       0.00000         1.00000         1.00000    
+    end loop
+  end facet
+  facet normal    -1.00000         0.00000         0.00000    
+    outer loop
+      vertex       0.00000         0.00000         0.00000    
+      vertex       0.00000         1.00000         1.00000    
+      vertex       0.00000         1.00000         0.00000    
+    end loop
+  end facet
+  facet normal     1.00000         0.00000         0.00000    
+    outer loop
+      vertex       1.00000         0.00000         0.00000    
+      vertex       1.00000         1.00000         0.00000    
+      vertex       1.00000         0.00000         1.00000    
+    end loop
+  end facet
+  facet normal     1.00000         0.00000         0.00000    
+    outer loop
+      vertex       1.00000         0.00000         1.00000    
+      vertex       1.00000         1.00000         0.00000    
+      vertex       1.00000         1.00000         1.00000    
+    end loop
+  end facet
+end solid MYSOLID

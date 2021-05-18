@@ -1,0 +1,179 @@
+18 July 2020  10:01:33.695 PM
+ 
+ISBN_TEST
+  FORTRAN90 version
+  Test the ISBN library.
+ 
+CH_IS_DIGIT_TEST
+  CH_IS_DIGIT is TRUE if a character represents a digit.
+
+   C      CH_IS_DIGIT(C)
+
+  "0"          T
+  "1"          T
+  "2"          T
+  "3"          T
+  "4"          T
+  "5"          T
+  "6"          T
+  "7"          T
+  "8"          T
+  "9"          T
+  "X"          F
+  "?"          F
+  " "          F
+ 
+CH_IS_ISBN_DIGIT_TEST
+  CH_IS_ISBN_DIGIT is TRUE if a character 
+  represents an ISBN digit.
+
+   C      CH_IS_ISBN_DIGIT(C)
+
+  "0"          T
+  "1"          T
+  "2"          T
+  "3"          T
+  "4"          T
+  "5"          T
+  "6"          T
+  "7"          T
+  "8"          T
+  "9"          T
+  "X"          T
+  "x"          T
+  "Y"          F
+  "*"          F
+  "?"          F
+  " "          F
+ 
+CH_TO_DIGIT_TEST
+  CH_TO_DIGIT: character -> decimal digit
+ 
+  "0"            0
+  "1"            1
+  "2"            2
+  "3"            3
+  "4"            4
+  "5"            5
+  "6"            6
+  "7"            7
+  "8"            8
+  "9"            9
+  "X"           -1
+  "?"           -1
+  " "           -1
+ 
+I4_TO_ISBN_DIGIT_TEST
+  I4_TO_ISBN_DIGIT converts a digit to an ISBN character.
+
+   I4     I4_TO_ISBN_DIGIT(I4)
+
+   0            "0"
+   1            "1"
+   2            "2"
+   3            "3"
+   4            "4"
+   5            "5"
+   6            "6"
+   7            "7"
+   8            "8"
+   9            "9"
+  10            "X"
+  11            "?"
+ 
+ISBN_CHECK_DIGIT_CALCULATE_TEST
+  ISBN_CHECK_DIGIT_CALCULATE calculates the 10-th digit
+  (the check digit) of a 10-digit ISBN.
+
+  Check digit of "0-306-40615-2" is 2, expecting 2
+  Check digit of "0 8493 9640" is 9, expecting 9
+  Check digit of "158488059" is 7, expecting 7
+  Check digit of "246897531" is 6, expecting 6
+  Check digit of "135798642" is 4, expecting 4
+ 
+ISBN_DIGIT_TO_I4_TEST
+  ISBN_DIGIT_TO_I4 converts an ISBN digit to an integer.
+
+   C      ISBN_DIGIT_TO_I4(C)
+
+  "0"             0
+  "1"             1
+  "2"             2
+  "3"             3
+  "4"             4
+  "5"             5
+  "6"             6
+  "7"             7
+  "8"             8
+  "9"             9
+  "X"            10
+  "x"            10
+  "Y"            -1
+  "*"            -1
+  "?"            -1
+  " "            -1
+ 
+ISBN_IS_VALID_TEST
+  ISBN_IS_VALID reports whether a ISBN is valid.
+
+  Validity of "0-306-40615-2" is T, expecting T
+  Validity of "0-326-40615-2" is F, expecting F
+  Validity of "0 8493 9640 9" is T, expecting T
+  Validity of "0 8493 9640 3" is F, expecting F
+  Validity of "0-3870-9654-X" is T, expecting T
+  Validity of "0-201-38597-x" is T, expecting T
+ 
+S_TO_DIGITS_TEST
+  S_TO_DIGITS: string -> digit vector
+
+  Test string: "34E94-70.6"
+ 
+  Extracted 5 digits:
+ 
+         1:             3
+         2:             4
+         3:             9
+         4:             4
+         5:             7
+
+  Test string: "34E94-70.6"
+ 
+  Extracted 7 digits:
+ 
+         1:             3
+         2:             4
+         3:             9
+         4:             4
+         5:             7
+         6:             0
+         7:             6
+ 
+S_TO_ISBN_DIGITS_TEST
+  S_TO_ISBN_DIGITS: string -> ISBN digit vector
+
+  Test string: "34E9X-70.6"
+ 
+  Extracted 5 digits:
+ 
+         1:             3
+         2:             4
+         3:             9
+         4:            10
+         5:             7
+
+  Test string: "34E9X-70.6"
+ 
+  Extracted 7 digits:
+ 
+         1:             3
+         2:             4
+         3:             9
+         4:            10
+         5:             7
+         6:             0
+         7:             6
+ 
+ISBN_TEST
+  Normal end of execution.
+ 
+18 July 2020  10:01:33.695 PM

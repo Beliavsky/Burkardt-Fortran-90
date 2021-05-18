@@ -1,0 +1,37 @@
+21 June 2020  11:59:52.618 AM
+ 
+SGE_MOD_TEST
+  FORTRAN90 version.
+  A calling program for a demonstration of the
+  use of modules.
+ 
+  The matrix A:
+ 
+        0.6225      0.2835      0.7151      0.1565      0.6727
+        0.6288      0.8950      0.1438      0.2600      0.8659
+        0.1878      0.3796      0.1371      0.5175      0.8096
+        0.4559      0.3757      0.6656      0.3367      0.9622
+        0.4013      0.7499      0.8926      0.3294      0.7013
+ 
+  The right hand side vector:
+ 
+     1      7.324176
+     2      8.219663
+     3      7.475914
+     4      9.361471
+     5      9.403010
+ 
+  The matrix determinant is   0.283989E-01
+ 
+  The solution vector:
+ 
+     1      1.000004
+     2      1.999999
+     3      2.999999
+     4      4.000006
+     5      4.999997
+ 
+SGE_MOD_TEST
+  Normal end of execution.
+ 
+21 June 2020  11:59:52.618 AM

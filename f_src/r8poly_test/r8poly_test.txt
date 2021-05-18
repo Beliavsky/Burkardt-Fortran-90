@@ -1,0 +1,1200 @@
+22 January 2020   1:20:52.017 PM
+
+r8poly_test
+  FORTRAN90 version
+  Test R8POLY.
+
+R8_SIGN_TEST
+  R8_SIGN returns the sign of an R8.
+
+    R8    R8_SIGN(R8)
+
+   -1.2500       -1.
+   -0.2500       -1.
+    0.0000        1.
+    0.5000        1.
+    9.0000        1.
+
+R82POLY2_PRINT_TEST
+  R82POLY2_PRINT prints an R82POLY2,
+  a quadratic polynomial in x and y.
+
+  Coefficients a, b, c, d, e, f
+     1.00000         2.00000         3.00000         4.00000         5.00000         6.00000    
+
+    1.0000 * x^2 +   2.0000 * y^2 +   3.0000 * xy  + 
+    4.0000 * x +   5.0000 * y +   6.0000 = 0 
+
+R82POLY2_TYPE_TEST
+  R82POLY2_TYPE determines the type of a second order
+  equation in two variables.
+
+
+    9.0000 * x^2 +  -4.0000 * y^2 +   0.0000 * xy  + 
+  -36.0000 * x + -24.0000 * y + -36.0000 = 0 
+  Type =        1
+  The set of solutions forms a hyperbola.
+
+    4.0000 * x^2 +   1.0000 * y^2 +  -4.0000 * xy  + 
+    3.0000 * x +  -4.0000 * y +   1.0000 = 0 
+  Type =        2
+  The set of solutions forms a parabola.
+
+    9.0000 * x^2 +  16.0000 * y^2 +   0.0000 * xy  + 
+   36.0000 * x + -32.0000 * y + -92.0000 = 0 
+  Type =        3
+  The set of solutions forms an ellipse.
+
+    1.0000 * x^2 +   1.0000 * y^2 +   0.0000 * xy  + 
+   -6.0000 * x + -10.0000 * y + 115.0000 = 0 
+  Type =        4
+  The set of solutions forms an imaginary ellipse.
+  (There are no real solutions).
+
+    0.0000 * x^2 +   0.0000 * y^2 +   1.0000 * xy  + 
+    3.0000 * x +  -1.0000 * y +  -3.0000 = 0 
+  Type =        5
+  The set of solutions forms a pair of intersecting lines.
+
+    1.0000 * x^2 +   2.0000 * y^2 +   0.0000 * xy  + 
+   -2.0000 * x +  16.0000 * y +  33.0000 = 0 
+  Type =        6
+  The set of solutions is a single point.
+
+    0.0000 * x^2 +   1.0000 * y^2 +   0.0000 * xy  + 
+    0.0000 * x +  -6.0000 * y +   8.0000 = 0 
+  Type =        7
+  The set of solutions form a pair of distinct parallel lines.
+
+    0.0000 * x^2 +   1.0000 * y^2 +   0.0000 * xy  + 
+    0.0000 * x +  -6.0000 * y +  10.0000 = 0 
+  Type =        8
+  The set of solutions forms a pair of imaginary parallel lines.
+  (There are no real solutions).
+
+    0.0000 * x^2 +   1.0000 * y^2 +   0.0000 * xy  + 
+    0.0000 * x +  -2.0000 * y +   1.0000 = 0 
+  Type =        9
+  The set of solutions forms a pair of coincident lines.
+
+    0.0000 * x^2 +   0.0000 * y^2 +   0.0000 * xy  + 
+    2.0000 * x +  -1.0000 * y +   1.0000 = 0 
+  Type =       10
+  The set of solutions forms a single line.
+
+    0.0000 * x^2 +   0.0000 * y^2 +   0.0000 * xy  + 
+    0.0000 * x +   0.0000 * y +   0.0000 = 0 
+  Type =       11
+  The set of solutions is all space.
+
+    0.0000 * x^2 +   0.0000 * y^2 +   0.0000 * xy  + 
+    0.0000 * x +   0.0000 * y +   1.0000 = 0 
+  Type =       12
+  The set of solutions is empty.
+
+R8MAT_INVERSE_3D_TEST
+  R8MAT_INVERSE_3D inverts a 3 by 3 matrix.
+ 
+  Matrix A to be inverted:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:      1.            2.            3.      
+    2:      4.            5.            6.      
+    3:      7.            8.            0.      
+ 
+  Inverse matrix B:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  -1.77778      0.888889     -0.111111    
+    2:   1.55556     -0.777778      0.222222    
+    3: -0.111111      0.222222     -0.111111    
+ 
+  Product C = A * B:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:   1.00000     -0.111022E-15      0.      
+    2:  0.555112E-15   1.00000          0.      
+    3:  0.177636E-14 -0.888178E-15      1.      
+
+R8MAT_PRINT_TEST
+  R8MAT_PRINT prints an R8MAT.
+ 
+  The R8MAT:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1:     11.           12.           13.           14.      
+    2:     21.           22.           23.           24.      
+    3:     31.           32.           33.           34.      
+    4:     41.           42.           43.           44.      
+    5:     51.           52.           53.           54.      
+    6:     61.           62.           63.           64.      
+
+R8MAT_PRINT_SOME_TEST
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+ 
+  The R8MAT, rows 2:4, cols 1:2:
+ 
+  Col          1             2      
+  Row
+ 
+    2:     21.           22.      
+    3:     31.           32.      
+    4:     41.           42.      
+
+R8POLY_ADD_TEST
+  R8POLY_ADD adds two R8POLY's.
+ 
+  Polynomial A:
+ 
+  p(x) =     5.50000     * x ^   5
+         +   4.40000     * x ^   4
+         +   3.30000     * x ^   3
+         +   2.20000     * x ^   2
+         +   1.10000     * x
+ 
+  Polynomial B:
+ 
+  p(x) = -   5.50000     * x ^   5
+         +   8.30000     * x ^   3
+         +   7.20000     * x ^   2
+         -   2.10000     * x
+         +   1.00000    
+ 
+  Polynomial C = A+B:
+ 
+  p(x) =     4.40000     * x ^   4
+         +   11.6000     * x ^   3
+         +   9.40000     * x ^   2
+         -   1.00000     * x
+         +   1.00000    
+
+r8poly_ant_coef_test
+  r8poly_ant_coef() computes the coefficients of the
+  antiderivative of a polynomial
+ 
+  Polynomial p(x):
+ 
+  p(x) =     1.00000     * x ^   5
+         +   2.00000     * x ^   4
+         +   3.00000     * x ^   3
+         +   4.00000     * x ^   2
+         +   5.00000     * x
+         +   6.00000    
+ 
+  Antideriv(p(x)):
+ 
+  p(x) =    0.166667     * x ^   6
+         +  0.400000     * x ^   5
+         +  0.750000     * x ^   4
+         +   1.33333     * x ^   3
+         +   2.50000     * x ^   2
+         +   6.00000     * x
+
+r8poly_ant_value_test
+  r8poly_ant_value() evaluates the antiderivative of a polynomial at
+  one point, using a naive method.
+ 
+  The polynomial coefficients:
+ 
+  p(x) =     1.00000     * x ^   4
+         -   10.0000     * x ^   3
+         +   35.0000     * x ^   2
+         -   50.0000     * x
+         +   24.0000    
+
+   I    X    antiP(X)
+
+   1    0.0000     0.00000    
+   2    0.3333     5.62428    
+   3    0.6667     7.87819    
+   4    1.0000     8.36667    
+   5    1.3333     8.15144    
+   6    1.6667     7.84979    
+   7    2.0000     7.73333    
+   8    2.3333     7.82675    
+   9    2.6667     8.00658    
+  10    3.0000     8.10000    
+  11    3.3333     7.98354    
+  12    3.6667     7.68189    
+  13    4.0000     7.46667    
+  14    4.3333     7.95514    
+  15    4.6667     10.2091    
+  16    5.0000     15.8333    
+
+R8POLY_DEGREE_TEST
+  R8POLY_DEGREE determines the degree of an R8POLY.
+ 
+  The R8POLY:
+ 
+  p(x) =     4.00000     * x ^   3
+         +   3.00000     * x ^   2
+         +   2.00000     * x
+         +   1.00000    
+  Dimensioned degree =  3  Actual degree =  3
+ 
+  The R8POLY:
+ 
+  p(x) =     0.00000     * x ^   3
+         +   3.00000     * x ^   2
+         +   2.00000     * x
+         +   1.00000    
+  Dimensioned degree =  3  Actual degree =  2
+ 
+  The R8POLY:
+ 
+  p(x) =     4.00000     * x ^   3
+         +   2.00000     * x
+         +   1.00000    
+  Dimensioned degree =  3  Actual degree =  3
+ 
+  The R8POLY:
+ 
+  p(x) =     0.00000     * x ^   3
+         +   1.00000    
+  Dimensioned degree =  3  Actual degree =  0
+ 
+  The R8POLY:
+ 
+  p(x) =     0.00000     * x ^   3
+  Dimensioned degree =  3  Actual degree =  0
+
+R8POLY_DERIV_TEST
+  R8POLY_DERIV computes the coefficients of
+  the derivative of a polynomial.
+ 
+  The initial polynomial
+ 
+  p(x) =     1.00000     * x ^   4
+         -   10.0000     * x ^   3
+         +   35.0000     * x ^   2
+         -   50.0000     * x
+         +   24.0000    
+
+  The derivative of order        0
+
+ 
+  p(x) =     1.00000     * x ^   4
+         -   10.0000     * x ^   3
+         +   35.0000     * x ^   2
+         -   50.0000     * x
+         +   24.0000    
+
+  The derivative of order        1
+
+ 
+  p(x) =     4.00000     * x ^   3
+         -   30.0000     * x ^   2
+         +   70.0000     * x
+         -   50.0000    
+
+  The derivative of order        2
+
+ 
+  p(x) =     12.0000     * x ^   2
+         -   60.0000     * x
+         +   70.0000    
+
+  The derivative of order        3
+
+ 
+  p(x) =     24.0000     * x
+         -   60.0000    
+
+  The derivative of order        4
+
+ 
+  p(x) =     24.0000    
+
+r8poly_division_test
+  r8poly_division computes the quotient and
+  remainder for polynomial division.
+
+ 
+  The polynomial to be divided, A:
+ 
+  p(x) =     1.00000     * x ^   3
+         +   2.00000     * x ^   2
+         -   5.00000     * x
+         -   6.00000    
+ 
+  The divisor polynomial, B:
+ 
+  p(x) =     1.00000     * x
+         -   2.00000    
+ 
+  The quotient polynomial, Q:
+ 
+  p(x) =     1.00000     * x ^   2
+         +   4.00000     * x
+         +   3.00000    
+ 
+  The remainder polynomial, R:
+ 
+  p(x) =     0.00000    
+ 
+  The polynomial to be divided, A:
+ 
+  p(x) =     1.00000     * x ^   4
+         +   3.00000     * x ^   3
+         +   2.00000     * x ^   2
+         +   5.00000     * x
+         -   2.00000    
+ 
+  The divisor polynomial, B:
+ 
+  p(x) =     1.00000     * x ^   2
+         +   1.00000     * x
+         -   3.00000    
+ 
+  The quotient polynomial, Q:
+ 
+  p(x) =     1.00000     * x ^   2
+         +   2.00000     * x
+         +   3.00000    
+ 
+  The remainder polynomial, R:
+ 
+  p(x) =     8.00000     * x
+         +   7.00000    
+ 
+  The polynomial to be divided, A:
+ 
+  p(x) =     1.00000     * x ^   3
+         -   2.00000     * x ^   2
+         -   4.00000    
+ 
+  The divisor polynomial, B:
+ 
+  p(x) =     1.00000     * x
+         -   3.00000    
+ 
+  The quotient polynomial, Q:
+ 
+  p(x) =     1.00000     * x ^   2
+         +   1.00000     * x
+         +   3.00000    
+ 
+  The remainder polynomial, R:
+ 
+  p(x) =     5.00000    
+
+R8POLY_LAGRANGE_COEF_TEST
+  R8POLY_LAGRANGE_COEF returns the coefficients
+  for a Lagrange basis polynomial.
+ 
+  Abscissas:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.0000000    
+         4:    4.0000000    
+         5:    5.0000000    
+ 
+  The Lagrange basis polynomial:
+ 
+  p(x) =    0.416667E-01 * x ^   4
+         -  0.583333     * x ^   3
+         +   2.95833     * x ^   2
+         -   6.41667     * x
+         +   5.00000    
+ 
+  The Lagrange basis polynomial:
+ 
+  p(x) = -  0.166667     * x ^   4
+         +   2.16667     * x ^   3
+         -   9.83333     * x ^   2
+         +   17.8333     * x
+         -   10.0000    
+ 
+  The Lagrange basis polynomial:
+ 
+  p(x) =    0.250000     * x ^   4
+         -   3.00000     * x ^   3
+         +   12.2500     * x ^   2
+         -   19.5000     * x
+         +   10.0000    
+ 
+  The Lagrange basis polynomial:
+ 
+  p(x) = -  0.166667     * x ^   4
+         +   1.83333     * x ^   3
+         -   6.83333     * x ^   2
+         +   10.1667     * x
+         -   5.00000    
+ 
+  The Lagrange basis polynomial:
+ 
+  p(x) =    0.416667E-01 * x ^   4
+         -  0.416667     * x ^   3
+         +   1.45833     * x ^   2
+         -   2.08333     * x
+         +   1.00000    
+
+R8POLY_LAGRANGE_0_TEST
+  R8POLY_LAGRANGE_0 evaluates the Lagrange
+  factor W(X) at a point.
+
+  The number of data points is        5
+ 
+  Abscissas:
+ 
+         1:    0.0000000    
+         2:    1.0000000    
+         3:    2.0000000    
+         4:    3.0000000    
+         5:    4.0000000    
+
+      X          W(X)
+
+   0.000       0.000    
+  0.2222       3.224    
+  0.4444       3.490    
+  0.6667       2.305    
+  0.8889      0.7208    
+   1.111     -0.5988    
+   1.333      -1.317    
+   1.556      -1.356    
+   1.778     -0.8346    
+   2.000       0.000    
+   2.222      0.8346    
+   2.444       1.356    
+   2.667       1.317    
+   2.889      0.5988    
+   3.111     -0.7208    
+   3.333      -2.305    
+   3.556      -3.490    
+   3.778      -3.224    
+   4.000       0.000    
+
+R8POLY_LAGRANGE_1_TEST
+  R8POLY_LAGRANGE_1 evaluates the Lagrange
+  factor W'(X) at a point.
+
+  The number of data points is        5
+ 
+  Abscissas:
+ 
+         1:    0.0000000    
+         2:    1.0000000    
+         3:    2.0000000    
+         4:    3.0000000    
+         5:    4.0000000    
+
+      X          W'(X)
+
+   0.000       24.00    
+  0.2222       6.536    
+  0.4444      -3.020    
+  0.6667      -6.864    
+  0.8889      -6.898    
+   1.111      -4.730    
+   1.333      -1.679    
+   1.556       1.232    
+   1.778       3.271    
+   2.000       4.000    
+   2.222       3.271    
+   2.444       1.232    
+   2.667      -1.679    
+   2.889      -4.730    
+   3.111      -6.898    
+   3.333      -6.864    
+   3.556      -3.020    
+   3.778       6.536    
+   4.000       24.00    
+
+R8POLY_LAGRANGE_2_TEST
+  R8POLY_LAGRANGE_2 evaluates the Lagrange
+  factor W"(X) at a point.
+
+  The number of data points is        5
+ 
+  Abscissas:
+ 
+         1:    0.0000000    
+         2:    1.0000000    
+         3:    2.0000000    
+         4:    3.0000000    
+         5:    4.0000000    
+
+      X          W"(X)
+
+   0.000      -100.0    
+  0.2222      -59.04    
+  0.4444      -28.61    
+  0.6667      -7.407    
+  0.8889       5.898    
+   1.111       12.62    
+   1.333       14.07    
+   1.556       11.58    
+   1.778       6.447    
+   2.000       0.000    
+   2.222      -6.447    
+   2.444      -11.58    
+   2.667      -14.07    
+   2.889      -12.62    
+   3.111      -5.898    
+   3.333       7.407    
+   3.556       28.61    
+   3.778       59.04    
+   4.000       100.0    
+
+R8POLY_LAGRANGE_FACTOR_TEST
+  R8POLY_LAGRANGE_FACTOR evaluates the Lagrange
+  factor W(X) at a point.
+
+  For this test, we use        5 functions.
+ 
+  Abscissas:
+ 
+         1:    0.0000000    
+         2:   0.80000000    
+         3:    1.6000000    
+         4:    2.4000000    
+         5:    3.2000000    
+
+      X          W(X)          W'(X)
+
+      4.5000    131.8180    274.5429
+      4.0000     39.3216    112.2304
+      3.5000      5.9251     32.1429
+      3.0000     -1.1088      2.0304
+      2.5000     -0.2678     -2.8571
+      2.0000      0.4608      0.2304
+      1.5000     -0.1607      1.5429
+      1.0000     -0.3696     -1.1696
+      0.5000      0.8465     -2.6571
+      0.0000      0.0000      9.8304
+
+r8poly_lagrange_value_test
+  r8poly_lagrange_value() evaluates a Lagrange
+  interpolating polynomial at a point.
+
+  Number of data points =        5
+ 
+  Abscissas:
+ 
+         1:    0.0000000    
+         2:    1.0000000    
+         3:    2.0000000    
+         4:    3.0000000    
+         5:    4.0000000    
+
+  Here are the values of the functions at 
+  several points:
+
+      X          L1          L2          L3      L4          L5
+
+   0.000       1.000       0.000      -0.000       0.000      -0.000    
+  0.5000      0.2734       1.094     -0.5469      0.2188     -0.3906E-01
+   1.000      -0.000       1.000       0.000      -0.000       0.000    
+   1.500     -0.3906E-01  0.4688      0.7031     -0.1562      0.2344E-01
+   2.000       0.000      -0.000       1.000       0.000      -0.000    
+   2.500      0.2344E-01 -0.1562      0.7031      0.4688     -0.3906E-01
+   3.000      -0.000       0.000      -0.000       1.000       0.000    
+   3.500     -0.3906E-01  0.2188     -0.5469       1.094      0.2734    
+   4.000       0.000      -0.000       0.000      -0.000       1.000    
+
+  And the derivatives:
+
+      X          L'1         L'2         L'3     L'4         L'5
+
+   0.000      -2.083       4.000      -3.000       1.333     -0.2500    
+  0.5000     -0.9167      0.7083      0.3750     -0.2083      0.4167E-01
+   1.000     -0.2500     -0.8333       1.500     -0.5000      0.8333E-01
+   1.500      0.4167E-01  -1.125       1.125     -0.4167E-01   0.000    
+   2.000      0.8333E-01 -0.6667       0.000      0.6667     -0.8333E-01
+   2.500       0.000      0.4167E-01  -1.125       1.125     -0.4167E-01
+   3.000     -0.8333E-01  0.5000      -1.500      0.8333      0.2500    
+   3.500     -0.4167E-01  0.2083     -0.3750     -0.7083      0.9167    
+   4.000      0.2500      -1.333       3.000      -4.000       2.083    
+
+r8poly_multiply_test
+  r8poly_multiply multiplies two polynomials.
+
+ 
+  The factor A:
+ 
+  p(x) =     1.00000     * x
+         +   1.00000    
+ 
+  The factor B:
+ 
+  p(x) = -   1.00000     * x
+         +   1.00000    
+ 
+  The product C = A*B:
+ 
+  p(x) = -   1.00000     * x ^   2
+         +   1.00000    
+ 
+  The factor A:
+ 
+  p(x) =     3.00000     * x ^   2
+         +   2.00000     * x
+         +   1.00000    
+ 
+  The factor B:
+ 
+  p(x) = -   2.00000     * x
+         +   1.00000    
+ 
+  The product C = A*B:
+ 
+  p(x) = -   6.00000     * x ^   3
+         -   1.00000     * x ^   2
+         +   1.00000    
+
+R8POLY_POWER_TEST
+  R8POLY_POWER takes a polynomial to a power.
+ 
+  The polynomial A:
+ 
+  p(x) = -   1.00000     * x
+         +   2.00000    
+ 
+  Raised to the power 3:
+ 
+  p(x) = -   1.00000     * x ^   3
+         +   6.00000     * x ^   2
+         -   12.0000     * x
+         +   8.00000    
+ 
+  The polynomial A:
+ 
+  p(x) =     1.00000     * x ^   2
+         +   1.00000     * x
+ 
+  Raised to the power 2:
+ 
+  p(x) =     1.00000     * x ^   4
+         +   2.00000     * x ^   3
+         +   1.00000     * x ^   2
+
+R8POLY_PRINT_TEST
+  R8POLY_PRINT prints an R8POLY.
+ 
+  The R8POLY:
+ 
+  p(x) =     9.00000     * x ^   5
+         +  0.780000     * x ^   4
+         +   56.0000     * x ^   2
+         -   3.40000     * x
+         +   12.0000    
+
+R8POLY_VALUE_TEST
+  R8POLY_VALUE evaluates a polynomial at
+  one point, using a naive method.
+ 
+  The polynomial coefficients:
+ 
+  p(x) =     1.00000     * x ^   4
+         -   10.0000     * x ^   3
+         +   35.0000     * x ^   2
+         -   50.0000     * x
+         +   24.0000    
+
+   I    X    P(X)
+
+   1    0.0000     24.0000    
+   2    0.3333     10.8642    
+   3    0.6667     3.45679    
+   4    1.0000     0.00000    
+   5    1.3333   -0.987654    
+   6    1.6667   -0.691358    
+   7    2.0000     0.00000    
+   8    2.3333    0.493827    
+   9    2.6667    0.493827    
+  10    3.0000     0.00000    
+  11    3.3333   -0.691358    
+  12    3.6667   -0.987654    
+  13    4.0000     0.00000    
+  14    4.3333     3.45679    
+  15    4.6667     10.8642    
+  16    5.0000     24.0000    
+
+R8POLY_VALUE_HORNER_TEST
+  R8POLY_VALUE_HORNER evaluates a polynomial at
+  one point, using Horner's method.
+ 
+  The polynomial coefficients:
+ 
+  p(x) =     1.00000     * x ^   4
+         -   10.0000     * x ^   3
+         +   35.0000     * x ^   2
+         -   50.0000     * x
+         +   24.0000    
+
+   I    X    P(X)
+
+   1    0.0000     24.0000    
+   2    0.3333     10.8642    
+   3    0.6667     3.45679    
+   4    1.0000     0.00000    
+   5    1.3333   -0.987654    
+   6    1.6667   -0.691358    
+   7    2.0000     0.00000    
+   8    2.3333    0.493827    
+   9    2.6667    0.493827    
+  10    3.0000     0.00000    
+  11    3.3333   -0.691358    
+  12    3.6667   -0.987654    
+  13    4.0000     0.00000    
+  14    4.3333     3.45679    
+  15    4.6667     10.8642    
+  16    5.0000     24.0000    
+
+R8POLY_VALUES_HORNER_TEST
+  R8POLY_VALUES_HORNER evaluates a polynomial at
+  many points, using Horner's method.
+ 
+  The polynomial coefficients:
+ 
+  p(x) =     1.00000     * x ^   4
+         -   10.0000     * x ^   3
+         +   35.0000     * x ^   2
+         -   50.0000     * x
+         +   24.0000    
+ 
+  X, P(X)
+ 
+     1     0.00000         24.0000    
+     2    0.333333         10.8642    
+     3    0.666667         3.45679    
+     4     1.00000         0.00000    
+     5     1.33333       -0.987654    
+     6     1.66667       -0.691358    
+     7     2.00000         0.00000    
+     8     2.33333        0.493827    
+     9     2.66667        0.493827    
+    10     3.00000         0.00000    
+    11     3.33333       -0.691358    
+    12     3.66667       -0.987654    
+    13     4.00000         0.00000    
+    14     4.33333         3.45679    
+    15     4.66667         10.8642    
+    16     5.00000         24.0000    
+
+R8POLY2_EX_TEST
+  R8POLY2_EX finds the extreme value
+  of a parabola determined by three points.
+
+  Parabolic coefficients A, B, C =
+     2.00000      -4.00000       10.0000    
+
+    Point 1 : (   1.00000    ,   8.00000    )
+    Point 2 : (   2.00000    ,   10.0000    )
+    Point 3 : (   3.00000    ,   16.0000    )
+
+  R8POLY2_EX returns XMIN, YMIN =    1.00000       8.00000    
+
+R8POLY2_EX2_TEST
+  R8POLY2_EX2 finds the extreme value
+  of a parabola determined by three points.
+
+  Parabolic coefficients A, B, C =
+     2.00000      -4.00000       10.0000    
+
+    Point 1 : (   1.00000    ,   8.00000    )
+    Point 2 : (   2.00000    ,   10.0000    )
+    Point 3 : (   3.00000    ,   16.0000    )
+
+  R8POLY2_EX2 returns XMIN, YMIN =    1.00000       8.00000    
+  and A, B, C =    2.00000      -4.00000       10.0000    
+
+R8POLY2_ROOT_TEST
+  R8POLY2_ROOT finds quadratic equation roots.
+
+         A         B         C     R1         R2
+
+       2.0    -2.0   -24.0   4.00000      -0.00000      -3.00000       0.00000    
+       1.0   -20.0   100.0   10.0000      -0.00000       10.0000       0.00000    
+       1.0    -2.0    10.0   1.00000       3.00000       1.00000      -3.00000    
+
+R8POLY2_RROOT_TEST
+  R8POLY2_RROOT finds the real parts of quadratic equation roots.
+
+         A         B         C     R1         R2
+
+         2.000            -2.000            -24.00             4.000            -3.000    
+         1.000            -20.00             100.0             10.00             10.00    
+         1.000            -2.000             10.00            -1.000            -1.000    
+         1.000             0.000             1.000             0.000             0.000    
+         1.000            -6.000             10.00            -3.000            -3.000    
+
+R8POLY2_VAL_TEST
+  R8POLY2_VAL evaluates a parabola given
+  3 data points.
+
+  Our parabola will be 2*x*x + 3 * x + 1.
+
+  Case 1: 3 distinct data points:
+
+    -1.00000       0.00000    
+     1.00000       6.00000    
+     3.00000       28.0000    
+
+  Sampled data:
+
+  X, Y, Y', Y"
+
+     0.00000       1.00000       3.00000       4.00000    
+     1.00000       6.00000       7.00000       4.00000    
+     2.00000       15.0000       11.0000       4.00000    
+     3.00000       28.0000       15.0000       4.00000    
+
+  Case 2: X1=X2, X3 distinct:
+
+    -1.00000       0.00000    
+    -1.00000      -1.00000    
+     3.00000       28.0000    
+
+  Sampled data:
+
+  X, Y, Y', Y"
+
+     0.00000       1.00000       3.00000       4.00000    
+     1.00000       6.00000       7.00000       4.00000    
+     2.00000       15.0000       11.0000       4.00000    
+     3.00000       28.0000       15.0000       4.00000    
+
+  Case 3: X1=X2=X3:
+
+    -1.00000       0.00000    
+    -1.00000      -1.00000    
+    -1.00000       4.00000    
+
+  Sampled data:
+
+  X, Y, Y', Y"
+
+     0.00000       1.00000       3.00000       4.00000    
+     1.00000       6.00000       7.00000       4.00000    
+     2.00000       15.0000       11.0000       4.00000    
+     3.00000       28.0000       15.0000       4.00000    
+
+R8POLY2_VAL2_TEST
+  R8POLY2_VAL2 evaluates parabolas through
+  3 points in a table
+
+  Our data tables will actually be parabolas:
+    A: 2*x*x + 3 * x + 1.
+    B: 4*x*x - 2 * x + 5.
+
+         1   2.00000       15.0000       17.0000    
+         2   4.00000       45.0000       61.0000    
+         3   6.00000       91.0000       137.000    
+         4   8.00000       153.000       245.000    
+         5   10.0000       231.000       385.000    
+
+  Interpolated data:
+
+  LEFT, X, Y1, Y2
+
+         1   1.00000       6.00000       7.00000    
+         2   3.00000       28.0000       35.0000    
+         3   5.00000       66.0000       95.0000    
+         3   7.00000       120.000       187.000    
+         3   9.00000       190.000       311.000    
+
+R8POLY3_ROOT_TEST
+  R8POLY3_ROOT finds roots of cubic equations.
+
+
+  Polynomial coefficients A, B, C, D:
+
+     1.00000      -6.00000       11.0000      -6.00000    
+
+  Roots:
+
+     1.00000       0.00000    
+     3.00000       0.00000    
+     2.00000       0.00000    
+
+  Polynomial coefficients A, B, C, D:
+
+     9.00000      -36.0000       54.0000      -27.0000    
+
+  Roots:
+
+     1.00000       0.00000    
+     1.50000     -0.866025    
+     1.50000      0.866025    
+
+  Polynomial coefficients A, B, C, D:
+
+     1.00000      -5.00000       8.00000      -4.00000    
+
+  Roots:
+
+     1.00000       0.00000    
+     2.00000       0.00000    
+     2.00000       0.00000    
+
+  Polynomial coefficients A, B, C, D:
+
+     1.00000      -8.00000       25.0000      -26.0000    
+
+  Roots:
+
+     2.00000       0.00000    
+     3.00000      -2.00000    
+     3.00000       2.00000    
+
+R8POLY4_ROOT_TEST
+  R8POLY4_ROOT finds roots of quartic equations.
+
+
+  A =   1.00000    
+  B =  -10.0000    
+  C =   35.0000    
+  D =  -50.0000    
+  E =   24.0000    
+
+  Roots:
+
+     4.00000       0.00000    
+     1.00000       0.00000    
+     3.00000       0.00000    
+     2.00000       0.00000    
+
+  A =   1.00000    
+  B =  -5.00000    
+  C =   1.00000    
+  D =   21.0000    
+  E =  -18.0000    
+
+  Roots:
+
+     3.00000       0.00000    
+     3.00000       0.00000    
+     1.00000       0.00000    
+    -2.00000       0.00000    
+
+  A =   1.00000    
+  B =  -22.0000    
+  C =   141.000    
+  D =  -220.000    
+  E =   100.000    
+
+  Roots:
+
+     10.0000       0.00000    
+     10.0000       0.00000    
+     1.00000       0.00000    
+     1.00000       0.00000    
+
+  A =   1.00000    
+  B =  -16.0000    
+  C =   72.0000    
+  D =  -128.000    
+  E =   80.0000    
+
+  Roots:
+
+     10.0000       0.00000    
+     2.00000       0.00000    
+     2.00000       0.00000    
+     2.00000       0.00000    
+
+  A =   1.00000    
+  B =  -20.0000    
+  C =   150.000    
+  D =  -500.000    
+  E =   625.000    
+
+  Roots:
+
+     5.00000       0.00000    
+     5.00000       0.00000    
+     5.00000       0.00000    
+     5.00000       0.00000    
+
+  A =   1.00000    
+  B =   2.00000    
+  C =   1.00000    
+  D =   8.00000    
+  E =  -12.0000    
+
+  Roots:
+
+   -0.166533E-15   2.00000    
+   -0.166533E-15  -2.00000    
+     1.00000       0.00000    
+    -3.00000       0.00000    
+
+  A =   1.00000    
+  B =   0.00000    
+  C =   13.0000    
+  D =   0.00000    
+  E =   36.0000    
+
+  Roots:
+
+     0.00000       3.00000    
+     0.00000       2.00000    
+     0.00000      -2.00000    
+    -0.00000      -3.00000    
+
+R8VEC_EVEN_TEST
+  R8VEC_EVEN computes an R8VEC containing N evenly spaced
+  values between XLO and XHI.
+
+  XLO =    0.00000    
+  XHI =    99.0000    
+  while N =       10
+ 
+  Resulting array:
+ 
+         1:    0.0000000    
+         2:    11.000000    
+         3:    22.000000    
+         4:    33.000000    
+         5:    44.000000    
+         6:    55.000000    
+         7:    66.000000    
+         8:    77.000000    
+         9:    88.000000    
+        10:    99.000000    
+
+R8VEC_EVEN_SELECT_TEST
+  R8VEC_EVEN_SELECT returns the I-th of N evenly spaced values
+  between XLO and XHI.
+
+  XLO =    0.00000    
+  XHI =    99.0000    
+  while N =       10
+   2     11.0000    
+   5     44.0000    
+   8     77.0000    
+
+R8VEC_INDICATOR1_TEST
+  R8VEC_INDICATOR1 returns an indicator1 vector.
+ 
+  The indicator1 vector:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.0000000    
+         4:    4.0000000    
+         5:    5.0000000    
+         6:    6.0000000    
+         7:    7.0000000    
+         8:    8.0000000    
+         9:    9.0000000    
+        10:    10.000000    
+
+R8VEC_IS_DISTINCT_TEST
+  R8VEC_IS_DISTINCT is TRUE if an R8VEC only contains
+  distinct entries.
+
+  X:     0.00000       1.00000       3.00000    
+  X is distinct.
+
+  X:     1.50000       1.60000       1.50000    
+  X is NOT distinct.
+
+  X:    -1.00000       1.00000       10.0000    
+  X is distinct.
+
+R8VEC_LINSPACE_TEST
+  For a R8VEC:
+  R8VEC_LINSPACE: evenly spaced points between A and B;
+ 
+  r8vec_linspace ( 5, 10, 20 )
+ 
+         1:    10.000000    
+         2:    12.500000    
+         3:    15.000000    
+         4:    17.500000    
+         5:    20.000000    
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+ 
+  The R8VEC:
+ 
+         1:    123.45600    
+         2:   0.50000000E-05
+         3:   -1000000.0    
+         4:    3.1415927    
+
+R8VEC_TRANSPOSE_PRINT_TEST
+  R8VEC_TRANSPOSE_PRINT prints an R8VEC "tranposed",
+  that is, placing multiple entries on a line.
+  The vector X:    0.218418      0.956318      0.829509      0.561695      0.415307    
+                   0.661187E-01  0.257578      0.109957      0.438290E-01  0.633966    
+                   0.617272E-01  0.449539    
+
+R8VEC_UNIFORM_01_TEST
+  R8VEC_UNIFORM_01 returns a random R8VEC 
+  with entries in [0,1].
+
+  Input SEED =    123456789
+ 
+  Random R8VEC:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+         8:   0.10995679    
+         9:   0.43828998E-01
+        10:   0.63396571    
+        11:   0.61727229E-01
+        12:   0.44953896    
+        13:   0.40130628    
+        14:   0.75467349    
+        15:   0.79728695    
+        16:   0.18383712E-02
+        17:   0.89750406    
+        18:   0.35075234    
+        19:   0.94544750E-01
+        20:   0.13616892E-01
+
+R8VEC2_PRINT_TEST
+  R8VEC2_PRINT prints a pair of R8VEC's.
+ 
+  Squares and square roots:
+ 
+     1     1.00000         1.00000    
+     2     4.00000         1.41421    
+     3     9.00000         1.73205    
+     4     16.0000         2.00000    
+     5     25.0000         2.23607    
+
+ROOTS_TO_R8POLY_TEST:
+  ROOTS_TO_R8POLY is given N real roots,
+  and constructs the coefficient vector
+  of the corresponding polynomial.
+ 
+  N real roots:
+ 
+         1:    1.0000000    
+         2:   -4.0000000    
+         3:    3.0000000    
+         4:    0.0000000    
+         5:    3.0000000    
+ 
+  Corresponding polynomial:
+ 
+  p(x) =     1.00000     * x ^   5
+         -   3.00000     * x ^   4
+         -   13.0000     * x ^   3
+         +   51.0000     * x ^   2
+         -   36.0000     * x
+
+r8poly_test
+  Normal end of execution.
+
+22 January 2020   1:20:52.018 PM

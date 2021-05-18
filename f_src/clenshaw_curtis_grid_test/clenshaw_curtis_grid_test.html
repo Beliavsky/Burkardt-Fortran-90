@@ -1,0 +1,129 @@
+<html>
+
+  <head>
+    <title>
+      clenshaw_curtis_grid_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      clenshaw_curtis_grid_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>clenshaw_curtis_grid_test</b>,
+      a FORTRAN90 code which 
+      calls clenshaw_curtis_grid(), which
+      sets up a Clenshaw Curtis quadrature rule in one or multiple dimensions.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/clenshaw_curtis_grid/clenshaw_curtis_grid.html">
+      clenshaw_curtis_grid</a>,
+      a FORTRAN90 code which
+      sets up a Clenshaw Curtis quadrature rule in multiple dimensions;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "clenshaw_curtis_grid_test.f90">clenshaw_curtis_grid_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "clenshaw_curtis_grid_test.sh">clenshaw_curtis_grid_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "clenshaw_curtis_grid_test.txt">clenshaw_curtis_grid_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CC_1D</b> is an image of the abscissas of a nested sequence of
+      Clenshaw Curtis rules.
+      <ul>
+        <li>
+          <a href = "cc_1d.png">cc_1d.png</a>,
+          a PNG image of
+          the abscissas of the order 1, 3, 5, 9, 17, 33 and 65 order
+          rules, created by <b>NESTED_SEQUENCE_DISPLAY</b>.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CC_D1_O9</b> is a Clenshaw Curtis rule for 1D,
+      using an order 9 rule.
+      <ul>
+        <li>
+          <a href = "cc_d1_o9_r.txt">cc_d1_o9_r.txt</a>,
+          range for dimension 1, and order 9.
+        </li>
+        <li>
+          <a href = "cc_d1_o9_w.txt">cc_d1_o9_w.txt</a>,
+          weights for dimension 1, and order 9.
+        </li>
+        <li>
+          <a href = "cc_d1_o9_x.txt">cc_d1_o9_x.txt</a>,
+          abscissas for dimension 1, and order 9.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CC_D4_O3X3X3X3</b> is a Clenshaw Curtis rule for 4D,
+      using a product of order 3 rules.
+      <ul>
+        <li>
+          <a href = "cc_d4_o3x3x3x3_r.txt">cc_d4_o3x3x3x3_r.txt</a>,
+          range for dimension 4, and (total) order 81.
+        </li>
+        <li>
+          <a href = "cc_d4_o3x3x3x3_w.txt">cc_d4_o3x3x3x3_w.txt</a>,
+          weights for dimension 4, and (total) order 81.
+        </li>
+        <li>
+          <a href = "cc_d4_o3x3x3x3_x.txt">cc_d4_o3x3x3x3_x.txt</a>,
+          abscissas for dimension 4, and (total) order 81.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 09 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

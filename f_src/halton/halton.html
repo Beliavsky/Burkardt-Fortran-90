@@ -1,0 +1,246 @@
+<html>
+
+  <head>
+    <title>
+      HALTON - The Halton Quasi Monte Carlo (QMC) Sequence
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      HALTON <br> The Halton Quasi Monte Carlo (QMC) Sequence
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>HALTON</b>,
+      a FORTRAN90 library which
+      computes elements of a Halton Quasi Monte Carlo (QMC) sequence
+      using a simple interface.
+    </p>
+
+    <p>
+      A more sophisticated library is available in HALTON_ADVANCED,
+      but I find this simple version to be preferable for everyday use!
+    </p>
+
+    <p>
+      The standard M-dimensional Halton sequence is simply composed of
+      M 1-dimensional van der Corput sequences, using as bases the first
+      M primes.
+    </p>
+
+    <p>
+      The HALTON function will return the M-dimensional element of this
+      sequence with index I.
+    </p>
+
+    <p>
+      The HALTON_SEQUENCE function will return the M-dimensional elements 
+      of this sequence with indices I1 through I2.
+    </p>
+
+    <p>
+      The HALTON_INVERSE function accepts an M-dimensional value, presumably
+      computed by HALTON, and returns its original index I.
+    </p>
+
+    <p>
+      The HALTON_BASE function allows the user to replace the standard
+      basis of primes with some other choice.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>HALTON</b> is available in
+      <a href = "../../c_src/halton/halton.html">a C version</a> and
+      <a href = "../../cpp_src/halton/halton.html">a C++ version</a> and
+      <a href = "../../f_src/halton/halton.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/halton/halton.html">a MATLAB version</a> and
+      <a href = "../../py_src/halton/halton.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt/cvt.html">
+      CVT</a>,
+      a FORTRAN90 library which
+      computes elements of a Centroidal Voronoi Tessellation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/faure/faure.html">
+      FAURE</a>,
+      a FORTRAN90 library which
+      computes elements of a Faure sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/halton_test/halton_test.html">
+      halton_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/hammersley/hammersley.html">
+      HAMMERSLEY</a>,
+      a FORTRAN90 library which
+      computes elements of a Hammersley Quasi Monte Carlo (QMC) sequence,
+      using a simple interface.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ihs/ihs.html">
+      IHS</a>,
+      a FORTRAN90 library which
+      computes elements of
+      an improved distributed Latin hypercube dataset.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latin_center/latin_center.html">
+      LATIN_CENTER</a>,
+      a FORTRAN90 library which
+      computes elements of a
+      Latin Hypercube dataset, choosing center points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latin_edge/latin_edge.html">
+      LATIN_EDGE</a>,
+      a FORTRAN90 library which
+      computes elements of a Latin Hypercube dataset, choosing edge points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/latin_random/latin_random.html">
+      LATIN_RANDOM</a>,
+      a FORTRAN90 library which
+      computes elements of a Latin Hypercube dataset, choosing
+      points at random.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lattice_rule/lattice_rule.html">
+      LATTICE_RULE</a>,
+      a FORTRAN90 library which
+      approximates multidimensional integrals using lattice rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lcvt/lcvt.html">
+      LCVT</a>,
+      a FORTRAN90 library which
+      computes a latinized Centroidal Voronoi Tessellation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/niederreiter2/niederreiter2.html">
+      NIEDERREITER2</a>,
+      a FORTRAN90 library which
+      computes elements of a Niederreiter sequence
+      using base 2.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sobol/sobol.html">
+      SOBOL</a>,
+      a FORTRAN90 library which
+      computes elements of a Sobol sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms647/toms647.html">
+      TOMS647</a>,
+      a FORTRAN90 library which
+      is a version of ACM TOMS algorithm 647,
+      for evaluating Faure, Halton and Sobol sequences.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 library which
+      computes elements of a uniform pseudorandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/van_der_corput/van_der_corput.html">
+      VAN_DER_CORPUT</a>,
+      a FORTRAN90 library which
+      computes elements of a 1D van der Corput Quasi Monte Carlo (QMC) sequence
+      using a simple interface.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          John Halton,<br>
+          On the efficiency of certain quasi-random sequences of points
+          in evaluating multi-dimensional integrals,<br>
+          Numerische Mathematik,<br>
+          Volume 2, 1960, pages 84-90.
+        </li>
+        <li>
+          John Halton, GB Smith,<br>
+          Algorithm 247: Radical-Inverse Quasi-Random Point Sequence,<br>
+          Communications of the ACM,<br>
+          Volume 7, 1964, pages 701-702.
+        </li>
+        <li>
+          Ladislav Kocis, William Whiten,<br>
+          Computational Investigations of Low-Discrepancy Sequences,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 23, Number 2, 1997, pages 266-294.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "halton.f90">halton.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "halton.sh">halton.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 12 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

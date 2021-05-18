@@ -1,0 +1,332 @@
+<html>
+
+  <head>
+    <title>
+      CDFLIB - Cumulative Density Functions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CDFLIB <br> Cumulative Density Functions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CDFLIB</b>,
+      a FORTRAN90 code which
+      evaluates the cumulative density function (CDF) associated with
+      common probability distributions,
+      by Barry Brown, James Lovato, Kathy Russell.
+    </p>
+
+    <p>
+      CDFLIB includes routines for
+      evaluating the cumulative density functions of a variety of standard
+      probability distributions.  An unusual feature of this code is
+      its ability to easily compute any one parameter of the CDF given
+      the others.  This means that a single routine can evaluate the
+      CDF given the usual parameters, or determine the value of a parameter
+      that produced a given CDF value.
+    </p>
+
+    <p>
+      The probability distributions covered include:
+      <ul>
+        <li>
+          the Beta distribution;
+        </li>
+        <li>
+          the binomial distribution;
+        </li>
+        <li>
+          the chi-square distribution;
+        </li>
+        <li>
+          the noncentral chi-square distribution;
+        </li>
+        <li>
+          the F distribution;
+        </li>
+        <li>
+          the noncentral F distribution;
+        </li>
+        <li>
+          the Gamma distribution;
+        </li>
+        <li>
+          the negative binomial distribution;
+        </li>
+        <li>
+          the normal distribution;
+        </li>
+        <li>
+          the Poisson distribution;
+        </li>
+        <li>
+          the T distribution;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Note that the F and noncentral F distributions are not necessarily
+      monotone in either degree of freedom argument.  Consequently, there
+      may be two degree of freedom arguments that satisfy the specified
+      condition.  An arbitrary one of these will be found by the routines.
+    </p>
+
+    <p>
+      The amount of computation required for the noncentral chisquare and
+      noncentral F distribution is proportional to the value of the
+      noncentrality parameter.  Very large values of this parameter can
+      require immense numbers of computation.  Consequently, when the
+      noncentrality parameter is to be calculated, the upper limit searched
+      is 10,000.
+    </p>
+
+    <p>
+      <a href = "http://www.netlib.org/random">
+                 http://www.netlib.org/random</a> <br>
+      the NETLIB random number web site, distributes
+      a TAR file of the source code for the original CDFLIB code
+      in C and FORTRAN;
+    </p>
+
+    <p>
+      <a href = "http://biostatistics.mdanderson.org/SoftwareDownload/SingleSoftware.aspx?Software_Id=21">
+                 http://biostatistics.mdanderson.org/SoftwareDownload/SingleSoftware.aspx?Software_Id=21</a>
+      is a site at the University of Texas Department of Biostatistics
+      and Applied Mathematics which makes available a more up-to-date FORTRAN90
+      version of the software, known as CDFLIB90.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CDFLIB</b> is available in
+      <a href = "../../c_src/cdflib/cdflib.html">a C version</a> and
+      <a href = "../../cpp_src/cdflib/cdflib.html">a C++ version</a> and
+      <a href = "../../f_src/cdflib/cdflib.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa310/asa310.html">
+      ASA310</a>,
+      a FORTRAN90 code which
+      computes the CDF of the noncentral Beta distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/beta_nc/beta_nc.html">
+      BETA_NC</a>,
+      a FORTRAN90 code which
+      evaluates the CDF of the noncentral Beta distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/cdflib_test/cdflib_test.html">
+      cdflib_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/normal/normal.html">
+      NORMAL</a>,
+      a FORTRAN90 code which
+      contains routines for sampling the normal distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/prob/prob.html">
+      PROB</a>,
+      a FORTRAN90 code which
+      contains routines for evaluating and inverting the normal CDF, and many other
+      distributions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 code which
+      contains routines that store selected values of the normal PDF, and
+      many other statistical distributions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 code which
+      contains routines for sampling the uniform distribution.
+    </p>
+
+    <p>
+      <a href = "../../f_src/walker_sample/walker_sample.html">
+      WALKER_SAMPLE</a>,
+      a FORTRAN90 code which
+      efficiently samples a discrete probability vector using
+      Walker sampling.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Barry Brown, James Lovato, Kathy Russell,<br>
+      Department of Biomathematics,<br>
+      University of Texas,<br>
+      Houston, Texas.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Jacobus Bus, Jacob Dekker,<br>
+          Two Efficient Algorithms with Guaranteed Convergence for
+          Finding a Zero of a Function,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 1, Number 4, December 1975, pages 330-345.
+        </li>
+        <li>
+          William Cody,<br>
+          Algorithm 715:
+          SPECFUN - A Portable FORTRAN Package of
+          Special Function Routines and Test Drivers,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 19, Number 1, March 1993, pages 22-32.
+        </li>
+        <li>
+          William Cody,<br>
+          Rational Chebyshev Approximations for the Error Function,<br>
+          Mathematics of Computation,<br>
+          Volume 23, Number 107, July 1969, pages 631-638.
+        </li>
+        <li>
+          William Cody, Anthony Strecok, Henry Thacher,<br>
+          Chebyshev Approximations for the Psi Function,<br>
+          Mathematics of Computation,<br>
+          Volume 27, Number 121, January 1973, pages 123-127.
+        </li>
+        <li>
+          Armido DiDinato, Alfred Morris,<br>
+          Algorithm 708:
+          Significant Digit Computation of the
+          Incomplete Beta Function Ratios,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 18, Number 3, September 1993, pages 360-373.
+        </li>
+        <li>
+          Armido DiDinato, Alfred Morris,<br>
+          Algorithm 654:
+          Computation of the Incomplete Gamma Function Ratios and
+          their Inverse,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 377-393.
+        </li>
+        <li>
+          Phyllis Fox, Andrew Hall, Norman Schryer,<br>
+          Algorithm 528:
+          Framework for a Portable code,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 4, Number 2, June 1978, page 176-188.
+        </li>
+        <li>
+          William Kennedy, James Gentle,<br>
+          Statistical Computing,<br>
+          Marcel Dekker, 1980,<br>
+          ISBN: 0824768981,<br>
+          LC: QA276.4 K46.
+        </li>
+        <li>
+          Karl Pearson,<br>
+          Tables of the Incomplete Beta Function,<br>
+          Cambridge University Press, 1968,<br>
+          ISBN: 0521059224,<br>
+          LC: QA351.P38.
+        </li>
+        <li>
+          Frank Powell,<br>
+          Statistical Tables for Sociology, Biology and Physical Sciences,<br>
+          Cambridge University Press, 1982,<br>
+          ISBN: 0521284732,<br>
+          LC: QA276.25.S73.
+        </li>
+        <li>
+          Stephen Wolfram,<br>
+          The Mathematica Book,<br>
+          Fourth Edition,<br>
+          Cambridge University Press, 1999,<br>
+          ISBN: 0-521-64314-7,<br>
+          LC: QA76.95.W65.
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3,<br>
+          LC: QA47.M315.
+        </li>
+        <li>
+          <a href = "http://www.netlib.org/random">
+                     http://www.netlib.org/random</a>,
+          the web site.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cdflib.f90">cdflib.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "cdflib.sh">cdflib.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

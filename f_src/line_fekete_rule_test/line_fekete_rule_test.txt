@@ -1,0 +1,238 @@
+27 July 2020  12:25:02.948 PM
+
+LINE_FEKETE_RULE_TEST
+  FORTRAN90 version
+  Test the LINE_FEKETE_RULE library.
+
+TEST01:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =      5
+  using the monomial basis and uniform weight.
+
+  NF =      5
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.62480000    
+         3:    0.0000000    
+         4:   0.65600000    
+         5:    1.0000000    
+
+  Sum(WF) =    2.00000    
+
+TEST01:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =     11
+  using the monomial basis and uniform weight.
+
+  NF =     11
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.89960000    
+         3:  -0.70560000    
+         4:  -0.56760000    
+         5:  -0.41240000    
+         6:  -0.46000000E-01
+         7:   0.30840000    
+         8:   0.49480000    
+         9:   0.65120000    
+        10:   0.88680000    
+        11:    1.0000000    
+
+  Sum(WF) =    2.00000    
+
+TEST01:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =     21
+  using the monomial basis and uniform weight.
+
+  NF =     21
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.98240000    
+         3:  -0.95160000    
+         4:  -0.89760000    
+         5:  -0.83800000    
+         6:  -0.73680000    
+         7:  -0.59720000    
+         8:  -0.45240000    
+         9:  -0.31840000    
+        10:  -0.16880000    
+        11:  -0.13200000E-01
+        12:   0.15520000    
+        13:   0.32680000    
+        14:   0.45280000    
+        15:   0.55880000    
+        16:   0.72280000    
+        17:   0.83240000    
+        18:   0.89240000    
+        19:   0.95000000    
+        20:   0.98160000    
+        21:    1.0000000    
+
+  Sum(WF) =    2.00000    
+
+TEST02:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =      5
+  with the Chebyshev basis.
+
+  NF =      5
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.66360000    
+         3:  -0.80000000E-02
+         4:   0.64120000    
+         5:    1.0000000    
+
+  Sum(WF) =    3.14159    
+
+TEST02:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =     11
+  with the Chebyshev basis.
+
+  NF =     11
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.93720000    
+         3:  -0.78960000    
+         4:  -0.56960000    
+         5:  -0.29680000    
+         6:   0.80000000E-03
+         7:   0.30320000    
+         8:   0.57440000    
+         9:   0.79160000    
+        10:   0.93760000    
+        11:    1.0000000    
+
+  Sum(WF) =    3.14159    
+
+TEST02:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =     21
+  with the Chebyshev basis.
+
+  NF =     21
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.98400000    
+         3:  -0.94480000    
+         4:  -0.88360000    
+         5:  -0.80120000    
+         6:  -0.70000000    
+         7:  -0.58200000    
+         8:  -0.44960000    
+         9:  -0.30640000    
+        10:  -0.15640000    
+        11:  -0.40000000E-03
+        12:   0.15480000    
+        13:   0.30760000    
+        14:   0.45080000    
+        15:   0.58240000    
+        16:   0.70040000    
+        17:   0.80120000    
+        18:   0.88320000    
+        19:   0.94440000    
+        20:   0.98360000    
+        21:    1.0000000    
+
+  Sum(WF) =    3.14159    
+
+TEST03:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =      5
+  with the Legendre basis and uniform weight.
+
+  NF =      5
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.62160000    
+         3:  -0.60000000E-02
+         4:   0.60480000    
+         5:    1.0000000    
+
+  Sum(WF) =    2.00000    
+
+TEST03:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =     11
+  with the Legendre basis and uniform weight.
+
+  NF =     11
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.92240000    
+         3:  -0.73880000    
+         4:  -0.54640000    
+         5:  -0.29480000    
+         6:  -0.56000000E-02
+         7:   0.27960000    
+         8:   0.54120000    
+         9:   0.73800000    
+        10:   0.92160000    
+        11:    1.0000000    
+
+  Sum(WF) =    2.00000    
+
+TEST03:
+  Seek Fekete points in [  -1.00000    ,   1.00000    ]
+  using   5001 equally spaced sample points
+  for polynomials of degree M =     21
+  with the Legendre basis and uniform weight.
+
+  NF =     21
+ 
+  Estimated Fekete points XF:
+ 
+         1:   -1.0000000    
+         2:  -0.97840000    
+         3:  -0.92600000    
+         4:  -0.87120000    
+         5:  -0.79480000    
+         6:  -0.70160000    
+         7:  -0.61280000    
+         8:  -0.40600000    
+         9:  -0.28640000    
+        10:  -0.14800000    
+        11:  -0.12000000E-02
+        12:   0.14600000    
+        13:   0.29080000    
+        14:   0.42080000    
+        15:   0.54240000    
+        16:   0.63120000    
+        17:   0.79440000    
+        18:   0.87080000    
+        19:   0.92600000    
+        20:   0.97840000    
+        21:    1.0000000    
+
+  Sum(WF) =    2.00000    
+
+LINE_FEKETE_RULE_TEST
+  Normal end of execution.
+
+27 July 2020  12:25:02.991 PM

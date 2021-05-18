@@ -1,0 +1,754 @@
+18 August 2020  10:15:22.417 PM
+ 
+POLYGON_PROPERTIES_TEST
+  FORTRAN90 version
+  Test the POLYGON_PROPERTIES library.
+ 
+POLYGON_ANGLES_TEST
+  POLYGON_ANGLES computes the angles of a polygon.
+ 
+  Number of polygonal vertices =        6
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       1.00000    
+    4:   3.00000       0.00000    
+    5:   3.00000       2.00000    
+    6:   1.00000       2.00000    
+ 
+  Polygonal angles in degrees:
+ 
+         1     63.4349    
+         2     135.000    
+         3     270.000    
+         4     45.0000    
+         5     90.0000    
+         6     116.565    
+ 
+POLYGON_AREA_TEST
+  POLYGON_AREA computes the area of a polygon.
+ 
+  Number of polygonal vertices =        4
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   2.00000       1.00000    
+    3:   1.00000       2.00000    
+    4:   0.00000       1.00000    
+ 
+  Exact area is           2.00000    
+  The computed area is    2.00000    
+ 
+  Number of polygonal vertices =        8
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   3.00000       0.00000    
+    3:   3.00000       3.00000    
+    4:   2.00000       3.00000    
+    5:   2.00000       1.00000    
+    6:   1.00000       1.00000    
+    7:   1.00000       2.00000    
+    8:   0.00000       2.00000    
+ 
+  Exact area is           6.00000    
+  The computed area is    6.00000    
+ 
+POLYGON_AREA_2_TEST
+  POLYGON_AREA_2 computes the area of a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   2.00000       1.00000    
+    3:   1.00000       2.00000    
+    4:   0.00000       1.00000    
+ 
+  Exact area is           2.00000    
+  The computed area is    2.00000    
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   3.00000       0.00000    
+    3:   3.00000       3.00000    
+    4:   2.00000       3.00000    
+    5:   2.00000       1.00000    
+    6:   1.00000       1.00000    
+    7:   1.00000       2.00000    
+    8:   0.00000       2.00000    
+ 
+  Exact area is           6.00000    
+  The computed area is    6.00000    
+ 
+POLYGON_CENTROID_TEST
+  POLYGON_CENTROID computes the centroid of a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   2.00000       1.00000    
+    3:   1.00000       2.00000    
+    4:   0.00000       1.00000    
+ 
+  Centroid from POLYGON_CENTROID:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+ 
+POLYGON_CENTROID_2_TEST
+  POLYGON_CENTROID_2 computes the centroid of a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   2.00000       1.00000    
+    3:   1.00000       2.00000    
+    4:   0.00000       1.00000    
+ 
+  Centroid from POLYGON_CENTROID_2:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+ 
+POLYGON_CONTAINS_POINT_TEST
+  POLYGON_CONTAINS_POINT determines if a point is in a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       1.00000    
+    4:   1.00000       2.00000    
+    5:   0.00000       2.00000    
+ 
+          P          Inside?
+ 
+     1.00000       1.00000        T
+     3.00000       4.00000        F
+     0.00000       2.00000        F
+    0.500000     -0.250000        F
+ 
+POLYGON_CONTAINS_POINT_2_TEST
+  POLYGON_CONTAINS_POINT_2 determines if
+  a point is in a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       1.00000    
+    4:   1.00000       2.00000    
+    5:   0.00000       2.00000    
+ 
+          P          In1  In2
+ 
+     1.00000       1.00000        T
+     3.00000       4.00000        F
+     0.00000       2.00000        T
+    0.500000     -0.250000        F
+ 
+POLYGON_CONTAINS_POINT_3_TEST
+  POLYGON_CONTAINS_POINT_3 determines if a point is in a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       1.00000    
+    4:   1.00000       2.00000    
+    5:   0.00000       2.00000    
+ 
+          P          Inside?
+ 
+     1.00000       1.00000        T
+     3.00000       4.00000        F
+     0.00000       2.00000        T
+    0.500000     -0.250000        F
+ 
+POLYGON_DIAMETER_TEST
+  POLYGON_DIAMETER computes the diameter of a polygon.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   2.00000       1.00000    
+    3:   1.00000       2.00000    
+    4:   0.00000       1.00000    
+ 
+  Diameter ( computed )    2.00000    
+  Diameter ( exact )       2.00000    
+ 
+POLYGON_EXPAND_TEST
+  POLYGON_EXPAND "expands" a polygon by an amount H.
+ 
+  The polygon vertices:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   5.00000       1.00000    
+    3:   2.00000       4.00000    
+    4:   1.00000       3.00000    
+ 
+  The expansion amount H =   0.500000    
+ 
+  The expanded polygon:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  0.500000      0.500000    
+    2:   6.20711      0.500000    
+    3:   2.00000       4.70711    
+    4:  0.500000       3.20711    
+ 
+POLYGON_INRAD_DATA_TEST
+  POLYGON_INRAD_DATA uses the inradius of a regular polygon
+  to determine the area, outradius and side length.
+ 
+  Number of polygonal sides =        3
+ 
+  Assuming RADIN =    1.00000    
+    AREA =      5.19615    
+    RADOUT =    2.00000    
+    SIDE =      3.46410    
+ 
+  Number of polygonal sides =        4
+ 
+  Assuming RADIN =    1.00000    
+    AREA =      4.00000    
+    RADOUT =    1.41421    
+    SIDE =      2.00000    
+ 
+  Number of polygonal sides =        5
+ 
+  Assuming RADIN =    1.00000    
+    AREA =      3.63271    
+    RADOUT =    1.23607    
+    SIDE =      1.45309    
+ 
+POLYGON_INTEGRAL_1_TEST
+  POLYGON_INTEGRAL_1 integrates 1 over a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+    In       1.00000    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+    In       5.00000    
+ 
+POLYGON_INTEGRAL_X_TEST
+  POLYGON_INTEGRAL_X integrates X over a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+    In      0.500000    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+    In       11.6667    
+ 
+POLYGON_INTEGRAL_XX_TEST
+  POLYGON_INTEGRAL_XX integrates X^2 over a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+    In      0.333333    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+    In       29.1667    
+ 
+POLYGON_INTEGRAL_XY_TEST
+  POLYGON_INTEGRAL_XY integrates X*Y over a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+    In      0.250000    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+    In       35.8333    
+ 
+POLYGON_INTEGRAL_Y_TEST
+  POLYGON_INTEGRAL_Y integrates Y over a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+    In      0.500000    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+    In       15.0000    
+ 
+POLYGON_INTEGRAL_YY_TEST
+  POLYGON_INTEGRAL_YY integrates Y^2 over a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+    In      0.333333    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+    In       48.3333    
+ 
+POLYGON_IS_CONVEX_TEST
+  POLYGON_IS_CONVEX determines if a polygon is convex.
+ 
+  A point:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+  The polygon is degenerate and convex.                                           
+ 
+  A line:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       2.00000    
+  The polygon is degenerate and convex.                                           
+ 
+  A triangle:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       0.00000    
+    3:   1.00000       0.00000    
+  The polygon is convex and clockwise.                                            
+ 
+  A CCW triangle:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   0.00000       2.00000    
+  The polygon is convex and counterclockwise.                                     
+ 
+  A CW triangle:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   0.00000       2.00000    
+    3:   1.00000       0.00000    
+  The polygon is convex and clockwise.                                            
+ 
+  Polygon with large angle:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   2.00000       0.00000    
+    3:   3.00000       1.00000    
+    4:   0.00000       1.00000    
+  The polygon is convex and counterclockwise.                                     
+ 
+  Polygon with huge angle:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000      0.500000    
+    3:   1.00000       0.00000    
+    4:   1.00000       1.00000    
+    5:   0.00000       1.00000    
+  The polygon is not convex.                                                      
+ 
+  A five-pointed star:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2: -0.809017      0.587785    
+    3:  0.309017     -0.951057    
+    4:  0.309017      0.951057    
+    5: -0.809017     -0.587785    
+  The polygon is not convex.                                                      
+ 
+  A hexagon:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:  0.500000      0.866025    
+    3: -0.500000      0.866025    
+    4:  -1.00000      0.122465E-15
+    5: -0.500000     -0.866025    
+    6:  0.500000     -0.866025    
+  The polygon is convex and counterclockwise.                                     
+ 
+  A triangle twice:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       0.00000    
+    5:   2.00000       0.00000    
+    6:   1.00000       1.00000    
+  The polygon is not convex.                                                      
+ 
+  Square knot:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       0.00000    
+    2:   3.00000       0.00000    
+    3:   3.00000       3.00000    
+    4:   0.00000       3.00000    
+    5:   0.00000       1.00000    
+    6:   2.00000       1.00000    
+    7:   2.00000       2.00000    
+    8:   1.00000       2.00000    
+  The polygon is not convex.                                                      
+ 
+POLYGON_LATTICE_AREA_TEST
+  POLYGON_LATTICE_AREA returns the area
+  of a polygon, measured in lattice points.
+ 
+  Number of interior lattice points =    5
+  Number of boundary lattice points =    6
+  Area of polygon is    7.00000    
+ 
+POLYGON_OUTRAD_DATA_TEST
+  POLYGON_OUTRAD_DATA uses the inradius of a regular polygon
+  to compute area, inradius, and side length.
+ 
+  Number of polygonal sides =        3
+ 
+  Assuming RADOUT =    1.00000    
+    AREA =      1.29904    
+    RADIN =    0.500000    
+    SIDE =      1.73205    
+ 
+  Number of polygonal sides =        4
+ 
+  Assuming RADOUT =    1.00000    
+    AREA =      2.00000    
+    RADIN =    0.707107    
+    SIDE =      1.41421    
+ 
+  Number of polygonal sides =        5
+ 
+  Assuming RADOUT =    1.00000    
+    AREA =      2.37764    
+    RADIN =    0.809017    
+    SIDE =      1.17557    
+ 
+POLYGON_PERIMETER_TEST
+  POLYGON_PERIMETER computes the perimeter of a polygon.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+  Perimeter of V1 =        4.00000    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+  Perimeter of V2 =        10.5571    
+ 
+POLYGON_PERIMETER_QUAD_TEST
+  POLYGON_PERIMETER_QUAD estimates the integral of
+  a function over the perimeter of a polygon using
+  the composite midpoint rule over each side.
+ 
+  Vertices of polygon V1:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   1.00000       1.00000    
+    4:   0.00000       1.00000    
+
+  Using HMAX =   0.500000     estimated integral of 1 over perimeter =    4.00000    
+
+  Using HMAX =    1.00000     estimated integral of x^2 over perimeter =    1.50000    
+  Using HMAX =   0.500000     estimated integral of x^2 over perimeter =    1.62500    
+  Using HMAX =   0.250000     estimated integral of x^2 over perimeter =    1.65625    
+ 
+  Vertices of polygon V2:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+  Using HMAX =   0.500000     estimated integral of 1 over perimeter =    10.5571    
+
+  Using HMAX =    1.00000     estimated integral of x^2 over perimeter =    60.9706    
+  Using HMAX =   0.500000     estimated integral of x^2 over perimeter =    61.1854    
+  Using HMAX =   0.250000     estimated integral of x^2 over perimeter =    61.2383    
+ 
+POLYGON_POINT_DIST_TEST
+  POLYGON_POINT_DIST computes polygon-point distance.
+ 
+  Vertices of polygon:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+       X             Y             DIST
+
+     4.00000         5.00000         1.41421    
+     2.00000         3.00000        0.485071    
+    -2.00000        -1.00000         3.60555    
+ 
+POLYGON_POINT_NEAR_TEST
+  POLYGON_POINT_NEAR computes nearest point on polygon.
+ 
+  Vertices of polygon:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.00000       1.00000    
+    2:   4.00000       3.00000    
+    3:   2.00000       5.00000    
+
+       X             Y             XN             YN
+
+     4.00000         5.00000         3.00000         4.00000    
+     2.00000         3.00000         1.52941         3.11765    
+    -2.00000        -1.00000         1.00000         1.00000    
+ 
+POLYGON_SAMPLE_TEST
+  POLYGON_SAMPLE samples a polygon.
+ 
+  Sample points:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   1.57165      0.436824E-01
+    2:   1.48143      0.584693    
+    3:   1.69243      0.109957    
+    4:  0.511266       1.44954    
+    5:   1.44804      0.754673    
+    6:  0.496513      0.102496    
+    7:  0.254573      0.136169E-01
+    8:   1.86187      0.130616    
+    9:  0.522955E-01  0.875163E-01
+   10:  0.180039      0.177113    
+   11:  0.577122       1.13878    
+   12:   1.49011      0.911977    
+   13:  0.316961      0.238508    
+   14:  0.117215      0.574366    
+   15:  0.574459       1.21293    
+   16:  0.417036       1.29933    
+   17:   1.05162      0.886522    
+   18:  0.866277       1.77799    
+   19:  0.791952       1.10063    
+   20:  0.831300       1.59303    
+ 
+POLYGON_SIDE_DATA_TEST
+  POLYGON_SIDE_DATA uses the side length of a regular polygon
+  to compute the area, inradius, and outradius.
+ 
+  Number of polygonal sides =        3
+ 
+  Assuming SIDE =    1.00000    
+    AREA =     0.433013    
+    RADIN =    0.288675    
+    RADOUT =   0.577350    
+ 
+  Number of polygonal sides =        4
+ 
+  Assuming SIDE =    1.00000    
+    AREA =      1.00000    
+    RADIN =    0.500000    
+    RADOUT =   0.707107    
+ 
+  Number of polygonal sides =        5
+ 
+  Assuming SIDE =    1.00000    
+    AREA =      1.72048    
+    RADIN =    0.688191    
+    RADOUT =   0.850651    
+
+POLYGON_TRIANGULATE_TEST
+  POLYGON_TRIANGULATE triangulates a polygon.
+  Here, we triangulate the comb_10 polygon.
+
+  Triangles:
+
+   1     3   1   2
+   2     5   3   4
+   3     7   5   6
+   4     9   7   8
+   5    10   7   9
+   6     3  10   1
+   7     5  10   3
+   8     7  10   5
+ 
+POLYGON_PROPERTIES_TEST
+  Normal end of execution.
+ 
+18 August 2020  10:15:22.418 PM

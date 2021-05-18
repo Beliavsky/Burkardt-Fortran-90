@@ -1,0 +1,517 @@
+<html>
+
+  <head>
+    <title>
+      TEST_NINT - Multi-dimensional Integration Test Functions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_NINT <br> Multi-dimensional Integration <br> Test Functions.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_NINT</b>,
+      a FORTRAN90 code which
+      defines test problems for the approximate computation of integrals
+      over multi-dimensional regions.
+    </p>
+
+    <p>
+      Routines are available to evaluate the integrand, return the exact
+      value of the integral, report the name of the problem,
+      report the integration limits, get, set or modify a base point.
+    </p>
+
+    <p>
+      The integrands is assigned an index.  The integrands can be invoked
+      by index.  Most integrands may be defined for any value of the
+      spatial dimension, which we denote here by <b>m</b>.  Most integrands
+      are defined on the unit <b>m</b>-dimensional hypercube.  Some
+      integrands include one or more parameters.  These generally have
+      default values, which can be altered by the user.
+    </p>
+
+    <p>
+      For each problem, a set of routines are available with a standard
+      interface, for manipulating and evaluating the problem.  For a
+      problem with index "87", for instance, we might have the following
+      set of routines.  The most important is <b>P87_F</b> which evaluates
+      the integrand.  We probably also need <b>P87_LIM</b> to determine
+      the limits of integration, and <b>P87_EXACT</b> to get the exact
+      value of the integral (if known).  A number of routines are available
+      to set, get, or randomize parameters associated with the problem.
+      <ul>
+        <li>
+          <b>P87_DEFAULT</b> sets default values for problem 87.
+        </li>
+        <li>
+          <b>P87_EXACT</b> returns the exact integral for problem 87.
+        </li>
+        <li>
+          <b>P87_F</b> evaluates the integrand for problem 87.
+        </li>
+        <li>
+          <b>P87_I4</b> sets or gets integer scalar parameters for problem 87.
+        </li>
+        <li>
+          <b>P87_I4VEC</b> sets or gets integer vector parameters for problem 87.
+        </li>
+        <li>
+          <b>P87_LIM</b> returns the integration limits for problem 87.
+        </li>
+        <li>
+          <b>P87_NAME</b> returns the name of problem 87.
+        </li>
+        <li>
+          <b>P87_R8</b> sets or gets real scalar parameters for problem 87.
+        </li>
+        <li>
+          <b>P87_R8VEC</b> sets or gets real vector parameters for problem 87.
+        </li>
+        <li>
+          <b>P87_REGION</b> returns the name of the integration region
+          for problem 87.
+        </li>
+        <li>
+          <b>P87_TITLE</b> prints a title for problem 87.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The list of integrand functions includes:
+      <ol>
+        <li>
+          f(x) = ( sum ( x(1:m) ) )^2;
+        </li>
+        <li>
+          f(x) = ( sum ( 2 * x(1:m) - 1 ) )^4;
+        </li>
+        <li>
+          f(x) = ( sum ( x(1:m) ) )^5;
+        </li>
+        <li>
+          f(x) = ( sum ( 2 * x(1:m) - 1 ) )^6;
+        </li>
+        <li>
+          f(x) = 1 / ( 1 + sum ( 2 * x(1:m) ) );
+        </li>
+        <li>
+          f(x) = product ( 2 * abs ( 2 * x(1:m) - 1 ) );
+        </li>
+        <li>
+          f(x) = product ( pi / 2 ) * sin ( pi * x(1:m) );
+        </li>
+        <li>
+          f(x) = ( sin ( (pi/4) * sum ( x(1:m) ) ) )^2;
+        </li>
+        <li>
+          f(x) = exp ( sum ( c(1:m) * x(1:m) ) );
+        </li>
+        <li>
+          f(x) = sum ( abs ( x(1:m) - 0.5 ) );
+        </li>
+        <li>
+          f(x) = exp ( sum ( abs ( 2 * x(1:m) - 1 ) ) );
+        </li>
+        <li>
+          f(x) = product ( 1 <= i <= m ) ( i * cos ( i * x(i) ) );
+        </li>
+        <li>
+          f(x) = product ( 1 <= i <= m ) t(n(i))(x(i)), t(n(i))
+          is a Chebyshev polynomial;
+        </li>
+        <li>
+          f(x) = sum ( 1 <= i <= m ) (-1)^i * product ( 1 <= j <= i ) x(j);
+        </li>
+        <li>
+          f(x) = product ( 1 <= i <= order ) x(mod(i-1,m)+1);
+        </li>
+        <li>
+          f(x) = sum ( abs ( x(1:m) - x0(1:m) ) );
+        </li>
+        <li>
+          f(x) = sum ( ( x(1:m) - x0(1:m) )^2 );
+        </li>
+        <li>
+          f(x) = 1 inside an m-dimensional sphere around x0(1:m), 0 outside;
+        </li>
+        <li>
+          f(x) = product ( sqrt ( abs ( x(1:m) - x0(1:m) ) ) );
+        </li>
+        <li>
+          f(x) = ( sum ( x(1:m) ) ^power;
+        </li>
+        <li>
+          f(x) = c * product ( x(1:m)^e(1:m) ) on the surface of
+          an m-dimensional unit sphere;
+        </li>
+        <li>
+          f(x) = c * product ( x(1:m)^e(1:m) ) in an m-dimensional ball;
+        </li>
+        <li>
+          f(x) = c * product ( x(1:m)^e(1:m) ) in the unit m-dimensional simplex;
+        </li>
+        <li>
+          f(x) = product ( abs ( 4 * x(1:m) - 2 ) + c(1:m) )
+          / ( 1 + c(1:m) ) );
+        </li>
+        <li>
+          f(x) = exp ( c * product ( x(1:m) ) );
+        </li>
+        <li>
+          f(x) = product ( c(1:m) * exp ( - c(1:m) * x(1:m) ) );
+        </li>
+        <li>
+          f(x) = cos ( 2 * pi * r + sum ( c(1:m) * x(1:m) ) ), <br>
+          Genz "Oscillatory";
+        </li>
+        <li>
+          f(x) = 1 / product ( c(1:m)^2 + (x(1:m) - x0(1:m))^2),<br>
+          Genz "Product Peak";
+        </li>
+        <li>
+          f(x) = 1 / ( 1 + sum ( c(1:m) * x(1:m) ) )^(m+r),<br>
+          Genz "Corner Peak";
+        </li>
+        <li>
+          f(x) = exp(-sum(c(1:m)^2 * ( x(1:m) - x0(1:m))^2 ) ),<br>
+          Genz "Gaussian";
+        </li>
+        <li>
+          f(x) = exp ( - sum ( c(1:m) * abs ( x(1:m) - x0(1:m) ) ) ),
+          Genz "Continuous";
+        </li>
+        <li>
+          f(x) = exp(sum(c(1:m)*x(1:m)) for x(1:m) <= x0(1:m), 0 otherwise,<br>
+          Genz "Discontinuous";
+        </li>
+        <li>
+          f(x) = sum ( x(1:n)^2 )<br>
+          Ball R^2;
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      An Important Quote:
+    </h3>
+
+    <p>
+      <blockquote><i>
+        "When good results are obtained in integrating a high-dimensional
+        function, we should conclude first of all that an especially tractable
+        integrand was tried and not that a generally successful method has
+        been found.  A secondary conclusion is that we might have made a
+        very good choice in selecting an integration method to exploit whatever
+        features of f made it tractable."
+      </i></blockquote>
+      Art Owen,<br>
+      Latin Supercube Sampling for Very High Dimensional Simulation,<br>
+      ACM Transactions on Modeling and Computer Simulations,<br>
+      Volume 8, Number 1, January 1998, pages 71-102.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_NINT</b> is available in
+      <a href = "../../cpp_src/test_nint/test_nint.html">a C++ version</a> and
+      <a href = "../../f_src/test_nint/test_nint.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_nint/test_nint.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/ball_volume_monte_carlo/ball_volume_monte_carlo.html">
+      BALL_VOLUME_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the volume of the unit 6D ball;
+    </p>
+
+    <p>
+      <a href = "../../f_src/cubpack/cubpack.html">
+      CUBPACK</a>,
+      a FORTRAN90 code which
+      estimates the integral of a function over a collection of N-dimensional
+      hyperrectangles and simplices.
+    </p>
+
+    <p>
+      <a href = "../../f_src/integral_test/integral_test.html">
+      INTEGRAL_TEST</a>,
+      a FORTRAN90 code which
+      tests the suitability of a set of N points for use in an equal-weight quadrature rule over
+      the multi-dimensional unit hypercube.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nint_exactness/nint_exactness.html">
+      NINT_EXACTNESS</a>,
+      a FORTRAN90 code which
+      measures the polynomial exactness of a multidimensional quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nintlib/nintlib.html">
+      NINTLIB</a>,
+      a FORTRAN90 code which
+      estimates integrals over multidimensional regions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/product_rule/product_rule.html">
+      PRODUCT_RULE</a>,
+      a FORTRAN90 code which
+      constructs a product quadrature rule from 1D factor rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrature_test/quadrature_test.html">
+      QUADRATURE_TEST</a>,
+      a FORTRAN90 code which
+      reads files defining a quadrature rule, and
+      applies them to all the test integrals defined by <b>TEST_NINT</b>.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stroud/stroud.html">
+      STROUD</a>,
+      a FORTRAN90 code which
+      defines quadrature rules for a variety of multidimensional reqions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_int_2d/test_int_2d.html">
+      TEST_INT_2D</a>,
+      a FORTRAN90 code which
+      defines test integrands for 2D quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_nint_test/test_nint_test.html">
+      test_nint_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/testpack/testpack.html">
+      TESTPACK</a>,
+      a FORTRAN90 code which
+      defines a set of integrands used to test multidimensional quadrature.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          JD Beasley, SG Springer,<br>
+          Algorithm AS 111:
+          The Percentage Points of the Normal Distribution,<br>
+          Applied Statistics,<br>
+          Volume 26, 1977, pages 118-121.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Harald Niederreiter,<br>
+          Implementation and Tests of Low-Discrepancy Sequences,<br>
+          ACM Transactions on Modeling and Computer Simulation,<br>
+          Volume 2, Number 3, July 1992, pages 195-213.
+        </li>
+        <li>
+          Roger Broucke,<br>
+          Algorithm 446:
+          Ten Subroutines for the Manipulation of Chebyshev Series,<br>
+          Communications of the ACM,<br>
+          Volume 16, 1973, pages 254-256.
+        </li>
+        <li>
+          William Cody, Kenneth Hillstrom,<br>
+          Chebyshev Approximations for the Natural Logarithm of the
+          Gamma Function,
+          Mathematics of Computation,<br>
+          Volume 21, Number 98, April 1967, pages 198-203.
+        </li>
+        <li>
+          Richard Crandall,<br>
+          Projects in Scientific Computing,<br>
+          Springer, 2005,<br>
+          ISBN: 0387950095,<br>
+          LC: Q183.9.C733.
+        </li>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+        <li>
+          Gerald Folland,<br>
+          How to Integrate a Polynomial Over a Sphere,<br>
+          American Mathematical Monthly,<br>
+          Volume 108, Number 5, May 2001, pages 446-448.
+        </li>
+        <li>
+          Leslie Fox, Ian Parker,<br>
+          Chebyshev Polynomials in Numerical Analysis,<br>
+          Oxford Press, 1968,<br>
+          LC: QA297.F65.
+        </li>
+        <li>
+          Alan Genz,<br>
+          Testing Multidimensional Integration Routines,<br>
+          in Tools, Methods, and Languages for Scientific and
+          Engineering Computation,<br>
+          edited by B Ford, JC Rault, F Thomasset,<br>
+          North-Holland, 1984, pages 81-94,<br>
+          ISBN: 0444875700,<br>
+          LC: Q183.9.I53.
+        </li>
+        <li>
+          Alan Genz,<br>
+          A Package for Testing Multiple Integration Subroutines,<br>
+          in Numerical Integration:
+          Recent Developments, Software and Applications,<br>
+          edited by Patrick Keast, Graeme Fairweather,<br>
+          Reidel, 1987, pages 337-340,<br>
+          ISBN: 9027725144,<br>
+          LC: QA299.3.N38.
+        </li>
+        <li>
+          Kenneth Hanson,<br>
+          Quasi-Monte Carlo: halftoning in high dimensions?<br>
+          in Computatinal Imaging,<br>
+          Edited by CA Bouman, RL Stevenson,<br>
+          Proceedings SPIE,<br>
+          Volume 5016, 2003, pages 161-172.
+        </li>
+        <li>
+          John Hart, Ward Cheney, Charles Lawson, Hans Maehly,
+          Charles Mesztenyi, John Rice, Henry Thatcher,
+          Christoph Witzgall,<br>
+          Computer Approximations,<br>
+          Wiley, 1968,<br>
+          LC: QA297.C64.
+        </li>
+        <li>
+          Claude Itzykson, Jean-Michel Drouffe,<br>
+          Statistical Field Theory,<br>
+          Volume 1,<br>
+          Cambridge, 1991,<br>
+          ISBN: 0-521-40806-7,<br>
+          LC: QC174.8.I89.
+        </li>
+        <li>
+          Stephen Joe, Frances Kuo<br>
+          Remark on Algorithm 659:
+          Implementing Sobol's Quasirandom Sequence Generator,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 29, Number 1, March 2003, pages 49-57.
+        </li>
+        <li>
+          David Kahaner, Cleve Moler, Steven Nash,<br>
+          Numerical Methods and Software,<br>
+          Prentice Hall, 1989,<br>
+          ISBN: 0-13-627258-4,<br>
+          LC: TA345.K34.
+        </li>
+        <li>
+          Bradley Keister,<br>
+          Multidimensional Quadrature Algorithms,<br>
+          Computers in Physics,<br>
+          Volume 10, Number 2, March/April, 1996, pages 119-122.
+        </li>
+        <li>
+          Arnold Krommer, Christoph Ueberhuber,<br>
+          Numerical Integration on Advanced Computer Systems,<br>
+          Springer, 1994,<br>
+          ISBN: 3540584102,<br>
+          LC: QA299.3.K76.
+        </li>
+        <li>
+          Anargyros Papageorgiou, Joseph Traub,<br>
+          Faster Evaluation of Multidimensional Integrals,<br>
+          Computers in Physics,<br>
+          Volume 11, Number 6, November/December 1997, pages 574-578.
+        </li>
+        <li>
+          Thomas Patterson,<br>
+          On the Construction of a Practical Ermakov-Zolotukhin
+          Multiple Integrator,<br>
+          in Numerical Integration:
+          Recent Developments, Software and Applications,<br>
+          edited by Patrick Keast and Graeme Fairweather,<br>
+          D. Reidel, 1987, pages 269-290,
+          LC: QA299.3.N38.
+        </li>
+        <li>
+          Arthur Stroud,<br>
+          Approximate Calculation of Multiple Integrals,<br>
+          Prentice Hall, 1971,<br>
+          ISBN: 0130438936,<br>
+          LC: QA311.S85.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+        <li>
+          Xiaoqun Wang, Kai-Tai Fang,<br>
+          The Effective Dimension and quasi-Monte Carlo Integration,<br>
+          Journal of Complexity,<br>
+          Volume 19, pages 101-124, 2003.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_nint.f90">test_nint.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_nint.sh">test_nint.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 04 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

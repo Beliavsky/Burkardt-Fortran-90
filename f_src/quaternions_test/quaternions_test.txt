@@ -1,0 +1,564 @@
+23 August 2020   7:05:02.531 PM
+
+QUATERNIONS_TEST
+  FORTRAN90 version
+  Test the QUATERNIONS library.
+
+Q8_CONJUGATE_TEST
+  Q8_CONJUGATE conjugates a quaternion;
+
+  q1 = q8_normal_01 ( seed ):     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  q2 = q8_conjugate ( q1 ):     1.6790403      0.47276880      0.56605981      0.69345745-309
+
+  q1 = q8_normal_01 ( seed ):     1.2129342      0.53503714       1.2693806       1.0495427    
+  q2 = q8_conjugate ( q1 ):     1.2129342     -0.53503714      -1.2693806      0.69345745-309
+
+  q1 = q8_normal_01 ( seed ):    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  q2 = q8_conjugate ( q1 ):    -1.6660867       1.8652277       2.2424640      0.69345745-309
+
+  q1 = q8_normal_01 ( seed ):    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  q2 = q8_conjugate ( q1 ):    0.39674919E-01   1.3507356     -0.67306820      0.69345745-309
+
+  q1 = q8_normal_01 ( seed ):   -0.27512735      0.37494027       2.1640048      0.18559983    
+  q2 = q8_conjugate ( q1 ):   -0.27512735     -0.37494027      -2.1640048      0.69345745-309
+
+Q8_EXPONENTIATE_TEST
+  Q8_EXPONENTIATE exponentiates a quaternion
+
+  q1 = q8_normal_01 ( seed ):     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  q2 = q8_exponentiate ( q1 ):     3.8375103      -2.2893584      -2.7411153      -1.1192066    
+
+  q1 = q8_normal_01 ( seed ):     1.2129342      0.53503714       1.2693806       1.0495427    
+  q2 = q8_exponentiate ( q1 ):   -0.53917391       1.0256599       2.4333877       2.0119609    
+
+  q1 = q8_normal_01 ( seed ):    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  q2 = q8_exponentiate ( q1 ):   -0.18730576     -0.15587288E-01 -0.18739767E-01  0.61489926E-02
+
+  q1 = q8_normal_01 ( seed ):    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  q2 = q8_exponentiate ( q1 ):    0.64088949E-01 -0.92947955      0.46315736      0.53500883E-02
+
+  q1 = q8_normal_01 ( seed ):   -0.27512735      0.37494027       2.1640048      0.18559983    
+  q2 = q8_exponentiate ( q1 ):   -0.44945026      0.10414396      0.60107714      0.51552480E-01
+
+Q8_INVERSE_TEST
+  Q8_INVERSE inverts a quaternion
+
+  q1 = q8_normal_01 ( seed ):     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  q2 = q8_inverse ( q1 ):    0.49144628      0.13837695      0.16568274      0.67648821E-01
+  q3 = q8_multiply ( q1, q2 ):     1.0000000      0.69388939E-17  0.13877788E-16 -0.27755576E-16
+
+  q1 = q8_normal_01 ( seed ):     1.2129342      0.53503714       1.2693806       1.0495427    
+  q2 = q8_inverse ( q1 ):    0.27132923     -0.11968597     -0.28395610     -0.23477910    
+  q3 = q8_multiply ( q1, q2 ):     1.0000000       0.0000000       0.0000000     -0.55511151E-16
+
+  q1 = q8_normal_01 ( seed ):    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  q2 = q8_inverse ( q1 ):   -0.14089552      0.15773623      0.18963788     -0.62224994E-01
+  q3 = q8_multiply ( q1, q2 ):     1.0000000      0.55511151E-16  0.83266727E-16  0.27755576E-16
+
+  q1 = q8_normal_01 ( seed ):    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  q2 = q8_inverse ( q1 ):    0.17407831E-01  0.59265092     -0.29531649     -0.34113013E-02
+  q3 = q8_multiply ( q1, q2 ):     1.0000000      0.30357661E-17  0.86736174E-18 -0.80800167E-16
+
+  q1 = q8_normal_01 ( seed ):   -0.27512735      0.37494027       2.1640048      0.18559983    
+  q2 = q8_inverse ( q1 ):   -0.55765599E-01 -0.75996694E-01 -0.43862242     -0.37619254E-01
+  q3 = q8_multiply ( q1, q2 ):     1.0000000      0.13877788E-16   0.0000000     -0.38163916E-16
+
+Q8_MULTIPLY_TEST
+  Q8_MULTIPLY multiplies two quaternions
+
+  q1 = q8_normal_01 ( seed ) :     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  q2 = q8_normal_01 ( seed ) :     1.2129342      0.53503714       1.2693806       1.0495427    
+  q3 = q8_multiply ( q1, q2 ):     3.2506342      0.24192005E-01   1.8172789       1.1846255    
+
+  q1 = q8_normal_01 ( seed ) :    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  q2 = q8_normal_01 ( seed ) :    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  q3 = q8_multiply ( q1, q2 ):    -1.0819209       1.6637552      -2.1897415      -4.2681618    
+
+  q1 = q8_normal_01 ( seed ) :   -0.27512735      0.37494027       2.1640048      0.18559983    
+  q2 = q8_normal_01 ( seed ) :    0.29778523     -0.46375767       2.0445356      0.96577036E-01
+  q3 = q8_multiply ( q1, q2 ):    -4.3503569      0.68771810E-01 -0.40382965E-01   1.7988505    
+
+  q1 = q8_normal_01 ( seed ) :     1.3988185     -0.85739409      -1.2429851       1.6745161    
+  q2 = q8_normal_01 ( seed ) :   -0.67083662E-01  0.62078321     -0.79439604     -0.32416261    
+  q3 = q8_multiply ( q1, q2 ):   -0.61889379E-02   2.6590385     -0.26625551      0.88695741    
+
+  q1 = q8_normal_01 ( seed ) :   -0.52376847      0.15648305     -0.35056721     -0.24775711    
+  q2 = q8_normal_01 ( seed ) :    0.13169976      -1.8207557      0.53737987       1.2485667    
+  q3 = q8_multiply ( q1, q2 ):    0.71366628      0.66969631     -0.71906632E-01  -1.2407958    
+
+Q8_MULTIPLY2_TEST
+  Q8_MULTIPLY2 multiplies two quaternions using a matrix
+
+  q1 = q8_normal_01 ( seed )  :     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  q2 = q8_normal_01 ( seed )  :     1.2129342      0.53503714       1.2693806       1.0495427    
+  q3 = q8_multiply2 ( q1, q2 ):     3.2506342      0.24192005E-01   1.8172789       1.1846255    
+
+  q1 = q8_normal_01 ( seed )  :    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  q2 = q8_normal_01 ( seed )  :    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  q3 = q8_multiply2 ( q1, q2 ):    -1.0819209       1.6637552      -2.1897415      -4.2681618    
+
+  q1 = q8_normal_01 ( seed )  :   -0.27512735      0.37494027       2.1640048      0.18559983    
+  q2 = q8_normal_01 ( seed )  :    0.29778523     -0.46375767       2.0445356      0.96577036E-01
+  q3 = q8_multiply2 ( q1, q2 ):    -4.3503569      0.68771810E-01 -0.40382965E-01   1.7988505    
+
+  q1 = q8_normal_01 ( seed )  :     1.3988185     -0.85739409      -1.2429851       1.6745161    
+  q2 = q8_normal_01 ( seed )  :   -0.67083662E-01  0.62078321     -0.79439604     -0.32416261    
+  q3 = q8_multiply2 ( q1, q2 ):   -0.61889379E-02   2.6590385     -0.26625551      0.88695741    
+
+  q1 = q8_normal_01 ( seed )  :   -0.52376847      0.15648305     -0.35056721     -0.24775711    
+  q2 = q8_normal_01 ( seed )  :    0.13169976      -1.8207557      0.53737987       1.2485667    
+  q3 = q8_multiply2 ( q1, q2 ):    0.71366628      0.66969631     -0.71906632E-01  -1.2407958    
+
+Q8_NORM_TEST
+  Q8_NORM computes the norm of a quaternion.
+
+  q = q8_normal_01(seed):     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  q8_norm(q) =    1.84839    
+
+  q = q8_normal_01(seed):     1.2129342      0.53503714       1.2693806       1.0495427    
+  q8_norm(q) =    2.11432    
+
+  q = q8_normal_01(seed):    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  q8_norm(q) =    3.43875    
+
+  q = q8_normal_01(seed):    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  q8_norm(q) =    1.50968    
+
+  q = q8_normal_01(seed):   -0.27512735      0.37494027       2.1640048      0.18559983    
+  q8_norm(q) =    2.22118    
+
+Q8_NORMAL_01_TEST
+  Q8_NORMAL_01 computes a normally distributed quaternion.
+
+  Sample # 1     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+  Sample # 2     1.2129342      0.53503714       1.2693806       1.0495427    
+  Sample # 3    -1.6660867      -1.8652277      -2.2424640      0.73580928    
+  Sample # 4    0.39674919E-01  -1.3507356      0.67306820      0.77748398E-02
+  Sample # 5   -0.27512735      0.37494027       2.1640048      0.18559983    
+
+Q8_TRANSPOSE_PRINT_TEST
+  Q8_TRANSPOSE_PRINT prints a quaternion "transposed",
+  that is, writing it as a row vector.
+  The quaternion:     1.6790403     -0.47276880     -0.56605981     -0.23112413    
+
+R8_ACOS_TEST
+  R8_ACOS computes the arc-cosine of an angle.
+
+       C            R8_ACOS(C)        ACOS(C)
+
+    -1.16667         3.14159    
+    -1.00000         3.14159         3.14159    
+   -0.833333         2.55591         2.55591    
+   -0.666667         2.30052         2.30052    
+   -0.500000         2.09440         2.09440    
+   -0.333333         1.91063         1.91063    
+   -0.166667         1.73824         1.73824    
+     0.00000         1.57080         1.57080    
+    0.166667         1.40335         1.40335    
+    0.333333         1.23096         1.23096    
+    0.500000         1.04720         1.04720    
+    0.666667        0.841069        0.841069    
+    0.833333        0.585686        0.585686    
+     1.00000         0.00000         0.00000    
+     1.16667         0.00000    
+
+R8MAT_PRINT_TEST
+  R8MAT_PRINT prints an R8MAT.
+ 
+  The R8MAT:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1:   11.0000       12.0000       13.0000       14.0000    
+    2:   21.0000       22.0000       23.0000       24.0000    
+    3:   31.0000       32.0000       33.0000       34.0000    
+    4:   41.0000       42.0000       43.0000       44.0000    
+    5:   51.0000       52.0000       53.0000       54.0000    
+    6:   61.0000       62.0000       63.0000       64.0000    
+
+R8MAT_PRINT_SOME_TEST
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+ 
+  The R8MAT, rows 2:4, cols 1:2:
+ 
+  Col          1             2      
+  Row
+ 
+    2:   21.0000       22.0000    
+    3:   31.0000       32.0000    
+    4:   41.0000       42.0000    
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+ 
+  The R8VEC:
+ 
+         1:    123.45600    
+         2:   0.50000000E-05
+         3:   -1000000.0    
+         4:    3.1415927    
+
+R8VEC_UNIFORM_01_TEST
+  R8VEC_UNIFORM_01 returns a random R8VEC 
+  with entries in [0,1].
+
+  Input SEED =    123456789
+ 
+  Random R8VEC:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+         8:   0.10995679    
+         9:   0.43828998E-01
+        10:   0.63396571    
+        11:   0.61727229E-01
+        12:   0.44953896    
+        13:   0.40130628    
+        14:   0.75467349    
+        15:   0.79728695    
+        16:   0.18383712E-02
+        17:   0.89750406    
+        18:   0.35075234    
+        19:   0.94544750E-01
+        20:   0.13616892E-01
+
+ROTATION_AXIS_VECTOR_TEST
+  ROTATION_AXIS_VECTOR applies an axis
+  rotation to a vector.
+ 
+  The vector:
+ 
+         1:    1.0000000    
+         2:    4.0000000    
+         3:    10.000000    
+ 
+  The rotation axis:
+ 
+         1:   0.23617370    
+         2:  -0.88141240    
+         3:  -0.40906490    
+
+  The rotation angle is    1.15980    
+ 
+  The rotated vector:
+ 
+         1:   -7.2272404    
+         2:    2.9641018    
+         3:    7.4820516    
+ 
+  The vector:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+         3:    1.0000000    
+ 
+  The rotation axis:
+ 
+         1:    0.0000000    
+         2:    0.0000000    
+         3:    2.0000000    
+
+  The rotation angle is    1.57080    
+ 
+  The rotated vector:
+ 
+         1:   -1.0000000    
+         2:    1.0000000    
+         3:    1.0000000    
+
+ROTATION_AXIS2MAT_TEST
+  ROTATION_AXIS2MAT converts a rotation axis to a matrix.
+ 
+  The vector V:
+ 
+         1:    1.0000000    
+         2:    4.0000000    
+         3:    10.000000    
+ 
+  The rotation axis:
+ 
+         1:   0.23617370    
+         2:  -0.88141240    
+         3:  -0.40906490    
+
+  The rotation angle is    1.15980    
+ 
+  The rotation matrix A:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433013      0.250000     -0.866025    
+    2: -0.500000      0.866025     -0.104741E-07
+    3:  0.750000      0.433013      0.500000    
+ 
+  The rotated vector W = A * V:
+ 
+         1:   -7.2272404    
+         2:    2.9641018    
+         3:    7.4820516    
+ 
+  The vector V:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+         3:    1.0000000    
+ 
+  The rotation axis:
+ 
+         1:    0.0000000    
+         2:    0.0000000    
+         3:    2.0000000    
+
+  The rotation angle is    1.57080    
+ 
+  The rotation matrix A:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.612323E-16  -1.00000       0.00000    
+    2:   1.00000      0.612323E-16   0.00000    
+    3:   0.00000       0.00000       1.00000    
+ 
+  The rotated vector W = A * V:
+ 
+         1:   -1.0000000    
+         2:    1.0000000    
+         3:    1.0000000    
+
+ROTATION_AXIS2QUAT_TEST
+  ROTATION_AXIS2QUAT converts a rotation axis to a quaternion.
+ 
+  The vector V:
+ 
+         1:    1.0000000    
+         2:    4.0000000    
+         3:    10.000000    
+ 
+  The rotation axis:
+ 
+         1:   0.23617370    
+         2:  -0.88141240    
+         3:  -0.40906490    
+
+  The rotation angle is    1.15980    
+ 
+  The rotation quaternion Q:
+ 
+         1:   0.83651635    
+         2:   0.12940948    
+         3:  -0.48296286    
+         4:  -0.22414383    
+ 
+  The rotated vector W:
+ 
+         1:   -7.2272404    
+         2:    2.9641018    
+         3:    7.4820516    
+ 
+  The vector V:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+         3:    1.0000000    
+ 
+  The rotation axis:
+ 
+         1:    0.0000000    
+         2:    0.0000000    
+         3:    2.0000000    
+
+  The rotation angle is    1.57080    
+ 
+  The rotation quaternion Q:
+ 
+         1:   0.70710678    
+         2:    0.0000000    
+         3:    0.0000000    
+         4:   0.70710678    
+ 
+  The rotated vector W:
+ 
+         1:   -1.0000000    
+         2:    1.0000000    
+         3:    1.0000000    
+
+ROTATION_MAT_VECTOR_TEST
+  ROTATION_MAT_VECTOR applies a matrix
+  rotation to a vector.
+ 
+  The rotation matrix:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433013      0.250000     -0.866025    
+    2: -0.500000      0.866025       0.00000    
+    3:  0.750000      0.433013      0.500000    
+ 
+  The vector V:
+ 
+         1:    1.0000000    
+         2:    4.0000000    
+         3:    10.000000    
+ 
+  The rotated vector W = A * V:
+ 
+         1:   -7.2272412    
+         2:    2.9641016    
+         3:    7.4820508    
+
+ROTATION_MAT2AXIS_TEST
+  ROTATION_MAT2AXIS computes a rotation axis
+  and angle from a rotation matrix.
+  ROTATION_AXIS2MAT computes a rotation matrix
+  from a rotation axis and angle.
+ 
+  The rotation matrix:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433013      0.250000     -0.866025    
+    2: -0.500000      0.866025       0.00000    
+    3:  0.750000      0.433013      0.500000    
+ 
+  The rotation axis:
+ 
+         1:   0.23617374    
+         2:  -0.88141242    
+         3:  -0.40906493    
+
+  The rotation angle is    1.15980    
+ 
+  The recovered rotation matrix:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433013      0.250000     -0.866025    
+    2: -0.500000      0.866025      0.917325E-08
+    3:  0.750000      0.433013      0.500000    
+
+ROTATION_MAT2QUAT_TEST
+  ROTATION_MAT2QUAT computes a quaternion
+  from a rotation matrix.
+  ROTATION_QUAT2MAT computes a rotation matrix
+  from a quaternion.
+ 
+  The rotation matrix:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433013      0.250000     -0.866025    
+    2: -0.500000      0.866025       0.00000    
+    3:  0.750000      0.433013      0.500000    
+ 
+  The rotation quaternion Q:
+ 
+         1:   0.83651630    
+         2:   0.12940952    
+         3:  -0.48296292    
+         4:  -0.22414387    
+ 
+  The recovered rotation matrix:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433013      0.250000     -0.866025    
+    2: -0.500000      0.866025      0.917325E-08
+    3:  0.750000      0.433013      0.500000    
+
+ROTATION_QUAT_VECTOR_TEST
+  ROTATION_QUAT_VECTOR applies a quaternion
+  rotation to a vector.
+ 
+  The rotation quaternion:
+ 
+         1:   0.83651600    
+         2:   0.12941000    
+         3:  -0.48296300    
+         4:  -0.22414400    
+ 
+  The vector V:
+ 
+         1:    1.0000000    
+         2:    4.0000000    
+         3:    10.000000    
+ 
+  The rotated vector:
+ 
+         1:   -7.2272447    
+         2:    2.9640921    
+         3:    7.4820450    
+
+ROTATION_QUAT2AXIS_TEST
+  ROTATION_QUAT2AXIS computes a rotation axis
+  and angle from a rotation quaternion.
+  ROTATION_AXIS2QUAT computes a rotation
+  quaternion from a rotation axis and angle.
+ 
+  The rotation quaternion:
+ 
+         1:   0.83651602    
+         2:   0.12941000    
+         3:  -0.48296300    
+         4:  -0.22414400    
+ 
+  The rotation axis:
+ 
+         1:   0.23617451    
+         2:  -0.88141218    
+         3:  -0.40906498    
+
+  The rotation angle is    1.15980    
+ 
+  The recovered rotation quaternion:
+ 
+         1:   0.83651611    
+         2:   0.12941001    
+         3:  -0.48296305    
+         4:  -0.22414402    
+
+ROTATION_QUAT2MAT_TEST
+  ROTATION_QUAT2MAT computes a rotation axis
+  from a rotation quaternion.
+  ROTATION_MAT2QUAT computes a rotation
+  quaternion from a rotation matrix.
+ 
+  The rotation quaternion:
+ 
+         1:   0.83651600    
+         2:   0.12941000    
+         3:  -0.48296300    
+         4:  -0.22414400    
+ 
+  The rotation matrix:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1:  0.433012      0.250000     -0.866026    
+    2: -0.500001      0.866025     -0.553776E-06
+    3:  0.750000      0.433014      0.499999    
+ 
+  The recovered rotation quaternion:
+ 
+         1:   0.83651610    
+         2:   0.12941002    
+         3:  -0.48296306    
+         4:  -0.22414403    
+
+QUATERNIONS_TEST
+  Normal end of execution.
+
+23 August 2020   7:05:02.532 PM

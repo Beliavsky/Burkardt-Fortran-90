@@ -1,0 +1,123 @@
+<html>
+
+  <head>
+    <title>
+      power_rule_rest
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      power_rule_rest
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>power_rule_rest</b>,
+      a FORTRAN90 code which
+      calls power_rule(), which
+      creates a power rule, that is, a multidimensional quadrature rule
+      formed as a repeated product of a single one-dimensional quadrature rule.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/power_rule/power_rule.html">
+      power_rule</a>,
+      a FORTRAN90 code which
+      constructs a power rule, that is, a product quadrature rule 
+      from identical 1D factor rules.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "power_rule_test.sh">power_rule_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "power_rule_test.txt">power_rule_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      As an example, we start with a 1D Clenshaw Curtis rule of order 3:
+      <ul>
+        <li>
+          <a href = "cc3_x.txt">
+          cc3_x.txt</a>,
+          the abscissas of a 1D Clenshaw Curtis rule of order 3.
+        </li>
+        <li>
+          <a href = "cc3_w.txt">
+          cc3_w.txt</a>,
+          the weights of a 1D Clenshaw Curtis rule of order 3.
+        </li>
+        <li>
+          <a href = "cc3_r.txt">
+          cc3_r.txt</a>,
+          defines the range of the region.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The files which are created include:
+      <ul>
+        <li>
+          <a href = "power_rule.txt">
+          power_rule.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "power_x.txt">
+          power_x.txt</a>,
+          the abscissas of the power rule.
+        </li>
+        <li>
+          <a href = "power_w.txt">
+          power_w.txt</a>,
+          the weights of the power rule.
+        </li>
+        <li>
+          <a href = "power_r.txt">
+          power_r.txt</a>,
+          defines the range of the power region.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,13 @@
+22 June 2020   6:26:08.666 AM
+
+FAIR_DICE_SIMULATION:
+  FORTRAN90 version
+  Simulate N throws of a pair of fair dice.
+ 
+  Created data file "fair_dice_data.txt".
+  Created command file "fair_dice_commands.txt".
+
+FAIR_DICE_SIMULATION:
+  Normal end of execution.
+
+22 June 2020   6:26:08.666 AM

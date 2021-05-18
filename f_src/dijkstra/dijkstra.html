@@ -1,0 +1,199 @@
+<html>
+
+  <head>
+    <title>
+      DIJKSTRA - Demonstration of Dijkstra's Minimum Distance Algorithm
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      DIJKSTRA <br> Demonstration of Dijkstra's Minimum Distance Algorithm
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>DIJKSTRA</b>,
+      a FORTRAN90 code which
+      implements a simple version of Dijkstra's algorithm for determining
+      the minimum distance from one node in a graph to all other nodes.
+    </p>
+
+    <p>
+      The program is mainly of interest as a starting point for a parallelization
+      effort using OpenMP.
+    </p>
+
+    <p>
+      The example graph handled by the program has 6 nodes and 8 links,
+      each with a positive length:
+      <pre>
+    N0--15--N2-100--N3
+      \      |     /
+       \     |    /
+        40  20  10
+          \  |  /
+           \ | /
+            N1
+            / \
+           /   \
+          6    25
+         /       \
+        /         \
+      N5----8-----N4
+      </pre>
+    </p>
+
+    <p>
+      Using "Inf" to indicate that there is no link between two nodes,
+      the distance matrix for this graph is:
+      <pre>
+          0   40   15  Inf  Inf  Inf
+         40    0   20   10   25    6
+         15   20    0  100  Inf  Inf
+        Inf   10  100    0  Inf  Inf
+        Inf   25  Inf  Inf    0    8
+        Inf    6  Inf  Inf    8    0
+      </pre>
+    </p>
+
+    <p>
+      Dijkstra's algorithm efficiently determines the length of the shortest
+      path from node 0 to other nodes as:
+      <pre>
+        From 0 to:  0    1    2    3    4    5
+        Distance:   0   35   15   45   49   41
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>DIJKSTRA</b> is available in
+      <a href = "../../c_src/dijkstra/dijkstra.html">a C version</a> and
+      <a href = "../../cpp_src/dijkstra/dijkstra.html">a C++ version</a> and
+      <a href = "../../f_src/dijkstra/dijkstra.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/dijkstra/dijkstra.html">a MATLAB version</a> and
+      <a href = "../../py_src/dijkstra/dijkstra.html">a Python version</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bellman_ford/bellman_ford.html">
+      BELLMAN_FORD</a>,
+      a FORTRAN90 code which
+      implements the Bellman-Ford algorithm for finding the shortest distance 
+      from a given node to all other nodes in a directed graph whose
+      edges have been assigned real-valued lengths.
+    </p>
+
+    <p>
+      <a href = "../../f_src/dijkstra_test/dijkstra_test.html">
+      dijkstra_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/dijkstra_openmp/dijkstra_openmp.html">
+      DIJKSTRA_OPENMP</a>,
+      a FORTRAN90 program which
+      uses OpenMP to parallelize a simple example of Dijkstra's
+      minimum distance algorithm for graphs.
+    </p>
+
+    <p>
+      <a href = "../../f_src/floyd/floyd.html">
+      FLOYD</a>,
+      a FORTRAN90 code which
+      implements Floyd's algorithm for finding the shortest distance between pairs of
+      nodes on a directed graph.
+    </p>
+
+    <p>
+      <a href = "../../f_src/grafpack/grafpack.html">
+      GRAFPACK</a>,
+      a FORTRAN90 code which
+      carries out operations on abstract graphs.
+    </p>
+
+    <p>
+      <a href = "../../data/graph_representation/graph_representation.html">
+      GRAPH_REPRESENTATION</a>,
+      a data directory of examples of ways of representing abstract
+      mathematical graphs
+    </p>
+
+    <p>
+      <a href = "../../f_src/laupack/laupack.html">
+      LAUPACK</a>,
+      a FORTRAN90 code which
+      carries out various operations on graphs.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms097/toms097.html">
+      TOMS097</a>,
+      a FORTRAN90 code which
+      computes the distance between all pairs of nodes in a directed graph
+      with weighted edges, using Floyd's algorithm.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Edsger Dijkstra,<br>
+          A note on two problems in connexion with graphs,<br>
+          Numerische Mathematik,<br>
+          Volume 1, 1959, pages 269-271.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "dijkstra.f90">dijkstra.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "dijkstra.sh">dijkstra.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 16 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

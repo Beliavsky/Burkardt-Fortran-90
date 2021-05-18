@@ -1,0 +1,125 @@
+<html>
+
+  <head>
+    <title>
+      LINE_CVT_LLOYD - Lloyd's CVT Method for a Line Segment
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LINE_CVT_LLOYD <br> Lloyd's CVT Method for a Line Segment
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LINE_CVT_LLOYD</b>,
+      a FORTRAN90 code which 
+      carries out Lloyd's iteration for computing a 
+      Centroidal Voronoi Tesselation (CVT) of points 
+      over the interior of a line segment in 1D.
+    </p>
+
+    <p>
+      A constraint has been added to the computation, which forces the first
+      and last points to be fixed to the endpoints of the line segment. 
+      This is not actually a requirement for Lloyd's method. 
+    </p>
+
+    <p>
+      At least for the uniform density case, the exact solution of this problem
+      is known in advance, and is simply a set of equally spaced points.
+      For instance, for N = 4, the solution over the interval [0,1] would be
+      0, 1/3, 2/3, 1, if the endpoint constraint is imposed.  If the endpoint
+      constraint is NOT imposed, then the exact solution is: 1/8, 3/8, 5/8, 7/8.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LINE_CVT_LLOYD</b> is available in
+      <a href = "../../c_src/cvt_1d_lloyd/cvt_1d_lloyd.html">a C version</a> and
+      <a href = "../../cpp_src/cvt_1d_lloyd/cvt_1d_lloyd.html">a C++ version</a> and
+      <a href = "../../f_src/cvt_1d_lloyd/cvt_1d_lloyd.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/cvt_1d_lloyd/cvt_1d_lloyd.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/line_cvt_lloyd_test/line_cvt_lloyd_test.html">
+      line_cvt_lloyd_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/line_felippa_rule/line_felippa_rule.html">
+      LINE_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns the points and weights of a Felippa quadrature rule
+      over the interior of a line segment in 1D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/line_grid/line_grid.html">
+      LINE_GRID</a>,
+      a FORTRAN90 code which
+      computes a grid of points
+      over the interior of a line segment in 1D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Qiang Du, Vance Faber, Max Gunzburger,<br>
+          Centroidal Voronoi Tessellations: Applications and Algorithms,<br>
+          SIAM Review, Volume 41, 1999, pages 637-676.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "line_cvt_lloyd.f90">line_cvt_lloyd.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "line_cvt_lloyd.sh">line_cvt_lloyd.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 27 July 2020
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

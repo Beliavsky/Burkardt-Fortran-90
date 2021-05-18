@@ -1,0 +1,11 @@
+30 July 2020   8:29:12.803 AM
+
+MARIO
+  FORTRAN90 version
+  Create a GNUPLOT input file that will draw a
+  picture of Mario, using colored squares.
+  Created command file "mario_commands.txt".
+
+MARIO:
+  Normal end of execution.
+30 July 2020   8:29:12.805 AM

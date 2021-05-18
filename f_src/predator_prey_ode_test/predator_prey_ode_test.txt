@@ -1,0 +1,35 @@
+29 October 2020   1:46:25.037 PM
+
+predator_prey_ode_test:
+  FORTRAN90 version
+  Test predator_prey_ode using euler, midpoint.
+
+  parameter values:
+    alpha =    2.00000    
+    beta  =   0.100000E-02
+    gamma =    10.0000    
+    delta =   0.200000E-02
+
+predator_prey_euler
+
+  A pair of ordinary differential equations for a population
+  of predators and prey are solved using euler().
+ 
+  predator_prey_euler: data stored in "predator_prey_euler_data.txt".
+  predator_prey_euler: plot commands stored in "predator_prey_euler_commands.txt".
+
+predator_prey_midpoint 
+
+  A pair of ordinary differential equations for a population
+  of predators and prey are solved using midpoint_fixed().
+
+  The exact solution shows periodic behavior, with a fixed
+  period and amplitude.
+ 
+  predator_prey_midpoint: data stored in "predator_prey_midpoint_data.txt".
+  predator_prey_midpoint: plot commands stored in "predator_prey_midpoint_commands.txt".
+
+predator_prey_ode_test:
+  Normal end of execution.
+
+29 October 2020   1:46:25.038 PM

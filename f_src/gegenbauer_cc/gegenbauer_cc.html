@@ -1,0 +1,125 @@
+<html>
+
+  <head>
+    <title>
+      GEGENBAUER_CC - Gegenbauer Integral of a Function
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      GEGENBAUER_CC <br> Gegenbauer Integral of a Function
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>GEGENBAUER_CC</b>,
+      a FORTRAN90 library which
+      uses a Clenshaw-Curtis approach to approximate the integral of a 
+      function f(x) with a Gegenbauer weight.
+    </p>
+
+    <p>
+      The Gegenbauer integral of a function f(x) is:
+      <pre>
+        value = integral ( -1 <= x <= + 1 ) ( 1 - x^2 )^(lambda-1/2) * f(x) dx
+      </pre>
+      where -0.5 < lambda. 
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>GEGENBAUER_CC</b> is available in
+      <a href = "../../f_src/gegenbauer_cc/gegenbauer_cc.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/gegenbauer_cc/gegenbauer_cc.html">a MATLAB version</a> and
+      <a href = "../../py_src/gegenbauer_cc/gegenbauer_cc.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_cc_test/gegenbauer_cc_test.html">
+      gegenbauer_cc_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_exactness/gegenbauer_exactness.html">
+      GEGENBAUER_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the monomial exactness of Gauss-Gegenbauer quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_polynomial/gegenbauer_polynomial.html">
+      GEGENBAUER_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Gegenbauer polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_rule/gegenbauer_rule.html">
+      GEGENBAUER_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Gegenbauer quadrature rule.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          D B Hunter, H V Smith,<br>
+          A quadrature formula of Clenshaw-Curtis type for the Gegenbauer weight function,<br>
+          Journal of Computational and Applied Mathematics,<br>
+          Volume 177, 2005, pages 389-400.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "gegenbauer_cc.f90">gegenbauer_cc.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "gegenbauer_cc.sh">gegenbauer_cc.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

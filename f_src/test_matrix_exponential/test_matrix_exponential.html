@@ -1,0 +1,168 @@
+<html>
+
+  <head>
+    <title>
+      TEST_MATRIX_EXPONENTIAL - Matrix Exponential Tests
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_MATRIX_EXPONENTIAL <br> Matrix Exponential TESTS
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_MATRIX_EXPONENTIAL</b>,
+      a FORTRAN90 code which
+      contains some simple tests for software that computes the
+      matrix exponential function.
+    </p>
+
+    <p>
+      Formally, for a square matrix A and scalar t, the matrix exponential
+      exp(A*t) can be defined as the sum:
+      <blockquote>
+        exp(A*t) = sum ( 0 <= i < oo ) A^i t^i / i!
+      </blockquote>
+    </p>
+
+    <p>
+      The simplest form of the matrix exponential problem asks for the
+      value when t = 1, that is
+      <blockquote>
+        exp(A) = sum ( 0 <= i < oo ) A^i / i!
+      </blockquote>
+      Even for this simple case, and for a matrix of small order, it can be quite 
+      difficult to compute the matrix exponential accurately.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_MATRIX_EXPONENTIAL</b> is available in
+      <a href = "../../c_src/test_matrix_exponential/test_matrix_exponential.html">a C version</a> and
+      <a href = "../../cpp_src/test_matrix_exponential/test_matrix_exponential.html">a C++ version</a> and
+      <a href = "../../f_src/test_matrix_exponential/test_matrix_exponential.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_matrix_exponential/test_matrix_exponential.html">a MATLAB version</a> and
+      <a href = "../../py_src/test_matrix_exponential/test_matrix_exponential.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/matrix_exponential/matrix_exponential.html">
+      MATRIX_EXPONENTIAL</a>,
+      a FORTRAN90 code which
+      demonstrates some simple approaches to the problem of computing the
+      exponential of a matrix.
+    </p>
+
+    <p>
+      <a href = "../../f_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines using double precision real (R8) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_mat/test_mat.html">
+      TEST_MAT</a>,
+      a FORTRAN90 code which
+      defines test matrices.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_matrix_exponential_test/test_matrix_exponential_test.html">
+      test_matrix_exponential_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Alan Laub,<br>
+          Review of "Linear System Theory" by Joao Hespanha,<br>
+          SIAM Review,<br>
+          Volume 52, Number 4, December 2010, page 779-781.
+        </li>
+        <li>
+          Cleve Moler, Charles VanLoan,<br>
+          Nineteen Dubious Ways to Compute the Exponential of a Matrix,
+          SIAM Review,<br>
+          Volume 20, Number 4, October 1978, pages 801-836.
+        </li>
+        <li>
+          Cleve Moler, Charles VanLoan,<br>
+          Nineteen Dubious Ways to Compute the Exponential of a Matrix,
+          Twenty-Five Years Later,<br>
+          SIAM Review,<br>
+          Volume 45, Number 1, March 2003, pages 3-49.
+        </li>
+        <li>
+          Cleve Moler,<br>
+          Cleve's Corner: A Balancing Act for the Matrix Exponential,<br>
+          July 23rd, 2012.
+        </li>
+        <li>
+          Roger Sidje,<br>
+          EXPOKIT: Software Package for Computing Matrix Exponentials,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 24, Number 1, 1998, pages 130-156.
+        </li>
+        <li>
+          Robert Ward,<br>
+          Numerical computation of the matrix exponential with accuracy estimate,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 14, Number 4, September 1977, pages 600-610.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_matrix_exponential.f90">test_matrix_exponential.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_matrix_exponential.sh">test_matrix_exponential.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 30 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

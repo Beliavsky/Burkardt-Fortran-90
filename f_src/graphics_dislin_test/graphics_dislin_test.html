@@ -1,0 +1,453 @@
+<html>
+
+  <head>
+    <title>
+      graphics_dislin_test
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      graphics_dislin_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>graphics_dislin_test</b>,
+      FORTRAN90 codes which
+      illustrate how various kinds of data can be displayed and analyzed
+      graphically, using the dislin() graphics package.
+    </p>
+
+    <p>
+      Some common plot types include:
+      <ul>
+        <li>
+          <b>animation</b>, a sequential display of images which are meant
+          to suggest motion or evolution.
+        </li>
+        <li>
+          <b>bar</b>, a display of values y(1:n) in which every value
+          y(i) is represented by a bar of that height.
+        </li>
+        <li>
+          <b>bar3d</b>, a display of values z(1:m,1:n) over a 2D grid,
+          in which every value z(i,j) is represented by a bar of that height.
+        </li>
+        <li>
+          <b>barh</b>, a display of values x(1:n) in which every value
+          x(i) is represented by a horizontal bar of that length.
+          The horizontal format can be more suitable for labeling bars
+          when there are many of them.
+        </li>
+        <li>
+          <b>binary_tree</b>, a connected directed graph with no circuits, 
+          in which each node has no more than 2 descendants.
+        </li>
+        <li>
+          <b>contour fill</b>, a display of values z(x,y) in which the values of
+          z are suggested by regions filled with color.
+        </li>
+        <li>
+          <b>contour line</b>, a display of values z(x,y) in which the values of
+          z are suggested by colored contour lines.
+        </li>
+        <li>
+          <b>decision_tree</b>, a connected directed graph with no circuits, 
+          in which labeled nodes represent current states to be tested, and edges 
+          represent the choice or decision to move from one state to another.
+        </li>
+        <li>
+          <b>dendrogram</b>, a connected directed graph with no circuits, 
+          which generally has a single root node, and illustrates the
+          genealogy or relatedness of a set of objects.
+        </li>
+        <li>
+          <b>digraph</b>, a "directed graph", nodes (possibly with defined
+          locations, labels or colors), connected by directed edges 
+          (possibly with defined weights, labels, colors or linestyles).
+        </li>
+        <li>
+          <b>fill</b>, a shape composed of polygons, each of which is
+          filled with a particular color.
+        </li>
+        <li>
+          <b>graph</b>, nodes (possibly with defined locations, labels or colors), 
+          connected by undirected edges (possibly with defined weights, labels, 
+          colors or linestyles).
+        </li>
+        <li>
+          <b>histogram</b>, a display of values x in which the x range
+          is divided into intervals, and the value y(i) represents the
+          number of x values in the i-th interval, and a bar plot of
+          intervals versus count is displayed.
+        </li>
+        <li>
+          <b>plot</b>, a display of a single curve defined by a sequence of 
+          functional pairs (x,y(x)), or a function y=f(x) sampled over an
+          interval, or a sequence of related pairs (x,y).
+        </li>
+        <li>
+          <b>plot3d</b>, a 3D display of a single curve defined by a sequence of 
+          triples (x(i),y(i),z(i)), or a parametric function (x(t),y(t),z(t)) 
+          sampled over an interval.
+        </li>
+        <li>
+          <b>plots</b>, several curves on a single display.
+        </li>
+        <li>
+          <b>scatter</b>, a display of unconnected pairs (x,y), whose
+          positions are indicated by markers.
+        </li>
+        <li>
+          <b>scatter3d</b>, a 3D display of unconnected triples (x,y,z), whose
+          positions are indicated by markers.
+        </li>
+        <li>
+          <b>scatters</b>, a scatter plot involving several distinct sets of
+          (x,y) pairs are displayed, distinguished by markers of different
+          size, shape or color.
+        </li>
+        <li>
+          <b>subplots</b>, a display involving two or more separate plots,
+          shown as a single figure.
+        </li>
+        <li>
+          <b>surface</b>, a 3D display of values z(x,y), represented
+          as a surface.
+        </li>
+        <li>
+          <b>vector</b>, a 2D display of vectors (u,v)(x,y), representing
+          a gradient field, an ODE direction field, or a flow of some kind.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>graphics_test</b> is available in
+      <a href = "../../c_src/graphics_dislin_test/graphics_dislin_test.html">a C/dislin() version</a> and
+      <a href = "../../c_src/graphics_gnuplot_test/graphics_gnuplot_test.html">a C/gnuplot() version</a> and
+      <a href = "../../cpp_src/graphics_dislin_test/graphics_dislin_test.html">a C++/dislin() version</a> and
+      <a href = "../../cpp_src/graphics_gnuplot_test/graphics_gnuplot_test.html">a C++/gnuplot() version</a> and
+      <a href = "../../f_src/graphics_dislin_test/graphics_dislin_test.html">a FORTRAN90/dislin() version</a> and
+      <a href = "../../f_src/graphics_gnuplot_test/graphics_gnuplot_test.html">a FORTRAN90/gnuplot() version</a> and
+      <a href = "../../m_src/graphics_test/graphics_test.html">a MATLAB version</a> and
+      <a href = "../../octave_src/graphics_test/graphics_test.html">an Octave version</a> and
+      <a href = "../../py_src/graphics_test/graphics_test.html">a Python version</a> and
+      <a href = "../../r_src/graphics_test/graphics_test.html">an R version</a>. 
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/dislin_test/dislin_test.html">
+      dislin_test</a>,
+      FORTRAN90 codes which
+      use dislin(), which
+      is a scientific graphics package, 
+      by Helmut Michels.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      write data and command files
+      so that gnuplot() can create plots of the results.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Helmut Michels,<br>
+          The Data Plotting Software DISLIN - version 10.4, <br>
+          Shaker Media GmbH, January 2010,<br>
+          ISBN13: 978-3-86858-517-9.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "graphics_dislin_test.sh">graphics_dislin_test.sh</a>, 
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>album_bar</b> lists the year, and total number of music albums
+      (LP's, cassettes, CD's and dowloads) sold each year from 2007 to 2017.
+      This data is plotted as a bar graph.
+      The dislin() library is used.
+      <ul>
+        <li>
+          <a href = "album_data.txt">album_data.txt</a>,
+          a data file
+        </li>
+        <li>
+          <a href = "album_bar.f90">album_bar.f90</a>,
+          reads the data and makes a plot.
+        </li>
+        <li>
+          <a href = "album_bar.sh">album_bar.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "album_bar.txt">album_bar.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "album_bar.png">album_bar.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>circle_scatters</b> depicts 500 pairs of (X,Y) data points in the unit square,
+      395 of which lie inside the unit circle, and 105 outside.  If possible,
+      the "inside" points should be blue, the "outside" points red, and the
+      circle itself should also be drawn.
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "circle1_data.txt">circle1_data.txt</a>, 
+          the coordinates of points inside the circle.
+        </li>
+        <li>
+          <a href = "circle2_data.txt">circle2_data.txt</a>, 
+          the coordinates of points outside the circle.
+        </li>
+        <li>
+          <a href = "circle_scatters.f90">circle_scatters.f90</a>,
+          reads the data and makes a plot.
+        </li>
+        <li>
+          <a href = "circle_scatters.sh">circle_scatters.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "circle_scatters.txt">circle_scatters.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "circle_scatters.png">circle_scatters.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>geyser_bar</b> works with measurements of the waiting time in 
+      minutes between successive eruptions of the Old Faithful geyser.  The
+      data has been grouped into bins.  The bin counts are displayed as a bar 
+      chart.
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "geyser_bar_data.txt">geyser_bar_data.txt</a>, 
+          bin centers, and occupancy counts, for waiting times.
+        </li>
+        <li>
+          <a href = "geyser_bar.f90">geyser_bar.f90</a>,
+          reads the data and makes a plot.
+        </li>
+        <li>
+          <a href = "geyser_bar.sh">geyser_bar.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "geyser_bar.txt">geyser_bar.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "geyser_bar.png">geyser_bar.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>grid_surface</b> records, on a 41x41 grid over [-2,2]x[-2,+2], the values
+      z = exp(-(x^2+y^2)) * cos(0.25*x) * sin(y) * cos(2*(x^2+y^2)).
+      The data is to be plotted as a surface.
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "grid_data.txt">grid_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "grid_surface.f90">grid_surface.f90</a>,
+          reads the data and makes a plot.
+        </li>
+        <li>
+          <a href = "grid_surface.sh">grid_surface.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "grid_surface.txt">grid_surface.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "grid_surface.png">grid_surface.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>lissajous_plot</b> records 1000 points on a Lissajous curve defined by
+      x=sin(3*t+pi/2), y=sin(4t).  The curve is to be plotted and every tenth 
+      point marked.
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "lissajous_data.txt">lissajous_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "lissajous_plot.f90">lissajous_plot.f90</a>,
+          reads the data and makes a plot.
+        </li>
+        <li>
+          <a href = "lissajous_plot.sh">lissajous_plot.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "lissajous_plot.txt">lissajous_plot.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "lissajous_plot.png">lissajous_plot.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>lynx_plot</b> records the yearly lynx harvest from 1821 to 1934.
+      The graph should plot the data points as circles, and connect consecutive
+      data points with straight line segments to suggest a curve.
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "lynx_data.txt">lynx_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "lynx_plot.f90">lynx_plot.f90</a>,
+          creates the data and displays a scatter plot.
+        </li>
+        <li>
+          <a href = "lynx_plot.sh">lynx_plot.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "lynx_plot.txt">lynx_plot.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "lynx_plot.png">lynx_plot.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>orbital_contour</b> records, on a 101x101 grid over [0,4*pi]x[0,4*pi], 
+      the minimum distance between two planets given a pair of orbital angles.  
+      The data is presented as a color contour plot.
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "orbital_data.txt">orbital_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "orbital_contour.f90">orbital_contour.f90</a>,
+          reads the data and makes a plot.
+        </li>
+        <li>
+          <a href = "orbital_contour.sh">orbital_contour.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "orbital_contour.txt">orbital_contour.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "orbital_contour.png">orbital_contour.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>random_scatter</b> generates 500 pairs of (X,Y) data, which lie in 
+      the unit square, and tend to cluster around (0.5,0.5).
+      The dislin library is used.
+      <ul>
+        <li>
+          <a href = "random_data.txt">random_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "random_scatter.f90">random_scatter.f90</a>,
+          creates the data and displays a scatter plot.
+        </li>
+        <li>
+          <a href = "random_scatter.sh">random_scatter.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "random_scatter.txt">random_scatter.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "random_scatter.png">random_scatter.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 27 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

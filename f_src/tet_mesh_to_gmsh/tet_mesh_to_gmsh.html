@@ -1,0 +1,169 @@
+<html>
+
+  <head>
+    <title>
+      TET_MESH_TO_GMSH - Convert Tet Mesh Files to GMSH MSH Format
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TET_MESH_TO_GMSH <br> Convert Tet Mesh Files to GMSH MSH Format
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TET_MESH_TO_GMSH</b>,
+      a FORTRAN90 code which
+      converts a pair of files defining a tetrahedral mesh into an
+      equivalent file using the gmsh() msh format.
+    </p>
+
+    <p>
+      In particular, TET_MESH_TO_GMSH reads a node coordinate file
+      listing the coordinates of a set of 3D points,
+      and an element file list sets of 4, 10, or 20 nodes that form tetrahedral
+      elements.  It creates a single equivalent file in the Gmsh msh format.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>tet_mesh_to_gmsh</b> <i>prefix</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>'prefix'</i>_nodes.txt contains the node definitions;
+        </li>
+        <li>
+          <i>'prefix'</i>_elements.txt contains the element definitions;
+        </li>
+        <li>
+          <i>'prefix'</i>.msh will be the Gmsh msh file created by the program.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TET_MESH_TO_GMSH</b> is available in
+      <a href = "../../c_src/tet_mesh_to_gmsh/tet_mesh_to_gmsh.html">a C version</a> and
+      <a href = "../../cpp_src/tet_mesh_to_gmsh/tet_mesh_to_gmsh.html">a C++ version</a> and
+      <a href = "../../f_src/tet_mesh_to_gmsh/tet_mesh_to_gmsh.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/tet_mesh_to_gmsh/tet_mesh_to_gmsh.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/tet_mesh/tet_mesh.html">
+      TET_MESH</a>,
+      a FORTRAN90 code which
+      includes a variety of routines for working
+      with tetrahedral meshes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_l2q/tet_mesh_l2q.html">
+      TET_MESH_L2Q</a>,
+      a FORTRAN90 code which
+      takes a 4-node tet mesh and makes
+      a 10-node tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_q2l/tet_mesh_q2l.html">
+      TET_MESH_Q2L</a>,
+      a FORTRAN90 code which
+      takes a 10-node tet mesh and makes
+      a 4-node tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_to_gmsh_test/tet_mesh_to_gmsh_test.html">
+      tet_mesh_to_gmsh_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_to_xml/tet_mesh_to_xml.html">
+      TET_MESH_TO_XML</a>,
+      a FORTRAN90 code which
+      reads information defining a tet mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding DOLFIN XML mesh file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_to_gmsh/triangulation_to_gmsh.html">
+      TRIANGULATION_TO_GMSH</a>,
+      a FORTRAN90 code which
+      converts the data defining a triangulation into an equivalent Gmsh msh file.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Christophe Geuzaine, Jean-Francois Remacle,<br>
+          Gmsh: a three-dimensional finite element mesh generator with
+          built-in pre- and post-processing facilities,<br>
+          International Journal for Numerical Methods in Engineering,<br>
+          Volume 79, Number 11, pages 1309-1331, 2009.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "tet_mesh_to_gmsh.f90">tet_mesh_to_gmsh.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "tet_mesh_to_gmsh.sh">tet_mesh_to_gmsh.sh</a>,
+          commands to compile the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

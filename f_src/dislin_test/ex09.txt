@@ -1,0 +1,21 @@
+ <<<< Warning 193: Startpoint ( 2848/ 1059) out of page in angle!
+ <<<< Warning 193: Endpoint ( 2813/ 1242) out of page in angle!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:23:30  Pageformat: USAL  <<
+ <<  Vectors : 2792        Warnings: 2         Fileformat:  PNG  <<
+ <<  Metafile: ex09.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+23 January 2020  10:23:30.031 AM
+ 
+EX09:
+  FORTRAN90 version
+  Demonstrate the creation of a 
+  3D color plot.
+ 
+EX09:
+  Normal end of execution.
+ 
+23 January 2020  10:23:30.042 AM

@@ -1,0 +1,167 @@
+<html>
+
+  <head>
+    <title>
+      fsplit
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fsplit
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fsplit</b>,
+      a FORTRAN90 code which 
+      reads a FORTRAN file and creates individual files for every
+      function, program, or subroutine in the file,
+      by Van Snyder.
+    </p>
+
+    <p>
+      This utility can be convenient when your goal is to create a
+      UNIX "ar" archive of the compiled object code.  By splitting
+      your source code up, and compiling each routine separately,
+      you end up with a library in which each compiled module is
+      individual listed and replaceable.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>fsplit</b> &lt; <i>myprog.f90</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>myprog.f90</i> is the file to be split.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Command line arguments may be specified:
+      <ul>
+        <li>
+          "-v" indicates verbose mode, in which messages are printed.
+        </li>
+        <li>
+          "-a" indicates append mode, in which case the program appends
+          the name of the program, subroutine or function to each "end" 
+          statement.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>fsplit</b> is available in
+      <a href = "../../f_src/fsplit/fsplit.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/catalog/catalog.html">
+      catalog</a>,
+      a C++ code which
+      reads a C, C++, FORTRAN77, FORTRAN90, MATLAB, Python, or R code 
+      and prints every line that begins with a special index tag.  
+      If the code has been marked up expecting this convention,
+      a convenient table of contents is created.
+    </p>
+
+    <p>
+      <a href = "../../c_src/f77split/f77split.html">
+      f77split</a>,
+      a C code which
+      reads a FORTRAN77 file and creates individual files for every
+      blockdata, function, module, program, or subroutine in the file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90split/f90split.html">
+      f90split</a>,
+      a FORTRAN90 code which
+      reads a FORTRAN file and creates individual files for every
+      blockdata, function, module, program, subroutine in the file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fsplit_test/fsplit_test.html">
+      fsplit_test</a>
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/htmlindex/htmlindex.html">
+      htmlindex</a>,
+      a C++ code which
+      reads a FORTRAN code and writes a skeleton HTML page describing it,
+      assuming that each routine includes a '!!' or 'cc' description line.
+    </p>
+
+    <p>
+      <a href = "../../f_src/include_files/include_files.html">
+      include_files</a>,
+      a FORTRAN90 code which 
+      reads a FORTRAN code with INCLUDE
+      statements, and makes a copy with the indicated files included.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Van Snyder
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fsplit.f90">fsplit.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "Makefile">Makefile</a>, 
+          the makefile;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 May 2021.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,46 @@
+ 9 September 2020   9:27:53.867 AM
+ 
+TRIANGLE01_INTEGRALS_TEST
+  FORTRAN90 version
+  Test the TRIANGLE_INTEGRALS library.
+
+TEST01
+  Estimate monomial integrals using Monte Carlo
+  over the interior of the unit triangle in 2D.
+
+  Number of sample points used is   4192
+
+  We will restrict this test to randomly chosen even exponents.
+
+  Ex  Ey     MC-Estimate      Exact           Error
+
+   0   0    0.500000        0.500000        0.00E+00
+   0   1    0.165406        0.166667        0.13E-02
+   0   2    0.816578E-01    0.833333E-01    0.17E-02
+   0   3    0.482540E-01    0.500000E-01    0.17E-02
+   0   4    0.316683E-01    0.333333E-01    0.17E-02
+   1   0    0.166961        0.166667        0.29E-03
+   1   1    0.420597E-01    0.416667E-01    0.39E-03
+   1   2    0.167899E-01    0.166667E-01    0.12E-03
+   1   3    0.832158E-02    0.833333E-02    0.12E-04
+   1   4    0.469451E-02    0.476190E-02    0.67E-04
+   2   0    0.833750E-01    0.833333E-01    0.42E-04
+   2   1    0.169313E-01    0.166667E-01    0.26E-03
+   2   2    0.566568E-02    0.555556E-02    0.11E-03
+   2   3    0.241965E-02    0.238095E-02    0.39E-04
+   2   4    0.120037E-02    0.119048E-02    0.99E-05
+   3   0    0.498756E-01    0.500000E-01    0.12E-03
+   3   1    0.848954E-02    0.833333E-02    0.16E-03
+   3   2    0.244506E-02    0.238095E-02    0.64E-04
+   3   3    0.916488E-03    0.892857E-03    0.24E-04
+   3   4    0.405015E-03    0.396825E-03    0.82E-05
+   4   0    0.331019E-01    0.333333E-01    0.23E-03
+   4   1    0.485231E-02    0.476190E-02    0.90E-04
+   4   2    0.122760E-02    0.119048E-02    0.37E-04
+   4   3    0.410290E-03    0.396825E-03    0.13E-04
+   4   4    0.163516E-03    0.158730E-03    0.48E-05
+ 
+TRIANGLE01_INTEGRALS_TEST
+  Normal end of execution.
+ 
+ 9 September 2020   9:27:53.869 AM

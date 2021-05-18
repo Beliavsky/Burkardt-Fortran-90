@@ -1,0 +1,75 @@
+31 August 2020   3:06:03.364 PM
+
+SVD_SNOWFALL_TEST
+  FORTRAN90 version
+  Test the SVD_SNOWFALL library.
+
+SVD_SNOWFALL_TEST01
+  Read, process, and return snowfall data in "snowfall.txt".
+
+  Number of data rows    M =   10
+  Number of data columns N =  129
+ 
+  Data has been read from the file.
+
+SVD_SNOWFALL_TEST02
+  Look at the singular values.
+  If the singular values are close, then the data is
+  well spread out.  If the singular values decay rapidly,
+  then the data exhibits patterns, or is constrained to
+  a lower-dimensional subspace.
+ 
+  The singular values:
+ 
+         1:    22306.937    
+         2:    672.49951    
+         3:    240.76354    
+         4:    179.58437    
+         5:    148.67570    
+         6:    132.00311    
+         7:    86.530002    
+         8:    38.897238    
+         9:    24.286940    
+        10:    9.9808750    
+ 
+  Created data file "singular_values_data.txt".
+  Created command file "singular_values_commands.txt".
+ 
+  The cumulative energy:
+ 
+         1:    0.0000000    
+         2:   0.99881232    
+         3:   0.99972011    
+         4:   0.99983647    
+         5:   0.99990120    
+         6:   0.99994557    
+         7:   0.99998055    
+         8:   0.99999558    
+         9:   0.99999862    
+        10:   0.99999980    
+        11:    1.0000000    
+
+SVD_SNOWFALL_TEST03
+  Compute the rank 1 through rank 5 approximations to the data.
+  Compare each of these to the 2012 snowfall data.
+  Created data file "approx_data.txt".
+  Created command file "approx_commands.txt".
+
+SVD_SNOWFALL_TEST04
+  Look at the first 6 modes in the U matrix.
+  Each of these represents a pattern for snowfall over a year.
+  The first mode is the pattern that is strongest in the data.
+  Created data file "umode_data.txt".
+  Created command file "umode_commands.txt".
+
+SVD_SNOWFALL_TEST05
+  Look at the first 6 modes in the V matrix.
+  Each of these represents a pattern shared by all the months,
+  and extending across the 123 sampling years.
+  Created data file "vmode_data.txt".
+  Created command file "vmode_commands.txt".
+
+SVD_SNOWFALL_TEST
+  Normal end of execution.
+
+31 August 2020   3:06:03.369 PM

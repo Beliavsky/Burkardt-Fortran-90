@@ -1,0 +1,177 @@
+ 7 July 2020  10:51:19.933 AM
+
+FEM_TO_GMSH
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to GMSH format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".msh, a corresponding Gmsh mesh file.
+ 
+  Read the header of "cheby9_nodes.txt".
+ 
+  Spatial dimension =        1
+  Number of points  =        9
+ 
+  Read the data in "cheby9_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1       
+  Col
+    1:  -1.00000    
+    2: -0.923880    
+    3: -0.707107    
+    4: -0.382683    
+    5:   0.00000    
+ 
+  Read the header of "cheby9_elements.txt".
+ 
+  Element order =        2
+  Number of elements =        8
+ 
+  Read the data in "cheby9_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2
+  Col
+ 
+    1:      1      2
+    2:      2      3
+    3:      3      4
+    4:      4      5
+    5:      5      6
+    6:      6      7
+    7:      7      8
+    8:      8      9
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+ 
+  Created the GMSH file "cheby9.msh".
+ 
+FEM_TO_GMSH
+  Normal end of execution.
+ 
+ 7 July 2020  10:51:19.935 AM
+ 7 July 2020  10:51:19.939 AM
+
+FEM_TO_GMSH
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to GMSH format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".msh, a corresponding Gmsh mesh file.
+ 
+  Read the header of "mesh3d_nodes.txt".
+ 
+  Spatial dimension =        3
+  Number of points  =        8
+ 
+  Read the data in "mesh3d_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2             3       
+  Col
+    1:   0.00000       0.00000       0.00000    
+    2:   0.00000       0.00000       1.00000    
+    3:   0.00000       1.00000       0.00000    
+    4:   0.00000       1.00000       1.00000    
+    5:   1.00000       0.00000       0.00000    
+ 
+  Read the header of "mesh3d_elements.txt".
+ 
+  Element order =        4
+  Number of elements =        6
+ 
+  Read the data in "mesh3d_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3      4
+  Col
+ 
+    1:      4      3      5      1
+    2:      4      2      5      1
+    3:      4      7      3      5
+    4:      4      7      8      5
+    5:      4      6      2      5
+    6:      4      6      8      5
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+ 
+  Created the GMSH file "mesh3d.msh".
+ 
+FEM_TO_GMSH
+  Normal end of execution.
+ 
+ 7 July 2020  10:51:19.940 AM
+ 7 July 2020  10:51:19.943 AM
+
+FEM_TO_GMSH
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to GMSH format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".msh, a corresponding Gmsh mesh file.
+ 
+  Read the header of "rectangle_nodes.txt".
+ 
+  Spatial dimension =        2
+  Number of points  =       20
+ 
+  Read the data in "rectangle_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2       
+  Col
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       0.00000    
+    4:   3.00000       0.00000    
+    5:   4.00000       0.00000    
+ 
+  Read the header of "rectangle_elements.txt".
+ 
+  Element order =        3
+  Number of elements =       24
+ 
+  Read the data in "rectangle_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3
+  Col
+ 
+    1:      6      1      2
+    2:      7      6      2
+    3:      7     11      6
+    4:     12     11      7
+    5:     16     11     12
+    6:     16     12     17
+    7:      7      2      3
+    8:      8      7      3
+    9:      8     12      7
+   10:     13     12      8
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+ 
+  Created the GMSH file "rectangle.msh".
+ 
+FEM_TO_GMSH
+  Normal end of execution.
+ 
+ 7 July 2020  10:51:19.945 AM

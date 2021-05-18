@@ -1,0 +1,40 @@
+11 July 2020  10:21:35.105 AM
+ 
+GEGENBAUER_RULE
+  FORTRAN90 version
+ 
+  Compute a Gauss-Gegenbauer rule for approximating
+    Integral ( A <= x <= B ) ((x-A)(B-X))^ALPHA f(x) dx
+  of order ORDER.
+ 
+  The user specifies ORDER, ALPHA, A, B, and FILENAME.
+ 
+  ORDER is the number of points:
+  ALPHA is the exponent:
+  A is the left endpoint.
+  B is the right endpoint.
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+ 
+  Input summary:
+ 
+  ORDER =        4
+  ALPHA =    2.00000    
+  A =   -1.00000    
+  B =    1.00000    
+  FILENAME = "gegen_o4_a2.0".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "gegen_o4_a2.0".
+ 
+  Weight file will be   "gegen_o4_a2.0_w.txt".
+  Abscissa file will be "gegen_o4_a2.0_x.txt".
+  Region file will be   "gegen_o4_a2.0_r.txt".
+ 
+GEGENBAUER_RULE:
+  Normal end of execution.
+ 
+11 July 2020  10:21:35.106 AM

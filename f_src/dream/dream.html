@@ -1,0 +1,206 @@
+<html>
+
+  <head>
+    <title>
+      DREAM - Markov Chain Monte Carlo acceleration by Differential Evolution
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      DREAM <br> Markov Chain Monte Carlo acceleration by Differential Evolution
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>DREAM</b>,
+      a FORTRAN90 code which
+      implements the DREAM algorithm for accelerating 
+      Markov Chain Monte Carlo (MCMC) convergence using differential evolution,
+      by Guannan Zhang.
+    </p>
+
+    <p>
+      DREAM requires user input in the form of five FORTRAN90
+      subroutines:
+      <ul>
+        <li>
+          <i>problem_size()</i>, defines the sizes of problem parameters;
+        </li>
+        <li>
+          <i>problem_value()</i>, defines the value of problem parameters;
+        </li>
+        <li>
+          <i>prior_density()</i>, evaluates the prior distribution;
+        </li>
+        <li>
+          <i>prior_sample()</i>, samples the prior distribution;
+        </li>
+        <li>
+          <i>sample_likelihood()</i>, evaluates the log likelihood function.
+        </li>
+      </ul>
+      Examples of such user input are listed below.
+    </p>
+
+    <p>
+      DREAM requires access to a compiled version of the
+      pdflib() code, which can evaluate a variety of Probability
+      Density Functions (PDF's) and produce samples from them.
+      The user may wish to invoke this code when constructing
+      some of the user functions.
+    </p>
+
+    <p>
+      DREAM requires access to a compiled version of the
+      rnglib code, in order to generate random numbers.
+    </p>
+
+    <p>
+      An older implementation of the DREAM algorithm is available
+      as DREAM1; it requires a user main code and two input files.
+    </p>
+
+    <p>
+      The DREAM code was originally developed by Guannan Zhang, of
+      Oak Ridge National Laboratory (ORNL); it has been incorporated into 
+      the DAKOTA package of Sandia National Laboratory, and forms
+      part of the ORNL package known as TASMANIAN.
+    </p>
+
+    <h3 align = "center">
+      Web Link:
+    </h3>
+
+    <p>
+      A version of the DREAM code is available in
+      <a href = "http://tasmanian.ornl.gov/">
+                 http://tasmanian.ornl.gov</a>,
+      the TASMANIAN code, available from Oak Ridge National Laboratory.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>DREAM</b> is available in
+      <a href = "../../c_src/dream/dream.html">a C version</a> and
+      <a href = "../../cpp_src/dream/dream.html">a C++ version</a> and
+      <a href = "../../f_src/dream/dream.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/dream/dream.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/dream_test/dream_test.html">
+      dream_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/pdflib/pdflib.html">
+      PDFLIB</a>,
+      a FORTRAN90 code which
+      evaluates Probability Density Functions (PDF's)
+      and produces random samples from them,
+      including beta, binomial, chi, exponential, gamma, inverse chi,
+      inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ranlib/ranlib.html">
+      RANLIB</a>,
+      a FORTRAN90 code which
+      produces random samples from Probability Density Functions (PDF's), 
+      including Beta, Chi-square Exponential, F, Gamma, Multivariate normal,
+      Noncentral chi-square, Noncentral F, Univariate normal, 
+      random permutations, Real uniform, Binomial, Negative Binomial,
+      Multinomial, Poisson and Integer uniform,
+      by Barry Brown and James Lovato.
+    </p>
+
+    <p>
+      <a href = "../../f_src/rnglib/rnglib.html">
+      RNGLIB</a>,
+      a FORTRAN90 code which
+      implements a random number generator (RNG) with splitting facilities,
+      allowing multiple independent streams to be computed,
+      by L'Ecuyer and Cote.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Original FORTRAN90 version by Guannan Zhang;
+      This FORTRAN90 version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Pierre LEcuyer, Serge Cote,<br>
+          Implementing a Random Number Package with Splitting Facilities,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 17, Number 1, March 1991, pages 98-111.
+        </li>
+        <li>
+          Jasper Vrugt, CJF ter Braak, CGH Diks, Bruce Robinson, James Hyman, 
+          Dave Higdon,<br>
+          Accelerating Markov Chain Monte Carlo Simulation by Differential 
+          Evolution with Self-Adaptive Randomized Subspace Sampling,<br>
+          International Journal of Nonlinear Sciences and Numerical
+          Simulation,<br>
+          Volume 10, Number 3, March 2009, pages 271-288.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "dream.f90">dream.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "dream.sh">dream.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

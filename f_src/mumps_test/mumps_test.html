@@ -1,0 +1,191 @@
+<html>
+
+  <head>
+    <title>
+      mumps_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      mumps_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>mumps_test</b>,
+      FORTRAN90 codes which
+      calls mumps(), which
+      efficiently solves large systems of linear equations.
+    </p>
+
+    <p>
+      Features include
+      <ul>
+        <li>
+          treatment of symmetric positive definite matrices;
+        </li>
+        <li>
+          treatement of general symmetric matrices;
+        </li>
+        <li>
+          treatment of general unsymmetric matrices;
+        </li>
+        <li>
+          Real or complex arithmetic (single or double precision);
+        </li>
+        <li>
+          Parallel factorization and solve phases 
+          (uniprocessor version also available);
+        </li>
+        <li>
+          Out of core numerical phases;
+        </li>
+        <li>
+          Iterative refinement and backward error analysis;
+        </li>
+        <li>
+          Various matrix input formats: assembled, distributed, elemental format;
+        </li>
+        <li>
+          Partial factorization and Schur complement matrix (centralized or 
+          2D block-cyclic) with reduced/ condensed right-hand side;
+        </li>
+        <li>
+          Interfaces to MUMPS: Fortran, C, Matlab and Scilab;
+        </li>
+        <li>
+          Several reorderings interfaced: AMD, QAMD, AMF, PORD, METIS, PARMETIS, SCOTCH, PT-SCOTCH;
+        </li>
+        <li>
+          Symmetric indefinite matrices: preprocesssing and 2-by-2 pivots;
+        </li>
+        <li>
+          Parallel analysis and matrix scaling;
+        </li>
+        <li>
+          Computation of the determinant (with an option to discard factors);
+        </li>
+        <li>
+          Forward elimination during factorization.
+      </ul>
+    </p>
+
+    <p>
+      MUMPS is typical of modern software in being extraordinarily powerful,
+      but also complex, reliant on numerous other packages, tricky to install, 
+      and somewhat awkward to use.
+    </p>
+
+    <h3 align = "center">
+      Web Site:
+    </h3>
+
+    <p>
+      <a href = "http://mumps.enseeiht.fr/">
+                 http://mumps.enseeiht.fr/</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../examples_arc/eigen/eigen_article.html">
+      EIGEN</a>,
+      examples which
+      illustrate the use of EIGEN,
+      a C++ template library for linear algebra, including natural and
+      usable definitions of vectors and matrices, norms, factorizations,
+      solution of linear systems, evaluation of eigenvalues, and many
+      standard linear algebra algorithms for dense and sparse matrices.
+    </p>
+
+    <p>
+      <a href = "../../examples_arc/scalapack/scalapack_article.html">
+      SCALAPACK</a>,
+      examples which
+      illustrate the use of SCALAPACK, which
+      is a library for the configuration, distribution, and solution of
+      linear algebra problems using distributed memory and parallel processing.
+    </p>
+
+    <p>
+      <a href = "../../c_src/superlu/superlu.html">
+      SUPERLU</a>,
+      C programs which
+      illustrate how to use the SUPERLU library,
+      which applies a fast direct solution method to solve
+      sparse linear systems,
+      by James Demmel, John Gilbert, and Xiaoye Li.
+    </p>
+
+    <p>
+      <a href = "../../c_src/umfpack/umfpack.html">
+      UMFPACK</a>,
+      C programs which
+      illustrate how to solve a sparse linear system by calling
+      the C library UMFPACK, by Timothy Davis.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          P R Amestoy, Ian Duff, J-Y l'Excellent,<br>
+          Multifrontal parallel distributed symmetric and unsymmetric solvers,<br>
+          Computer Methods in Applied Mechanics and Engineering,<br>
+          Volume 184, Number 2–4, pages 501–520, 2000.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "mumps_test.f">mumps_test.f</a>, 
+          the real double precision version of the test example.
+        </li>
+        <li>
+          <a href = "mumps_test_input.txt">mumps_test_input.txt</a>, 
+          an input file needed to run the example.
+        </li>
+        <li>
+          <a href = "mumps_test_osx.sh">mumps_test_osx.sh</a>,
+          a shell script which compiles, loads and runs the example under on OSX.
+        </li>
+        <li>
+          <a href = "mumps_test_osx.txt">mumps_test_osx.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "mumps_test_ubuntu.sh">mumps_test_ubuntu.sh</a>,
+          a shell script which compiles, loads and runs the example under on ubuntu.
+        </li>
+        <li>
+          <a href = "mumps_test_ubuntu.txt">mumps_test_ubuntu.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 12 November 2018.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

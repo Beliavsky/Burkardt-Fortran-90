@@ -1,0 +1,316 @@
+25 July 2020   3:39:36.276 PM
+
+LEBESGUE_TEST
+  FORTRAN90 version
+  Test the LEBESGUE library.
+
+LEBESGUE_TEST01:
+  Analyze Chebyshev1 points.
+ 
+  Chebyshev1 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    1.4142136    
+         3:    1.6666667    
+         4:    1.8477591    
+         5:    1.9888544    
+         6:    2.1043977    
+         7:    2.2022146    
+         8:    2.2870161    
+         9:    2.3618568    
+        10:    2.4288295    
+        11:    2.4894304    
+ 
+  Chebyshev1 points for N = 11
+ 
+         1:   0.98982144    
+         2:   0.90963200    
+         3:   0.75574957    
+         4:   0.54064082    
+         5:   0.28173256    
+         6:   0.28327694E-15
+         7:  -0.28173256    
+         8:  -0.54064082    
+         9:  -0.75574957    
+        10:  -0.90963200    
+        11:  -0.98982144    
+ 
+  Created graphics data file "chebyshev1_data.txt".
+  Created graphics command file "chebyshev1_commands.txt".
+
+LEBESGUE_TEST02:
+  Analyze Chebyshev2 points.
+ 
+  Chebyshev2 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+         3:    1.2500000    
+         4:    1.6666667    
+         5:    1.7987613    
+         6:    1.9888544    
+         7:    2.0825497    
+         8:    2.2022146    
+         9:    2.2746133    
+        10:    2.3618568    
+        11:    2.4209685    
+ 
+  Chebyshev2 points for N = 11
+ 
+         1:   -1.0000000    
+         2:  -0.95105652    
+         3:  -0.80901699    
+         4:  -0.58778525    
+         5:  -0.30901699    
+         6:   0.61232340E-16
+         7:   0.30901699    
+         8:   0.58778525    
+         9:   0.80901699    
+        10:   0.95105652    
+        11:    1.0000000    
+ 
+  Created graphics data file "chebyshev2_data.txt".
+  Created graphics command file "chebyshev2_commands.txt".
+
+LEBESGUE_TEST03:
+  Analyze Chebyshev3 points.
+ 
+  Chebyshev3 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    2.2360680    
+         3:    3.4939592    
+         4:    4.7587705    
+         5:    6.0266742    
+         6:    7.2962298    
+         7:    8.5667722    
+         8:    9.8379514    
+         9:    11.109566    
+        10:    12.381490    
+        11:    13.653644    
+ 
+  Chebyshev3 points for N = 11
+ 
+         1:  -0.96291729    
+         2:  -0.85441940    
+         3:  -0.68255314    
+         4:  -0.46006504    
+         5:  -0.20345601    
+         6:   0.68242413E-01
+         7:   0.33487961    
+         8:   0.57668032    
+         9:   0.77571129    
+        10:   0.91721130    
+        11:   0.99068595    
+ 
+  Created graphics data file "chebyshev3_data.txt".
+  Created graphics command file "chebyshev3_commands.txt".
+
+LEBESGUE_TEST04:
+  Analyze Chebyshev4 points.
+ 
+  Chebyshev4 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    2.2360680    
+         3:    3.4939592    
+         4:    4.7587705    
+         5:    6.0266742    
+         6:    7.2962298    
+         7:    8.5667722    
+         8:    9.8379514    
+         9:    11.109566    
+        10:    12.381490    
+        11:    13.653644    
+ 
+  Chebyshev4 points for N = 11
+ 
+         1:  -0.99068595    
+         2:  -0.91721130    
+         3:  -0.77571129    
+         4:  -0.57668032    
+         5:  -0.33487961    
+         6:  -0.68242413E-01
+         7:   0.20345601    
+         8:   0.46006504    
+         9:   0.68255314    
+        10:   0.85441940    
+        11:   0.96291729    
+ 
+  Created graphics data file "chebyshev4_data.txt".
+  Created graphics command file "chebyshev4_commands.txt".
+
+LEBESGUE_TEST05:
+  Analyze Equidistant1 points.
+ 
+  Equidistant1 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    3.0000000    
+         3:    7.0000000    
+         4:    15.000000    
+         5:    31.000000    
+         6:    63.000000    
+         7:    127.00000    
+         8:    255.00000    
+         9:    511.00000    
+        10:    1023.0000    
+        11:    2047.0000    
+ 
+  Equidistant1 points for N = 11
+ 
+         1:  -0.83333333    
+         2:  -0.66666667    
+         3:  -0.50000000    
+         4:  -0.33333333    
+         5:  -0.16666667    
+         6:    0.0000000    
+         7:   0.16666667    
+         8:   0.33333333    
+         9:   0.50000000    
+        10:   0.66666667    
+        11:   0.83333333    
+ 
+  Created graphics data file "equidistant1_data.txt".
+  Created graphics command file "equidistant1_commands.txt".
+
+LEBESGUE_TEST06:
+  Analyze Equidistant2 points.
+ 
+  Equidistant2 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    1.0000000    
+         3:    1.2500000    
+         4:    1.6311250    
+         5:    2.2078243    
+         6:    3.1062763    
+         7:    4.5487197    
+         8:    6.9294490    
+         9:    10.944351    
+        10:    17.844929    
+        11:    29.890695    
+ 
+  Equidistant2 points for N = 11
+ 
+         1:   -1.0000000    
+         2:  -0.80000000    
+         3:  -0.60000000    
+         4:  -0.40000000    
+         5:  -0.20000000    
+         6:    0.0000000    
+         7:   0.20000000    
+         8:   0.40000000    
+         9:   0.60000000    
+        10:   0.80000000    
+        11:    1.0000000    
+ 
+  Created graphics data file "equidistant2_data.txt".
+  Created graphics command file "equidistant2_commands.txt".
+
+LEBESGUE_TEST07:
+  Analyze Equidistant3 points.
+ 
+  Equidistant3 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.5000000    
+         4:    6.0000000    
+         5:    10.375000    
+         6:    18.250000    
+         7:    32.687500    
+         8:    59.500000    
+         9:    109.77344    
+        10:    204.73438    
+        11:    385.16016    
+ 
+  Equidistant3 points for N = 11
+ 
+         1:  -0.90909091    
+         2:  -0.72727273    
+         3:  -0.54545455    
+         4:  -0.36363636    
+         5:  -0.18181818    
+         6:    0.0000000    
+         7:   0.18181818    
+         8:   0.36363636    
+         9:   0.54545455    
+        10:   0.72727273    
+        11:   0.90909091    
+ 
+  Created graphics data file "equidistant3_data.txt".
+  Created graphics command file "equidistant3_commands.txt".
+
+LEBESGUE_TEST08:
+  Analyze Fejer1 points.
+ 
+  Fejer1 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    1.4142136    
+         3:    1.6666667    
+         4:    1.8477591    
+         5:    1.9888544    
+         6:    2.1043977    
+         7:    2.2022146    
+         8:    2.2870161    
+         9:    2.3618568    
+        10:    2.4288295    
+        11:    2.4894304    
+ 
+  Fejer1 points for N = 11
+ 
+         1:  -0.98982144    
+         2:  -0.90963200    
+         3:  -0.75574957    
+         4:  -0.54064082    
+         5:  -0.28173256    
+         6:   0.28327694E-15
+         7:   0.28173256    
+         8:   0.54064082    
+         9:   0.75574957    
+        10:   0.90963200    
+        11:   0.98982144    
+ 
+  Created graphics data file "fejer1_data.txt".
+  Created graphics command file "fejer1_commands.txt".
+
+LEBESGUE_TEST09:
+  Analyze Fejer2 points.
+ 
+  Fejer2 Lebesgue constants for N = 1 to 11:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.0000000    
+         4:    4.0000000    
+         5:    5.0000000    
+         6:    6.0000000    
+         7:    7.0000000    
+         8:    8.0000000    
+         9:    9.0000000    
+        10:    10.000000    
+        11:    11.000000    
+ 
+  Fejer2 points for N = 11
+ 
+         1:  -0.96592583    
+         2:  -0.86602540    
+         3:  -0.70710678    
+         4:  -0.50000000    
+         5:  -0.25881905    
+         6:   0.61232340E-16
+         7:   0.25881905    
+         8:   0.50000000    
+         9:   0.70710678    
+        10:   0.86602540    
+        11:   0.96592583    
+ 
+  Created graphics data file "fejer2_data.txt".
+  Created graphics command file "fejer2_commands.txt".
+
+LEBESGUE_TEST
+  Normal end of execution.
+
+25 July 2020   3:39:36.286 PM

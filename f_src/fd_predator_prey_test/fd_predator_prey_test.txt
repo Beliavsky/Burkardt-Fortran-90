@@ -1,0 +1,87 @@
+23 June 2020   7:08:58.598 AM
+ 
+FD_PREDATOR_PREY
+  FORTRAN90 version
+ 
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+ 
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference
+  approximation can provide a good estimate for this
+  behavior if the stepsize DT is small enough.
+ 
+  Initial time    =    0.00000    
+  Final time      =    5.00000    
+  Initial prey    =    5000.00    
+  Initial pred    =    100.000    
+  Number of steps =      100
+
+  Gnuplot data written to file "fd_predator_prey_data.txt".
+  Gnuplot commands written to "fd_predator_prey_commands.txt".
+ 
+  TRF values written to  "trf_100.txt".
+ 
+FD_PREDATOR_PREY
+  Normal end of execution.
+ 
+23 June 2020   7:08:58.601 AM
+23 June 2020   7:08:58.640 AM
+ 
+FD_PREDATOR_PREY
+  FORTRAN90 version
+ 
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+ 
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference
+  approximation can provide a good estimate for this
+  behavior if the stepsize DT is small enough.
+ 
+  Initial time    =    0.00000    
+  Final time      =    5.00000    
+  Initial prey    =    5000.00    
+  Initial pred    =    100.000    
+  Number of steps =     1000
+
+  Gnuplot data written to file "fd_predator_prey_data.txt".
+  Gnuplot commands written to "fd_predator_prey_commands.txt".
+ 
+  TRF values written to  "trf_1000.txt".
+ 
+FD_PREDATOR_PREY
+  Normal end of execution.
+ 
+23 June 2020   7:08:58.645 AM
+23 June 2020   7:08:58.679 AM
+ 
+FD_PREDATOR_PREY
+  FORTRAN90 version
+ 
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+ 
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference
+  approximation can provide a good estimate for this
+  behavior if the stepsize DT is small enough.
+ 
+  Initial time    =    0.00000    
+  Final time      =    5.00000    
+  Initial prey    =    5000.00    
+  Initial pred    =    100.000    
+  Number of steps =    10000
+
+  Gnuplot data written to file "fd_predator_prey_data.txt".
+  Gnuplot commands written to "fd_predator_prey_commands.txt".
+ 
+  TRF values written to  "trf_10000.txt".
+ 
+FD_PREDATOR_PREY
+  Normal end of execution.
+ 
+23 June 2020   7:08:58.725 AM

@@ -1,0 +1,206 @@
+<html>
+
+  <head>
+    <title>
+      COLORS - Color Coordinate Conversion
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      COLORS <br> Color Coordinate Conversion
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>COLORS</b>,
+      a FORTRAN90 code which
+      converts color data from one system to another.
+    </p>
+
+    <p>
+      The color coordinate systems considered include CIELAB, CIELUV,
+      CIExyY, CIEXYZ, CMY, CMYK, HLS, HSI, HSV, HVC, LCC, NCS,
+      PhotoYCC, RGB, Y'CbCr, Y'IQ, Y'PbPr and Y'UV.
+    </p>
+
+    <p>
+      Color specification and conversion is a suprisingly difficult
+      subject.  For a particular situation, getting more red just means
+      increasing some number.  But to accurately try to take a given
+      color that shows up on one computer monitor screen, write down
+      the color specification numbers and the illumination, and then
+      figure out the corresponding color specification numbers in a
+      different color system on a different device (a printer, a
+      television) with a different illumination is actually an
+      extraordinary art.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>COLORS</b> is available in
+      <a href = "../../f_src/colors/colors.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../datasets/color/color.html">
+      COLOR</a>,
+      a dataset directory which
+      describes colors by name, triples of integers between 0 and 255,
+      or triples of real numbers between 0 and 1.
+    </p>
+
+    <p>
+      <a href = "../../f_src/colors_test/colors_test.html">
+      colors_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          George Agoston,<br>
+          Color Theory and Its Application in Art and Design,<br>
+          Second edition,<br>
+          Springer, 1987,<br>
+          ISBN: 038709654X,<br>
+          LC: QC495.A32.
+        </li>
+        <li>
+          Wayne Brown, Barry Shepherd,<br>
+          Graphics File Formats,<br>
+          Manning Publications, 1995,<br>
+          ISBN: 1884777007,<br>
+          LC: T385.B777.
+        </li>
+        <li>
+          James Foley, Andries vanDam, Steven Feiner, John Hughes,<br>
+          Computer Graphics, Principles and Practice,<br>
+          Second Edition,<br>
+          Addison Wesley, 1995,<br>
+          ISBN: 0201848406,<br>
+          LC: T385.C5735.
+        </li>
+        <li>
+          Brand Fortner,<br>
+          Number by Colors,
+          A Guide to Using Color to Understand Technical Data,<br>
+          Springer, 1997,<br>
+          ISBN: 0387946853,<br>
+          LC: QC495.F6.
+        </li>
+        <li>
+          Edward Giorgianni, Thomas Madden,<br>
+          Digital Color Management, Encoding Solutions,<br>
+          Addison Wesley, 1998,<br>
+          ISBN: 0201634260,<br>
+          LC: TA1637.G56.
+        </li>
+        <li>
+          Jonas Gomes, Luiz Velho,<br>
+          Image Processing for Computer Graphics,<br>
+          Springer, 1997,<br>
+          ISBN: 0387948546,<br>
+          LC: T385.G65.
+        </li>
+        <li>
+          Roy Hall,<br>
+          Illumination and Color in Computer Generated Imagery,<br>
+          Springer, 1989,<br>
+          ISBN: 0387967745,<br>
+          LC: T385.H327.
+        </li>
+        <li>
+          International Electrotechnical Commission,<br>
+          The sRGB standard,<br>
+          Standard IEC 61966-2-1,<br>
+          <a href = "http://www.srgb.com">http://www.srgb.com</a>
+        </li>
+        <li>
+          Deane Judd, Gunter Wyszecki,<br>
+          Color in Business, Science, and Industry,<br>
+          Wiley, 1975,<br>
+          ISBN: 0471452122,<br>
+          LC: QC495.J79.
+        </li>
+        <li>
+          Olof Kylander, Karin Kylander,<br>
+          GIMP: The Official Handbook,<br>
+          Coriolis Open Press, 1999,<br>
+          ISBN: 1576105202,<br>
+          LC: T385.K866.
+        </li>
+        <li>
+          David Martindale, Alan Paeth,<br>
+          Television Color Encoding and Hot Broadcast Colors,<br>
+          in Graphics Gems II,<br>
+          edited by James Arvo,<br>
+          Academic Press, 1991,<br>
+          ISBN: 0120644819,<br>
+          LC: T385.G6972.
+        </li>
+        <li>
+          Calvin McCamy, H Marcus, JG Davidson,<br>
+          A Color Rendition Chart,<br>
+          Journal of Applied Photographic Engineering,<br>
+          Volume 11, Number 3, 1976, pages 95-99.
+        </li>
+        <li>
+          Guenter Wyszecki, Walter Stiles,<br>
+          Color Science: Concepts and Methods, Quantitative Data
+          and Formulas,<br>
+          John Wiley, 1967,<br>
+          ISBN: 0-471-02106-7,<br>
+          LC: QC495.W88.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "colors.f90">colors.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "colors.sh">colors.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

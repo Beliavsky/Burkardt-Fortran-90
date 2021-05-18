@@ -1,0 +1,194 @@
+<html>
+
+  <head>
+    <title>
+      LINPACK_D - Linear Algebra Library - Double Precision Real
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LINPACK_D <br> Linear Algebra Library <br> Double Precision Real
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LINPACK_D</b>,
+      a FORTRAN90 code which
+      solves systems of linear
+      equations for a variety of matrix types and storage modes.
+    </p>
+
+    <p>
+      LINPACK has officially been superseded by the
+      LAPACK library.  The LAPACK
+      library uses more modern algorithms and code structure.  However,
+      the LAPACK library can be extraordinarily complex; what is done
+      in a single LINPACK routine may correspond to 10 or 20 utility
+      routines in LAPACK.  This is fine if you treat LAPACK as a black
+      box.  But if you wish to learn how the algorithm works, or
+      to adapt it, or to convert the code to another language, this
+      is a real drawback.  This is one reason I still keep a copy
+      of LINPACK around.
+    </p>
+
+    <p>
+      Versions of LINPACK in various arithmetic precisions are available
+      through <a href = "http://www.netlib.org/">the NETLIB web site</a>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LINPACK_D</b> is available in
+      <a href = "../../c_src/linpack_d/linpack_d.html">a C version</a> and
+      <a href = "../../cpp_src/linpack_d/linpack_d.html">a C++ version</a> and
+      <a href = "../../f_src/linpack_d/linpack_d.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/linpack_d/linpack_d.html">a MATLAB version</a> and
+      <a href = "../../py_src/linpack_d/linpack_d.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/blas1_d/blas1_d.html">
+      BLAS1_D</a>,
+      a FORTRAN90 code which
+      contains basic linear algebra routines for vector-vector operations,
+      using double precision real arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/condition/condition.html">
+      CONDITION</a>,
+      a FORTRAN90 code which
+      implements methods of computing or estimating the condition number 
+      of a matrix.
+    </p>
+
+    <p>
+      <a href = "../../f_src/linpack_bench/linpack_bench.html">
+      LINPACK_BENCH</a>,
+      a FORTRAN90 code which
+      is a benchmark which measures the time
+      taken by LINPACK to solve a particular linear system.
+    </p>
+
+    <p>
+      <a href = "../../f_src/linpack_d_test/linpack_d_test.html">
+      linpack_d_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/linpack_z/linpack_z.html">
+      LINPACK_Z</a>,
+      a FORTRAN90 code which
+      is a version of LINPACK for double precision
+      complex arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nms/nms.html">
+      NMS</a>,
+      a FORTRAN90 code which
+      includes LINPACK.
+    </p>
+
+    <p>
+      <a href = "../../f_src/qr_solve/qr_solve.html">
+      QR_SOLVE</a>,
+      a FORTRAN90 code which
+      computes the least squares solution of a linear system A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../f_src/svd_demo/svd_demo.html">
+      SVD_DEMO</a>,
+      a FORTRAN90 code which
+      demonstrates the singular value decomposition for a simple example.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_mat/test_mat.html">
+      TEST_MAT</a>,
+      a FORTRAN90 code which
+      defines test matrices, some of
+      which have known determinants, eigenvalues and eigenvectors,
+      inverses and so on.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toeplitz_cholesky/toeplitz_cholesky.html">
+      TOEPLITZ_CHOLESKY</a>,
+      a FORTRAN90 code which
+      computes the Cholesky factorization of a nonnegative definite symmetric
+      Toeplitz matrix.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jack Dongarra, Jim Bunch, Cleve Moler, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979,<br>
+          ISBN13: 978-0-898711-72-1,<br>
+          LC: QA214.L56.
+        </li>
+        <li>
+          Charles Lawson, Richard Hanson, David Kincaid, Fred Krogh,<br>
+          Algorithm 539,
+          Basic Linear Algebra Subprograms for Fortran Usage,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 5, Number 3, September 1979, pages 308-323.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "linpack_d.f90">linpack_d.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "linpack_d.sh">linpack_d.sh</a>,
+          compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 28 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

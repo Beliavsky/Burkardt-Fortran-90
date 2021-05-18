@@ -1,0 +1,72 @@
+31 May 2020   4:47:46.884 PM
+
+BLAS0_TEST
+  FORTRAN90 version
+  Test the BLAS0 library.
+ 
+DMACH_TEST
+  DMACH computes several machine-dependent
+  double precision real arithmetic parameters.
+ 
+   DMACH(1)  = machine epsilon =    2.2204460492503131E-016
+   DMACH(2)  = a tiny value    =    2.2250738585072014E-308
+   DMACH(3)  = a huge value    =    1.7976931348623157E+308
+ 
+  FORTRAN90 parameters:
+ 
+   EPSILON() = machine epsilon =    2.2204460492503131E-016
+   TINY()    = a tiny value    =    2.2250738585072014E-308
+   HUGE()    = a huge value    =    1.7976931348623157E+308
+
+TEST01
+  R4_ABS returns the absolute value of an R4.
+
+   -1.252654    1.252654
+    4.650541    4.650541
+    3.636074    3.636074
+    1.493564    1.493564
+    0.322457    0.322457
+   -2.471050    2.471050
+   -0.939378    0.939378
+   -2.120346    2.120346
+   -2.649368    2.649368
+    2.071726    2.071726
+
+TEST015
+  R4_SIGN returns the sign of a number.
+
+     -1.25     -1.00
+     -0.25     -1.00
+      0.00      1.00
+      0.50      1.00
+      9.00      1.00
+
+TEST02
+  R8_ABS returns the absolute value of an R8.
+
+  X     R8_ABS(X)
+
+   -1.252654  *
+    4.650541  *
+    3.636074  *
+    1.493564  *
+    0.322457  *
+   -2.471050  *
+   -0.939378  *
+   -2.120346  *
+   -2.649368  *
+    2.071726  *
+
+TEST03
+  R8_SIGN returns the sign of a number.
+
+   -1.2500   -1.0000
+   -0.2500   -1.0000
+    0.0000    1.0000
+    0.5000    1.0000
+    9.0000    1.0000
+
+BLAS0_TEST
+  Normal end of execution.
+
+31 May 2020   4:47:46.884 PM

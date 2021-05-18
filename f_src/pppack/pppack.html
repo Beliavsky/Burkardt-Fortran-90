@@ -1,0 +1,236 @@
+<html>
+
+  <head>
+    <title>
+      PPPACK - Piecewise Polynomial Package
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      PPPACK <br> Piecewise Polynomial Package
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>PPPACK</b>,
+      a FORTRAN90 code which
+      evaluates piecewise polynomial functions, including cubic splines.
+      The original FORTRAN77 library is by Carl de Boor.
+    </p>
+
+    <p>
+      An original, true, correct version of PPPACK is available at
+              <a href = "http://www.netlib.org/pppack/index.html">
+                         http://www.netlib.org/pppack/index.html</a>
+      Files shown here are modifications made in pursuance of my
+      own interests and needs, and should not be considered in preference
+      to the original versions.
+    </p>
+
+    <h3 align = "center">
+      Piecewise Polynomial Functions:
+    </h3>
+
+    <p>
+      Typically, a set of data ( X(I), Y(I) ) for I=1, L+1 is available
+      which is to be interpolated.  A function F(X) is to be found which
+      passes through the given data.  F(X) is to be constructed from
+      some order of polynomials, often cubic, and is to be continuously
+      differentiable to all orders except at certain 'break' points,
+      most likely at the same X points given with the data.  Thus, to
+      determine the types of functions F we can construct, it is necessary
+      to specify the number of break points L+1, or intervals L, the
+      location of the breakpoints 'BREAK', the values that the function is
+      to assume at the breakpoints 'Y' or some other condition,
+      and the order 'K' of the polynomial pieces.  Sometimes auxilliary
+      information, such as the slope or second derivative of the
+      function at the left and right endpoints is part of the
+      prescription.
+    </p>
+
+    <p>
+      Given a set of interpolating conditions or other requirements,
+      the piecewise polynomial routines that follow will produce or
+      manipulate a representation of the function F which has the form:
+      <pre><b>
+        ( BREAK, PCOEF, K, L )
+      </b></pre>
+    </p>
+
+    <p>
+      These quantities represent the function F in the following way.
+      If a point X is between breakpoints BREAK(I) and BREAK(I+1),
+      then set
+      <pre><b>
+        H = X - BREAK(I),
+      </b></pre>
+      and we have
+      <pre><b>
+        F(X)= PCOEF(1,I)
+             + PCOEF(2,I) * H
+             + PCOEF(3,I) * H^2 / 2!
+             + PCOEF(4,I) * H^3 / 3!
+             ...
+             + PCOEF(K,I) * H^(K-1) /(K-1)!
+      </b></pre>
+    </p>
+
+    <p>
+      Note that the piecewise polynomial functions make F and
+      its derivatives continuous from the right.  Thus at
+      the break point I+1, we use the definition of F appropriate
+      for the interval ( BREAK(I+1), BREAK(I+2) ) and not
+      ( BREAK(I), BREAK(I+1) ).
+    </p>
+
+    <p>
+      Note also that the behavior of the function F for X values
+      below the first breakpoint BREAK(1) or above the last breakpoint
+      BREAK(L+1) is not specified.  In fact, generally, F is set to zero
+      below BREAK(1), and the definition of F on the last interval
+      ( BREAK(L), BREAK(L+1) ) is extended all the way to the right.
+    </p>
+
+    <p>
+      Whenever you have a piecewise polynomial representation of the
+      above form, you can evaluate the function F(X) by calling
+      the function PPVALU.  Moreover, other routines like BSPLPP
+      can convert a B-spline representation into a piecewise polynomial
+      representation.  Also, KNOTS can use the information
+      in the breakpoint sequence BREAK, with the continuity conditions
+      required, to construct an equivalent knot sequence for a B-spline.
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>PPPACK</b> is available in
+      <a href = "../../f_src/pppack/pppack.html">a FORTRAN90 version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/divdif/divdif.html">
+      DIVDIF</a>,
+      a FORTRAN90 code which
+      computes interpolants by divided differences.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite/hermite.html">
+      HERMITE</a>,
+      a FORTRAN90 code which
+      computes the Hermite interpolant, a polynomial that matches function values
+      and derivatives.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pppack_test/pppack_test.html">
+      pppack_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/slatec/slatec.html">
+      SLATEC</a>,
+      a FORTRAN90 code which
+      includes PPPACK.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spline/spline.html">
+      SPLINE</a>,
+      a FORTRAN90 code which
+      includes many routines to construct
+      and evaluate spline interpolants and approximants.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_approx/test_approx.html">
+      TEST_APPROX</a>,
+      a FORTRAN90 code which
+      defines a number of test problems for approximation and interpolation.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Carl de Boor
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Samuel Conte, Carl de Boor,<br>
+          Elementary Numerical Analysis,<br>
+          Second Edition,<br>
+          McGraw Hill, 1972,<br>
+          ISBN: 07-012446-4,<br>
+          LC: QA297.C65.
+        </li>
+         <li>
+          Carl de Boor,<br>
+          A Practical Guide to Splines,<br>
+          Springer, 2001,<br>
+          ISBN: 0387953663,<br>
+          LC: QA1.A647.v27.
+        </li>
+        <li>
+          Roger Martin, James Wilkinson,<br>
+          Solution of Symmetric and Unsymmetric Band Equations and
+          the Calculation of Eigenvectors of Band Matrices,<br>
+          Numerische Mathematik,<br>
+          Volume 9, Number 4, December 1976, pages 279-301.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "pppack.f90">pppack.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "pppack.sh">pppack.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 24 October 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

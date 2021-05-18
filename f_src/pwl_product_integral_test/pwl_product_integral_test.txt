@@ -1,0 +1,70 @@
+20 August 2020  12:20:19.128 PM
+ 
+pwl_PRODUCT_INTEGRAL_TEST
+  FORTRAN90 version
+  Test the pwl_PRODUCT_INTEGRAL library.
+ 
+TEST01
+  Test pwl_PRODUCT_INTEGRAL on a very simple problem.
+  F and G are both defined over a single common
+  interval, so that F(X) = G(X) = X.
+ 
+           A           B      Integral        Exact
+ 
+      1.0000      1.0000     0.00000         0.00000    
+      1.0000      2.0000     2.33333         2.33333    
+      1.0000      3.0000     8.66667         8.66667    
+      1.0000      4.0000     21.0000         21.0000    
+      1.0000      5.0000     41.3333         41.3333    
+ 
+TEST02
+  Test pwl_PRODUCT_INTEGRAL on a simple problem.
+  F and G are both defined over separate, multiple
+  intervals, but still true that F(X) = G(X) = X.
+ 
+           A           B      Integral        Exact
+ 
+      1.0000      1.0000     0.00000         0.00000    
+      1.0000      2.0000     2.33333         2.33333    
+      1.0000      3.0000     8.66667         8.66667    
+      1.0000      4.0000     21.0000         21.0000    
+      1.0000      5.0000     41.3333         41.3333    
+ 
+TEST03
+  Test pwl_PRODUCT_INTEGRAL on a simple problem.
+  F and G are defined over separate, multiple
+  intervals.
+ 
+  F(X) interpolates SIN(X),
+  G(X) interpolates 2*COS(X).
+ 
+  We compare:
+ 
+  INTEGRAL, our value for the integral,
+  QUAD, a quadrature estimate for the integral, and
+  CLOSE, the value of the integral of 2*COS(X)*SIN(X)
+ 
+           A           B      Integral        Quad            Close
+ 
+      0.0000      0.0000     0.00000         0.00000        -0.00000    
+      0.0000      0.5236    0.247447        0.247447        0.250000    
+      0.0000      1.0472    0.743259        0.743259        0.750000    
+      0.0000      1.5708    0.990786        0.990786         1.00000    
+      0.0000      2.0944    0.743259        0.743259        0.750000    
+      0.0000      2.6180    0.247447        0.247447        0.250000    
+      0.0000      3.1416   -0.936751E-16    0.564911E-15    -0.00000    
+ 
+TEST04
+  Test pwl_PRODUCT_INTEGRAL.
+  The nodes are at 0, 1, and 2.
+  F(X) = ( 0, 1, 0 ).
+  G(X) = ( 1, 0, 0 ).
+ 
+  Integral F(X) * F(X) dx =   0.666667    
+  Integral F(X) * G(X) dx =   0.166667    
+  Integral G(X) * G(X) dx =   0.333333    
+ 
+pwl_PRODUCT_INTEGRAL_TEST
+  Normal end of execution.
+ 
+20 August 2020  12:20:19.128 PM

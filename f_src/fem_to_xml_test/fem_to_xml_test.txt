@@ -1,0 +1,303 @@
+ 7 July 2020  11:29:39.328 AM
+
+FEM_TO_XML
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to DOLFIN XML format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".xml, a corresponding DOLFIN XML mesh file.
+ 
+  Read the header of "battery_nodes.txt".
+ 
+  Spatial dimension =        2
+  Number of points  =      564
+ 
+  Read the data in "battery_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2       
+  Col
+    1:   0.00000       0.00000    
+    2:   0.00000      0.800000    
+    3:   0.00000       1.60000    
+    4:   0.00000       2.54168    
+    5:   0.00000       3.60000    
+ 
+  Read the header of "battery_elements.txt".
+ 
+  Element order =        3
+  Number of elements =     1024
+ 
+  Read the data in "battery_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3
+  Col
+ 
+    1:     61     84     74
+    2:    466    532    467
+    3:    458    524    459
+    4:     41     61     46
+    5:    455    454    520
+    6:     42     58     63
+    7:     42     27     38
+    8:     38     58     42
+    9:    465    464    530
+   10:    444    511    445
+ 
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "battery.xml".
+ 
+FEM_TO_XML
+  Normal end of execution.
+ 
+ 7 July 2020  11:29:39.337 AM
+ 7 July 2020  11:29:39.338 AM
+
+FEM_TO_XML
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to DOLFIN XML format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".xml, a corresponding DOLFIN XML mesh file.
+ 
+  Read the header of "channel_nodes.txt".
+ 
+  Spatial dimension =        3
+  Number of points  =       63
+ 
+  Read the data in "channel_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2             3       
+  Col
+    1:   0.00000       0.00000       0.00000    
+    2:   0.00000       0.00000      0.500000    
+    3:   0.00000       0.00000       1.00000    
+    4:   0.00000      0.500000       0.00000    
+    5:   0.00000      0.500000      0.500000    
+ 
+  Read the header of "channel_elements.txt".
+ 
+  Element order =        4
+  Number of elements =      144
+ 
+  Read the data in "channel_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3      4
+  Col
+ 
+    1:      1      2      4     10
+    2:      2      4      5     10
+    3:      2      5     10     11
+    4:      2      3      5     11
+    5:      4      5     10     13
+    6:      3      5      6     11
+    7:      5     10     11     13
+    8:      4      5      7     13
+    9:      5      6      8     14
+   10:      5      7      8     13
+ 
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "channel.xml".
+ 
+FEM_TO_XML
+  Normal end of execution.
+ 
+ 7 July 2020  11:29:39.340 AM
+ 7 July 2020  11:29:39.341 AM
+
+FEM_TO_XML
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to DOLFIN XML format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".xml, a corresponding DOLFIN XML mesh file.
+ 
+  Read the header of "cheby9_nodes.txt".
+ 
+  Spatial dimension =        1
+  Number of points  =        9
+ 
+  Read the data in "cheby9_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1       
+  Col
+    1:  -1.00000    
+    2: -0.923880    
+    3: -0.707107    
+    4: -0.382683    
+    5:   0.00000    
+ 
+  Read the header of "cheby9_elements.txt".
+ 
+  Element order =        2
+  Number of elements =        8
+ 
+  Read the data in "cheby9_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2
+  Col
+ 
+    1:      1      2
+    2:      2      3
+    3:      3      4
+    4:      4      5
+    5:      5      6
+    6:      6      7
+    7:      7      8
+    8:      8      9
+ 
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "cheby9.xml".
+ 
+FEM_TO_XML
+  Normal end of execution.
+ 
+ 7 July 2020  11:29:39.341 AM
+ 7 July 2020  11:29:39.342 AM
+
+FEM_TO_XML
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to DOLFIN XML format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".xml, a corresponding DOLFIN XML mesh file.
+ 
+  Read the header of "circle_nodes.txt".
+ 
+  Spatial dimension =        2
+  Number of points  =      249
+ 
+  Read the data in "circle_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2       
+  Col
+    1:  -3.00000      0.367394E-15
+    2:  -2.94291     -0.287013    
+    3:  -2.94291      0.287013    
+    4:  -2.88582     -0.574025    
+    5:  -2.88582      0.574025    
+ 
+  Read the header of "circle_elements.txt".
+ 
+  Element order =        3
+  Number of elements =      432
+ 
+  Read the data in "circle_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3
+  Col
+ 
+    1:    103    108    121
+    2:    131    148    128
+    3:    114    131    128
+    4:    122    131    114
+    5:     68     80     89
+    6:     64     44     52
+    7:     57     44     64
+    8:     57     64     73
+    9:    178    195    188
+   10:    188    195    208
+ 
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "circle.xml".
+ 
+FEM_TO_XML
+  Normal end of execution.
+ 
+ 7 July 2020  11:29:39.346 AM
+ 7 July 2020  11:29:39.347 AM
+
+FEM_TO_XML
+  FORTRAN90 version
+  Convert a 1D, 2D or 3D mesh from FEM to DOLFIN XML format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, the element node connectivity.
+
+  Create "prefix".xml, a corresponding DOLFIN XML mesh file.
+ 
+  Read the header of "rectangle_nodes.txt".
+ 
+  Spatial dimension =        2
+  Number of points  =       20
+ 
+  Read the data in "rectangle_nodes.txt".
+ 
+  Initial portion of node coordinate data:
+ 
+  Row         1             2       
+  Col
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       0.00000    
+    4:   3.00000       0.00000    
+    5:   4.00000       0.00000    
+ 
+  Read the header of "rectangle_elements.txt".
+ 
+  Element order =        3
+  Number of elements =       24
+ 
+  Read the data in "rectangle_elements.txt".
+ 
+  Initial portion of element data:
+ 
+  Row       1      2      3
+  Col
+ 
+    1:      6      1      2
+    2:      7      6      2
+    3:      7     11      6
+    4:     12     11      7
+    5:     16     11     12
+    6:     16     12     17
+    7:      7      2      3
+    8:      8      7      3
+    9:      8     12      7
+   10:     13     12      8
+ 
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "rectangle.xml".
+ 
+FEM_TO_XML
+  Normal end of execution.
+ 
+ 7 July 2020  11:29:39.347 AM

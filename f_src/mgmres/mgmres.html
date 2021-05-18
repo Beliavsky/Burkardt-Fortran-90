@@ -1,0 +1,193 @@
+<html>
+
+  <head>
+    <title>
+      MGMRES - Restarted GMRES solver for sparse linear systems
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      MGMRES <br> Restarted GMRES solver for sparse linear systems
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>MGMRES</b>,
+      a FORTRAN90 code which 
+      applies the restarted Generalized Minimum Residual (GMRES) algorithm 
+      to solve a sparse linear system, using compressed row (CR) or
+      sparse triplet (ST) format, by Lili Ju.
+    </p>
+
+    <p>
+      One matrix format used is the sparse triplet (ST)
+      format, which simply stores <b>NZ_NUM</b>, the number 
+      of nonzeros, and stores the K-th nonzero matrix entry as
+      <ul>
+        <li>
+          <b>A(K)</b>, the value of the entry;
+        </li>
+        <li>
+          <b>IA(K)</b>, the row of the entry;
+        </li>
+        <li>
+          <b>JA(K)</b>, the column of the entry;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Another matrix format used is the compressed row (CR) format, which is 
+      similar to the sparse
+      triplet format except that the vector of row indices is
+      compressed to a vector of length N+1 which points to the beginning
+      of the set of entries for each row.
+      <ul>
+        <li>
+          <b>A(1:NZ_NUM)</b>, the value of the entry;
+        </li>
+        <li>
+          <b>IA(1:N+1)</b>, row I values occur in entries IA(I) to IA(I+1)-1;
+        </li>
+        <li>
+          <b>JA(1:NZ_NUM)</b>, the column of the entry;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>MGMRES</b> is available in 
+      <a href = "../../c_src/mgmres/mgmres.html">a C version</a> and
+      <a href = "../../cpp_src/mgmres/mgmres.html">a C++ version</a> and
+      <a href = "../../f_src/mgmres/mgmres.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/mgmres/mgmres.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cg_rc/cg_rc.html">
+      CG_RC</a>,
+      a FORTRAN90 code which
+      implements the conjugate gradient method for solving 
+      a positive definite sparse linear system A*x=b, using reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi/jacobi.html">
+      JACOBI</a>,
+      a FORTRAN90 code which
+      implements the Jacobi iteration for solving symmetric positive definite 
+      systems of linear equations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mgmres_test/mgmres_test.html">
+      mgmres_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/sparsekit/sparsekit.html">
+      SPARSEKIT</a>,
+      a FORTRAN90 code which
+      implements operations on sparse matrices, including conversion 
+      between various formats.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_mat/test_mat.html">
+      TEST_MAT</a>,
+      a FORTRAN90 code which 
+      defines test matrices.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      C version by Lili Ju, Mathematics Department, University of South Carolina;
+      FORTRAN90 version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Richard Barrett, Michael Berry, Tony Chan, James Demmel,
+          June Donato, Jack Dongarra, Victor Eijkhout, Roidan Pozo,
+          Charles Romine, Henk van der Vorst,<br>
+          Templates for the Solution of Linear Systems:<br>
+          Building Blocks for Iterative Methods,<br>
+          SIAM, 1994,<br>
+          ISBN: 0898714710,<br>
+          LC: QA297.8.T45.
+        </li>
+        <li>
+          Tim Kelley,<br>
+          Iterative Methods for Linear and Nonlinear Equations,<br>
+          SIAM, 2004,<br>
+          ISBN: 0898713528,<br>
+          LC: QA297.8.K45.
+        </li>
+        <li>
+          Yousef Saad,<br>
+          Iterative Methods for Sparse Linear Systems,<br>
+          Second Edition,<br>
+          SIAM, 20003,<br>
+          ISBN: 0898715342,<br>
+          LC: QA188.S17.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "mgmres.f90">mgmres.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "mgmres.sh">mgmres.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 30 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

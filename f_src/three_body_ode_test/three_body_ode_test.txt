@@ -1,0 +1,40 @@
+ 9 September 2020   8:43:24.958 AM
+ 
+three_body_ode_test
+  FORTRAN90 version
+  Simulate the behavior of three bodies which are
+  constrained to lie in a plane, moving under the
+  influence of gravity.
+ 
+  Use RKF45 for the ODE integrator.
+ 
+three_body_ode_run
+  Simulate the planar three-body problem as an ODE system
+  using RKF45 for the ODE integration.
+ 
+three_body_ode_run - Warning!
+  Output value of FLAG =    4 at T_OUT =    2.00000    
+ 
+three_body_ode_run - Warning!
+  Output value of FLAG =    4 at T_OUT =    5.00000    
+ 
+three_body_ode_run - Warning!
+  Output value of FLAG =    4 at T_OUT =    7.40000    
+ 
+three_body_ode_run - Warning!
+  Output value of FLAG =    4 at T_OUT =    10.5000    
+ 
+three_body_ode_run - Warning!
+  Output value of FLAG =    4 at T_OUT =    13.0000    
+ 
+three_body_ode_run - Warning!
+  Output value of FLAG =    4 at T_OUT =    18.8000    
+ 
+three_body_ode_run:
+  Time data written to "three_body_ode_t.txt".
+  Solution data written to "three_body_ode_y.txt".
+ 
+three_body_ode_test
+  Normal end of execution.
+ 
+ 9 September 2020   8:43:24.968 AM

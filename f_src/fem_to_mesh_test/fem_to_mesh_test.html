@@ -1,0 +1,124 @@
+<html>
+
+  <head>
+    <title>
+      fem_to_mesh_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem_to_mesh_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem_to_mesh_test</b>,
+      a FORTRAN90 code which
+      calls fem_to_mesh(), which
+      reads a pair of FEM files defining the node coordinates and elements
+      of a finite element mesh, and rewrites the data as a MESH file.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem_to_mesh/fem_to_mesh.html">
+      fem_to_mesh</a>,
+      a FORTRAN90 code which
+      reads a set of FEM files defining the node coordinates, boundary nodes,
+      and elements of a finite element mesh, and rewrites the data as a 
+      MESH file.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem_to_mesh_test.sh">fem_to_mesh_test.sh</a>, the source code.
+        </li>
+        <li>
+          <a href = "fem_to_mesh_test.txt">fem_to_mesh_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ELL</b> is a 2D L-shaped region, with a grid of 65 nodes
+      and 96 elements of order 3 triangles.
+      <ul>
+        <li>
+          <a href = "ell_nodes.txt">ell_nodes.txt</a>
+        </li>
+        <li>
+          <a href = "ell_elements.txt">ell_elements.txt</a>
+        </li>
+        <li>
+          <a href = "ell_elements.png">ell_elements.png</a>,
+          an image of the triangulation.
+        </li>
+        <li>
+          <a href = "ell_boundary_node_mask.txt">ell_boundary_node_mask.txt</a>
+        </li>
+        <li>
+          <a href = "ell.mesh">ell.mesh</a>, the MESH file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P01</b> is 3D FEM data for a rectangular channel of dimensions
+      3x1x1 physical units, using 584 nodes and 2568 tetrahedral elements.
+      <ul>
+        <li>
+          <a href = "p01_nodes.txt">p01_nodes.txt</a>,
+          defines the FEM nodes.
+        </li>
+        <li>
+          <a href = "p01_elements.txt">p01_elements.txt</a>,
+          defines the FEM elements.
+        </li>
+        <li>
+          <a href = "p01_elements.png">p01_elements.png</a>,
+          an image of the mesh.
+        </li>
+        <li>
+          <a href = "p01_boundary_node_mask.txt">p01_boundary_node_mask.txt</a>
+        </li>
+        <li>
+          <a href = "p01.mesh">p01.mesh</a>, the MESH file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

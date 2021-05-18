@@ -1,0 +1,179 @@
+<html>
+
+  <head>
+    <title>
+      TEST_PARTIAL_DIGEST - Test Problems for Partial Digest
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_PARTIAL_DIGEST <br> Test Problems for Partial Digest
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_PARTIAL_DIGEST</b>,
+      a FORTRAN90 code which
+      can generate example cases of the partial digest problem.
+    </p>
+
+    <p>
+      In the partial digest problem, we assume that there are <b>N</b>
+      objects arranged along a line.  We denote the position of object <b>I</b>
+      by <b>X(I)</b>.  The positions of the objects are unknown.  Instead,
+      we have a list of the distances between every distinct pair of objects.
+      Note that the distances are not "tagged"; that is, if there is a 175
+      on the list of distances, we don't know which two objects are separated
+      by that distance.  In the partial digest problem, we start with the
+      <b>(N*(N-1))/2</b> distances D, and must come up with at least one
+      linear arrangement of <b>N</b> objects that corresponds to the distances.
+    </p>
+
+    <p>
+      To use this library, the user specifies a number of objects N, and
+      a maximum separation DMAX.  The library will generate N object locations
+      in an array called LOCATE, and the corresponding list of distances D.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          N must be at least 2.           
+        </li>
+        <li>
+          DMAX must be at least N - 1.
+        </li>
+        <li>
+          The entries in LOCATE will be distinct integers in ascending order.
+        </li>     
+        <li>
+          LOCATE(1) = 0 and LOCATE(N) = DMAX. 
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_PARTIAL_DIGEST</b> is available in
+      <a href = "../../c_src/test_partial_digest/test_partial_digest.html">a C version</a> and
+      <a href = "../../cpp_src/test_partial_digest/test_partial_digest.html">a C++ version</a> and
+      <a href = "../../f_src/test_partial_digest/test_partial_digest.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_partial_digest/test_partial_digest.html">a MATLAB version</a> and
+      <a href = "../../py_src/test_partial_digest/test_partial_digest.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Software and Data:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cities/cities.html">
+      CITIES</a>,
+      a FORTRAN90 code which
+      carries out various
+      computations involving the locations or relative distances
+      of cities on a map.
+    </p>
+
+    <p>
+      <a href = "../../datasets/cities/cities.html">
+      CITIES</a>,
+      a dataset directory which
+      defines the locations or relative distances
+      of cities on a map.
+    </p>
+
+    <p>
+      <a href = "../../f_src/combo/combo.html">
+      COMBO</a>,
+      a FORTRAN90 code which
+      carries out various combinatorial computations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/distance_to_position/distance_to_position.html">
+      DISTANCE_TO_POSITION</a>,
+      a FORTRAN90 code which
+      estimates the positions of cities based on a city-to-city distance table.
+    </p>
+
+    <p>
+      <a href = "../../f_src/partial_digest/partial_digest.html">
+      PARTIAL_DIGEST</a>,
+      a FORTRAN90 code which
+      seeks solutions of the partial digest problem.
+    </p>
+
+    <p>
+      <a href = "../../f_src/subset/subset.html">
+      SUBSET</a>,
+      a FORTRAN90 code which
+      carries out various combinatorial computations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_partial_digest_test/test_partial_digest_test.html">
+      test_partial_digest_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Pavel Pevzner,<br>
+          Computational Molecular Biology,<br>
+          MIT Press, 2000,<br>
+          ISBN: 0-262-16197-4,<br>
+          LC: QH506.P47.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_partial_digest.f90">test_partial_digest.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_partial_digest.sh">test_partial_digest.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 05 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

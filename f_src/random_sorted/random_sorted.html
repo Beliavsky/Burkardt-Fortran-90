@@ -1,0 +1,166 @@
+<html>
+
+  <head>
+    <title>
+      RANDOM_SORTED - Generate Sorted Random Vectors
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      RANDOM_SORTED <br> Generate Sorted Random Vectors
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>RANDOM_SORTED</b>,
+      a FORTRAN90 code which
+      uses a random number generator (RNG) to create a vector of 
+      random values which are already sorted.
+    </p>
+
+    <p>
+      Since the computation of the spacing between the values requires some
+      additional arithmetic, it is not immediately obvious when this
+      procedure will be faster than simply generating a vector of random
+      values and then sorting it.
+    </p>
+
+    <p>
+      Because the library can generate a sorted random vector of values
+      between 0 and 1, it is possible to generate sorted data samples from
+      any distribution for which the inverse Cumulative Density Function (CDF)
+      is known.  For instance, to generate sorted normal data, simply generate 
+      sorted uniform data, and then apply the inverse of the normal CDF, as 
+      in the example code listed below. 
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>RANDOM_SORTED</b> is available in
+      <a href = "../../c_src/random_sorted/random_sorted.html">a C version</a> and
+      <a href = "../../cpp_src/random_sorted/random_sorted.html">a C++ version</a> and
+      <a href = "../../f_src/random_sorted/random_sorted.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/random_sorted/random_sorted.html">a MATLAB version</a> and
+      <a href = "../../py_src/random_sorted/random_sorted.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa183/asa183.html">
+      ASA183</a>,
+      a FORTRAN90 code which
+      implements the Wichman-Hill random number generator (RNG).
+    </p>
+
+    <p>
+      <a href = "../../f_src/normal/normal.html">
+      NORMAL</a>,
+      a FORTRAN90 code which
+      computes a sequence of pseudorandom normally distributed values.
+    </p>
+
+    <p>
+      <a href = "../../f_src/randlc/randlc.html">
+      RANDLC</a>,
+      a FORTRAN90 code which
+      generates a sequence of pseudorandom numbers,
+      used by the NAS Benchmark programs.
+    </p>
+
+    <p>
+      <a href = "../../f_src/random_sorted_test/random_sorted_test.html">
+      random_sorted_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ranlib/ranlib.html">
+      RANLIB</a>,
+      a FORTRAN90 code which
+      produces random samples from Probability Density Functions (PDF's), 
+      including Beta, Chi-square Exponential, F, Gamma, Multivariate normal,
+      Noncentral chi-square, Noncentral F, Univariate normal, random permutations,
+      Real uniform, Binomial, Negative Binomial, Multinomial, Poisson
+      and Integer uniform,
+      by Barry Brown and James Lovato.
+    </p>
+
+    <p>
+      <a href = "../../f_src/rnglib/rnglib.html">
+      RNGLIB</a>,
+      a FORTRAN90 code which
+      implements a random number generator (RNG) with splitting facilities,
+      allowing multiple independent streams to be computed,
+      by L'Ecuyer and Cote.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 code which
+      computes a sequence
+      of uniformly distributed pseudorandom values.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jon Bentley, James Saxe,<br>
+          Generating sorted lists of random numbers,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 6, Number 3, September 1980, pages 359-364.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "random_sorted.f90">random_sorted.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "random_sorted.sh">random_sorted.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 24 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

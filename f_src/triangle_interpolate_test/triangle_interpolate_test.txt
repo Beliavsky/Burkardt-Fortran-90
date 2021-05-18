@@ -1,0 +1,31 @@
+10 September 2020   8:05:16.059 AM
+
+TRIANGLE_INTERPOLATE_TEST
+  FORTRAN90 version
+  Test the TRIANGLE_INTERPOLATE library.
+
+TRIANGLE_INTERPOLATE_LINEAR_TEST
+  TRIANGLE_INTERPOLATE_LINEAR uses linear interpolation
+  on vertex data to estimate values in the interior.
+
+       X               Y               V(1)            V(2)            V(3)
+
+     0.00000         1.00000         1.00000         0.00000         0.00000    
+     5.00000         0.00000         0.00000         1.00000         0.00000    
+     4.00000         4.00000         0.00000         0.00000         1.00000    
+
+     4.67598        0.876463        0.220851E-01    0.764320        0.213595    
+     3.12563         2.73728        0.250537        0.127777        0.621687    
+     1.17889         1.17003        0.742864        0.150345        0.106790    
+     1.57257         1.01005        0.668403        0.246185        0.854121E-01
+     3.94620        0.343370        0.203780        0.761322        0.348975E-01
+     3.31100        0.495070        0.329523        0.629090        0.413867E-01
+     3.99497         1.52577        0.131281        0.520097        0.348623    
+    0.180196         1.09386        0.957124        0.869157E-02    0.341847E-01
+     2.42968         2.53392        0.407757        0.607026E-01    0.531541    
+    0.572425        0.927439        0.883309        0.105659        0.110326E-01
+
+TRIANGLE_INTERPOLATE_TEST:
+  Normal end of execution.
+
+10 September 2020   8:05:16.059 AM

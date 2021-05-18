@@ -1,0 +1,19 @@
+26 August 2020   8:57:46.637 AM
+ 
+SEARCH_MPI:
+  FORTRAN90/MPI version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+ 
+  A           =            1
+  B           =   2147483647
+  C           =           45
+ 
+  Process 4 found     J =   1674924981
+  Verify F(J) =           45
+  Elapsed CPU time is    12.4399    
+ 
+SEARCH_MPI:
+  Normal end of execution.
+ 
+26 August 2020   8:57:59.252 AM

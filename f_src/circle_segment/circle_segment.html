@@ -1,0 +1,168 @@
+<html>
+
+  <head>
+    <title>
+      CIRCLE_SEGMENT - Area, Height, Angle, Sampling and Quadrature
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CIRCLE_SEGMENT <br> Area, Height, Angle, Sampling and Quadrature
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CIRCLE_SEGMENT</b>,
+      a FORTRAN90 code which
+      carries out various computations associated with a circle segment,
+      using gnuplot to illustrate some of the computations.
+    </p>
+
+    <p>
+      Begin with a circle of radius R.  Choose two points P1 and P2 on the
+      circle, and draw the chord P1:P2.  This chord divides the circle
+      into two pieces, each of which is called a circle segment.
+      Consider one of the pieces.  The "angle" THETA of this segment is the 
+      angle P1:C:P2, where C is the center of the circle.  Let Q be the point 
+      on the chord P1:P2 which is closest to C.  The "height" H of the segment
+      is the distance from Q to the perimeter of the circle.
+    </p>
+
+    <p>
+      This code considers various computations, including:
+      <ul>
+        <p>
+          Determine the angle THETA, given R and H.
+        </p>
+        <p>
+          Determine the height H, given R and THETA.
+        </p>
+        <p>
+          Determine the height H, given R and AREA.
+        </p>
+        <p>
+          Determine the width W, given R and H.
+        </p>
+        <p>
+          Determine the area, given R and H.
+        </p>
+        <p>
+          Determine the centroid, given R and H.
+        </p>
+        <p>
+          Select points uniformly at random from a segment, given R and H.
+        </p>
+        <p>
+          Determine a cumulative density function (CDF) for the height H2
+          of a circle segment defined by a point selected at random from
+          a circle segment of height H.
+        </p>
+        <p>
+          Determine a quadrature rule that can be used to estimate integrals
+          of functions f(x,y) over the segment.
+        </p>
+      </ul>
+    </p>
+
+    <p>
+      <b>CIRCLE_SEGMENT</b> creates some graphics plots using gnuplot.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CIRCLE_SEGMENT</b> is available in
+      <a href = "../../c_src/circle_segment/circle_segment.html">a C version</a> and
+      <a href = "../../cpp_src/circle_segment/circle_segment.html">a C++ version</a> and
+      <a href = "../../f_src/circle_segment/circle_segment.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/circle_segment/circle_segment.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/circle_rule/circle_rule.html">
+      CIRCLE_RULE</a>,
+      a FORTRAN90 code which
+      computes quadrature rules for the unit circle in 2D, that is, 
+      the circumference of the circle of radius 1 and center (0,0).
+    </p>
+
+    <p>
+      <a href = "../../f_src/circle_segment_test/circle_segment_test.html">
+      circle_segment_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/geometry/geometry.html">
+      GEOMETRY</a>,
+      a FORTRAN90 code which
+      performs geometric calculations in 2, 3 and M dimensional space,
+      including the computation of angles, areas, containment, distances,
+      intersections, lengths, and volumes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gnuplot/gnuplot.html">
+      GNUPLOT</a>,
+      FORTRAN90 programs which
+      illustrate how a program can write data and command files
+      so that gnuplot can create plots of the program results.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stroud/stroud.html">
+      STROUD</a>,
+      a FORTRAN90 code which
+      defines quadrature rules for a variety of M-dimensional regions, 
+      including the interior of the square, cube and hypercube, the pyramid,
+      cone and ellipse, the hexagon, the M-dimensional octahedron,
+      the circle, sphere and hypersphere, the triangle, tetrahedron and simplex,
+      and the surface of the circle, sphere and hypersphere.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "circle_segment.f90">circle_segment.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "circle_segment.sh">circle_segment.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 09 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,275 @@
+<html>
+
+  <head>
+    <title>
+      FFTPACK5 - Fast Fourier Transforms
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FFTPACK5 <br> Fast Fourier Transform
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FFTPACK5</b>,
+      a FORTRAN90 code which
+      computes Fast Fourier Transforms,
+      by Paul Swarztrauber and Dick Valent;
+    </p>
+
+    <p>
+      <b>Note</b>: An apparent indexing problem in the 2D complex codes
+      CFFT2B/CFFT2F/CFFT2I and ZFFT2B/ZFFT2F/ZFFT2I was reported on
+      10 May 2010.  A partial fix was inserted, the authors have been
+      noted, and a proper fix has been promised...
+    </p>
+
+    <p>
+      Special features include:
+      <ul>
+        <li>
+          real or complex data can be handled;
+        </li>
+        <li>
+          separate routines for forward analysis (data => Fourier coefficients)
+          and backward analysis (Fourier coefficients => data);
+        </li>
+        <li>
+          sine and cosine transform routines;
+        </li>
+        <li>
+          quarter wave sine and cosine transform routines;
+        </li>
+        <li>
+          the amount of data is NOT required to be a power of 2.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Routines in the code come in groups of three:
+      <ul>
+        <li>
+          an initialization routine;
+        </li>
+        <li>
+          the forward computational routine (data to FFT coefficients);
+        </li>
+        <li>
+          the backward computational routine (FFT coefficients to data).
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The following table groups the routines:
+      <table border = 1>
+        <tr><th>Initialization</th><th>Forward</th><th>Backward</th><th>Purpose</th></tr>
+        <tr><td>CFFT1I</td><td>CFFT1F</td><td>CFFT1B</td><td>FFT for complex single precision 1D data</td></tr>
+        <tr><td>CFFT2I</td><td>CFFT2F</td><td>CFFT2B</td><td>FFT for complex single precision 2D data</td></tr>
+        <tr><td>CFFTMI</td><td>CFFTMF</td><td>CFFTMB</td><td>FFT for complex single precision multi-D data</td></tr>
+        <tr><td>COSQ1I</td><td>COSQ1F</td><td>COSQ1B</td><td>Even function 1D quarter-cosine FFT for real single precision data</td></tr>
+        <tr><td>DCOSQ1I</td><td>DCOSQ1F</td><td>DCOSQ1B</td><td>Even function 1D quarter-cosine FFT for real double precision data</td></tr>
+        <tr><td>COSQMI</td><td>COSQMF</td><td>COSQMB</td><td>Even function 1D quarter-cosine FFT for real single precision data</td></tr>
+        <tr><td>COST1I</td><td>COST1F</td><td>COST1B</td><td>Even function 1D cosine FFT for real single precision data</td></tr>
+        <tr><td>DCOST1I</td><td>DCOST1F</td><td>DCOST1B</td><td>Even function 1D cosine FFT for real double precision data</td></tr>
+        <tr><td>COSTMI</td><td>COSTMF</td><td>COSTMB</td><td>Even function 1D cosine FFT for real single precision data</td></tr>
+        <tr><td>RFFT1I</td><td>RFFT1F</td><td>RFFT1B</td><td>FFT for real single precision 1D data</td></tr>
+        <tr><td>DFFT1I</td><td>DFFT1F</td><td>DFFT1B</td><td>FFT for real double precision 1D data</td></tr>
+        <tr><td>RFFT2I</td><td>RFFT2F</td><td>RFFT2B</td><td>FFT for real single precision 2D data</td></tr>
+        <tr><td>RFFTMI</td><td>RFFTMF</td><td>RFFTMB</td><td>FFT for real single precision multi-D data</td></tr>
+        <tr><td>SINQ1I</td><td>SINQ1F</td><td>SINQ1B</td><td>Even function 1D quarter-sine FFT for real single precision data</td></tr>
+        <tr><td>SINQMI</td><td>SINQMF</td><td>SINQMB</td><td>Even function 1D quarter-sine FFT for real single precision data</td></tr>
+        <tr><td>SINT1I</td><td>SINT1F</td><td>SINT1B</td><td>Even function 1D sine FFT for real single precision data</td></tr>
+        <tr><td>DSINT1I</td><td>DSINT1F</td><td>DSINT1B</td><td>Even function 1D sine FFT for real double precision data</td></tr>
+        <tr><td>SINTMI</td><td>SINTMF</td><td>SINTMB</td><td>Even function 1D sine FFT for real single precision data</td></tr>
+        <tr><td>ZFFT1I</td><td>ZFFT1F</td><td>ZFFT1B</td><td>FFT for complex double precision 1D data</td></tr>
+        <tr><td>ZFFT2I</td><td>ZFFT2F</td><td>ZFFT2B</td><td>FFT for complex double precision 2D data</td></tr>
+        <tr><td>ZFFTMI</td><td>ZFFTMF</td><td>ZFFTMB</td><td>FFT for complex double precision multi-D data</td></tr>
+      </table>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      Licensed under the GNU General Public License (GPL).<br>
+      Copyright (C) 1995-2004, Scientific Computing Division,<br>
+      University Corporation for Atmospheric Research.
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FFTPACK5</b> is available in
+      <a href = "../../f_src/fftpack5/fftpack5.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fftpack5_test/fftpack5_test.html">
+      fftpack5_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftpack51/fftpack51.html">
+      FFTPACK51</a>,
+      a FORTRAN90 code which
+      implements the Fast Fourier Transform
+      by Paul Swarztrauber and Dick Valent;
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftw_test/fftw_test.html">
+      fftw_test</a>,
+      FORTRAN90 codes which
+      illustrate the use of the FFTW3 code for Fast Fourier Transforms,
+      by Matteo Frigo and Steven Johnson.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nms/nms.html">
+      NMS</a>,
+      a FORTRAN90 code which
+      includes a number of FFT routines.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sftpack/sftpack.html">
+      SFTPACK</a>,
+      a FORTRAN90 code which
+      implements the "slow" Fourier transform, intended as a teaching
+      tool and comparison with the fast Fourier transform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/xerror/xerror.html">
+      XERROR</a>,
+      a FORTRAN90 code which
+      is designed to report and handle errors detected during code execution.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      The original Fortran77 version of this code was written by Dick Valent and
+      Paul Swarztrauber, of the National Center for Atmospheric Research (NCAR).
+    </p>
+
+    <p>
+      Modifications and additions were made by John Burkardt to convert the code
+      to FORTRAN90 format, and to add real and complex double precision routines.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          William Briggs, Van Emden Henson,<br>
+          The DFT: An Owner's Manual for the Discrete Fourier Transform,<br>
+          SIAM, 1995,<br>
+          ISBN13: 978-0-898713-42-8,<br>
+          LC: QA403.5.B75.
+        </li>
+        <li>
+          Elbert Brigham,<br>
+          The Fast Fourier Transform and Its Applications,<br>
+          Prentice-Hall, 1988,<br>
+          ISBN: 0133075052,<br>
+          LC: QA403.B74.
+        </li>
+        <li>
+          Bill Buzbee,<br>
+          The SLATEC Common Math code,<br>
+          in Sources and Development of Mathematical Software,<br>
+          edited by Wayne Cowell,<br>
+          Prentice-Hall, 1984,<br>
+          ISBN: 0-13-823501-5,<br>
+          LC: QA76.95.S68.
+        </li>
+        <li>
+          Eleanor Chu, Alan George,<br>
+          Inside the FFT Black Box,<br>
+          CRC Press,<br>
+          ISBN: 0849302706,<br>
+          LC: QA403.5C5.
+        </li>
+        <li>
+          David Kahaner, Cleve Moler, Steven Nash,<br>
+          Numerical Methods and Software,<br>
+          Prentice Hall, 1989,<br>
+          ISBN: 0-13-627258-4,<br>
+          LC: TA345.K34.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Symmetric FFT's,<br>
+          Mathematics of Computation,<br>
+          Volume 47, Number 175, July 1986, pages 323-346.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Vectorizing the Fast Fourier Transforms,<br>
+          in Parallel Computations,<br>
+          edited by Garry Rodrigue,<br>
+          Academic Press, 1982,<br>
+          ISBN: 0125921012,<br>
+          LC: QA76.6.P348.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Fast Fourier Transform Algorithms for Vector Computers,<br>
+          Parallel Computing,<br>
+          Volume 1, Number 1, August 1984, pages 45-63.
+        </li>
+        <li>
+          <a href = "http://www.cisl.ucar.edu/css/software/fftpack5">
+                     http://www.cisl.ucar.edu/css/software/fftpack5</a>
+          the home page for the original FORTRAN77 version of FFTPACK5.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fftpack5.f90">fftpack5.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "fftpack5.sh">fftpack5.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 15 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

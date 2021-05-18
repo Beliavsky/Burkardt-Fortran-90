@@ -1,0 +1,33 @@
+26 July 2020  11:53:30.719 AM
+ 
+LEGENDRE_RULE_FAST
+  FORTRAN90 version
+ 
+  Compute a Gauss-Legendre rule for approximating
+ 
+    Integral ( b <= x <= b ) f(x) dx
+ 
+  of order N.
+ 
+  The computed rule is written to 3 files:
+ 
+    leg_oN_w.txt - the weight file
+    leg_oN_x.txt - the abscissa file.
+    leg_oN_r.txt - the region file.
+ 
+  The requested order N       15
+ 
+  The left endpoint A is    0.00000    
+ 
+  The right endpoint B is    2.00000    
+ 
+  Computation required   0.150000E-03 seconds.
+ 
+  Weight file will be   "leg_o15_w.txt".
+  Abscissa file will be "leg_o15_x.txt".
+  Region file will be   "leg_o15_r.txt".
+ 
+LEGENDRE_RULE_FAST:
+  Normal end of execution.
+ 
+26 July 2020  11:53:30.720 AM

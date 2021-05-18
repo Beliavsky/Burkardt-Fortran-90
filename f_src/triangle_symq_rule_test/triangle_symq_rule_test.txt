@@ -1,0 +1,225 @@
+10 September 2020  10:50:38.653 AM      
+
+TRIANGLE_SYMQ_RULE_TEST
+  FORTRAN90 version
+  Test the TRIANGLE_SYMQ_RULE library.
+
+TEST01
+  Map points from one triangle to another.
+ 
+  R = reference triangle
+  S = simplex
+  T = user-defined triangle.
+  REF_TO_TRIANGLE:     R => T
+  SIMPLEX_TO_TRIANGLE: S => T
+  TRIANGLE_TO_REF:     T => R
+  TRIANGLE_TO_SIMPLEX: T => S
+
+  SP1:   0.781582      0.436824E-01
+  TP1:    3.30106       3.25737    
+  RP1:   0.606846     -0.501690    
+  TP2:    3.30106       3.25737    
+  SP2:   0.781582      0.436824E-01
+
+  SP1:   0.170491      0.438305    
+  TP1:    1.07317       1.99688    
+  RP1:  -0.220714      0.181815    
+  TP2:    1.07317       1.99688    
+  SP2:   0.170491      0.438305    
+
+  SP1:   0.415307      0.661187E-01
+  TP1:    2.17980       1.85958    
+  RP1:  -0.103267     -0.462829    
+  TP2:    2.17980       1.85958    
+  SP2:   0.415307      0.661187E-01
+
+  SP1:   0.257578      0.109957    
+  TP1:    1.66278       1.36018    
+  RP1:  -0.374888     -0.386900    
+  TP2:    1.66278       1.36018    
+  SP2:   0.257578      0.109957    
+
+  SP1:   0.438290E-01  0.633966    
+  TP1:   0.497521       2.07721    
+  RP1:  -0.278376      0.520711    
+  TP2:   0.497521       2.07721    
+  SP2:   0.438290E-01  0.633966    
+
+  Region is user-defined triangle.
+ 
+  Triangle:
+ 
+     1.00000         0.00000    
+     4.00000         4.00000    
+     0.00000         3.00000    
+
+TEST02
+  Symmetric quadrature rule for a triangle.
+  Polynomial exactness degree DEGREE =    8
+
+  NUMNODES =     16
+
+     J      W               X               Y
+
+     1    0.670913         1.34114         1.19399    
+     2    0.670913         2.80601         3.14715    
+     3    0.670913        0.852847         2.65886    
+     4    0.618096         2.29646         2.08141    
+     5    0.618096         1.91859         3.21505    
+     6    0.618096        0.784952         1.70354    
+     7    0.938051         1.66667         2.33333    
+     8    0.210980         1.10109        0.353831    
+     9    0.210980         3.64617         3.74726    
+    10    0.210980        0.252736         2.89891    
+    11    0.176997         1.78094         1.07764    
+    12    0.176997         2.92236         3.70331    
+    13    0.176997        0.296692         2.21906    
+    14    0.176997         3.17708         2.93915    
+    15    0.176997         1.06085         3.23793    
+    16    0.176997        0.762072        0.822918    
+   Sum     6.50000    
+  Area     6.50000    
+
+TEST03
+  TRIASYMQ_GNUPLOT creates gnuplot graphics files.
+  Polynomial exactness degree DEGREE =    8
+  Number of nodes =   16
+ 
+  Created vertex file "user08_vertices.txt".
+  Created node file "user08_nodes.txt".
+  Created command file "user08_commands.txt".
+
+TEST04
+  Get a quadrature rule for a triangle.
+  Then write it to a file.
+  Polynomial exactness degree DEGREE =    8
+
+  Quadrature rule written to file "user08.txt".
+
+TEST05
+  Compute a quadrature rule for a triangle.
+  Check it by integrating orthonormal polynomials.
+  Polynomial exactness degree DEGREE =    8
+
+  RMS integration error =   0.275098E-15
+
+  Region is standard equilateral triangle.
+ 
+  Triangle:
+ 
+    -1.00000       -0.577350    
+     1.00000       -0.577350    
+     0.00000         1.15470    
+
+TEST02
+  Symmetric quadrature rule for a triangle.
+  Polynomial exactness degree DEGREE =    8
+
+  NUMNODES =     16
+
+     J      W               X               Y
+
+     1    0.178778       -0.488292       -0.281916    
+     2    0.178778        0.488292       -0.281916    
+     3    0.178778        0.444089E-15    0.563831    
+     4    0.164704         0.00000       -0.436336    
+     5    0.164704        0.377878        0.218168    
+     6    0.164704       -0.377878        0.218168    
+     7    0.249962         0.00000        0.222045E-15
+     8    0.562198E-01   -0.848358       -0.489800    
+     9    0.562198E-01    0.848358       -0.489800    
+    10    0.562198E-01    0.666134E-15    0.979600    
+    11    0.471643E-01   -0.465380       -0.562810    
+    12    0.471643E-01    0.720098       -0.121625    
+    13    0.471643E-01   -0.254718        0.684436    
+    14    0.471643E-01    0.465380       -0.562810    
+    15    0.471643E-01    0.254718        0.684436    
+    16    0.471643E-01   -0.720098       -0.121625    
+   Sum     1.73205    
+  Area     1.73205    
+
+TEST03
+  TRIASYMQ_GNUPLOT creates gnuplot graphics files.
+  Polynomial exactness degree DEGREE =    8
+  Number of nodes =   16
+ 
+  Created vertex file "equi08_vertices.txt".
+  Created node file "equi08_nodes.txt".
+  Created command file "equi08_commands.txt".
+
+TEST04
+  Get a quadrature rule for a triangle.
+  Then write it to a file.
+  Polynomial exactness degree DEGREE =    8
+
+  Quadrature rule written to file "equi08.txt".
+
+TEST05
+  Compute a quadrature rule for a triangle.
+  Check it by integrating orthonormal polynomials.
+  Polynomial exactness degree DEGREE =    8
+
+  RMS integration error =   0.139354E-15
+
+  Region is the simplex (0,0),(1,0),(0,1).
+ 
+  Triangle:
+ 
+     0.00000         0.00000    
+     1.00000         0.00000    
+     0.00000         1.00000    
+
+TEST02
+  Symmetric quadrature rule for a triangle.
+  Polynomial exactness degree DEGREE =    8
+
+  NUMNODES =     16
+
+     J      W               X               Y
+
+     1    0.516087E-01    0.170569        0.170569    
+     2    0.516087E-01    0.658861        0.170569    
+     3    0.516087E-01    0.170569        0.658861    
+     4    0.475458E-01    0.459293        0.814148E-01
+     5    0.475458E-01    0.459293        0.459293    
+     6    0.475458E-01    0.814148E-01    0.459293    
+     7    0.721578E-01    0.333333        0.333333    
+     8    0.162292E-01    0.505472E-01    0.505472E-01
+     9    0.162292E-01    0.898906        0.505472E-01
+    10    0.162292E-01    0.505472E-01    0.898906    
+    11    0.136152E-01    0.263113        0.839478E-02
+    12    0.136152E-01    0.728492        0.263113    
+    13    0.136152E-01    0.839478E-02    0.728492    
+    14    0.136152E-01    0.728492        0.839478E-02
+    15    0.136152E-01    0.263113        0.728492    
+    16    0.136152E-01    0.839478E-02    0.263113    
+   Sum    0.500000    
+  Area    0.500000    
+
+TEST03
+  TRIASYMQ_GNUPLOT creates gnuplot graphics files.
+  Polynomial exactness degree DEGREE =    8
+  Number of nodes =   16
+ 
+  Created vertex file "simp08_vertices.txt".
+  Created node file "simp08_nodes.txt".
+  Created command file "simp08_commands.txt".
+
+TEST04
+  Get a quadrature rule for a triangle.
+  Then write it to a file.
+  Polynomial exactness degree DEGREE =    8
+
+  Quadrature rule written to file "simp08.txt".
+
+TEST05
+  Compute a quadrature rule for a triangle.
+  Check it by integrating orthonormal polynomials.
+  Polynomial exactness degree DEGREE =    8
+
+  RMS integration error =   0.697147E-16
+
+TRIANGLE_SYMQ_RULE_TEST
+  Normal end of execution.
+
+10 September 2020  10:50:38.654 AM      

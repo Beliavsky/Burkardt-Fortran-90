@@ -1,0 +1,197 @@
+<html>
+
+  <head>
+    <title>
+      ZOOMIN - Scalar Zero Finders
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ZOOMIN <br> Scalar Zero Finders
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ZOOMIN</b>,
+      a FORTRAN90 code which
+      seeks a root of a scalar function.
+    </p>
+
+    <p>
+      The code is based primarily on a book by Joseph Traub.
+    </p>
+
+    <p>
+      These routines are each intended to find one of more solutions
+      of an equation in one unknown, written as
+      <blockquote><b>
+        f(x) = 0
+      </b></blockquote>
+      The wide variety of methods include
+      special rules for polynomials, multiple roots, bisection methods,
+      and methods that use no derivative information.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ZOOMIN</b> is available in
+      <a href = "../../f_src/zoomin/zoomin.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../m_src/bisection_integer/bisection_integer.html">
+      BISECTION_INTEGER</a>,
+      a FORTRAN90 code which
+      seeks an integer solution to the equation F(X)=0,
+      using bisection within a user-supplied change of sign interval [A,B].
+    </p>
+
+    <p>
+      <a href = "../../f_src/bisection_rc/bisection_rc.html">
+      BISECTION_RC</a>,
+      a FORTRAN90 code which
+      seeks a solution to the equation F(X)=0 using bisection
+      within a user-supplied change of sign interval [A,B].
+      The procedure is written using reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../f_src/brent/brent.html">
+      BRENT</a>,
+      a FORTRAN90 code which
+      contains Richard Brent's routines for finding the zero, local minimizer,
+      or global minimizer of a scalar function of a scalar argument, without
+      the use of derivative information.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_zero/test_zero.html">
+      TEST_ZERO</a>,
+      a FORTRAN90 code which
+      defines functions which can be used to test zero finders.
+    </p>
+
+    <p>
+      <a href = "../../f_src/zero_rc/zero_rc.html">
+      ZERO_RC</a>,
+      a FORTRAN90 code which
+      seeks solutions of a scalar nonlinear equation f(x) = 0, 
+      or a system of nonlinear equations,
+      using reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../f_src/zoomin_test/zoomin_test.html">
+      zoomin_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Richard Brent,<br>
+          Algorithms for Minimization without Derivatives,<br>
+          Dover, 2002,<br>
+          ISBN: 0-486-41998-3,<br>
+          LC: QA402.5.B74.
+        </li>
+        <li>
+          Harold Deiss,<br>
+          ZOOMIN technical report,<br>
+          <a href = "zoomin_report.txt">zoomin_report.txt</a>.
+        </li>
+        <li>
+          Eldon Hansen, Merrell Patrick,<br>
+          A Family of Root Finding Methods,<br>
+          Numerische Mathematik,<br>
+          Volume 27, Number 3, September 1977, pages 257-269.
+        </li>
+        <li>
+          P Jarratt,<br>
+          Some fourth-order multipoint iterative methods for
+          solving equations,<br>
+          Mathematics of Computation,<br>
+          Volume 20, Number 95, July 1966, pages 434-437.
+        </li>
+        <li>
+          Richard King,<br>
+          A family of fourth order methods,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 10, 1973, pages 876-879.
+        </li>
+        <li>
+          Richard King,<br>
+          Improving the van de Vel root-finding method,<br>
+          Computing,<br>
+          Volume 30, 1983, pages 373-378.
+        </li>
+        <li>
+          Werner Rheinboldt,<br>
+          Algorithms for finding zeros of a function,<br>
+          UMAP Journal,<br>
+          Volume 2, Number 1, 1981, pages 43-72.
+        </li>
+        <li>
+          Joseph Traub,<br>
+          Iterative Methods for the Solution of Equations,<br>
+          Prentice Hall, 1964.
+        </li>
+        <li>
+          Hugo vandeVel,<br>
+          A method for computing a root of a single nonlinear equation,
+          including its multiplicity,<br>
+          Computing,<br>
+          Volume 14, 1975, pages 167-171.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "zoomin.f90">zoomin.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "zoomin.sh">zoomin.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

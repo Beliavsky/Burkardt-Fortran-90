@@ -1,0 +1,65 @@
+# T_commands.txt
+#
+# Usage:
+#  gnuplot < T_commands.txt
+#
+set term png
+set output "T.png"
+set title "T"
+set xrange [ 0 : 5 ]
+set yrange [ 0 : 5 ]
+set size square
+unset border
+unset tics
+set nokey
+set object    1 rect from  0, 4 to  1, 5 back
+set object    1 rect fc rgb "black" fillstyle solid 1.0
+set object    2 rect from  1, 4 to  2, 5 back
+set object    2 rect fc rgb "black" fillstyle solid 1.0
+set object    3 rect from  2, 4 to  3, 5 back
+set object    3 rect fc rgb "black" fillstyle solid 1.0
+set object    4 rect from  3, 4 to  4, 5 back
+set object    4 rect fc rgb "white" fillstyle solid 1.0
+set object    5 rect from  4, 4 to  5, 5 back
+set object    5 rect fc rgb "white" fillstyle solid 1.0
+set object    6 rect from  0, 3 to  1, 4 back
+set object    6 rect fc rgb "white" fillstyle solid 1.0
+set object    7 rect from  1, 3 to  2, 4 back
+set object    7 rect fc rgb "black" fillstyle solid 1.0
+set object    8 rect from  2, 3 to  3, 4 back
+set object    8 rect fc rgb "white" fillstyle solid 1.0
+set object    9 rect from  3, 3 to  4, 4 back
+set object    9 rect fc rgb "white" fillstyle solid 1.0
+set object   10 rect from  4, 3 to  5, 4 back
+set object   10 rect fc rgb "white" fillstyle solid 1.0
+set object   11 rect from  0, 2 to  1, 3 back
+set object   11 rect fc rgb "white" fillstyle solid 1.0
+set object   12 rect from  1, 2 to  2, 3 back
+set object   12 rect fc rgb "black" fillstyle solid 1.0
+set object   13 rect from  2, 2 to  3, 3 back
+set object   13 rect fc rgb "white" fillstyle solid 1.0
+set object   14 rect from  3, 2 to  4, 3 back
+set object   14 rect fc rgb "white" fillstyle solid 1.0
+set object   15 rect from  4, 2 to  5, 3 back
+set object   15 rect fc rgb "white" fillstyle solid 1.0
+set object   16 rect from  0, 1 to  1, 2 back
+set object   16 rect fc rgb "white" fillstyle solid 1.0
+set object   17 rect from  1, 1 to  2, 2 back
+set object   17 rect fc rgb "white" fillstyle solid 1.0
+set object   18 rect from  2, 1 to  3, 2 back
+set object   18 rect fc rgb "white" fillstyle solid 1.0
+set object   19 rect from  3, 1 to  4, 2 back
+set object   19 rect fc rgb "white" fillstyle solid 1.0
+set object   20 rect from  4, 1 to  5, 2 back
+set object   20 rect fc rgb "white" fillstyle solid 1.0
+set object   21 rect from  0, 0 to  1, 1 back
+set object   21 rect fc rgb "white" fillstyle solid 1.0
+set object   22 rect from  1, 0 to  2, 1 back
+set object   22 rect fc rgb "white" fillstyle solid 1.0
+set object   23 rect from  2, 0 to  3, 1 back
+set object   23 rect fc rgb "white" fillstyle solid 1.0
+set object   24 rect from  3, 0 to  4, 1 back
+set object   24 rect fc rgb "white" fillstyle solid 1.0
+set object   25 rect from  4, 0 to  5, 1 back
+set object   25 rect fc rgb "white" fillstyle solid 1.0
+plot -1 with lines

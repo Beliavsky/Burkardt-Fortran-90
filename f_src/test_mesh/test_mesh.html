@@ -1,0 +1,185 @@
+<html>
+
+  <head>
+    <title>
+      TEST_MESH - Sample 2D Meshes.
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_MESH <br> Sample 2D Meshes
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_MESH</b>,
+      a FORTRAN90 code which
+      defines a few
+      simple triangular meshes of 2D regions.
+    </p>
+
+    <p>
+      Alan George and Joseph Liu generated the original set of 9 meshes.
+      They used them to generate refined meshes, made by subdividing
+      every triangle the same number of times.  Then the node-connectivity
+      matrix of the refined mesh was used to define a positive definite
+      symmetric sparse matrix problem.
+    </p>
+
+    <p>
+      Of course, the meshes can be of interest for other reasons.
+      For instance, it is possible to output the mesh information
+      as a <b>poly</b> file.  This format can be input to the
+      SHOWME program for display, or to
+      TRIANGLE.
+    </p>
+
+    <p>
+      The program is set up to allow a user to easily access a particular
+      mesh by specifying its number, or to access all the examples,
+      by going through the master routines whose names begin with the
+      prefix <b>MESH00_</b>.
+    </p>
+
+    <p>
+      The user can easily handle problems of various size by first calling
+      the routines that give the sizes of various arrays, then using
+      the FORTRAN90 <b>ALLOCATE</b> command to set up enough space for the
+      array, and then calling the library routine that fills up the array
+      with information.
+    </p>
+
+    <p>
+      The meshes include:
+      <ol>
+        <li>
+          the Square, 4 nodes, 2 elements.
+        </li>
+        <li>
+          The Graded L, 22 nodes, 30 elements.
+        </li>
+        <li>
+          The Plus-Shaped Domain, 28 nodes, 26 elements.
+        </li>
+        <li>
+          The H-Shaped Domain, 40 nodes, 38 elements.
+        </li>
+        <li>
+          The Hollow Square (Small Hole), 12 nodes, 12 elements.
+        </li>
+        <li>
+          The Hollow Square (Large Hole), 32 nodes, 32 elements.
+        </li>
+        <li>
+          The 3-Hole Problem, 44 nodes, 56 elements.
+        </li>
+        <li>
+          The 6-Hole Problem, 46 nodes, 56 elements.
+        </li>
+        <li>
+          The Pinched Hole Problem, 8 nodes, 7 elements.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_MESH</b> is available in
+      <a href = "../../f_src/test_mesh/test_mesh.html">a FORTRAN90 version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../datasets/hbsmc/hbsmc.html">
+      HBSMC</a>,
+      a dataset directory which
+      contains the Harwell-Boeing Sparse Matrix Collection.
+      The meshes described here naturally give rise to adjacency
+      matrices.  These matrices are typically sparse (mostly zero)
+      and irregular.  Versions of these matrices, derived from the
+      meshes in this collection are available in HBSMC.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mesh_bandwidth/mesh_bandwidth.html">
+      MESH_BANDWIDTH</a>,
+      a FORTRAN90 code which
+      returns the geometric bandwidth associated with a mesh of
+      elements of any order and in a space of arbitrary dimension.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_mesh_test/test_mesh_test.html">
+      test_mesh_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_triangulation/test_triangulation.html">
+      TEST_TRIANGULATION</a>,
+      a FORTRAN90 code which
+      defines a set of test regions for triangulation.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Alan George, Joseph Liu,<br>
+          Computer Solution of Large Sparse Positive Definite Matrices,<br>
+          Prentice Hall, 1981,<br>
+          ISBN: 0131652745,<br>
+          LC: QA188.G46.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_mesh.f90">test_mesh.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_mesh.sh">test_mesh.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial html skeleton created by HTMLINDEX. -->
+
+</html>

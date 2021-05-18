@@ -1,0 +1,181 @@
+<html>
+
+  <head>
+    <title>
+      FEM_TO_GMSH - Convert Mesh Data from FEM to GMSH Format
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FEM_TO_GMSH <br> Convert Mesh Data from FEM to GMSH Format
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FEM_TO_GMSH</b>,
+      a FORTRAN90 code which
+      converts FEM files representing a 1D, 2D, or 3D mesh into a 
+      GMSH mesh file.
+    </p>
+
+    <p>
+      The FEM files include a node file, which simply lists the coordinates
+      of each node, and an element connectivity file, which lists, for each
+      element, the indices of the nodes that define it.  Either 0 or 1-based
+      indexing can be used when referencing the nodes.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>fem_to_gmsh</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common filename prefix:
+      <ul>
+        <li>
+          <i>'prefix'</i>_nodes.txt contains the node coordinates,
+        </li>
+        <li>
+          <i>'prefix'</i>_elements.txt contains the element node connectivity.
+        </li>
+        <li>
+          <i>'prefix'</i>.msh will contain the Gmsh mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FEM_TO_GMSH</b> is available in
+      <a href = "../../c_src/fem_to_gmsh/fem_to_gmsh.html">a C version</a> and
+      <a href = "../../cpp_src/fem_to_gmsh/fem_to_gmsh.html">a C++ version</a> and
+      <a href = "../../f_src/fem_to_gmsh/fem_to_gmsh.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fem_to_gmsh/fem_to_gmsh.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/dolfin-convert/dolfin-convert.html">
+      DOLFIN-CONVERT</a>,
+      a Python code which
+      can convert mesh file from Gmsh, MEDIT, METIS or SCOTCH format to an
+      XML format suitable for use by DOLFIN or FENICS,
+      by Anders Logg.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem_to_gmsh_test/fem_to_gmsh_test.html">
+      fem_to_gmsh_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem_to_triangle/fem_to_triangle.html">
+      FEM_TO_TRIANGLE</a>,
+      a FORTRAN90 code which
+      reads FEM files defining a 2D mesh of triangles, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding pair of node
+      and element files for use by Jonathan Shewchuk's triangle code.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem_to_xml/fem_to_xml.html">
+      FEM_TO_XML</a>,
+      a FORTRAN90 code which
+      reads FEM files defining a 1D, 2D or 3D mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding XML file for input
+      to DOLFIN or FENICS.
+    </p>
+
+    <p>
+      <a href = "../../examples/gmsh/gmsh.html">
+      GMSH</a>,
+      examples which
+      illustrate the use of the Gmsh code,
+      a 3D mesh generator for the finite element method (FEM).
+    </p>
+
+    <p>
+      <a href = "../../f_src/gmsh_io/gmsh_io.html">
+      GMSH_IO</a>,
+      a FORTRAN90 code which
+      can read or write some of the files created by the Gmsh 
+      code for 1D, 2D or 3D meshes used by the finite element method (FEM).
+    </p>
+
+    <p>
+      <a href = "../../data/msh/msh.html">
+      MSH</a>,
+      a data directory of examples of MSH files,
+      the native 3D mesh format used by Gmsh.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Christophe Geuzaine, Jean-Francois Remacle,<br>
+          Gmsh: a three-dimensional finite element mesh generator with
+          built-in pre- and post-processing facilities,<br>
+          International Journal for Numerical Methods in Engineering,<br>
+          Volume 79, Number 11, pages 1309-1331, 2009.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem_to_gmsh.f90">fem_to_gmsh.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "fem_to_gmsh.sh">fem_to_gmsh.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,114 @@
+10 July 2020   3:53:05.875 PM
+
+GEGENBAUER_CC_TEST:
+  FORTRAN90 version.
+  Test the GEGENBAUER_CC library.
+
+CHEBYSHEV_EVEN1_TEST:
+  CHEBYSHEV_EVEN1 computes the even Chebyshev coefficients
+  of a function F, using the extreme points of Tn(x).
+ 
+  Computed and Exact Coefficients:
+ 
+     1    0.447782        0.447782    
+     2   -0.705669       -0.705669    
+     3    0.680358E-01    0.680358E-01
+     4   -0.480972E-02   -0.480972E-02
+
+CHEBYSHEV_EVEN2_TEST:
+  CHEBYSHEV_EVEN2 computes the even Chebyshev coefficients
+  of a function F, using the zeros of Tn(x).
+ 
+  Computed Coefficients:
+ 
+         1:   0.44778156    
+         2:  -0.70566806    
+         3:   0.67991943E-01
+         4:  -0.24492170E-02
+
+GEGENBAUER_CC1_TEST:
+  GEGENBAUER_CC1 estimates the Gegenbauer integral of
+  a function f(x) using a Clenshaw-Curtis type approach
+  based on the extreme points of Tn(x).
+
+  Value =   0.915449    
+  Exact =   0.915451    
+
+GEGENBAUER_CC2_TEST:
+  GEGENBAUER_CC2 estimates the Gegenbauer integral of
+  a function f(x) using a Clenshaw-Curtis type approach
+  based on the zeros of Tn(x).
+
+  Value =   0.915452    
+  Exact =   0.915451    
+ 
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values 
+  in an interval [A,B].
+ 
+  The lower endpoint A =         -100
+  The upper endpoint B =          200
+  The initial seed is    123456789
+ 
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+R8_MOP_TEST
+  R8_MOP evaluates (-1.0)^I4 as an R8.
+
+    I4  R8_MOP(I4)
+
+   -57  -1.0
+    92   1.0
+    66   1.0
+    12   1.0
+   -17  -1.0
+   -87  -1.0
+   -49  -1.0
+   -78   1.0
+   -92   1.0
+    27  -1.0
+ 
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+ 
+  The R8VEC:
+ 
+         1:    123.45600    
+         2:   0.50000000E-05
+         3:   -1000000.0    
+         4:    3.1415927    
+ 
+R8VEC2_PRINT_TEST
+  R8VEC2_PRINT prints a pair of R8VEC's.
+ 
+  Squares and square roots:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.0000000    
+         4:    4.0000000    
+         5:    5.0000000    
+
+GEGENBAUER_CC_TEST:
+  Normal end of execution.
+
+10 July 2020   3:53:05.875 PM

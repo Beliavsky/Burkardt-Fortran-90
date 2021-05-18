@@ -1,0 +1,266 @@
+<html>
+
+  <head>
+    <title>
+      NIEDERREITER2 - The Niederreiter Quasirandom Sequence [Base 2]
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      NIEDERREITER2 <br> The Niederreiter Quasirandom Sequence [Base 2]
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>NIEDERREITER2</b>,
+      a FORTRAN90 code which
+      implements the Niederreiter
+      quasirandom sequence, using a base of 2.
+    </p>
+
+    <p>
+      A quasirandom or low discrepancy sequence, such as the Faure,
+      Halton, Hammersley, Niederreiter or Sobol sequences, is
+      "less random" than a pseudorandom number sequence, but
+      more useful for such tasks as approximation of integrals in
+      higher dimensions, and in global optimization.
+      This is because low discrepancy sequences tend to sample
+      space "more uniformly" than random numbers.  Algorithms
+      that use such sequences may have superior convergence.
+    </p>
+
+    <p>
+      NIEDERREITER2 is an adapation of the INLO2 and GOLO2 routines
+      in ACM TOMS Algorithm 738.  The original code can only
+      compute the "next" element of the sequence.  The revised code
+      allows the user to specify the index of the desired element.
+    </p>
+
+    <p>
+      The original, true, correct version of ACM TOMS Algorithm 738
+      is available in the TOMS subdirectory of
+      <a href = "http://www.netlib.org/">the NETLIB web site</a>.
+      The version displayed here has been converted to FORTRAN90,
+      and other internal changes have been made to suit me.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>NIEDERREITER2</b> is available in
+      <a href = "../../cpp_src/niederreiter2/niederreiter2.html">a C++ version</a> and
+      <a href = "../../f_src/niederreiter2/niederreiter2.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/niederreiter2/niederreiter2.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt/cvt.html">
+      CVT</a>,
+      a FORTRAN90 code which
+      computes elements of a Centroidal Voronoi Tessellation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/faure/faure.html">
+      FAURE</a>,
+      a FORTRAN90 code which
+      computes elements of a Faure quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/halton/halton.html">
+      HALTON</a>,
+      a FORTRAN90 code which
+      computes elements of a Halton Quasi Monte Carlo (QMC) sequence,
+      using a simple interface.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hammersley/hammersley.html">
+      HAMMERSLEY</a>,
+      a FORTRAN90 code which
+      computes elements of a Hammersley Quasi Monte Carlo (QMC) sequence,
+      using a simple interface.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ieee_uniform_sample/ieee_uniform_sample.html">
+      IEEE_UNIFORM_SAMPLE</a>,
+      a FORTRAN90 code which
+      tries to uniformly sample the discrete set of values that represent the
+      legal IEEE real numbers;
+    </p>
+
+    <p>
+      <a href = "../../f_src/ihs/ihs.html">
+      IHS</a>,
+      a FORTRAN90 code which
+      computes elements of an improved distributed Latin hypercube dataset.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lattice_rule/lattice_rule.html">
+      LATTICE_RULE</a>,
+      a FORTRAN90 code which
+      approximates multidimensional integrals using lattice rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lcvt/lcvt.html">
+      LCVT</a>,
+      a FORTRAN90 code which
+      computes a latinized Centroidal Voronoi Tessellation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/niederreiter/niederreiter.html">
+      NIEDERREITER</a>,
+      a FORTRAN90 code which
+      computes a Niederreiter sequence for an arbitary base.
+    </p>
+
+    <p>
+      <a href = "../../f_src/niederreiter2_test/niederreiter2_test.html">
+      niederreiter2_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/normal/normal.html">
+      NORMAL</a>,
+      a FORTRAN90 code which
+      computes elements of a
+      sequence of pseudorandom normally distributed values.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sobol/sobol.html">
+      SOBOL</a>,
+      a FORTRAN90 code which
+      computes elements of a Sobol quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms738/toms738.html">
+      TOMS738</a>,
+      a FORTRAN90 code which
+      is a version of ACM TOMS algorithm 738,
+      for evaluating Niederreiter sequences.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 code which
+      computes elements of a uniform pseudorandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/van_der_corput/van_der_corput.html">
+      VAN_DER_CORPUT</a>,
+      a FORTRAN90 code which
+      computes elements of a van der Corput pseudorandom sequence.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Paul Bratley, Bennett Fox,<br>
+          Algorithm 659:
+          Implementing Sobol's Quasirandom Sequence Generator,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 14, Number 1, pages 88-100, 1988.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Harald Niederreiter,<br>
+          Algorithm 738:
+          Programs to Generate Niederreiter's Low-Discrepancy Sequences,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 20, Number 4, pages 494-495, 1994.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Harald Niederreiter,<br>
+          Implementation and Tests of Low Discrepancy Sequences,<br>
+          ACM Transactions on Modeling and Computer Simulation,<br>
+          Volume 2, Number 3, pages 195-213, 1992.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, pages 362-376, 1986.
+        </li>
+        <li>
+          Rudolf Lidl, Harald Niederreiter,<br>
+          Finite Fields,<br>
+          Second Edition,<br>
+          Cambridge University Press, 1997,<br>
+          ISBN: 0521392314,<br>
+          LC: QA247.3.L53.
+        </li>
+        <li>
+          Harald Niederreiter,<br>
+          Low-discrepancy and low-dispersion sequences,<br>
+          Journal of Number Theory,<br>
+          Volume 30, 1988, pages 51-70.
+        </li>
+        <li>
+          Harald Niederreiter,<br>
+          Random Number Generation and quasi-Monte Carlo Methods,<br>
+          SIAM, 1992,<br>
+          ISBN13: 978-0-898712-95-7.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "niederreiter2.f90">niederreiter2.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "niederreiter2.sh">niederreiter2.sh</a>, 
+          compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 02 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,277 @@
+<html>
+
+  <head>
+    <title>
+      TEST_INT - Quadrature Tests
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_INT <br> Quadrature Tests
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_INT</b>,
+      a FORTRAN90 code which
+      evaluates test integrands.
+    </p>
+
+    <p>
+      The test integrands would normally be used to testing one
+      dimensional quadrature software.  It is possible to invoke a
+      particular function by number, or to try out all available functions,
+      as demonstrated in the sample calling program.
+    </p>
+
+    <p>
+      The library includes not just the integrand, but also the interval
+      of integration, and the exact value of the integral.
+      Thus, for each integrand function, three subroutines are supplied.  For
+      instance, for function #9, we have the routines:
+      <ul>
+        <li>
+          <b>P09_FUN</b> evaluates the integrand for problem 9.
+        </li>
+        <li>
+          <b>P09_LIM</b> returns the integration limits for problem 9.
+        </li>
+        <li>
+          <b>P09_EXACT</b> returns the exact integral for problem 9.
+        </li>
+      </ul>
+      So once you have the calling sequences for these routines, you
+      can easily evaluate the function, or integrate it between the
+      appropriate limits, or compare your estimate of the integral
+      to the exact value.
+    </p>
+
+    <p>
+      Moreover, since the same interface is used for each function,
+      if you wish to work with problem 16 instead, you simply change
+      the "09" to "16" in your routine calls.
+    </p>
+
+    <p>
+      If you wish to call all of the functions, then you
+      simply use the generic interface, which again has three
+      subroutines, but which requires you to specify the problem
+      number as an extra input argument:
+      <ul>
+        <li>
+          <b>P00_FUN</b> evaluates the integrand for any problem.
+        </li>
+        <li>
+          <b>P00_LIM</b> returns the integration limits for any problem.
+        </li>
+        <li>
+          <b>P00_EXACT</b> returns the exact integral for any problem.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Finally, some demonstration routines are built in for
+      simple quadrature methods.  These routines include
+      <ul>
+        <li>
+          <b>P00_GAUSS_LEGENDRE</b>
+        </li>
+        <li>
+          <b>P00_EVEN</b>
+        </li>
+        <li>
+          <b>P00_HALTON</b>
+        </li>
+        <li>
+          <b>P00_MIDPOINT</b>
+        </li>
+        <li>
+          <b>P00_MONTECARLO</b>
+        </li>
+        <li>
+          <b>P00_SIMPSON</b>
+        </li>
+        <li>
+          <b>P00_TRAPEZOID</b>
+        </li>
+      </ul>
+      and can be used with any of the sample integrands.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_INT</b> is available in
+      <a href = "../../c_src/test_int/test_int.html">a C version</a> and
+      <a href = "../../cpp_src/test_int/test_int.html">a C++ version</a> and
+      <a href = "../../f_src/test_int/test_int.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_int/test_int.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/test_int_test/test_int_test.html">
+      test_int_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_int_2d/test_int_2d.html">
+      TEST_INT_2D</a>,
+      a FORTRAN90 code which
+      defines test integrands for 2D quadrature rules.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Kendall Atkinson,<br>
+          An Introduction to Numerical Analysis,<br>
+          Prentice Hall, 1989,<br>
+          ISBN: 0471624896,<br>
+          LC: QA297.A94.1989.
+        </li>
+        <li>
+          Roger Broucke,<br>
+          Algorithm 446:
+          Ten Subroutines for the Manipulation of Chebyshev Series,<br>
+          Communications of the ACM,<br>
+          Volume 16, 1973, pages 254-256.
+        </li>
+        <li>
+          Charles Clenshaw, Alan Curtis,<br>
+          A Method for Numerical Integration on an Automatic Computer,<br>
+          Numerische Mathematik,<br>
+          Volume 2, Number 1, December 1960, pages 197-205.
+        </li>
+        <li>
+          Richard Crandall,<br>
+          Projects in Scientific Computing,<br>
+          Springer, 2005,<br>
+          ISBN: 0387950095,<br>
+          LC: Q183.9.C733.
+        </li>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+        <li>
+          Hermann Engels,<br>
+          Numerical Quadrature and Cubature,<br>
+          Academic Press, 1980,<br>
+          ISBN: 012238850X,<br>
+          LC: QA299.3E5.
+        </li>
+        <li>
+          Leslie Fox, Ian Parker,<br>
+          Chebyshev Polynomials in Numerical Analysis,<br>
+          Oxford Press, 1968,<br>
+          LC: QA297.F65.
+        </li>
+        <li>
+          John Halton,<br>
+          On the efficiency of certain quasi-random sequences of points
+          in evaluating multi-dimensional integrals,<br>
+          Numerische Mathematik,<br>
+          Volume 2, Number 1, December 1960, pages 84-90.
+        </li>
+        <li>
+          John Hart, Ward Cheney, Charles Lawson, Hans Maehly,
+          Charles Mesztenyi, John Rice, Henry Thacher,
+          Christoph Witzgall,<br>
+          Computer Approximations,<br>
+          Wiley, 1968,<br>
+          LC: QA297.C64.
+        </li>
+        <li>
+          David Kahaner,<br>
+          Comparison of Numerical Quadrature Formulas,<br>
+          in Mathematical Software,<br>
+          edited by John Rice,<br>
+          Academic Press, 1971,<br>
+          ISBN: 012587250X,<br>
+          LC: QA1.M766.
+        </li>
+        <li>
+          Prem Kythe, Pratap Puri,<br>
+          Computational Methods for Linear Integral Equations,<br>
+          Birkhaeuser, 2002,<br>
+          ISBN: 0817641920,<br>
+          LC: QA431.K97.
+        </li>
+        <li>
+          Robert Piessens, Elise deDoncker-Kapenga,
+          Christian Ueberhuber, David Kahaner,<br>
+          QUADPACK: A Subroutine Package for Automatic Integration,<br>
+          Springer, 1983,<br>
+          ISBN: 3540125531,<br>
+          LC: QA299.3.Q36.
+        </li>
+        <li>
+          Herbert Salzer, Norman Levine,<br>
+          Table of a Weierstrass Continuous Nondifferentiable Function,<br>
+          Mathematics of Computation,<br>
+          Volume 15, Number 74, April 1961, pages 120-130.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_int.f90">test_int.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "test_int.sh">test_int.sh</a>,
+          compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

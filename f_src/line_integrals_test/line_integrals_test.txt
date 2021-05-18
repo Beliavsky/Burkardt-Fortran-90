@@ -1,0 +1,30 @@
+27 July 2020   3:47:04.885 PM
+ 
+LINE_INTEGRALS_TEST
+  FORTRAN90 version
+  Test the LINE_INTEGRALS library.
+ 
+TEST01
+  Compare exact and estimated integrals 
+  over the length of the unit line in 1D.
+
+  Number of sample points used is   4192
+
+   E     MC-Estimate      Exact           Error
+
+   0     1.00000         1.00000        0.00E+00
+   1    0.498925        0.500000        0.11E-02
+   2    0.332937        0.333333        0.40E-03
+   3    0.250201        0.250000        0.20E-03
+   4    0.200574        0.200000        0.57E-03
+   5    0.167439        0.166667        0.77E-03
+   6    0.143718        0.142857        0.86E-03
+   7    0.125885        0.125000        0.88E-03
+   8    0.111981        0.111111        0.87E-03
+   9    0.100832        0.100000        0.83E-03
+  10    0.916921E-01    0.909091E-01    0.78E-03
+ 
+LINE_INTEGRALS_TEST
+  Normal end of execution.
+ 
+27 July 2020   3:47:04.885 PM

@@ -1,0 +1,288 @@
+<html>
+
+  <head>
+    <title>
+      TEST_NONLIN - Nonlinear Equation Tests
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_NONLIN <br> Nonlinear Equation Tests
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_NONLIN</b>,
+      a FORTRAN90 code which
+      defines a set of test problems for nonlinear
+      equation system solvers.
+    </p>
+
+    <p>
+      A few of the problems are small (2, 3, or 4 equations in 4
+      unknowns), but most of the problems may be set to any size whatsoever.
+      The software includes routines defining the initial approximation to the
+      solution of the system, the N function values at any point, and the N by
+      N jacobian matrix at any point.
+    </p>
+
+    <p>
+      The list of problems includes:
+      <OL>
+        <li>
+          Generalized Rosenbrock function, 1 &lt; N.
+        </li>
+        <li>
+          Powell singular function, N = 4.
+        </li>
+        <li>
+          Powell badly scaled function, N = 2.
+        </li>
+        <li>
+          Wood function, N = 4.
+        </li>
+        <li>
+          Helical valley function, N = 3.
+        </li>
+        <li>
+          Watson function, 1 &lt; N.
+        </li>
+        <li>
+          Chebyquad function, N arbitrary.
+        </li>
+        <li>
+          Brown almost linear function, N arbitrary.
+        </li>
+        <li>
+          Discrete boundary value function, N arbitrary.
+        </li>
+        <li>
+          Discrete integral equation function, N arbitrary.
+        </li>
+        <li>
+          Trigonometric function, N arbitrary.
+        </li>
+        <li>
+          Variably dimensioned function, N arbitrary.
+        </li>
+        <li>
+          Broyden tridiagonal function, N arbitrary.
+        </li>
+        <li>
+          Broyden banded function, N arbitrary.
+        </li>
+        <li>
+          Hammarling 2 by 2 matrix square root problem, N = 4.
+        </li>
+        <li>
+          Hammarling 3 by 3 matrix square root problem, N = 9.
+        </li>
+        <li>
+          Dennis and Schnabel example, N = 2.
+        </li>
+        <li>
+          Sample problem 18, N = 2.
+        </li>
+        <li>
+          Sample problem 19, N = 2.
+        </li>
+        <li>
+          Scalar problem, N = 1.
+        </li>
+        <li>
+          Freudenstein-Roth function, N = 2.
+        </li>
+        <li>
+          Boggs function, N = 2.
+        </li>
+        <li>
+          Chandrasekhar function, N arbitrary.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>test_nonlin</b> is available in
+      <a href = "../../f_src/test_nonlin/test_nonlin.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_nonlin/test_nonlin.html">a MATLAB version</a> and
+      <a href = "../../octave_src/test_nonlin/test_nonlin.html">an Octave version</a> and
+      <a href = "../../py_src/test_nonlin/test_nonlin.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/gsl/gsl.html">
+      GSL</a>,
+      a C++ library which
+      can perform multidimensional root-finding.
+    </p>
+
+    <p>
+      <a href = "../../m_src/kelley/kelley.html">
+      KELLEY</a>,
+      a MATLAB library which
+      can seek solutions of systems of nonlinear equations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/minpack/minpack.html">
+      minpack</a>,
+      a FORTRAN90 code which
+      is a minimization
+      package for which most of these problems were used as tests,
+      as part of ACM TOMS algorithm 566.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_nonlin_test/test_nonlin_test.html">
+      test_nonlin_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Subramanyan Chandrasekhar,<br>
+          Radiative Transfer,<br>
+          Dover, 1960,<br>
+          ISBN13: 978-0486605906,<br>
+          LC: QB461.C46.
+        </li>
+        <li>
+          John Dennis, David Gay, Phuong Vu,<br>
+          A new nonlinear equations test problem,<br>
+          Technical Report 83-16,<br>
+          Mathematical Sciences Department,<br>
+          Rice University, 1983.
+        </li>
+        <li>
+          John Dennis, Robert Schnabel,<br>
+          Numerical Methods for Unconstrained Optimization
+          and Nonlinear Equations,<br>
+          SIAM, 1996,<br>
+          ISBN13: 978-0-898713-64-0,<br>
+          LC: QA402.5.D44.
+        </li>
+        <li>
+          Noel deVilliers, David Glasser,<br>
+          A continuation method for nonlinear regression,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 18, Number 6, December 1981, pages 1139-1154.
+        </li>
+        <li>
+          Chris Fraley, <br>
+          Solution of nonlinear least-squares problems,<br>
+          Technical Report STAN-CS-1165, <br>
+          Computer Science Department,<br>
+          Stanford University, 1987.
+        </li>
+        <li>
+          Chris Fraley,
+          Software performance on nonlinear least-squares problems,<br>
+          Technical Report SOL 88-17, <br>
+          Systems Optimization Laboratory,<br>
+          Department of Operations Research, <br>
+          Stanford University, 1988.
+        </li>
+        <li>
+          JJ McKeown,<br>
+          Specialized versus general-purpose algorithms for functions
+          that are sums of squared terms,<br>
+          Mathematical Programming,<br>
+          Volume 9, 1975, pages 57-68.
+        </li>
+        <li>
+          JJ McKeown,<br>
+          On algorithms for sums of squares problems,<br>
+          in Towards Global Optimisation,<br>
+          edited by Laurence Dixon, Gabor Szego,<br>
+          North-Holland, 1975, pages 229-257,<br>
+          ISBN: 0444109552,<br>
+          LC: QA402.5.T7.
+        </li>
+        <li>
+          Jorge More, Burton Garbow, Kenneth Hillstrom,<br>
+          Testing unconstrained optimization software,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 7, Number 1, March 1981, pages 17-41.
+        </li>
+        <li>
+          Jorge More, Burton Garbow, Kenneth Hillstrom,<br>
+          Algorithm 566:
+          FORTRAN Subroutines for Testing unconstrained optimization software,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 7, Number 1, March 1981, pages 136-140.
+        </li>
+        <li>
+          James Ortega, Werner Rheinboldt<br>
+          Iterative Solution of Nonlinear Equations in Several Variables,<br>
+          SIAM, 1987,<br>
+          ISBN13: 978-0898714616,<br>
+          LC: QA297.8.O77.
+        </li>
+        <li>
+          Werner Rheinboldt,<br>
+          Methods for Solving Systems of Nonlinear Equations,<br>
+          SIAM, 1998,<br>
+          ISBN: 089871415X,<br>
+          LC: QA214.R44.
+        </li>
+        <li>
+          Douglas Salane,<br>
+          A continuation approach for solving large residual nonlinear
+          least squares problems,<br>
+          SIAM Journal on Scientific and Statistical Computing,<br>
+          Volume 8, Number 4, July 1987, pages 655-671.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_nonlin.f90">test_nonlin.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "test_nonlin.sh">test_nonlin.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 04 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

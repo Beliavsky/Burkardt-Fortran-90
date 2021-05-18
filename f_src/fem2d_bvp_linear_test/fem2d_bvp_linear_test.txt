@@ -1,0 +1,37 @@
+ 7 July 2020  12:37:45.965 PM
+ 
+FEM2D_BVP_LINEAR_TEST
+  FORTRAN90 version
+  Test the FEM2D_BVP_LINEAR library.
+ 
+TEST01
+  Solve - del ( A del U ) + C U = F 
+  on the unit square with zero boundary conditions.
+  A1(X,Y) = 1.0
+  C1(X,Y) = 0.0
+  F1(X,Y) = 2*X*(1-X)+2*Y*(1-Y)
+  U1(X,Y) = X * ( 1 - X ) * Y * ( 1 - Y )
+ 
+  Number of X grid values NX =        3
+  Number of Y grid values NY =        3
+ 
+     I     J    X         Y         U         Uexact    Error
+ 
+     1     1      0.00      0.00     0.00000         0.00000         0.00000    
+     2     1      0.50      0.00     0.00000         0.00000         0.00000    
+     3     1      1.00      0.00     0.00000         0.00000         0.00000    
+     1     2      0.00      0.50     0.00000         0.00000         0.00000    
+     2     2      0.50      0.50    0.781250E-01    0.625000E-01    0.156250E-01
+     3     2      1.00      0.50     0.00000         0.00000         0.00000    
+     1     3      0.00      1.00     0.00000         0.00000         0.00000    
+     2     3      0.50      1.00     0.00000         0.00000         0.00000    
+     3     3      1.00      1.00     0.00000         0.00000         0.00000    
+ 
+  l1 norm of error  =   0.173611E-02
+  L2 norm of error  =   0.968806E-02
+  Seminorm of error =   0.771115E-01
+ 
+FEM2D_BVP_LINEAR_TEST
+  Normal end of execution.
+ 
+ 7 July 2020  12:37:45.965 PM

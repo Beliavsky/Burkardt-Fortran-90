@@ -1,0 +1,136 @@
+<html>
+
+  <head>
+    <title>
+      TABLE_TOP - Plot Pairs of M-dimensional Data
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TABLE_TOP <br> Plot Pairs of M-dimensional Data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TABLE_TOP</b>,
+      a FORTRAN90 code which
+      displays patterns in a set of N points in M dimensions.
+    </p>
+
+    <p>
+      The program simply creates an array of M<sup>2</sup> two dimensional
+      subplots.  Plot (I,J) plots the I-th and J-th coordinate
+      values against each other.  Simple patterns in the data may
+      show up in the plots.
+    </p>
+
+    <p>
+      TABLE_TOP then creates a PostScript file containing the plots, using
+      routines from the PS_WRITE library.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <dl>
+        <dt>
+          <b>table_top</b> <i>data.txt</i>
+        </dt>
+        <dd>
+          reads the data in <i>data.txt</i> and makes the plots.
+        </dd>
+      </dl>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TABLE_TOP</b> is available in
+      <a href = "../../f_src/table_top/table_top.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/ps_write/ps_write.html">
+      PS_WRITE</a>,
+      a FORTRAN90 code which
+      creates a PostScript
+      graphics file.  This library is used by <b>TABLE_TOP</b>.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_columns/table_columns.html">
+      TABLE_COLUMNS</a>,
+      a FORTRAN90 code which
+      can extract specific columns of data
+      from a table file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_io/table_io.html">
+      TABLE_IO</a>,
+      a FORTRAN90 code which
+      supplies the routines used to read the TABLE file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_quality/table_quality.html">
+      TABLE_QUALITY</a>,
+      a FORTRAN90 code which
+      reads a file of
+      points and computes the quality of dispersion.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_top_test/table_top_test.html">
+      table_top_test</a>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "table_top.f90">table_top.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "table_top.sh">table_top.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 02 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,289 @@
+<html>
+
+  <head>
+    <title>
+      LAU_NP - Heuristics for NP problems
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LAU_NP <br> Heuristics for NP problems
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LAU_NP</b>,
+      a FORTRAN90 code which
+      implements heuristic algorithms for certain "hard" problems,
+      by Hang Tong Lau.
+    </p>
+
+    <p>
+      These problems are hard in the sense that, as the problem size N
+      increases, the amount of work required to compute a solution grows
+      exponentially.
+    </p>
+
+    <p>
+      The classic example of this is the "traveling salesman problem",
+      which seeks the shortest roundtrip that visits each location exactly
+      once.  The obvious method of solution, to compute the length of every
+      possible path, is not much worse than the best known method of
+      solution, in terms of the amount of computing required to find the
+      exact answer.  However, there are heuristic methods that can find a
+      "reasonable" approximation to the answer for most problems, in a
+      much shorter amount of time.
+    </p>
+
+    <p>
+      The problems considered include:
+      <ul>
+        <li>
+          the integer linear programming problem;
+        </li>
+        <li>
+          the K-center problem;
+        </li>
+        <li>
+          the K-median problem;
+        </li>
+        <li>
+          the 0-1 knapsack problem;
+        </li>
+        <li>
+          the multiple knapsack problem;
+        </li>
+        <li>
+          the graph matching problem;
+        </li>
+        <li>
+          the graph partitioning problem;
+        </li>
+        <li>
+          the minimal Steiner tree problem;
+        </li>
+        <li>
+          the traveling salesman problem;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LAU_NP</b> is available in
+      <a href = "../../f_src/lau_np/lau_np.html">a FORTRAN90 version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa058/asa058.html">
+      ASA058</a>,
+      a FORTRAN90 library which
+      contains the original text of the Sparks
+      clustering algorithm.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa136/asa136.html">
+      ASA136</a>,
+      a FORTRAN90 library which
+      contains the original text of the Hartigan
+      and Wong clustering algorithm.
+    </p>
+
+    <p>
+      <a href = "../../f_src/cities/cities.html">
+      CITIES</a>,
+      a FORTRAN90 code which
+      handles various problems associated with a set of "cities" on a map.
+    </p>
+
+    <p>
+      <a href = "../../f_src/floyd/floyd.html">
+      FLOYD</a>,
+      a FORTRAN90 code which
+      implements Floyd's algorithm for finding the shortest distance between pairs of
+      nodes on a directed graph.
+    </p>
+
+    <p>
+      <a href = "../../f_src/kmeans/kmeans.html">
+      KMEANS</a>,
+      a FORTRAN90 code which
+      contains several implementations of
+      the K-Means algorithm.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lau_np_test/lau_np_test.html">
+      lau_np_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/partition_problem/partition_problem.html">
+      PARTITION_PROBLEM</a>,
+      a FORTRAN90 code which
+      seeks solutions of the partition problem, splitting a set of integers into
+      two subsets with equal sum.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spaeth/spaeth.html">
+      SPAETH</a>,
+      a FORTRAN90 code which
+      can cluster data according to various principles.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spaeth2/spaeth2.html">
+      SPAETH2</a>,
+      a FORTRAN90 code which
+      can cluster data according to various
+      principles.
+    </p>
+
+    <p>
+      <a href = "../../f_src/subset_sum/subset_sum.html">
+      SUBSET_SUM</a>,
+      a FORTRAN90 code which
+      seeks solutions of the subset sum problem.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tsp_lau/tsp_lau.html">
+      TSP_LAU</a>,
+      a FORTRAN90 code which
+      implements a heuristic algorithm for the solution of
+      the traveling salesperson problem.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Hang Tong Lau
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Rainer Burkard, Ulrich Derigs,<br>
+          Assignment and Matching Problems: Solution methods with
+          FORTRAN programs,<br>
+          Lecture Notes in Economics and Mathematical Systems,<br>
+          Volume 184, <br>
+          Springer Verlag, 1980.
+        </li>
+        <li>
+          Nicos Christofides,<br>
+          Worst-case analysis of a new heuristic for the traveling salesman
+          problem,<br>
+          Management Science Research Report Number 388,<br>
+          Carnegie-Mellon University, 1976.
+        </li>
+        <li>
+          Frederick Hillier,<br>
+          Efficient heuristic procedure for integer linear programming
+          with an interior,<br>
+          Operations Research,<br>
+          Volume 17, pages 600-637, 1969.
+        </li>
+        <li>
+          Dorit Hochbaum, David Shmoys,<br>
+          A best possible heuristic for the K-center problem,<br>
+          Mathematics of Operations Research,<br>
+          Volume 10, pages 180-184, 1985.
+        </li>
+        <li>
+          Oscar Ibarra, Chul Kim,<br>
+          Fast approximation algorithms for the knapsack and sum of
+          subset problems,<br>
+          Journal of the Association for Computing Machinery,<br>
+          Volume 22, pages 463-468, 1975.
+        </li>
+        <li>
+          Brian Kernighan, Shen Lin,<br>
+          An efficient heuristic procedure for partitioning graphs,<br>
+          Bell System Technical Journal,<br>
+          Volume 49, pages 291-307, 1970.
+        </li>
+        <li>
+          Brian Kernighan, Shen Lin,<br>
+          Heuristic solution of a signal design optimization problem,<br>
+          Bell System Technical Journal,<br>
+          Volume 52, pages 1145-1159, 1973.
+        </li>
+        <li>
+          Lawrence Kou, George Markowsky, Leonard Berman,<br>
+          A fast algorithm for Steiner trees,<br>
+          Research report RC 7390,<br>
+          IBM Thomas J Watson Research Center,<br>
+          Yorktown Heights, New York, 1978.
+        </li>
+        <li>
+          Hang Tong Lau,<br>
+          Combinatorial Heuristic Algorithms in FORTRAN,<br>
+          Springer Verlag, 1986,<br>
+          ISBN: 3540171614,<br>
+          LC: QA402.5 L37.
+        </li>
+        <li>
+          Yoshiaki Toyoda,<br>
+          A simplified algorithm for obtaining approximate solutions
+          to zero-one programming problems,<br>
+          Management Science,<br>
+          Volume 21, pages 1417-1427, 1975.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "lau_np.f90">lau_np.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "lau_np.sh">lau_np.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 25 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

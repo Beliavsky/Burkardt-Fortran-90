@@ -1,0 +1,119 @@
+<html>
+
+  <head>
+    <title>
+      f90_stop_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      f90_stop_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>f90_stop_test</b>,
+      FORTRAN90 codes which
+      demonstrates how a FORTRAN90 code can return a code status value.
+    </p>
+
+    <p>
+      C and C++ codes can return an integer value signalling the status
+      of the code's execution.  By convention, a return value of 0 indicates
+      that the code executed successfully, while a nonzero value indicates
+      some kind of error.
+    </p>
+
+    <p>
+      The return value of such a code can be retrieved and used to make
+      decisions.  In particular, if the execution of the code is part of
+      a script, then the failure of the code can be detected, and the
+      script can terminate gracefully.
+    </p>
+
+    <p>
+      For an example in the BASH shell, we might have a script that reads:
+      <pre>
+        ./prog
+        if [ $? -ne 0 ]; then
+          echo "Errors while running prog."
+          exit
+        fi
+      </pre>
+      Here, $? is a BASH symbol that returns the most recent code status
+      value, and the script exits if that value is not zero.
+    </p>
+
+    <p>
+      FORTRAN has always had the option to include a constant integer value 
+      as part of the STOP statement.  At least some FORTRAN compilers can
+      treat this value as a  code status value that is returned to the
+      calling environment, and hence can signal whether certain errors
+      have occurred.
+    </p>
+
+    <p>
+      Here, we show a simple example in which the code is guaranteed
+      to fail, and in that case will return the arbitrary but nonzero value 13.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>f90_stop_test</b> is available in
+      <a href = "../../f_src/f90_stop_test/f90_stop_test.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "f90_stop_test1.f90">f90_stop_test1.f90</a>, 
+          demonstrates the use of a STOP message.
+        </li>
+        <li>
+          <a href = "f90_stop_test2.f90">f90_stop_test2.f90</a>, 
+          demonstrates the use of a STOP numeric code.
+        </li>
+        <li>
+          <a href = "f90_stop_test.sh">f90_stop_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "f90_stop_test.txt">f90_stop_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 20 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

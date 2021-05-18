@@ -1,0 +1,19 @@
+17 July 2020   4:52:49.936 PM
+ 
+include_files
+  FORTRAN90 version
+  Read a FORTRAN file with INCLUDE statements;
+  Make a copy in which those files are included.
+ 
+  Read file:  "file1.for".
+  Write file: "file2.for".
+ 
+     3 INCLUDE statements were encountered.
+ 
+     0 times, the necessary INCLUDE file
+  could not be found.
+ 
+include_files
+  Normal end of execution.
+ 
+17 July 2020   4:52:49.940 PM

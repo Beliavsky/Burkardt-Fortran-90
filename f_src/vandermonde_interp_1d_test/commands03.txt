@@ -1,0 +1,14 @@
+# commands03.txt
+#
+# Usage:
+#  gnuplot < commands03.txt
+#
+set term png
+set output "plot03.png"
+set xlabel "<---X--->"
+set ylabel "<---Y--->"
+set title "Data versus Vandermonde Polynomial Interpolant"
+set grid
+set style data lines
+plot "data03.txt" using 1:2 with points pt 7 ps 2 lc rgb "blue",\
+     "interp03.txt" using 1:2 lw 3 linecolor rgb "red"

@@ -1,0 +1,183 @@
+<html>
+
+  <head>
+    <title>
+      TEST_LLS - Linear Least Squares Test Problems
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_LLS <br> Linear Least Squares Test Problems
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>test_lls</b>,
+      a FORTRAN90 code which
+      implements linear least squares (LLS) test problems 
+      which are given A and b, and seek a vector x which 
+      minimizes the L2 norm of the error ||Ax-b||.
+    </p>
+
+    <p>
+      Some linear least squares problems include constraints on the data,
+      such as requiring that every entry of X be positive.  This library
+      only contains unconstrained problems.  For such problems, the task is
+      typically to find a vector X which minimizes the Euclidean norm of
+      the residual r=Ax-b, or, in cases where multiple minimizers exist,
+      to find the minimizer of minimal Euclidean norm.
+    </p>
+
+    <p>
+      TEST_LLS requires access to a compiled copy of the R8LIB library.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_LLS</b> is available in
+      <a href = "../../c_src/test_lls/test_lls.html">a C version</a> and
+      <a href = "../../cpp_src/test_lls/test_lls.html">a C++ version</a> and
+      <a href = "../../f_src/test_lls/test_lls.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_lls/test_lls.html">a MATLAB version</a> and
+      <a href = "../../py_src/test_lls/test_lls.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bvls/bvls.html">
+      BVLS</a>,
+      a FORTRAN90 code which
+      applies least squares methods to solve a linear system for which
+      lower and upper constraints may have been placed on every variable,
+      by Charles Lawson and Richard Hanson.
+    </p>
+
+    <p>
+      <a href = "../../f_src/dqed/dqed.html">
+      DQED</a>,
+      a FORTRAN90 code which
+      solves constrained least squares problems,
+      by Richard Hanson and Fred Krogh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lawson/lawson.html">
+      LAWSON</a>,
+      a FORTRAN90 code which
+      contains routines for solving least squares problems and singular value
+      decompositions (SVD),
+      by Charles Lawson, Richard Hanson.
+    </p>
+
+    <p>
+      <a href = "../../f_src/llsq/llsq.html">
+      LLSQ</a>,
+      a FORTRAN90 code which
+      solves the simple linear least squares problem of finding the formula
+      of a straight line y=a*x+b which minimizes the root-mean-square error
+      to a set of N data points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/minpack/minpack.html">
+      MINPACK</a>,
+      a FORTRAN90 code which
+      solves systems of nonlinear equations, or the least squares minimization of the
+      residual of a set of linear or nonlinear equations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nms/nms.html">
+      NMS</a>,
+      a FORTRAN90 code which
+      includes a wide variety of numerical software, including
+      solvers for linear systems of equations, interpolation of data,
+      numerical quadrature, linear least squares data fitting,
+      the solution of nonlinear equations, ordinary differential equations,
+      optimization and nonlinear least squares, simulation and random numbers,
+      trigonometric approximation and Fast Fourier Transforms (FFT).
+    </p>
+
+    <p>
+      <a href = "../../f_src/qr_solve/qr_solve.html">
+      QR_SOLVE</a>,
+      a FORTRAN90 code which
+      computes the least squares solution of a linear system A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../f_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines using double precision real (R8) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_lls_test/test_lls_test.html">
+      test_lls_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Cleve Moler,<br>
+          Numerical Computing with MATLAB,<br>
+          SIAM, 2004,<br>
+          ISBN13: 978-0-898716-60-3,<br>
+          LC: QA297.M625,<br>
+          ebook: http://www.mathworks.com/moler/chapters.html
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_lls.f90">test_lls.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_lls.sh">test_lls.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

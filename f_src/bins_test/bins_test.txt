@@ -1,0 +1,1411 @@
+30 May 2020   7:19:01.589 PM
+ 
+BINS_TEST
+  FORTRAN90 version
+  Test the BINS library.
+ 
+TEST01
+  R8_TO_BIN_EVEN puts a number into a bin.
+  BIN_TO_R8_EVEN returns the bin limits.
+ 
+  The bins are equally spaced between A and B,
+  with two extra bins, for things less than A,
+  or greater than B.
+ 
+  A =    10.0000    
+  B =    20.0000    
+  Total number of bins =      7
+ 
+  Using random seed =   1104151132
+ 
+  Generate some random values C and put them in bins.
+ 
+       C      Bin   Bin_Min  Bin_Max
+ 
+     15.4172       4   14.0000       16.0000    
+     18.1858       6   18.0000       20.0000    
+     20.7031       7   20.0000      0.179769+309
+     13.3284       3   12.0000       14.0000    
+     12.2174       3   12.0000       14.0000    
+     14.6894       4   14.0000       16.0000    
+     11.7160       2   10.0000       12.0000    
+     17.0752       5   16.0000       18.0000    
+     15.0204       4   14.0000       16.0000    
+     9.88135       1 -0.179769+309   10.0000    
+     22.7717       7   20.0000      0.179769+309
+     10.9725       2   10.0000       12.0000    
+     16.4411       5   16.0000       18.0000    
+     22.6179       7   20.0000      0.179769+309
+     20.7948       7   20.0000      0.179769+309
+     9.37458       1 -0.179769+309   10.0000    
+     10.5498       2   10.0000       12.0000    
+     8.29078       1 -0.179769+309   10.0000    
+     20.1130       7   20.0000      0.179769+309
+     11.3230       2   10.0000       12.0000    
+     12.3757       3   12.0000       14.0000    
+     19.6933       6   18.0000       20.0000    
+     21.9789       7   20.0000      0.179769+309
+     21.6176       7   20.0000      0.179769+309
+     8.23941       1 -0.179769+309   10.0000    
+     11.8272       2   10.0000       12.0000    
+     11.5132       2   10.0000       12.0000    
+     14.8782       4   14.0000       16.0000    
+     19.6742       6   18.0000       20.0000    
+     17.0565       5   16.0000       18.0000    
+ 
+TEST02
+  BIN_TO_R8_EVEN2 returns the bin limits.
+  R8_TO_BIN_EVEN2 puts a number into a bin.
+  The bins are equally spaced between A and B.
+ 
+  A =    10.0000    
+  B =    20.0000    
+  Total number of bins =      5
+ 
+  Using random seed =   1104151132
+ 
+  Generate some random values C and put them in bins.
+ 
+       C      Bin   Bin_Min  Bin_Max
+ 
+     15.4172       3   14.0000       16.0000    
+     18.1858       5   18.0000       20.0000    
+     20.7031       5   18.0000       20.0000    
+     13.3284       2   12.0000       14.0000    
+     12.2174       2   12.0000       14.0000    
+     14.6894       3   14.0000       16.0000    
+     11.7160       1   10.0000       12.0000    
+     17.0752       4   16.0000       18.0000    
+     15.0204       3   14.0000       16.0000    
+     9.88135       1   10.0000       12.0000    
+     22.7717       5   18.0000       20.0000    
+     10.9725       1   10.0000       12.0000    
+     16.4411       4   16.0000       18.0000    
+     22.6179       5   18.0000       20.0000    
+     20.7948       5   18.0000       20.0000    
+     9.37458       1   10.0000       12.0000    
+     10.5498       1   10.0000       12.0000    
+     8.29078       1   10.0000       12.0000    
+     20.1130       5   18.0000       20.0000    
+     11.3230       1   10.0000       12.0000    
+     12.3757       2   12.0000       14.0000    
+     19.6933       5   18.0000       20.0000    
+     21.9789       5   18.0000       20.0000    
+     21.6176       5   18.0000       20.0000    
+     8.23941       1   10.0000       12.0000    
+     11.8272       1   10.0000       12.0000    
+     11.5132       1   10.0000       12.0000    
+     14.8782       3   14.0000       16.0000    
+     19.6742       5   18.0000       20.0000    
+     17.0565       4   16.0000       18.0000    
+ 
+TEST03
+  BIN_TO_R82_EVEN returns the bin limits.
+  R82_TO_BIN_EVEN puts a R82 number into a bin.
+
+  The bins are equally spaced between A and B,
+  with two extra bins, for things less than A,
+  or greater than B.
+ 
+  A(1) =    5.00000    
+  B(1) =    15.0000    
+  A(2) =    0.00000    
+  B(2) =    20.0000    
+  Total number of bins =      7
+ 
+  Generate some random values C and put them in bins.
+  We list the X and Y components on separate lines.
+ 
+       C      Bin   Bin_Min  Bin_Max
+ 
+ 
+     8.96892       3   7.00000       9.00000    
+     20.6662       7   20.0000      0.179769+309
+ 
+     4.53728       1 -0.179769+309   5.00000    
+     17.6717       6   16.0000       20.0000    
+ 
+     20.2968       7   15.0000      0.179769+309
+     7.00597       3   4.00000       8.00000    
+ 
+     3.32942       1 -0.179769+309   5.00000    
+     16.9717       6   16.0000       20.0000    
+ 
+     9.99877       4   9.00000       11.0000    
+     7.62866       3   4.00000       8.00000    
+ 
+     3.82173       1 -0.179769+309   5.00000    
+     10.4342       4   8.00000       12.0000    
+ 
+     6.58445       2   5.00000       7.00000    
+     2.45530       2   0.00000       4.00000    
+ 
+     16.1979       7   15.0000      0.179769+309
+     17.3040       6   16.0000       20.0000    
+ 
+     7.04244       3   7.00000       9.00000    
+   -0.529024       1 -0.179769+309   0.00000    
+ 
+     20.9912       7   15.0000      0.179769+309
+     19.2440       6   16.0000       20.0000    
+ 
+     19.5350       7   15.0000      0.179769+309
+     2.89336       2   0.00000       4.00000    
+ 
+     18.4343       7   15.0000      0.179769+309
+     3.78855       2   0.00000       4.00000    
+ 
+     21.4031       7   15.0000      0.179769+309
+   -0.110571       1 -0.179769+309   0.00000    
+ 
+     16.5911       7   15.0000      0.179769+309
+     5.19915       3   4.00000       8.00000    
+ 
+     16.9972       7   15.0000      0.179769+309
+     10.8896       4   8.00000       12.0000    
+ 
+     21.6583       7   15.0000      0.179769+309
+     10.4882       4   8.00000       12.0000    
+ 
+     15.2006       7   15.0000      0.179769+309
+     15.1671       5   12.0000       16.0000    
+ 
+     15.7714       7   15.0000      0.179769+309
+     8.93217       4   8.00000       12.0000    
+ 
+     14.2977       6   13.0000       15.0000    
+    -1.59625       1 -0.179769+309   0.00000    
+ 
+     3.75857       1 -0.179769+309   5.00000    
+     8.61022       4   8.00000       12.0000    
+ 
+     8.98682       3   7.00000       9.00000    
+    -1.39300       1 -0.179769+309   0.00000    
+ 
+     14.1005       6   13.0000       15.0000    
+     4.85429       3   4.00000       8.00000    
+ 
+     16.9195       7   15.0000      0.179769+309
+     3.86124       2   0.00000       4.00000    
+ 
+     3.71553       1 -0.179769+309   5.00000    
+     4.83945       3   4.00000       8.00000    
+ 
+     20.1114       7   15.0000      0.179769+309
+     10.7532       4   8.00000       12.0000    
+ 
+     8.62270       3   7.00000       9.00000    
+    -1.14466       1 -0.179769+309   0.00000    
+ 
+     3.58111       1 -0.179769+309   5.00000    
+     5.79782       3   4.00000       8.00000    
+ 
+     6.43273       2   5.00000       7.00000    
+     13.9301       5   12.0000       16.0000    
+ 
+     17.9296       7   15.0000      0.179769+309
+   -0.669212       1 -0.179769+309   0.00000    
+ 
+     12.1716       5   11.0000       13.0000    
+     5.43472       3   4.00000       8.00000    
+ 
+TEST04
+  R82VEC_BIN_EVEN constructs evenly spaced bins and
+  assigns each element of a R82VEC to a bin.
+  R82VEC_BINNED_REORDER can reorder the array
+  to correspond to the bin ordering.
+  R82VEC_BINNED_SORT_A can sort the individual bins
+  after the array has been reordered.
+ 
+  The bins are equally spaced between 
+  BIN_MIN and BIN_MAX,
+  with two extra bins, for things less than BIN_MIN,
+  or greater than BIN_MAX.
+ 
+  Component 1 range:    10.0000       20.0000    
+  Component 2 range:    5.00000       10.0000    
+ 
+  Number of bins per row and column =      4
+ 
+ 
+  The data vector A to be binned:
+ 
+     1   12.4767       11.3963    
+     2   22.7823       7.88668    
+     3   9.15296       8.49026    
+     4   20.8294       9.71754    
+     5   20.9726       8.74715    
+     6   13.8735       7.27781    
+     7   8.24706       8.08396    
+     8   20.3728       3.15799    
+     9   13.2491       3.34135    
+    10   14.2796       7.15182    
+    11   8.61630       5.69407    
+    12   16.1093       3.23752    
+    13   10.6883       7.99522    
+    14   10.9056       5.68211    
+    15   17.8984       9.26378    
+    16   20.5896       5.29353    
+    17   11.0318       3.32199    
+    18   8.95933       5.67631    
+    19   21.4934       10.7001    
+    20   21.8548       7.99039    
+    21   20.4013       5.53022    
+    22   11.1913       3.33470    
+    23   19.5758       3.26150    
+    24   11.7751       6.05132    
+    25   21.8024       4.54473    
+    26   9.23224       9.23352    
+    27   18.1934       9.71830    
+    28   12.6951       3.52074    
+    29   18.4979       7.12720    
+    30   16.4063       5.90924    
+ 
+  The BIN_START array:
+ 
+  Col       1      2      3      4
+  Row
+ 
+    1      -1     11      3     -1
+    2       9      6     13      1
+    3      12     29     15     -1
+    4       8     16      2     19
+ 
+  The BIN_LAST array:
+ 
+  Col       1      2      3      4
+  Row
+ 
+    1      -1     11      3     -1
+    2       9      6     13      1
+    3      12     29     15     -1
+    4       8     16      2     19
+ 
+  The BIN_NEXT array:
+ 
+       1     0
+       2     4
+       3     7
+       4     5
+       5    20
+       6    10
+       7    26
+       8    25
+       9    17
+      10    14
+      11    18
+      12    23
+      13     0
+      14    24
+      15    27
+      16    21
+      17    22
+      18     0
+      19     0
+      20     0
+      21     0
+      22    28
+      23     0
+      24     0
+      25     0
+      26     0
+      27     0
+      28     0
+      29    30
+      30     0
+ 
+  Contents of bin number      1     1
+ 
+ 
+  Contents of bin number      1     2
+ 
+     1  11   8.61630       5.69407    
+     2  18   8.95933       5.67631    
+ 
+  Contents of bin number      1     3
+ 
+     1   3   9.15296       8.49026    
+     2   7   8.24706       8.08396    
+     3  26   9.23224       9.23352    
+ 
+  Contents of bin number      1     4
+ 
+ 
+  Contents of bin number      2     1
+ 
+     1   9   13.2491       3.34135    
+     2  17   11.0318       3.32199    
+     3  22   11.1913       3.33470    
+     4  28   12.6951       3.52074    
+ 
+  Contents of bin number      2     2
+ 
+     1   6   13.8735       7.27781    
+     2  10   14.2796       7.15182    
+     3  14   10.9056       5.68211    
+     4  24   11.7751       6.05132    
+ 
+  Contents of bin number      2     3
+ 
+     1  13   10.6883       7.99522    
+ 
+  Contents of bin number      2     4
+ 
+     1   1   12.4767       11.3963    
+ 
+  Contents of bin number      3     1
+ 
+     1  12   16.1093       3.23752    
+     2  23   19.5758       3.26150    
+ 
+  Contents of bin number      3     2
+ 
+     1  29   18.4979       7.12720    
+     2  30   16.4063       5.90924    
+ 
+  Contents of bin number      3     3
+ 
+     1  15   17.8984       9.26378    
+     2  27   18.1934       9.71830    
+ 
+  Contents of bin number      3     4
+ 
+ 
+  Contents of bin number      4     1
+ 
+     1   8   20.3728       3.15799    
+     2  25   21.8024       4.54473    
+ 
+  Contents of bin number      4     2
+ 
+     1  16   20.5896       5.29353    
+     2  21   20.4013       5.53022    
+ 
+  Contents of bin number      4     3
+ 
+     1   2   22.7823       7.88668    
+     2   4   20.8294       9.71754    
+     3   5   20.9726       8.74715    
+     4  20   21.8548       7.99039    
+ 
+  Contents of bin number      4     4
+ 
+     1  19   21.4934       10.7001    
+ 
+  Call R82VEC_BINNED_REORDER to reorder the array.
+ 
+ 
+  The data vector, sorted by bins:
+ 
+     1   8.61630       5.69407    
+     2   8.95933       5.67631    
+     3   9.15296       8.49026    
+     4   8.24706       8.08396    
+     5   9.23224       9.23352    
+     6   13.2491       3.34135    
+     7   11.0318       3.32199    
+     8   11.1913       3.33470    
+     9   12.6951       3.52074    
+    10   13.8735       7.27781    
+    11   14.2796       7.15182    
+    12   10.9056       5.68211    
+    13   11.7751       6.05132    
+    14   10.6883       7.99522    
+    15   12.4767       11.3963    
+    16   16.1093       3.23752    
+    17   19.5758       3.26150    
+    18   18.4979       7.12720    
+    19   16.4063       5.90924    
+    20   17.8984       9.26378    
+    21   18.1934       9.71830    
+    22   20.3728       3.15799    
+    23   21.8024       4.54473    
+    24   20.5896       5.29353    
+    25   20.4013       5.53022    
+    26   22.7823       7.88668    
+    27   20.8294       9.71754    
+    28   20.9726       8.74715    
+    29   21.8548       7.99039    
+    30   21.4934       10.7001    
+ 
+  The BIN_START array:
+ 
+  Col       1      2      3      4
+  Row
+ 
+    1      -1      1      3     -1
+    2       6     10     14     15
+    3      16     18     20     -1
+    4      22     24     26     30
+ 
+  The BIN_LAST array:
+ 
+  Col       1      2      3      4
+  Row
+ 
+    1      -1      2      5     -1
+    2       9     13     14     15
+    3      17     19     21     -1
+    4      23     25     29     30
+ 
+  The BIN_NEXT array:
+ 
+       1     2
+       2     0
+       3     4
+       4     5
+       5     0
+       6     7
+       7     8
+       8     9
+       9     0
+      10    11
+      11    12
+      12    13
+      13     0
+      14     0
+      15     0
+      16    17
+      17     0
+      18    19
+      19     0
+      20    21
+      21     0
+      22    23
+      23     0
+      24    25
+      25     0
+      26    27
+      27    28
+      28    29
+      29     0
+      30     0
+ 
+  The data vector, with sorted bins:
+ 
+     1   8.61630       5.69407    
+     2   8.95933       5.67631    
+     3   8.24706       8.08396    
+     4   9.15296       8.49026    
+     5   9.23224       9.23352    
+     6   11.0318       3.32199    
+     7   11.1913       3.33470    
+     8   12.6951       3.52074    
+     9   13.2491       3.34135    
+    10   10.9056       5.68211    
+    11   11.7751       6.05132    
+    12   13.8735       7.27781    
+    13   14.2796       7.15182    
+    14   10.6883       7.99522    
+    15   12.4767       11.3963    
+    16   16.1093       3.23752    
+    17   19.5758       3.26150    
+    18   16.4063       5.90924    
+    19   18.4979       7.12720    
+    20   17.8984       9.26378    
+    21   18.1934       9.71830    
+    22   20.3728       3.15799    
+    23   21.8024       4.54473    
+    24   20.4013       5.53022    
+    25   20.5896       5.29353    
+    26   20.8294       9.71754    
+    27   20.9726       8.74715    
+    28   21.8548       7.99039    
+    29   22.7823       7.88668    
+    30   21.4934       10.7001    
+ 
+TEST05
+  R82VEC_PART_QUICK_A reorders an R82VEC
+  as part of a quick sort.
+  Using initial random number seed =    123456789
+ 
+  Before rearrangment:
+ 
+     1   2.18418       2.40131    
+     2   9.56318       2.75467    
+     3   8.29509       2.79729    
+     4   5.61695       2.00184    
+     5   4.15307       2.89750    
+     6  0.661187       2.35075    
+     7   2.57578       2.09454    
+     8   1.09957       2.01362    
+     9  0.438290       2.85910    
+    10   6.33966       2.84085    
+    11  0.617272       2.12310    
+    12   4.49539       2.00751    
+ 
+  Rearranged array
+  Left index =       4
+  Key index =        5
+  Right index =      6
+ 
+ 
+  Left half:
+ 
+     1  0.617272       2.12310    
+     2  0.438290       2.85910    
+     3   1.09957       2.01362    
+     4  0.661187       2.35075    
+ 
+  Key:
+ 
+     1   2.18418       2.40131    
+ 
+  Right half:
+ 
+     1   2.57578       2.09454    
+     2   4.15307       2.89750    
+     3   5.61695       2.00184    
+     4   6.33966       2.84085    
+     5   8.29509       2.79729    
+     6   4.49539       2.00751    
+     7   9.56318       2.75467    
+ 
+TEST05
+  R82VEC_PART_QUICK_A reorders an R82VEC
+  as part of a quick sort.
+  Using initial random number seed =     16132679
+ 
+  Before rearrangment:
+ 
+     1   2.60303       2.18895    
+     2   9.12484       2.76149    
+     3   1.13664       2.39699    
+     4   3.51629       2.18531    
+     5   8.22887       2.57437    
+     6   2.67132       2.36703    
+     7   6.92066       2.61720    
+     8   5.61662       2.36153    
+     9   8.61216       2.21293    
+    10   4.53794       2.71447    
+    11   9.11977       2.11771    
+    12   5.97917       2.29933    
+ 
+  Rearranged array
+  Left index =       1
+  Key index =        2
+  Right index =      3
+ 
+ 
+  Left half:
+ 
+     1   1.13664       2.39699    
+ 
+  Key:
+ 
+     1   2.60303       2.18895    
+ 
+  Right half:
+ 
+     1   3.51629       2.18531    
+     2   8.22887       2.57437    
+     3   2.67132       2.36703    
+     4   6.92066       2.61720    
+     5   5.61662       2.36153    
+     6   8.61216       2.21293    
+     7   4.53794       2.71447    
+     8   9.11977       2.11771    
+     9   5.97917       2.29933    
+    10   9.12484       2.76149    
+ 
+TEST07
+  R83VEC_PART_QUICK_A reorders an R83VEC
+  as part of a quick sort.
+  Using initial random number seed =    123456789
+ 
+  Before rearrangment:
+ 
+     1   2.18418       2.40131       1.52061    
+     2   9.56318       2.75467       2.82497    
+     3   8.29509       2.79729       1.22733    
+     4   5.61695       2.00184       1.70326    
+     5   4.15307       2.89750       2.64577    
+     6  0.661187       2.35075       1.53426    
+     7   2.57578       2.09454       2.38413    
+     8   1.09957       2.01362       2.12332    
+     9  0.438290       2.85910       2.72243    
+    10   6.33966       2.84085       1.90759    
+    11  0.617272       2.12310       2.82395    
+    12   4.49539       2.00751       2.19583    
+ 
+  Rearranged array
+  Left index =       4
+  Key index =        5
+  Right index =      6
+ 
+ 
+  Left half:
+ 
+     1  0.617272       2.12310       2.82395    
+     2  0.438290       2.85910       2.72243    
+     3   1.09957       2.01362       2.12332    
+     4  0.661187       2.35075       1.53426    
+ 
+  Key:
+ 
+     1   2.18418       2.40131       1.52061    
+ 
+  Right half:
+ 
+     1   2.57578       2.09454       2.38413    
+     2   4.15307       2.89750       2.64577    
+     3   5.61695       2.00184       1.70326    
+     4   6.33966       2.84085       1.90759    
+     5   8.29509       2.79729       1.22733    
+     6   4.49539       2.00751       2.19583    
+     7   9.56318       2.75467       2.82497    
+ 
+TEST08
+  R83VEC_SORT_QUICK_A sorts an R83VEC
+  using quick sort.
+  Using initial random number seed =    123456789
+ 
+  Before rearrangment:
+ 
+     1   2.18418       2.40131       1.52061    
+     2   9.56318       2.75467       2.82497    
+     3   4.15307       2.79729       1.22733    
+     4   4.49539       2.00751       1.70326    
+     5   4.15307       2.89750       2.64577    
+     6  0.661187       2.35075       1.53426    
+     7  0.617272       2.12310       2.82395    
+     8   1.09957       2.01362       2.12332    
+     9  0.438290       2.85910       2.72243    
+    10   6.33966       2.84085       1.90759    
+    11  0.617272       2.12310       2.82395    
+    12   4.49539       2.00751       2.19583    
+ 
+  Sorted array:
+ 
+     1  0.438290       2.85910       2.72243    
+     2  0.617272       2.12310       2.82395    
+     3  0.617272       2.12310       2.82395    
+     4  0.661187       2.35075       1.53426    
+     5   1.09957       2.01362       2.12332    
+     6   2.18418       2.40131       1.52061    
+     7   4.15307       2.79729       1.22733    
+     8   4.15307       2.89750       2.64577    
+     9   4.49539       2.00751       1.70326    
+    10   4.49539       2.00751       2.19583    
+    11   6.33966       2.84085       1.90759    
+    12   9.56318       2.75467       2.82497    
+ 
+TEST09
+  R8VEC_BIN computes bins for an R8VEC.
+ 
+  The vector to be binned:
+ 
+       1   1.8798008    
+       2   10.811329    
+       3  -1.0007664    
+       4   9.1187745    
+       5   9.2429399    
+       6   3.0903322    
+       7  -1.7858795    
+       8   8.7231242    
+       9   2.5492023    
+      10   3.4422880    
+      11  -1.4658756    
+      12   5.0280437    
+      13  0.32989339    
+      14  0.51821138    
+      15   6.5786227    
+      16   8.9109673    
+      17  0.62758561    
+      18  -1.1685789    
+      19   9.6942945    
+      20   10.007482    
+      21   8.7477697    
+      22  0.76581379    
+      23   8.0323241    
+      24   1.2717893    
+      25   9.9620437    
+ 
+  Number of bins is      5
+  Bin minimum is    0.00000    
+  Bin maximum is    10.0000    
+ 
+  Lower Limit    Upper Limit    Count
+ 
+    0.0000  0.0000   4
+    0.0000  2.0000   6
+    2.0000  4.0000   3
+    4.0000  6.0000   1
+    6.0000  8.0000   1
+    8.0000 10.0000   8
+   10.0000           2
+ 
+TEST10
+  R8VEC_BIN_EVEN constructs evenly spaced bins and
+  assigns each element of a DVEC to a bin.
+  R8VEC_BINNED_REORDER can reorder the array
+  to correspond to the bin ordering.
+  R8VEC_BINNED_SORT_A can sort the array
+  once it has been reordered.
+ 
+  The bins are equally spaced between 
+  BIN_MIN and BIN_MAX,
+  with two extra bins, for things less than BIN_MIN,
+  or greater than BIN_MAX.
+ 
+  BIN_MIN =    10.0000    
+  BIN_MAX =    20.0000    
+  Total number of bins =      7
+ 
+ 
+  The data vector A to be binned:
+ 
+       1   12.476693    
+       2   22.782302    
+       3   9.1529618    
+       4   20.829355    
+       5   20.972623    
+       6   13.873460    
+       7   8.2470621    
+       8   20.372836    
+       9   13.249080    
+      10   14.279563    
+      11   8.6162973    
+      12   16.109281    
+      13   10.688339    
+      14   10.905629    
+      15   17.898411    
+      16   20.589578    
+      17   11.031830    
+      18   8.9593320    
+      19   21.493417    
+      20   21.854787    
+      21   20.401273    
+      22   11.191324    
+      23   19.575759    
+      24   11.775141    
+      25   21.802358    
+      26   9.2322362    
+      27   18.193354    
+      28   12.695097    
+      29   18.497912    
+      30   16.406259    
+ 
+  The BIN_START array:
+ 
+       1     3
+       2    13
+       3     1
+       4    10
+       5    12
+       6    23
+       7     2
+ 
+  The BIN_LAST array:
+ 
+       1    26
+       2    24
+       3    28
+       4    10
+       5    30
+       6    29
+       7    25
+ 
+  The BIN_NEXT array:
+ 
+       1     6
+       2     4
+       3     7
+       4     5
+       5     8
+       6     9
+       7    11
+       8    16
+       9    28
+      10     0
+      11    18
+      12    15
+      13    14
+      14    17
+      15    30
+      16    19
+      17    22
+      18    26
+      19    20
+      20    21
+      21    25
+      22    24
+      23    27
+      24     0
+      25     0
+      26     0
+      27    29
+      28     0
+      29     0
+      30     0
+ 
+  Contents of bin number      1
+ 
+     1   3   9.15296    
+     2   7   8.24706    
+     3  11   8.61630    
+     4  18   8.95933    
+     5  26   9.23224    
+ 
+  Contents of bin number      2
+ 
+     1  13   10.6883    
+     2  14   10.9056    
+     3  17   11.0318    
+     4  22   11.1913    
+     5  24   11.7751    
+ 
+  Contents of bin number      3
+ 
+     1   1   12.4767    
+     2   6   13.8735    
+     3   9   13.2491    
+     4  28   12.6951    
+ 
+  Contents of bin number      4
+ 
+     1  10   14.2796    
+ 
+  Contents of bin number      5
+ 
+     1  12   16.1093    
+     2  15   17.8984    
+     3  30   16.4063    
+ 
+  Contents of bin number      6
+ 
+     1  23   19.5758    
+     2  27   18.1934    
+     3  29   18.4979    
+ 
+  Contents of bin number      7
+ 
+     1   2   22.7823    
+     2   4   20.8294    
+     3   5   20.9726    
+     4   8   20.3728    
+     5  16   20.5896    
+     6  19   21.4934    
+     7  20   21.8548    
+     8  21   20.4013    
+     9  25   21.8024    
+ 
+  Call R8VEC_BINNED_REORDER to reorder the array.
+ 
+ 
+  The data vector A:
+ 
+       1   9.1529618    
+       2   8.2470621    
+       3   8.6162973    
+       4   8.9593320    
+       5   9.2322362    
+       6   10.688339    
+       7   10.905629    
+       8   11.031830    
+       9   11.191324    
+      10   11.775141    
+      11   12.476693    
+      12   13.873460    
+      13   13.249080    
+      14   12.695097    
+      15   14.279563    
+      16   16.109281    
+      17   17.898411    
+      18   16.406259    
+      19   19.575759    
+      20   18.193354    
+      21   18.497912    
+      22   22.782302    
+      23   20.829355    
+      24   20.972623    
+      25   20.372836    
+      26   20.589578    
+      27   21.493417    
+      28   21.854787    
+      29   20.401273    
+      30   21.802358    
+ 
+  The BIN_START array:
+ 
+       1     1
+       2     6
+       3    11
+       4    15
+       5    16
+       6    19
+       7    22
+ 
+  The BIN_LAST array:
+ 
+       1     5
+       2    10
+       3    14
+       4    15
+       5    18
+       6    21
+       7    30
+ 
+  The BIN_NEXT array:
+ 
+       1     2
+       2     3
+       3     4
+       4     5
+       5     0
+       6     7
+       7     8
+       8     9
+       9    10
+      10     0
+      11    12
+      12    13
+      13    14
+      14     0
+      15     0
+      16    17
+      17    18
+      18     0
+      19    20
+      20    21
+      21     0
+      22    23
+      23    24
+      24    25
+      25    26
+      26    27
+      27    28
+      28    29
+      29    30
+      30     0
+ 
+  The sorted data vector A:
+ 
+       1   8.2470621    
+       2   8.6162973    
+       3   8.9593320    
+       4   9.1529618    
+       5   9.2322362    
+       6   10.688339    
+       7   10.905629    
+       8   11.031830    
+       9   11.191324    
+      10   11.775141    
+      11   12.476693    
+      12   12.695097    
+      13   13.249080    
+      14   13.873460    
+      15   14.279563    
+      16   16.109281    
+      17   16.406259    
+      18   17.898411    
+      19   18.193354    
+      20   18.497912    
+      21   19.575759    
+      22   20.372836    
+      23   20.401273    
+      24   20.589578    
+      25   20.829355    
+      26   20.972623    
+      27   21.493417    
+      28   21.802358    
+      29   21.854787    
+      30   22.782302    
+ 
+TEST11
+  Given a point in 2D, we want to find its nearest
+  neighbor among points in a set.
+ 
+  POINTS_NEAREST_POINT_NAIVE_2D uses a naive algorithm.
+  POINTS_NEAREST_POINT_BINS_2D and
+  POINTS_NEAREST_POINT_BINS_2D_2 use bins, but require
+  the same number in each direction.
+  POINTS_NEAREST_POINT_BINS_2D_3 uses bins, and can use
+  a different number in each direction.
+ 
+  The number of points in the pointset is   1000
+ 
+  POINTS_NEAREST_POINT_BINS_2D and
+  POINTS_NEAREST_POINT_BINS_2D_2 use     10
+  bins in each direction.
+  POINTS_NEAREST_POINT_BINS_2D_3 uses     20     5
+  bins in each direction.
+ 
+  The X coordinate range:    0.00000       20.0000    
+  The Y coordinate range:    0.00000       5.00000    
+ 
+  Test point X range:        0.00000       20.0000    
+  Test point Y range:        0.00000       5.00000    
+ 
+    Test point           Neighbor point      Distance
+--------------------  --------------------  ----------
+ 
+ 
+     14.9508    4.3521     14.9991    4.2166      0.1438  1000
+     14.9508    4.3521     14.9991    4.2166      0.1438    13
+     14.9508    4.3521     14.9991    4.2166      0.1438    13
+     14.9508    4.3521     15.8243    2.2894      0.1438    59
+ 
+      2.4729    0.5079      2.5180    0.6927      0.1902  1000
+      2.4729    0.5079      2.5180    0.6927      0.1902    92
+      2.4729    0.5079      2.5180    0.6927      0.1902    92
+      2.4729    0.5079      2.6648    0.2484      0.1902    14
+ 
+      8.1566    2.1458      8.2568    2.0666      0.1277  1000
+      8.1566    2.1458      8.2568    2.0666      0.1277     9
+      8.1566    2.1458      8.2568    2.0666      0.1277     9
+      8.1566    2.1458      9.6967    0.9044      0.1277    10
+ 
+     18.7061    3.4669     18.8883    3.4484      0.1832  1000
+     18.7061    3.4669     18.8883    3.4484      0.1832    46
+     18.7061    3.4669     18.8883    3.4484      0.1832    46
+     18.7061    3.4669     19.1350    1.9987      0.1832     6
+ 
+     15.9852    0.6162     15.6757    0.5363      0.3196  1000
+     15.9852    0.6162     15.6757    0.5363      0.3196    99
+     15.9852    0.6162     15.6757    0.5363      0.3196    99
+     15.9852    0.6162     15.4120    2.9001      0.3196    55
+ 
+      4.7382    3.6001      4.9253    3.6185      0.1880  1000
+      4.7382    3.6001      4.9253    3.6185      0.1880    93
+      4.7382    3.6001      4.9253    3.6185      0.1880    93
+      4.7382    3.6001      5.8095    1.7666      0.1880     8
+ 
+      7.5550    4.0715      7.6969    4.2623      0.2378  1000
+      7.5550    4.0715      7.6969    4.2623      0.2378    91
+      7.5550    4.0715      7.6969    4.2623      0.2378    91
+      7.5550    4.0715      6.6506    4.7919      0.2378    60
+ 
+     16.5715    4.3991     16.3617    4.5427      0.2542  1000
+     16.5715    4.3991     16.3617    4.5427      0.2542    87
+     16.5715    4.3991     16.3617    4.5427      0.2542    87
+     16.5715    4.3991     16.6025    2.4562      0.2542     6
+ 
+      5.1075    0.2936      5.1662    0.3285      0.0683  1000
+      5.1075    0.2936      5.1662    0.3285      0.0683     9
+      5.1075    0.2936      5.1662    0.3285      0.0683     9
+      5.1075    0.2936      5.8754    2.4802      0.0683     9
+ 
+     17.9588    3.3774     18.1511    3.6014      0.2953  1000
+     17.9588    3.3774     18.1511    3.6014      0.2953    69
+     17.9588    3.3774     18.1511    3.6014      0.2953    69
+     17.9588    3.3774     18.6141    1.9460      0.2953    78
+ 
+TEST12
+  Given a point set in 2D, and a set of test points,
+  for each testpoint, find the nearest neighbor in
+  the point set.
+ 
+  POINTS_NEAREST_POINTS_NAIVE_2D uses a naive algorithm.
+  POINTS_NEAREST_POINTS_BINS_2D uses equal bins.
+  POINTS_NEAREST_POINTS_BINS_2D_2 uses equal bins.
+  POINTS_NEAREST_POINTS_BINS_2D_3 uses variable bins.
+ 
+  The number of points in the pointset is   1000
+  The number of points in the test set is    100
+ 
+  POINTS_NEAREST_POINTS_BINS_2D and 
+  POINTS_NEAREST_POINTS_BINS_2D_2 use     10
+    bins in each direction.
+  POINTS_NEAREST_POINTS_BINS_2D_3 uses     10    10
+    bins in each direction.
+ 
+  The X coordinate range:    0.00000       10.0000    
+  The Y coordinate range:    0.00000       10.0000    
+ 
+ 
+  Print results for up to first 10 points...
+ 
+    Test point		      Distance
+                       Naive     Bins     Bins2     Bins3
+--------------------  ------------------------------------
+ 
+ 
+      7.4754    4.8468        0.2041    0.2041    0.2041    0.2041
+      8.7042    0.3605        0.1910    0.1910    0.1910    0.1910
+      1.2365    9.2229        0.0853    0.0853    0.0853    0.0853
+      1.0159    9.2763        0.1436    0.1436    0.1436    0.1436
+      4.0783    7.1919        0.2873    0.2873    0.2873    0.2873
+      4.2916    4.4874        0.0474    0.0474    0.0474    0.0474
+      9.3531    0.4123        0.0239    0.0239    0.0239    0.0239
+      6.9339    9.8958        0.2983    0.2983    0.2983    0.2983
+      7.9926    9.3159        0.2977    0.2977    0.2977    0.2977
+      1.2324    1.6629        0.1478    0.1478    0.1478    0.1478
+ 
+  Naive and bin1 codes computed the same results.
+ 
+  Naive and bin2 codes computed the same results.
+ 
+  Naive and bin3 codes computed the same results.
+ 
+  Naive code time =    0.00000    
+  Bin code time =	   0.00000    
+  Bin2 code time =      0.00000    
+  Bin3 code time =      0.00000    
+ 
+TEST13
+  Given a point set in 2D, and a set of test points,
+  for each testpoint, find the nearest neighbor in
+  the point set.
+ 
+  In this test, the region is RECTANGULAR.
+  The BINS and BINS2 codes will end up using rectangular bins;
+  We will set the BINS3 code to use the same number of bins,
+  but they will be square.  This should mean that BINS3
+  finds a match faster.
+ 
+  POINTS_NEAREST_POINTS_NAIVE_2D uses a naive algorithm.
+  POINTS_NEAREST_POINTS_BINS_2D uses bins.
+  POINTS_NEAREST_POINTS_BINS_2D_2 uses bins.
+  POINTS_NEAREST_POINTS_BINS_2D_3 uses bins.
+ 
+  The number of points in the pointset is   1000
+  The number of bins used in each direction is     10
+  The number of points in the test set is    100
+ 
+  The X coordinate range:    0.00000       4.00000    
+  The Y coordinate range:    0.00000       25.0000    
+ 
+ 
+  Print results for up to first 10 points...
+ 
+    Test point		      Distance
+                       Naive     Bins     Bins2     Bins3
+--------------------  ------------------------------------
+ 
+ 
+      2.9902   12.1170        0.1954    0.1954    0.1954    0.1954
+      3.4817    0.9013        0.0764    0.0764    0.0764    0.0764
+      0.4946   23.0572        0.0395    0.0395    0.0395    0.0395
+      0.4064   23.1908        0.1855    0.1855    0.1855    0.1855
+      1.6313   17.9798        0.1164    0.1164    0.1164    0.1164
+      1.7167   11.2186        0.0197    0.0197    0.0197    0.0197
+      3.7412    1.0308        0.0586    0.0586    0.0586    0.0586
+      2.7736   24.7396        0.1899    0.1899    0.1899    0.1899
+      3.1970   23.2897        0.2805    0.2805    0.2805    0.2805
+      0.4929    4.1572        0.2869    0.2869    0.2869    0.2869
+ 
+  Naive and bin1 codes computed the same results.
+ 
+  Naive and bin2 codes computed the same results.
+ 
+  Naive and bin3 codes computed the same results.
+ 
+  Naive code time =    0.00000    
+  Bin code time =      0.00000    
+  Bin2 code time =      0.00000    
+  Bin3 code time =      0.00000    
+ 
+TEST14
+  Given a point set in 3D, and a set of test points,
+  for each testpoint, find the nearest neighbor in
+  the point set.
+ 
+  POINTS_NEAREST_POINTS_NAIVE_3D uses a naive algorithm.
+  POINTS_NEAREST_POINTS_BINS_3D_2 uses bins.
+ 
+  The number of points in the pointset is   4096
+  The number of bins used in each direction is     32
+  The number of points in the test set is   1000
+ 
+  The X coordinate range:    0.00000       10.0000    
+  The Y coordinate range:    0.00000       10.0000    
+  The Z coordinate range:    0.00000       10.0000    
+ 
+ 
+  Print up to the first 10 points.
+ 
+    Test point                       Distance        Comparisons
+                                 Naive     Bins     Naive Bins
+-----------------------------  --------------------  ----------
+ 
+ 
+    6.0435    8.2578    8.9217    0.3736    0.3736    4096     7
+    3.3103    9.4387    7.8419    0.2349    0.2349    4096     7
+    6.6906    6.1998    9.4486    0.3432    0.3432    4096     7
+    8.1085    0.6709    3.1854    0.4333    0.4333    4096    20
+    9.3259    5.0737    6.4339    0.2743    0.2743    4096     3
+    9.8900    4.4102    4.2415    0.3369    0.3369    4096     4
+    0.8175    3.0704    7.4605    0.1155    0.1155    4096     4
+    9.4071    3.9908    8.6950    0.1957    0.1957    4096     5
+    4.8975    2.8356    6.3092    0.1013    0.1013    4096     8
+    2.7082    7.8060    9.4692    0.2601    0.2601    4096     6
+ 
+  Naive and bin codes computed the same results.
+ 
+  Naive code time =   0.220000E-01
+  Bin code time =     0.200000E-02
+ 
+TEST15
+  Given a point set XC, and a single point XD,
+  find the nearest point in XC to XD.
+ 
+  POINTS_NEAREST_POINT_NAIVE_2D uses a naive method.
+  POINTS_NEAREST_POINT_DEL_2D uses the Delaunay
+  triangulation
+  TRIANGULATION_PRINT prints a triangulation.
+ 
+TRIANGULATION_PRINT
+  Information defining a triangulation.
+ 
+  The number of points is     13
+ 
+  Point coordinates
+ 
+  Row         1             2       
+  Col
+    1    0.00000       0.00000    
+    2    2.00000       2.00000    
+    3   -1.00000       3.00000    
+    4   -2.00000       2.00000    
+    5    8.00000       2.00000    
+    6    9.00000       5.00000    
+    7    7.00000       4.00000    
+    8    5.00000       6.00000    
+    9    6.00000       7.00000    
+   10    8.00000       8.00000    
+   11    11.0000       7.00000    
+   12    10.0000       4.00000    
+   13    6.00000       4.00000    
+ 
+  The number of triangles is     16
+ 
+  Sets of three points are used as vertices of
+  the triangles.  For each triangle, the points
+  are listed in counterclockwise order.
+ 
+  Triangle nodes:
+ 
+  Row       1      2      3
+  Col
+ 
+    1       3      4      1
+    2       3      1      2
+    3       3      2      8
+ 
+  On each side of a given triangle, there is either
+  another triangle, or a piece of the convex hull.
+  For each triangle, we list the indices of the three
+  neighbors, or (if negative) the codes of the
+  segments of the convex hull.
+ 
+  Triangle neighbors
+ 
+  Row       1      2      3
+  Col
+ 
+    1      -4    -13      2
+    2       1      4      3
+    3       2      5      7
+ 
+  The number of boundary points is      8
+ 
+  The segments that make up the convex hull can be
+  determined from the negative entries of the triangle
+  neighbor list.
+ 
+  # Tri Side  N1  N2
+ 
+   1   1   2   4   1
+   2   4   2   1   5
+   3  14   2   5  12
+   4   1   1   3   4
+   5   7   3   9   3
+   6  15   3  12  11
+   7  16   3  11  10
+   8  13   1  10   9
+ DEBUG: About to call triangulation_sample.
+ DEBUG: Returned from triangulation_sample.
+ 
+    X        Y     Distance  Index
+ 
+ 
+  XD        -0.9224  2.9930
+  Naive     -1.0000  3.0000  0.0779     3
+  Delaunay  -1.0000  3.0000  0.0779     3
+ 
+  XD         6.5701  3.2889
+  Naive      7.0000  4.0000  0.8310     7
+  Delaunay   7.0000  4.0000  0.8310     7
+ 
+  XD         5.7761  1.9414
+  Naive      6.0000  4.0000  2.0707    13
+  Delaunay   6.0000  4.0000  2.0707    13
+ 
+  XD         6.4137  4.7453
+  Naive      6.0000  4.0000  0.8525    13
+  Delaunay   6.0000  4.0000  0.8525    13
+ 
+  XD         4.7126  5.5281
+  Naive      5.0000  6.0000  0.5525     8
+  Delaunay   5.0000  6.0000  0.5525     8
+ 
+  XD        -0.9843  2.8790
+  Naive     -1.0000  3.0000  0.1220     3
+  Delaunay  -1.0000  3.0000  0.1220     3
+ 
+  XD         0.1322  0.5990
+  Naive      0.0000  0.0000  0.6134     1
+  Delaunay   0.0000  0.0000  0.6134     1
+ 
+  XD         8.6345  6.0623
+  Naive      9.0000  5.0000  1.1235     6
+  Delaunay   9.0000  5.0000  1.1235     6
+ 
+  XD         2.2279  1.9898
+  Naive      2.0000  2.0000  0.2281     2
+  Delaunay   2.0000  2.0000  0.2281     2
+ 
+  XD         2.3587  1.9504
+  Naive      2.0000  2.0000  0.3622     2
+  Delaunay   2.0000  2.0000  0.3622     2
+ 
+TEST16
+  POINTS_NEAREST_POINT_NAIVE_ND computes the nearest point
+    in a set of points, to a given point, in ND.
+ 
+  The spatial dimension NDIM is      2
+  The number of points N is     12
+ 
+  The set of points:
+ 
+  Col         1             2             3             4             5       
+  Row
+ 
+    1    7.00000       4.00000       5.00000       2.00000       6.00000    
+    2    3.00000       7.00000       13.0000       7.00000       9.00000    
+ 
+  Col         6             7             8             9            10       
+  Row
+ 
+    1    12.0000       3.00000       6.00000       3.00000       8.00000    
+    2    8.00000       4.00000       6.00000       10.0000       7.00000    
+ 
+  Col        11            12       
+  Row
+ 
+    1    5.00000       10.0000    
+    2    13.0000       6.00000    
+ 
+  Test point is 
+     7.00000       1.00000    
+  Nearest point is 
+     7.00000       3.00000    
+  Distance is    2.00000    
+ 
+  Test point is 
+     4.00000       7.00000    
+  Nearest point is 
+     4.00000       7.00000    
+  Distance is    0.00000    
+ 
+  Test point is 
+     8.00000       11.0000    
+  Nearest point is 
+     6.00000       9.00000    
+  Distance is    2.82843    
+ 
+BINS_TEST
+  Normal end of execution.
+ 
+30 May 2020   7:19:01.617 PM

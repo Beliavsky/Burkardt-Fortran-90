@@ -1,0 +1,355 @@
+<html>
+
+  <head>
+    <title>
+      SPLINE - Interpolation and Approximation of Data
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SPLINE <br> Interpolation and Approximation of Data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SPLINE</b>,
+      a FORTRAN90 code which
+      defines and evaluates spline functions.
+    </p>
+
+    <p>
+      These spline functions are typically used to:
+      <ul>
+        <li>
+          interpolate data exactly at a set of points;
+        </li>
+        <li>
+          approximate data at many points, or over an interval.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The most common use of this software is for situations where
+      a set of (X,Y) data points is known, and it is desired to
+      determine a smooth function which passes exactly through
+      those points, and which can be evaluated everywhere.
+      Thus, it is possible to get a formula that allows you to
+      "connect the dots".
+    </p>
+
+    <p>
+      Of course, you could could just connect the dots with
+      straight lines, but that would look ugly, and if there really
+      is some function that explains your data, you'd expect it to
+      curve around rather than make sudden angular turns.  The
+      functions in <b>SPLINE</b> offer a variety of choices for
+      slinky curves that will make pleasing interpolants of your data.
+    </p>
+
+    <p>
+      There are a variety of types of approximation curves
+      available, including:
+      <ul>
+        <li>
+          least squares polynomials,
+        </li>
+        <li>
+          divided difference polynomials,
+        </li>
+        <li>
+          piecewise polynomials,
+        </li>
+        <li>
+          B splines,
+        </li>
+        <li>
+          Bernstein splines,
+        </li>
+        <li>
+          beta splines,
+        </li>
+        <li>
+          Bezier splines,
+        </li>
+        <li>
+          Hermite splines,
+        </li>
+        <li>
+          Overhauser (or Catmull-Rom) splines.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Also included are a set of routines that return the local "basis matrix",
+      which allows the evaluation of the spline in terms of local function
+      data.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SPLINE</b> is available in
+      <a href = "../../c_src/spline/spline.html">a C version</a> and
+      <a href = "../../cpp_src/spline/spline.html">a C++ version</a> and
+      <a href = "../../f_src/spline/spline.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/spline/spline.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev/chebyshev.html">
+      CHEBYSHEV</a>,
+      a FORTRAN90 code which
+      computes the Chebyshev interpolant/approximant to a given function
+      over an interval.
+    </p>
+
+    <p>
+      <a href = "../../f_src/divdif/divdif.html">
+      DIVDIF</a>,
+      a FORTRAN90 code which
+      uses divided differences to interpolate data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite/hermite.html">
+      HERMITE</a>,
+      a FORTRAN90 code which
+      computes the Hermite interpolant, a polynomial that matches function values
+      and derivatives.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_cubic/hermite_cubic.html">
+      HERMITE_CUBIC</a>,
+      a FORTRAN90 code which
+      can compute the value, derivatives or integral of a Hermite cubic polynomial,
+      or manipulate an interpolating function made up of piecewise Hermite cubic
+      polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/interp/interp.html">
+      INTERP</a>,
+      a FORTRAN90 code which
+      can be used for parameterizing and interpolating data;
+    </p>
+
+    <p>
+      <a href = "../../f_src/lagrange_approx_1d/lagrange_approx_1d.html">
+      LAGRANGE_APPROX_1D</a>,
+      a FORTRAN90 code which
+      defines and evaluates the Lagrange polynomial p(x) of degree m
+      which approximates a set of nd data points (x(i),y(i)).
+    </p>
+
+    <p>
+      <a href = "../../f_src/lagrange_interp_1d/lagrange_interp_1d.html">
+      LAGRANGE_INTERP_1D</a>,
+      a FORTRAN90 code which
+      defines and evaluates the Lagrange polynomial p(x) 
+      which interpolates a set of data, so that p(x(i)) = y(i).
+    </p>
+
+    <p>
+      <a href = "../../f_src/nms/nms.html">
+      NMS</a>,
+      a FORTRAN90 code which
+      includes a wide variety of numerical software, including
+      solvers for linear systems of equations, interpolation of data,
+      numerical quadrature, linear least squares data fitting,
+      the solution of nonlinear equations, ordinary differential equations,
+      optimization and nonlinear least squares, simulation and random numbers,
+      trigonometric approximation and Fast Fourier Transforms.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pppack/pppack.html">
+      PPPACK</a>,
+      a FORTRAN90 code which
+      implements piecewise polynomial functions,
+      including, in particular, cubic splines,
+      by Carl deBoor.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spline_test/spline_test.html">
+      spline_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_approx/test_approx.html">
+      TEST_APPROX</a>,
+      a FORTRAN90 code which
+      defines a number of test problems for approximation and interpolation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp_1d/test_interp_1d.html">
+      TEST_INTERP_1D</a>,
+      a FORTRAN90 code which
+      defines test problems for interpolation of data y(x),
+      depending on a 1D argument.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms446/toms446.html">
+      TOMS446</a>,
+      a FORTRAN90 code which
+      manipulates Chebyshev series for interpolation and approximation;<br>
+      this is a version of ACM TOMS algorithm 446,
+      by Roger Broucke.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          JA Brewer, DC Anderson,<br>
+          Visual Interaction with Overhauser Curves and Surfaces,<br>
+          SIGGRAPH 77,<br>
+          in Proceedings of the 4th Annual Conference on Computer Graphics
+          and Interactive Techniques,<br>
+          ASME, July 1977, pages 132-137.
+        </li>
+        <li>
+          Edwin Catmull, Raphael Rom,<br>
+          A Class of Local Interpolating Splines,<br>
+          in Computer Aided Geometric Design,<br>
+          edited by Robert Barnhill, Richard Reisenfeld,<br>
+          Academic Press, 1974,<br>
+          ISBN: 0120790505,<br>
+          LC: QA464.I58.
+        </li>
+        <li>
+          Samuel Conte, Carl deBoor,<br>
+          Elementary Numerical Analysis,<br>
+          Second Edition,<br>
+          McGraw Hill, 1972,<br>
+          ISBN: 07-012446-4,<br>
+          LC: QA297.C65.
+        </li>
+        <li>
+          Alan Davies, Philip Samuels,<br>
+          An Introduction to Computational Geometry for Curves and Surfaces,<br>
+          Clarendon Press, 1996,<br>
+          ISBN: 0-19-851478-6,<br>
+          LC: QA448.D38.
+        </li>
+        <li>
+          Carl deBoor,<br>
+          A Practical Guide to Splines,<br>
+          Springer, 2001,<br>
+          ISBN: 0387953663,<br>
+          LC: QA1.A647.v27.
+        </li>
+        <li>
+          Jack Dongarra, Jim Bunch, Cleve Moler, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979,<br>
+          ISBN13: 978-0-898711-72-1,<br>
+          LC: QA214.L56.
+        </li>
+        <li>
+          Gisela Engeln-Muellges, Frank Uhlig,<br>
+          Numerical Algorithms with C,<br>
+          Springer, 1996,<br>
+          ISBN: 3-540-60530-4,<br>
+          LC: QA297.E56213.
+        </li>
+        <li>
+          James Foley, Andries vanDam, Steven Feiner, John Hughes,<br>
+          Computer Graphics, Principles and Practice,<br>
+          Second Edition,<br>
+          Addison Wesley, 1995,<br>
+          ISBN: 0201848406,<br>
+          LC: T385.C5735.
+        </li>
+        <li>
+          Fred Fritsch, Judy Butland,<br>
+          A Method for Constructing Local Monotone Piecewise
+          Cubic Interpolants,<br>
+          SIAM Journal on Scientific and Statistical Computing,<br>
+          Volume 5, Number 2, 1984, pages 300-304.
+        </li>
+        <li>
+          Fred Fritsch, Ralph Carlson,<br>
+          Monotone Piecewise Cubic Interpolation,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 17, Number 2, April 1980, pages 238-246.
+        </li>
+        <li>
+          David Kahaner, Cleve Moler, Steven Nash,<br>
+          Numerical Methods and Software,<br>
+          Prentice Hall, 1989,<br>
+          ISBN: 0-13-627258-4,<br>
+          LC: TA345.K34.
+        </li>
+        <li>
+          David Rogers, Alan Adams,<br>
+          Mathematical Elements for Computer Graphics,<br>
+          Second Edition,<br>
+          McGraw Hill, 1989,<br>
+          ISBN: 0070535299,<br>
+          LC: T385.R6.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "spline.f90">spline.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "spline.sh">spline.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 17 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

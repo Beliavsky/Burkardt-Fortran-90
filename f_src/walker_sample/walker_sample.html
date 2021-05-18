@@ -1,0 +1,181 @@
+<html>
+
+  <head>
+    <title>
+      WALKER_SAMPLE - Efficient Probability Vector Sampling
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      WALKER_SAMPLE <br> Efficient Probability Vector Sampling
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>WALKER_SAMPLE</b>,
+      a FORTRAN90 code which
+      efficiently samples a discrete probability vector.
+    </p>
+
+    <p>
+      For outcomes labeled 1, 2, 3, ..., N, a discrete probability vector
+      X is an array of N non-negative values which sum to 1, such that X[i]
+      is the probability of outcome i.
+    </p>
+
+    <p>
+      To sample the probability vector is to produce a sequence of outcomes
+      i1, i2, i3, ..., which are each drawn with probability corresponding 
+      to X.  For a general discrete probability vector X, a single sample
+      operation might be expected to take a time that is proportional to O(N),
+      the number of outcomes.  Walker showed that, by constructing a new
+      data structure, it was possible to carry out a sample in time of order 
+      O(1), that is, independent of the number of possible outcomes.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>WALKER_SAMPLE</b> is available in
+      <a href = "../../c_src/walker_sample/walker_sample.html">a C version</a> and
+      <a href = "../../cpp_src/walker_sample/walker_sample.html">a C++ version</a> and
+      <a href = "../../f_src/walker_sample/walker_sample.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/walker_sample/walker_sample.html">a Matlab version</a> and
+      <a href = "../../py_src/walker_sample/walker_sample.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/histogram_data_2d_sample/histogram_data_2d_sample.html">
+      HISTOGRAM_DATA_2D_SAMPLE</a>,
+      a FORTRAN90 code which
+      demonstrates how to construct a Probability Density Function (PDF)
+      from a frequency table over a 2D domain, and then to use that PDF 
+      to create new samples.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ieee_uniform_sample/ieee_uniform_sample.html">
+      IEEE_UNIFORM_SAMPLE</a>,
+      a FORTRAN90 code which
+      tries to uniformly sample the discrete set of values that represent the
+      legal IEEE real numbers;
+    </p>
+
+    <p>
+      <a href = "../../f_src/pdflib/pdflib.html">
+      PDFLIB</a>,
+      a FORTRAN90 code which
+      evaluates Probability Density Functions (PDF's)
+      and produces random samples from them,
+      including beta, binomial, chi, exponential, gamma, inverse chi,
+      inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/prob/prob.html">
+      PROB</a>,
+      a FORTRAN90 code which
+      evaluates, samples, inverts, and characterizes a number of 
+      Probability Density Functions (PDF's) 
+      and Cumulative Density Functions (CDF's), including anglit, arcsin,
+      benford, birthday, bernoulli, beta_binomial, beta, binomial, bradford,
+      burr, cardiod, cauchy, chi, chi squared, circular, cosine, deranged,
+      dipole, dirichlet mixture, discrete, empirical, english sentence and
+      word length, error, exponential, extreme values, f, fisk, folded normal,
+      frechet, gamma, generalized logistic, geometric, gompertz, gumbel,
+      half normal, hypergeometric, inverse gaussian, laplace, levy, logistic,
+      log normal, log series, log uniform, lorentz, maxwell, multinomial,
+      nakagami, negative binomial, normal, pareto, planck, poisson,
+      power, quasigeometric, rayleigh, reciprocal, runs, sech, semicircular,
+      student t, triangle, uniform, von mises, weibull, zipf.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ranlib/ranlib.html">
+      RANLIB</a>,
+      a FORTRAN90 code which
+      produces random samples from Probability Density Functions (PDF's), 
+      including Beta, Chi-square Exponential, F, Gamma, Multivariate normal,
+      Noncentral chi-square, Noncentral F, Univariate normal, 
+      random permutations, Real uniform, Binomial, Negative Binomial,
+      Multinomial, Poisson and Integer uniform,
+      by Barry Brown and James Lovato.
+    </p>
+
+    <p>
+      <a href = "../../f_src/walker_sample_test/walker_sample_test.html">
+      walker_sample_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Donald Knuth,<br>
+          Seminumerical algorithms,<br>
+          Addison-Wesley-Longman, 1999.
+        </li>
+        <li>
+          Warren Smith,<br>
+          How to sample from a probability distribution,<br>
+          April 18, 2002.
+        </li>
+        <li>
+          Alastair Walker,<br>
+          An efficient method for generating discrete random variables
+          with general distributions,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 3, Number 3, September 1977, pages 253-256.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "walker_sample.f90">walker_sample.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "walker_sample.sh">walker_sample.sh</a>, 
+          compile the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

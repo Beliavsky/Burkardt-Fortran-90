@@ -1,0 +1,25 @@
+ 
+FEM2D_SAMPLE
+  FORTRAN90 version
+ 
+  Read files defining an FEM function of 2 arguments.
+  Read a file of sample arguments.
+  Write a file of function values at the arguments.
+ 
+  The FEM node dimension is               2
+  The FEM node number is                 25
+  The FEM element order is                3
+  The FEM element number is              32
+  The FEM value order is                  1
+  the FEM value number is                25
+  The element neighbor array has been computed.
+ 
+  Sample node spatial dimension is        2
+  Sample node number is                  16
+ 
+  Interpolated FEM data written to "sample_sq_values.txt".
+ 
+FEM2D_SAMPLE
+  Normal end of execution.
+ 
+08 July 2020   7:50:31.507 PM

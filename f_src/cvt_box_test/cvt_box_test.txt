@@ -1,0 +1,177 @@
+ 8 June 2020   3:42:44.457 PM
+ 
+cvt_box:
+  FORTRAN90 version
+  Generate a constrained CVT dataset.
+ 
+  NDIM is the spatial dimension.
+  (Try '2' if you have no preference.)
+  (Any value less than 1 terminates execution.)
+  User input NDIM =            2
+ 
+  N is the number of points to generate.
+  (Try '100' if you have no preference.)
+  (Any value less than 1 terminates execution.)
+  User input N =          100
+ 
+  NPP is the number of sample points used to
+  check the boundary.
+  (Try '1000' if you have no preference.)
+  (Any value less than 1 terminates execution.)
+  User input NPP =         1000
+ 
+  Enter SEED, a seed for the random number generator:
+  (Try '123456789' if you do not have a preference.)
+  (Any negative value terminates execution).
+  User input SEED =    123456789
+ 
+  INIT is the method of initializing the data:
+ 
+  file     read data from a file;
+  GRID     by picking points from a grid;
+  HALTON   from a Halton sequence;
+  RANDOM   using FORTRAN RANDOM function;
+  UNIFORM  using a simple uniform RNG;
+ 
+  (Try 'RANDOM' if you do not have a preference.)
+  (A blank value terminates execution).
+ 
+  Enter INIT:
+  User input INIT = "UNIFORM    #  INIT,       sampling method for initial generators.".
+  User input INIT = "UNIFORM    #  INIT,       sampling method for initial generators.".
+ 
+  IT_MAX is the maximum number of iterations.
+ 
+  An iteration carries out the following steps:
+  * the Voronoi region associated with each
+    generator is estimated by sampling;
+  * the centroid of each Voronoi region is estimated.
+  * the generator is replaced by the centroid.
+ 
+  If "enough" sampling points are used,
+  and "enough" iterations are taken, this process
+  will converge.
+ 
+  (Try '50' if you have no preference.)
+  (A negative value terminates execution).
+ 
+  Enter IT_MAX:  
+  User input IT_MAX =           50
+ 
+  IT_FIXED is the number of consecutive iterations
+  to take with a fixed set of sample points.
+ 
+  Setting IT_FIXED to 1 means a new set of sample
+  points is generated on every iterative step;
+  Setting IT_FIXED equal to IT_MAX means a single set
+  of sample points is used for the entire iteration.
+ 
+  Any value between 1 and IT_MAX is reasonable.
+ 
+  (Try     50 if you do not have a preference.)
+  (A 0 or negative value terminates execution).
+ 
+  Enter IT_FIXED:
+  User input IT_FIXED =      1
+ 
+  SAMPLE is the method of sampling the region:
+ 
+  GRID     by picking points from a grid;
+  HALTON   from a Halton sequence;
+  RANDOM   using FORTRAN RANDOM function;
+  UNIFORM  using a simple uniform RNG;
+ 
+  (Try 'RANDOM' if you do not have a preference.)
+  (A blank value terminates execution).
+ 
+  Enter SAMPLE:
+  User input SAMPLE = "UNIFORM    #  SAMPLE,     sampling method for CVT iteration".
+ 
+  SAMPLE_NUM is the number of sample points.
+ 
+  The Voronoi regions will be explored by generating
+  SAMPLE_NUM points.  For each sample point, the
+  nearest generator is found.  Using more points
+  gives a better estimate of these regions.
+ 
+  SAMPLE_NUM should be much larger than N, the
+  number of generators. 
+ 
+  (Try '10000' if you have no preference.) 
+  (A zero or negative value terminates execution.)
+ 
+  User input SAMPLE_NUM =       100000
+ 
+  BATCH is the number of sample points to create
+  at one time.
+ 
+  BATCH should be between 1 and SAMPLE_NUM.
+ 
+  It is FASTER to set BATCH to SAMPLE_NUM;
+  setting BATCH to 1 requires the least memory.
+ 
+  (Try         1000 if you do not have a preference.)
+  (A zero or negative value terminates execution.)
+ 
+  Enter BATCH:
+  User input BATCH =         1000
+ 
+                            Energy         Energy after
+  Iteration     Seed        of CVT         projection
+ 
+       0     123456789    0.405173E-02    0.429516E-02
+       1    1911385472    0.242223E-02    0.289451E-02
+       2     205095426    0.215796E-02    0.261853E-02
+       3    2024616065    0.201948E-02    0.244465E-02
+       4     916668916    0.195808E-02    0.241740E-02
+       5     880431333    0.192490E-02    0.233852E-02
+       6     169762527    0.190103E-02    0.228935E-02
+       7     478535510    0.189293E-02    0.225499E-02
+       8     890150186    0.188297E-02    0.223557E-02
+       9     110906603    0.186649E-02    0.221259E-02
+      10     845941495    0.186248E-02    0.219845E-02
+      11    2088477575    0.186178E-02    0.222497E-02
+      12     603902573    0.185218E-02    0.219785E-02
+      13    1684381210    0.185545E-02    0.218694E-02
+      14    1932941708    0.185407E-02    0.218247E-02
+      15     233211304    0.184722E-02    0.217130E-02
+      16    1276227847    0.184744E-02    0.216362E-02
+      17     253121791    0.184940E-02    0.216041E-02
+      18     802583933    0.185161E-02    0.215743E-02
+      19     527444028    0.184679E-02    0.220932E-02
+      20    1989617657    0.184745E-02    0.219294E-02
+      21    1109185209    0.184362E-02    0.218068E-02
+      22     570573929    0.184250E-02    0.217847E-02
+      23     529283715    0.185171E-02    0.218021E-02
+      24     649195680    0.185018E-02    0.217332E-02
+      25     465185814    0.184496E-02    0.216675E-02
+      26    1292879200    0.185584E-02    0.216581E-02
+      27     601405778    0.186156E-02    0.216843E-02
+      28     806172503    0.185556E-02    0.216364E-02
+      29    1591952975    0.185132E-02    0.215650E-02
+      30     280672924    0.185493E-02    0.215889E-02
+      31     372365713    0.184830E-02    0.215281E-02
+      32    1956907931    0.185357E-02    0.215750E-02
+      33     122573791    0.184672E-02    0.215282E-02
+      34     379281589    0.184850E-02    0.214835E-02
+      35     294923811    0.185221E-02    0.215290E-02
+      36     351544375    0.184949E-02    0.215044E-02
+      37    2127247977    0.184834E-02    0.214908E-02
+      38    1107349931    0.185115E-02    0.214631E-02
+      39    1807538430    0.185172E-02    0.214441E-02
+      40     969688974    0.184492E-02    0.213953E-02
+      41    2119135656    0.184586E-02    0.214396E-02
+      42     246858354    0.184956E-02    0.214465E-02
+      43     569388860    0.185306E-02    0.214875E-02
+      44    1280855164    0.184068E-02    0.213760E-02
+      45     798989604    0.184517E-02    0.213495E-02
+      46     217621133    0.184329E-02    0.214033E-02
+      47     849207258    0.185360E-02    0.214965E-02
+      48     664845290    0.184612E-02    0.214050E-02
+      49    1110149120    0.184090E-02    0.213647E-02
+      50     379880543    0.184799E-02    0.214078E-02
+ 
+cvt_box:
+  Normal end of execution.
+ 
+ 8 June 2020   3:42:51.894 PM

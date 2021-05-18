@@ -1,0 +1,176 @@
+<html>
+
+  <head>
+    <title>
+      BIVAR - Bivariate interpolation of scattered data
+    </title>
+  </head>
+
+  <body alink="#ff3300" bgcolor="#eeeeee" link="#cc0000" vlink="#000055">
+
+    <h1 align="center">
+      BIVAR <br> Bivariate interpolation of scattered data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>BIVAR</b>,
+      a FORTRAN90 code which
+      interpolates scattered bivariate data,
+      by Hiroshi Akima.
+    </p>
+
+    <p>
+      <b>BIVAR</b> accepts a set of (X,Y) data points scattered in 2D,
+      with associated Z data values, and is able to construct a smooth
+      interpolation function Z(X,Y), which agrees with the given data,
+      and can be evaluated at other points in the plane.
+    </p>
+
+    <p>
+      <b>BIVAR</b> is a FORTRAN90 version of ACM TOMS Algorithm 526.
+    </p>
+
+    <p>
+      The original, true, correct version of ACM TOMS 526 is available
+      in the TOMS subdirectory of
+      <a href="http://www.netlib.org/">the NETLIB web site</a>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align="center">
+      Related Data and Packages:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bivar_test/bivar_test.html">
+      bivar_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms526/toms526.html">
+      TOMS526</a>,
+      a FORTRAN90 code which
+      is the original version of the algorithm implemented in BIVAR.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms660/toms660.html">
+      TOMS660</a>,
+      a FORTRAN90 code which
+      takes scattered 2D data and produces an interpolating function F(X,Y),
+      this is a FORTRAN90 version of ACM TOMS algorithm 660,
+      called <b>qshep2d</b>,
+      by Robert Renka.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms661/toms661.html">
+      TOMS661</a>,
+      a FORTRAN90 code which
+      takes scattered 3D data and produces an interpolating function F(X,Y,Z),
+      this is a FORTRAN90 version of ACM TOMS algorithm 661,
+      called <b>qshep3d</b>,
+      by Robert Renka.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms790/toms790.html">
+      TOMS790</a>,
+      a FORTRAN90 code which
+      computes an interpolating function to a set of scattered data in the plane;<br>
+      this code is commonly called <b>CSHEP2D</b>;<br>
+      by Robert Renka;<br>
+      this is ACM TOMS algorithm 790.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms792/toms792.html">
+      TOMS792</a>,
+      a FORTRAN90 code which
+      tests functions that interpolate scattered data in the plane;<br>
+      by Robert Renka;<br>
+      this is ACM TOMS algorithm 792.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms886/toms886.html">
+      TOMS886</a>,
+      a FORTRAN90 code which
+      defines the Padua points for interpolation in a 2D region,
+      including the rectangle, triangle, and ellipse,
+      by Marco Caliari, Stefano de Marchi, Marco Vianello.
+      This is ACM TOMS algorithm 886.
+    </p>
+
+    <h3 align="center">
+      Author:
+    </h3>
+
+    <p>
+      The FORTRAN77 version of BIVAR is by Hiroshi Akima.
+      The translation to FORTRAN90 was done by John Burkardt.
+    </p>
+
+    <h3 align="center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Hiroshi Akima,<br>
+          Algorithm 526:
+          A Method of Bivariate Interpolation and Smooth Surface Fitting
+          for Values Given at Irregularly Distributed Points,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 4, Number 2, June 1978, pages 160-164.
+        </li>
+        <li>
+          Hiroshi Akima, <br>
+          On Estimating Partial Derivatives for Bivariate Interpolation
+          of Scattered Data,<br>
+          Rocky Mountain Journal of Mathematics,<br>
+          Volume 14, Number 1, Winter 1984, pages 41-51.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align="center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "bivar.f90">bivar.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "bivar.sh">bivar.sh</a>,
+          the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

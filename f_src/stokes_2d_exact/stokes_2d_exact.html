@@ -1,0 +1,143 @@
+<html>
+
+  <head>
+    <title>
+      STOKES_2D_EXACT - Exact solutions to the 2D Incompressible Steady Stokes Equations
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      STOKES_2D_EXACT<br> 
+      Exact solutions to the <br>
+      2D Incompressible Steady Stokes Equations
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>STOKES_2D_EXACT</b>,
+      a FORTRAN90 code which
+      evaluates exact solutions to the incompressible steady
+      Stokes equations in 2D.
+    </p>
+
+    <p>
+      The incompressible steady 2D Stokes equations seek functions u(x,y),
+      v(x,y), (the velocity vector) and p(x,y) (the pressure) such that
+      <pre>
+        - uxx - uyy + dpdx = f
+        - vxx - vyy + dpdy = g
+          ux  + vy         = h
+      </pre>
+      while satisfying boundary conditions for u and v, and a normalization
+      condition for p, such as specifying its value at one point, or requiring
+      that the integral of p over the region be 0.
+    </p>
+
+    <p>
+      Three exact solution fields are provided here.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>STOKES_2D_EXACT</b> is available in
+      <a href = "../../c_src/stokes_2d_exact/stokes_2d_exact.html">a C version</a> and
+      <a href = "../../cpp_src/stokes_2d_exact/stokes_2d_exact.html">a C++ version</a> and
+      <a href = "../../f_src/stokes_2d_exact/stokes_2d_exact.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/stokes_2d_exact/stokes_2d_exact.html">a MATLAB version</a> and
+      <a href = "../../py_src/stokes_2d_exact/stokes_2d_exact.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      write data and command files so that gnuplot() can create plots.
+    </p>
+
+    <p>
+      <a href = "../../f_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">
+      NAVIER_STOKES_2D_EXACT</a>,
+      a FORTRAN90 code which
+      evaluates an exact solution to the incompressible time-dependent
+      Navier-Stokes equations over an arbitrary domain in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stokes_2d_exact_test/stokes_2d_exact_test.html">
+      stokes_2d_exact_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Junping Wang, Yanqiu Wang, Xiu Ye,<br>
+          A robust numerical method for Stokes equations based on divergence-free
+          H(div) finite element methods,<br>
+          SIAM Journal on Scientific Computing,<br>
+          Volume 31, Number 4, 2009, pages 2784-2802.
+        </li>
+        <li>
+          Howard Elman, Alison Ramage, David Silvester,<br>
+          Finite Elements and Fast Iterative Solvers with
+          Applications in Incompressible Fluid Dynamics,<br>
+          Oxford, 2005,<br>
+          ISBN: 978-0198528678,<br>
+          LC: QA911.E39.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "stokes_2d_exact.f90">stokes_2d_exact.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "stokes_2d_exact.sh">stokes_2d_exact.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 30 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>
+

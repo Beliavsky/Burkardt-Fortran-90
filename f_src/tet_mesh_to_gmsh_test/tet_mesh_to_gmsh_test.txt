@@ -1,0 +1,56 @@
+ 6 September 2020   2:14:43.656 PM
+ 
+TET_MESH_TO_GMSH
+  FORTRAN90 version
+  Convert a linear or quadratic tet mesh to Gmsh format.
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, 4 or 10 node element definitions.
+
+  Create "prefix".msh, a corresponding Gmsh mesh file.
+ 
+  Read the header of "mesh_nodes.txt".
+ 
+  Spatial dimension DIM_NUM =        3
+ 
+  Number of linear nodes =           8
+ 
+  Read the data in "mesh_nodes.txt".
+ 
+  The first 5 nodes:
+ 
+  Row         1             2             3       
+  Col
+    1    0.00000       0.00000       0.00000    
+    2    0.00000       0.00000       1.00000    
+    3    0.00000       1.00000       0.00000    
+    4    0.00000       1.00000       1.00000    
+    5    1.00000       0.00000       0.00000    
+ 
+  Read the header of "mesh_elements.txt".
+ 
+  Element order =        4
+  Number of elements =        6
+ 
+  Read the data in "mesh_elements.txt".
+ 
+  First 5 elements:
+ 
+  Row       1      2      3      4
+  Col
+ 
+    1       4      3      5      1
+    2       4      2      5      1
+    3       4      7      3      5
+    4       4      7      8      5
+    5       4      6      2      5
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+
+  Created gmsh file "mesh.msh".
+ 
+TET_MESH_TO_GMSH
+  Normal end of execution.
+ 
+ 6 September 2020   2:14:43.658 PM

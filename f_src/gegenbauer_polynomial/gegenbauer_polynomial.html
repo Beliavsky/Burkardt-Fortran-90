@@ -1,0 +1,197 @@
+<html>
+
+  <head>
+    <title>
+      GEGENBAUER_POLYNOMIAL - Gegenbauer Polynomials
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      GEGENBAUER_POLYNOMIAL <br> Gegenbauer Polynomials
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>GEGENBAUER_POLYNOMIAL</b>,
+      a FORTRAN90 library which
+      evaluates Gegenbauer polynomials and associated functions.
+    </p>
+
+    <p>
+      The Gegenbauer polynomial C(n,alpha,x) can be defined by:
+      <pre>
+        C(0,alpha,x) = 1
+        C(1,alpha,x) = 2 * alpha * x
+        C(n,alpha,x) = (1/n) * ( 2*x*(n+alpha-1) * C(n-1,alpha,x) - (n+2*alpha-2) * C(n-2,alpha,x) )
+      </pre>
+      where n is a nonnegative integer, and -1/2 < alpha, 0 =/= alpha.
+    </p>
+
+    <p>
+      The N zeroes of C(n,alpha,x) are the abscissas used for Gauss-Gegenbauer
+      quadrature of the integral of a function F(X) with weight function 
+      (1-x^2)^(alpha-1/2) over the interval [-1,1].
+    </p>
+
+    <p>
+      The Gegenbauer polynomials are orthogonal under the inner product defined
+      as weighted integration from -1 to 1:
+      <pre>
+        Integral ( -1 <= x <= 1 ) (1-x^2)^(alpha-1/2) * C(i,alpha,x) * C(j,alpha,x) dx 
+          = 0 if i =/= j
+          = pi * 2^(1-2*alpha) * Gamma(n+2*alpha) / n! / (n+alpha) / (Gamma(alpha))^2 if i = j.
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>GEGENBAUER_POLYNOMIAL</b> is available in
+      <a href = "../../c_src/gegenbauer_polynomial/gegenbauer_polynomial.html">a C version</a> and
+      <a href = "../../cpp_src/gegenbauer_polynomial/gegenbauer_polynomial.html">a C++ version</a> and
+      <a href = "../../f_src/gegenbauer_polynomial/gegenbauer_polynomial.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/gegenbauer_polynomial/gegenbauer_polynomial.html">a MATLAB version</a> and
+      <a href = "../../py_src/gegenbauer_polynomial/gegenbauer_polynomial.html">a Python version</a>..
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_polynomial/chebyshev_polynomial.html">
+      CHEBYSHEV_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      considers the Chebyshev polynomials T(i,x), U(i,x), V(i,x) and W(i,x).
+      Functions are provided to evaluate the polynomials, determine their zeros, 
+      produce their polynomial coefficients, produce related quadrature rules,
+      project other functions onto these polynomial bases, and integrate
+      double and triple products of the polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_cc/gegenbauer_cc.html">
+      GEGENBAUER_CC</a>,
+      a FORTRAN90 library which
+      estimates the Gegenbauer weighted integral of a function f(x)
+      using a Clenshaw-Curtis approach.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_exactness/gegenbauer_exactness.html">
+      GEGENBAUER_EXACTNESS</a>,
+      a FORTRAN90 program which
+      checks the polynomial exactness
+      of a Gauss-Gegenbauer rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_polynomial_test/gegenbauer_polynomial_test.html">
+      gegenbauer_polynomial_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_rule/gegenbauer_rule.html">
+      GEGENBAUER_RULE</a>,
+      a FORTRAN90 program which
+      can generate a Gauss-Gegenbauer quadrature
+      rule on request.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_polynomial/hermite_polynomial.html">
+      HERMITE_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the physicist's Hermite polynomial, the probabilist's Hermite polynomial,
+      the Hermite function, and related functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi_polynomial/jacobi_polynomial.html">
+      JACOBI_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Jacobi polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_polynomial/laguerre_polynomial.html">
+      LAGUERRE_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Laguerre polynomial, the generalized Laguerre polynomial,
+      and the Laguerre function.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_polynomial/legendre_polynomial.html">
+      LEGENDRE_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Legendre polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lobatto_polynomial/lobatto_polynomial.html">
+      LOBATTO_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates Lobatto polynomials, similar to Legendre polynomials
+      except that they are zero at both endpoints.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polpak/polpak.html">
+      POLPAK</a>,
+      a FORTRAN90B library which
+      evaluates a variety of mathematical functions.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "gegenbauer_polynomial.f90">gegenbauer_polynomial.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "gegenbauer_polynomial.sh">gegenbauer_polynomial.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

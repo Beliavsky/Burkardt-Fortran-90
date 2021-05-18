@@ -1,0 +1,44 @@
+02 June 2020  10:25:52.337 AM
+ 
+BLAS3_Z_TEST
+  FORTRAN90 version
+  Test the BLAS library.
+ 
+TEST01
+  ZGEMM can combine scale, multiply and add matrices
+  using double precision complex arithmetic.
+ 
+  Here, we simply compute C = A * B.
+  Because B is inverse ( A ), C should be the identity.
+ 
+  Matrix A:
+ 
+  Col:          1                   2                   3          
+  Row
+  ---
+    1: 0.577               0.577               0.577              
+    2: 0.577              -0.289     0.500    -0.289    -0.500    
+    3: 0.577              -0.289    -0.500    -0.289     0.500    
+ 
+  Matrix B:
+ 
+  Col:          1                   2                   3          
+  Row
+  ---
+    1: 0.577               0.577               0.577              
+    2: 0.577              -0.289    -0.500    -0.289     0.500    
+    3: 0.577              -0.289     0.500    -0.289    -0.500    
+ 
+  Product C = A * B:
+ 
+  Col:          1                   2                   3          
+  Row
+  ---
+    1:  1.00              -0.278E-16-0.111E-15 0.111E-15-0.222E-15
+    2:-0.278E-16 0.111E-15  1.00              -0.278E-16-0.111E-15
+    3: 0.111E-15 0.222E-15-0.278E-16 0.111E-15  1.00              
+ 
+BLAS3_Z_TEST
+  Normal end of execution.
+ 
+02 June 2020  10:25:52.338 AM

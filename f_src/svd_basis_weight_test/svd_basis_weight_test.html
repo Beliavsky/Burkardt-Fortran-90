@@ -1,0 +1,222 @@
+<html>
+
+  <head>
+    <title>
+      svd_basis_weight_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      svd_basis_weight_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>svd_basis_weight_test</b>,
+      a FORTRAN90 code which
+      calls svd_basis_weight(), which
+      applies the
+      singular value decomposition ("SVD") to a set of weighted data vectors,
+      to extract the leading "modes" of the data.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/svd_basis_weight/svd_basis_weight.html">
+      svd_basis_weight</a>,
+      a FORTRAN90 code which
+      is similar to SVD_basis, but which allows the user to
+      assign weights to each data vector.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "svd_basis_weight_test.sh">svd_basis_weight_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "svd_basis_weight_test.txt">svd_basis_weight_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The user's input:
+      <ul>
+        <li>
+          <a href = "input.txt">input.txt</a>,
+          five lines of input that define a run.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The input data consists of 5 files:
+      <ul>
+        <li>
+          <a href = "data01.txt">data01.txt</a>,
+          input data file #1.
+        </li>
+        <li>
+          <a href = "data02.txt">data02.txt</a>,
+          input data file #2.
+        </li>
+        <li>
+          <a href = "data03.txt">data03.txt</a>,
+          input data file #3.
+        </li>
+        <li>
+          <a href = "data04.txt">data04.txt</a>,
+          input data file #4.
+        </li>
+        <li>
+          <a href = "data05.txt">data05.txt</a>,
+          input data file #5.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      There are two options for the weight files:
+      <ul>
+        <li>
+          <a href = "weight_even.txt">weight_even.txt</a>,
+          even weights.
+        </li>
+        <li>
+          <a href = "weight_uneven.txt">weight_uneven.txt</a>,
+          weights of 0, 5, 1, 0.1, 0.2.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EXAMPLE 1</b> uses no averaging and even weights.  The output data
+      consists of 4 files, all of which are SVD basis vectors:
+      <ul>
+        <li>
+          <a href = "ex01_input.txt">ex01_input.txt</a>,
+          the input commands.
+        </li>
+        <li>
+          <a href = "ex01.txt">ex01.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "ex01_svd_001.txt">ex01_svd_001.txt</a>,
+          output SVD file #1.
+        </li>
+        <li>
+          <a href = "ex01_svd_002.txt">ex01_svd_002.txt</a>,
+          output SVD file #2.
+        </li>
+        <li>
+          <a href = "ex01_svd_003.txt">ex01_svd_003.txt</a>,
+          output SVD file #3.
+        </li>
+        <li>
+          <a href = "ex01_svd_004.txt">ex01_svd_004.txt</a>,
+          output SVD file #4.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EXAMPLE 2</b> uses no averaging and uneven weights.  The output data
+      consists of 4 files, all of which are SVD basis vectors:
+      <ul>
+        <li>
+          <a href = "ex02_input.txt">ex02_input.txt</a>,
+          the input commands.
+        </li>
+        <li>
+          <a href = "ex02.txt">ex02.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "ex02_svd_001.txt">ex02_svd_001.txt</a>,
+          output SVD file #1.
+        </li>
+        <li>
+          <a href = "ex02_svd_002.txt">ex02_svd_002.txt</a>,
+          output SVD file #2.
+        </li>
+        <li>
+          <a href = "ex02_svd_003.txt">ex02_svd_003.txt</a>,
+          output SVD file #3.
+        </li>
+        <li>
+          <a href = "ex02_svd_004.txt">ex02_svd_004.txt</a>,
+          output SVD file #4.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EXAMPLE 3</b> uses averaging and even weights.  The output data
+      consists of 5 files, all of which are SVD basis vectors:
+      <ul>
+        <li>
+          <a href = "ex03_input.txt">ex03_input.txt</a>,
+          the input commands.
+        </li>
+        <li>
+          <a href = "ex03.txt">ex03.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "ex03_svd_000.txt">ex03_svd_000.txt</a>,
+          output average vector.
+        </li>
+        <li>
+          <a href = "ex03_svd_001.txt">ex03_svd_001.txt</a>,
+          output SVD file #1.
+        </li>
+        <li>
+          <a href = "ex03_svd_002.txt">ex03_svd_002.txt</a>,
+          output SVD file #2.
+        </li>
+        <li>
+          <a href = "ex03_svd_003.txt">ex03_svd_003.txt</a>,
+          output SVD file #3.
+        </li>
+        <li>
+          <a href = "ex03_svd_004.txt">ex03_svd_004.txt</a>,
+          output SVD file #4.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

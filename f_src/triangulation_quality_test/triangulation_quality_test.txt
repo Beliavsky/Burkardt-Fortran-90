@@ -1,0 +1,170 @@
+ 
+10 September 2020   4:48:25.715 PM
+ 
+TRIANGULATION_QUALITY:
+  FORTRAN90 version:
+  Compute triangulation quality measures.
+ 
+  Read the header of "ell3_nodes.txt".
+ 
+  Spatial dimension NODE_DIM =        2
+  Number of points NODE_NUM  =       21
+ 
+  Read the data in "ell3_nodes.txt".
+ 
+  First 5 nodes:
+ 
+  Row         1             2       
+  Col
+ 
+    1    0.00000       0.00000    
+    2    1.00000       0.00000    
+    3    2.00000       0.00000    
+    4    3.00000       0.00000    
+    5    4.00000       0.00000    
+ 
+  Read the header of "ell3_elements.txt".
+ 
+  Triangle order =        3
+  Number of triangles ELEMENT_NUM  =       24
+ 
+  Read the data in "ell3_elements.txt".
+ 
+  First 10 triangles:
+ 
+  Row       1      2      3
+  Col
+ 
+    1       1      2      6
+    2       7      6      2
+    3       2      3      7
+    4       8      7      3
+    5       3      4      8
+    6       9      8      4
+    7       4      5      9
+    8      10      9      5
+    9       6      7     11
+   10      12     11      7
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+ 
+  ALPHA compares the smallest angle against 60 degrees.
+  Values of ALPHA range from 0 (extremely poor) to 1 (excellent).
+  (The second figure is the same number in degrees.)
+ 
+  ALPHA_MIN  : minimum over all triangles =   0.750000         45.0000    
+  ALPHA_AVE  : average over all triangles =   0.750000         45.0000    
+  ALPHA_AREA : average weighted by area =    0.750000         45.0000    
+ 
+  AREA compares the areas of the triangles.
+  Values of AREA_RATIO range from 0 (extremely poor) to 1 (excellent).
+ 
+  AREA_MIN   : minimum area         =   0.500000    
+  AREA_MAX   : maximum area         =   0.500000    
+  AREA_RATIO : minimum/maximum area =    1.00000    
+  AREA_AVE   : average area         =   0.500000    
+  AREA_STD   : standard deviation   =    0.00000    
+  AREA_NEG   : area < 0             =        0
+  AREA_ZERO  : area = 0             =        0
+ 
+  Q is the ratio of 2 * inradius to outradius.
+  Values of Q range from 0 (extremely poor) to 1 (excellent).
+ 
+  Q_MIN  : minimum Q                  =   0.828427    
+  Q_MAX  : maximum Q                  =   0.828427    
+  Q_AVE  : average Q                  =   0.828427    
+  Q_AREA : average Q weighted by area =   0.828427    
+ 
+  The geometric bandwidth          M =       11
+ 
+TRIANGULATION_QUALITY:
+  Normal end of execution.
+ 
+10 September 2020   4:48:25.716 PM
+ 
+10 September 2020   4:48:25.719 PM
+ 
+TRIANGULATION_QUALITY:
+  FORTRAN90 version:
+  Compute triangulation quality measures.
+ 
+  Read the header of "hex_holes6_nodes.txt".
+ 
+  Spatial dimension NODE_DIM =        2
+  Number of points NODE_NUM  =      511
+ 
+  Read the data in "hex_holes6_nodes.txt".
+ 
+  First 5 nodes:
+ 
+  Row         1             2       
+  Col
+ 
+    1    0.00000      0.944400    
+    2    0.00000       1.00000    
+    3   0.378000E-01  0.965900    
+    4   0.378000E-01  0.910300    
+    5   0.756000E-01  0.931800    
+ 
+  Read the header of "hex_holes6_elements.txt".
+ 
+  Triangle order =        6
+  Number of triangles ELEMENT_NUM  =      232
+ 
+  Read the data in "hex_holes6_elements.txt".
+ 
+  First 10 triangles:
+ 
+  Row       1      2      3      4      5      6
+  Col
+ 
+    1     294    373    354    325    352    323
+    2      60     95     86     73     81     71
+    3     373    374    428    410    412    411
+    4      95     96    136    114    116    115
+    5     239    294    242    268    269    248
+    6      36     60     42     46     47     37
+    7      96     62     91     76     74     82
+    8     374    301    361    332    330    355
+    9      96     91    135     82    100     99
+   10      91     62     66     74     61     75
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+ 
+  ALPHA compares the smallest angle against 60 degrees.
+  Values of ALPHA range from 0 (extremely poor) to 1 (excellent).
+  (The second figure is the same number in degrees.)
+ 
+  ALPHA_MIN  : minimum over all triangles =   0.433068         25.9841    
+  ALPHA_AVE  : average over all triangles =   0.598739         35.9243    
+  ALPHA_AREA : average weighted by area =    0.600599         36.0359    
+ 
+  AREA compares the areas of the triangles.
+  Values of AREA_RATIO range from 0 (extremely poor) to 1 (excellent).
+ 
+  AREA_MIN   : minimum area         =   0.206444E-02
+  AREA_MAX   : maximum area         =   0.629103E-02
+  AREA_RATIO : minimum/maximum area =   0.328157    
+  AREA_AVE   : average area         =   0.408723E-02
+  AREA_STD   : standard deviation   =   0.778069E-03
+  AREA_NEG   : area < 0             =        0
+  AREA_ZERO  : area = 0             =        0
+ 
+  Q is the ratio of 2 * inradius to outradius.
+  Values of Q range from 0 (extremely poor) to 1 (excellent).
+ 
+  Q_MIN  : minimum Q                  =   0.618476    
+  Q_MAX  : maximum Q                  =   0.999975    
+  Q_AVE  : average Q                  =   0.952905    
+  Q_AREA : average Q weighted by area =   0.957931    
+ 
+  The geometric bandwidth          M =      167
+ 
+TRIANGULATION_QUALITY:
+  Normal end of execution.
+ 
+10 September 2020   4:48:25.722 PM

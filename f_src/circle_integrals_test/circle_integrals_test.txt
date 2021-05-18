@@ -1,0 +1,43 @@
+09 June 2020   7:11:24.693 AM
+ 
+CIRCLE_INTEGRALS_TEST
+  FORTRAN90 version
+  Test the CIRCLE_INTEGRALS library.
+ 
+TEST01
+  Use CIRCLE01_SAMPLE to compare exact and
+  estimated integrals along the circumference 
+  of the unit circle in 2D.
+
+  Number of sample points used is   4192
+
+  If any exponent is odd, the integral is zero.
+  We restrict this test to randomly chosen even exponents.
+
+  Ex  Ey     MC-Estimate           Exact      Error
+
+  10   6    0.812931E-02    0.862864E-02    0.50E-03
+   0   6     2.01266         1.96350        0.49E-01
+  10   6    0.812931E-02    0.862864E-02    0.50E-03
+   6  10    0.825513E-02    0.862864E-02    0.37E-03
+   6   6    0.290444E-01    0.306796E-01    0.16E-02
+   6   4    0.699347E-01    0.736311E-01    0.37E-02
+   2   6    0.242124        0.245437        0.33E-02
+   8   2    0.168632        0.171806        0.32E-02
+   2   4    0.382608        0.392699        0.10E-01
+   8   8    0.632997E-02    0.671117E-02    0.38E-03
+   6   4    0.699347E-01    0.736311E-01    0.37E-02
+   4   8    0.415049E-01    0.429515E-01    0.14E-02
+   8   8    0.632997E-02    0.671117E-02    0.38E-03
+  10   0     1.57835         1.54625        0.32E-01
+   0  10     1.59896         1.54625        0.53E-01
+   4   8    0.415049E-01    0.429515E-01    0.14E-02
+   2   2    0.761660        0.785398        0.24E-01
+   8   2    0.168632        0.171806        0.32E-02
+   2   6    0.242124        0.245437        0.33E-02
+   2   8    0.171575        0.171806        0.23E-03
+ 
+CIRCLE_INTEGRALS_TEST
+  Normal end of execution.
+ 
+09 June 2020   7:11:24.694 AM

@@ -1,0 +1,237 @@
+<html>
+
+  <head>
+    <title>
+      FN - The Fullerton Function code
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FN <br> The Fullerton Function code.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FN</b>,
+      a FORTRAN90 code which
+      evaluates elementary and special functions using Chebyshev polynomials,
+      including Airy, Bessel I, Bessel J, Bessel K, Bessel Y, beta, 
+      confluent hypergeometric, cosine integral, Dawson's integral, 
+      digamma (psi), error, exponential integral, gamma, hyperbolic cosine
+      integral, hyperbolic sine integral, incomplete gamma, log gamma, 
+      logarithmic integral, Pochhammer, psi, sine integral, Spence;
+      by Wayne Fullerton.
+    </p>
+
+    <p>
+      The original version of the code provided routines for
+      single precision complex, single precision real, and
+      double precision real arguments and used the prefixes
+      "C" and "D" to indicate the complex and double precision versions.
+    </p>
+
+    <p>
+      This scheme has been modified for consistency, and also
+      to avoid conflict with the names of functions commonly
+      provided by various compilers.  The prefixes "C4_", "R4_"
+      and "R8_" are used to indicate functions for single precision complex,
+      single precision real, and double precision real arguments.
+      For example, the sine function can be calculated by the functions
+      <b>C4_SIN</b>, <b>R4_SIN</b> or <b>R8_SIN</b>.
+    </p>
+
+    <p>
+      The original, true, correct version of FN
+      is available through NETLIB:
+              <a href = "http://www.netlib.org/fn/index.html">
+                         http://www.netlib.org/fn/index.html</a>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FN</b> is available in
+      <a href = "../../c_src/fn/fn.html">a C version</a> and
+      <a href = "../../cpp_src/fn/fn.html">a C++ version</a> and
+      <a href = "../../f_src/fn/fn.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fn/fn.html">a MATLAB version</a> and
+      <a href = "../../py_src/fn/fn.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/c4lib/c4lib.html">
+      C4LIB</a>,
+      a FORTRAN90 code which
+      implements certain elementary functions for single precision complex variables;
+    </p>
+
+    <p>
+      <a href = "../../f_src/c8lib/c8lib.html">
+      C8LIB</a>,
+      a FORTRAN90 code which
+      implements certain elementary functions for double precision complex variables;
+    </p>
+
+    <p>
+      <a href = "../../f_src/clausen/clausen.html">
+      CLAUSEN</a>,
+      a FORTRAN90 code which
+      evaluates a Chebyshev interpolant to the Clausen function Cl2(x).
+    </p>
+
+    <p>
+      <a href = "../../f90_src/f90_intrinsics/f90_intrinsics.html">
+      F90_INTRINSICS</a>,
+      a FORTRAN90 code which
+      illustrates the use of FORTRAN90 intrinsic functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fn_test/fn_test.html">
+      fn_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/gfortran_intrinsics/gfortran_intrinsics.html">
+      GFORTRAN_INTRINSICS</a>,
+      a FORTRAN90 code which
+      illustrates the use of intrinsic functions provided by the Gnu GFORTRAN compiler.
+    </p>
+
+    <p>
+      <a href = "../../f_src/machar/machar.html">
+      MACHAR</a>,
+      a FORTRAN90 code which
+      computes the appropriate values of machine constants for a given machine.
+    </p>
+
+    <p>
+      <a href = "../../f_src/machine/machine.html">
+      MACHINE</a>,
+      a FORTRAN90 code which
+      stores the appropriate values of machine constants for a given machine.
+    </p>
+
+    <p>
+      <a href = "../../f_src/r4lib/r4lib.html">
+      R4LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines, using "R4" or
+      "single precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines, using "R8" or
+      "double precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/specfun/specfun.html">
+      SPECFUN</a>,
+      a FORTRAN90 code which
+      computes special functions, including Bessel I, J, K and Y functions,
+      and the Dawson, E1, EI, Erf, Gamma, Psi/Digamma functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/special_functions/special_functions.html">
+      SPECIAL_FUNCTIONS</a>,
+      a FORTRAN90 code which
+      computes the Beta, Error, Gamma, Lambda, Psi functions,
+      the Airy, Bessel I, J, K and Y, Hankel, Jacobian elliptic, Kelvin, Mathieu, 
+      Struve functions,
+      spheroidal angular functions, parabolic cylinder functions,
+      hypergeometric functions,
+      the Bernoulli and Euler numbers,
+      the Hermite, Laguerre and Legendre polynomials, 
+      the cosine, elliptic, exponential, Fresnel and sine integrals,
+      by Shanjie Zhang, Jianming Jin;
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 code which
+      supplies test values of various mathematical functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms715/toms715.html">
+      TOMS715</a>,
+      a FORTRAN90 code which
+      evaluates special functions, including the Bessel I, J, K, and Y functions
+      of order 0, of order 1, and of any real order, Dawson's integral, 
+      the error function, exponential integrals, the gamma function, 
+      the normal distribution function, the psi function.
+      This is a version of ACM TOMS algorithm 715.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Wayne Fullerton,<br>
+          Portable Special Function Routines,<br>
+          in Portability of Numerical Software,<br>
+          edited by Wayne Cowell,<br>
+          Lecture Notes in Computer Science, Volume 57, pages 452-483,<br>
+          Springer 1977,<br>
+          ISBN: 978-3-540-08446-4,<br>
+          LC: QA297.W65.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fn.f90">fn.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "fn.sh">fn.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

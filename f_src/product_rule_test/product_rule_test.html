@@ -1,0 +1,152 @@
+<html>
+
+  <head>
+    <title>
+      product_rule_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      product_rule_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>product_rule_test</b>,
+      a FORTRAN90 code which
+      calls product_rule(), which
+      creates a multidimensional quadrature rule by using
+      a product of distinct one-dimensional quadrature rules.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/product_rule/product_rule.html">
+      product_rule</a>,
+      a FORTRAN90 code which
+      constructs a product quadrature rule from distinct 1D factor rules.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "product_rule_test.sh">product_rule_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "product_rule_test.txt">product_rule_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The first factor is a 1D Clenshaw Curtis rule of order 3:
+      <ul>
+        <li>
+          <a href = "cc_d1_o3_x.txt">
+          cc_d1_o3_x.txt</a>,
+          the abscissas of a 1D Clenshaw Curtis rule of order 3.
+        </li>
+        <li>
+          <a href = "cc_d1_o3_w.txt">
+          cc_d1_o3_w.txt</a>,
+          the weights of a 1D Clenshaw Curtis rule of order 3.
+        </li>
+        <li>
+          <a href = "cc_d1_o3_r.txt">
+          cc_d1_o3_r.txt</a>,
+          defines the range of the region.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The second factor is a 1D Gauss Legendre rule of order 2:
+      <ul>
+        <li>
+          <a href = "gl_d1_o2_x.txt">
+          gl_d1_o2_x.txt</a>,
+          the abscissas of a 1D Clenshaw Curtis rule of order 2.
+        </li>
+        <li>
+          <a href = "gl_d1_o2_w.txt">
+          gl_d1_o2_w.txt</a>,
+          the weights of a 1D Clenshaw Curtis rule of order 2.
+        </li>
+        <li>
+          <a href = "gl_d1_o2_r.txt">
+          gl_d1_o2_r.txt</a>,
+          defines the range of the region.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      We give the command
+      <blockquote>
+        <b>product_rule</b> factors.txt
+      </blockquote>
+      <ul>
+        <li>
+          <a href = "factors.txt">
+          factors.txt</a>,
+          a file containing the list of factors.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The resulting product rule files:
+      <ul>
+        <li>
+          <a href = "ccgl_d2_o3x2_x.txt">
+          ccgl_d2_o3x2_x.txt</a>,
+          the abscissas of a 2D Clenshaw Curtis product rule of order 6.
+        </li>
+        <li>
+          <a href = "ccgl_d2_o3x2_w.txt">
+          ccgl_d2_o3x2_w.txt</a>,
+          the weights of a 2D Clenshaw Curtis product rule of order 6.
+        </li>
+        <li>
+          <a href = "ccgl_d2_o3x2_r.txt">
+          ccgl_d2_o3x2_r.txt</a>,
+          defines the range of the product region.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

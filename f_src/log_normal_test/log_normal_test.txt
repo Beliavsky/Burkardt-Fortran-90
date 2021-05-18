@@ -1,0 +1,47 @@
+28 July 2020   4:38:14.229 PM
+ 
+LOG_NORMAL_TEST
+  FORTRAN90 version:
+  Test the LOG_NORMAL library.
+ 
+LOG_NORMAL_CDF_TEST
+  LOG_NORMAL_CDF evaluates the Log Normal CDF;
+  LOG_NORMAL_CDF_INV inverts the Log Normal CDF.
+  LOG_NORMAL_PDF evaluates the Log Normal PDF;
+ 
+  PDF parameter MU =       10.0000    
+  PDF parameter SIGMA =    2.25000    
+ 
+       X            PDF           CDF            CDF_INV
+ 
+     3829.62      0.342207E-04  0.218418       3829.62    
+    0.103126E+07  0.398836E-07  0.956318      0.103126E+07
+     187683.      0.600352E-06  0.829509       187683.    
+     31236.9      0.560821E-05  0.561695       31236.9    
+     13611.8      0.127314E-04  0.415307       13611.8    
+     744.708      0.766792E-04  0.661187E-01   744.708    
+     5093.04      0.281690E-04  0.257578       5093.04    
+     1393.81      0.599421E-04  0.109957       1393.81    
+     472.134      0.873521E-04  0.438290E-01   472.134    
+     47588.4      0.351376E-05  0.633966       47588.4    
+ 
+LOG_NORMAL_SAMPLE_TEST
+  LOG_NORMAL_MEAN computes the Log Normal mean;
+  LOG_NORMAL_SAMPLE samples the Log Normal distribution;
+  LOG_NORMAL_VARIANCE computes the Log Normal variance.
+ 
+  PDF parameter MU =       1.00000    
+  PDF parameter SIGMA =    2.00000    
+  PDF mean =                       20.0855    
+  PDF variance =                   21623.0    
+ 
+  Sample size =         1000
+  Sample mean =        18.2209    
+  Sample variance =    3776.12    
+  Sample maximum =     835.466    
+  Sample minimum =    0.815371E-02
+ 
+LOG_NORMAL_TEST
+  Normal end of execution.
+ 
+28 July 2020   4:38:14.229 PM

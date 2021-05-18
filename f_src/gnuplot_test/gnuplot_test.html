@@ -1,0 +1,753 @@
+<html>
+
+  <head>
+    <title>
+      gnuplot_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      gnuplot_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>gnuplot_test</b>,
+      FORTRAN90 codes which
+      illustrate how commands and data for the GNUPLOT graphics program
+      can be generated, to illustrate the results of a calculation. 
+    </p>
+
+    <p>
+      Ordinarily, GNUPLOT is used interactively; that is, the user
+      invokes the program, and then describes the plot to be created.
+      The data for the plot is created either by a formula, or by
+      reference to some data file created earlier.  
+    </p>
+
+    <p>
+      It is often extremely important to be able to create graphical
+      images of the results of an executable program.  If the user is
+      familiar with GNUPLOT, then the program can be modified to create
+      a suitable data file, and, once the program has completed,
+      the user can run GNUPLOT and use that data file to create a graph.
+    </p>
+
+    <p>
+      However, if the program is going to create the data file, it can
+      just as easily create a file containing the appropriate commands
+      to GNUPLOT that will create the desired image.  In this way, 
+      the user can avoid having to recall the correct commands in the
+      correct order to create the plot.
+    </p>
+
+    <p>
+      Thus, the program might create two files, called, perhaps
+      <i>data.txt</i> and <i>commands.txt</i>.  The command file would
+      contain GNUPLOT commands, including one that refers to the data file
+      itself.  To create the graphics image, the user would simply type
+      <pre>
+        gnuplot &lt; commands.txt
+      </pre>
+    </p>
+
+    <p>
+      This directory includes some sample programs which carry out 
+      numerical calculations, creating data and command files that
+      are used in exactly this way.
+    </p>
+
+    <p>
+      By the way, every time I run gnuplot, I get the obnoxious warning
+      message
+      <pre>
+Could not find/open font when opening font "arial", using internal non-scalable font
+      </pre>
+      I had to fix this with the following lines added to my .bashrc file:
+      <pre>
+export GDFONTPATH=/usr/share/fonts/liberation
+export GNUPLOT_DEFAULT_GDFONT=LiberationSans-Regular
+      </pre>
+    </p>
+
+    <p>
+      Some common plot types include:
+      <ul>
+        <li>
+          <b>animation</b>, a sequential display of images which are meant
+          to suggest motion or evolution.
+        </li>
+        <li>
+          <b>bar</b>, a display of values y(1:n) in which every value
+          y(i) is represented by a bar of that height.
+        </li>
+        <li>
+          <b>bar3d</b>, a display of values z(1:m,1:n) over a 2D grid,
+          in which every value z(i,j) is represented by a bar of that height.
+        </li>
+        <li>
+          <b>barh</b>, a display of values x(1:n) in which every value
+          x(i) is represented by a horizontal bar of that length.
+          The horizontal format can be more suitable for labeling bars
+          when there are many of them.
+        </li>
+        <li>
+          <b>binary_tree</b>, a connected directed graph with no circuits, 
+          in which each node has no more than 2 descendants.
+        </li>
+        <li>
+          <b>contour fill</b>, a display of values z(x,y) in which the values of
+          z are suggested by regions filled with color.
+        </li>
+        <li>
+          <b>contour line</b>, a display of values z(x,y) in which the values of
+          z are suggested by colored contour lines.
+        </li>
+        <li>
+          <b>decision_tree</b>, a connected directed graph with no circuits, 
+          in which labeled nodes represent current states to be tested, and
+          edges represent the choice or decision to move from one state to
+          another.
+        </li>
+        <li>
+          <b>dendrogram</b>, a connected directed graph with no circuits, 
+          which generally has a single root node, and illustrates the
+          genealogy or relatedness of a set of objects.
+        </li>
+        <li>
+          <b>digraph</b>, a "directed graph", nodes (possibly with defined
+          locations, labels or colors), connected by directed edges 
+          (possibly with defined weights, labels, colors or linestyles).
+        </li>
+        <li>
+          <b>fill</b>, a shape composed of polygons, each of which is
+          filled with a particular color.
+        </li>
+        <li>
+          <b>graph</b>, nodes (possibly with defined locations, labels or colors), 
+          connected by undirected edges (possibly with defined weights, labels, 
+          colors or linestyles).
+        </li>
+        <li>
+          <b>histogram</b>, a display of values x in which the x range
+          is divided into intervals, and the value y(i) represents the
+          number of x values in the i-th interval, and a bar plot of
+          intervals versus count is displayed.
+        </li>
+        <li>
+          <b>plot</b>, a display of a single curve defined by a sequence of 
+          functional pairs (x,y(x)), or a function y=f(x) sampled over an
+          interval, or a sequence of related pairs (x,y).
+        </li>
+        <li>
+          <b>plot3d</b>, a 3D display of a single curve defined by a sequence of 
+          triples (x(i),y(i),z(i)), or a parametric function (x(t),y(t),z(t)) 
+          sampled over an interval.
+        </li>
+        <li>
+          <b>plots</b>, several curves on a single display.
+        </li>
+        <li>
+          <b>scatter</b>, a display of unconnected pairs (x,y), whose
+          positions are indicated by markers.
+        </li>
+        <li>
+          <b>scatter3d</b>, a 3D display of unconnected triples (x,y,z), whose
+          positions are indicated by markers.
+        </li>
+        <li>
+          <b>scatters</b>, a scatter plot involving several distinct sets of
+          (x,y) pairs are displayed, distinguished by markers of different
+          size, shape or color.
+        </li>
+        <li>
+          <b>subplots</b>, a display involving two or more separate plots,
+          shown as a single figure.
+        </li>
+        <li>
+          <b>surface</b>, a 3D display of values z(x,y), represented
+          as a surface.
+        </li>
+        <li>
+          <b>vector</b>, a 2D display of vectors (u,v)(x,y), representing
+          a gradient field, an ODE direction field, or a flow of some kind.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>gnuplot_test</b> is available in
+      <a href = "../../c_src/gnuplot_test/gnuplot_test.html">a C version</a> and
+      <a href = "../../cpp_src/gnuplot_test/gnuplot_test.html">a C++ version</a> and
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/gnuplot_test/gnuplot_test.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/analemma/analemma.html">
+      ANALEMMA</a>,
+      a FORTRAN90 program which
+      evaluates the equation of time, a formula for the difference between
+      the uniform 24 hour day and the actual position of the sun, 
+      creating data that can be plotted by gnuplot,
+      based on a program by Brian Tung.
+    </p>
+
+    <p>
+      <a href = "../../f_src/black_scholes/black_scholes.html">
+      BLACK_SCHOLES</a>,
+      a FORTRAN90 library which
+      implements some simple approaches to
+      the Black-Scholes option valuation theory,
+      creating graphics files for processing by gnuplot,
+      by Desmond Higham.
+    </p>
+
+    <p>
+      <a href = "../../f_src/brownian_motion_simulation/brownian_motion_simulation.html">
+      BROWNIAN_MOTION_SIMULATION</a>,
+      a FORTRAN90 library which
+      simulates Brownian motion in an M-dimensional region,
+      creating graphics files that can be displayed with gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/circle_segment/circle_segment.html">
+      CIRCLE_SEGMENT</a>,
+      a FORTRAN90 library which
+      carries out computations associated with a circle segment, including
+      height, angle, area, centroid, sampling, and quadrature,
+      creating some graphics plots using gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/disk_grid/disk_grid.html">
+      DISK_GRID</a>,
+      a FORTRAN90 library which
+      computes grid points that lie 
+      inside a disk of user specified radius and center in 2D,
+      using gnuplot to create an image of the grid.
+    </p>
+
+    <p>
+      <a href = "../../f_src/dislin/dislin.html">
+      DISLIN</a>,
+      FORTRAN90 programs which
+      illustrate the use of DISLIN, a scientific graphics package, 
+      by Helmut Michels.
+    </p>
+
+    <p>
+      <a href = "../../f_src/edge/edge.html">
+      EDGE</a>,
+      a FORTRAN90 library which
+      defines some test functions in 1D, 2D and 3D for the detection 
+      of edges or discontinuities.  It uses gnuplot to display the
+      jumps in curves and surfaces.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fair_dice_simulation/fair_dice_simulation.html">
+      FAIR_DICE_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates N games in which two fair dice are thrown and summed,
+      creating graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fd1d_advection_ftcs/fd1d_advection_ftcs.html">
+      FD1D_ADVECTION_FTCS</a>,
+      a FORTRAN90 program which
+      applies the finite difference method (FDM) to solve the time-dependent
+      advection equation ut = - c * ux in one spatial dimension, with
+      a constant velocity, using the forward time, centered space (FTCS)
+      difference method, writing graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fd1d_advection_lax/fd1d_advection_lax.html">
+      FD1D_ADVECTION_LAX</a>,
+      a FORTRAN90 program which
+      applies the finite difference method (FDM) to solve the time-dependent
+      advection equation ut = - c * ux in one spatial dimension, with
+      a constant velocity, using the Lax method to treat the time derivative,
+      writing graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">
+      FD1D_ADVECTION_LAX_WENDROFF</a>,
+      a FORTRAN90 program which
+      applies the finite difference method (FDM) to solve the time-dependent
+      advection equation ut = - c * ux in one spatial dimension, with
+      a constant velocity, 
+      using the Lax-Wendroff method to treat the time derivative,
+      writing graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fd1d_predator_prey/fd1d_predator_prey.html">
+      FD1D_PREDATOR_PREY</a>,
+      a FORTRAN90 program which
+      implements the finite difference method (FDM) for a predator-prey system
+      with spatial variation in 1D, 
+      creating graphics files for processing by gnuplot,
+      by Marcus Garvie.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gnufor/gnufor.html">
+      GNUFOR</a>, 
+      a FORTRAN90 library which
+      provides an interface to the gnuplot graphics library.
+    </p>
+
+    <p>
+      <a href = "../../f_src/high_card_simulation/high_card_simulation.html">
+      HIGH_CARD_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates a situation in which you see the cards in a deck one by one,
+      and must select the one you think is the highest and stop;
+      the program uses gnuplot for graphics.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ising_2d_simulation/ising_2d_simulation.html">
+      ISING_2D_SIMULATION</a>,
+      a FORTRAN90 program which
+      carries out a Monte Carlo simulation of an Ising model.
+      a 2D array of positive and negative charges,
+      each of which is likely to flip to be in agreement with neighbors,
+      using gnuplot to make images of the initial and final configurations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lebesgue/lebesgue.html">
+      LEBESGUE</a>,
+      a FORTRAN90 library which
+      is given a set of nodes in 1D, and
+      plots the Lebesgue function, and estimates the Lebesgue constant,
+      which measures the maximum magnitude of the potential error 
+      of Lagrange polynomial interpolation, and which uses gnuplot
+      to make plots of the Lebesgue function.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lobatto_polynomial/lobatto_polynomial.html">
+      LOBATTO_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates Lobatto polynomials, similar to Legendre polynomials
+      except that they are zero at both endpoints.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lorenz_ode/lorenz_ode.html">
+      LORENZ_ODE</a>,
+      a FORTRAN90 program which
+      approximates solutions to the Lorenz system,
+      creating output files that can be displayed by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/md1/md1.html">
+      MD1</a>,
+      a FORTRAN90 program which
+      carries out a molecular dynamics simulation,
+      and which writes graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+       <a href = "../../f_src/naca/naca.html">
+      NACA</a>,
+      a FORTRAN90 library which
+      can take the parameters of certain NACA airfoils and return the
+      coordinates of a sequence of points that outline the wing shape.
+      The data can be displayed with gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nearest_interp_1d/nearest_interp_1d.html">
+      NEAREST_INTERP_1D</a>,
+      a FORTRAN90 library which
+      interpolates a set of data using a piecewise constant interpolant
+      defined by the nearest neighbor criterion,
+      creating graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ornstein_uhlenbeck/ornstein_uhlenbeck.html">
+      ORNSTEIN_UHLENBECK</a>,
+      a FORTRAN90 library which 
+      approximates solutions of the Ornstein-Uhlenbeck 
+      stochastic ordinary differential equation (SODE) using the Euler method
+      and the Euler-Maruyama method, 
+      and creating graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/padua/padua.html">
+      PADUA</a>,
+      a FORTRAN90 library which
+      returns the points and weights for Padu sets, useful for interpolation
+      in 2D.  The points are plotted with gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/poisson_simulation/poisson_simulation.html">
+      POISSON_SIMULATION</a>,
+      a FORTRAN90 library which
+      simulates a Poisson process in which events randomly occur with an
+      average waiting time of Lambda, creating output for graphics by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_triangulate/polygon_triangulate.html">
+      POLYGON_TRIANGULATE</a>,
+      a FORTRAN90 library which
+      triangulates a possibly nonconvex polygon,
+      and which can use gnuplot to display the external edges and 
+      internal diagonals of the triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pwl_interp_1d/pwl_interp_1d.html">
+      PWL_INTERP_1D</a>,
+      a FORTRAN90 library which
+      interpolates a set of data using a piecewise linear function,
+      creating graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sde/sde.html">
+      SDE</a>,
+      a FORTRAN90 library which
+      illustrates properties of 
+      stochastic ordinary differential equations (SODE's), and
+      common algorithms for their analysis, including the Euler method,
+      the Euler-Maruyama method, and the Milstein method,
+      making graphics files for processing and display by gnuplot,
+      by Desmond Higham;
+    </p>
+
+    <p>
+      <a href = "../../f_src/spiral_data/spiral_data.html">
+      SPIRAL_DATA</a>,
+      a FORTRAN90 program which
+      computes a velocity vector field that satisfies the continuity 
+      equation, writing the data to a file that can be plotted
+      by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spring_ode2/spring_ode2.html">
+      SPRING_ODE2</a>,
+      a FORTRAN90 program which
+      shows how gnuplot graphics can be used to illustrate
+      a solution of the ordinary differential equation (ODE) that describes
+      the motion of a weight attached to a spring.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stochastic_diffusion/stochastic_diffusion.html">
+      STOCHASTIC_DIFFUSION</a>,
+      a FORTRAN90 library which
+      implements several versions of a stochastic diffusivity coefficient,
+      and displays sample results using gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stochastic_heat2d/stochastic_heat2d.html">
+      STOCHASTIC_HEAT2D</a>,
+      a FORTRAN90 program which
+      implements a finite difference method (FDM) for the steady
+      (time independent) 2D heat equation, 
+      with a stochastic heat diffusivity coefficient.
+    </p>
+
+    <p>
+      <a href = "../../f_src/string_simulation/string_simulation.html">
+      STRING_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates the behavior of a vibrating string,
+      creating files that can be displayed by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/svd_snowfall/svd_snowfall.html">
+      SVD_SNOWFALL</a>,
+      a FORTRAN90 program which
+      reads a file containing historical snowfall data and 
+      analyzes the data with the Singular Value Decomposition (SVD),
+      and plots created by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/two_body_simulation/two_body_simulation.html">
+      TWO_BODY_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates the behavior of two bodies, constrained to lie in a plane,
+      moving under the influence of gravity, with one body much more massive 
+      than the other, creating graphics files for processing by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/vandermonde_interp_1d/vandermonde_interp_1d.html">
+      VANDERMONDE_INTERP_1D</a>,
+      a FORTRAN90 library which
+      finds a polynomial interpolant to data y(x) of a 1D argument, by
+      setting up and solving a linear system for the polynomial coefficients,
+      involving the Vandermonde matrix,
+      creating graphics files for processing by gnuplot.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philipp Janert,<br>
+          Gnuplot in Action: Understanding Data with Graphs,<br>
+          Manning, 2010,<br>
+          ISBN13: 978-1-933988-39-8,<br>
+          LC: QA276.4.J37.
+        </li>
+        <li>
+          Thomas Williams, Colin Kelley,<br>
+          gnuplot 4.4, An Interactive Plotting Program,<br>
+          The Free Software Foundation, 2010.
+        </li>
+        <li>
+          <a href = "http://www.gnuplot.info/">The GNUPLOT Website</a>.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "gnuplot_test.sh">gnuplot_test.sh</a>,
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>corkscrew_plot3d</b> generates (X,Y,Z) points that lie along a 3D curve
+      looking something like a corkscrew.  
+      <ul>
+        <li>
+          <a href = "corkscrew_plot3d.f90">corkscrew_plot3d.f90</a>,
+          creates the data, and writes the GNUPLOT files.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.sh">corkscrew_plot3d.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.txt">corkscrew_plot3d.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d_data.txt">corkscrew_plot3d_data.txt</a>,
+          the X, Y, Z coordinates.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d_commands.txt">corkscrew_plot3d_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.png">corkscrew_plot3d.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>DAMPED_SINE</b> evaluates the damped sine correlation function 
+      for a range of values of its argument.  A plot of the function is desired.
+      <ul>
+        <li>
+          <a href = "damped_sine.f90">damped_sine.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "damped_sine.sh">damped_sine.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "damped_sine.txt">damped_sine.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "damped_sine_data.txt">damped_sine_data.txt</a>,
+          a file containing the data values.
+        </li>
+        <li>
+          <a href = "damped_sine_commands.txt">damped_sine_commands.txt</a>,
+          GNUPLOT commands that can create an image from the data file.
+        </li>
+        <li>
+          <a href = "damped_sine.png">damped_sine.png</a>,
+          an image of the data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>grid_surface</b> records, on a 41x41 grid over [-2,2]x[-2,+2], the 
+      values z = exp(-(x^2+y^2)) * cos(0.25*x) * sin(y) * cos(2*(x^2+y^2)).
+      The data is plotted as a surface.
+      <ul>
+        <li>
+          <a href = "grid_surface.f90">grid_surface.f90</a>,
+          creates the data, and writes the GNUPLOT files.
+        </li>
+        <li>
+          <a href = "grid_surface.sh">grid_surface.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "grid_surface.txt">grid_surface.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "grid_surface_data.txt">grid_surface_data.txt</a>,
+          a list of time, prey, and predator.
+        </li>
+        <li>
+          <a href = "grid_surface_commands.txt">grid_surface_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "grid_surface.png">grid_surface.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>mario_fill</b> makes a simple image of Mario,
+      by constructing a grid of squares filled with color.
+      <ul>
+        <li>
+          <a href = "mario_fill.f90">mario_fill.f90</a>,
+          makes a command file for input to gnuplot.
+        </li>
+        <li>
+          <a href = "mario_fill.sh">mario_fill.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "mario_fill.txt">mario_fill.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "mario_fill_commands.txt">mario_fill_commands.txt</a>,
+          the gnuplot command file.
+        </li>
+        <li>
+          <a href = "mario_fill.png">mario_fill.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>predator_plot3d</b> models the populations of predators (foxes) and prey 
+      (rabbits) over time.  A 3D plot of (time, rabbits, foxes) is created.
+      <ul>
+        <li>
+          <a href = "predator_plot3d.f90">predator_plot3d.f90</a>,
+          creates the data, and writes the GNUPLOT files.
+        </li>
+        <li>
+          <a href = "predator_plot3d.sh">predator_plot3d.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "predator_plot3d.txt">predator_plot3d.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "predator_plot3d_data.txt">predator_plot3d_data.txt</a>,
+          a list of time, prey, and predator.
+        </li>
+        <li>
+          <a href = "predator_plot3d_commands.txt">predator_plot3d_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "predator_plot3d.png">predator_plot3d.png</a>,
+          a PNG image of the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>string_simulation</b> simulates the behavior of a string that obeys
+      the wave equation.  The shape of the string is to be plotted over successive
+      times.
+      <ul>
+        <li>
+          <a href = "string_simulation.f90">string_simulation.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "string_simulation.sh">string_simulation.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "string_simulation.txt">string_simulation.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "string_data.txt">string_data.txt</a>,
+          a file containing the data values.
+        </li>
+        <li>
+          <a href = "string_commands.txt">string_commands.txt</a>,
+          GNUPLOT commands that can create an image from the data file.
+        </li>
+        <li>
+          <a href = "string.png">string.png</a>,
+          an image of the data.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 16 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

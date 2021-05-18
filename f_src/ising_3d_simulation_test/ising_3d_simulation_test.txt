@@ -1,0 +1,74 @@
+19 July 2020   9:11:24.886 AM
+ 
+ISING_3D_SIMULATION
+  FORTRAN90 version
+  Monte Carlo simulation of a 3D Ising model.
+ 
+  The linear dimension of the system is N =       10
+  The number of iterations taken is ITERATIONS =       25
+ 
+  The transition probability table, based on the number
+  of neighbors with the same spin.
+ 
+      0         1         2         3         4         5         6
+ 
+    0.9900    0.9900    0.9900    0.8000    0.3000    0.2000    0.1000
+ 
+  Step     Positives       Flipped
+ 
+     0           514
+                               695
+     1           511
+                               786
+     2           503
+                               815
+     3           524
+                               835
+     4           521
+                               880
+     5           521
+                               915
+     6           506
+                               932
+     7           504
+                               935
+     8           503
+                               936
+     9           497
+                               937
+    10           494
+                               948
+    11           506
+                               956
+    12           500
+                               952
+    13           506
+                               961
+    14           497
+                               961
+    15           496
+                               956
+    16           500
+                               953
+    17           501
+                               957
+    18           504
+                               968
+    19           506
+                               966
+    20           500
+                               965
+    21           499
+                               968
+    22           505
+                               962
+    23           493
+                               964
+    24           493
+                               946
+    25           493
+ 
+ISING_3D_SIMULATION
+  Normal end of execution.
+ 
+19 July 2020   9:11:24.890 AM

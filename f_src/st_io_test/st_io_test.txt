@@ -1,0 +1,131 @@
+30 August 2020   7:47:14.928 PM
+ 
+ST_IO_TEST:
+  FORTRAN90 version
+  Test the ST_IO library.
+ 
+R8ST_WRITE_TEST
+  R8ST_WRITE writes an ST file.
+ 
+  Sparse Triplet (ST) header information:
+ 
+  Minimum row index I_MIN =        0
+  Maximum row index I_MAX =        4
+  Minimum col index J_MIN =        0
+  Maximum col index J_MAX =        4
+  Number of rows        M =        5
+  Number of columns     N =        5
+  Number of nonzeros  NST =       11
+ 
+  Sparse Triplet (ST) data:
+     5 rows by    5 columns
+     #     I     J       A
+  ----  ----  ----  --------------
+ 
+     1     4     0     51.000000    
+     2     0     1     12.000000    
+     3     0     0     11.000000    
+     4     2     2     33.000000    
+     5     0     4     15.000000    
+     6     4     2     53.000000    
+     7     4     4     55.000000    
+     8     1     1     22.000000    
+     9     2     4     35.000000    
+    10     3     3     44.000000    
+    11     1     0     21.000000    
+ 
+  Wrote the matrix data to "a5by5_r8.st".
+ 
+R8ST_READ_TEST
+  R8ST_HEADER_READ reads the header from an ST file.
+  R8ST_DATA_READ reads the data from an ST file.
+ 
+  Read the data from "kershaw_r8.st".
+ 
+  Sparse Triplet (ST) header information:
+ 
+  Minimum row index I_MIN =        0
+  Maximum row index I_MAX =        3
+  Minimum col index J_MIN =        0
+  Maximum col index J_MAX =        3
+  Number of rows        M =        4
+  Number of columns     N =        4
+  Number of nonzeros  NST =       12
+ST_DATA_READ - Error - Bad (I,J) =    0     0
+ST_DATA_READ - Error - Bad (I,J) =    0     1
+ST_DATA_READ - Error - Bad (I,J) =    1     2
+ST_DATA_READ - Error - Bad (I,J) =    2     2
+ST_DATA_READ - Error - Bad (I,J) =    3     2
+ST_DATA_READ - Error - Bad (I,J) =    0     3
+ST_DATA_READ - Error - Bad (I,J) =    2     3
+ST_DATA_READ - Error - Bad (I,J) =    3     3
+ 
+  Sparse Triplet (ST) data read from file:
+     4 rows by    4 columns
+     #     I     J       A
+  ----  ----  ----  --------------
+ 
+     1     0     0     3.0000000    
+     2     1     0    -2.0000000    
+     3     3     0     2.0000000    
+     4     0     1    -2.0000000    
+     5     1     1     3.0000000    
+     6     2     1    -2.0000000    
+     7     1     2    -2.0000000    
+     8     2     2     3.0000000    
+     9     3     2    -2.0000000    
+    10     0     3     2.0000000    
+    11     2     3    -2.0000000    
+    12     3     3     3.0000000    
+ 
+R8ST_SORT_A
+  R8ST_SORT_A sorts an ST matrix by columns.
+ 
+  Sparse Triplet (ST) header information:
+ 
+  Minimum row index I_MIN =        1
+  Maximum row index I_MAX =        5
+  Minimum col index J_MIN =        1
+  Maximum col index J_MAX =        5
+  Number of rows        M =        5
+  Number of columns     N =        5
+  Number of nonzeros  NST =       11
+ 
+  Matrix data before sorting:
+     5 rows by    5 columns
+     #     I     J       A
+  ----  ----  ----  --------------
+ 
+     1     5     1     51.000000    
+     2     1     2     12.000000    
+     3     1     1     11.000000    
+     4     3     3     33.000000    
+     5     1     5     15.000000    
+     6     5     3     53.000000    
+     7     5     5     55.000000    
+     8     2     2     22.000000    
+     9     3     5     35.000000    
+    10     4     4     44.000000    
+    11     2     1     21.000000    
+ 
+  Matrix data sorted by column:
+     5 rows by    5 columns
+     #     I     J       A
+  ----  ----  ----  --------------
+ 
+     1     1     1     11.000000    
+     2     2     1     21.000000    
+     3     5     1     51.000000    
+     4     1     2     12.000000    
+     5     2     2     22.000000    
+     6     3     3     33.000000    
+     7     5     3     53.000000    
+     8     4     4     44.000000    
+     9     1     5     15.000000    
+    10     3     5     35.000000    
+    11     5     5     55.000000    
+ 
+ST_IO_TEST:
+  Normal end of execution.
+ 
+30 August 2020   7:47:14.928 PM

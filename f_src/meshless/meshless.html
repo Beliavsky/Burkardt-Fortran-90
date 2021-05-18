@@ -1,0 +1,147 @@
+<html>
+
+  <head>
+    <title>
+      MESHLESS - Meshless Voronoi Basis Functions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      MESHLESS <br> Meshless Voronoi Basis Functions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>MESHLESS</b>,
+      a FORTRAN90 code which
+      generates a set of local basis functions, without the use of a mesh,
+      by Lili Ju.
+    </p>
+
+    <p>
+      If N basis functions are desired
+      in an arbitrary region, then <b>N</b> basis points are chosen at random
+      in the region.  Each point in the region is assigned to the nearest
+      basis point.  The basis points are then adjusted by taking the
+      average of the associated points.  If this process is repeated, the
+      basis points will arrange themselves into generators of a centroidal
+      Voronoi tessellation of the region.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>MESHLESS</b> is available in
+      <a href = "../../f_src/meshless/meshless.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt/cvt.html">
+      CVT</a>,
+      a FORTRAN90 code which
+      computes points that
+      form a Centroidal Voronoi Tessellation, which can be used by
+      <b>MESHLESS</b> to assign node locations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/halton/halton.html">
+      HALTON</a>,
+      a FORTRAN90 code which
+      computes quasirandom
+      Halton points, which can be used by <b>MESHLESS</b> to
+      assign node locations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/meshless_test/meshless_test.html">
+      meshless_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ps_write/ps_write.html">
+      PS_WRITE</a>,
+      a FORTRAN90 code which
+      implements some PostScript graphics commands.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Lili Ju
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Qiang Du, Vance Faber, Max Gunzburger,<br>
+          Centroidal Voronoi Tessellations: Applications and Algorithms,<br>
+          SIAM Review, Volume 41, 1999, pages 637-676.
+        </li>
+        <li>
+          Qiang Du, Max Gunzburger, Lili Ju,<br>
+          Meshfree, Probabilistic Determination of Point Sets and Support
+          Regions for Meshfree Computing,<br>
+          Computer Methods in Applied Mechanics in Engineering,<br>
+          Volume 191, 2002, pages 1349-1366;
+        </li>
+        <li>
+          Lili Ju, Qiang Du, Max Gunzburger,<br>
+          Probabilistic Methods for Centroidal Voronoi Tessellations and
+          their Parallel Implementations,<br>
+          Parallel Computing, Volume 28, 2002, pages 1477-1500.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "meshless.f90">meshless.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "meshless.sh">meshless.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 30 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

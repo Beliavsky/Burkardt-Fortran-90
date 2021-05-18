@@ -1,0 +1,38 @@
+18 June 2020   9:41:28.478 AM
+
+DISK_RULE_TEST:
+  FORTRAN90 version
+  Test the DISK_RULE library.
+ 
+TEST01
+  DISK_RULE can compute a rule Q(f) for a general disk
+  with center (XC,YC) and radius RC,
+  using NT equally spaced angles and NR radial distances.
+
+  NT =    8
+  NR =    4
+
+  Estimate integrals I(f) where f = x^e(1) * y^e(2).
+ 
+  E(1)  E(2)    I(f)            Q(f)
+ 
+    0    0     3.14159         28.2743    
+    1    0     28.2743         28.2743    
+    0    1     56.5487         56.5487    
+    2    0     91.8916         91.8916    
+    1    1     56.5487         56.5487    
+    0    2     176.715         176.715    
+    3    0     219.126         219.126    
+    2    1     183.783         183.783    
+    1    2     176.715         176.715    
+    0    3     607.898         607.898    
+    4    0     696.255         696.255    
+    3    1     438.252         438.252    
+    2    2     526.609         526.609    
+    1    3     607.898         607.898    
+    0    4     2265.48         2265.48    
+
+DISK_RULE_TEST:
+  Normal end of execution.
+
+18 June 2020   9:41:28.478 AM

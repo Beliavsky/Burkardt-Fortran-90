@@ -1,0 +1,221 @@
+<html>
+
+  <head>
+    <title>
+      FILE_TRANSPOSE - "Transpose" a File
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FILE_TRANSPOSE <br> "Transpose" a File
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FILE_TRANSPOSE</b>,
+      a FORTRAN90 code which
+      creates a "transposed" copy of a file, in which, essentially, the I-th
+      word of the J-th line becomes the J-th word of the I-th line.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>file_transpose</b> <i>input</i> <i>output</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>input</i> is the name of the input file,
+        </li>
+        <li>
+          <i>output</i> is the name of the output file to be created.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      For example, if the input file is:
+      <pre>
+        Apple Ball    Carrot Doll
+         Egg    Fig  1.23456,  Haystack
+        Iodine 
+               Joystick Kahlua Lompoc     Millipede Negatory
+      </pre>
+      the transposed file will be:
+      <pre>
+        Apple Egg Iodine Joystick
+        Ball Fig Kahlua
+        Carrot 1.23456, Lompoc
+        Doll Haystack Millipede
+        Negatory
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FILE_TRANSPOSE</b> is available in 
+      <a href = "../../f_src/file_transpose/file_transpose.html">a FORTRAN90 version</a> 
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/f_src/chrpak/chrpak.html">
+      CHRPAK</a>,
+      a FORTRAN90 code which
+      can work with characters and strings.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/cr2lf/cr2lf.html">
+      CR2LF</a>,
+      a C++ code which
+      reads a text file and replaces carriage returns by line feeds.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/crrm/crrm.html">
+      CRRM</a>,
+      a C++ code which
+      reads a text file and removes the carriage return character.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/deblank/deblank.html">
+      DEBLANK</a>,
+      a C++ code which
+      reads a text file and writes a copy which has no blank lines.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/decomment/decomment.html">
+      DECOMMENT</a>,
+      a C++ code which
+      makes a copy of a text file which contains no "comment" lines
+      (that begin with "#").
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/f_src/file_merge/file_merge.html">
+      FILE_MERGE</a>,
+      a FORTRAN90 code which
+      merges two sorted files.
+    </p>
+
+    <p>
+      <a href = "../../f_src/file_transpose_test/file_transpose_test.html">
+      file_transpose_test</a>
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/f_src/filum/filum.html">
+      FILUM</a>,
+      a FORTRAN90 code which
+      can work with information in text files.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/f_src/reformat/reformat.html">
+      REFORMAT</a>,
+      a FORTRAN90 code which
+      makes a copy of a file with a given number of "words" per line.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/reword/reword.html">
+      REWORD</a>,
+      a C++ code which
+      reads a text file and writes a copy which has a fixed number
+      of "words" per line.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/f_src/table_columns/table_columns.html">
+      TABLE_COLUMNS</a>,
+      a FORTRAN90 code which
+      reads a TABLE file of N points
+      in M dimensions and creates a new file by copying various
+      columns, with repetition and shuffling;
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/f_src/table_columns_permute/table_columns_permute.html">
+      TABLE_COLUMNS_PERMUTE</a>,
+      a FORTRAN90 code which
+      reads a TABLE file where each line has M values, and permutes the columns
+      according to the user's prescription;
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/uncontrol/uncontrol.html">
+      UNCONTROL</a>,
+      a C++ code which
+      makes a copy of a text file which contains no control characters.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/wrap/wrap.html">
+      WRAP</a>,
+      a C++ code which
+      makes a copy of a text file
+      in which no line is longer than a user-specified wrap length.
+    </p>
+
+    <p>
+      <a href = "http://people.sc.fsu.edu/~jburkardt/cpp_src/wrap2/wrap2.html">
+      WRAP2</a>,
+      a C++ code which
+      wraps long lines in a text file, but which
+      wraps some lines "early", so as to avoid breaking words.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "file_transpose.f90">file_transpose.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "file_transpose.sh">file_transpose.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

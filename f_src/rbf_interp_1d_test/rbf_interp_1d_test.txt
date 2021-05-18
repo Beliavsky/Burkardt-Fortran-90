@@ -1,0 +1,1867 @@
+24 August 2020   3:02:28.417 PM
+
+RBF_INTERP_1D_TEST:
+  FORTRAN90 version
+  Test the RBF_INTERP_1D library.
+  The R8LIB library is needed.
+  The test needs the TEST_INTERP library.
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi1".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.812528E-11
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    3.37220    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi2".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.446753E-12
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    3.35248    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi3".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.432848E-13
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    3.28125    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi4".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.301577E-04
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    29.1936    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi5".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.241776E-14
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    7.91136    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi6".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.633537E-14
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    13.4998    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   1
+  using radial basis function "phi7".
+  Scale factor R0 =    3.17647    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       4.00000    
+    2:   1.00000       5.00000    
+    3:   2.00000       6.00000    
+    4:   4.00000       6.00000    
+    5:   5.00000       5.00000    
+    6:   6.00000       3.00000    
+    7:   7.00000       1.00000    
+    8:   8.00000       1.00000    
+    9:   9.00000       1.00000    
+   10:   10.0000       3.00000    
+   11:   11.0000       4.00000    
+   12:   12.0000       4.00000    
+   13:   13.0000       3.00000    
+   14:   14.0000       3.00000    
+   15:   15.0000       4.00000    
+   16:   16.0000       4.00000    
+   17:   17.0000       3.00000    
+   18:   18.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.988098E-15
+
+  Normalized length of piecewise linear interpolant =    3.13553    
+  Normalized length of polynomial interpolant       =    5.39607    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi1".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =    23.1318    
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =   0.165900E+07
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi2".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =    3.08549    
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =   0.552800E+07
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi3".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.310851E-08
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =    15.5511    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi4".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =    15.5350    
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =    46619.4    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi5".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =    18.0860    
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =   0.146516E+15
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi6".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.248783E-07
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =    377354.    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   2
+  using radial basis function "phi7".
+  Scale factor R0 =    5.47059    
+  Number of data points =   18
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.34000       5.00000    
+    3:   5.00000       8.66000    
+    4:   10.0000       10.0000    
+    5:   10.6000       10.4000    
+    6:   10.7000       12.0000    
+    7:   10.7050       28.6000    
+    8:   10.8000       30.2000    
+    9:   11.4000       30.6000    
+   10:   19.6000       30.6000    
+   11:   20.2000       30.2000    
+   12:   20.2950       28.6000    
+   13:   20.3000       12.0000    
+   14:   20.4000       10.4000    
+   15:   21.0000       10.0000    
+   16:   26.0000       8.66000    
+   17:   29.6600       5.00000    
+   18:   31.0000       0.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.230032E-04
+
+  Normalized length of piecewise linear interpolant =    2.66086    
+  Normalized length of polynomial interpolant       =   0.188718E+09
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi1".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.618730E-11
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    1.97949    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi2".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.852761E-12
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    1.96310    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi3".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.114130E-12
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    1.76300    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi4".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.107628E-06
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    2.91131    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi5".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.752890E-13
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    3.91473    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi6".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.243615E-13
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    2.94838    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   3
+  using radial basis function "phi7".
+  Scale factor R0 =    4.50000    
+  Number of data points =   11
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   2.00000       10.0000    
+    3:   3.00000       10.0000    
+    4:   5.00000       10.0000    
+    5:   6.00000       10.0000    
+    6:   8.00000       10.0000    
+    7:   9.00000       10.5000    
+    8:   11.0000       15.0000    
+    9:   12.0000       50.0000    
+   10:   14.0000       60.0000    
+   11:   15.0000       85.0000    
+
+  L2 interpolation error averaged per interpolant node =   0.764307E-14
+
+  Normalized length of piecewise linear interpolant =    1.68472    
+  Normalized length of polynomial interpolant       =    3.47774    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi1".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.938565E-12
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =    6.06069    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi2".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.259495E-12
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =    5.62911    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi3".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.485369E-14
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =    3.89665    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi4".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.155165E-09
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =    6.12696    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi5".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =    1.79509    
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =   0.186443E+16
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi6".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.625387E-14
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =    27.3926    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   4
+  using radial basis function "phi7".
+  Scale factor R0 =   0.428571    
+  Number of data points =    8
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.500000E-01  0.700000    
+    3:  0.100000       1.00000    
+    4:  0.200000       1.00000    
+    5:  0.800000      0.300000    
+    6:  0.850000      0.500000E-01
+    7:  0.900000      0.100000    
+    8:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.808159E-14
+
+  Normalized length of piecewise linear interpolant =    3.25908    
+  Normalized length of polynomial interpolant       =    91.2043    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi1".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.100138E-11
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    4.43342    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi2".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.104850E-12
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    4.12867    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi3".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.148863E-14
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    3.39954    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi4".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.177383E-08
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    19.0995    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi5".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.145286E-13
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    123.221    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi6".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.257498E-14
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    23.6058    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   5
+  using radial basis function "phi7".
+  Scale factor R0 =   0.375000    
+  Number of data points =    9
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:  0.100000      0.900000    
+    3:  0.200000      0.950000    
+    4:  0.300000      0.900000    
+    5:  0.400000      0.100000    
+    6:  0.500000      0.500000E-01
+    7:  0.600000      0.500000E-01
+    8:  0.800000      0.200000    
+    9:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.233517E-15
+
+  Normalized length of piecewise linear interpolant =    3.22180    
+  Normalized length of polynomial interpolant       =    7.29382    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi1".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.538241E-11
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    2.71561    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi2".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.696800E-13
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    2.71380    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi3".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.259805E-12
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    2.70318    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi4".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.250863E-01
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    28.3907    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi5".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.171927E-14
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    4.14595    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi6".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.337910E-15
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    7.26466    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   6
+  using radial basis function "phi7".
+  Scale factor R0 =    30.0000    
+  Number of data points =   49
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   595.000      0.644000    
+    2:   605.000      0.622000    
+    3:   615.000      0.638000    
+    4:   625.000      0.649000    
+    5:   635.000      0.652000    
+    6:   645.000      0.639000    
+    7:   655.000      0.646000    
+    8:   665.000      0.657000    
+    9:   675.000      0.652000    
+   10:   685.000      0.655000    
+   11:   695.000      0.644000    
+   12:   705.000      0.663000    
+   13:   715.000      0.663000    
+   14:   725.000      0.668000    
+   15:   735.000      0.676000    
+   16:   745.000      0.676000    
+   17:   755.000      0.686000    
+   18:   765.000      0.679000    
+   19:   775.000      0.678000    
+   20:   785.000      0.683000    
+   21:   795.000      0.694000    
+   22:   805.000      0.699000    
+   23:   815.000      0.710000    
+   24:   825.000      0.730000    
+   25:   835.000      0.763000    
+   26:   845.000      0.812000    
+   27:   855.000      0.907000    
+   28:   865.000       1.04400    
+   29:   875.000       1.33600    
+   30:   885.000       1.88100    
+   31:   895.000       2.16900    
+   32:   905.000       2.07500    
+   33:   915.000       1.59800    
+   34:   925.000       1.21100    
+   35:   935.000      0.916000    
+   36:   945.000      0.746000    
+   37:   955.000      0.672000    
+   38:   965.000      0.627000    
+   39:   975.000      0.615000    
+   40:   985.000      0.607000    
+   41:   995.000      0.606000    
+   42:   1005.00      0.609000    
+   43:   1015.00      0.603000    
+   44:   1025.00      0.601000    
+   45:   1035.00      0.603000    
+   46:   1045.00      0.601000    
+   47:   1055.00      0.611000    
+   48:   1065.00      0.601000    
+   49:   1075.00      0.608000    
+
+  L2 interpolation error averaged per interpolant node =   0.203313E-15
+
+  Normalized length of piecewise linear interpolant =    2.68209    
+  Normalized length of polynomial interpolant       =    8.15286    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi1".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.293502E-13
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    3.53024    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi2".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.161346E-13
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    3.68427    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi3".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.668443E-15
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    3.99477    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi4".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.153066E-13
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    3.48174    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi5".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =    5.48870    
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    22.4280    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi6".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.102658E-14
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    3.38770    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   7
+  using radial basis function "phi7".
+  Scale factor R0 =    5.00000    
+  Number of data points =    4
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       1.00000    
+    2:   1.00000       2.00000    
+    3:   4.00000       2.00000    
+    4:   5.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.392523E-15
+
+  Normalized length of piecewise linear interpolant =    2.63961    
+  Normalized length of polynomial interpolant       =    3.59440    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi1".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.118790E-04
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    852.790    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi2".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.804486E-06
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    732.405    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi3".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.176364E-09
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    28.0959    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi4".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.295844E-01
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    739.569    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi5".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.554108E-10
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    788.055    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi6".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.706601E-09
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    3538.77    
+
+TEST01:
+  Interpolate data from TEST_INTERP problem #   8
+  using radial basis function "phi7".
+  Scale factor R0 =   0.545455    
+  Number of data points =   12
+ 
+  Data array:
+ 
+  Row          1             2      
+  Col
+ 
+    1:  -1.00000       1.00000    
+    2: -0.800000      0.640000    
+    3: -0.600000      0.360000    
+    4: -0.400000      0.160000    
+    5: -0.200000      0.400000E-01
+    6:   0.00000       0.00000    
+    7:  0.200000      0.400000E-01
+    8:  0.200010      0.500000E-01
+    9:  0.400000      0.160000    
+   10:  0.600000      0.360000    
+   11:  0.800000      0.640000    
+   12:   1.00000       1.00000    
+
+  L2 interpolation error averaged per interpolant node =   0.147378E-08
+
+  Normalized length of piecewise linear interpolant =    2.31939    
+  Normalized length of polynomial interpolant       =    14681.6    
+
+RBF_INTERP_1D_TEST:
+  Normal end of execution.
+
+24 August 2020   3:02:28.445 PM

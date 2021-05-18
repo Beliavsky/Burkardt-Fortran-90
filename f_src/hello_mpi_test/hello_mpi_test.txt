@@ -1,0 +1,18 @@
+13 July 2020   8:45:47.332 PM
+
+P0  HELLO_MPI - Master process:
+P0    FORTRAN90/MPI version
+P0    An MPI test program.
+P0    The number of MPI processes is        2
+P0  "Hello, world!"
+
+P0  HELLO_MPI - Master process:
+P1  "Hello, world!"
+P0    Normal end of execution: "Goodbye, world!".
+
+P0    Elapsed wall clock time =   0.316076E-03 seconds.
+
+P0  HELLO_MPI - Master process:
+P0    Normal end of execution.
+
+13 July 2020   8:45:47.339 PM

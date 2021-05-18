@@ -1,0 +1,233 @@
+<html>
+
+  <head>
+    <title>
+      HIGH_CARD_SIMULATION - Guessing What the Highest Card Is
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      HIGH_CARD_SIMULATION <br> Guessing What the Highest Card Is
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>HIGH_CARD_SIMULATION</b>,
+      a FORTRAN90 code which
+      simulates a game in which you have one chance to select the highest card
+      from a deck, using gnuplot() to display the estimated and exact probabilities.
+    </p>
+
+    <p>
+      You are given a deck of DECK_SIZE cards.
+    </p>
+
+    <p>
+      Your goal is to select the high card.  For convenience, we can assume 
+      the cards are a permutation of the integers from 1 to DECK_SIZE, but in
+      fact the user mustn't see such values or else it's obvious which is the
+      largest card.  (For a truly difficult problem, we'd have to work harder
+      to disguise the range of values and the likely distribution!)
+    </p>
+
+    <p>
+      Your choice is made under the following rules:  You may turn over
+      one card at a time.  When a card is turned over, you may declare that to be
+      your choice, or else turn over another card.  If you have not chosen a card
+      by the end, then your choice is the final card.
+    </p>
+
+    <p>
+      If you have no idea what to do, and simply decide in advance to pick
+      a card "at random", that is, for example, you decide to pick the 15th card
+      before having seen any cards, then your probability of winning is 1/DECK_SIZE.
+    </p>
+
+    <p>
+      The question is, can you do better than that?
+    </p>
+
+    <p>
+      A good strategy is as follows: always look at the first SKIP_NUM cards without
+      choosing them.  Then choose the very next card you encounter that is larger
+      than the cards you skipped.
+    </p>
+
+    <p>
+      Using this program, you can easily see that skipping 5 cards is much better
+      than picking one at random, skipping 10 is even better, and so on...up to some
+      point, when the benefit begins to disappear.  Of course,
+      you can't skip too many cards, and in fact, the results seem to be best for
+      somewhere around 30 to 35 cards skipped.  For problems like this, the
+      optimal value is somewhere around 1 / e, where E is the base of the natural
+      logarithm system.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>HIGH_CARD_SIMULATION</b> is available in
+      <a href = "../../c_src/high_card_simulation/high_card_simulation.html">a C version</a> and
+      <a href = "../../cpp_src/high_card_simulation/high_card_simulation.html">a C++ version</a> and
+      <a href = "../../f_src/high_card_simulation/high_card_simulation.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/high_card_simulation/high_card_simulation.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/brownian_motion_simulation/brownian_motion_simulation.html">
+      BROWNIAN_MOTION_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates Brownian motion in an M-dimensional region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/duel_simulation/duel_simulation.html">
+      DUEL_SIMULATION</a>, 
+      a FORTRAN90 program which
+      simulates N repetitions of a duel between two players, each of
+      whom has a known firing accuracy.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fair_dice_simulation/fair_dice_simulation.html">
+      FAIR_DICE_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates N tosses of 2 dice, making a histogram of the results.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      write data and command files so that gnuplot() can create plots.
+    </p>
+
+    <p>
+      <a href = "../../m_src/high_card_simulation_test/high_card_simulation_test.html">
+      high_card_simulation_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ising_2d_simulation/ising_2d_simulation.html">
+      ISING_2D_SIMULATION</a>,
+      a FORTRAN90 program which
+      carries out a Monte Carlo simulation of an Ising model,
+      a 2D array of positive and negative charges,
+      each of which is likely to "flip" to be in agreement with neighbors.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ising_3d_simulation/ising_3d_simulation.html">
+      ISING_3D_SIMULATION</a>,
+      a FORTRAN90 program which
+      carries out a Monte Carlo simulation of an Ising model,
+      a 3D array of positive and negative charges,
+      each of which is likely to "flip" to be in agreement with neighbors.
+    </p>
+
+    <p>
+      <a href = "../../f_src/poisson_simulation/poisson_simulation.html">
+      POISSON_SIMULATION</a>,
+      a FORTRAN90 library which
+      simulates a Poisson process in which events randomly occur with an
+      average waiting time of Lambda.
+    </p>
+
+    <p>
+      <a href = "../../f_src/reactor_simulation/reactor_simulation.html">
+      REACTOR_SIMULATION</a>,
+      a FORTRAN90 program which
+      a simple Monte Carlo simulation of the shielding effect of a slab
+      of a certain thickness in front of a neutron source.  This program was
+      provided as an example with the book "Numerical Methods and Software."
+    </p>
+
+    <p>
+      <a href = "../../f_src/snakes_and_ladders/snakes_and_ladders.html">
+      SNAKES_AND_LADDERS</a>,
+      FORTRAN90 programs which
+      simulate the game of Snakes and Ladders.
+    </p>
+
+    <p>
+      <a href = "../../f_src/string_simulation/string_simulation.html">
+      STRING_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates the behavior of a vibrating string
+      by solving the corresponding initial boundary value problem (IBVP),
+      creating files that can be displayed by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/three_body_simulation/three_body_simulation.html">
+      THREE_BODY_SIMULATION</a>,
+      a FORTRAN90 program which
+      simulates the behavior of three planets, constrained to lie in a plane,
+      and moving under the influence of gravity,
+      by Walter Gander and Jiri Hrebicek.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Paul Nahin,<br>
+          Digital Dice: Computational Solutions to Practical Probability Problems,<br>
+          Princeton University Press, 2008,<br>
+          ISBN13: 978-0-691-12698-2,<br>
+          LC: QA273.25.N34.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "high_card_simulation.f90">high_card_simulation.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "high_card_simulation.sh">high_card_simulation.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

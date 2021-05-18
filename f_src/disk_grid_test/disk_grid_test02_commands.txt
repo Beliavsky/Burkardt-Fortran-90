@@ -1,0 +1,17 @@
+# disk_grid_test02_commands.txt
+#
+# Usage:
+#  gnuplot < disk_grid_test02_commands.txt
+#
+set term png
+set output "disk_grid_test02.png"
+set xlabel "<--- X --->"
+set ylabel "<--- Y --->"
+set title "Fibonacci Grid"
+set grid
+set key off
+set size ratio -1
+set style data lines
+plot "disk_grid_test02_data.txt" using 1:2 with points lt 3 pt 3,\
+    "disk_grid_test02_boundary.txt" using 1:2 lw 3 linecolor rgb "black"
+quit

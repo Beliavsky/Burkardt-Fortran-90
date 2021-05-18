@@ -1,0 +1,184 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_PLOT - Plot a Triangulation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_PLOT <br> Plot a Triangulation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_PLOT</b>,
+      a FORTRAN90 code which 
+      plots a triangulation.
+    </p>
+
+    <p>
+      TRIANGULATION_PLOT reads one file listing the nodes, and
+      a second file consisting of groups of 3 or 6 nodes that make up
+      triangles, and creates an Encapsulated PostScript image of the
+      triangulation.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_plot</b> <i>prefix</i> <i>node_vis</i> <i>triangle_vis</i>
+      </blockquote>
+      where <i>prefix</i> is the common prefix for the node and triangle files,
+      and will also be used to name the output file:
+      <ul>
+        <li>
+          <i>prefix</i><b>_nodes.txt</b>,    the node coordinates (input);
+        </li>
+        <li>
+          <i>prefix</i><b>_elements.txt</b>,    the triangulation (input);
+        </li>
+        <li>
+          <i>prefix</i><b>.eps</b>,  the plot file (output);
+        </li>
+      </ul>
+      and <i>node_vis</i> is an integer defining the node visibility:
+      <ul>
+        <li>
+          <b>0</b>, do not show the nodes;
+        </li>
+        <li>
+          <b>1</b>, show the nodes;
+        </li>
+        <li>
+          <b>2</b>, show the nodes and label them.
+        </li>
+      </ul>
+      and <i>triangle_vis</i> is an integer defining the triangle visibility:
+      <ul>
+        <li>
+          <b>0</b>, do not show the triangles;
+        </li>
+        <li>
+          <b>1</b>, show the triangles;
+        </li>
+        <li>
+          <b>2</b>, show the triangles and label them.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_PLOT</b> is available in
+      <a href = "../../cpp_src/triangulation_plot/triangulation_plot.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation_plot/triangulation_plot.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_plot/triangulation_plot.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../m_src/tri_surface_display/tri_surface_display.html">
+      TRI_SURFACE_DISPLAY</a>,
+      a MATLAB program which 
+      reads data defining a triangular mesh
+      of a 3D surface and displays it.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation/triangulation.html">
+      TRIANGULATION</a>,
+      a FORTRAN90 code which
+      is useful for working with triangulations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_plot_test/triangulation_plot_test.html">
+      triangulation_plot_test</a>
+    </p>
+
+     <p>
+      <a href = "../../f_src/triangulation_svg/triangulation_svg.html">
+      TRIANGULATION_SVG</a>,
+      a FORTRAN90 code which
+      creates an SVG image of a triangulation, which can be displayed
+      by a web browser.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Marc deBerg, Marc Krevald, Mark Overmars, 
+          Otfried Schwarzkopf,<br>
+          Computational Geometry,<br>
+          Springer, 2000,<br>
+          ISBN: 3-540-65620-0,<br>
+          LC: QA448.D38.C65.
+        </li>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_plot.f90">triangulation_plot.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "triangulation_plot.sh">triangulation_plot.sh</a>,
+          the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

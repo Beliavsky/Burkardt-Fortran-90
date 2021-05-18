@@ -1,0 +1,12 @@
+10 September 2020  10:39:00.113 AM
+ 
+TRIANGLE_SVG_TEST
+  FORTRAN90 version
+  Test the TRIANGLE_SVG library.
+
+  Graphics data written to file "test01.svg"
+ 
+TRIANGLE_SVG_TEST
+  Normal end of execution.
+ 
+10 September 2020  10:39:00.113 AM

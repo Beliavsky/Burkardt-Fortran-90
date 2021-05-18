@@ -1,0 +1,233 @@
+<html>
+
+  <head>
+    <title>
+      LEGENDRE_POLYNOMIAL - Legendre Polynomials
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      LEGENDRE_POLYNOMIAL <br> Legendre Polynomials
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LEGENDRE_POLYNOMIAL</b>,
+      a FORTRAN90 code which
+      evaluates the Legendre polynomial and associated functions.
+    </p>
+
+    <p>
+      The Legendre polynomial P(n,x) can be defined by:
+      <pre>
+        P(0,x) = 1
+        P(1,x) = x
+        P(n,x) = (2*n-1)/n * x * P(n-1,x) - (n-1)/n * P(n-2,x)
+      </pre>
+      where n is a nonnegative integer.
+    </p>
+
+    <p>
+      The N zeroes of P(n,x) are the abscissas used for Gauss-Legendre
+      quadrature of the integral of a function F(X) with weight function 1
+      over the interval [-1,1].
+    </p>
+
+    <p>
+      The Legendre polynomials are orthogonal under the inner product defined
+      as integration from -1 to 1:
+      <pre>
+        Integral ( -1 <= x <= 1 ) P(i,x) * P(j,x) dx 
+          = 0 if i =/= j
+          = 2 / ( 2*i+1 ) if i = j.
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LEGENDRE_POLYNOMIAL</b> is available in
+      <a href = "../../c_src/legendre_polynomial/legendre_polynomial.html">a C version</a> and
+      <a href = "../../cpp_src/legendre_polynomial/legendre_polynomial.html">a C++ version</a> and
+      <a href = "../../f_src/legendre_polynomial/legendre_polynomial.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/legendre_polynomial/legendre_polynomial.html">a MATLAB version</a> and
+      <a href = "../../py_src/legendre_polynomial/legendre_polynomial.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_polynomial/chebyshev_polynomial.html">
+      CHEBYSHEV_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      considers the Chebyshev polynomials T(i,x), U(i,x), V(i,x) and W(i,x).
+      Functions are provided to evaluate the polynomials, determine their zeros, 
+      produce their polynomial coefficients, produce related quadrature rules,
+      project other functions onto these polynomial bases, and integrate
+      double and triple products of the polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_polynomial/gegenbauer_polynomial.html">
+      GEGENBAUER_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Gegenbauer polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_polynomial/hermite_polynomial.html">
+      HERMITE_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the physicist's Hermite polynomial, the probabilist's Hermite polynomial,
+      the Hermite function, and related functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi_polynomial/jacobi_polynomial.html">
+      JACOBI_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Jacobi polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_polynomial/laguerre_polynomial.html">
+      LAGUERRE_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates the Laguerre polynomial, the generalized Laguerre polynomial,
+      and the Laguerre function.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_polynomial_test/legendre_polynomial_test.html">
+      legendre_polynomial_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_product_polynomial/legendre_product_polynomial.html">
+      LEGENDRE_PRODUCT_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      defines Legendre product polynomials, creating a multivariate 
+      polynomial as the product of univariate Legendre polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_rule/legendre_rule.html">
+      LEGENDRE_RULE</a>,
+      a FORTRAN90 code which
+      computes a 1D Gauss-Legendre quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lobatto_polynomial/lobatto_polynomial.html">
+      LOBATTO_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      evaluates Lobatto polynomials, similar to Legendre polynomials
+      except that they are zero at both endpoints.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polpak/polpak.html">
+      POLPAK</a>,
+      a FORTRAN90 code which
+      evaluates a variety of mathematical functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 code which
+      supplies test values of various mathematical functions.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Theodore Chihara,<br>
+          An Introduction to Orthogonal Polynomials,<br>
+          Gordon and Breach, 1978,<br>
+          ISBN: 0677041500,<br>
+          LC: QA404.5 C44.
+        </li>
+        <li>
+          Walter Gautschi,<br>
+          Orthogonal Polynomials: Computation and Approximation,<br>
+          Oxford, 2004,<br>
+          ISBN: 0-19-850672-4,<br>
+          LC: QA404.5 G3555.
+        </li>
+        <li>
+          Frank Olver, Daniel Lozier, Ronald Boisvert, Charles Clark,<br>
+          NIST Handbook of Mathematical Functions,<br>
+          Cambridge University Press, 2010,<br>
+          ISBN: 978-0521192255,<br>
+          LC: QA331.N57.
+        </li>
+        <li>
+          Gabor Szego,<br>
+          Orthogonal Polynomials,<br>
+          American Mathematical Society, 1992,<br>
+          ISBN: 0821810235,<br>
+          LC: QA3.A5.v23.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "legendre_polynomial.f90">legendre_polynomial.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "legendre_polynomial.sh">legendre_polynomial.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 25 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

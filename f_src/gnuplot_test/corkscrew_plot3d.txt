@@ -1,0 +1,12 @@
+16 April 2020   5:10:46.245 PM
+
+CORKSCREW_PLOT3D:
+  FORTRAN90 version
+  Define (X,Y,Z) data on a 3D curve.
+  Create corresponding GNUPLOT input files.
+ 
+  CORKSCREW_PLOT3D: data stored in "corkscrew_plot3d_data.txt".
+  CORKSCREW_PLOT3D: plot commands stored in "corkscrew_plot3d_commands.txt".
+
+CORKSCREW_PLOT3D:
+  Normal end of execution.

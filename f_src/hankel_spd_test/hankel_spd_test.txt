@@ -1,0 +1,130 @@
+13 July 2020   8:46:11.782 AM
+
+hankel_spd_test
+  FORTRAN90 version
+  Test hankel_spd.
+
+hankel_spd_cholesky_lower_test01
+  hankel_spd_cholesky_lower computes a lower Cholesky
+  matrix L such that the matrix H = L * L' is a
+  symmetric positive definite (SPD) Hankel matrix.
+ 
+  The Cholesky factor L:
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            0.            0.            0.            0.      
+    2:      1.            1.            0.            0.            0.      
+    3:      2.            1.            1.            0.            0.      
+    4:      3.            3.            1.            1.            0.      
+    5:      6.            4.            4.            1.            1.      
+ 
+  The Hankel matrix H = L * L':
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            1.            2.            3.            6.      
+    2:      1.            2.            3.            6.           10.      
+    3:      2.            3.            6.           10.           20.      
+    4:      3.            6.           10.           20.           35.      
+    5:      6.           10.           20.           35.           70.      
+ 
+  The Cholesky factor L:
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            0.            0.            0.            0.      
+    2:      4.            2.            0.            0.            0.      
+    3:     20.            3.            3.            0.            0.      
+    4:     86.           37.            2.            4.            0.      
+    5:    418.         82.5000       59.1667          1.            5.      
+ 
+  The Hankel matrix H = L * L':
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            4.           20.           86.          418.      
+    2:      4.           20.           86.          418.         1837.      
+    3:     20.           86.          418.         1837.         8785.      
+    4:     86.          418.         1837.         8785.         39122.8    
+    5:    418.         1837.         8785.         39122.8       185057.    
+ 
+  The Cholesky factor L:
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:  0.218418          0.            0.            0.            0.      
+    2:  0.661187E-01  0.956318          0.            0.            0.      
+    3:   4.20713      0.257578      0.829509          0.            0.      
+    4:   2.40134       19.1313      0.109957      0.561695          0.      
+    5:   84.4911       9.97088       16.9598      0.438290E-01  0.415307    
+ 
+  The Hankel matrix H = L * L':
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:  0.477066E-01  0.144415E-01  0.918915      0.524497       18.4544    
+    2:  0.144415E-01  0.918915      0.524497       18.4544       15.1218    
+    3:  0.918915      0.524497       18.4544       15.1218       372.102    
+    4:  0.524497       18.4544       15.1218       372.102       395.538    
+    5:   18.4544       15.1218       372.102       395.538       7525.98    
+
+hankel_spd_cholesky_lower_test02
+  hankel_spd_cholesky_lower computes a lower Cholesky
+  matrix L such that the matrix H = L * L' is a
+  symmetric positive definite (SPD) Hankel matrix.
+ 
+  The Cholesky factor L:
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            0.            0.            0.            0.      
+    2:      1.            1.            0.            0.            0.      
+    3:      2.            1.            1.            0.            0.      
+    4:      3.            3.            1.            1.            0.      
+    5:      6.            4.            4.            1.            1.      
+ 
+  The Hankel matrix H = L * L':
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            1.            2.            3.            6.      
+    2:      1.            2.            3.            6.           10.      
+    3:      2.            3.            6.           10.           20.      
+    4:      3.            6.           10.           20.           35.      
+    5:      6.           10.           20.           35.           70.      
+ 
+  The Cholesky factor L2 of H:
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            0.            0.            0.            0.      
+    2:      1.            1.            0.            0.            0.      
+    3:      2.            1.            1.            0.            0.      
+    4:      3.            3.            1.            1.            0.      
+    5:      6.            4.            4.            1.            1.      
+ 
+  The Hankel matrix H2 = L2 * L2':
+ 
+  Col          1             2             3             4             5      
+  Row
+ 
+    1:      1.            1.            2.            3.            6.      
+    2:      1.            2.            3.            6.           10.      
+    3:      2.            3.            6.           10.           20.      
+    4:      3.            6.           10.           20.           35.      
+    5:      6.           10.           20.           35.           70.      
+
+hankel_spd_test
+  Normal end of execution.
+
+13 July 2020   8:46:11.783 AM

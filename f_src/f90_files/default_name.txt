@@ -1,0 +1,31 @@
+May  5 2013  11:16:41.786 AM
+ 
+DEFAULT_NAME:
+  FORTRAN90 version.
+  The FORTRAN90 open() statement is used to access
+  files to be read or written.  Input to the statement
+  includes a filename (what the operating system calls
+  the file) and a unit number (a numeric identifier
+  used by the program, instead of the filename.
+ 
+  The user may omit the filename, in which case
+  FORTRAN assumes a default name, based on the unit
+  number.  For example, a file associated with unit
+  20 might have a default name of "FORT.20" or "fort.20"
+ 
+  The actual default names are not specified by the
+  FORTRAN standard and so are dependent on the compiler.
+ 
+  This program opens several anonymous files for writing
+  and thus enables the user to figure out the naming
+  scheme that is used.
+ 
+  Created the file "fort.8".
+  Created the file "fort.11".
+  Created the file "fort.34".
+  Created the file "fort.99".
+ 
+DEFAULT_NAME:
+  Normal end of execution.
+ 
+May  5 2013  11:16:41.810 AM

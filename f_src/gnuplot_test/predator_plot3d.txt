@@ -1,0 +1,12 @@
+16 April 2020   5:09:36.683 PM
+
+PREDATOR_PLOT3D:
+  FORTRAN90 version
+  Model the interaction between rabbits and foxes.
+  Create corresponding GNUPLOT input files.
+ 
+  PREDATOR_PLOT3D: data stored in "predator_plot3d_data.txt".
+  PREDATOR_PLOT3D: plot commands stored in "predator_plot3d_commands.txt".
+
+PREDATOR_PLOT3D:
+  Normal end of execution.

@@ -1,0 +1,167 @@
+<html>
+
+  <head>
+    <title>
+      QUADMOM - Quadrature Rules from Weight Moments
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      QUADMOM <br> Quadrature Rules from Weight Moments
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>QUADMOM</b>,
+      a FORTRAN90 code which
+      computes a Gaussian quadrature rule for a weight function rho(x)
+      based on the Golub-Welsch procedure that only requires knowledge
+      of the moments of rho(x).
+    </p>
+
+    <p>
+      The standard Golub-Welsch procedure expects to work with the
+      coefficients alpha() and beta() of the three term recursion 
+      for the orthogonal polynomials associated with the weight function rho(x).
+    </p>
+
+    <p>
+      However, in the same paper, Golub and Welsch discuss a related procedure
+      which, to compute a Gaussian quadrature rule of order N, requires the
+      values of the first M=2*N+1 moments associated with rho(x):
+      <pre>
+        mu(k) = integral x^k rho(x) dx,  0 <= k <= 2*n
+      </pre>
+      This library demonstrates this moment-based procedure.
+    </p>
+
+    <p>
+      Executing the sample program requires access to the TOMS655 library 
+      as well.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>QUADMOM</b> is available in
+      <a href = "../../c_src/quadmom/quadmom.html">a C version</a> and
+      <a href = "../../cpp_src/quadmom/quadmom.html">a C++ version</a> and
+      <a href = "../../f_src/quadmom/quadmom.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/quadmom/quadmom.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/quadmom_test/quadmom_test.html">
+      quadmom_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrature_golub_welsch/quadrature_golub_welsch.html">
+      QUADRATURE_GOLUB_WELSCH</a>,
+      a FORTRAN90 code which
+      computes the points and weights of a Gaussian quadrature rule using the 
+      Golub-Welsch procedure, assuming that the points have been specified.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrature_least_squares/quadrature_least_squares.html">
+      QUADRATURE_LEAST_SQUARES</a>,
+      a FORTRAN90 code which
+      computes weights for "sub-interpolatory" quadrature rules,
+      that is, it estimates integrals by integrating a polynomial that
+      approximates the function data in a least squares sense.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 code which
+      contains information about quadrature rules, both as tabulated values,
+      and as computational procedures.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms655/toms655.html">
+      TOMS655</a>,
+      a FORTRAN90 code which
+      computes the weights for interpolatory quadrature rules;
+      this library is commonly called IQPACK,
+      by Sylvan Elhay and Jaroslav Kautsky.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Sylvan Elhay, Jaroslav Kautsky,<br>
+          Algorithm 655:
+          IQPACK, 
+          FORTRAN Subroutines for the Weights of Interpolatory Quadrature,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 13, Number 4, December 1987, pages 399-415.
+        </li>
+        <li>
+          Gene Golub, John Welsch,<br>
+          Calculation of Gaussian Quadrature Rules,<br>
+          Mathematics of Computation,<br>
+          Volume 23, Number 106, April 1969, pages 221-230.
+        </li>
+        <li>
+          Jaroslav Kautsky, Sylvan Elhay,<br>
+          Calculation of the Weights of Interpolatory Quadratures,<br>
+          Numerische Mathematik,<br>
+          Volume 40, Number 3, October 1982, pages 407-422.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "quadmom.f90">quadmom.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "quadmom.sh">quadmom.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 21 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

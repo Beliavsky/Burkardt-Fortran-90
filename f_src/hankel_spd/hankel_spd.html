@@ -1,0 +1,136 @@
+<html>
+
+  <head>
+    <title>
+      hankel_spd
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      hankel_spd
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>hankel_spd</b>,
+      a FORTRAN90 library which
+      computes a lower triangular matrix L which is the Cholesky factor
+      of a symmetric positive definite (SPD) Hankel matrix H, that is,
+      H = L * L'.
+    </p>
+
+    <p>
+      A Hankel matrix is a matrix which is constant along all antidiagonals.  
+      A schematic of a 5x5 Hankel matrix would be:
+      <pre>
+        a  b  c  d  e
+        b  c  d  e  f
+        c  d  e  f  g
+        d  e  f  g  h
+        e  f  g  h  i
+      </pre>
+    </p>
+
+    <p>
+      Let J represent the exchange matrix, formed by reverse the order
+      of the columns of the identity matrix.
+      If H is a Hankel matrix, then J*H and J*H are Toeplitz matrices,
+      and similarly in the other direction.  Hence many algorithms
+      that apply to one class can be easily adapted to the other.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>hankel_spd</b> is available in
+      <a href = "../../c_src/hankel_spd/hankel_spd.html">a C version</a> and
+      <a href = "../../cpp_src/hankel_spd/hankel_spd.html">a C++ version</a> and
+      <a href = "../../f_src/hankel_spd/hankel_spd.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/hankel_spd/hankel_spd.html">a MATLAB version</a> and
+      <a href = "../../py_src/hankel_spd/hankel_spd.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa006/asa006.html">
+      ASA006</a>,
+      a FORTRAN90 library which
+      computes the Cholesky factorization of a symmetric positive definite (SPD)
+      matrix, by Michael Healy.
+      This is a FORTRAN90 version of Applied Statistics Algorithm 6;
+    </p>
+
+    <p>
+      <a href = "../../f_src/hankel_cholesky/hankel_cholesky.html">
+      HANKEL_CHOLESKY</a>,
+      a FORTRAN90 library which
+      computes the upper Cholesky factor R of a nonnegative definite symmetric
+      Hankel matrix H so that H = R' * R..
+    </p>
+
+    <p>
+      <a href = "../../f_src/hankel_spd_test/hankel_spd_test.html">
+      hankel_spd_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          S Al-Homidan, M Alshahrani,<br>
+          Positive Definite Hankel Matrices Using Cholesky Factorization,<br>
+          Computational Methods in Applied Mathematics,<br>
+          Volume 9, Number 3, 2009, pages 221-225.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "hankel_spd.f90">hankel_spd.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "hankel_spd.sh">hankel_spd.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

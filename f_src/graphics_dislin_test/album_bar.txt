@@ -1,0 +1,18 @@
+ <<<< Warning 12: Startlabel out of scaling in graf!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 27.07.2020  Time    : 19:40:56  Pageformat: USAL  <<
+ <<  Vectors : 813         Warnings: 1         Fileformat:  PNG  <<
+ <<  Metafile: album_bar.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+27 July 2020   7:40:56.100 PM
+ 
+album_bar:
+  FORTRAN90 version
+  Use DISLIN to make a bar chart of music album sales
+ 
+album_bar:
+  Normal end of execution.
+27 July 2020   7:40:56.106 PM

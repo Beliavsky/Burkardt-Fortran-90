@@ -1,0 +1,19 @@
+27 August 2020   7:24:57.545 PM
+
+SOLVE_TEST
+  FORTRAN90 version
+  Test the SOLVE library.
+
+TEST01
+  R8MAT_FS solves a linear system with Gauss elimination.
+ 
+  Solution:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.0000000    
+
+SOLVE_TEST
+  Normal end of execution.
+
+27 August 2020   7:24:57.545 PM

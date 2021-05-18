@@ -1,0 +1,57 @@
+10 September 2020   3:58:52.754 PM
+ 
+TRIANGULATION_PLOT
+  FORTRAN90 version
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  ELEMENT_NUM element in a triangulation of order
+  ELEMENT_ORDER = 3, 4 or 6 .
+ 
+  Make an EPS plot of the triangulated data.
+ 
+  Read the header of "elbow3_nodes.txt".
+ 
+  Spatial dimension DIM_NUM =        2
+  Number of nodes NODE_NUM  =      319
+ 
+  Read the data in "elbow3_nodes.txt".
+ 
+  First 5 nodes:
+ 
+  Row          1             2      
+  Col
+ 
+    1    1.00000       0.00000    
+    2    0.00000       1.00000    
+    3   0.400000       0.00000    
+    4    0.00000      0.400000    
+    5   -0.00000      0.442820    
+ 
+  Read the header of "elbow3_elements.txt".
+ 
+  Element order ELEMENT_ORDER     =        3
+  Number of elements ELEMENT_NUM  =      568
+ 
+  Read the data in "elbow3_elements.txt".
+ 
+  First 5 elements:
+ 
+  Row        1       2       3
+  Col
+ 
+    1       17      18       2
+    2        6       5       4
+    3      287     301     302
+    4      257     258     239
+    5      274     258     257
+ 
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+ 
+  Created the EPS file "elbow3.eps".
+ 
+TRIANGULATION_PLOT
+  Normal end of execution.
+ 
+10 September 2020   3:58:52.764 PM

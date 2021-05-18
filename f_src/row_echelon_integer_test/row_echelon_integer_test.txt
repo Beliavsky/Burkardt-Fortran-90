@@ -1,0 +1,459 @@
+25 August 2020   9:02:30.105 AM
+
+ROW_ECHELON_INTEGER_TEST
+  FORTRAN90 version
+  Test the ROW_ECHELON_INTEGER library.
+
+I4_GCD_TEST
+  I4_GCD computes the greatest common factor,
+
+         I       J  I4_GCD
+
+        36      30       6
+        49      -7       7
+         0      71      71
+        12      12      12
+        36      49       1
+         1      42       1
+        91      28       7
+
+I4MAT_PRINT_TEST
+  I4MAT_PRINT prints an I4MAT.
+ 
+  The matrix:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:      11      12      13
+    2:      21      22      23
+    3:      31      32      33
+    4:      41      42      43
+    5:      51      52      53
+
+I4MAT_PRINT_SOME_TEST
+  I4MAT_PRINT_SOME prints some of an I4MAT.
+ 
+  The I4MAT, rows 2:4, cols 1:2:
+ 
+  Col        1       2
+  Row
+ 
+    2:      21      22
+    3:      31      32
+    4:      41      42
+
+I4MAT_REF_TEST
+  I4MAT_REF computes the 
+  integer row echelon form (IREF) of an I4MAT.
+ 
+  Input A:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       2       6       3       1
+    2:      -2      -6       0      -2      -8       3       1
+    3:       3       9       0       0       6       6       2
+    4:      -1      -3       0       1       0       9       3
+
+  The pseudo-determinant =              6
+ 
+  IREF of A:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       2       6       3       1
+    2:       0       0       0       2       4       9       3
+    3:       0       0       0       0       0       3       1
+    4:       0       0       0       0       0       0       0
+
+I4MAT_ROW_SWAP_TEST
+  I4MAT_ROW_SWAP swaps two rows of an I4MAT.
+ 
+  Input A:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:      11      12      13      14
+    2:      21      22      23      24
+    3:      31      32      33      34
+    4:      41      42      43      44
+    5:      51      52      53      54
+
+  Swap rows  2 and  5
+ 
+  Modified matrix:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:      11      12      13      14
+    2:      51      52      53      54
+    3:      31      32      33      34
+    4:      41      42      43      44
+    5:      21      22      23      24
+
+I4MAT_RREF_TEST
+  I4MAT_RREF computes the 
+  integer row reduced echelon form (IRREF) of an I4MAT.
+ 
+  Input A:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       2       6       3       1
+    2:      -2      -6       0      -2      -8       3       1
+    3:       3       9       0       0       6       6       2
+    4:      -1      -3       0       1       0       9       3
+
+  The pseudo-determinant =              6
+ 
+  IREF of A:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       0       2       0       0
+    2:       0       0       0       1       2       0       0
+    3:       0       0       0       0       0       3       1
+    4:       0       0       0       0       0       0       0
+
+I4MAT_RREF_SYSTEM_TEST
+  FORTRAN90 version.
+  I4MAT_RREF_SYSTEM computes the linear system associated
+  with an integer reduced row echelon form of an I4MAT.
+
+  Look at a "wide" matrix:
+ 
+  Input A1:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       2       6       3       1
+    2:      -2      -6       0      -2      -8       3       1
+    3:       3       9       0       0       6       6       2
+    4:      -1      -3       0       1       0       9       3
+
+  The pseudo-determinant =    6
+ 
+  A2, the IRREF of A1:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       0       2       0       0
+    2:       0       0       0       1       2       0       0
+    3:       0       0       0       0       0       3       1
+    4:       0       0       0       0       0       0       0
+ 
+  B2, the right hand side:
+ 
+         1:             1
+         2:             1
+         3:             1
+         4:             0
+
+  The original system is CONSISTENT.
+ 
+  A3, the augmented IRREF:
+ 
+  Col        1       2       3       4       5       6       7
+  Row
+ 
+    1:       1       3       0       0       2       0       0
+    2:       0       1       0       0       0       0       0
+    3:       0       0       1       0       0       0       0
+    4:       0       0       0       1       2       0       0
+    5:       0       0       0       0       1       0       0
+    6:       0       0       0       0       0       3       1
+    7:       0       0       0       0       0       0       1
+ 
+  B3, the augmented RHS:
+ 
+         1:             1
+         2:             0
+         3:             0
+         4:             1
+         5:             0
+         6:             1
+         7:             0
+ 
+  Indices of degrees of freedom.
+ 
+         1:             2
+         2:             3
+         3:             5
+         4:             7
+
+  Look at a "tall" matrix:
+ 
+  Input A1:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1      -2       3      -1
+    2:       3      -6       9      -3
+    3:       0       0       0       0
+    4:       2      -2       0       1
+    5:       6      -8       6       0
+    6:       3       3       6       9
+    7:       1       1       2       3
+
+  The pseudo-determinant =   32
+ 
+  A2, the IRREF of A1:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:      16       0       0      29
+    2:       0      16       0      21
+    3:       0       0      16      -1
+    4:       0       0       0       0
+    5:       0       0       0       0
+    6:       0       0       0       0
+    7:       0       0       0       0
+ 
+  B2, the right hand side:
+ 
+         1:             1
+         2:             1
+         3:             1
+         4:             1
+         5:             1
+         6:             1
+         7:             1
+
+  The original system is INCONSISTENT.
+ 
+  A3, the augmented IRREF:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:      16       0       0      29
+    2:       0      16       0      21
+    3:       0       0      16      -1
+    4:       0       0       0       1
+ 
+  B3, the augmented RHS:
+ 
+         1:             1
+         2:             1
+         3:             1
+         4:             0
+ 
+  Indices of degrees of freedom.
+ 
+         1:             4
+
+I4MAT_U_SOLVE_TEST
+  I4MAT_U_SOLVE solves an upper triangular system.
+ 
+  Input matrix A:
+ 
+  Col        1       2       3       4
+  Row
+ 
+    1:       1       2       4       7
+    2:       0       3       5       8
+    3:       0       0       6       9
+    4:       0       0       0      10
+ 
+  Right hand side b:
+ 
+         1:            45
+         2:            53
+         3:            54
+         4:            40
+ 
+  Computed solution x:
+ 
+         1:    1.0000000    
+         2:    2.0000000    
+         3:    3.0000000    
+         4:    4.0000000    
+
+  Norm of A*x-b =    0.00000    
+
+I4VEC_BINARY_NEXT_TEST
+  I4VEC_BINARY_NEXT generates the next binary vector.
+
+           0           0           0
+           0           0           1
+           0           1           0
+           0           1           1
+           1           0           0
+           1           0           1
+           1           1           0
+           1           1           1
+
+I4VEC_IDENTITY_ROW_TEST
+  I4VEC_IDENTITY_ROW returns a row of the identity matrix.
+
+ 0: 0 0 0 0 0
+ 1: 1 0 0 0 0
+ 2: 0 1 0 0 0
+ 3: 0 0 1 0 0
+ 4: 0 0 0 1 0
+ 5: 0 0 0 0 1
+ 6: 0 0 0 0 0
+
+I4VEC_IS_BINARY_TEST
+  I4VEC_IS_BINARY is TRUE if an I4VEC only contains
+  0 or 1 entries.
+
+ 
+  X:
+           0           0           0
+  X is binary.
+
+ 
+  X:
+           1           0           1
+  X is binary.
+
+ 
+  X:
+           0           2           1
+  X is NOT binary.
+
+I4VEC_PRINT_TEST
+  I4VEC_PRINT prints an I4VEC
+ 
+  The I4VEC:
+ 
+         1:            91
+         2:            92
+         3:            93
+         4:            94
+
+I4VEC_RED_TEST
+  I4VEC_RED divides out any common factors in the
+  entries of an I4VEC.
+ 
+  Apply I4VEC_RED to each row of this matrix:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:      12      88       9
+    2:       4       8     192
+    3:     -12      88      94
+    4:      30      18      42
+    5:       0       4       8
+ 
+  Reduced matrix:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:      12      88       9
+    2:       1       2      48
+    3:      -6      44      47
+    4:       5       3       7
+    5:       0       1       2
+
+I4VEC_TRANSPOSE_PRINT_TEST
+  I4VEC_TRANSPOSE_PRINT prints an I4VEC
+  with 5 entries to a row, and an optional title.
+ 
+  Output from I4VEC_PRINT:
+ 
+         1:             1
+         2:             2
+         3:             3
+         4:             4
+         5:             5
+         6:             6
+         7:             7
+         8:             8
+         9:             9
+        10:            10
+        11:            11
+        12:            12
+
+  Call I4VEC_TRANSPOSE_PRINT with a short title:
+ 
+  My array:
+           1           2           3           4           5
+           6           7           8           9          10
+          11          12
+
+KSUB_NEXT4_TEST
+  KSUB_NEXT4 generates K subsets of an N set.
+  N =        5
+  K=         3
+
+  Rank    Subset
+
+     1       1   2   3
+     2       1   2   4
+     3       1   3   4
+     4       2   3   4
+     5       1   2   5
+     6       1   3   5
+     7       2   3   5
+     8       1   4   5
+     9       2   4   5
+    10       3   4   5
+
+R8VEC_IS_INTEGER_TEST
+  R8VEC_IS_INTEGER is TRUE if an R8VEC only contains
+  integer entries.
+
+  Example 1: Obviously integer:
+
+
+  X:     1.00000       2.00000       3.00000       4.00000       5.00000    
+         6.00000    
+  X is integer.
+
+  Obviously NOT integer:
+
+
+  X:     1.00000       2.00000       3.00000       4.00000       5.00000    
+         6.50000    
+  X is NOT integer.
+
+  Example 3: Not Integer, Not obvious:
+
+
+  X:     1.00000       2.00000       3.00000       4.00000       5.00000    
+         6.00000    
+  X is NOT integer.
+
+  Example 4: Not Integer, Not obvious:
+
+
+  X:     1.00000       2.00000      0.300000E+09   4.00000       5.00000    
+         6.00000    
+  X is NOT integer.
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+ 
+  The R8VEC:
+ 
+         1:    123.45600    
+         2:   0.50000000E-05
+         3:   -1000000.0    
+         4:    3.1415927    
+
+R8VEC_TRANSPOSE_PRINT_TEST
+  R8VEC_TRANSPOSE_PRINT prints an R8VEC "tranposed",
+  that is, placing multiple entries on a line.
+  The vector X:     1.10000       2.02000       30.3300       444.440     -0.500000E-02
+                    6.66667      0.777778E+07   8.00000       99.0000       10.0000    
+                    11.0000       12.0000    
+
+ROW_ECHELON_INTEGER_TEST
+  Normal end of execution.
+
+25 August 2020   9:02:30.106 AM

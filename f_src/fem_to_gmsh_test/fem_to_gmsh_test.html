@@ -1,0 +1,138 @@
+<html>
+
+  <head>
+    <title>
+      fem_to_gmsh_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem_to_gmsh_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem_to_gmsh_test</b>,
+      a FORTRAN90 code which
+      calls fem_to_gmsh(), which
+      converts FEM files representing a 1D, 2D, or 3D mesh into a 
+      GMSH mesh file.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem_to_gmsh/fem_to_gmsh.html">
+      fem_to_gmsh</a>,
+      a FORTRAN90 code which
+      reads FEM files definining a 1D, 2D or 3D mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a gmsh() mesh file.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem_to_gmsh_test.sh">fem_to_gmsh_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem_to_gmsh_test.txt">fem_to_gmsh_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CHEBY9</b> is a 1D interval, [-1,+1], containing 9 nodes and 8 elements.
+      <ul>
+        <li>
+          <a href = "cheby9_nodes.txt">cheby9_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "cheby9_elements.txt">cheby9_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "cheby9.msh">cheby9.msh</a>,
+          the corresponding GMSH mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MESH3D</b> is a 3D tetrahedral mesh using 8 nodes and 6 elements.
+      <ul>
+        <li>
+          <a href = "mesh3d_nodes.txt">mesh3d_nodes.txt</a>,
+          the nodes for the 4-node tet mesh.
+        </li>
+        <li>
+          <a href = "mesh3d_elements.txt">mesh3d_elements.txt</a>,
+          the elements for the 4-node tet mesh.
+        </li>
+        <li>
+          <a href = "mesh3d.msh">mesh3d.msh</a>,
+          the Gmsh msh file version of the data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>RECTANGLE</b> is a 2D rectangular region which has been divided
+      into 3 rows and 4 columns of squares, each then split into two
+      3-node triangles.  The node and element files of this triangulation
+      are converted into a Gmsh msh file describing the same triangulation.
+      <ul>
+        <li>
+          <a href = "rectangle_nodes.txt">rectangle_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "rectangle_elements.txt">rectangle_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "rectangle.png">rectangle.png</a>,
+          a PNG image of the triangulation, created by TRIANGULATION_PLOT.
+        </li>
+        <li>
+          <a href = "rectangle.msh">rectangle.msh</a>,
+          the corresponding gmsh() msh file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

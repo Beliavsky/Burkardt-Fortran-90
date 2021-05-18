@@ -1,0 +1,181 @@
+<html>
+
+  <head>
+    <title>
+      POLYGON_TRIANGULATE - Triangulate a Polygon
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      POLYGON_TRIANGULATE <br> Triangulate a Polygon
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>POLYGON_TRIANGULATE</b>,
+      a FORTRAN90 code which
+      triangulates a possibly nonconvex polygon in 2D,
+      and which can use gnuplot to display the external edges and 
+      internal diagonals of the triangulation.
+    </p>
+
+    <p>
+      The polygon is defined by an input file which gives the coordinates
+      of the vertices of the polygon, in counterclockwise order.
+    </p>
+
+    <p>
+      No consecutive pair of vertices should be equal; when describing a
+      polygon, sometimes the first and last vertices are equal.  For this
+      program, that is not the case.  To describe a square, your input
+      file should contain four pairs of coordinates, for instance.
+    </p>
+
+    <p>
+      The vertices should be listed in counterclockwise order.  If you list
+      them in clockwise order, then the function will refuse to operate
+      on the data.
+    </p>
+
+    <p>
+      It is possible to create a polygon that has zero area.  The function
+      will refuse to process such an object.
+    </p>
+
+    <p>
+      This function cannot triangulate a polygon which includes one or
+      more "holes".  That is actually a significantly more difficult
+      task.
+    </p>
+
+    <p>
+      The polygon does not need to be convex.  However, you should be careful
+      not to specify a polygon which crosses itself, since this means the
+      interior of the polygon is not well defined, and hence a triangulation
+      is not well defined.  As a simple example of such a problem, consider
+      the four vertices of a square in counterclockwise order: V1, V2, V3, V4,
+      and list them instead as V1, V3, V2, V4.  This shape cannot be 
+      triangulated in the usual sense.  However, the function may not
+      realize this, in which case it will return what it thinks is a
+      reasonable triangulation of the (unreasonable) data.
+    </p>
+
+    <p>
+      The output of the program is a list of the N-3 triples of nodes that 
+      form the triangles of the triangulation.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>POLYGON_TRIANGULATE</b> is available in
+      <a href = "../../c_src/polygon_triangulate/polygon_triangulate.html">a C version</a> and
+      <a href = "../../cpp_src/polygon_triangulate/polygon_triangulate.html">a C++ version</a> and
+      <a href = "../../f_src/polygon_triangulate/polygon_triangulate.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/polygon_triangulate/polygon_triangulate.html">a MATLAB version</a> and
+      <a href = "../../py_src/polygon_triangulate/polygon_triangulate.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/polygon_integrals/polygon_integrals.html">
+      POLYGON_INTEGRALS</a>,
+      a FORTRAN90 code which
+      returns the exact value of the integral of any monomial
+      over the interior of a polygon in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_monte_carlo/polygon_monte_carlo.html">
+      POLYGON_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      over the interior of a polygon in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_properties/polygon_properties.html">
+      POLYGON_PROPERTIES</a>,
+      a FORTRAN90 code which
+      computes properties of an arbitrary polygon in the plane, defined
+      by a sequence of vertices, including interior angles, area, centroid,
+      containment of a point, convexity, diameter, distance to a point, 
+      inradius, lattice area, nearest point in set, outradius, uniform sampling.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polygon_triangulate_test/polygon_triangulate_test.html">
+      polygon_triangulate_test</a>
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Based on a C function by Joseph ORourke;
+      FORTRAN90 version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry in C,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "polygon_triangulate.f90">polygon_triangulate.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "polygon_triangulate.sh">polygon_triangulate.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

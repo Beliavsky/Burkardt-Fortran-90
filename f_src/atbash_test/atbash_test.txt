@@ -1,0 +1,25 @@
+22 May 2020   7:55:25.999 PM
+
+ATBASH_TEST
+  FORTRAN90 version
+  ATBASH_ENCRYPT encrypts a plain text using the Atbash
+  substitution cipher.
+
+TEST01
+  Apply ATBASH to a short phrase.
+
+PLAIN:   "A man, a plan, a canal - Panama!"
+CRYPT:   "Z nzm, z kozm, z xzmzo - Kzmznz!"
+DECRYPT: "A man, a plan, a canal - Panama!"
+
+TEST02
+  Apply ATBASH to a longer phrase.
+
+PLAIN:   "There are a thousand hacking at the branches of evil for every one who is striking at its root."
+CRYPT:   "Gsviv ziv z gslfhzmw szxprmt zg gsv yizmxsvh lu vero uli vevib lmv dsl rh hgirprmt zg rgh illg."
+DECRYPT: "There are a thousand hacking at the branches of evil for every one who is striking at its root."
+
+ATBASH_TEST
+  Normal end of execution.
+
+22 May 2020   7:55:25.999 PM

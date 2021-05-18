@@ -1,0 +1,150 @@
+14 July 2020   8:02:32.595 PM
+
+HIGH_CARD_SIMULATION_TEST
+  FORTRAN90 version.
+  Test the HIGH_CARD_SIMULATION library.
+
+TEST01
+  Estimate the chances of picking the high
+  card by skipping a given number of initial cards,
+  using a deck of  100 cards
+  and simulating  100 trials.
+
+  Skip   Deck Size    Chance of Winning
+
+    1  100    0.300000E-01
+   11  100    0.260000    
+   21  100    0.400000    
+   31  100    0.360000    
+   41  100    0.330000    
+   51  100    0.320000    
+   61  100    0.330000    
+   71  100    0.290000    
+   81  100    0.170000    
+   91  100    0.900000E-01
+
+TEST02
+  Compute the changes of picking the high card
+  after skipping 0 through 99 cards,
+  using a deck with  100 cards
+  and taking 1000 trials.
+ 
+  Created graphics data file "test02_data.txt".
+  Created graphics command file "test02_commands.txt".
+
+TEST03
+  HIGH_CARD_PROBABILITY computes the exact probability of 
+  winning a high card game with a deck of  100 cards
+  assuming we skip the first K-1 cards and select the next card
+  that is bigger.
+
+    K   Prob(K)
+
+    1    0.0100
+    2    0.0518
+    3    0.0835
+    4    0.1103
+    5    0.1338
+    6    0.1547
+    7    0.1736
+    8    0.1909
+    9    0.2068
+   10    0.2214
+   11    0.2348
+   12    0.2473
+   13    0.2589
+   14    0.2696
+   15    0.2796
+   16    0.2889
+   17    0.2975
+   18    0.3054
+   19    0.3128
+   20    0.3196
+   21    0.3259
+   22    0.3317
+   23    0.3370
+   24    0.3419
+   25    0.3463
+   26    0.3504
+   27    0.3540
+   28    0.3572
+   29    0.3601
+   30    0.3626
+   31    0.3647
+   32    0.3665
+   33    0.3680
+   34    0.3692
+   35    0.3701
+   36    0.3707
+   37    0.3710
+   38    0.3710
+   39    0.3708
+   40    0.3703
+   41    0.3695
+   42    0.3685
+   43    0.3673
+   44    0.3658
+   45    0.3640
+   46    0.3621
+   47    0.3599
+   48    0.3575
+   49    0.3549
+   50    0.3521
+   51    0.3491
+   52    0.3459
+   53    0.3425
+   54    0.3388
+   55    0.3351
+   56    0.3311
+   57    0.3269
+   58    0.3226
+   59    0.3181
+   60    0.3134
+   61    0.3085
+   62    0.3035
+   63    0.2983
+   64    0.2929
+   65    0.2874
+   66    0.2818
+   67    0.2759
+   68    0.2700
+   69    0.2639
+   70    0.2576
+   71    0.2512
+   72    0.2446
+   73    0.2379
+   74    0.2311
+   75    0.2241
+   76    0.2170
+   77    0.2098
+   78    0.2024
+   79    0.1949
+   80    0.1873
+   81    0.1795
+   82    0.1716
+   83    0.1636
+   84    0.1555
+   85    0.1473
+   86    0.1389
+   87    0.1304
+   88    0.1218
+   89    0.1131
+   90    0.1043
+   91    0.0953
+   92    0.0863
+   93    0.0771
+   94    0.0678
+   95    0.0585
+   96    0.0490
+   97    0.0394
+   98    0.0297
+   99    0.0199
+  100    0.0100
+ 
+  Created graphics data file "test03_data.txt".
+  Created graphics command file "test03_commands.txt".
+
+HIGH_CARD_SIMULATION_TEST
+  Normal end of execution.
+
+14 July 2020   8:02:32.859 PM

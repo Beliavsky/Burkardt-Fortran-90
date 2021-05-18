@@ -1,0 +1,32 @@
+17 June 2020  10:29:23.034 AM
+
+DISK01_RULE_TEST:
+  FORTRAN90 version
+  Test the DISK01_RULE library.
+ 
+TEST01
+  DISK01_RULE can compute a rule Q(f) for the unit disk
+  using NT equally spaced angles and NR radial distances.
+
+  NT =    8
+  NR =    4
+
+  Estimate integrals I(f) where f = x^e(1) * y^e(2).
+ 
+  E(1)  E(2)    I(f)            Q(f)
+ 
+    0    0     3.14159         3.14159    
+    0    2    0.785398        0.785398    
+    0    4    0.392699        0.392699    
+    0    6    0.245437        0.245437    
+    2    2    0.130900        0.130900    
+    2    4    0.490874E-01    0.490874E-01
+    2    6    0.245437E-01    0.196350E-01
+    4    4    0.147262E-01    0.196350E-01
+    4    6    0.613592E-02    0.818123E-02
+    6    6    0.219140E-02    0.350624E-02
+
+DISK01_RULE_TEST:
+  Normal end of execution.
+
+17 June 2020  10:29:23.034 AM

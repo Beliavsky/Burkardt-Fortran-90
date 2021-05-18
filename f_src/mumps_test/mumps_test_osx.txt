@@ -1,0 +1,129 @@
+
+MUMPS_TEST:
+  FORTRAN90 version
+  Test MUMPS.
+
+Entering DMUMPS 5.1.2 with JOB, N, NNZ =   6           5             12
+      executing #MPI =      1, without OMP
+
+ =================================================
+ MUMPS compiled with option -Dmetis
+ MUMPS compiled with option -Dscotch
+ =================================================
+L U Solver for unsymmetric matrices
+Type of parallelism: Working host
+
+ ****** ANALYSIS STEP ********
+
+ Resetting candidate strategy to 0 because NSLAVES=1
+ 
+ ... Structural symmetry (in percent)=   92
+ Average density of rows/columns =    2
+ ... No column permutation
+ Ordering based on AMF 
+
+Leaving analysis phase with  ...
+INFOG(1)                                       =               0
+INFOG(2)                                       =               0
+ -- (20) Number of entries in factors (estim.) =              15
+ --  (3) Storage of factors  (REAL, estimated) =              15
+ --  (4) Storage of factors  (INT , estimated) =              65
+ --  (5) Maximum frontal size      (estimated) =               3
+ --  (6) Number of nodes in the tree           =               3
+ -- (32) Type of analysis effectively used     =               1
+ --  (7) Ordering option effectively used      =               2
+ICNTL(6) Maximum transversal option            =               0
+ICNTL(7) Pivot order option                    =               7
+Percentage of memory relaxation (effective)    =              20
+Number of level 2 nodes                        =               0
+Number of split nodes                          =               0
+RINFOG(1) Operations during elimination (estim)=   1.900D+01
+ ** Rank of proc needing largest memory in IC facto        :               0
+ ** Estimated corresponding MBYTES for IC facto            :               1
+ ** Estimated avg. MBYTES per work. proc at facto (IC)     :               1
+ ** TOTAL     space in MBYTES for IC factorization         :               1
+ ** Rank of proc needing largest memory for OOC facto      :               0
+ ** Estimated corresponding MBYTES for OOC facto           :               1
+ ** Estimated avg. MBYTES per work. proc at facto (OOC)    :               1
+ ** TOTAL     space in MBYTES for OOC factorization        :               1
+ ELAPSED TIME IN ANALYSIS DRIVER=       0.0001
+
+ ****** FACTORIZATION STEP ********
+
+
+ GLOBAL STATISTICS PRIOR NUMERICAL FACTORIZATION ...
+ NUMBER OF WORKING PROCESSES              =               1
+ OUT-OF-CORE OPTION (ICNTL(22))           =               0
+ REAL SPACE FOR FACTORS                   =              15
+ INTEGER SPACE FOR FACTORS                =              65
+ MAXIMUM FRONTAL SIZE (ESTIMATED)         =               3
+ NUMBER OF NODES IN THE TREE              =               3
+ MEMORY ALLOWED (MB -- 0: N/A )           =               0
+ RELATIVE THRESHOLD FOR PIVOTING, CNTL(1) =      0.1000D-01
+ Convergence error after scaling for ONE-NORM (option 7/8)   = 0.38D+00
+ Maximum effective relaxed size of S              =             479
+ Average effective relaxed size of S              =             479
+ ELAPSED TIME FOR MATRIX DISTRIBUTION      =      0.0000
+ ** Memory relaxation parameter ( ICNTL(14)  )            :        20
+ ** Rank of processor needing largest memory in facto     :         0
+ ** Space in MBYTES used by this processor for facto      :         1
+ ** Avg. Space in MBYTES per working proc during facto    :         1
+
+ ELAPSED TIME FOR FACTORIZATION           =      0.0001
+ Maximum effective space used in S     (KEEP8(67))               15
+ Average effective space used in S     (KEEP8(67))               15
+ ** EFF Min: Rank of processor needing largest memory :         0
+ ** EFF Min: Space in MBYTES used by this processor   :         1
+ ** EFF Min: Avg. Space in MBYTES per working proc    :         1
+
+ GLOBAL STATISTICS 
+ RINFOG(2)  OPERATIONS IN NODE ASSEMBLY   = 2.000D+00
+ ------(3)  OPERATIONS IN NODE ELIMINATION= 1.900D+01
+ INFOG (9)  REAL SPACE FOR FACTORS        =              15
+ INFOG(10)  INTEGER SPACE FOR FACTORS     =              65
+ INFOG(11)  MAXIMUM FRONT SIZE            =               3
+ INFOG(29)  NUMBER OF ENTRIES IN FACTORS  =              15
+ INFOG(12)  NUMBER OF OFF DIAGONAL PIVOTS =               0
+ INFOG(13)  NUMBER OF DELAYED PIVOTS      =               0
+ INFOG(14)  NUMBER OF MEMORY COMPRESS     =               0
+ ELAPSED TIME IN FACTORIZATION DRIVER=       0.0002
+
+
+ ****** SOLVE & CHECK STEP ********
+
+
+ STATISTICS PRIOR SOLVE PHASE     ...........
+ NUMBER OF RIGHT-HAND-SIDES                    =           1
+ BLOCKING FACTOR FOR MULTIPLE RHS              =           1
+ ICNTL (9)                                     =           1
+  --- (10)                                     =           0
+  --- (11)                                     =           0
+  --- (20)                                     =           0
+  --- (21)                                     =           0
+  --- (30)                                     =           0
+ ** Rank of processor needing largest memory in solve     :         0
+ ** Space in MBYTES used by this processor for solve      :         0
+ ** Avg. Space in MBYTES per working proc during solve    :         0
+
+ Global statistics
+ TIME to build/scatter RHS        =       0.000008
+ TIME in solution step (fwd/bwd)  =       0.000028
+  .. TIME in forward (fwd) step   =          0.000011
+  .. TIME in backward (bwd) step  =          0.000011
+ TIME to gather solution(cent.sol)=       0.000003
+ TIME to copy/scale RHS (dist.sol)=       0.000000
+ ELAPSED TIME IN SOLVE DRIVER=       0.0001
+
+  Solution:
+
+     1.00000    
+     2.00000    
+     3.00000    
+     4.00000    
+     5.00000    
+
+Entering DMUMPS 5.1.2 with JOB =  -2
+      executing #MPI =      1, without OMP
+
+MUMPS_TEST:
+  Normal end of execution.

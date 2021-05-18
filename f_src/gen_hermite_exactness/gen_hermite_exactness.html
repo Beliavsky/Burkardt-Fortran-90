@@ -1,0 +1,312 @@
+<html>
+
+  <head>
+    <title>
+      gen_hermite_exactness
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      gen_hermite_exactness
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>gen_hermite_exactness</b>,
+      a FORTRAN90 program which
+      investigates the polynomial exactness of a generalized Gauss-Hermite
+      quadrature rule for the infinite interval (-oo,+oo).
+    </p>
+
+    <p>
+      <i>
+        Note that the arithmetic accuracy of this program may be insufficient
+        to discriminant the accuracy of generalized Gauss-Hermite rules of moderate
+        order - say, order 16.  Therefore, a FORTRAN90 version of this program
+        has been prepared,  using "quadruple precision", which should give more
+        satisfactory results for a wider range of orders.  This program can
+        be found cataloged below as <b>gen_hermite_exactness_R16</b>.
+      </i>
+    </p>
+
+    <p>
+      Standard generalized Gauss-Hermite quadrature assumes that the integrand we are
+      considering has a form like:
+      <pre>
+        Integral ( -oo &lt; x &lt; +oo ) |x|^alpha * exp(-x^2) * f(x) dx
+      </pre>
+      where the factor <b>|x|^alpha * exp(-x^2)</b> is regarded as a weight factor.
+    </p>
+
+    <p>
+      A <i>standard generalized Gauss-Hermite quadrature rule</i> is a set of <b>n</b>
+      positive weights <b>w</b> and abscissas <b>x</b> so that
+      <pre>
+        Integral ( -oo &lt; x &lt; +oo ) |x|^alpha * exp(-x^2) * f(x) dx
+      </pre>
+      may be approximated by
+      <pre>
+        Sum ( 1 &lt;= I &lt;= N ) w(i) * f(x(i))
+      </pre>
+    </p>
+
+    <p>
+      It is often convenient to consider approximating integrals in which
+      the weighting factor <b>|x|^alpha * exp(-x^2)</b> is implicit.  In that case, we
+      are looking at approximating
+      <pre>
+        Integral ( -oo &lt; x &lt; +oo ) f(x) dx
+      </pre>
+      and it is easy to modify a standard generalized Gauss-Hermite quadrature rule
+      to handle this case directly.
+    </p>
+
+    <p>
+      A <i>modified generalized Gauss-Hermite quadrature rule</i> is a set of <b>n</b>
+      positive weights <b>w</b> and abscissas <b>x</b> so that
+      <pre>
+        Integral ( -oo &lt; x &lt; +oo ) f(x) dx
+      </pre>
+      may be approximated by
+      <pre>
+        Sum ( 1 &lt;= I &lt;= N ) w(i) * f(x(i))
+      </pre>
+    </p>
+
+    <p>
+      When using a generalized Gauss-Hermite quadrature rule, it's important to know whether
+      the rule has been developed for the standard or modified cases.
+      Basically, the only change is that the weights of the modified rule have
+      been divided by the weighting function evaluated at the corresponding abscissa.
+    </p>
+
+    <p>
+      For a standard generalized Gauss-Hermite rule, polynomial exactness is defined in terms of
+      the function <b>f(x)</b>.  That is, we say the rule is exact for polynomials
+      up to degree DEGREE_MAX if, for any polynomial <b>f(x)</b> of that degree or
+      less, the quadrature rule will produce the exact value of
+      <pre>
+        Integral ( -oo &lt; x &lt; +oo ) |x|^alpha * exp(-x^2) * f(x) dx
+      </pre>
+    </p>
+
+    <p>
+      For a modified generalized Gauss-Hermite rule, polynomial exactness is defined in terms of
+      the function <b>f(x)</b> divided by the implicit weighting function.  That is,
+      we say a modified generalized Gauss-Hermite rule is exact for polynomials up to degree
+      DEGREE_MAX if, for any integrand <b>f(x)</b> with the property that
+      <b>f(x)/(|x|^alpha*exp(-x^2))</b> is a polynomial of degree no more than DEGREE_MAX,
+      the quadrature rule will product the exact value of:
+      <pre>
+        Integral ( -oo &lt; x &lt; +oo ) f(x) dx
+      </pre>
+    </p>
+
+    <p>
+      The program starts at <b>DEGREE</b> = 0, and then
+      proceeds to <b>DEGREE</b> = 1, 2, and so on up to a maximum degree
+      <b>DEGREE_MAX</b> specified by the user.  At each value of <b>DEGREE</b>,
+      the program generates the corresponding monomial term, applies the
+      quadrature rule to it, and determines the quadrature error.  The program
+      uses a scaling factor on each monomial so that the exact integral
+      should always be 1; therefore, each reported error can be compared
+      on a fixed scale.
+    </p>
+
+    <p>
+      If the program understands that the rule being considered is a modified rule,
+      then the monomials are multiplied by <b>|x|^alpha * exp(-x^2)</b> when performing the
+      exactness test.
+    </p>
+
+    <p>
+      The program is very flexible and interactive.  The quadrature rule
+      is defined by three files, to be read at input, and the
+      maximum degree top be checked is specified by the user as well.
+    </p>
+
+    <p>
+      Note that the three files that define the quadrature rule
+      are assumed to have related names, of the form
+      <ul>
+        <li>
+          <i>prefix</i>_<b>x.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>w.txt</b>
+        </li>
+        <li>
+          <i>prefix</i>_<b>r.txt</b>
+        </li>
+      </ul>
+      When running the program, the user only enters the common <i>prefix</i>
+      part of the file names, which is enough information for the program
+      to find all three files.
+    </p>
+
+    <p>
+      For information on the form of these files, see the
+      <b>QUADRATURE_RULES</b> directory listed below.
+    </p>
+
+    <p>
+      The exactness results are written to an output file with the
+      corresponding name:
+      <ul>
+        <li>
+          <i>prefix</i>_<b>exact.txt</b>
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>gen_hermite_exactness</b> <i>prefix</i> <i>degree_max</i> <i>alpha</i> <i>option</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>prefix</i> is the common prefix for the files containing the abscissa, weight
+          and region information of the quadrature rule;
+        </li>
+        <li>
+          <i>degree_max</i> is the maximum monomial degree to check.  This would normally be
+          a relatively small nonnegative number, such as 5, 10 or 15.
+        </li>
+        <li>
+          <i>alpha</i> is the value of the parameter, which should be a real number greater than -1.0.
+          Setting <i>alpha</i> to 0.0 results in the basic (non-generalized) Gauss-Hermite rule.
+        </li>
+        <li>
+          <i>option</i>:<br>
+          0 indicates a standard rule for integrating |x|^alpha * exp(-x^2)*f(x).<br>
+          1 indicates a modified rule for integrating f(x).
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      If the arguments are not supplied on the command line, the
+      program will prompt for them.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>gen_hermite_exactness</b> is available in
+      <a href = "../../cpp_src/gen_hermite_exactness/gen_hermite_exactness.html">a C++ version</a> and
+      <a href = "../../f_src/gen_hermite_exactness/gen_hermite_exactness.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/gen_hermite_exactness/gen_hermite_exactness.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/gen_hermite_exactness_test/gen_hermite_exactness_test.html">
+      gen_hermite_exactness_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/gen_hermite_rule/gen_hermite_rule.html">
+      GEN_HERMITE_RULE</a>,
+      a FORTRAN90 program which
+      can generate a generalized Gauss-Hermite quadrature
+      rule on request.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_exactness/hermite_exactness.html">
+      HERMITE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the polynomial exactness of Gauss-Hermite quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_exactness/laguerre_exactness.html">
+      LAGUERRE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the polynomial exactness of Gauss-Laguerre quadrature rules
+      for integration over [0,+oo) with density function exp(-x).
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_exactness/legendre_exactness.html">
+      LEGENDRE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the monomial exactness of quadrature rules for the Legendre problem
+      of integrating a function with density 1 over the interval [-1,+1].
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "gen_hermite_exactness.f90">gen_hermite_exactness.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "gen_hermite_exactness.sh">gen_hermite_exactness.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

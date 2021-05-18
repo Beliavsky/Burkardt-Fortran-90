@@ -1,0 +1,15 @@
+# predator_commands.txt
+#
+# Usage:
+#  gnuplot < predator_commands.txt
+#
+set term png
+set output "predator_plot3d.png"
+set xlabel "<-- Predator -->"
+set ylabel "<-- Prey -->"
+set zlabel "<-- Time -->"
+set title "Predator/Prey evolution"
+set grid
+set style data lines
+splot "predator_data.txt" using 2:3:1 with lines
+quit

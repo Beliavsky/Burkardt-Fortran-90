@@ -1,0 +1,279 @@
+<html>
+
+  <head>
+    <title>
+      HERMITE_POLYNOMIAL - Hermite Polynomials
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      HERMITE_POLYNOMIAL <br> Hermite Polynomials
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>HERMITE_POLYNOMIAL</b>,
+      a FORTRAN90 code which
+      evaluates the physicist's Hermite polynomial, the probabilist's 
+      Hermite polynomial, the Hermite function, and related functions.
+    </p>
+
+    <p>
+      The physicist's Hermite polynomial H(i,x) can be defined by:
+      <pre>
+        H(i,x) = (-1)^i exp(x^2/2) * d^i/dx^i ( exp(-x^2/2) )
+      </pre>
+    </p>
+
+    <p>
+      The normalized physicist's Hermite polynomial Hn(i,x) is scaled so that
+      <pre>
+        Integral ( -oo < x < +oo ) exp ( - x^2 ) * Hn(i,x) Hn(j,x) dx = delta ( i, j )
+      </pre>
+    </p>
+
+    <p>
+      The probabilist's Hermite polynomial He(i,x) is related to H(i,x) by:
+      <pre>
+        He(i,x) = H(i,x/sqrt(2)) / sqrt ( 2^in )
+      </pre>
+    </p>
+
+    <p>
+      The normalized probabilist's Hermite polynomial Hen(i,x) is scaled so that
+      <pre>
+        Integral ( -oo < x < +oo ) exp ( - 0.5*x^2 ) * Hen(i,x) Hen(j,x) dx = delta ( i, j )
+      </pre>
+    </p>
+
+    <p>
+      The Hermite function Hf(i,x) is related to H(i,x) by:
+      <pre>
+        Hf(i,x) = H(i,x) * exp(-x^2/2) / sqrt ( 2^i * i! * sqrt ( pi ) )
+      </pre>
+    </p>
+
+    <p>
+      The Hermite function Hf(i,x) is scaled so that:
+      <pre>
+        Integral ( -oo < x < +oo ) Hf(i,x) Hf(j,x) dx = delta ( i, j )
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>HERMITE_POLYNOMIAL</b> is available in
+      <a href = "../../c_src/hermite_polynomial/hermite_polynomial.html">a C version</a> and
+      <a href = "../../cpp_src/hermite_polynomial/hermite_polynomial.html">a C++ version</a> and
+      <a href = "../../f_src/hermite_polynomial/hermite_polynomial.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/hermite_polynomial/hermite_polynomial.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bernstein_polynomial/bernstein_polynomial.html">
+      BERNSTEIN_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Bernstein polynomials, 
+      useful for uniform approximation of functions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_polynomial/chebyshev_polynomial.html">
+      CHEBYSHEV_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      considers the Chebyshev polynomials T(i,x), U(i,x), V(i,x) and W(i,x).
+      Functions are provided to evaluate the polynomials, determine their zeros, 
+      produce their polynomial coefficients, produce related quadrature rules,
+      project other functions onto these polynomial bases, and integrate
+      double and triple products of the polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gegenbauer_polynomial/gegenbauer_polynomial.html">
+      GEGENBAUER_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Gegenbauer polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gen_hermite_rule/gen_hermite_rule.html">
+      GEN_HERMITE_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a generalized Gauss-Hermite quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_exactness/hermite_exactness.html">
+      HERMITE_EXACTNESS</a>,
+      a FORTRAN90 program which
+      tests the polynomial exactness of Gauss-Hermite quadrature rules.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_polynomial_test/hermite_polynomial_test.html">
+      hermite_polynomial_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_product_polynomial/hermite_product_polynomial.html">
+      HERMITE_PRODUCT_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      defines Hermite product polynomials, creating a multivariate 
+      polynomial as the product of univariate Hermite polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hermite_rule/hermite_rule.html">
+      HERMITE_RULE</a>,
+      a FORTRAN90 program which
+      can compute and print a Gauss-Hermite quadrature rule.
+    </p>
+
+    <p>
+      <a href = "../../f_src/jacobi_polynomial/jacobi_polynomial.html">
+      JACOBI_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Jacobi polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/laguerre_polynomial/laguerre_polynomial.html">
+      LAGUERRE_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Laguerre polynomial, the generalized Laguerre polynomials,
+      and the Laguerre function.
+    </p>
+
+    <p>
+      <a href = "../../f_src/legendre_polynomial/legendre_polynomial.html">
+      LEGENDRE_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates the Legendre polynomial and associated functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lobatto_polynomial/lobatto_polynomial.html">
+      LOBATTO_POLYNOMIAL</a>,
+      a FORTRAN90 library which
+      evaluates Lobatto polynomials, similar to Legendre polynomials
+      except that they are zero at both endpoints.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pce_burgers/pce_burgers.html">
+      PCE_BURGERS</a>,
+      a FORTRAN90 program which
+      defines and solves a version of the time-dependent viscous Burgers equation,
+      with uncertain viscosity, using a polynomial chaos expansion in terms
+      of Hermite polynomials,
+      by Gianluca Iaccarino.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pce_ode_hermite/pce_ode_hermite.html">
+      PCE_ODE_HERMITE</a>,
+      a FORTRAN90 program which
+      sets up a simple scalar ODE for exponential decay with an uncertain
+      decay rate, using a polynomial chaos expansion in terms of Hermite polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polpak/polpak.html">
+      POLPAK</a>,
+      a FORTRAN90 library which
+      evaluates a variety of mathematical functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 library which
+      supplies test values of various mathematical functions.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Theodore Chihara,<br>
+          An Introduction to Orthogonal Polynomials,<br>
+          Gordon and Breach, 1978,<br>
+          ISBN: 0677041500,<br>
+          LC: QA404.5 C44.
+        </li>
+        <li>
+          Walter Gautschi,<br>
+          Orthogonal Polynomials: Computation and Approximation,<br>
+          Oxford, 2004,<br>
+          ISBN: 0-19-850672-4,<br>
+          LC: QA404.5 G3555.
+        </li>
+        <li>
+          Frank Olver, Daniel Lozier, Ronald Boisvert, Charles Clark,<br>
+          NIST Handbook of Mathematical Functions,<br>
+          Cambridge University Press, 2010,<br>
+          ISBN: 978-0521192255,<br>
+          LC: QA331.N57.
+        </li>
+        <li>
+          Gabor Szego,<br>
+          Orthogonal Polynomials,<br>
+          American Mathematical Society, 1992,<br>
+          ISBN: 0821810235,<br>
+          LC: QA3.A5.v23.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "hermite_polynomial.f90">hermite_polynomial.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "hermite_polynomial.sh">hermite_polynomial.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

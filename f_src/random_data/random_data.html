@@ -1,0 +1,378 @@
+<html>
+
+  <head>
+    <title>
+      RANDOM_DATA - Generation of random data
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      RANDOM_DATA <br> Generation of random data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>RANDOM_DATA</b>,
+      a FORTRAN90 code which
+      uses a random number generator (RNG) to sample points for
+      various probability distributions, spatial dimensions, and geometries,
+      including the M-dimensional cube, ellipsoid, simplex and sphere. 
+    </p>
+
+    <p>
+      Most of these routines assume that there is an available source
+      of pseudorandom numbers, distributed uniformly in the unit
+      interval [0,1].  In this package, that role is played by the
+      routine <b>R8_UNIFORM_01</b>, which allows us some portability.
+      We can get the same results in C, FORTRAN or MATLAB, for instance.
+      In general, however, it would be more efficient to use the
+      language-specific random number generator for this purpose.
+    </p>
+
+    <p>
+      If we have a source of pseudorandom values in [0,1], it's trivial
+      to generate pseudorandom points in any line segment; it's easy to
+      take pairs of pseudorandom values to sample a square, or triples to
+      sample a cube.  It's easy to see how to deal with square region that
+      is translated from the origin, or scaled by different amounts in
+      either axis, or given a rigid rotation.  The same simple transformations
+      can be applied to higher dimensional cubes, without giving us any
+      concern.
+    </p>
+
+    <p>
+      For all these simple shapes, which are just generalizations of
+      a square, we can easily see how to generate sample points that
+      we can guarantee will lie inside the region; in most cases, we
+      can also guarantee that these points will tend to be <i>uniformly
+      distributed</i>, that is, every subregion can expect to contain
+      a number of points proportional to its share of the total area.
+    </p>
+
+    <p>
+      However, we will <b>not</b> achieve uniform distribution in the
+      simple case of a rectangle of nonequal sides <b>[0,A]</b> x <b>[0,B]</b>,
+      if we naively scale the random values <b>(u1,u2)</b> to
+      <b>(A*u1,B*u2)</b>.  In that case, the expected point density of
+      a wide, short region will differ from that of a narrow tall region.
+      The absence of uniformity is most obvious if the points are plotted.
+    </p>
+
+    <p>
+      If you realize that uniformity is desirable, and easily lost,
+      it is possible to adjust the approach so that rectangles are
+      properly handled.
+    </p>
+
+    <p>
+      But rectangles are much too simple.  We are interested in circles,
+      triangles, and other shapes.  Once the geometry of the region
+      becomes more "interesting", there are two common ways to continue.
+    </p>
+
+    <p>
+      In the <i>acceptance-rejection method</i>,
+      uniform points are generated in a superregion that encloses the
+      region.  Then, points that do not lie within the region are rejected.
+      More points are generated until enough have been accepted to satisfy the
+      needs.  If a circle was the region of interest, for instance, we
+      could surround it with a box, generate points in the box, and throw
+      away those points that don't actually lie in the circle.  The resulting
+      set of samples will be a uniform sampling of the circle.
+    </p>
+
+    <p>
+      In the <i>direct mapping</i> method, a formula or mapping
+      is determined so that each time a set of values is taken from
+      the pseudorandom number generator, it is guaranteed to correspond
+      to a point in the region.  For the circle problem, we can use
+      one uniform random number to choose an angle between 0 and 2 PI,
+      the other to choose a radius.  (The radius must be chosen in
+      an appropriate way to guarantee uniformity, however.)  Thus,
+      every time we input two uniform random values, we get a pair
+      (R,T) that corresponds to a point in the circle.
+    </p>
+
+    <p>
+      The acceptance-rejection method can be simple to program, and
+      can handle arbitrary regions.  The direct mapping method is
+      less sensitive to variations in the aspect ratio of a region
+      and other irregularities.  However, direct mappings are only
+      known for certain common mathematical shapes.
+    </p>
+
+    <p>
+      Points may also be generated according to a nonuniform density.
+      This creates an additional complication in programming.  However,
+      there are some cases in which it is possible to use direct mapping
+      to turn a stream of scalar uniform random values into a set of
+      multivariate data that is governed by a normal distribution.
+    </p>
+
+    <p>
+      Another way to generate points replaces the uniform pseudorandom number
+      generator by a <i>quasirandom number generator</i>.  The main difference
+      is that successive elements of a quasirandom sequence may be highly
+      correlated (bad for certain Monte Carlo applications) but will tend
+      to cover the region in a much more regular way than pseudorandom
+      numbers.  Any process that uses uniform random numbers to carry out
+      sampling can easily be modified to do the same sampling with
+      a quasirandom sequence like the Halton sequence, for instance.
+    </p>
+
+    <p>
+      The library includes a routine that can write the resulting
+      data points to a file.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>RANDOM_DATA</b> is available in
+      <a href = "../../c_src/random_data/random_data.html">a C version</a> and
+      <a href = "../../cpp_src/random_data/random_data.html">a C++ version</a> and
+      <a href = "../../f_src/random_data/random_data.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/random_data/random_data.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa183/asa183.html">
+      ASA183</a>,
+      a FORTRAN90 code which
+      implements the Wichman-Hill pseudorandom number generator.
+    </p>
+
+    <p>
+      <a href = "../../f_src/discrete_pdf_sample_2d/discrete_pdf_sample_2d.html">
+      DISCRETE_PDF_SAMPLE_2D</a>,
+      a FORTRAN90 code which
+      demonstrates how to construct a Probability Density Function (PDF)
+      from a table of sample data, and then to use that PDF to create new samples.
+    </p>
+
+    <p>
+      <a href = "../../f_src/random_data_test/random_data_test.html">
+      random_data_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/simplex_coordinates/simplex_coordinates.html">
+      SIMPLEX_COORDINATES</a>,
+      a FORTRAN90 code which
+      computes the Cartesian coordinates of the vertices of a regular
+      simplex in M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_grid/triangle_grid.html">
+      TRIANGLE_GRID</a>,
+      a FORTRAN90 code which
+      computes a triangular grid of points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_histogram/triangle_histogram.html">
+      TRIANGLE_HISTOGRAM</a>,
+      a FORTRAN90 code which
+      computes histograms of data on the unit triangle.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_monte_carlo/triangle_monte_carlo.html">
+      TRIANGLE_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      uses the Monte Carlo method to estimate integrals over a triangle.
+    </p>
+
+    <p>
+      <a href = "../../f_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a FORTRAN90 code which
+      samples the uniform random distribution.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          James Arvo,<br>
+          Stratified sampling of spherical triangles,<br>
+          Computer Graphics Proceedings, Annual Conference Series, <br>
+          ACM SIGGRAPH '95, pages 437-438, 1995.
+        </li>
+        <li>
+          Gerard Bashein, Paul Detmer,<br>
+          Centroid of a Polygon,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          AP Professional, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Russell Cheng,<br>
+          Random Variate Generation,<br>
+          in Handbook of Simulation,<br>
+          edited by Jerry Banks,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Jack Dongarra, Jim Bunch, Cleve Moler, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979,<br>
+          ISBN13: 978-0-898711-72-1,<br>
+          LC: QA214.L56.
+        </li>
+        <li>
+          John Halton,<br>
+          On the efficiency of certain quasi-random sequences of points
+          in evaluating multi-dimensional integrals,<br>
+          Numerische Mathematik,<br>
+          Volume 2, Number 1, December 1960, pages 84-90.
+        </li>
+        <li>
+          John Halton, GB Smith,<br>
+          Algorithm 247:
+          Radical-Inverse Quasi-Random Point Sequence,<br>
+          Communications of the ACM,<br>
+          Volume 7, Number 12, December 1964, pages 701-702.
+        </li>
+        <li>
+          John Hammersley,<br>
+          Monte Carlo methods for solving multivariable problems,<br>
+          Proceedings of the New York Academy of Science,<br>
+          Volume 86, 1960, pages 844-874.
+        </li>
+        <li>
+          Ladislav Kocis, William Whiten,<br>
+          Computational Investigations of Low-Discrepancy Sequences,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 23, Number 2, June 1997, pages 266-294.
+        </li>
+        <li>
+          Pierre LEcuyer,<br>
+          Random Number Generation,<br>
+          in Handbook of Simulation,<br>
+          edited by Jerry Banks,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          Claudio Rocchini, Paolo Cignoni,<br>
+          Generating Random Points in a Tetrahedron,<br>
+          Journal of Graphics Tools,<br>
+          Volume 5, Number 4, 2000, pages 9-12.
+        </li>
+        <li>
+          Reuven Rubinstein,<br>
+          Monte Carlo Optimization, Simulation and Sensitivity of
+          Queueing Networks,<br>
+          Krieger, 1992,<br>
+          ISBN: 0894647644,<br>
+          LC: QA298.R79.
+        </li>
+        <li>
+          Peter Shirley,<br>
+          Nonuniform Random Point Sets Via Warping,<br>
+          in Graphics Gems III,<br>
+          edited by David Kirk,<br>
+          Academic Press, 1992,<br>
+          ISBN: 0124096735,<br>
+          LC: T385.G6973
+        </li>
+        <li>
+          Greg Turk,<br>
+          Generating Random Points in a Triangle,<br>
+          in Graphics Gems I,<br>
+          edited by Andrew Glassner,<br>
+          AP Professional, 1990,<br>
+          ISBN: 0122861663,<br>
+          LC: T385.G697
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3,<br>
+          LC: QA47.M315.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "random_data.f90">random_data.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "random_data.sh">random_data.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 24 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

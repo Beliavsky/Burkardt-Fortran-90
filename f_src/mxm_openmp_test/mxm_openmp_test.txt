@@ -1,0 +1,64 @@
+04 August 2020   3:45:40.612 PM
+ 
+MXM_OPENMP:
+  FORTRAN90/OpenMP version
+  Compute matrix product C = A * B.
+ 
+  The number of processors available =        8
+  The number of threads available    =        1
+  The matrix order N                 =     2000
+  Elapsed seconds =    113.454    
+  C(100,100)  =    1.00000    
+ 
+MXM_OPENMP:
+  Normal end of execution.
+ 
+04 August 2020   3:47:34.070 PM
+04 August 2020   3:47:34.071 PM
+ 
+MXM_OPENMP:
+  FORTRAN90/OpenMP version
+  Compute matrix product C = A * B.
+ 
+  The number of processors available =        8
+  The number of threads available    =        2
+  The matrix order N                 =     2000
+  Elapsed seconds =    59.1738    
+  C(100,100)  =    1.00000    
+ 
+MXM_OPENMP:
+  Normal end of execution.
+ 
+04 August 2020   3:48:33.248 PM
+04 August 2020   3:48:33.250 PM
+ 
+MXM_OPENMP:
+  FORTRAN90/OpenMP version
+  Compute matrix product C = A * B.
+ 
+  The number of processors available =        8
+  The number of threads available    =        4
+  The matrix order N                 =     2000
+  Elapsed seconds =    32.0725    
+  C(100,100)  =    1.00000    
+ 
+MXM_OPENMP:
+  Normal end of execution.
+ 
+04 August 2020   3:49:05.326 PM
+04 August 2020   3:49:05.327 PM
+ 
+MXM_OPENMP:
+  FORTRAN90/OpenMP version
+  Compute matrix product C = A * B.
+ 
+  The number of processors available =        8
+  The number of threads available    =        8
+  The matrix order N                 =     2000
+  Elapsed seconds =    31.1085    
+  C(100,100)  =    1.00000    
+ 
+MXM_OPENMP:
+  Normal end of execution.
+ 
+04 August 2020   3:49:36.441 PM

@@ -1,0 +1,159 @@
+<html>
+
+  <head>
+    <title>
+      BISECTION_INTEGER - Seek Integer Roots for F(X)=0
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      BISECTION_INTEGER <br> Seek Integer Roots for F(X)=0
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>BISECTION_INTEGER</b>,
+      a FORTRAN90 code which
+      seeks an integer solution to the equation F(X)=0,
+      using bisection within a user-supplied change of sign interval [A,B].
+    </p>
+
+    <p>
+      A function F(X) confined to integer arguments is given, with an
+      interval [A,B] over which F changes sign.  An integer C is sought
+      such that A &leq; C &leq; B and F(C) = 0.
+    </p>
+
+    <p>
+      Because we are restricted to integer arguments, it may the case that
+      there is no such C.
+    </p>
+
+    <p>
+      This routine proceeds by a form of bisection, in which the enclosing
+      interval is restricted to be defined by integer values.
+    </p>
+
+    <p>
+      If the user has given a true change of sign interval [A,B], and if,
+      in the interval, there is a single integer value C for which F(C) = 0,
+      with the additional restrictions that F(C-1) and F(C+1) are of opposite
+      signs, then this procedure should locate and return C.
+    </p>
+
+    <p>
+      In particular, if the function F is monotone, and there is an integer
+      solution C in the interval, then this procedure will find it.
+    </p>
+
+    <p>
+      However, in general, even if there is an integer C in the interval,
+      such that F(C) = 0, this procedure may be unable to find it, particularly
+      if there are also nonintegral solutions within the same interval.
+    </p>
+
+    <p>
+      While any integer function can be used with this program, the bisection
+      approach is most useful if the integer function is monotone, or
+      varies slowly, or can be regarded as the restriction to integer arguments
+      of a continuous (and smoothly varying) function of a real argument.
+      In such cases, knowing that F is negative at A and positive at B
+      suggests that F generally increases from A to B, and might attain 
+      the value 0 at some intermediate argument C.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>BISECTION_INTEGER</b> is available in 
+      <a href = "../../c_src/bisection_integer/bisection_integer.html">a C version</a> and
+      <a href = "../../cpp_src/bisection_integer/bisection_integer.html">a C++ version</a> and
+      <a href = "../../f_src/bisection_integer/bisection_integer.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/bisection_integer/bisection_integer.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/bisection_integer_test/bisection_integer_test.html">
+      bisection_integer_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/bisection_rc/bisection_rc.html">
+      BISECTION_RC</a>,
+      a FORTRAN90 code which
+      seeks a solution to the equation F(X)=0 using bisection
+      within a user-supplied change of sign interval [A,B].
+      The procedure is written using reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../f_src/brent/brent.html">
+      BRENT</a>,
+      a FORTRAN90 code which
+      contains Richard Brent's routines for finding the zero, local minimizer,
+      or global minimizer of a scalar function of a scalar argument, without
+      the use of derivative information.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_zero/test_zero.html">
+      TEST_ZERO</a>,
+      a FORTRAN90 code which
+      defines functions which can be used to test zero finders.
+    </p>
+
+    <p>
+      <a href = "../../f_src/zoomin/zoomin.html">
+      ZOOMIN</a>,
+      a FORTRAN90 code which
+      includes various zero finder routines.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "bisection_integer.f90">bisection_integer.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "bisection_integer.sh">bisection_integer.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 May 2012.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

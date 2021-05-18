@@ -1,0 +1,406 @@
+15 June 2020   7:29:38.746 AM
+ 
+CVT_TRIANGULATION:
+  FORTRAN90 version
+  Apply simple CVT sampling routines to produce
+  a set of sample points in regions from
+  the TEST_TRIANGULATION package.
+  Skipping test01()
+  Skipping test02()
+  Skipping test03()
+ 
+TEST04
+  Try to get an approximate CVT mesh in a region
+  that also has many points ON the boundary.
+ 
+  Here, we only rerun cases which involve
+  fixed points, and show how to handle them.
+ 
+  Title:             "#3: The unit square with circular hole."
+ 
+P03:
+  Strang and Persson example #3
+  The unit square, with a hole.
+ 
+  The hole is a concentric circle of radius 0.4.
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =             4
+  Number of holes =                    1
+ 
+  Number of fixed points =      4
+ 
+  Initial points (first 10 only)
+ 
+  Row         1             2       
+  Col
+ 
+        -1.00000      -1.00000    
+         1.00000      -1.00000    
+         1.00000       1.00000    
+        -1.00000       1.00000    
+       -0.563163      0.912635    
+        0.659018      0.123391    
+       -0.169386     -0.867763    
+       -0.484844     -0.780086    
+       -0.912342      0.267931    
+       -0.876546     -0.100922    
+ 
+ 
+  Estimated Voronoi energy (before projection):
+ 
+       1    0.273087E-01
+       2    0.159164E-01
+       3    0.140472E-01
+       4    0.132121E-01
+       5    0.127796E-01
+       6    0.125674E-01
+       7    0.124193E-01
+       8    0.122576E-01
+       9    0.121645E-01
+      10    0.121113E-01
+      11    0.120562E-01
+      12    0.120001E-01
+      13    0.119514E-01
+      14    0.119095E-01
+      15    0.118864E-01
+      16    0.118737E-01
+      17    0.118620E-01
+      18    0.118450E-01
+      19    0.118230E-01
+      20    0.118103E-01
+  Creating data file "cvt_p03_boundary_fixed.txt".
+  Creating graphics file "cvt_p03_boundary_fixed.eps".
+ 
+TEST04
+  Try to get an approximate CVT mesh in a region
+  that also has many points ON the boundary.
+ 
+  Here, we only rerun cases which involve
+  fixed points, and show how to handle them.
+ 
+  Title:             "#4: The unit hexagon with hexagonal hole."
+ 
+P04:
+  Strang and Persson example #4
+  The hexagon with hexagonal hole.
+ 
+  Radius of outer hexagon R1 =    1.00000    
+  Radius of outer hexagon R2 =   0.500000    
+ 
+  A uniform mesh density is requested.
+  Element sizes tried were ?
+ 
+  Number of boundary segments =        2
+  Number of fixed points =            12
+  Number of holes =                    1
+ 
+  Number of fixed points =     12
+ 
+  Initial points (first 10 only)
+ 
+  Row         1             2       
+  Col
+ 
+        0.500000     -0.866025    
+         1.00000       0.00000    
+        0.500000      0.866025    
+       -0.500000      0.866025    
+        -1.00000      0.122465E-15
+       -0.500000     -0.866025    
+        0.433013     -0.250000    
+       -0.918485E-16 -0.500000    
+       -0.433013     -0.250000    
+       -0.433013      0.250000    
+ 
+ 
+  Estimated Voronoi energy (before projection):
+ 
+       1    0.152021E-01
+       2    0.108765E-01
+       3    0.957554E-02
+       4    0.908533E-02
+       5    0.881248E-02
+       6    0.862946E-02
+       7    0.854488E-02
+       8    0.849366E-02
+       9    0.846618E-02
+      10    0.842468E-02
+      11    0.838690E-02
+      12    0.836916E-02
+      13    0.835877E-02
+      14    0.835573E-02
+      15    0.834564E-02
+      16    0.831968E-02
+      17    0.830549E-02
+      18    0.827612E-02
+      19    0.827446E-02
+      20    0.825945E-02
+  Creating data file "cvt_p04_boundary_fixed.txt".
+  Creating graphics file "cvt_p04_boundary_fixed.eps".
+ 
+TEST04
+  Try to get an approximate CVT mesh in a region
+  that also has many points ON the boundary.
+ 
+  Here, we only rerun cases which involve
+  fixed points, and show how to handle them.
+ 
+  Title:             "#5: The horn."
+ 
+P05:
+  Strang and Persson example #5
+  The horn.
+ 
+  Circle C1 has center = (0,0)
+  Radius R1 =    1.00000    
+ 
+  Circle C2 has center = (-0.4,0)
+  Radius R2 =   0.550000    
+ 
+  Points in the region are:
+    in C1 and not in C2 and have 0 <= Y.
+  A uniform mesh density is requested.
+  Element sizes tried were 0.4, 0.2, 0.1.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             4
+  Number of holes =                    0
+ 
+  Number of fixed points =      4
+ 
+  Initial points (first 10 only)
+ 
+  Row         1             2       
+  Col
+ 
+        -1.00000       0.00000    
+       -0.950000       0.00000    
+        0.150000       0.00000    
+         1.00000       0.00000    
+        0.659018      0.561695    
+       -0.876546      0.449539    
+       -0.197387      0.754673    
+        0.594574      0.183837E-02
+        0.795008      0.350752    
+        0.645775      0.267132    
+ 
+ 
+  Estimated Voronoi energy (before projection):
+ 
+       1    0.161534E-01
+       2    0.115882E-01
+       3    0.111638E-01
+       4    0.109612E-01
+       5    0.108009E-01
+       6    0.106208E-01
+       7    0.104924E-01
+       8    0.104696E-01
+       9    0.104076E-01
+      10    0.103271E-01
+      11    0.102928E-01
+      12    0.102486E-01
+      13    0.102083E-01
+      14    0.102372E-01
+      15    0.101776E-01
+      16    0.101781E-01
+      17    0.101644E-01
+      18    0.101442E-01
+      19    0.100997E-01
+      20    0.101202E-01
+  Creating data file "cvt_p05_boundary_fixed.txt".
+  Creating graphics file "cvt_p05_boundary_fixed.eps".
+ 
+TEST04
+  Try to get an approximate CVT mesh in a region
+  that also has many points ON the boundary.
+ 
+  Here, we only rerun cases which involve
+  fixed points, and show how to handle them.
+ 
+  Title:             "#7: Bicycle seat (implicit)."
+ 
+P07:
+  Strang and Persson example #7
+  Bicycle seat (implicit).
+ 
+  A uniform mesh density is requested.
+  The boundary is formed by two algebraic expressions.
+ 
+  Number of boundary segments =        1
+  Number of fixed points =             2
+  Number of holes =                    0
+ 
+  Number of fixed points =      2
+ 
+  Initial points (first 10 only)
+ 
+  Row         1             2       
+  Col
+ 
+        -7.85398       0.00000    
+         7.85398       0.00000    
+         5.17592      -1.62983    
+        -1.33035      -4.60329    
+        -3.80796      -4.34026    
+        -7.16552      -1.19621    
+        -1.55028     -0.471959    
+         6.24398      -2.89549    
+         5.64068      0.450847E-01
+        -6.06855      -2.89023    
+ 
+ 
+  Estimated Voronoi energy (before projection):
+ 
+       1     23.3777    
+       2     20.5402    
+       3     20.4565    
+       4     20.4336    
+       5     20.4671    
+       6     20.4368    
+       7     20.4058    
+       8     20.4062    
+       9     20.3990    
+      10     20.3860    
+      11     20.3808    
+      12     20.4111    
+      13     20.3898    
+      14     20.3666    
+      15     20.3827    
+      16     20.3523    
+      17     20.3947    
+      18     20.4103    
+      19     20.4079    
+      20     20.3843    
+  Creating data file "cvt_p07_boundary_fixed.txt".
+  Creating graphics file "cvt_p07_boundary_fixed.eps".
+ 
+TEST04
+  Try to get an approximate CVT mesh in a region
+  that also has many points ON the boundary.
+ 
+  Here, we only rerun cases which involve
+  fixed points, and show how to handle them.
+ 
+  Title:             "#8: Pie slice with notch and hole."
+ 
+P08:
+  Strang and Persson example #8
+  Pie slice with notch and hole.
+ 
+  The pie rim is a portion of a circle C1
+  with CENTER1 =    0.00000       0.00000    
+  and radius R1 =    1.00000    
+ 
+  The interior hole is a circle C2
+  with CENTER2 =   0.600000       0.00000    
+  and radius R2 =   0.100000    
+ 
+  A uniform mesh density is requested.
+ 
+  Number of boundary segments =        2
+  Number of fixed points =             6
+  Number of holes =                    1
+ 
+  Number of fixed points =      6
+ 
+  Initial points (first 10 only)
+ 
+  Row         1             2       
+  Col
+ 
+         0.00000       0.00000    
+        0.965926     -0.258819    
+        0.995436     -0.954356E-01
+        0.900000       0.00000    
+        0.995436      0.954356E-01
+        0.965926      0.258819    
+        0.829509      0.319359E-01
+        0.897504     -0.772563E-01
+        0.859097      0.176436    
+        0.822887     -0.120541    
+ 
+ 
+  Estimated Voronoi energy (before projection):
+ 
+       1    0.326642E-02
+       2    0.250509E-02
+       3    0.237927E-02
+       4    0.232967E-02
+       5    0.229333E-02
+       6    0.227179E-02
+       7    0.223767E-02
+       8    0.222890E-02
+       9    0.222118E-02
+      10    0.222091E-02
+      11    0.221522E-02
+      12    0.221259E-02
+      13    0.221147E-02
+      14    0.221293E-02
+      15    0.220764E-02
+      16    0.220621E-02
+      17    0.220673E-02
+      18    0.220828E-02
+      19    0.220553E-02
+      20    0.220349E-02
+  Creating data file "cvt_p08_boundary_fixed.txt".
+  Creating graphics file "cvt_p08_boundary_fixed.eps".
+ 
+TEST04
+  Try to get an approximate CVT mesh in a region
+  that also has many points ON the boundary.
+ 
+  Here, we only rerun cases which involve
+  fixed points, and show how to handle them.
+ 
+  Title:             "#9: Jeff Borggaard's Box with 2 hexagonal holes."
+ 
+P09:
+  Jeff Borggaard's example
+  A square with 2 hexagonal holes.
+ 
+  The square has "center" at   0.500000      0.500000    
+  and "radius" R1 =   0.500000    
+ 
+  Hexagon 1 has "center" at   0.250000      0.750000    
+  and "radius" R2 =   0.100000    
+ 
+  Hexagon 2 has "center" at   0.600000      0.400000    
+  and "radius" R3 =   0.100000    
+ 
+  A uniform mesh density is requested.
+ 
+  Number of boundary segments =        3
+  Number of fixed points =            16
+  Number of holes =                    2
+ 
+  Number of fixed points =     16
+ 
+  Initial points (first 10 only)
+ 
+  Row         1             2       
+  Col
+ 
+         0.00000       0.00000    
+         1.00000       0.00000    
+         1.00000       1.00000    
+         0.00000       1.00000    
+        0.350000      0.750000    
+        0.300000      0.836603    
+        0.200000      0.836603    
+        0.150000      0.750000    
+        0.200000      0.663397    
+        0.300000      0.663397    
+ 
+ 
+  Estimated Voronoi energy (before projection):
+ 
+ 
+P09_SAMPLE - Fatal error!
+  (The double hexagonal hole region)
+  Trying to generate point J =        1
+  Number of rejections =  2000010
+  Rejection percentage =    100.000    
+  Y =   0.743433       1.07047    

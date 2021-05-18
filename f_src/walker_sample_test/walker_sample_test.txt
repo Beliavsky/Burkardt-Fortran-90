@@ -1,0 +1,357 @@
+11 September 2020   6:41:36.021 PM
+
+WALKER_SAMPLE_TEST:
+  FORTRAN90 version.
+  Test the WALKER_SAMPLE library.
+ 
+I4_CHOOSE_TEST
+  I4_CHOOSE evaluates C(N,K).
+ 
+         N         K       CNK
+ 
+         0         0         1
+ 
+         1         0         1
+         1         1         1
+ 
+         2         0         1
+         2         1         2
+         2         2         1
+ 
+         3         0         1
+         3         1         3
+         3         2         3
+         3         3         1
+ 
+         4         0         1
+         4         1         4
+         4         2         6
+         4         3         4
+         4         4         1
+ 
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values 
+  in an interval [A,B].
+ 
+  The lower endpoint A =         -100
+  The upper endpoint B =          200
+  The initial seed is    123456789
+ 
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+NORMALIZE_TEST
+  NORMALIZE normalizes entries 1 through N of a vector
+  of length N+2.
+ 
+  Initial X:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+
+  Initial L1 norm of X(1:N) =    2.82895    
+ 
+  Normalized X:
+ 
+         1:   0.21841830    
+         2:   0.33804706    
+         3:   0.29322180    
+         4:   0.19855276    
+         5:   0.14680619    
+         6:   0.23372198E-01
+         7:   0.25757779    
+
+  Final L1 norm of X(1:N) =    1.00000    
+
+NORMALIZE_TEST
+  Normal end of execution.
+ 
+R8_UNIFORM_01_TEST
+  R8_UNIFORM_01 samples a uniform random
+  distribution in [0,1].
+ 
+  Starting with seed =    123456789
+ 
+  First few values:
+ 
+         1    0.218418    
+         2    0.956318    
+         3    0.829509    
+         4    0.561695    
+         5    0.415307    
+ 
+  Number of values computed was N =     1000
+  Average value was   0.503040    
+  Minimum value was   0.183837E-02
+  Maximum value was   0.997908    
+  Variance was   0.822497E-01
+ 
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+ 
+  The R8VEC:
+ 
+         1:    123.45600    
+         2:   0.50000000E-05
+         3:   -1000000.0    
+         4:    3.1415927    
+ 
+R8VEC_UNIFORM_01_TEST
+  R8VEC_UNIFORM_01 returns a random R8VEC 
+  with entries in [0,1].
+ 
+  Input SEED =    123456789
+ 
+  Random R8VEC:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+         8:   0.10995679    
+         9:   0.43828998E-01
+        10:   0.63396571    
+        11:   0.61727229E-01
+        12:   0.44953896    
+        13:   0.40130628    
+        14:   0.75467349    
+        15:   0.79728695    
+        16:   0.18383712E-02
+        17:   0.89750406    
+        18:   0.35075234    
+        19:   0.94544750E-01
+        20:   0.13616892E-01
+
+RANDOM_PERMUTATION_TEST
+  RANDOM_PERMUTATION randomly permutes entries 1 through
+  N of a vector X[0:N+1].
+ 
+  Initial X:
+ 
+         1:    0.0000000    
+         2:    1.0000000    
+         3:    2.0000000    
+         4:    3.0000000    
+         5:    4.0000000    
+         6:    5.0000000    
+         7:    6.0000000    
+ 
+  Permuted X:
+ 
+         1:    0.0000000    
+         2:    2.0000000    
+         3:    5.0000000    
+         4:    1.0000000    
+         5:    3.0000000    
+         6:    4.0000000    
+         7:    6.0000000    
+
+RANDOM_PERMUTATION_TEST
+  Normal end of execution.
+
+WALKER_BUILD_TEST
+  WALKER_BUILD builds the Walker sampler data vectors Y
+  and A, given a probability vector X.
+ 
+  Binomial PDF (ignore first and last entries):
+ 
+         1:    0.0000000    
+         2:   0.62500000E-01
+         3:   0.25000000    
+         4:   0.37500000    
+         5:   0.25000000    
+         6:   0.62500000E-01
+         7:    6.0000000    
+
+   I    A[I]    Y[i] (ignore first and last entries)
+
+   0   0     0.00000    
+   1   3    0.312500    
+   2   2     1.00000    
+   3   4    0.500000    
+   4   2    0.750000    
+   5   3    0.312500    
+   6   6     2.00000    
+
+WALKER_BUILD_TEST
+  Normal end of execution.
+
+WALKER_SAMPLER_TEST:
+  WALKER_SAMPLER creates Walker sample vectors Y and A
+  for efficiently sampling a discrete probability vector.
+  Test the Walker sampler with a Zipf-type probability.
+
+  Zipf probabilities
+  for N =   10
+  and parameter P =    2.00000    
+
+     I     X(I)
+
+     1    0.645258    
+     2    0.161314    
+     3    0.716953E-01
+     4    0.403286E-01
+     5    0.258103E-01
+     6    0.179238E-01
+     7    0.131685E-01
+     8    0.100822E-01
+     9    0.796615E-02
+    10    0.645258E-02
+
+  Randomly permuted X:
+
+     I     X(I)
+
+     1    0.716953E-01
+     2    0.645258E-02
+     3    0.796615E-02
+     4    0.131685E-01
+     5    0.403286E-01
+     6    0.179238E-01
+     7    0.100822E-01
+     8    0.258103E-01
+     9    0.645258    
+    10    0.161314    
+
+  Built the sampler
+  i Y(i) A(i):
+
+     1    0.716953        10
+     2    0.645258E-01     9
+     3    0.796615E-01     9
+     4    0.131685         9
+     5    0.403286         9
+     6    0.179238         9
+     7    0.100822         9
+     8    0.258103         9
+     9    0.669902        10
+    10     1.00000        10
+
+  100000 samples:
+  prob   #samples:
+
+    0.716953E-01    7294
+    0.645258E-02     618
+    0.796615E-02     781
+    0.131685E-01    1361
+    0.403286E-01    4149
+    0.179238E-01    1850
+    0.100822E-01     986
+    0.258103E-01    2524
+    0.645258       64569
+    0.161314       15868
+
+  sumvar =    1.63761     (should be about 1)
+
+WALKER_VERIFY_TEST
+  WALKER_VERIFY verifies the Walker sampler data
+  vectors Y and A,for a given probability vector X.
+ 
+  Benford PDF (ignore first and last entries):
+ 
+         1:    0.0000000    
+         2:   0.30103000    
+         3:   0.17609126    
+         4:   0.12493874    
+         5:   0.96910013E-01
+         6:   0.79181246E-01
+         7:   0.66946790E-01
+         8:   0.57991947E-01
+         9:   0.51152522E-01
+        10:   0.45757491E-01
+        11:    0.0000000    
+
+   I    A(I)    Y(i) (ignore first and last entries)
+
+   0   0   0.00000    
+   1   1   1.00000    
+   2   1  0.896612    
+   3   2  0.726970    
+   4   2  0.872190    
+   5   2  0.712631    
+   6   3  0.602521    
+   7   1  0.521928    
+   8   1  0.460373    
+   9   1  0.411817    
+  10  10   2.00000    
+
+  The verification sum =   0.138778E-15
+  It should be very close to zero.
+
+WALKER_VERIFY_TEST
+  Normal end of execution.
+
+ZIPF_PROBABILITY_TEST
+  ZIPF_PROBABILITY sets up a probablity vector X of N+2
+  elements containing in X[1:N] the probabilities of
+  outcomes 1 through Nin a Zipf distribution with
+  parameter P.
+ 
+  X for N = 5, P = 1.0
+ 
+         1:    0.0000000    
+         2:   0.43795620    
+         3:   0.21897810    
+         4:   0.14598540    
+         5:   0.10948905    
+         6:   0.87591241E-01
+         7:    0.0000000    
+ 
+  X for N = 5, P = 2.0
+ 
+         1:    0.0000000    
+         2:   0.68324160    
+         3:   0.17081040    
+         4:   0.75915734E-01
+         5:   0.42702600E-01
+         6:   0.27329664E-01
+         7:    0.0000000    
+ 
+  X for N = 10, P = 2.0
+ 
+         1:    0.0000000    
+         2:   0.64525798    
+         3:   0.16131450    
+         4:   0.71695331E-01
+         5:   0.40328624E-01
+         6:   0.25810319E-01
+         7:   0.17923833E-01
+         8:   0.13168530E-01
+         9:   0.10082156E-01
+        10:   0.79661479E-02
+        11:   0.64525798E-02
+        12:    0.0000000    
+
+ZIPF_PROBABILITY_TEST
+  Normal end of execution.
+
+WALKER_SAMPLE_TEST:
+  Normal end of execution.
+
+11 September 2020   6:41:36.026 PM

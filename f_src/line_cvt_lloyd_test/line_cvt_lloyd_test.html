@@ -1,0 +1,252 @@
+<html>
+
+  <head>
+    <title>
+      line_cvt_lloyd_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      line_cvt_lloyd_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>line_cvt_lloyd_test</b>,
+      a FORTRAN90 code which 
+      calls line_cvt_lloyd(), which
+      carries out Lloyd's iteration for computing a 
+      Centroidal Voronoi Tesselation (CVT) of points 
+      over the interior of a line segment in 1D.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/line_cvt_lloyd/line_cvt_lloyd.html">
+      line_cvt_lloyd</a>,
+      a FORTRAN90 code which
+      applies Lloyd's iteration repeatedly to a set of N points,
+      to compute a Centroidal Voronoi Tessellation (CVT)
+      over the interior of a line segment in 1D.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "line_cvt_lloyd_test.f90">line_cvt_lloyd_test.f90</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "line_cvt_lloyd_test.sh">line_cvt_lloyd_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "line_cvt_lloyd_test.txt">line_cvt_lloyd_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST01</b> applies the unconstrained iteration, with random unsorted
+      starting values.
+      <ul>
+        <li>
+          <a href = "test01_energy_commands.txt">test01_energy_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test01_energy_data.txt">test01_energy_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test01_energy.png">test01_energy.png</a> 
+          a PNG image of the "energy" of the partition.
+        </li>
+        <li>
+          <a href = "test01_evolution_commands.txt">test01_evolution_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test01_evolution_data.txt">test01_evolution_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test01_evolution.png">test01_evolution.png</a> 
+          a PNG image of the evolution of the generators.
+        </li>
+        <li>
+          <a href = "test01_motion_commands.txt">test01_motion_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test01_motion_data.txt">test01_motion_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test01_motion.png">test01_motion.png</a> 
+          a PNG image of the "motion" of the generators.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST02</b> applies the constrained iteration, with random unsorted
+      starting values.
+      <ul>
+        <li>
+          <a href = "test02_energy_commands.txt">test02_energy_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test02_energy_data.txt">test02_energy_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test02_energy.png">test02_energy.png</a> 
+          a PNG image of the "energy" of the partition.
+        </li>
+        <li>
+          <a href = "test02_evolution_commands.txt">test02_evolution_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test02_evolution_data.txt">test02_evolution_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test02_evolution.png">test02_evolution.png</a> 
+          a PNG image of the evolution of the generators.
+        </li>
+        <li>
+          <a href = "test02_motion_commands.txt">test02_motion_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test02_motion_data.txt">test02_motion_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test02_motion.png">test02_motion.png</a> 
+          a PNG image of the "motion" of the generators.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST03</b> applies the unconstrained iteration, with random sorted
+      starting values.
+      <ul>
+        <li>
+          <a href = "test03_energy_commands.txt">test03_energy_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test03_energy_data.txt">test03_energy_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test03_energy.png">test03_energy.png</a> 
+          a PNG image of the "energy" of the partition.
+        </li>
+        <li>
+          <a href = "test03_evolution_commands.txt">test03_evolution_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test03_evolution_data.txt">test03_evolution_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test03_evolution.png">test03_evolution.png</a> 
+          a PNG image of the evolution of the generators.
+        </li>
+        <li>
+          <a href = "test03_motion_commands.txt">test03_motion_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test03_motion_data.txt">test03_motion_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test03_motion.png">test03_motion.png</a> 
+          a PNG image of the "motion" of the generators.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST04</b> applies the constrained iteration, with random sorted
+      starting values.
+      <ul>
+        <li>
+          <a href = "test04_energy_commands.txt">test04_energy_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test04_energy_data.txt">test04_energy_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test04_energy.png">test04_energy.png</a> 
+          a PNG image of the "energy" of the partition.
+        </li>
+        <li>
+          <a href = "test04_evolution_commands.txt">test04_evolution_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test04_evolution_data.txt">test04_evolution_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test04_evolution.png">test04_evolution.png</a> 
+          a PNG image of the evolution of the generators.
+        </li>
+        <li>
+          <a href = "test04_motion_commands.txt">test04_motion_commands.txt</a> 
+          GNUPLOT commands to create a plot.
+        </li>
+        <li>
+          <a href = "test04_motion_data.txt">test04_motion_data.txt</a> 
+          data needed to create a plot.
+        </li>
+        <li>
+          <a href = "test04_motion.png">test04_motion.png</a> 
+          a PNG image of the "motion" of the generators.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 27 July 2020
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

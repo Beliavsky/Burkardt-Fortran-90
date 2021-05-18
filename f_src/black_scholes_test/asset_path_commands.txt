@@ -1,0 +1,14 @@
+# asset_path_commands.txt
+#
+# Usage:
+#  gnuplot < asset_path_commands.txt
+#
+set term png
+set output "asset_path.png"
+set xlabel "Time"
+set ylabel "Value"
+set title "Asset value over time"
+set grid
+set style data lines
+plot "asset_path_data.txt" using 1:2 lw 3 linecolor rgb "blue"
+quit

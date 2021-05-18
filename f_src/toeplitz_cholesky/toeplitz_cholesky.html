@@ -1,0 +1,176 @@
+<html>
+
+  <head>
+    <title>
+      TOEPLITZ_CHOLESKY - Cholesky Factor of Nonnegative Definite Toeplitz Matrix
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      TOEPLITZ_CHOLESKY <br> Cholesky Factor of Nonnegative Definite Toeplitz Matrix
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TOEPLITZ_CHOLESKY</b>,
+      a FORTRAN90 code which
+      computes the Cholesky factorization of a positive semidefinite symmetric (PSS)
+      Toeplitz matrix.
+    </p>
+
+    <p>
+      A Toeplitz matrix is a matrix which is constant along all diagonals.  
+      A schematic of a 3x4 Toeplitz matrix would be
+      <pre>
+        a  b  c  d
+        e  a  b  c
+        f  e  a  b
+      </pre>
+    </p>
+
+    <p>
+      A symmetric matrix is a matrix with N rows and N columns, such that
+      A(I,J) = A(J,I) for all indices I and J.  All the eigenvalues of a symmetric
+      matrix are real.
+    </p>
+
+    <p>
+      A symmetric Toeplitz matrix is a matrix which is symmetric and Toeplitz.  A schematic
+      of a 4x4 symmetric Toeplitz matrix would be
+      <pre>
+        a  b  c  d
+        b  a  b  c
+        c  b  a  b
+        d  c  b  a
+      </pre>
+    </p>
+
+    <p>
+      A nonnegative definite symmetric matrix A is a symmetric matrix whose eigenvalues
+      are all nonnegative.
+    </p>
+
+    <p>
+      Given a nonnegative definite symmetric matrix A, the upper Cholesky factor R 
+      is an upper triangular matrix such that A = R' * R; the lower Cholesky factor 
+      L is a lower triangular matrix such that A = L L'.  Obviously, L = R'.
+    </p>
+
+    <p>
+      A Toeplitz matrix can be represented in a compressed format that stores
+      the first row and the first column (omitting the first entry).  One
+      convenient format would be to create the 2xN array G as follows:
+      <pre>
+       G(1,1:N) = A(1,1:N)
+       G(2,1)   = 0.0
+       G(2,2:N) = A(2:N,1)
+      </pre>
+    </p>
+
+    <p>
+      A symmetric Toeplitz matrix can be represented in a compressed format that stores
+      just the first row.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TOEPLITZ_CHOLESKY</b> is available in
+      <a href = "../../c_src/toeplitz_cholesky/toeplitz_cholesky.html">a C version</a> and
+      <a href = "../../cpp_src/toeplitz_cholesky/toeplitz_cholesky.html">a C++ version</a> and
+      <a href = "../../f_src/toeplitz_cholesky/toeplitz_cholesky.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/toeplitz_cholesky/toeplitz_cholesky.html">a MATLAB version</a> and
+      <a href = "../../py_src/toeplitz_cholesky/toeplitz_cholesky.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa006/asa006.html">
+      ASA006</a>,
+      a FORTRAN90 code which
+      computes the Cholesky factorization of a symmetric positive definite
+      matrix, by Michael Healy.
+      This is a MATLAB version of Applied Statistics Algorithm 6;
+    </p>
+
+    <p>
+      <a href = "../../f_src/hankel_cholesky/hankel_cholesky.html">
+      HANKEL_CHOLESKY</a>,
+      a FORTRAN90 code which
+      computes the upper Cholesky factor R of a nonnegative definite symmetric
+      Hankel matrix H so that H = R' * R..
+    </p>
+
+    <p>
+      <a href = "../../f_src/toeplitz/toeplitz.html">
+      TOEPLITZ</a>,
+      a FORTRAN90 code
+      solves a variety of Toeplitz and circulant linear systems.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toeplitz_cholesky_test/toeplitz_cholesky_test.html">
+      toeplitz_cholesky_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Michael Stewart,<br>
+          Cholesky factorization of semi-definite Toeplitz matrices,<br>
+          Linear Algebra and its Applications,<br>
+          Volume 254, pages 497-525, 1997.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "toeplitz_cholesky.f90">toeplitz_cholesky.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "toeplitz_cholesky.sh">toeplitz_cholesky.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 08 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

@@ -1,0 +1,200 @@
+<html>
+
+  <head>
+    <title>
+      ORNSTEIN_UHLENBECK - Approximate Solution of a Stochastic Differential Equation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ORNSTEIN_UHLENBECK <br> Approximate Solution of a Stochastic Differential Equation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ORNSTEIN_UHLENBECK</b>,
+      a FORTRAN90 code which 
+      approximates solutions of the Ornstein-Uhlenbeck 
+      stochastic differential equation (SDE) using the Euler method
+      and the Euler-Maruyama method, 
+      and creating graphics files for processing by gnuplot().
+    </p>
+
+    <p>
+      The Ornstein-Uhlenbeck stochastic differential equation has the form:
+      <pre>
+        dx(t) = theta * ( mu - x(t) ) dt + sigma dW,   
+        x(0) = x0.
+      </pre>
+      where 
+      <ul>
+        <li>
+          <b>theta</b> is a nonnegative decay rate;
+        </li>
+        <li>
+          <b>mu</b> is a mean value for x;
+        </li>
+        <li>
+          <b>sigma</b> measures the strength of the stochastic perturbation.
+        </li>
+      </ul>
+      and the equation is to be integrated over the interval [0,<b>tmax</b>].
+    </p>
+
+    <p>
+      The starting value <b>x0</b> represents a deviation from the mean value
+      <b>mu</b>.
+      The decay rate <b>theta</b> determines how fast <b>x(t)</b> will move
+      back towards its mean value.  The coefficient <b>sigma</b> determines
+      the relative magnitude of stochastic perturbations.  
+    </p>
+
+    <p>
+      In general, the solution starts at <b>x0</b> and over time moves towards
+      the value <b>mu</b>, but experiences random "wobbles" whose size is
+      determined by <b>sigma</b>.  Increasing <b>theta</b> makes the solution
+      move towards the mean faster.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ORNSTEIN_UHLENBECK</b> is available in
+      <a href = "../../c_src/ornstein_uhlenbeck/ornstein_uhlenbeck.html">a C version</a> and
+      <a href = "../../cpp_src/ornstein_uhlenbeck/ornstein_uhlenbeck.html">a C++ version</a> and
+      <a href = "../../f_src/ornstein_uhlenbeck/ornstein_uhlenbeck.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/ornstein_uhlenbeck/ornstein_uhlenbeck.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/black_scholes/black_scholes.html">
+      BLACK_SCHOLES</a>,
+      a FORTRAN90 code which
+      implements some simple approaches to
+      the Black-Scholes option valuation theory,
+      by Desmond Higham.
+    </p>
+
+    <p>
+      <a href = "../../f_src/brownian_motion_simulation/brownian_motion_simulation.html">
+      BROWNIAN_MOTION_SIMULATION</a>,
+      a FORTRAN90 code which
+      simulates Brownian motion in an M-dimensional region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/colored_noise/colored_noise.html">
+      COLORED_NOISE</a>,
+      a FORTRAN90 code which
+      generates samples of noise obeying a 1/f^alpha power law.
+    </p>
+
+    <p>
+      <a href = "../../f_src/correlation/correlation.html">
+      CORRELATION</a>,
+      a FORTRAN90 code which
+      contains examples of statistical correlation functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      write data and command files so that gnuplot() can create plots.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ornstein_uhlenbeck_test/ornstein_uhlenbeck_test.html">
+      ornstein_uhlenbeck_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/pink_noise/pink_noise.html">
+      PINK_NOISE</a>,
+      a FORTRAN90 code which
+      computes a "pink noise" signal obeying a 1/f power law.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sde/sde.html">
+      SDE</a>,
+      a FORTRAN90 code which
+      illustrates the properties of stochastic differential equations (SDE), and
+      common algorithms for their analysis, including the Euler method,
+      the Euler-Maruyama method, and the Milstein method,
+      by Desmond Higham;
+    </p>
+
+    <p>
+      <a href = "../../f_src/stochastic_rk/stochastic_rk.html">
+      STOCHASTIC_RK</a>,
+      a FORTRAN90 code which
+      applies a Runge Kutta (RK) scheme to a stochastic differential equation.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Desmond Higham,<br>
+          An Algorithmic Introduction to Numerical Simulation of
+          Stochastic Differential Equations,<br>
+          SIAM Review,<br>
+          Volume 43, Number 3, September 2001, pages 525-546.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "ornstein_uhlenbeck.f90">ornstein_uhlenbeck.f90</a>, 
+          the source code.
+        </li>
+        <li>
+          <a href = "ornstein_uhlenbeck.sh">ornstein_uhlenbeck.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>
+

@@ -1,0 +1,24 @@
+29 June 2020   7:00:51.421 PM
+ 
+FD1D_WAVE_TEST
+  FORTRAN90 version
+  Test the FD1D_WAVE library.
+ 
+FD1D_WAVE_TEST01
+  Try the "shark" wave.
+ 
+  Stability condition ALPHA = C * DT / DX =    1.00000    
+ 
+  Plot data written to "test01_data.txt".
+ 
+FD1D_WAVE_TEST02
+  Try a sine curve.
+ 
+  Stability condition ALPHA = C * DT / DX =    1.00000    
+ 
+  Plot data written to "test02_data.txt".
+ 
+FD1D_WAVE_TEST
+  Normal end of execution.
+ 
+29 June 2020   7:00:51.422 PM

@@ -1,0 +1,64 @@
+23 July 2020   7:50:53.281 PM
+ 
+LAGUERRE_EXACTNESS
+  FORTRAN90 version
+ 
+  Investigate the exactness of a Gauss-Laguerre
+  quadrature rule for integrating monomials 
+  with density exp(-x) or density 1
+  over the [0,+oo) interval.
+ 
+LAGUERRE_EXACTNESS: User input:
+  Quadrature rule X file = "lag_o04_x.txt".
+  Quadrature rule W file = "lag_o04_w.txt".
+  Quadrature rule R file = "lag_o04_r.txt".
+  Maximum degree to check =       10
+  OPTION = 0, integrate exp(-x)*f(x).
+ 
+  Spatial dimension =        1
+  Number of points  =        4
+ 
+  The quadrature rule to be tested is
+  a Gauss-Laguerre rule of ORDER =        4
+  Integral (    0.00000     <= x < +oo ) f(x) exp ( -x ) dx
+ 
+  Weights W:
+ 
+  w( 1) =   0.6031541043416337    
+  w( 2) =   0.3574186924377999    
+  w( 3) =   0.3888790851500538E-01
+  w( 4) =   0.5392947055613278E-03
+ 
+  Abscissas X:
+ 
+  x( 1) =   0.3225476896193923    
+  x( 2) =    1.745761101158346    
+  x( 3) =    4.536620296921128    
+  x( 4) =    9.395070912301136    
+ 
+  Region R:
+ 
+  r( 1) =    0.000000000000000    
+  r( 2) =   0.1000000000000000E+31
+ 
+  A Gauss-Laguerre rule would be able to exactly
+  integrate monomials up to and including degree =        7
+ 
+  Degree          Error
+ 
+   0        0.0000000000000002
+   1        0.0000000000000002
+   2        0.0000000000000000
+   3        0.0000000000000000
+   4        0.0000000000000003
+   5        0.0000000000000007
+   6        0.0000000000000013
+   7        0.0000000000000022
+   8        0.0142857142857118
+   9        0.0650793650793622
+  10        0.1641269841269810
+ 
+LAGUERRE_EXACTNESS:
+  Normal end of execution.
+ 
+23 July 2020   7:50:53.282 PM

@@ -1,0 +1,288 @@
+<html>
+
+  <head>
+    <title>
+      CORRELATION - Examples of Correlation Functions
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      CORRELATION <br> Examples of Correlation Functions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CORRELATION</b>,
+      a FORTRAN90 code which
+      contains examples of statistical correlation functions.
+    </p>
+
+    <p>
+      The (nonstationary) correlation function c(s,t) must satisfy the 
+      following properties:
+      <ol>
+        <li>
+           -1 &leq; c(s,t) &leq; +1;
+        </li>
+        <li>
+           c(s,t) = c(t,s);
+        </li>
+        <li>
+           c(s,s) = 1;
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Most of the correlation functions considered here determine the correlation of two
+      random values y(x1) and y(x2), depending only on distance, that is,
+      on the norm ||x1-x2||, which we will denote by "r".  Such correlation functions
+      are called "stationary".
+    </p>
+
+    <p>
+      The stationary correlation function c(r) must satisfy the following properties:
+      <ol>
+        <li>
+           -1 &leq; c(r) &leq; +1;
+        </li>
+        <li>
+           c(0) = 1;
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      It is often the case that a typical scale length "r0" is specified,
+      called the "correlation length".  In that case, the correlation function
+      may be expressed in terms of the normalized distance r/r0.
+    </p>
+
+    <p>
+      Because correlation functions model physical situations, it is usually the case
+      that the correlation function will smoothly and steadily decrease to 0 with r,
+      or that it will oscillate between positive and negative values, with an 
+      amplitude that is steadily decreasing.  One of the most popular correlation 
+      functions is the gaussian correlation, which has many desirable statistical
+      and mathematical properties.
+    </p>
+
+    <p>
+      Correlation functions available include:
+      <ul>
+        <li>
+          <i>besselj</i>: 
+          <a href = "../correlation_test/besselj_plot.png">(plot)</a>,
+          <a href = "../correlation_test/besselj_plots.png">(plots)</a>,
+          <a href = "../correlation_test/besselj_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>besselk</i>: 
+          <a href = "../correlation_test/besselk_plot.png">(plot)</a>,
+          <a href = "../correlation_test/besselk_plots.png">(plots)</a>,
+          <a href = "../correlation_test/besselk_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>brownian</i> (nonstationary): 
+          <a href = "../correlation_test/brownian_plots.png">(plots)</a>,
+          <a href = "../correlation_test/brownian_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>circular</i>: 
+          <a href = "../correlation_test/circular_plot.png">(plot)</a>,
+          <a href = "../correlation_test/circular_plots.png">(plots)</a>,
+          <a href = "../correlation_test/circular_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>constant</i>: 
+          <a href = "../correlation_test/constant_plot.png">(plot)</a>,
+          <a href = "../correlation_test/constant_plots.png">(plots)</a>,
+          <a href = "../correlation_test/constant_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>cubic</i>:
+          <a href = "../correlation_test/cubic_plot.png">(plot)</a>,
+          <a href = "../correlation_test/cubic_plots.png">(plots)</a>,
+          <a href = "../correlation_test/cubic_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>damped_cosine</i>:
+          <a href = "../correlation_test/damped_cosine_plot.png">(plot)</a>,
+          <a href = "../correlation_test/damped_cosine_plots.png">(plots)</a>,
+          <a href = "../correlation_test/damped_cosine_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>damped_sine</i>:
+          <a href = "../correlation_test/damped_sine_plot.png">(plot)</a>,
+          <a href = "../correlation_test/damped_sine_plots.png">(plots)</a>,
+          <a href = "../correlation_test/damped_sine_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>exponential</i>:
+          <a href = "../correlation_test/exponential_plot.png">(plot)</a>,
+          <a href = "../correlation_test/exponential_plots.png">(plots)</a>,
+          <a href = "../correlation_test/exponential_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>gaussian</i>:
+          <a href = "../correlation_test/gaussian_plot.png">(plot)</a>,
+          <a href = "../correlation_test/gaussian_plots.png">(plots)</a>,
+          <a href = "../correlation_test/gaussian_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>hole</i>:
+          <a href = "../correlation_test/hole_plot.png">(plot)</a>,
+          <a href = "../correlation_test/hole_plots.png">(plots)</a>,
+          <a href = "../correlation_test/hole_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>linear</i>:
+          <a href = "../correlation_test/linear_plot.png">(plot)</a>,
+          <a href = "../correlation_test/linear_plots.png">(plots)</a>,
+          <a href = "../correlation_test/linear_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>matern (NU=2.5)</i>:
+          <a href = "../correlation_test/matern_plot.png">(plot)</a>,
+          <a href = "../correlation_test/matern_plots.png">(plots)</a>,
+          <a href = "../correlation_test/matern_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>pentaspherical</i>:
+          <a href = "../correlation_test/pentaspherical_plot.png">(plot)</a>,
+          <a href = "../correlation_test/pentaspherical_plots.png">(plots)</a>,
+          <a href = "../correlation_test/pentaspherical_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>power (E=2.0)</i>:
+          <a href = "../correlation_test/power_plot.png">(plot)</a>,
+          <a href = "../correlation_test/power_plots.png">(plots)</a>,
+          <a href = "../correlation_test/power_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>rational_quadratic</i>:
+          <a href = "../correlation_test/rational_quadratic_plot.png">(plot)</a>,
+          <a href = "../correlation_test/rational_quadratic_plots.png">(plots)</a>,
+          <a href = "../correlation_test/rational_quadratic_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>spherical</i>:
+          <a href = "../correlation_test/spherical_plot.png">(plot)</a>,
+          <a href = "../correlation_test/spherical_plots.png">(plots)</a>,
+          <a href = "../correlation_test/spherical_paths.png">(sample paths)</a>
+        </li>
+        <li>
+          <i>white_noise</i>:
+          <a href = "../correlation_test/white_noise_plot.png">(plot)</a>,
+          <a href = "../correlation_test/white_noise_plots.png">(plots)</a>,
+          <a href = "../correlation_test/white_noise_paths.png">(sample paths)</a>
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CORRELATION</b> is available in
+      <a href = "../../c_src/correlation/correlation.html">a C version</a> and
+      <a href = "../../cpp_src/correlation/correlation.html">a C++ version</a> and
+      <a href = "../../f_src/correlation/correlation.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/correlation/correlation.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/brownian_motion_simulation/brownian_motion_simulation.html">
+      BROWNIAN_MOTION_SIMULATION</a>,
+      a FORTRAN90 code which
+      simulates Brownian motion in an M-dimensional region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/colored_noise/colored_noise.html">
+      COLORED_NOISE</a>,
+      a FORTRAN90 code which
+      generates samples of noise obeying a 1/f^alpha power law.
+    </p>
+
+    <p>
+      <a href = "../../f_src/correlation_test/correlation_test.html">
+      correlation_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/pink_noise/pink_noise.html">
+      PINK_NOISE</a>,
+      a FORTRAN90 code which
+      computes a pink noise signal obeying a 1/f power law.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sde/sde.html">
+      SDE</a>,
+      a FORTRAN90 code which
+      illustrates the properties of stochastic differential equations (SDE's), and
+      common algorithms for their analysis,
+      by Desmond Higham;
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Petter Abrahamsen,<br>
+          A Review of Gaussian Random Fields and Correlation Functions,<br>
+          Norwegian Computing Center, 1997.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "correlation.f90">correlation.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "correlation.sh">correlation.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 11 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

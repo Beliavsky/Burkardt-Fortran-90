@@ -1,0 +1,41 @@
+22 May 2020   7:50:19.888 PM
+ 
+ASA314_TEST:
+  FORTRAN90 version
+  Test the ASA314 library.
+ 
+TEST01
+  INVMOD computes the inverse of a matrix
+  whose elements are subject to modulo arithmetic.
+ 
+  The matrix to be inverted:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       1       2
+    2:       0       1       0
+    3:       0       0       1
+ 
+  The computed inverse:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       1
+    2:       0       1       0
+    3:       0       0       1
+ 
+  The correct inverse:
+ 
+  Col        1       2       3
+  Row
+ 
+    1:       1       2       1
+    2:       0       1       0
+    3:       0       0       1
+ 
+ASA314_TEST:
+  Normal end of execution.
+ 
+22 May 2020   7:50:19.888 PM

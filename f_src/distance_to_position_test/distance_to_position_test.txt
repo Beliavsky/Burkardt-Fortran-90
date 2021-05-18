@@ -1,0 +1,74 @@
+18 June 2020   5:52:25.728 PM
+ 
+DISTANCE_TO_POSITION
+  FORTRAN90 version
+ 
+  Read a distance table for N points or cities;
+  assign coordinates to each point which will
+  reproduce the distance table with the lowest
+  discrepancy, in the least squares sense.
+ 
+  Read the header of "grid04_dist.txt".
+ 
+  Spatial dimension M =        2
+  Number of points N  =        4
+ 
+  Read the data in "grid04_dist.txt".
+ 
+  5 by 5 portion of distance table:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1       0.            3.            5.            4.      
+    2       3.            0.         3.16228          5.      
+    3       5.         3.16228          0.         4.12311    
+    4       4.            5.         4.12311          0.      
+ 
+ 
+COMPUTE_POSITION_FROM_DISTANCE
+  UNCMIN carries out unconstrained minimization
+  of a scalar function of several variables.
+0optstp    relative gradient close to zero.
+ optstp    current iterate is probably solution.
+ 
+UNCMIN - Note!
+  INFO = 1.
+  The iteration probably converged.
+  The gradient is very small.
+ 
+  UNCMIN return code =    1
+ 
+  f(x*) =  0.912616E-12
+         1      0.000000     -0.000000
+         2      3.000001      0.000000
+         3      4.000001     -2.999999
+         4      0.000001     -4.000001
+ 
+  5 by 5 portion of distance table:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1       0.         3.00000       5.00000       4.00000    
+    2    3.00000          0.         3.16228       5.00000    
+    3    5.00000       3.16228          0.         4.12311    
+    4    4.00000       5.00000       4.12311          0.      
+ 
+ 
+  Positions of first 5 cities:
+ 
+  Row          1             2      
+  Col
+ 
+    1   0.205100E-06 -0.205164E-06
+    2    3.00000      0.359551E-06
+    3    4.00000      -3.00000    
+    4   0.110043E-05  -4.00000    
+ 
+  Wrote the position data to "grid04_dist.coord.txt".
+ 
+DISTANCE_TO_POSITION
+  Normal end of execution.
+ 
+18 June 2020   5:52:25.730 PM

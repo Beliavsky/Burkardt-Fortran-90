@@ -1,0 +1,23 @@
+11 September 2020   7:52:48.366 AM
+ 
+VORONOI_PLOT:
+  FORTRAN90 version
+  Given a file of 2D points and a choice of norm,
+  plot the Voronoi neighborhoods.
+ 
+  (Note that the points must lie in the unit square.)
+ 
+FILE_ROW_COUNT:
+  Number of records:              9
+  Number of data records:         9
+  Number of comment records:      0
+ 
+  Spatial dimension M =      2
+  Number of points  N =      9
+ 
+  Created the graphics file "diamond_02_00009_l2.ppm".
+ 
+VORONOI_PLOT:
+  Normal end of execution.
+ 
+11 September 2020   7:52:48.413 AM

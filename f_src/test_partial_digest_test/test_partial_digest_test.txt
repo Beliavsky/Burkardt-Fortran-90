@@ -1,0 +1,203 @@
+05 September 2020   8:00:27.026 AM
+
+TEST_PARTIAL_DIGEST_TEST:
+  FORTRAN90 version.
+ 
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values 
+  in an interval [A,B].
+ 
+  The lower endpoint A =         -100
+  The upper endpoint B =          200
+  The initial seed is    123456789
+ 
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+I4VEC_DISTANCES_TEST
+  I4VEC_DISTANCES computes the pairwise distances
+  between elements of an I4VEC.
+
+  Locations:
+
+       1         0
+       2         3
+       3        10
+       4        20
+       5       100
+
+  Distances:
+
+       1         3
+       2        10
+       3        20
+       4       100
+       5         7
+       6        17
+       7        97
+       8        10
+       9        90
+      10        80
+ 
+I4VEC_HEAP_D_TEST
+  For an I4VEC,
+  I4VEC_HEAP_D puts into descending heap form.
+  Using initial random number seed =    123456789
+
+  Unsorted array:
+
+       1         2
+       2        10
+       3         9
+       4         6
+       5         4
+       6         0
+       7         2
+       8         1
+       9         0
+      10         6
+
+  Descending heap form:
+
+       1        10
+       2         6
+       3         9
+       4         2
+       5         6
+       6         0
+       7         2
+       8         1
+       9         0
+      10         4
+ 
+I4VEC_PRINT_TEST
+  I4VEC_PRINT prints an I4VEC
+
+  The I4VEC:
+
+       1        91
+       2        92
+       3        93
+       4        94
+ 
+I4VEC_SORT_HEAP_A_TEST
+  I4VEC_SORT_HEAP_A ascending sorts an I4VEC,
+
+  Unsorted:
+
+       1        13
+       2        58
+       3        50
+       4        34
+       5        25
+       6         4
+       7        15
+       8         6
+       9         2
+      10        38
+      11         3
+      12        27
+      13        24
+      14        46
+      15        48
+      16         0
+      17        54
+      18        21
+      19         5
+      20         0
+
+  Ascending sorted:
+
+       1         0
+       2         0
+       3         2
+       4         3
+       5         4
+       6         5
+       7         6
+       8        13
+       9        15
+      10        21
+      11        24
+      12        25
+      13        27
+      14        34
+      15        38
+      16        46
+      17        48
+      18        50
+      19        54
+      20        58
+
+KSUB_RANDOM_TEST
+  KSUB_RANDOM generates a random K subset of an N set.
+  Set size is N =           5
+  Subset size is K =        3
+
+    2  5  1
+    3  1  2
+    2  1  3
+    4  2  1
+    3  5  2
+    1  5  4
+    1  2  5
+    5  2  3
+    2  5  3
+    2  5  3
+
+example_partial_digest_test:
+  TEST_PARTIAL_DIGEST creates test problems for the
+  partial digest problem.
+
+  Number of nodes =    6
+  Maximum distance =   20
+
+  Locations:
+
+       1         0
+       2         5
+       3        12
+       4        17
+       5        19
+       6        20
+
+  Distances:
+
+       1         1
+       2         2
+       3         3
+       4         5
+       5         5
+       6         7
+       7         7
+       8         8
+       9        12
+      10        12
+      11        14
+      12        15
+      13        17
+      14        19
+      15        20
+
+TEST_PARTIAL_DIGEST_TEST:
+  Normal end of execution.
+
+05 September 2020   8:00:27.026 AM

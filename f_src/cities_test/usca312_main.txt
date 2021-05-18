@@ -1,0 +1,20 @@
+# usca312_main.txt
+#
+#  Discussion:
+#
+#    312 US and Canadian cities.
+#
+#  Modified:
+#
+#    11 February 2009
+#
+#  Author:
+#
+#    John Burkardt
+#
+size  312
+geom  sphere
+dist  usca312_dist.txt
+dms   usca312_dms.txt
+name  usca312_name.txt
+xy    usca312_xy.txt

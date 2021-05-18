@@ -1,0 +1,17 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 22.07.2020  Time    : 10:12:54  Pageformat: USAL  <<
+ <<  Vectors : 1131        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: geyser_bar.png                                    <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+22 July 2020  10:12:54.882 AM
+ 
+GEYSER_BAR:
+  FORTRAN90 version
+  Use DISLIN routines to make a bar chart.
+ 
+GEYSER_BAR:
+  Normal end of execution.
+22 July 2020  10:12:54.888 AM

@@ -1,0 +1,185 @@
+<html>
+
+  <head>
+    <title>
+      fem_to_xml_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem_to_xml_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem_to_xml_test</b>,
+      a FORTRAN90 code which
+      calls fem_to_xml(), which
+      reads FEM files of node coordinates and element connectivity, 
+      which define a mesh of a 1D, 2D, or 3D region
+      and creates a corresponding DOLFIN XML file.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem_to_xml/fem_to_xml.html">
+      fem_to_xml</a>,
+      a FORTRAN90 code which
+      reads FEM files defining a 1D, 2D or 3D mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding XML file for input
+      to DOLFIN() or FENICS().
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem_to_xml_test.sh">fem_to_xml_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem_to_xml_test.txt">fem_to_xml_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>BATTERY</b> is a rectangular region which was subdivided into 7
+      faces which were meshed together by MESHFACES.
+      <ul>
+        <li>
+          <a href = "battery_nodes.txt">battery_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "battery_elements.txt">battery_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "battery.png">battery.png</a>,
+          a PNG image of the triangulation.
+        </li>
+        <li>
+          <a href = "battery.xml">battery.xml</a>,
+          the corresponding DOLFIN XML mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CHANNEL</b> is a 3D region, [0,3]x[0,1]x[0,1] [-1,+1], 
+      containing 63 nodes and 144 elements.
+      <ul>
+        <li>
+          <a href = "channel_nodes.txt">channel_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "channel_elements.txt">channel_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "channel.xml">channel.xml</a>,
+          the corresponding DOLFIN XML mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CHEBY9</b> is a 1D interval, [-1,+1], containing 9 nodes and 8 elements.
+      <ul>
+        <li>
+          <a href = "cheby9_nodes.txt">cheby9_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "cheby9_elements.txt">cheby9_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "cheby9.xml">cheby9.xml</a>,
+          the corresponding DOLFIN XML mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CIRCLE</b> is a 2D circular region which was meshed by MESH2D.
+      <ul>
+        <li>
+          <a href = "circle_nodes.txt">circle_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "circle_elements.txt">circle_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "circle.png">circle.png</a>,
+          a PNG image of the triangulation.
+        </li>
+        <li>
+          <a href = "circle.xml">circle.xml</a>,
+          the corresponding DOLFIN XML mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>RECTANGLE</b> is a 2D rectangular region which has been divided
+      into 3 rows and 4 columns of squares, each then split into two
+      3-node triangles. 
+      <ul>
+        <li>
+          <a href = "rectangle_nodes.txt">rectangle_nodes.txt</a>,
+          the node coordinates.
+        </li>
+        <li>
+          <a href = "rectangle_elements.txt">rectangle_elements.txt</a>,
+          the elements.
+        </li>
+        <li>
+          <a href = "rectangle.png">rectangle.png</a>,
+          a PNG image of the triangulation, created by TRIANGULATION_PLOT.
+        </li>
+        <li>
+          <a href = "rectangle.xml">rectangle.xml</a>,
+          the corresponding DOLFIN XML mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

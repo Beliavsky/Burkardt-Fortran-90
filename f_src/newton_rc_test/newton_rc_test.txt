@@ -1,0 +1,89 @@
+07 April 2021   2:20:44.820 PM
+ 
+newton_rc_test():
+  FORTRAN90 version
+  Test newton_rc(), to solve nonlinear equations
+  using reverse communication.
+
+newton_rc_test1
+  Use newton_rc() to solve a system of 1 nonlinear equation.
+
+  Initial Values:
+
+     I  X       FX
+
+     1     4.70000        0.499939    
+ 
+newton_rc - Warning.
+  Previous ||FX|| =   0.105231E-06
+  Latest   ||FX|| =   0.105231E-06
+  Convergence has slowed down after     16 steps
+
+newton_rc_test1:
+  An error seems to have occurred.
+  Stopping with ido =     -1
+
+     I  X       FX
+
+     1     4.27523       -0.105231E-06
+
+newton_rc_test2
+  Use newton_rc() to solve a system of 4 nonlinear equations.
+
+  Initial Values:
+
+     I  X       FX
+
+     1     0.00000         1.00000    
+     2     0.00000         4.00000    
+     3     0.00000         9.00000    
+     4     0.00000         16.0000    
+ 
+  Convergence:
+ 
+     I  X       FX
+ 
+     1    0.999878        0.148975E-07
+     2     1.99976        0.595937E-07
+     3     2.99963        0.134089E-06
+     4     3.99951        0.238528E-06
+
+newton_rc_test3
+  Use newton_rc() to solve a system of 8 nonlinear equations.
+
+  Initial Values:
+
+     I  X       FX
+
+     1     0.00000         1.00000    
+     2     0.00000         1.00000    
+     3     0.00000         1.00000    
+     4     0.00000         1.00000    
+     5     0.00000         1.00000    
+     6     0.00000         1.00000    
+     7     0.00000         1.00000    
+     8     0.00000         1.00000    
+ 
+newton_rc - Warning.
+  Previous ||FX|| =   0.107140E-06
+  Latest   ||FX|| =   0.107140E-06
+  Convergence has slowed down after     16 steps
+
+newton_rc_test3:
+  An error seems to have occurred.
+  Stopping with ido =     -1
+     I  X       FX
+
+     1   -0.570470        0.222045E-15
+     2   -0.681141       -0.222045E-15
+     3   -0.700428         0.00000    
+     4   -0.700672         0.00000    
+     5   -0.691736         0.00000    
+     6   -0.665767         0.00000    
+     7   -0.596029        0.422123E-07
+     8   -0.416411       -0.984739E-07
+ 
+newton_rc_test():
+  Normal end of execution.
+ 
+07 April 2021   2:20:44.820 PM

@@ -1,0 +1,177 @@
+<html>
+
+  <head>
+    <title>
+      navier_stokes_2d_exact
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      navier_stokes_2d_exact
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>navier_stokes_2d_exact</b>,
+      a FORTRAN90 code which
+      evaluates exact solutions to the incompressible time-dependent
+      Navier-Stokes equations (NSE) over an arbitrary domain in 2D.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <b>GMS</b>: time dependent, vortices do not decay to zero;
+        </li>
+        <li>
+          <b>Lukas</b>: steady, zero pressure;
+        </li>
+        <li>
+          <b>Poiseuille</b>: steady, zero vertical velocity, zero source term;
+        </li>
+        <li>
+          <b>Spiral</b>: time dependent, zero velocity on the unit square;
+        </li>
+        <li>
+          <b>Taylor</b>: time dependent, zero source term, solution decays exponentially.
+        </li>
+        <li>
+          <b>Vortex</b>: steady, same velocity pattern as Taylor.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>navier_stokes_2d_exact</b> is available in
+      <a href = "../../c_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a C version</a> and
+      <a href = "../../cpp_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a C++ version</a> and
+      <a href = "../../f_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a MATLAB version</a> and
+      <a href = "../../octave_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">an Octave version</a> and
+      <a href = "../../py_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/navier_stokes_2d_exact_test/navier_stokes_2d_exact_test.html">
+      navier_stokes_2d_exact_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/navier_stokes_3d_exact/navier_stokes_3d_exact.html">
+      NAVIER_STOKES_3D_EXACT</a>,
+      a FORTRAN90 code which
+      evaluates an exact solution to the incompressible time-dependent
+      Navier-Stokes equations (NSE) over an arbitrary domain in 3D.
+    </p>
+
+    <p>
+      <a href = "../../m_src/navier_stokes_mesh2d/navier_stokes_mesh2d.html">
+      NAVIER_STOKES_MESH2D</a>,
+      MATLAB data files which
+      define triangular meshes for several
+      2D test problems involving the Navier Stokes equations (NSE)
+      for fluid flow, provided by Leo Rebholz.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spiral_data/spiral_data.html">
+      SPIRAL_DATA</a>,
+      a FORTRAN90 code which
+      computes a velocity vector field that satisfies the continuity 
+      equation, writing the data to a file that can be plotted
+      by gnuplot.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stokes_2d_exact/stokes_2d_exact.html">
+      STOKES_2D_EXACT</a>,
+      a FORTRAN90 code which
+      evaluates exact solutions to the incompressible steady
+      Stokes equations over the unit square in 2D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jean-Luc Guermand, Peter Minev, Jie Shen,<br>
+          An overview of projection methods for incompressible flows,<br>
+          Computer methods in applied mechanics and engineering,<br>
+          Volume 105, pages 6011-6045, 2006.
+        </li>
+        <li>
+          Maxim Olshanskii, Leo Rebholz,<br>
+          Application of barycenter refined meshes in linear elasticity
+          and incompressible fluid dynamics,<br>
+          ETNA: Electronic Transactions in Numerical Analysis,<br>
+          Volume 38, pages 258-274, 2011.
+        </li>
+        <li>
+          Geoffrey Taylor,<br>
+          On the decay of vortices in a viscous fluid,<br>
+          Philosophical Magazine,<br>
+          Volume 46, 1923, pages 671-674.
+        </li>
+        <li>
+          Geoffrey Taylor, Albert Green,<br>
+          Mechanism for the production of small eddies from large ones,<br>
+          Proceedings of the Royal Society of London, <br>
+          Series A, Volume 158, 1937, pages 499-521.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "navier_stokes_2d_exact.f90">navier_stokes_2d_exact.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "navier_stokes_2d_exact.sh">navier_stokes_2d_exact.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 21 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

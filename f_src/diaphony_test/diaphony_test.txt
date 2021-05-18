@@ -1,0 +1,85 @@
+16 June 2020  10:13:07.482 AM
+ 
+DIAPHONY:
+  FORTRAN90 version
+  Compute the diaphony of a point set.
+  Input comes from "cvt_02_00100.txt".
+ 
+  The spatial dimension is        2
+  The number of points is      100
+ 
+  File  M  N  Diaphony  1/sqrt(N)  D/sqrt(N)
+  cvt_02_00100.txt   2    100    0.445544E-01  0.100000      0.445544    
+ 
+DIAPHONY:
+  Normal end of execution.
+ 
+16 June 2020  10:13:07.484 AM
+16 June 2020  10:13:07.485 AM
+ 
+DIAPHONY:
+  FORTRAN90 version
+  Compute the diaphony of a point set.
+  Input comes from "halton_02_00100.txt".
+ 
+  The spatial dimension is        2
+  The number of points is      100
+ 
+  File  M  N  Diaphony  1/sqrt(N)  D/sqrt(N)
+  halton_02_00100.txt   2    100    0.436302E-01  0.100000      0.436302    
+ 
+DIAPHONY:
+  Normal end of execution.
+ 
+16 June 2020  10:13:07.486 AM
+16 June 2020  10:13:07.487 AM
+ 
+DIAPHONY:
+  FORTRAN90 version
+  Compute the diaphony of a point set.
+  Input comes from "uniform_02_00010.txt".
+ 
+  The spatial dimension is        2
+  The number of points is       10
+ 
+  File  M  N  Diaphony  1/sqrt(N)  D/sqrt(N)
+  uniform_02_00010.txt   2     10    0.290895      0.316228      0.919890    
+ 
+DIAPHONY:
+  Normal end of execution.
+ 
+16 June 2020  10:13:07.488 AM
+16 June 2020  10:13:07.489 AM
+ 
+DIAPHONY:
+  FORTRAN90 version
+  Compute the diaphony of a point set.
+  Input comes from "uniform_02_00100.txt".
+ 
+  The spatial dimension is        2
+  The number of points is      100
+ 
+  File  M  N  Diaphony  1/sqrt(N)  D/sqrt(N)
+  uniform_02_00100.txt   2    100    0.124734      0.100000       1.24734    
+ 
+DIAPHONY:
+  Normal end of execution.
+ 
+16 June 2020  10:13:07.490 AM
+16 June 2020  10:13:07.491 AM
+ 
+DIAPHONY:
+  FORTRAN90 version
+  Compute the diaphony of a point set.
+  Input comes from "uniform_07_10000.txt".
+ 
+  The spatial dimension is        7
+  The number of points is    10000
+ 
+  File  M  N  Diaphony  1/sqrt(N)  D/sqrt(N)
+  uniform_07_10000.txt   7  10000    0.100144E-01  0.100000E-01   1.00144    
+ 
+DIAPHONY:
+  Normal end of execution.
+ 
+16 June 2020  10:13:20.033 AM

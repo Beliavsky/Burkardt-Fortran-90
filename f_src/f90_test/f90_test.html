@@ -1,0 +1,703 @@
+<html>
+
+  <head>
+    <title>
+      f90_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      f90_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>f90_test</b>,
+      FORTRAN90 codes which
+      illustrate some of the features of the FORTRAN90 codeming language.
+    </p>
+
+    <p>
+      The array syntax added to FORTRAN90 is one of the nicest features
+      for general scientific codeming.  Other useful features include
+      a standard random number generator, a standard way to get the time
+      and CPU time, and some ways to make a chunk of data available
+      without resorting to common blocks or very long argument lists.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+
+   <h3 align = "center">
+      Languages:
+   </h3>
+
+  <p>
+     Directories related to <b>f90_test</b> are available in
+     <a href = "../../c_src/c_test/c_test.html">a C version</a> and
+     <a href = "../../cpp_src/cpp_test/cpp_test.html">a C++ version</a> and
+     <a href = "../../f_src/f90_test/f90_test.html">a FORTRAN90 version</a> and
+     <a href = "../../m_src/matlab_test/matlab_test.html">a MATLAB version</a> and
+      <a href = "../../py_src/py_test/py_test.html">a Python version</a>.
+   </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/allocatable_array_test/allocatable_array_test.html">
+      allocatable_array_test</a>,
+      a FORTRAN90 code which
+      demonstrates how a FORTRAN90 code can declare an allocatable array,
+      pass it to a subroutine, which then allocates and initializes it,
+      returning the allocated and initialized array to the calling code.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90_intrinsics_test/f90_intrinsics_test.html">
+      f90_intrinsics_test</a>,
+      FORTRAN90 codes which
+      illustrate the use of FORTRAN90 intrinsic functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90_random_test/f90_random_test.html">
+      f90_random_test</a>,
+      FORTRAN90 codes which
+      illustrate the use of Fortran's random number generator routines.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90_stop_test/f90_stop_test.html">
+      f90_stop_test</a>,
+      FORTRAN90 codes which
+      illustrate how a FORTRAN90 code can print a text message
+      or return a numeric code status value to the calling environment
+      when executing the STOP statement.
+    </p>
+    <p>
+      <a href = "../../f_src/gfortran_test/gfortran_test.html">
+      gfortran_test<a>,
+      FORTRAN90 codes which
+      includes examples of the use of the GFORTRAN compiler with
+      FORTRAN90 code.
+    </p>
+
+    <p>
+      <a href = "../../f_src/gfortran_intrinsics_test/gfortran_intrinsics_test.html">
+      gfortran_intrinsics_test</a>,
+      a FORTRAN90 code which
+      demonstrates the use of some of the intrinsic functions
+      included with the GFORTRAN compiler.
+    </p>
+
+    <p>
+      <a href = "../../f_src/makefiles_test/makefiles_test.html">
+      makefiles_test</a>,
+      FORTRAN90 codes which
+      show how to use makefiles with a set of FORTRAN90 files.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mixed_test/mixed_test.html">
+      mixed_test</a>,
+      FORTRAN90 codes which
+      show how to write a code partly in FORTRAN90
+      and partly in some other language.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mpi_test/mpi_test.html">
+      mpi_test</a>,
+      FORTRAN90 codes which
+      show how to set up parallel codes in FORTRAN90.
+    </p>
+
+    <p>
+      <a href = "../../f_src/real_precision_test/real_precision_test.html">
+      real_precision_test</a>,
+      FORTRAN90 codes which
+      investigate the somewhat awkward methods for requesting
+      a real data type with given precision.  This is the preferred
+      method for requesting double or quadruple precision arithmetic;
+    </p>
+
+    <p>
+      <a href = "../../f_src/timer_test/timer_test.html">
+      timer_test</a>,
+      FORTRAN90 codes which
+      show how to compute elapsed CPU time in FORTRAN90.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jeanne Adams, Walter Brainerd, Jeanne Martin, Brian Smith,
+          Jerrold Wagener,<br>
+          Fortran90 Handbook,<br>
+          Complete ANSI/ISO Reference,<br>
+          McGraw Hill, 1992,<br>
+          ISBN: 0-07-000406-4,<br>
+          LC: QA76.73.F28.F67.
+        </li>
+        <li>
+          Ian Chivers, Jane Sleightholme,<br>
+          Introduction to codeming with Fortran,<br>
+          Springer, 2005,<br>
+          ISBN: 1846280532,<br>
+          LC: QA76.73.F29.C48.
+        </li>
+        <li>
+          Miles Ellis, Ivor Philips, Thomas Lahey,<br>
+          Fortran90 codeming,<br>
+          Addison-Wesley, 1994,<br>
+          ISBN: 0-201-54446-6,<br>
+          LC: QA76.73.F25E435.
+        </li>
+        <li>
+          Michael Metcalf,<br>
+          Fortran95/2003 Explained,<br>
+          Oxford, 2004,<br>
+          ISBN: 0198526938,<br>
+          LC: QA76.73.F235.M48.
+        </li>
+        <li>
+          Larry Nyhoff, Sanford Leestma,<br>
+          Introduction to Fortran90 for Engineers and Scientists,<br>
+          Prentice-Hall, 1996,<br>
+          ISBN: 0135052157,<br>
+          LC: QA76.73.F25N925.
+        </li>
+        <li>
+          James Ortega,<br>
+          An Introduction to FORTRAN90 for Scientific Computing,<br>
+          Oxford, 1994,<br>
+          ISBN: 0-19-517213-2,<br>
+          LC: QA76.73.O75.
+        </li>
+        <li>
+          William Press, Brian Flannery, Saul Teukolsky, William Vetterling,<br>
+          Numerical Recipes in FORTRAN: The Art of Scientific Computing,<br>
+          Second Edition,<br>
+          Cambridge University Press, 1992,<br>
+          ISBN: 0-521-43064-X,<br>
+          LC: QA297.N866.
+        </li>
+        <li>
+          GNU,<br>
+          GFORTRAN Reference Manual.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "f90_test.sh">f90_test.sh</a>, 
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      BIG_INTS shows how you can use the new KIND qualifier to create,
+      for example, really big integers.
+      <ul>
+        <li>
+          <a href = "big_ints_test.f90">big_ints_test.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "big_ints_test.sh">big_ints_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "big_ints_test.txt">big_ints_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>BIG_INTS_REAL</b> shows what can go wrong when you try to move
+      large integer values into and out of real variables.
+      <ul>
+        <li>
+          <a href = "big_ints_real.f90">big_ints_real.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "big_ints_real.sh">big_ints_real.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "big_ints_real.txt">big_ints_real.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>BINARY_TREE</b> shows how a binary tree can be defined and manipulated,
+      using the FORTRAN90 "POINTER" type.
+      <ul>
+        <li>
+          <a href = "binary_tree.f90">binary_tree.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "binary_tree.sh">binary_tree.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "binary_tree.txt">binary_tree.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CHAR_ALLOC</b> shows that in FORTRAN90 it is possible to declare
+      an allocatable array of characters, for which the dimension, or perhaps
+      the maximum string length (LEN) is not specified in advance.
+        <li>
+          <a href = "char_alloc.f90">char_alloc.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "char_alloc_test.sh">char_alloc_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "char_alloc.txt">char_alloc.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CONSTANT_TYPE</b> shows that FORTRAN90 constants have a type, and that
+      if you don't specify it for real values, the default will be
+      single precision.
+      <ul>
+        <li>
+          <a href = "constant_type.f90">constant_type.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "constant_type.sh">constant_type.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "constant_type.txt">constant_type.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>DIGITS</b> investigates how many digits you can usefully specify
+      for data.
+      <ul>
+        <li>
+          <a href = "digits.f90">digits.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "digits.sh">digits.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "digits.txt">digits.txt</a>,
+          the output file;
+      </ul>
+    </p>
+
+    <p>
+      <b>DIVISION</b> shows that, if you're expecting double precision accuracy,
+      you need to specify your constants carefully, as double precision
+      values.
+      <ul>
+        <li>
+          <a href = "division.f90">division.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "division.sh">division.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "division.txt">division.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      double_complex_test shows how you can use the new KIND qualifier to
+      create and use variables of type "double precision complex".
+      <ul>
+        <li>
+          <a href = "double_complex_test.f90">double_complex_test.f90</a>, 
+          the source code;
+        </li>
+        <li>
+          <a href = "double_complex_test.sh">double_complex_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "double_complex_test.txt">double_complex_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EXPONENT_FORMAT_OVERFLOW</b> shows that (at least some) FORTRAN compilers
+      <b>cannot properly print real numbers with exponents of magnitude greater than 99</b>.
+      This becomes an especially serious problem if you write a very large or very
+      small number out, and then read it back in, only to find that it has suddenly
+      entirely lost its exponent, and now has magnitude roughly 1!
+      <ul>
+        <li>
+          <a href = "exponent_format_overflow.f90">exponent_format_overflow.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "exponent_format_overflow.sh">exponent_format_overflow.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "exponent_format_overflow.txt">exponent_format_overflow.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EXPONENTIAL</b> investigates ways of approximating the exponential function.
+      <ul>
+        <li>
+          <a href = "exponential.f90">exponential.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "exponential.sh">exponential.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "exponential.txt">exponential.txt</a>,
+          the output file;
+      </ul>
+    </p>
+
+    <p>
+      <b>HELLO</b> is just a "Hello, world!" code.
+      <ul>
+        <li>
+          <a href = "hello.f90">hello.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "hello.sh">hello.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "hello.txt">hello.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>LINKED_LIST</b> shows how a linked list can be defined, using the FORTRAN90
+      "POINTER" type.
+      <ul>
+        <li>
+          <a href = "linked_list.f90">linked_list.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "linked_list.sh">linked_list.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "linked_list.txt">linked_list.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MATRIX_FUNCTION_TEST</b> shows how you may now define a function whose
+      return value is a matrix.
+      <ul>
+        <li>
+          <a href = "matrix_function_test.f90">matrix_function_test.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "matrix_function.sh">matrix_function.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "matrix_function_test.txt">matrix_function_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MAXMIN_TEST</b> shows the use of the very useful MAXVAL and MINVAL
+      operators for vectors and arrays, and the so-very-fussy and hence
+      maddeningly useless operators MAXLOC and MINLOC.
+      <ul>
+        <li>
+          <a href = "maxmin_test.f90">maxmin_test.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "maxmin_test.sh">maxmin_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "maxmin_test.txt">maxmin_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MXM</b> multiplies two matrices using the MATMUL intrinsic.
+      <ul>
+        <li>
+          <a href = "mxm.f90">mxm.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "mxm.sh">mxm.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "mxm.txt">mxm.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>RANDOM_test</b> demonstrates the random number routines.
+      <ul>
+        <li>
+          <a href = "random_test.f90">random_test.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "random_test.sh">random_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "random_test.txt">random_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>READ_VARIABLE_RECORDS</b> shows how to read lines of data when
+      you don't know how many items are on each line.  We're assuming
+      that every item is in "I4" format, but the number of such items
+      variables from line to line.
+      <ul>
+        <li>
+          <a href = "read_variable_records.f90">read_variable_records.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "read_variable_records.sh">read_variable_records.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "read_variable_records_input.txt">read_variable_records_input.txt</a>,
+          the input file to be read.
+        </li>
+        <li>
+          <a href = "read_variable_records.txt">read_variable_records.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>RECURSIVE_FUN_TEST</b> shows how you can use recursion in a function
+      definition.
+      <ul>
+        <li>
+          <a href = "recursive_fun_test.f90">recursive_fun_test.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "recursive_fun_test.sh">recursive_fun_test.sh</a>, 
+          runs the test;
+        </li>
+
+        <li>
+          <a href = "recursive_fun_test.txt">recursive_fun_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>RECURSIVE_SUB_TEST</b> shows how you can use recursion in a
+      subroutine definition.
+      <ul>
+        <li>
+          <a href = "recursive_sub_test.f90">recursive_sub_test.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "recursive_sub_test.sh">recursive_sub_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "recursive_sub_test.txt">recursive_sub_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SGE_MOD</b> tries to set up an interesting example of the use of
+      modules.
+      In this case, the idea is that a set of linear algebra routines
+      will share a module that stores the value of a matrix, its LU
+      factor and determinant, and also knows which of these items
+      have been computed.  This hides a lot of information from the
+      user, and makes for simple calls.
+      <ul>
+        <li>
+          <a href = "sge_mod.f90">sge_mod.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "sge_mod_test.sh">sge_mod_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "sge_mod_test.f90">sge_mod_test.f90</a>,
+          a sample calling code;
+        </li>
+        <li>
+          <a href = "sge_mod_test.txt">sge_mod_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SORT_TEST</b> bubble-sorts a real vector.
+      <ul>
+        <li>
+          <a href = "sort_test.f90">sort_test.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "sort_test.sh">sort_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "sort_test.txt">sort_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      stop_message_test shows that a FORTRAN STOP statement can
+      include a message to be printed.
+      <ul>
+        <li>
+          <a href = "stop_message_test.f90">stop_message_test.f90</a>, 
+          the source code;
+        </li>
+        <li>
+          <a href = "stop_message_test.sh">stop_message_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "stop_message_test.txt">stop_message_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      triangle_type_test.f90 demonstrates how to create and use a derived data type.
+      <ul>
+        <li>
+          <a href = "triangle_type_test.f90">triangle_type_test.f90</a>, 
+          the source code;
+        </li>
+        <li>
+          <a href = "triangle_type_test.sh">triangle_type_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "triangle_type_test.txt">triangle_type_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      vector_max_test inquires whether a loop with the body "Z(I)=max(X(I),Y(I))"
+      can be replaced by the vector operation "Z(1:N)=max(X(1:N),Y(1:N))".
+      <ul>
+        <li>
+          <a href = "vector_max_test.f90">vector_max_test.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "vector_max_test.sh">vector_max_test.sh</a>, runs the test.
+        </li>
+        <li>
+          <a href = "vector_max_test.txt">vector_max_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>WHERE_TEST</b> demonstrates the WHERE statement.
+      <ul>
+        <li>
+          <a href = "where_test.f90">where_test.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "where_test.sh">where_test.sh</a>, 
+          runs the test;
+        </li>
+        <li>
+          <a href = "where_test.txt">where_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 21 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

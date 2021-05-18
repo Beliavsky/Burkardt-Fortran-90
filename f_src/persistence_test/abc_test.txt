@@ -1,0 +1,17 @@
+10 May 2021   9:34:50.310 AM
+
+abc_test():
+  FORTRAN90 version
+  Test abc(), with the interface:
+    abc(ain,bin,cin,aout,bout,cout)
+
+    abc( a_out =   1.00000    , b_out =    2.00000    , c_out =    3.00000    )
+    abc( a_in =    1.00000    , b_in =    19.0000    , c_in =    3.00000    , , , )
+    abc( a_out =   1.00000    , b_out =    19.0000    , c_out =    3.00000    )
+    abc( a_in =    50.0000    , b_in =    60.0000    , c_in =    70.0000    , a_out =   50.0000    , b_out =    60.0000    , c_out =    70.0000    )
+    abc( a_out =   50.0000    , b_out =    60.0000    , c_out =    70.0000    )
+
+abc_test():
+  Normal end of execution.
+
+10 May 2021   9:34:50.310 AM

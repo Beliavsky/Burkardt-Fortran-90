@@ -1,0 +1,277 @@
+24 August 2020   2:00:21.648 PM
+ 
+RANLIB_TEST
+  FORTRAN90 version
+  Test the RANLIB library.
+ 
+TEST_PHRTSD
+  Test PHRTSD,
+  which generates two seeds from a phrase.
+ 
+  The input phrase is "randomizer".
+ 
+  SEED1 =    316927234
+  SEED2 =    972931675
+ 
+TEST_BOT
+  Test the lower level random number generators.
+ 
+  Five of the 32 generators will be tested.
+  We generate 100000 numbers, reset the block
+  and do it again.  No disagreements should occur.
+ 
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+  Testing generator  1
+  Testing generator  5
+  Testing generator 10
+  Testing generator 20
+  Testing generator 32
+ 
+TEST_GENBET
+  GENBET generates Beta deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  A =    5.62734    
+  B =    9.89010    
+ 
+  Sample data range:            0.716204E-01  0.753428    
+  Sample mean, variance:        0.357982      0.132721E-01
+  Distribution mean, variance   0.362646      0.139933E-01
+ 
+TEST_IGNBIN
+  IGNBIN generates binomial deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =  10000
+ 
+  Parameters:
+ 
+  NN =     10
+  PP =   0.987789    
+ 
+  Sample data range:             7.00000       10.0000    
+  Sample mean, variance:         9.88360      0.115064    
+  Distribution mean, variance    9.87789      0.120620    
+ 
+TEST_GENCHI
+  GENCHI generates Chi-square deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  DF =    5.62734    
+ 
+  Sample data range:            0.258960       19.0622    
+  Sample mean, variance:         5.63553       10.3557    
+  Distribution mean, variance    5.62734       11.2547    
+ 
+TEST_GENEXP
+  GENEXP generates exponential deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  MU =      5.38442    
+ 
+  Sample data range:            0.615049E-03   54.0760    
+  Sample mean, variance:         5.22299       27.5365    
+  Distribution mean, variance    5.38442       28.9919    
+ 
+TEST_R4_EXPONENTIAL_SAMPLE
+  R4_EXPONENTIAL_SAMPLE generates exponential deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  MU =      5.38442    
+ 
+  Sample data range:            0.112477E-01   54.4110    
+  Sample mean, variance:         5.48698       31.0162    
+  Distribution mean, variance    5.38442       28.9919    
+ 
+TEST_GENF
+  GENF generates F deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =  10000
+ 
+  Parameters:
+ 
+  DFN =      6.59904    
+  DFD =      9.93894    
+ 
+  Sample data range:            0.295832E-01   15.4262    
+  Sample mean, variance:         1.24154       1.05388    
+  Distribution mean, variance    1.25192       1.16278    
+ 
+TEST_GENGAM
+  GENGAM generates Gamma deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  A =    5.62734    
+  R =    9.89010    
+ 
+  Sample data range:            0.541996       3.69391    
+  Sample mean, variance:         1.75520      0.288387    
+  Distribution mean, variance    1.75751      0.312316    
+ 
+TEST_IGNNBN
+  IGNNBN generates negative binomial deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =  10000
+ 
+  Parameters:
+ 
+  NN =     11
+  PP =   0.987789    
+ 
+  Sample data range:             0.00000       3.00000    
+  Sample mean, variance:        0.137600      0.139672    
+  Distribution mean, variance   0.135983      0.137664    
+ 
+TEST_GENNCH
+  GENNCH generates noncentral Chi-square deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  DF =       6.11319    
+  XNONC =    1.97558    
+ 
+  Sample data range:            0.538526       36.8874    
+  Sample mean, variance:         8.30438       22.2955    
+  Distribution mean, variance    8.08877       20.1287    
+ 
+TEST_GENNF
+  GENNF generates noncentral F deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =  10000
+ 
+  Parameters:
+ 
+  DFN =      6.59904    
+  DFD =      9.93894    
+  XNONC =    1.60272    
+ 
+  Sample data range:            0.526303E-01   21.7001    
+  Sample mean, variance:         1.55255       1.70798    
+  Distribution mean, variance    1.55598       1.75873    
+ 
+TEST_GENNOR
+  GENNOR generates normal deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  MU =     0.282983    
+  SD =      3.95421    
+ 
+  Sample data range:            -10.6242       14.7124    
+  Sample mean, variance:        0.348141       15.2795    
+  Distribution mean, variance   0.282983       15.6358    
+ 
+TEST_IGNPOI
+  IGNPOI generates Poisson deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  MU =    10.5259    
+ 
+  Sample data range:             2.00000       22.0000    
+  Sample mean, variance:         10.4520       10.4702    
+  Distribution mean, variance    10.5259       10.5259    
+ 
+TEST_GENUNF
+  GENUNF generates uniform deviates.
+ 
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+ 
+  N =   1000
+ 
+  Parameters:
+ 
+  A =    5.62734    
+  B =    15.5174    
+ 
+  Sample data range:             5.62775       15.4968    
+  Sample mean, variance:         10.4969       7.80242    
+  Distribution mean, variance    10.5724       8.15117    
+
+SNORM_TEST
+  SNORM generates normally distributed random values.
+
+  -2.58882    
+ -0.128875    
+ -0.895232    
+  0.875596    
+ -0.225402    
+   1.69041    
+  0.850525    
+  0.635740    
+  0.995521    
+ -0.523048    
+  0.472221    
+ -0.489220    
+  0.918345    
+   1.07493    
+  0.331073    
+   1.52441    
+  0.647258    
+ -0.473824    
+ -0.769904    
+ -0.463790    
+ 
+RANLIB_TEST
+  Normal end of execution.
+ 
+24 August 2020   2:00:21.668 PM

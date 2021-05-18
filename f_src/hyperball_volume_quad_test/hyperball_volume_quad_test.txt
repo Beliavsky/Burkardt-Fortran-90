@@ -1,0 +1,456 @@
+15 July 2020   9:30:03.069 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "ccl_d6_level0_x.txt".
+  Quadrature rule W file = "ccl_d6_level0_w.txt".
+  Quadrature rule R file = "ccl_d6_level0_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =        1
+ 
+         N    Estimate           Exact         Error
+ 
+         1     64.0000         5.16771       58.8323    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.069 PM
+15 July 2020   9:30:03.073 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "ccl_d6_level1_x.txt".
+  Quadrature rule W file = "ccl_d6_level1_w.txt".
+  Quadrature rule R file = "ccl_d6_level1_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =       19
+ 
+         N    Estimate           Exact         Error
+ 
+        19     64.0000         5.16771       58.8323    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.074 PM
+15 July 2020   9:30:03.077 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "ccl_d6_level2_x.txt".
+  Quadrature rule W file = "ccl_d6_level2_w.txt".
+  Quadrature rule R file = "ccl_d6_level2_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =      184
+ 
+         N    Estimate           Exact         Error
+ 
+       184    -42.6667         5.16771       47.8344    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.080 PM
+15 July 2020   9:30:03.082 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "ccl_d6_level3_x.txt".
+  Quadrature rule W file = "ccl_d6_level3_w.txt".
+  Quadrature rule R file = "ccl_d6_level3_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =     1216
+ 
+         N    Estimate           Exact         Error
+ 
+      1216    -118.519         5.16771       123.686    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.089 PM
+15 July 2020   9:30:03.090 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "ccl_d6_level4_x.txt".
+  Quadrature rule W file = "ccl_d6_level4_w.txt".
+  Quadrature rule R file = "ccl_d6_level4_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =     6190
+ 
+         N    Estimate           Exact         Error
+ 
+      6190     188.885         5.16771       183.717    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.126 PM
+15 July 2020   9:30:03.126 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "ccl_d6_level5_x.txt".
+  Quadrature rule W file = "ccl_d6_level5_w.txt".
+  Quadrature rule R file = "ccl_d6_level5_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =    25954
+ 
+         N    Estimate           Exact         Error
+ 
+     25954    -171.592         5.16771       176.760    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.249 PM
+15 July 2020   9:30:03.250 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "uniform_d6_00001a_x.txt".
+  Quadrature rule W file = "uniform_d6_00001a_w.txt".
+  Quadrature rule R file = "uniform_d6_00001a_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =        1
+ 
+         N    Estimate           Exact         Error
+ 
+         1     0.00000         5.16771       5.16771    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.250 PM
+15 July 2020   9:30:03.251 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "uniform_d6_00013a_x.txt".
+  Quadrature rule W file = "uniform_d6_00013a_w.txt".
+  Quadrature rule R file = "uniform_d6_00013a_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =       13
+ 
+         N    Estimate           Exact         Error
+ 
+        13     0.00000         5.16771       5.16771    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.251 PM
+15 July 2020   9:30:03.252 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "uniform_d6_00085a_x.txt".
+  Quadrature rule W file = "uniform_d6_00085a_w.txt".
+  Quadrature rule R file = "uniform_d6_00085a_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =       85
+ 
+         N    Estimate           Exact         Error
+ 
+        85     3.01176         5.16771       2.15595    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.253 PM
+15 July 2020   9:30:03.253 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "uniform_d6_00389a_x.txt".
+  Quadrature rule W file = "uniform_d6_00389a_w.txt".
+  Quadrature rule R file = "uniform_d6_00389a_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =      389
+ 
+         N    Estimate           Exact         Error
+ 
+       389     4.77121         5.16771      0.396505    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.255 PM
+15 July 2020   9:30:03.255 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "uniform_d6_01457a_x.txt".
+  Quadrature rule W file = "uniform_d6_01457a_w.txt".
+  Quadrature rule R file = "uniform_d6_01457a_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =     1457
+ 
+         N    Estimate           Exact         Error
+ 
+      1457     5.18325         5.16771      0.155405E-01
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.261 PM
+15 July 2020   9:30:03.261 PM
+ 
+HYPERBALL_VOLUME_QUAD
+  FORTRAN90 version
+  Use a quadrature rule, applied to the M-dimensional
+  hypercube, to estimate the volume of the 
+  M-dimensional unit hyperball.
+ 
+  We are integrating the function f(x), where f(x) is
+  * 1 inside the hyperball;
+  * 0 outside the hyperball.
+ 
+  The function f(x) is discontinuous.  That suggests that
+  as we use "better" and "better" quadrature rules, the
+  volume estimate will actually get worse and worse.
+ 
+  The user supplies the quadrature rule using three files,
+  called the "R", "W" and "X" files:
+  * the Mx2 R file contains the hyperrectangle of definition;
+  * the Nx1 W file contains the weights.
+  * the MxN X file contains the points.
+ 
+User input:
+  Quadrature rule X file = "uniform_d6_04865a_x.txt".
+  Quadrature rule W file = "uniform_d6_04865a_w.txt".
+  Quadrature rule R file = "uniform_d6_04865a_r.txt".
+ 
+  Spatial dimension =        6
+  Number of points  =     4865
+ 
+         N    Estimate           Exact         Error
+ 
+      4865     5.41994         5.16771      0.252226    
+ 
+HYPERBALL_VOLUME_QUAD:
+  Normal end of execution.
+ 
+15 July 2020   9:30:03.278 PM

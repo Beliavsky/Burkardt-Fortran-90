@@ -1,0 +1,35 @@
+24 July 2020  10:29:07.634 AM
+ 
+LAGUERRE_RULE
+  FORTRAN90 version
+ 
+  Compute a Gauss-Laguerre rule for approximating
+    Integral ( a <= x < +oo ) exp(-b*(x-a)) f(x) dx
+  of order ORDER.
+ 
+  The user specifies ORDER, A, B, and FILENAME:
+  ORDER is the number of points in the rule.
+  A is the left endpoint, (typically 0).
+  B is the scale factor, (typically 1).
+  FILENAME is used to generate 3 files:
+  * filename_w.txt - the weight file
+  * filename_x.txt - the abscissa file.
+  * filename_r.txt - the region file.
+ 
+  ORDER =        4
+  A =    0.00000    
+  B =    1.00000    
+  FILENAME = "lag_o4".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "lag_o4".
+ 
+  Weight file will be   "lag_o4_w.txt".
+  Abscissa file will be "lag_o4_x.txt".
+  Region file will be   "lag_o4_r.txt".
+ 
+LAGUERRE_RULE:
+  Normal end of execution.
+ 
+24 July 2020  10:29:07.634 AM

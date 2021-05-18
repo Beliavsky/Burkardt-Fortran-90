@@ -1,0 +1,160 @@
+10 September 2020   8:26:59.944 AM
+
+TRIANGLE_IO_TEST
+  FORTRAN90 version
+  Test the TRIANGLE_IO library.
+
+TEST01:
+  Get example node data, write to a triangle node file.
+
+  Number of nodes =   21
+  Spatial dimension =    2
+  Number of node attributes =    0
+  Number of node markers =    1
+ 
+  Coordinates for first 10 nodes:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       0.00000    
+    4:   3.00000       0.00000    
+    5:   4.00000       0.00000    
+    6:   0.00000       1.00000    
+    7:   1.00000       1.00000    
+    8:   2.00000       1.00000    
+    9:   3.00000       1.00000    
+   10:   4.00000       1.00000    
+ 
+  Attributes for first 10 nodes:
+ 
+  (None)
+ 
+  Markers for first 10 nodes:
+ 
+  Row        1
+  Col
+ 
+    1:       1
+    2:       1
+    3:       1
+    4:       1
+    5:       1
+    6:       1
+    7:       0
+    8:       0
+    9:       0
+   10:       1
+
+  Node data written to file "example.node"
+
+TEST02:
+  Get example element data, write to a triangle element file.
+
+  Number of elements =   24
+  Order of elements =    3
+  Number of element attributes =    0
+ 
+  Node connectivity of first 10 elements:
+ 
+  Row        1       2       3
+  Col
+ 
+    1:       1       2       6
+    2:       7       6       2
+    3:       2       3       7
+    4:       8       7       3
+    5:       3       4       8
+    6:       9       8       4
+    7:       4       5       9
+    8:      10       9       5
+    9:       6       7      11
+   10:      12      11       7
+ 
+  Attributes for first 10 elements:
+ 
+  (None)
+
+  Element data written to file "element.ele"
+
+TEST03:
+  Read node data from a node file.
+
+  Node data read from file "example.node"
+
+  Number of nodes =   21
+  Spatial dimension =    2
+  Number of node attributes =    0
+  Number of node markers =    1
+ 
+  Coordinates for first 10 nodes:
+ 
+  Row          1             2      
+  Col
+ 
+    1:   0.00000       0.00000    
+    2:   1.00000       0.00000    
+    3:   2.00000       0.00000    
+    4:   3.00000       0.00000    
+    5:   4.00000       0.00000    
+    6:   0.00000       1.00000    
+    7:   1.00000       1.00000    
+    8:   2.00000       1.00000    
+    9:   3.00000       1.00000    
+   10:   4.00000       1.00000    
+ 
+  Attributes for first 10 nodes:
+ 
+  (None)
+ 
+  Markers for first 10 nodes:
+ 
+  Row        1
+  Col
+ 
+    1:       1
+    2:       1
+    3:       1
+    4:       1
+    5:       1
+    6:       1
+    7:       0
+    8:       0
+    9:       0
+   10:       1
+
+TEST04:
+  Read element data from an element file.
+
+  Element data read from file "example.ele"
+
+  Number of elements =   24
+  Element order =    3
+  Number of element attributes =    0
+ 
+  Connectivity for first 10 elements:
+ 
+  Row        1       2       3
+  Col
+ 
+    1:       1       2       6
+    2:       7       6       2
+    3:       2       3       7
+    4:       8       7       3
+    5:       3       4       8
+    6:       9       8       4
+    7:       4       5       9
+    8:      10       9       5
+    9:       6       7      11
+   10:      12      11       7
+ 
+  Attributes for first 10 elements:
+ 
+  (None)
+
+TRIANGLE_IO_TEST
+  Normal end of execution.
+
+10 September 2020   8:26:59.945 AM

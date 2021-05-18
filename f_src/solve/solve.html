@@ -1,0 +1,130 @@
+<html>
+
+  <head>
+    <title>
+      SOLVE - Linear Solver for Double Dimensioned Arrays
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SOLVE <br> Linear Solver for Double Dimensioned Arrays
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SOLVE</b>,
+      a FORTRAN90 code which
+      solves a linear system of equations A*x=b using Gauss elimination.
+    </p>
+
+    <p>
+      There are many automatic ways to solve linear systems, as in MATLAB,
+      and sophisticated packages such as LAPACK.  However, this simpler
+      set of routines may have some uses for students, beginners and those
+      who need a quick and simple solver that can be replaced later if
+      it turns out to be inadequate.
+    </p>
+
+    <p>
+      This library is useful because:
+      <ul>
+        <li>
+          it shows the steps involved in a simple Gauss-elimination procedure;
+        </li>
+        <li>
+          it can be used to count the number of operations in Gauss-elimination;
+        </li>
+        <li>
+          it can be used as a guide for writing a corresponding program
+          in another language;
+        </li>
+        <li>
+          its performance can be compared to corresponding versions in C
+          or Fortran;
+        </li>
+        <li>
+          it can be used as a starting point for exploring band storage,
+          sparse storage, iterative solutions and other topics in linear 
+          algebra.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SOLVE</b> is available in
+      <a href = "../../c_src/solve/solve.html">a C version</a> and
+      <a href = "../../cpp_src/solve/solve.html">a C++ version</a> and
+      <a href = "../../f_src/solve/solve.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/solve/solve.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/qr_solve/qr_solve.html">
+      QR_SOLVE</a>,
+      a FORTRAN90 code which
+      computes the linear least squares (LLS) solution of a rectangular 
+      linear system A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../f_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines 
+      using double precision real (R8) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/solve_test/solve_test.html">
+      solve_test</a>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "solve.f90">solve.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "solve.sh">solve.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 27 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,373 @@
+<html>
+
+  <head>
+    <title>
+      STROUD - Numerical Integration in M Dimensions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      STROUD <br> Numerical Integration<br> in M Dimensions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>STROUD</b>,
+      a FORTRAN90 code which 
+      defines quadrature rules for a variety of M-dimensional regions, 
+      including the interior of the square, cube and hypercube, the pyramid,
+      cone and ellipse, the hexagon, the M-dimensional octahedron,
+      the circle, sphere and hypersphere, the triangle, tetrahedron and simplex,
+      and the surface of the circle, sphere and hypersphere.
+    </p>
+
+    <p>
+      A few other rules have been collected as well, 
+      particularly for quadrature over the interior of a triangle, which is 
+      useful in finite element calculations.
+    </p>
+
+    <p>
+      Arthur Stroud published his vast collection of quadrature formulas
+      for multidimensional regions in 1971.  In a few cases, he printed 
+      sample FORTRAN77 programs to compute these integrals.  Integration 
+      regions included:
+      <ul>
+        <li>
+          <b>C2</b>, the interior of the square;
+        </li>
+        <li>
+          <b>C3</b>, the interior of the cube;
+        </li>
+        <li>
+          <b>CN</b>, the interior of the N-dimensional hypercube; 
+        </li>
+        <li>
+          <b>CN:C2</b>, a 3-dimensional pyramid;
+        </li>
+        <li>
+          <b>CN:S2</b>, a 3-dimensional cone;
+        </li>
+        <li>
+          <b>CN_SHELL</b>, the region contained between two concentric 
+          N-dimensional hypercubes;
+        </li>
+        <li>
+          <b>ELP</b>, the interior of the 2-dimensional ellipse with
+          weight function 1/sqrt((x-c)^2+y^2)/(sqrt((x+c)^2+y^2);
+        </li>
+        <li>
+          <b>EN_R</b>, all of N-dimensional space, with the weight function:<br>
+          w(x) = exp ( - sqrt ( sum ( 1 <= i < n ) x(i)^2 ) );
+        </li>
+        <li>
+          <b>EN_R2</b>, all of N-dimensional space, with the Hermite weight function:
+          w(x) = product ( 1 <= i <= n ) exp ( - x(i)^2 );
+        </li>
+        <li>
+          <b>GN</b>, the interior of the N-dimensional octahedron;
+        </li>
+        <li>
+          <b>H2</b>, the interior of the 2-dimensional hexagon;
+        </li>
+        <li>
+          <b>PAR</b>, the first parabolic region;
+        </li>
+        <li>
+          <b>PAR2</b>, the second parabolic region;
+        </li>
+        <li>
+          <b>PAR3</b>, the third parabolic region;
+        </li>
+        <li>
+          <b>S2</b>, the interior of the circle;
+        </li>
+        <li>
+          <b>S3</b>, the interior of the sphere;
+        </li>
+        <li>
+          <b>SN</b>, the interior of the N-dimensional hypersphere;
+        </li>
+        <li>
+          <b>SN_SHELL</b>, the region contained between two concentric N-dimensional hyperspheres;
+        </li>
+        <li>
+          <b>T2</b>, the interior of the triangle;
+        </li>
+        <li>
+          <b>T3</b>, the interior of the tetrahedron;
+        </li>
+        <li>
+          <b>TN</b>, the interior of the N-dimensional simplex;
+        </li>
+        <li>
+          <b>TOR3:S2</b>, the interior of a 3-dimensional torus with circular cross-section;
+        </li>
+        <li>
+          <b>TOR3:C2</b>, the interior of a 3-dimensional torus with 
+          square cross-section;
+        </li>
+        <li>
+          <b>U2</b>, the "surface" of the circle;
+        </li>
+        <li>
+          <b>U3</b>, the surface of the sphere;
+        </li>
+        <li>
+          <b>UN</b>, the surface of the N-dimensional sphere;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      We have added a few new terms for regions:
+      <ul>
+        <li>
+          <b>CN_GEG</b>, the N dimensional hypercube [-1,+1]^N, with the Gegenbauer
+          weight function:<br>
+          w(alpha;x) = product ( 1 <= i <= n ) ( 1 - x(i)^2 )^alpha;
+        </li>
+        <li>
+          <b>CN_JAC</b>, the N dimensional hypercube [-1,+1]^N, with the Beta or
+          Jacobi weight function:<br>
+          w(alpha,beta;x) = product ( 1 <= i <= n ) ( 1 - x(i) )^alpha * ( 1 + x(i) )^beta;
+        </li>
+        <li>
+          <b>CN_LEG</b>, the N dimensional hypercube [-1,+1]^N, with the Legendre
+          weight function:<br>
+          w(x) = 1;
+        </li>
+        <li>
+          <b>EPN_GLG</b>, the positive space [0,+oo)^N, with the generalized
+          Laguerre weight function:<br>
+          w(alpha;x) = product ( 1 <= i <= n ) x(i)^alpha exp ( - x(i) );
+        </li>
+        <li>
+          <b>EPN_LAG</b>, the positive space [0,+oo)^N, with the exponential or 
+          Laguerre weight function:<br>
+          w(x) = product ( 1 <= i <= n ) exp ( - x(i) );
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>STROUD</b> is available in
+      <a href = "../../c_src/stroud/stroud.html">a C version</a> and
+      <a href = "../../cpp_src/stroud/stroud.html">a C++ version</a> and
+      <a href = "../../f_src/stroud/stroud.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/stroud/stroud.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/disk_rule/disk_rule.html">
+      DISK_RULE</a>,
+      a FORTRAN90 code which
+      computes quadrature rules for the unit disk in 2D, that is, 
+      the interior of the circle of radius 1 and center (0,0).
+    </p>
+
+    <p>
+      <a href = "../../f_src/pyramid_rule/pyramid_rule.html">
+      PYRAMID_RULE</a>,
+      a FORTRAN90 code which 
+      computes a quadrature rule for a pyramid.
+    </p>
+
+    <p>
+      <a href = "../../f_src/simplex_gm_rule/simplex_gm_rule.html">
+      SIMPLEX_GM_RULE</a>,
+      a FORTRAN90 code which
+      defines Grundmann-Moeller quadrature rules 
+      over the interior of a triangle in 2D, a tetrahedron in 3D, or
+      over the interior of the simplex in M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_design_rule/sphere_design_rule.html">
+      SPHERE_DESIGN_RULE</a>,
+      a FORTRAN90 code which 
+      returns point sets on the surface of the unit sphere, known as "designs",
+      which can be useful for estimating integrals on the surface.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_lebedev_rule/sphere_lebedev_rule.html">
+      SPHERE_LEBEDEV_RULE</a>,
+      a FORTRAN90 code which
+      computes Lebedev quadrature rules
+      on the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stroud_test/stroud_test.html">
+      stroud_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_arbq_rule/tetrahedron_arbq_rule.html">
+      TETRAHEDRON_ARBQ_RULE</a>,
+      a FORTRAN90 code which
+      returns quadrature rules, 
+      with exactness up to total degree 15,
+      over the interior of a tetrahedron in 3D,
+      by Hong Xiao and Zydrunas Gimbutas.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_keast_rule/tetrahedron_keast_rule.html">
+      TETRAHEDRON_KEAST_RULE</a>,
+      a FORTRAN90 code which
+      defines ten quadrature rules, with exactness degrees 0 through 8,
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_ncc_rule/tetrahedron_ncc_rule.html">
+      TETRAHEDRON_NCC_RULE</a>,
+      a FORTRAN90 code which
+      defines Newton-Cotes Closed (NCC) quadrature rules 
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_nco_rule/tetrahedron_nco_rule.html">
+      TETRAHEDRON_NCO_RULE</a>,
+      a FORTRAN90 code which
+      defines Newton-Cotes Open (NCO) quadrature rules
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_dunavant_rule/triangle_dunavant_rule.html">
+      TRIANGLE_DUNAVANT_RULE</a>,
+      a FORTRAN90 code which
+      defines Dunavant rules for quadrature 
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_keast_rule/tetrahedron_keast_rule.html">
+      TETRAHEDRON_KEAST_RULE</a>,
+      a FORTRAN90 code which
+      defines ten quadrature rules, with exactness degrees 0 through 8,
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_dunavant_rule/triangle_dunavant_rule.html">
+      TRIANGLE_DUNAVANT_RULE</a>,
+      a FORTRAN90 code which
+      defines Dunavant rules for quadrature 
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_fekete/triangle_fekete.html">
+      TRIANGLE_FEKETE</a>,
+      a FORTRAN90 code which
+      defines Fekete rules for quadrature or interpolation 
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_lyness_rule/triangle_lyness_rule.html">
+      TRIANGLE_LYNESS_RULE</a>,
+      a FORTRAN90 code which
+      returns Lyness-Jespersen quadrature rules 
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_ncc_rule/triangle_ncc_rule.html">
+      TRIANGLE_NCC_RULE</a>,
+      a FORTRAN90 code which
+      defines Newton-Cotes Closed (NCC) quadrature rules
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_nco_rule/triangle_nco_rule.html">
+      TRIANGLE_NCO_RULE</a>,
+      a FORTRAN90 code which
+      defines Newton-Cotes Open (NCO) quadrature rules
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_wandzura_rule/triangle_wandzura_rule.html">
+      TRIANGLE_WANDZURA_RULE</a>,
+      a FORTRAN90 code which
+      returns quadrature rules of exactness 5, 10, 15, 20, 25 and 30
+      over the interior of the triangle in 2D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Arthur Stroud,<br>
+          Approximate Calculation of Multiple Integrals,<br>
+          Prentice Hall, 1971,<br>
+          ISBN: 0130438936,<br>
+          LC: QA311.S85.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "stroud.f90">stroud.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "stroud.sh">stroud.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+ 
+  </body>
+
+</html>
+

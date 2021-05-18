@@ -1,0 +1,30 @@
+April  5 2021   3:26:45.172 PM
+ 
+ketel_one():
+  FORTRAN90 version
+ 
+  Work on the "Ketel One Vodka" problem.
+ 
+  The following challenge appeared in 
+  the New York Times, 14 June 2007: 
+ 
+  "Dear Ketel One Drinker: 
+  Can you make one hundred words, of four letters
+  or more, from the letters in Ketel One Vodka?"
+ 
+  Examine a file "wordlist.txt"
+  full of words, and look for "sub-anagrams" 
+  (words whose letters are a subset of the target ones).
+ 
+  We only consider words of length at least        4
+ 
+  Copy sub-anagrams to "ketel_one.txt".
+  
+   Number of words checked                        300260
+   Number of words that were "long enough"        298513
+   Number of sub-anagrams found                      514
+ 
+ketel_one():
+  Normal end of execution.
+ 
+April  5 2021   3:26:45.357 PM

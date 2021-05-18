@@ -1,0 +1,9 @@
+
+MARIO_FILL
+  FORTRAN90 version
+  Create a GNUPLOT input file that will draw a
+  picture of Mario, using colored squares.
+  Created command file "mario_fill_commands.txt".
+
+MARIO_FILL:
+  Normal end of execution.

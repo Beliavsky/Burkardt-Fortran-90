@@ -1,0 +1,57 @@
+31 August 2020  11:47:33.613 AM
+ 
+STRIPPER
+  FORTRAN90 version
+ 
+  CUT command chops off lines after a string.
+ 
+  # lines accepted as C/C++/F77/F90 comments.
+  F77/F90 lines now automatically de-TABbed.
+  Added "<" and ">" options.
+  Corrected ICAP/ICAPF/ICAPFC confusion.
+  Implemented F77/F90 join.
+  Added CHUNK = LINEP option.
+  HELP output pauses after a screenful.
+ 
+  F77/F90 comment lines begin with "!"
+    and are corrected automatically.
+  "D" now accepted as F77/F90 comment character.
+  Set LWRAP to MMAX ( = 5000).
+  Backslash replaced by CHAR(92).
+  Started implementing "breaks";
+  (just a "wrap" right now");
+  Input is now "buffered" can be "unread";
+  STRIPIT can join UNIX lines;
+  CHRPAD changed, to fix MARGEL/MARGER problems.
+ 
+All options set to default values.
+ 
+Enter command (H for help)
+Enter the name of the input file:
+  The input file is "panjandrum.txt".
+ 
+Enter command (H for help)
+Enter the name of the output file:
+  The output file is "all_caps.txt".
+ 
+Enter command (H for help)
+Enter ICAP option:
+-1: Lowercase each character;
+ 0: Leave alone;
++1: Uppercase each character;
++2: Uppercase each word;
++3: Uppercase each line.
+  Capitalize text characters.
+ 
+Enter command (H for help)
+ 
+STRIPIT - Warning!
+  Error while trying to open the output file:
+all_caps.txt
+ 
+Enter command (H for help)
+ 
+STRIPPER:
+  Normal end of execution.
+ 
+31 August 2020  11:47:33.614 AM

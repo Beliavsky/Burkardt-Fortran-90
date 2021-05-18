@@ -1,0 +1,20 @@
+P2  "Hello, world!"
+P3  "Hello, world!"
+P1  "Hello, world!"
+ 9 November 2018   8:20:11.411 AM
+
+P0  HELLO_MPI - Master process:
+P0    FORTRAN90/MPI version
+P0    An MPI test program.
+P0    The number of MPI processes is        4
+P0  "Hello, world!"
+
+P0  HELLO_MPI - Master process:
+P0    Normal end of execution: "Goodbye, world!".
+
+P0    Elapsed wall clock time =   0.497103E-03 seconds.
+
+P0  HELLO_MPI - Master process:
+P0    Normal end of execution.
+
+ 9 November 2018   8:20:11.415 AM

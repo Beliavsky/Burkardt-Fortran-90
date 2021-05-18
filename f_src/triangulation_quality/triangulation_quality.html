@@ -1,0 +1,147 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_QUALITY - Triangulation Quality Measures
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_QUALITY <br>
+      Triangulation Quality Measures
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_QUALITY</b>,
+      a FORTRAN90 code which
+      computes and prints quality measures for a given triangulation of a set of points in 2D.
+    </p>
+
+    <p>
+      The triangulation is defined by a <i>node file</i> containing
+      the coordinates of nodes, and a <i>triangle file</i> containing
+      sets of 3 or 6 node indices.
+    </p>
+
+    <p>
+      The quality measures computed include:
+      <ul>
+        <li>
+          <b>Alpha</b>, the minimum angle divided by the maximum possible
+          minimum angle.
+        </li>
+        <li>
+          <b>Area</b>, the ratio of the minimum area to the maximum area;
+        </li>
+        <li>
+          <b>Q</b>, the triangle shape uniformity measure, twice the
+          radius of the inscribed circle divided by the radius of the
+          circumscribed circle;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Each quality measure is defined as the minimum of its value
+      over all the triangles; the maximum and best possible value is
+      1, and the minimum and worst possible value is 0.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_quality</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common prefix for the node and element files
+      <ul>
+        <li>
+          <i>prefix</i><b>_nodes.txt</b>,    the node coordinates;
+        </li>
+        <li>
+          <i>prefix</i><b>_elements.txt</b>,    the element definitions.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_QUALITY</b> is available in
+      <a href = "../../cpp_src/triangulation_quality/triangulation_quality.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation_quality/triangulation_quality.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_quality/triangulation_quality.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a FORTRAN90 code which
+      computes quality measures of a tetrahedral mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation/triangulation.html">
+      TRIANGULATION</a>,
+      a FORTRAN90 code which
+      carries out various operations on order 3 ("linear") or order 6
+      ("quadratic") triangulations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quality_test/triangulation_quality_test.html">
+      triangulation_quality_test</a>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_quality.f90">triangulation_quality.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "triangulation_quality.sh">triangulation_quality.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 21 June 2009.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

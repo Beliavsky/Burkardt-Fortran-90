@@ -1,0 +1,42 @@
+29 May 2020  10:11:47.273 AM
+ 
+BALL_INTEGRALS_TEST
+  FORTRAN90 version
+  Test the BALL_INTEGRALS library.
+
+TEST01
+  Estimate monomial integrals using Monte Carlo
+  over the interior of the unit ball in 3D.
+
+  Number of sample points used is   4192
+
+  If any exponent is odd, the integral is zero.
+  We will restrict this test to randomly chosen even exponents.
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   8   0   2    0.939730E-02    0.976408E-02    0.37E-03
+   4   2   8    0.115994E-03    0.114872E-03    0.11E-05
+   8   2   4    0.120331E-03    0.114872E-03    0.55E-05
+   0   8   4    0.204274E-02    0.195282E-02    0.90E-04
+   0   0   6    0.207067        0.199466        0.76E-02
+   2   6   8    0.355159E-04    0.302293E-04    0.53E-05
+   0   2   0    0.842422        0.837758        0.47E-02
+   4   6   4    0.608617E-04    0.492307E-04    0.12E-04
+   6   2   0    0.188671E-01    0.181333E-01    0.73E-03
+   8   8   2    0.128028E-04    0.100764E-04    0.27E-05
+   8   4   8    0.142297E-05    0.131432E-05    0.11E-06
+   2   2   8    0.674520E-03    0.650939E-03    0.24E-04
+   6   0   4    0.405377E-02    0.418461E-02    0.13E-03
+   8   4   0    0.211864E-02    0.195282E-02    0.17E-03
+   6   0   0    0.190263        0.199466        0.92E-02
+   8   2   0    0.100178E-01    0.976408E-02    0.25E-03
+   8   4   2    0.133469E-03    0.114872E-03    0.19E-04
+   2   6   0    0.180920E-01    0.181333E-01    0.41E-04
+   2   8   8    0.123413E-04    0.100764E-04    0.23E-05
+   0   2   2    0.122692        0.119680        0.30E-02
+ 
+BALL_INTEGRALS_TEST
+  Normal end of execution.
+ 
+29 May 2020  10:11:47.276 AM

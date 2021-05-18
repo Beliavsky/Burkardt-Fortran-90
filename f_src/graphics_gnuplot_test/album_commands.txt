@@ -1,0 +1,16 @@
+# album_commands.txt
+#
+# Usage:
+#  gnuplot < album_commands.txt
+#
+set term png
+set output "album_bar.png"
+set xlabel "<--- Year --->"
+set ylabel "<--- Millions --->"
+set title "Music album sales, all formats"
+set grid
+set yrange [0:550]
+set boxwidth 0.8
+set style fill solid
+plot "album_data.txt" using 1:2 with boxes lc rgb "red"
+quit

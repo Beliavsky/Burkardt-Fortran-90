@@ -1,0 +1,60 @@
+ 9 September 2020  11:11:56.721 AM
+ 
+TRIANGLE_ANALYZE:
+  FORTRAN90 version:
+  Use TRIANGLE_PROPERTIES library to analyze triangle read from file.
+ 
+  Read the header of "tex6.txt".
+ 
+  Spatial dimension DIM_NUM =        2
+  Number of points NODE_NUM =        3
+ 
+  Read the data in "tex6.txt".
+ 
+  Node coordinates:
+ 
+  Row          1             2      
+  Col
+ 
+    1    1.00000       0.00000    
+    2    2.00000       2.00000    
+    3    3.00000       4.00000    
+ 
+  ANGLES (radians):
+ 
+         1     0.0000000    
+         2     3.1415927    
+         3     0.0000000    
+ 
+  ANGLES (degrees):
+ 
+         1     0.0000000    
+         2     180.00000    
+         3     0.0000000    
+ 
+  AREA:     0.00000    
+ 
+  CENTROID:     2.00000       2.00000    
+ 
+  CIRCUM_RADIUS:    -1.00000    
+  CIRCUM_CENTER:    0.00000       0.00000    
+ 
+  EDGE_LENGTHS:
+ 
+         1     2.2360680    
+         2     2.2360680    
+         3     4.4721360    
+ 
+  IN_RADIUS:     0.00000    
+  IN_CENTER:    2.00000       2.00000    
+ 
+  ORIENTATION: Degenerate Distinct Colinear Points.
+ 
+  ORTHO_CENTER:  Could not be computed.
+ 
+  QUALITY:     0.00000    
+ 
+TRIANGLE_ANALYZE:
+  Normal end of execution.
+ 
+ 9 September 2020  11:11:56.722 AM

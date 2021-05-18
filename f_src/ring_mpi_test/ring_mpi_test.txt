@@ -1,0 +1,33 @@
+24 August 2020   9:03:45.441 PM
+24 August 2020   9:03:45.442 PM
+24 August 2020   9:03:45.443 PM
+24 August 2020   9:03:45.443 PM
+24 August 2020   9:03:45.445 PM
+24 August 2020   9:03:45.446 PM
+24 August 2020   9:03:45.448 PM
+24 August 2020   9:03:45.449 PM
+ 
+RING_MPI:
+  FORTRAN90/MPI version
+  Measure time required to transmit data around
+  a ring of processes
+ 
+  The number of processes is        8
+ 
+  Timings based on     10 experiments
+  N double precision values were sent
+  in a ring transmission starting and ending at process 0
+  and using a total of      8 processes.
+ 
+         N           T min           T ave           T max
+ 
+       100    0.923499E-05    0.396832E-04    0.295359E-03
+      1000    0.333620E-04    0.603419E-04    0.135658E-03
+     10000    0.102489E-03    0.130910E-03    0.278360E-03
+    100000    0.936243E-03    0.109989E-02    0.247429E-02
+   1000000    0.132025E-01    0.147701E-01    0.278100E-01
+ 
+RING_MPI:
+  Normal end of execution.
+ 
+24 August 2020   9:03:45.814 PM

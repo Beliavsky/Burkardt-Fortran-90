@@ -1,0 +1,178 @@
+<html>
+
+  <head>
+    <title>
+      PWL_INTERP_2D_SCATTERED - Piecewise Linear Interpolant to 2D Scattered Data
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      PWL_INTERP_2D_SCATTERED <br> Piecewise Linear Interpolant to 2D Scattered Data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>PWL_INTERP_2D_SCATTERED</b>,
+      a FORTRAN90 code which
+      produces a piecewise linear interpolant to 2D scattered data,
+      that is, data that is not guaranteed to lie on a regular grid.
+    </p>
+
+    <p>
+      This program computes a Delaunay triangulation of the data points,
+      and then constructs an interpolant triangle by triangle.  Over a given
+      triangle, the interpolant is the linear function which matches the
+      data already given at the vertices of the triangle.
+    </p>
+
+    <p>
+      PWL_INTERP_2D requires the R8LIB library.  The test code
+      requires the TEST_INTERP_2D library.
+    </p>
+
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>PWL_INTERP_2D_SCATTERED</b> is available in
+      <a href = "../../c_src/pwl_interp_2d_scattered/pwl_interp_2d_scattered.html">a C version</a> and
+      <a href = "../../cpp_src/pwl_interp_2d_scattered/pwl_interp_2d_scattered.html">a C++ version</a> and
+      <a href = "../../f_src/pwl_interp_2d_scattered/pwl_interp_2d_scattered.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/pwl_interp_2d_scattered/pwl_interp_2d_scattered.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/lagrange_interp_2d/lagrange_interp_2d.html">
+      LAGRANGE_INTERP_2D</a>,
+      a FORTRAN90 code which
+      defines and evaluates the Lagrange polynomial p(x,y) 
+      which interpolates a set of data depending on a 2D argument
+      that was evaluated on a product grid,
+      so that p(x(i),y(j)) = z(i,j).
+    </p>
+
+    <p>
+      <a href = "../../f_src/pwl_interp_2d/pwl_interp_2d.html">
+      PWL_INTERP_2D</a>,
+      a FORTRAN90 code which
+      evaluates a piecewise linear interpolant to data defined on
+      a regular 2D grid.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pwl_interp_2d_scattered_test/pwl_interp_2d_scattered_test.html">
+      pwl_interp_2d_scattered_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/rbf_interp_2d/rbf_interp_2d.html">
+      RBF_INTERP_2D</a>,
+      a FORTRAN90 code which
+      defines and evaluates radial basis function (RBF) interpolants to 
+      scattered 2D data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/shepard_interp_2d/shepard_interp_2d.html">
+      SHEPARD_INTERP_2D</a>,
+      a FORTRAN90 code which
+      defines and evaluates Shepard interpolants to scattered 2D data,
+      based on inverse distance weighting.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp_2d/test_interp_2d.html">
+      TEST_INTERP_2D</a>,
+      a FORTRAN90 code which
+      defines test problems for interpolation of regular or scattered data z(x,y),
+      depending on a 2D argument.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation/triangulation.html">
+      TRIANGULATION</a>,
+      a FORTRAN90 code which
+      performs various operations on order 3 (linear) or order 6 (quadratic) triangulations.
+    </p>
+
+    <p>
+      <a href = "../../m_src/triangulation_order3_contour/triangulation_order3_contour.html">
+      TRIANGULATION_ORDER3_CONTOUR</a>,
+      a MATLAB program which
+      makes contour plot of scattered data, or of data defined on an order 3 triangulation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/vandermonde_interp_2d/vandermonde_interp_2d.html">
+      VANDERMONDE_INTERP_2D</a>,
+      a FORTRAN90 code which
+      finds a polynomial interpolant to data z(x,y) of a 2D argument
+      by setting up and solving a linear system for the polynomial coefficients,
+      involving the Vandermonde matrix.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          William Press, Brian Flannery, Saul Teukolsky, William Vetterling,<br>
+          Numerical Recipes in FORTRAN: The Art of Scientific Computing,<br>
+          Third Edition,<br>
+          Cambridge University Press, 2007,<br>
+          ISBN13: 978-0-521-88068-8,<br>
+          LC: QA297.N866.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "pwl_interp_2d_scattered.f90">pwl_interp_2d_scattered.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "pwl_interp_2d_scattered.sh">pwl_interp_2d_scattered.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 20 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

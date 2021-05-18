@@ -1,0 +1,138 @@
+<html>
+
+  <head>
+    <title>
+      INDEX - Indexing Multidimensional Arrays
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      INDEX <br> Indexing Multidimensional Arrays
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>INDEX</b>,
+      a FORTRAN90 code which
+      converts the index of a multidimensional array entry into
+      the corresponding index of a one dimensional vector, using either
+      row or column major indexing, with zero or unit base.
+    </p>
+
+    <h3 align = "center">
+      2D Array Example:
+    </h3>
+
+    <p>
+      Consider, for example, the following 3x4 array A:
+      <pre>
+        11 12 13 14
+        21 22 23 24
+        31 32 33 34
+      </pre>
+    </p>
+
+    <p>
+      Indexing by columns, the array would be stored in a 1D vector as
+      <pre>
+        11 21 31 | 12 22 32 | 13 23 33 | 14 24 34
+      </pre>
+      and the indexing of the elements would be
+      <pre>
+        11 21 31 | 12 22 32 | 13 23 33 | 14 24 34
+         0  1  2    3  4  5    6  7  8    9 10 11  <- zero based
+         1  2  3    4  5  6    7  8  9   10 11 12  <- one based
+      </pre>
+    </p>
+
+    <p>
+      Indexing by rows, the array would be stored in a 1D vector as
+      <pre>
+        11 12 13 14 | 21 22 23 24 | 31 32 33 34
+      </pre>
+      and the indexing of the elements would be
+      <pre>
+        11 12 13 14 | 21 22 23 24 | 31 32 33 34
+         0  1  2  3    4  5  6  7   8   9 10 11  <- zero based
+         1  2  3  4    5  6  7  8   9  10 11 12  <- one based
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>INDEX</b> is available in
+      <a href = "../../c_src/index/index.html">a C version</a> and
+      <a href = "../../cpp_src/index/index.html">a C++ version</a> and
+      <a href = "../../f_src/index/index.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/index/index.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cell/cell.html">
+      CELL</a>,
+      a FORTRAN90 code which
+      defines a cell array, a generalization of an array which
+      can compactly store and retrieve vector or matrix data of 
+      varying size, such as the rows of a triangular matrix.
+    </p>
+
+    <p>
+      <a href = "../../f_src/index_test/index_test.html">
+      index_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/subpak/subpak.html">
+      SUBPAK</a>,
+      a FORTRAN90 code which
+      contains many utility routines;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "index.f90">index.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "index.sh">index.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

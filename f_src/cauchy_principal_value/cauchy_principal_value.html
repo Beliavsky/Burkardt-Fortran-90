@@ -1,0 +1,132 @@
+<html>
+
+  <head>
+    <title>
+      CAUCHY_PRINCIPAL_VALUE - Estimate Singular Integrals
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      CAUCHY_PRINCIPAL_VALUE <br> Estimate Singular Integrals
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CAUCHY_PRINCIPAL_VALUE</b>
+      a FORTRAN90 code which
+      uses Gauss-Legendre quadrature to estimate the Cauchy Principal Value
+      of certain singular integrals.
+    </p>
+
+    <p>
+      The singular integrals to be considered will have the form:
+      <pre>
+        Integral ( a <= t <= b ) f(t) / ( t - x ) dt
+      </pre>
+      The Cauchy Principal Value is defined as
+      <pre>
+        cauchy_principal_value = limit ( s --&gt; x ) Integral ( a <= t <= s ) f(t) / ( t - x ) dt
+            + limit ( x &lt;-- s ) Integral ( s <= t <= b ) f(t) / ( t - x ) dt
+      </pre>
+    </p>
+
+    <p>
+      We suppose that our singular integral is posed on an interval that is
+      symmetric with respect to the location of the singularity:
+      <pre>
+        Integral ( x-d <= t <= x+d ) f(t) / ( t - x ) dt
+      </pre>
+      and we propose to estimate the integral using a Gauss-Legendre rule of
+      even order N:
+      <pre>
+        cauchy_principal_value approx sum ( 1 &lt;= i &lt;= N ) w(i) * f(xi(i)*d+x) / xi(i)
+      </pre>
+      where xi(i) and w(i) are the points and weights, respectively, of
+      the Gauss-Legendre rule.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CAUCHY_PRINCIPAL_VALUE</b> is available in
+      <a href = "../../c_src/cauchy_principal_value/cauchy_principal_value.html">a C version</a> and
+      <a href = "../../cpp_src/cauchy_principal_value/cauchy_principal_value.html">a C++ version</a> and
+      <a href = "../../f_src/cauchy_principal_value/cauchy_principal_value.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/cauchy_principal_value/cauchy_principal_value.html">a MATLAB version</a> and
+      <a href = "../../py_src/cauchy_principal_value/cauchy_principal_value.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cauchy_principal_value_test/cauchy_principal_value_test.html">
+      cauchy_principal_value_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a FORTRAN90 code which
+      defines quadrature rules for approximating an integral over a 1D domain.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Julian Noble,<br>
+          Gauss-Legendre Principal Value Integration,<br>
+          Computing in Science and Engineering,<br>
+          Volume 2, Number 1, January-February 2000, pages 92-95.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cauchy_principal_value.f90">cauchy_principal_value.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "cauchy_principal_value.sh">cauchy_principal_value.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 05 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

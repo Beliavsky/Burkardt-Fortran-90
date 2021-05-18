@@ -1,0 +1,74 @@
+30 July 2020   6:47:14.327 PM
+ 
+MESHLESS
+  FORTRAN90 version
+  Meshless basis function generation.
+ 
+Enter command (or HELP for a list)
+  Command: " #  meshless.inp".
+  Command: " #".
+  Command: " #  A simple example of input commands to the MESHLESS program.".
+  Command: " #".
+  Command: " m = 3".
+ 
+  M has been set to      3
+ 
+Enter command (or HELP for a list)
+  Command: " n = 40".
+ 
+  N has been set to     40
+ 
+Enter command (or HELP for a list)
+  Command: " density_function = 1".
+ 
+  DENSITY_FUNCTION has been set to      1
+ 
+Enter command (or HELP for a list)
+  Command: " basis_make".
+ 
+Mysterious parameter BASIS_M =     42
+ 
+Initial center point determination:
+ 
+  1: use a uniform distribution;
+  2: use a Halton distribution.
+  Number of Uniform random data points created was     40
+ 
+Initial radius determination:
+ 
+  1: radius method 1;
+  2: radius method 2.
+ 
+Enter command (or HELP for a list)
+  Command: " basis_overlap".
+ 
+BASIS_OVERLAP:
+  Count the pairs of basis functions 
+  with overlapping support.
+ 
+  Maximum possible count =    780
+  Actual count =              386
+  Percentage =                49.4872
+ 
+Enter command (or HELP for a list)
+  Command: " basis_plot".
+ RXMIN, RXMAX =   -1.2730929690427304        1.4445691533603595     
+ RYMIN, RYMAX =   -1.3801524094058282        1.4661012956343071     
+ 
+BASIS_PLOT
+  Created a basis function plot file basis.eps
+ 
+Enter command (or HELP for a list)
+  Command: " basis_write".
+ 
+BASIS_WRITE:
+  Write basis data file: basis.dat
+  Number of data points is     40
+ 
+Enter command (or HELP for a list)
+  Command: " quit".
+ 
+MESHLESS
+  Normal end of execution.
+ 
+30 July 2020   6:47:14.331 PM

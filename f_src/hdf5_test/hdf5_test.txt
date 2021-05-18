@@ -1,0 +1,81 @@
+22 January 2020   1:20:48.775 PM
+
+HDF5_TEST:
+  FORTRAN90 version:
+  Test the HDF5 library.
+
+HDF5_TEST01:
+  Create an HDF5 file "test01.h5"
+
+HDF5_TEST02:
+  Create an HDF5 file "test02.h5"
+  Create a dataset.
+
+HDF5_TEST03:
+  Create an HDF5 file "test03.h5"
+  Create a dataset.
+  Put data in the dataset.
+
+  Dataset /dset written to test03.h5
+
+dset( 1, 1) =    1
+dset( 1, 2) =    5
+dset( 1, 3) =    9
+dset( 1, 4) =   13
+dset( 1, 5) =   17
+dset( 1, 6) =   21
+dset( 2, 1) =    2
+dset( 2, 2) =    6
+dset( 2, 3) =   10
+dset( 2, 4) =   14
+dset( 2, 5) =   18
+dset( 2, 6) =   22
+dset( 3, 1) =    3
+dset( 3, 2) =    7
+dset( 3, 3) =   11
+dset( 3, 4) =   15
+dset( 3, 5) =   19
+dset( 3, 6) =   23
+dset( 4, 1) =    4
+dset( 4, 2) =    8
+dset( 4, 3) =   12
+dset( 4, 4) =   16
+dset( 4, 5) =   20
+dset( 4, 6) =   24
+
+HDF5_TEST04:
+  Open the HDF5 file "test03.h5"
+  Access a dataset.
+  Read data from the dataset.
+
+  Dataset /dset written to test03.h5
+
+dset( 1, 1) = ****
+dset( 1, 2) = ****
+dset( 1, 3) =    0
+dset( 1, 4) =    0
+dset( 1, 5) =    0
+dset( 1, 6) =    0
+dset( 2, 1) = ****
+dset( 2, 2) = ****
+dset( 2, 3) =    0
+dset( 2, 4) =    0
+dset( 2, 5) =    0
+dset( 2, 6) =    0
+dset( 3, 1) = ****
+dset( 3, 2) = ****
+dset( 3, 3) =    0
+dset( 3, 4) =    0
+dset( 3, 5) =    0
+dset( 3, 6) =    0
+dset( 4, 1) = ****
+dset( 4, 2) = ****
+dset( 4, 3) =    0
+dset( 4, 4) =    0
+dset( 4, 5) =    0
+dset( 4, 6) =    0
+
+HDF5_TEST:
+  Normal end of execution.
+
+22 January 2020   1:20:48.777 PM

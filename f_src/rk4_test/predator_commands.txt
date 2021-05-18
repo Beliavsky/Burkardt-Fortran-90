@@ -1,0 +1,14 @@
+# predator_commands.txt
+#
+# Usage:
+#  gnuplot < predator_commands.txt
+#
+set term png
+set output "predator.png"
+set xlabel "<-- Predator -->"
+set ylabel "<-- Prey -->"
+set title "Predator-prey solved by rk4()"
+set grid
+set style data lines
+plot "predator_data.txt" using 2:3 with lines
+quit

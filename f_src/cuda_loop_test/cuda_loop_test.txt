@@ -1,0 +1,130 @@
+14 June 2020   4:17:27.146 PM
+
+CUDA_LOOP_TEST:
+  FORTRAN90 version
+  Simulate the way CUDA breaks into iterative task, using
+  blocks and threads.
+
+CUDA_LOOP:
+  Simulate the assignment of N tasks to the blocks
+  and threads of a GPU using CUDA.
+
+  Number of tasks is     23
+  BLOCKS:  {    2,   1,   1}
+  THREADS: {    5,   1,   1}
+  Total threads =     10
+
+  Process   Process (bx,by,bz) (tx,ty,tz)  Tasks...
+  Increment Formula
+
+        0        0: ( 0, 0, 0) ( 0, 0, 0)  0 10 20
+        1        1: ( 0, 0, 0) ( 1, 0, 0)  1 11 21
+        2        2: ( 0, 0, 0) ( 2, 0, 0)  2 12 22
+        3        3: ( 0, 0, 0) ( 3, 0, 0)  3 13
+        4        4: ( 0, 0, 0) ( 4, 0, 0)  4 14
+        5        5: ( 1, 0, 0) ( 0, 0, 0)  5 15
+        6        6: ( 1, 0, 0) ( 1, 0, 0)  6 16
+        7        7: ( 1, 0, 0) ( 2, 0, 0)  7 17
+        8        8: ( 1, 0, 0) ( 3, 0, 0)  8 18
+        9        9: ( 1, 0, 0) ( 4, 0, 0)  9 19
+
+CUDA_LOOP:
+  Simulate the assignment of N tasks to the blocks
+  and threads of a GPU using CUDA.
+
+  Number of tasks is     23
+  BLOCKS:  {    1,   1,   1}
+  THREADS: {    1,   1,   1}
+  Total threads =      1
+
+  Process   Process (bx,by,bz) (tx,ty,tz)  Tasks...
+  Increment Formula
+
+        0        0: ( 0, 0, 0) ( 0, 0, 0)  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22
+
+CUDA_LOOP:
+  Simulate the assignment of N tasks to the blocks
+  and threads of a GPU using CUDA.
+
+  Number of tasks is     40
+  BLOCKS:  {    2,   3,   1}
+  THREADS: {    2,   1,   4}
+  Total threads =     48
+
+  Process   Process (bx,by,bz) (tx,ty,tz)  Tasks...
+  Increment Formula
+
+        0        0: ( 0, 0, 0) ( 0, 0, 0)  0
+        1        1: ( 0, 0, 0) ( 1, 0, 0)  1
+        2        2: ( 0, 0, 0) ( 0, 0, 1)  2
+        3        3: ( 0, 0, 0) ( 1, 0, 1)  3
+        4        4: ( 0, 0, 0) ( 0, 0, 2)  4
+        5        5: ( 0, 0, 0) ( 1, 0, 2)  5
+        6        6: ( 0, 0, 0) ( 0, 0, 3)  6
+        7        7: ( 0, 0, 0) ( 1, 0, 3)  7
+        8        8: ( 1, 0, 0) ( 0, 0, 0)  8
+        9        9: ( 1, 0, 0) ( 1, 0, 0)  9
+       10       10: ( 1, 0, 0) ( 0, 0, 1) 10
+       11       11: ( 1, 0, 0) ( 1, 0, 1) 11
+       12       12: ( 1, 0, 0) ( 0, 0, 2) 12
+       13       13: ( 1, 0, 0) ( 1, 0, 2) 13
+       14       14: ( 1, 0, 0) ( 0, 0, 3) 14
+       15       15: ( 1, 0, 0) ( 1, 0, 3) 15
+       16       16: ( 0, 1, 0) ( 0, 0, 0) 16
+       17       17: ( 0, 1, 0) ( 1, 0, 0) 17
+       18       18: ( 0, 1, 0) ( 0, 0, 1) 18
+       19       19: ( 0, 1, 0) ( 1, 0, 1) 19
+       20       20: ( 0, 1, 0) ( 0, 0, 2) 20
+       21       21: ( 0, 1, 0) ( 1, 0, 2) 21
+       22       22: ( 0, 1, 0) ( 0, 0, 3) 22
+       23       23: ( 0, 1, 0) ( 1, 0, 3) 23
+       24       24: ( 1, 1, 0) ( 0, 0, 0) 24
+       25       25: ( 1, 1, 0) ( 1, 0, 0) 25
+       26       26: ( 1, 1, 0) ( 0, 0, 1) 26
+       27       27: ( 1, 1, 0) ( 1, 0, 1) 27
+       28       28: ( 1, 1, 0) ( 0, 0, 2) 28
+       29       29: ( 1, 1, 0) ( 1, 0, 2) 29
+       30       30: ( 1, 1, 0) ( 0, 0, 3) 30
+       31       31: ( 1, 1, 0) ( 1, 0, 3) 31
+       32       32: ( 0, 2, 0) ( 0, 0, 0) 32
+       33       33: ( 0, 2, 0) ( 1, 0, 0) 33
+       34       34: ( 0, 2, 0) ( 0, 0, 1) 34
+       35       35: ( 0, 2, 0) ( 1, 0, 1) 35
+       36       36: ( 0, 2, 0) ( 0, 0, 2) 36
+       37       37: ( 0, 2, 0) ( 1, 0, 2) 37
+       38       38: ( 0, 2, 0) ( 0, 0, 3) 38
+       39       39: ( 0, 2, 0) ( 1, 0, 3) 39
+       40       40: ( 1, 2, 0) ( 0, 0, 0)
+       41       41: ( 1, 2, 0) ( 1, 0, 0)
+       42       42: ( 1, 2, 0) ( 0, 0, 1)
+       43       43: ( 1, 2, 0) ( 1, 0, 1)
+       44       44: ( 1, 2, 0) ( 0, 0, 2)
+       45       45: ( 1, 2, 0) ( 1, 0, 2)
+       46       46: ( 1, 2, 0) ( 0, 0, 3)
+       47       47: ( 1, 2, 0) ( 1, 0, 3)
+
+CUDA_LOOP:
+  Simulate the assignment of N tasks to the blocks
+  and threads of a GPU using CUDA.
+
+  Number of tasks is     23
+  BLOCKS:  {    1,   1,   1}
+  THREADS: {    2,   2,   2}
+  Total threads =      8
+
+  Process   Process (bx,by,bz) (tx,ty,tz)  Tasks...
+  Increment Formula
+
+        0        0: ( 0, 0, 0) ( 0, 0, 0)  0  8 16
+        1        1: ( 0, 0, 0) ( 1, 0, 0)  1  9 17
+        2        2: ( 0, 0, 0) ( 0, 1, 0)  2 10 18
+        3        3: ( 0, 0, 0) ( 1, 1, 0)  3 11 19
+        4        4: ( 0, 0, 0) ( 0, 0, 1)  4 12 20
+        5        5: ( 0, 0, 0) ( 1, 0, 1)  5 13 21
+        6        6: ( 0, 0, 0) ( 0, 1, 1)  6 14 22
+        7        7: ( 0, 0, 0) ( 1, 1, 1)  7 15
+
+CUDA_LOOP_TEST:
+  Normal end of execution.
+
+14 June 2020   4:17:27.147 PM

@@ -1,0 +1,61 @@
+30 August 2020   6:36:52.403 PM
+
+SQUARE_SYMQ_RULE_TEST
+  FORTRAN90 version
+  Test the SQUARE_SYMQ_RULE library.
+
+TEST01
+  Symmetric quadrature rule for a square.
+  Polynomial exactness degree DEGREE =    8
+
+  Number of nodes N =     17
+
+     J  W       X       Y
+
+     1    0.888794E-01    0.630680       -0.968850    
+     2    0.888794E-01    0.968850        0.630680    
+     3    0.888794E-01   -0.630680        0.968850    
+     4    0.888794E-01   -0.968850       -0.630680    
+     5    0.112100       -0.750277       -0.927962    
+     6    0.112100        0.927962       -0.750277    
+     7    0.112100        0.750277        0.927962    
+     8    0.112100       -0.927962        0.750277    
+     9    0.269051       -0.762083E-01   -0.852616    
+    10    0.269051        0.852616       -0.762083E-01
+    11    0.269051        0.762083E-01    0.852616    
+    12    0.269051       -0.852616        0.762083E-01
+    13    0.398282       -0.523736       -0.453340    
+    14    0.398282        0.453340       -0.523736    
+    15    0.398282        0.523736        0.453340    
+    16    0.398282       -0.453340        0.523736    
+    17    0.526749        0.101896E-32   -0.740320E-32
+   Sum     4.00000    
+  Area     4.00000    
+
+TEST02
+  Get a quadrature rule for the symmetric square.
+  Then write it to a file.
+  Polynomial exactness degree DEGREE =    8
+
+  Quadrature rule written to file "square08.txt".
+
+TEST03
+  Get a quadrature rule for the symmetric square.
+  Set up GNUPLOT graphics input.
+  Polynomial exactness degree DEGREE =    8
+ 
+  Created vertex file "square08_vertices.txt".
+  Created node file "square08_nodes.txt".
+  Created command file "square08_commands.txt".
+
+TEST04
+  Get a quadrature rule for the symmetric square.
+  Test its accuracy.
+  Polynomial exactness degree DEGREE =    8
+ 
+  RMS error =   0.594097E-16
+
+SQUARE_SYMQ_RULE_TEST
+  Normal end of execution.
+
+30 August 2020   6:36:52.403 PM

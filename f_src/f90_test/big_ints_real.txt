@@ -1,0 +1,75 @@
+21 June 2020  11:59:39.060 AM
+
+BIG_INTS_REAL:
+  FORTRAN90 version
+  Storing big integers in real variables.
+
+TEST01
+  Compute the largest possible integers.
+  Try to store them as real values.
+  Then copy them back.
+
+  "Huge" integers and huge reals:
+
+  i4 = huge ( integer ( kind = 4 ) ) =                 2147483647
+  i8 = huge ( integer ( kind = 8 ) ) =        9223372036854775807
+  r4 = huge ( real ( kind = 4 ) ) =                  0.340282E+39
+  r8 = huge ( real ( kind = 8 ) ) =                  0.179769+309
+
+  Convert huge integers to real values:
+
+  r4i4 = real ( i4, kind = 4 ) =                   0.214748E+10
+  r4i8 = real ( i8, kind = 4 ) =                   0.922337E+19
+  r8i4 = real ( i4, kind = 8 ) =                   0.214748E+10
+  r8i8 = real ( i8, kind = 8 ) =                   0.922337E+19
+
+  Convert real values of integers back to integers:
+
+  i4r4i4 = int ( r4i4, kind = 4 ) =                 -2147483648
+  i4r8i4 = int ( r8i4, kind = 4 ) =                  2147483647
+  i8r4i8 = int ( r4i8, kind = 8 ) =        -9223372036854775808
+  i8r8i8 = int ( r8i8, kind = 8 ) =        -9223372036854775808
+
+TEST02
+  Find the least nonnegative integer I
+  for which int(real(I)) /= I
+  We use integer ( kind = 4 ) and real ( kind = 4 )
+  arithmetic.
+
+  I4 =                       16777217
+  R4I4 =                     16777216.
+  I4R4I4 =                   16777216
+
+TEST03
+  Find the least nonnegative integer I4
+  for which int(real(I4)) /= I4
+  We use integer ( kind = 4 ) and real ( kind = 8 )
+  arithmetic.
+
+  I4 reached the maximum value.
+  No violations were found!
+
+TEST04
+  Let I and J be consecutive integer ( kind = 4 ) values.
+  Let A and B be real ( kind = 4 ) copies of I and J.
+  Seek I and J for which ( B - A ) is not 1.
+
+   i =             16777216
+   j = i + 1 =     16777217
+   j - i =                1
+   a = real ( i, kind = 4 ) =    16777216.0    
+   b = real ( j, kind = 4 ) =    16777216.0    
+   b - a                    =    0.00000000    
+
+TEST05
+  Let I and J be consecutive integer ( kind = 4 ) values.
+  Let A and B be real ( kind = 8 ) copies of I and J.
+  Seek I and J for which ( B - A ) is not 1.
+
+  Reached the maximum integer value.
+  No violations were found!
+
+BIG_INTS_REAL:
+  Normal end of execution.
+
+21 June 2020  11:59:51.365 AM

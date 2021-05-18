@@ -1,0 +1,27 @@
+29 June 2020   4:13:40.194 PM
+ 
+FD1D_PREDATOR_PREY
+  FORTRAN90 version
+ 
+  A one dimensional finite difference algorithm
+  for a predator-prey system.
+ 
+  Enter parameter alpha:
+  Enter parameter beta:
+  Enter parameter gamma:
+  Enter parameter delta:
+  Enter a in [a,b]:
+  Enter b in [a,b]:
+  Enter space-step h:
+  Enter maximum time t:
+  Enter time-step Delta t:
+  Enter 0 for direct Gauss solution, 
+        1 for iterative Jacobi:
+ 
+  Created graphics data file "uv_data.txt".
+  Created command file "uv_commands.txt".
+ 
+FD1D_PREDATOR_PREY:
+  Normal end of execution.
+ 
+29 June 2020   4:13:40.656 PM

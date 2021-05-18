@@ -1,0 +1,246 @@
+<html>
+
+  <head>
+    <title>
+      QUALITY - Quality Measures for Pointsets in M dimensions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      QUALITY <br> Quality Measures for Pointsets in M dimensions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>QUALITY</b>,
+      a FORTRAN90 code which
+      computes measures of the quality
+      of dispersion of a set of N points in an M dimensional region.
+    </p>
+
+    <p>
+      The region to be analyzed is defined by a single routine which
+      the user may specify.  We will refer to that routine as
+      <b>sample_routine</b>.  This routine is simply required to return
+      sample points from the region.
+    </p>
+
+    <p>
+      The library includes routines for two simple regions, namely
+      the unit hypercube and the unit hypersphere.  If either of these
+      regions is of interest, then the user simply has to pass the
+      appropriate name, either <b>sample_hypercube_uniform</b> or
+      <b>sample_sphere_uniform</b>.  For other regions, the user should
+      write the appropriate version of a sampling routine.
+    </p>
+
+    <p>
+      The unit hypercube in M dimensional space is simply the set of
+      all vectors whose entries are between 0 and 1.  It is
+      a natural abstraction of the unit line segment, the unit square,
+      and the unit cube, and represents a very simple chunk of <b>M</b>
+      dimensional space.
+    </p>
+
+    <p>
+      The unit hypersphere in M dimensional space is simply the set of
+      all points whose distance from the origin is 1 or less.
+    </p>
+
+    <p>
+      The quality measures computed include:
+      <ul>
+        <li>
+          <b>Alpha</b>, the minimum angle divided by the maximum possible
+          minimum angle (for triangulated 2D datasets only);
+        </li>
+        <li>
+          <b>Area</b>, the ratio of the minimum and maximum triangle
+          areas (for triangulated 2D datasets only);
+        </li>
+        <li>
+          <b>Beta</b>, the standard deviation of the minimum spacing
+          between nodes, normalized by the average spacing between nodes;
+        </li>
+        <li>
+          <b>Chi</b>, the regularity measure;
+        </li>
+        <li>
+          <b>D</b>, the second moment determinant measure;
+        </li>
+        <li>
+          <b>E</b>, the Voronoi energy measure;
+        </li>
+        <li>
+          <b>Gamma</b>, the mesh ratio;
+        </li>
+        <li>
+          <b>H</b>, the point distribution norm;
+        </li>
+        <li>
+          <b>Lambda</b>, the COV measure;
+        </li>
+        <li>
+          <b>Mu</b>, the point distribution ratio;
+        </li>
+        <li>
+          <b>Nu</b>, the cell volume deviation;
+        </li>
+        <li>
+          <b>Q</b>, two times the radius of the inscribed circle
+          divided by the radius of the circumscribed circle
+          (for triangulated 2D datasets only);
+        </li>
+        <li>
+          <b>R0</b>, the Riesz S=0 energy;
+        </li>
+        <li>
+          <b>S</b>, the sphere volume measure
+          (unit hypercube datasets only).
+        </li>
+        <li>
+          <b>Tau</b>, the second moment trace measure;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>QUALITY</b> is available in
+      <a href = "../../cpp_src/quality/quality.html">a C++ version</a> and
+      <a href = "../../f_src/quality/quality.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/quality/quality.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/diaphony/diaphony.html">
+      DIAPHONY</a>,
+      a FORTRAN90 code which
+      reads a file of N points in M dimensions and computes its diaphony, a measure
+      of point dispersion.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quality_test/quality_test.html">
+      quality_test</a>
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/star_discrepancy/star_discrepancy.html">
+      STAR_DISCREPANCY</a>,
+      a C++ program which
+      reads a TABLE file of M points in N dimensions (presumed to lie in the
+      unit hypercube) and computes bounds on the star discrepancy,
+      a measure of dispersion, by Eric Thiemard.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_quality/table_quality.html">
+      TABLE_QUALITY</a>,
+      a FORTRAN90 code which
+      computes the quality measures of a dataset read from a file.
+      which can analyze a dataset that is stored in a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh/tet_mesh.html">
+      TET_MESH</a>,
+      a FORTRAN90 code which
+      carries out various operations on tetrahedral meshes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a FORTRAN90 code which
+      computes quality measures of a tetrahedral mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quality/triangulation_quality.html">
+      TRIANGULATION_QUALITY</a>,
+      a FORTRAN90 code which
+      computes quality measures of a triangulation.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          David Field,<br>
+          Qualitative Measures for Initial Meshes,<br>
+          International Journal of Numerical Methods in Engineering,<br>
+          Volume 47, 2000, pages 887-906.
+        </li>
+        <li>
+          Douglas Hardin, Edward Saff,<br>
+          Discretizing Manifolds via Minimum Energy Points,<br>
+          Notices of the AMS,<br>
+          Volume 51, Number 10, November 2004, pages 1186-1194.
+        </li>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, pages 329-345, June 2004.
+        </li>
+        <li>
+          Yuki Saka, Max Gunzburger, John Burkardt,<br>
+          Latinized, Improved LHS, and CVT Point Sets in Hypercubes, <br>
+          International Journal of Numerical Analysis and Modeling,<br>
+          Volume 4, Number 3-4, 2007, pages 729-743,
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "quality.f90">quality.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "quality.sh">quality.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

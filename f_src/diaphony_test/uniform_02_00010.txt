@@ -1,0 +1,21 @@
+#  uniform_02_00010.txt
+#  created by R8MAT_UNIFORM_WRITE.F90.
+#
+#  File generated on May 31 2007   6:56:22.939 AM
+#
+#  Spatial dimension M =        2
+#  Number of points N =       10
+#  EPSILON (unit roundoff) =   0.222045E-15
+#  Initial seed =    123456789
+#  Current seed =     29242052
+#
+  0.218418    0.956318
+  0.829509    0.561695
+  0.415307    0.066119
+  0.257578    0.109957
+  0.043829    0.633966
+  0.061727    0.449539
+  0.401306    0.754673
+  0.797287    0.001838
+  0.897504    0.350752
+  0.094545    0.013617

@@ -1,0 +1,304 @@
+27 July 2020  10:34:14.541 AM
+
+LINE_CVT_LLOYD_TEST
+  FORTRAN90 version
+  Test the LINE_CVT_LLOYD library.
+
+LINE_CVT_LLOYD_TEST01:
+  Test the unconstrained computation.
+
+  Use  25 points in the interval [  0.0000,  1.0000]
+  Number of iterations to take is  200
+  Call this calculation "test01"
+  Expect a uniform spacing of   0.416667E-01
+ 
+  Initial generators:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+         8:   0.10995679    
+         9:   0.43828998E-01
+        10:   0.63396571    
+        11:   0.61727229E-01
+        12:   0.44953896    
+        13:   0.40130628    
+        14:   0.75467349    
+        15:   0.79728695    
+        16:   0.18383712E-02
+        17:   0.89750406    
+        18:   0.35075234    
+        19:   0.94544750E-01
+        20:   0.13616892E-01
+        21:   0.85909686    
+        22:   0.84084745    
+        23:   0.12310392    
+        24:   0.75123641E-02
+        25:   0.26030300    
+
+  Gnuplot data written to file "test01_energy_data.txt".
+  Gnuplot commands written to "test01_energy_commands.txt".
+
+  Gnuplot data written to file "test01_motion_data.txt".
+  Gnuplot commands written to "test01_motion_commands.txt".
+
+  Gnuplot data written to file "test01_evolution_data.txt".
+  Gnuplot commands written to "test01_evolution_commands.txt".
+ 
+  Final generators:
+ 
+         1:   0.17658733E-01
+         2:   0.52946517E-01
+         3:   0.88149835E-01
+         4:   0.12322732    
+         5:   0.15815894    
+         6:   0.19295236    
+         7:   0.22764733    
+         8:   0.26231782    
+         9:   0.29707146    
+        10:   0.33204655    
+        11:   0.36740652    
+        12:   0.40333221    
+        13:   0.44001238    
+        14:   0.47763303    
+        15:   0.51636612    
+        16:   0.55635836    
+        17:   0.59772091    
+        18:   0.64052049    
+        19:   0.68477266    
+        20:   0.73043759    
+        21:   0.77741888    
+        22:   0.82556539    
+        23:   0.87467610    
+        24:   0.92450789    
+        25:   0.97478565    
+
+LINE_CVT_LLOYD_TEST02:
+  Test the constrained computation.
+
+  Use  25 points in the interval [  0.0000,  1.0000]
+  Number of iterations to take is  200
+  Call this calculation "test02"
+  Expect a uniform spacing of   0.400000E-01
+ 
+  Initial generators:
+ 
+         1:   0.21841830    
+         2:   0.95631758    
+         3:   0.82950923    
+         4:   0.56169544    
+         5:   0.41530708    
+         6:   0.66118735E-01
+         7:   0.25757779    
+         8:   0.10995679    
+         9:   0.43828998E-01
+        10:   0.63396571    
+        11:   0.61727229E-01
+        12:   0.44953896    
+        13:   0.40130628    
+        14:   0.75467349    
+        15:   0.79728695    
+        16:   0.18383712E-02
+        17:   0.89750406    
+        18:   0.35075234    
+        19:   0.94544750E-01
+        20:   0.13616892E-01
+        21:   0.85909686    
+        22:   0.84084745    
+        23:   0.12310392    
+        24:   0.75123641E-02
+        25:   0.26030300    
+
+  Gnuplot data written to file "test02_energy_data.txt".
+  Gnuplot commands written to "test02_energy_commands.txt".
+
+  Gnuplot data written to file "test02_motion_data.txt".
+  Gnuplot commands written to "test02_motion_commands.txt".
+
+  Gnuplot data written to file "test02_evolution_data.txt".
+  Gnuplot commands written to "test02_evolution_commands.txt".
+ 
+  Final generators:
+ 
+         1:    0.0000000    
+         2:   0.36396227E-01
+         3:   0.72773616E-01
+         4:   0.10912096    
+         5:   0.14544172    
+         6:   0.18175982    
+         7:   0.21812386    
+         8:   0.25460921    
+         9:   0.29131783    
+        10:   0.32837572    
+        11:   0.36592808    
+        12:   0.40413243    
+        13:   0.44315010    
+        14:   0.48313656    
+        15:   0.52423130    
+        16:   0.56654790    
+        17:   0.61016491    
+        18:   0.65511830    
+        19:   0.70139602    
+        20:   0.74893503    
+        21:   0.79762118    
+        22:   0.84729205    
+        23:   0.89774256    
+        24:   0.94873314    
+        25:    1.0000000    
+
+LINE_CVT_LLOYD_TEST03:
+  Test the unconstrained computation.
+  SORT the random initial values before use.
+
+  Use  25 points in the interval [  0.0000,  1.0000]
+  Number of iterations to take is  200
+  Call this calculation "test03"
+  Expect a uniform spacing of   0.416667E-01
+ 
+  Initial generators:
+ 
+         1:   0.18383712E-02
+         2:   0.75123641E-02
+         3:   0.13616892E-01
+         4:   0.43828998E-01
+         5:   0.61727229E-01
+         6:   0.66118735E-01
+         7:   0.94544750E-01
+         8:   0.10995679    
+         9:   0.12310392    
+        10:   0.21841830    
+        11:   0.25757779    
+        12:   0.26030300    
+        13:   0.35075234    
+        14:   0.40130628    
+        15:   0.41530708    
+        16:   0.44953896    
+        17:   0.56169544    
+        18:   0.63396571    
+        19:   0.75467349    
+        20:   0.79728695    
+        21:   0.82950923    
+        22:   0.84084745    
+        23:   0.85909686    
+        24:   0.89750406    
+        25:   0.95631758    
+
+  Gnuplot data written to file "test03_energy_data.txt".
+  Gnuplot commands written to "test03_energy_commands.txt".
+
+  Gnuplot data written to file "test03_motion_data.txt".
+  Gnuplot commands written to "test03_motion_commands.txt".
+
+  Gnuplot data written to file "test03_evolution_data.txt".
+  Gnuplot commands written to "test03_evolution_commands.txt".
+ 
+  Final generators:
+ 
+         1:   0.15209663E-01
+         2:   0.45719746E-01
+         3:   0.76499738E-01
+         4:   0.10772179    
+         5:   0.13954666    
+         6:   0.17211986    
+         7:   0.20556824    
+         8:   0.23999742    
+         9:   0.27548994    
+        10:   0.31210423    
+        11:   0.34987447    
+        12:   0.38881124    
+        13:   0.42890278    
+        14:   0.47011703    
+        15:   0.51240402    
+        16:   0.55569859    
+        17:   0.59992328    
+        18:   0.64499118    
+        19:   0.69080864    
+        20:   0.73727763    
+        21:   0.78429772    
+        22:   0.83176760    
+        23:   0.87958609    
+        24:   0.92765270    
+        25:   0.97586777    
+
+LINE_CVT_LLOYD_TEST04:
+  Test the constrained computation.
+  SORT the initial points before use.
+
+  Use  25 points in the interval [  0.0000,  1.0000]
+  Number of iterations to take is  200
+  Call this calculation "test04"
+  Expect a uniform spacing of   0.400000E-01
+ 
+  Initial generators:
+ 
+         1:   0.18383712E-02
+         2:   0.75123641E-02
+         3:   0.13616892E-01
+         4:   0.43828998E-01
+         5:   0.61727229E-01
+         6:   0.66118735E-01
+         7:   0.94544750E-01
+         8:   0.10995679    
+         9:   0.12310392    
+        10:   0.21841830    
+        11:   0.25757779    
+        12:   0.26030300    
+        13:   0.35075234    
+        14:   0.40130628    
+        15:   0.41530708    
+        16:   0.44953896    
+        17:   0.56169544    
+        18:   0.63396571    
+        19:   0.75467349    
+        20:   0.79728695    
+        21:   0.82950923    
+        22:   0.84084745    
+        23:   0.85909686    
+        24:   0.89750406    
+        25:   0.95631758    
+
+  Gnuplot data written to file "test04_energy_data.txt".
+  Gnuplot commands written to "test04_energy_commands.txt".
+
+  Gnuplot data written to file "test04_motion_data.txt".
+  Gnuplot commands written to "test04_motion_commands.txt".
+
+  Gnuplot data written to file "test04_evolution_data.txt".
+  Gnuplot commands written to "test04_evolution_commands.txt".
+ 
+  Final generators:
+ 
+         1:    0.0000000    
+         2:   0.32389650E-01
+         3:   0.64959436E-01
+         4:   0.97884975E-01
+         5:   0.13133302    
+         6:   0.16545744    
+         7:   0.20039570    
+         8:   0.23626593    
+         9:   0.27316469    
+        10:   0.31116544    
+        11:   0.35031787    
+        12:   0.39064789    
+        13:   0.43215834    
+        14:   0.47483026    
+        15:   0.51862474    
+        16:   0.56348504    
+        17:   0.60933894    
+        18:   0.65610124    
+        19:   0.70367612    
+        20:   0.75195942    
+        21:   0.80084062    
+        22:   0.85020459    
+        23:   0.89993299    
+        24:   0.94990536    
+        25:    1.0000000    
+
+LINE_CVT_LLOYD_TEST
+  Normal end of execution.
+
+27 July 2020  10:34:14.556 AM

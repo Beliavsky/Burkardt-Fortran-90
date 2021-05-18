@@ -1,0 +1,14 @@
+# commands07.txt
+#
+# Usage:
+#  gnuplot < commands07.txt
+#
+set term png
+set output "plot07.png"
+set xlabel "<---X--->"
+set ylabel "<---Y--->"
+set title "Data versus Piecewise Linear Interpolant"
+set grid
+set style data lines
+plot "data07.txt" using 1:2 with points pt 7 ps 2 lc rgb "blue",\
+     "interp07.txt" using 1:2 lw 3 linecolor rgb "red"

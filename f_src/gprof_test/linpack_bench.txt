@@ -1,0 +1,24 @@
+January 22 2020   1:20:47.072 PM
+ 
+LINPACK_BENCH_D
+  The LINPACK benchmark.
+  Language: FORTRAN90
+  Datatype: Real Double Precision
+ 
+     Norm. Resid      Resid           MACHEP         X(1)          X(N)
+ 
+  8.52801345E+00  9.46798195E-13  2.22044605E-16  1.00000000E+00  1.00000000E+00
+ 
+  Times are reported for matrices of order  1000
+  with leading array dimension of 1001
+ 
+      Factor     Solve      Total     MFLOPS       Unit      Ratio
+ 
+  4.146E-01  1.376E-03  4.159E-01  1.608E+03  1.244E-03  7.428E+00
+ 
+  End of tests -- This version dated 10/12/92.
+ 
+LINPACK_BENCH_D
+  Normal end of execution.
+ 
+January 22 2020   1:20:47.551 PM

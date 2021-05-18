@@ -1,0 +1,182 @@
+<html>
+
+  <head>
+    <title>
+      ALPERT_RULE - Alpert Quadrature for regular, log singular, and power singular functions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ALPERT_RULE<br>
+      Alpert Quadrature for regular, log singular, and power singular functions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ALPERT_RULE</b>,
+      a FORTRAN90 library which
+      has tabulated values that define Alpert quadrature rules of a number
+      of orders of accuracy for functions that are regular, log singular,
+      or power singular.
+    </p>
+
+    <p>
+      The rules defined here assume that the integral is to be taken over the
+      interval [0,1].  The interval is divided into N+1 intervals.  The leftmost
+      and rightmost intervals are handled in a special way, depending on whether
+      a particular kind of singularity is expected.
+    </p>
+
+    <p>
+      A singularity may exist at the left endpoint, x = 0.  The cases are:
+      <ul>
+        <li>
+          <i>regular</i>, no singularity;
+        </li>
+        <li>
+          <i>power</i>, the integrand has the form g(x)=x^(-1/2)*phi(x)+psi(x);
+        </li>
+        <li>
+          <i>log</i>, the integrand has the form g(x)=phi(x)*log(x)+psi(x);
+        </li>
+      </ul>
+      In case one, the regular Alpert rule is used in both end intervals.
+      In case two, the power singular Alpert rule is used in the leftmost interval.
+      In case three, the log singular Alpert rule is used in the leftmost interval.
+    </p>  
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ALPERT_RULE</b> is available in
+      <a href = "../../c_src/alpert_rule/alpert_rule.html">a C version</a> and
+      <a href = "../../cpp_src/alpert_rule/alpert_rule.html">a C++ version</a> and
+      <a href = "../../f_src/alpert_rule/alpert_rule.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/alpert_rule/alpert_rule.html">a MATLAB version</a> and
+      <a href = "../../py_src/alpert_rule/alpert_rule.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/alpert_rule_test/alpert_rule_test.html">
+      alpert_rule_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/line_fekete_rule/line_fekete_rule.html">
+      LINE_FEKETE_RULE</a>,
+      a FORTRAN90 library which
+      returns the points and weights of a Fekete quadrature rule
+      over the interior of a line segment in 1D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/line_felippa_rule/line_felippa_rule.html">
+      LINE_FELIPPA_RULE</a>,
+      a FORTRAN90 library which
+      returns the points and weights of a Felippa quadrature rule
+      over the interior of a line segment in 1D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/line_ncc_rule/line_ncc_rule.html">
+      LINE_NCC_RULE</a>,
+      a FORTRAN90 library which
+      computes a Newton Cotes Closed (NCC) quadrature rule for the line,
+      that is, for an interval of the form [A,B], using equally spaced points
+      which include the endpoints.
+    </p>
+
+    <p>
+      <a href = "../../f_src/line_nco_rule/line_nco_rule.html">
+      LINE_NCO_RULE</a>,
+      a FORTRAN90 library which
+      computes a Newton Cotes Open (NCO) quadrature rule,
+      using equally spaced points,
+      over the interior of a line segment in 1D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/quadrature_weights_vandermonde/quadrature_weights_vandermonde.html">
+      QUADRATURE_WEIGHTS_VANDERMONDE</a>,
+      a FORTRAN90 library which
+      computes the weights of a quadrature rule using the Vandermonde
+      matrix, assuming that the points have been specified.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_fekete_rule/triangle_fekete_rule.html">
+      TRIANGLE_FEKETE_RULE</a>,
+      a FORTRAN90 library which
+      defines Fekete rules for quadrature or interpolation over a triangle.
+    </p>
+
+    <p>
+      <a href = "../../f_src/vandermonde/vandermonde.html">
+      VANDERMONDE</a>,
+      a FORTRAN90 library which 
+      carries out certain operations associated
+      with the Vandermonde matrix.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Bradley Alpert,<br>
+          Hybrid Gauss-Trapezoidal Quadrature Rules,<br>
+          SIAM Journal on Scientific Computing, <br>
+          Volume 20, Number 5, pages 1551-1584, 1999.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "alpert_rule.f90">alpert_rule.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "alpert_rule.sh">alpert_rule.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 May 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

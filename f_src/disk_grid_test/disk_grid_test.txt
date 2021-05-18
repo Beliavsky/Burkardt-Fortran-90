@@ -1,0 +1,89 @@
+17 June 2020   5:29:40.179 PM
+ 
+DISK_GRID_TEST:
+  FORTRAN90 version
+  Test the DISK_GRID library.
+ 
+TEST01:
+  DISK_GRID can define a grid of points
+  with N+1 points on a horizontal or vertical radius,
+  based on any disk.
+ 
+  We use N =       20
+  Radius R =    2.00000    
+  Center C = (   1.00000    ,   5.00000    )
+ 
+  Number of grid points will be     1313
+ 
+  Part of the grid point array:
+ 
+         1:    1.00000         5.00000    
+         2:    1.09756         5.00000    
+         3:   0.902439         5.00000    
+         4:    1.19512         5.00000    
+         5:   0.804878         5.00000    
+         6:    1.29268         5.00000    
+         7:   0.707317         5.00000    
+         8:    1.39024         5.00000    
+         9:   0.609756         5.00000    
+        10:    1.48780         5.00000    
+        11:   0.512195         5.00000    
+        12:    1.58537         5.00000    
+        13:   0.414634         5.00000    
+        14:    1.68293         5.00000    
+        15:   0.317073         5.00000    
+        16:    1.78049         5.00000    
+        17:   0.219512         5.00000    
+        18:    1.87805         5.00000    
+  ........  ..............  ..............
+      1313:   0.609756         3.04878    
+ 
+  Data written to the file "disk_grid_test01.xy".
+ 
+  Created boundary file "disk_grid_test01_boundary.txt".
+ 
+  Created data file "disk_grid_test01_data.txt".
+  Created command file "disk_grid_test01_commands.txt".
+ 
+TEST02:
+  DISK_GRID_FIBONACCI can define a grid of N points
+  based on a Fibonacci spiral inside a disk.
+ 
+  We use N =     1000
+  Radius R =    2.00000    
+  Center C = (   1.00000    ,   5.00000    )
+ 
+  Part of the grid point array:
+ 
+         1:   0.967016         4.96978    
+         2:    1.00677         5.07718    
+         3:    1.06086         4.92062    
+         4:   0.883458         5.02061    
+         5:    1.11323         5.07203    
+         6:   0.961485         4.85673    
+         7:   0.925662         5.14313    
+         8:    1.16274         4.94057    
+         9:   0.829516         4.92963    
+        10:    1.08264         5.17660    
+        11:    1.06135         4.80441    
+        12:   0.814386         5.10757    
+        13:    1.21845         5.04802    
+        14:   0.866319         4.80985    
+        15:   0.969043         5.23889    
+        16:    1.19044         4.83949    
+        17:   0.743251         4.98938    
+        18:    1.18759         5.18667    
+  ........  ..............  ..............
+      1000:    2.95457         5.42388    
+ 
+  Coordinate data written to the file "disk_grid_test02.xy".
+ 
+  Created boundary file "disk_grid_test02_boundary.txt".
+ 
+  Created data file "disk_grid_test02_data.txt".
+  Created command file "disk_grid_test02_commands.txt".
+ 
+DISK_GRID_TEST:
+  Normal end of execution.
+ 
+17 June 2020   5:29:40.184 PM

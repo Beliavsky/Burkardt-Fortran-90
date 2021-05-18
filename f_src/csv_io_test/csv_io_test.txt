@@ -1,0 +1,41 @@
+12 June 2020   7:56:30.536 AM
+ 
+CSV_IO_TEST
+  FORTRAN90 version:
+  Test CSV_IO.
+ 
+TEST01
+  Test routines to create a CSV file.
+ 
+  Data written to "csv_4col_5row.csv".
+ 
+TEST02
+  Read data from CSV file created by TEST01.
+  File contains       11 lines.
+   1"R4","I4","S","R8"
+   1     4 values read.
+   2   1.10000,1,"one",   1.10000
+   2     4 values read.
+   3   2.20000,2,"two",   2.20000
+   3     4 values read.
+   4   3.30000,3,"three",   3.30000
+   4     4 values read.
+   5   4.40000,4,"four",   4.40000
+   5     4 values read.
+   6   5.50000,5,"five",   5.50000
+   6     4 values read.
+   7   6.60000,6,"six",   6.60000
+   7     4 values read.
+   8   7.70000,7,"seven",   7.70000
+   8     4 values read.
+   9   8.80000,8,"eight",   8.80000
+   9     4 values read.
+  10   9.90000,9,"nine",   9.90000
+  10     4 values read.
+  11   10.1000,10,"ten",   10.1000
+  11     4 values read.
+ 
+CSV_IO_TEST
+  Normal end of execution.
+ 
+12 June 2020   7:56:30.537 AM

@@ -1,0 +1,967 @@
+15 May 2021   8:12:33.041 PM
+ 
+test_mat_test():
+  FORTRAN90 version
+  Test test_mat().
+ 
+bvec_next_grlex_test():
+  bvec_next_grlex() computes binary vectors in GRLEX order.
+
+   0:  0000
+   1:  0001
+   2:  0010
+   3:  0100
+   4:  1000
+   5:  0011
+   6:  0101
+   7:  0110
+   8:  1001
+   9:  1010
+  10:  1100
+  11:  0111
+  12:  1011
+  13:  1101
+  14:  1110
+  15:  1111
+  16:  0000
+
+legendre_zeros_test():
+  LEGENDRE_zeroS computes the zeros of the N-th Legendre
+  polynomial.
+ 
+  Legendre zeros
+ 
+       1   0.00000    
+ 
+  Legendre zeros
+ 
+       1 -0.577350    
+       2  0.577350    
+ 
+  Legendre zeros
+ 
+       1 -0.774597    
+       2   0.00000    
+       3  0.774597    
+ 
+  Legendre zeros
+ 
+       1 -0.861136    
+       2 -0.339981    
+       3  0.339981    
+       4  0.861136    
+ 
+  Legendre zeros
+ 
+       1 -0.906180    
+       2 -0.538469    
+       3   0.00000    
+       4  0.538469    
+       5  0.906180    
+ 
+  Legendre zeros
+ 
+       1 -0.932470    
+       2 -0.661209    
+       3 -0.238619    
+       4  0.238619    
+       5  0.661209    
+       6  0.932470    
+ 
+  Legendre zeros
+ 
+       1 -0.949108    
+       2 -0.741531    
+       3 -0.405845    
+       4   0.00000    
+       5  0.405845    
+       6  0.741531    
+       7  0.949108    
+ 
+mertens_test():
+  MERTENS computes the Mertens function.
+ 
+         N     Exact   MERTENS(N)
+ 
+         1           1           1
+         2           0           0
+         3          -1          -1
+         4          -1          -1
+         5          -2          -2
+         6          -1          -1
+         7          -2          -2
+         8          -2          -2
+         9          -2          -2
+        10          -1          -1
+        11          -2          -2
+        12          -2          -2
+       100           1           1
+      1000           2           2
+     10000         -23         -23
+ 
+moebius_test():
+  MOEBIUS computes the Moebius function.
+ 
+         N     Exact   MOEBIUS(N)
+ 
+         1           1           1
+         2          -1          -1
+         3          -1          -1
+         4           0           0
+         5          -1          -1
+         6           1           1
+         7          -1          -1
+         8           0           0
+         9           0           0
+        10           1           1
+        11          -1          -1
+        12           0           0
+        13          -1          -1
+        14           1           1
+        15           1           1
+        16           0           0
+        17          -1          -1
+        18           0           0
+        19          -1          -1
+        20           0           0
+
+r8mat_is_eigen_left_test():
+  R8MAT_IS_EIGEN_LEFT tests the error in the left eigensystem
+    A' * X - X * LAMBDA = 0
+ 
+  Matrix A:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1   0.136719      0.605469      0.253906      0.390625E-02
+    2   0.585938E-01  0.527344      0.394531      0.195312E-01
+    3   0.195312E-01  0.394531      0.527344      0.585938E-01
+    4   0.390625E-02  0.253906      0.605469      0.136719    
+ 
+ 
+  Eigenmatrix X:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1       1.            1.            1.            1.      
+    2      11.            3.           -1.           -3.      
+    3      11.           -3.           -1.            3.      
+    4       1.           -1.            1.           -1.      
+ 
+ 
+  Eigenvalues LAM:
+ 
+       1   1.00000    
+       2  0.250000    
+       3  0.625000E-01
+       4  0.156250E-01
+
+  Frobenius norm of A'*X-X*LAMBDA is    9.40908    
+
+R8MAT_IS_EIGEN_LEFT_TEST
+  Normal end of execution.
+
+r8mat_is_eigen_right_test():
+  R8MAT_IS_EIGEN_RIGHT tests the error in the right eigensystem
+    A * X - X * LAMBDA = 0
+ 
+  Matrix A:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1   0.136719      0.605469      0.253906      0.390625E-02
+    2   0.585938E-01  0.527344      0.394531      0.195312E-01
+    3   0.195312E-01  0.394531      0.527344      0.585938E-01
+    4   0.390625E-02  0.253906      0.605469      0.136719    
+ 
+ 
+  Eigenmatrix X:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1       1.            6.           11.            6.      
+    2       1.            2.           -1.           -2.      
+    3       1.           -2.           -1.            2.      
+    4       1.           -6.           11.           -6.      
+ 
+ 
+  Eigenvalues LAM:
+ 
+       1   1.00000    
+       2  0.250000    
+       3  0.625000E-01
+       4  0.156250E-01
+
+  Frobenius norm of A*X-X*LAMBDA is    0.00000    
+
+R8MAT_IS_EIGEN_RIGHT_TEST
+  Normal end of execution.
+
+r8mat_is_llt_test():
+  R8MAT_IS_LLT tests the error in a lower triangular
+  Cholesky factorization A = L * L' by looking at
+    A - L * L'
+ 
+  Matrix A:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1       2.            1.            0.            0.      
+    2       1.            2.            1.            0.      
+    3       0.            1.            2.            1.      
+    4       0.            0.            1.            2.      
+ 
+ 
+  Factor L:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1    1.41421          0.            0.            0.      
+    2   0.707107       1.22474          0.            0.      
+    3       0.        0.816497       1.15470          0.      
+    4       0.            0.        0.866025       1.11803    
+ 
+
+  Frobenius norm of A-L*L' is   0.205916E-14
+
+R8MAT_IS_LLT_TEST
+  Normal end of execution.
+
+r8mat_is_null_left_test():
+  R8MAT_IS_NULL_LEFT tests whether the M vector X
+  is a left null vector of A, that is, x'*A=0.
+ 
+  Matrix A:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1       1.            2.            3.      
+    2       4.            5.            6.      
+    3       7.            8.            9.      
+ 
+ 
+  Vector X:
+ 
+       1   1.00000    
+       2  -2.00000    
+       3   1.00000    
+
+  Frobenius norm of X'*A is    0.00000    
+
+r8mat_is_null_right_test():
+  R8MAT_IS_NULL_RIGHT tests whether the N vector X
+  is a right null vector of A, that is, A*X=0.
+ 
+  Matrix A:
+ 
+  Col          1             2             3      
+  Row
+ 
+    1       1.            2.            3.      
+    2       4.            5.            6.      
+    3       7.            8.            9.      
+ 
+ 
+  Vector X:
+ 
+       1   1.00000    
+       2  -2.00000    
+       3   1.00000    
+
+  Frobenius norm of A*X is    0.00000    
+
+r8mat_is_solution_test():
+  R8MAT_IS_SOLUTION tests whether X is the solution of
+  A*X=B by computing the Frobenius norm of the residual.
+
+  A is  3 by 10
+  X is 10 by  9
+  B is  3 by  9
+  Frobenius error in A*X-B is    0.00000    
+ 
+r8mat_norm_fro_test():
+  R8MAT_NORM_FRO computes a Frobenius norm of an R8MAT.
+ 
+  A:
+ 
+  Col          1             2             3             4      
+  Row
+ 
+    1       1.            2.            3.            4.      
+    2       5.            6.            7.            8.      
+    3       9.           10.           11.           12.      
+    4      13.           14.           15.           16.      
+    5      17.           18.           19.           20.      
+ 
+
+  Expected norm =    53.5724    
+  Computed norm =    53.5724    
+ 
+test_analyze():
+  Analyze a matrix.
+ 
+
+  a123
+
+ 
+Not (unit) upper triangular
+Not (unit) lower triangular
+No band matrix structure detected.
+Cyclic tridiagonal.
+Diagonality =              5
+Relative sparseness =    0.00000    
+Irreducible.
+Not property A.
+Not a permutation matrix
+Not symmetric
+Not antisymmetric
+Not a Tournament matrix
+Not a transition matrix
+Not persymmetric
+Not antipersymmetric
+Not centrosymmetric
+Not positive (semi)-definite symmetric
+Not circulant
+Not anticirculant
+Positive
+Not negative or nonpositive
+Not (strictly) row diagonally dominant.
+Not (strictly) column diagonally dominant.
+Matrix rows do not have unit Euclidean norm.
+Matrix columns do not all have unit Euclidean norm.
+Not row orthogonal
+Not column orthogonal
+Not orthogonal
+Integer matrix.
+Not a zero/one matrix
+Not row scalar
+Not column scalar
+Not diagonal scalar
+Not antidiagonal scalar (Hankel)
+Row sum is not constant
+Column sum is not constant
+Not magic, stochastic or biMarkov
+Not an adjacency matrix.
+Not (reduced) row echelon form
+Not normal.
+Not an M matrix
+Spectral norm =      16.1168    
+L1 norm =            18.0000    
+L2 norm =            16.8481    
+Loo norm =           24.0000    
+Frobenius norm =     16.8819    
+EISPACK norm =       45.0000    
+ 
+test_condition():
+  Compute the L1 condition number of an example of each
+  test matrix
+ 
+  Title                    N      COND            COND
+ 
+  aegerter                 5     24.0000         24.0000    
+  bab                      5     8.46751         8.46751    
+  bauer                    6    0.852877E+07    0.852877E+07
+  BIS                      5     42.9756         42.9756    
+  BIW                      5     59.9171         59.9171    
+  bodewig                  4     10.4366         10.4366    
+  boothroyd                5    0.100200E+07    0.100200E+07
+  combin                   5     11.9644         11.9644    
+  companion                5     14.5786         14.5786    
+  conex1                   4     68.0622         68.0622    
+  conex2                   3     17.7034         17.7034    
+  conex3                   5     80.0000         80.0000    
+  conex4                   4     4488.00         4488.00    
+  daub2                    4     2.00000         2.00000    
+  daub4                    8     2.79904         2.79904    
+  daub6                   12     3.44146         3.44146    
+  daub8                   16     3.47989         3.47989    
+  daub10                  20     4.00375         4.00375    
+  daub12                  24     4.80309         4.80309    
+  DIAGONAL                 5     7.39629         7.39629    
+  dif2                     5     18.0000         18.0000    
+  DOWNSHIFT                5     1.00000         1.00000    
+  exchange                 5     1.00000         1.00000    
+  FIBONACCI2               5     15.0000         15.0000    
+  GFPP                     5     12.2633         12.2633    
+  givens                   5     50.0000         50.0000    
+  HANKEL_N                 5     5.83680         5.83680    
+  HARMAN                   8     77.0690         77.0690    
+  HARTLEY                  5     5.00000         5.00000    
+  identity                 5     1.00000         1.00000    
+  ill3                     3     216775.         216775.    
+  JORDAN                   5     2.08956         2.08956    
+  KERSHAW                  4     49.0000         49.0000    
+  LIETZKE                  5     38.0000         38.0000    
+  MAXIJ                    5     100.000         100.000    
+  MINIJ                    5     60.0000         60.0000    
+  orthogonal_symmetric     5     4.39765         4.39765    
+  OTO                      5     18.0000         18.0000    
+  PASCAL1                  5     100.000         100.000    
+  PASCAL3                  5     14333.5         14333.5    
+  PEI                      5     4.90227         4.90227    
+  rodman                   5     5.85900         5.85900    
+  rutis1                   4     15.0000         15.0000    
+  rutis2                   4     11.4400         11.4400    
+  rutis3                   4     6.00000         6.00000    
+  rutis5                   4     62608.0         62608.0    
+  summation                5     10.0000         10.0000    
+  sweet1                   6     16.9669         16.9669    
+  sweet2                   6     49.2227         49.2227    
+  sweet3                   6     24.7785         24.7785    
+  sweet4                  13     51.1709         51.1709    
+  tri_upper                5     2599.90         2599.90    
+  upshift                  5     1.00000         1.00000    
+  wilk03                   3    0.260000E+11    0.260000E+11
+  wilk04                   4    0.245892E+17    0.285325E+17
+  wilk05                   5    0.793703E+07    0.793703E+07
+  wilson                   4     4488.00         4488.00    
+ 
+test_determinant():
+  Compute the determinants of an example of each
+  test matrix.  Compare with the determinant routine,
+  if available.  Print the matrix Frobenius norm
+  for an estimate of magnitude.
+ 
+  Title                    N      Determ          Determ         ||A||
+ 
+  a123                     3     0.00000        0.666134E-15     16.8819    
+  aegerter                 5    -25.0000        -25.0000         9.43398    
+  ANTIcirculant            3    -235.484        -235.484         10.9008    
+  ANTIcirculant            4     1407.78         1407.78         12.6475    
+  ANTIcirculant            5     7148.67         7148.67         14.2666    
+  ANTIHADAMARD             5     1.00000         1.00000         3.31662    
+  ANTIsymmetric_random     5                     0.00000         2.87369    
+  ANTIsymmetric_random     6                    0.973530E-01     3.33451    
+  bab                      5    -1980.11        -1980.11         14.3605    
+  bauer                    6     1.00000         1.00000         185.855    
+  bernstein                5     96.0000         96.0000         25.2784    
+  BIMARKOV_random          5                   -0.862803E-04     1.38793    
+  BIS                      5    -177.020        -177.020         11.0876    
+  BIW                      5    0.547223E-01    0.547223E-01     2.36051    
+  bodewig                  4     568.000         568.000         12.7279    
+  boothroyd                5     1.00000         1.00000         886.710    
+  borderband               5   -0.328125       -0.328125         2.76699    
+  carry                    5    0.165382E-07    0.165382E-07     1.41391    
+  CAUCHY                   5     38.7671         38.7671         682.273    
+  cheby_diff1              5                   -0.213163E-13     13.4722    
+  cheby_diff1              6                   -0.511591E-12     20.7702    
+  cheby_T                  5     64.0000         64.0000         12.6886    
+  cheby_U                  5     1024.00         1024.00         22.4277    
+  cheby_van1               5                     18.0000         4.30116    
+  cheby_van2               2    -2.00000        -2.00000         2.00000    
+  cheby_van2               3    -1.41421        -1.41421         2.00000    
+  cheby_van2               4     1.00000         1.00000         2.08167    
+  cheby_van2               5    0.707107        0.707107         2.17945    
+  cheby_van2               6   -0.500000       -0.500000         2.28035    
+  cheby_van2               7   -0.353553       -0.353553         2.38048    
+  cheby_van2               8    0.250000        0.250000         2.47848    
+  cheby_van2               9    0.176777        0.176777         2.57391    
+  cheby_van2              10   -0.125000       -0.125000         2.66667    
+  cheby_van3               5     13.9754         13.9754         3.87298    
+  chow                     5    -70.5488        -70.5488         202.501    
+  circulant                5     7148.67         7148.67         14.2666    
+  circulant2               3     18.0000         18.0000         6.48074    
+  circulant2               4    -160.000        -160.000         10.9545    
+  circulant2               5     1875.00         1875.00         16.5831    
+  CLEMENT1                 5     0.00000         0.00000         6.32456    
+  CLEMENT1                 6    -225.000        -225.000         8.36660    
+  CLEMENT2                 5     0.00000         0.00000         8.97900    
+  CLEMENT2                 6    -178.154        -178.154         10.1600    
+  combin                   5     1257.33         1257.33         20.7778    
+  companion                5    -2.81582        -2.81582         6.68633    
+  COMPLEX_I                2     1.00000         1.00000         1.41421    
+  conex1                   4    -2.81582        -2.81582         8.12995    
+  conex2                   3   -0.355137       -0.355137         2.64876    
+  conex3                   5    -1.00000        -1.00000         3.87298    
+  conex4                   4    -1.00000        -1.00000         30.5450    
+  CONFERENCE               6    -125.000        -125.000         5.47723    
+  CREATION                 5     0.00000         0.00000         5.47723    
+  daub2                    4     1.00000         1.00000         2.00000    
+  daub4                    8    -1.00000        -1.00000         2.82843    
+  daub6                   12     1.00000         1.00000         3.46410    
+  daub8                   16    -1.00000        -1.00000         4.00000    
+  daub10                  20     1.00000         1.00000         4.47214    
+  daub12                  24    -1.00000        -1.00000         4.89898    
+  DIAGONAL                 5     22.1228         22.1228         6.38020    
+  dif1                     5     0.00000         0.00000         2.82843    
+  dif1                     6     1.00000         1.00000         3.16228    
+  dif1CYCLIC               5     0.00000         0.00000         3.16228    
+  dif2                     5     6.00000         6.00000         5.29150    
+  dif2CYCLIC               5     0.00000         0.00000         5.47723    
+  DORR                     5   -0.633817E+11   -0.633817E+11     533.003    
+  DOWNSHIFT                5     1.00000         1.00000         2.23607    
+  EBERLEIN                 5     0.00000       -0.102318E-11     18.1002    
+  EULERIAN                 5     1.00000         1.00000         77.2981    
+  exchange                 5     1.00000         1.00000         2.23607    
+  FIBONACCI1               5     0.00000         0.00000         95.3527    
+  fibonacci2               5    -1.00000        -1.00000         3.00000    
+  FIBONACCI3               5     8.00000         8.00000         3.60555    
+  FIEDLER                  7     1332.21         1332.21         30.1350    
+  FORSYTHE                 5     1975.68         1975.68         10.7723    
+  FORSYTHE                 6     9031.06         9031.06         11.7416    
+  FOURIER_COSINE           5     1.00000         1.00000         2.23607    
+  FOURIER_SINE             5     1.00000         1.00000         2.23607    
+  frank                    5     1.00000         1.00000         11.6190    
+  GFPP                     5     212.007         212.007         9.39618    
+  givens                   5     16.0000         16.0000         20.6155    
+  GK316                    5    -25.0000        -25.0000         9.43398    
+  GK323                    5     32.0000         32.0000         10.0000    
+  GK324                    5     11.9530         11.9530         11.4577    
+  GRCAR                    5                     8.00000         3.60555    
+  HADAMARD                 5                     0.00000         4.00000    
+  HANKEL                   5                    -2823.88         15.2126    
+  HANKEL_N                 5     3125.00         3125.00         15.0000    
+  HANOWA                   6     1803.10         1803.10         8.69327    
+  HARMAN                   8    0.954779E-03    0.954779E-03     5.05359    
+  HARTLEY                  5     55.9017         55.9017         5.00000    
+  HARTLEY                  6    -216.000        -216.000         6.00000    
+  HARTLEY                  7    -907.493        -907.493         7.00000    
+  HARTLEY                  8    -4096.00        -4096.00         8.00000    
+  HELMERT                  5     1.00000         1.00000         2.23607    
+  HELMERT2                 5                     1.00000         2.23607    
+  HERMITE                  5     1024.00         1024.00         54.1941    
+  HERNDON                  5   -0.400000E-01   -0.400000E-01     1.77133    
+  HILBERT                  5    0.374930E-11    0.374930E-11     1.58091    
+  HOUSEHOLDER              5    -1.00000        -1.00000         2.23607    
+  idempotent_random        5     0.00000         0.00000         1.00000    
+  identity                 5     1.00000         1.00000         2.23607    
+  IJFACT1                  5    0.716636E+10    0.716636E+10    0.366559E+07
+  IJFACT2                  5    0.149480E-20    0.149480E-20    0.557720    
+  ill3                     3     6.00000         6.00000         817.763    
+  INTEGRATION              6     1.00000         1.00000         4.19580    
+  involutory               5    -1.00000        -1.00000         1942.46    
+  involutory_random        5                    -1.00000         2.23607    
+  JACOBI                   5     0.00000         0.00000         1.49071    
+  JACOBI                   6   -0.216450E-01   -0.216450E-01     1.65145    
+  JORDAN                   6     498.456         498.456         7.25072    
+  kahan                    5   -0.378564E-07   -0.378564E-07    0.715639    
+  KERSHAW                  4     1.00000         1.00000         8.24621    
+  KERSHAWTRI               5     1.00000         553.995         8.73845    
+  kms                      5     2304.83         2304.83         101.704    
+  LAGUERRE                 5    0.347222E-02    0.347222E-02     6.85376    
+  LEGENDRE                 5     16.4062         16.4062         6.80762    
+  LEHMER                   5    0.656250E-01    0.656250E-01     3.28041    
+  LESLIE                   4    0.605244        0.605244         1.78414    
+  LESP                     5    -42300.0        -42300.0         22.3487    
+  LIETZKE                  5     48.0000         48.0000         18.0278    
+  LIGHTS_OUT              25                   -0.325405E-29     10.2470    
+  line_adj                 5     0.00000         0.00000         2.82843    
+  line_adj                 6    -1.00000        -1.00000         3.16228    
+  LINE_LOOP_ADJ            5     0.00000        -0.00000         3.60555    
+  LOEWNER                  5                    -29.0825         20.5227    
+  LOTKIN                   5    0.187465E-10    0.187465E-10     2.45676    
+  MARKOV_random            5                    0.488558E-02     1.33584    
+  MAXIJ                    5     5.00000         5.00000         19.8746    
+  MILNES                   5     11.9530         11.9530         11.4577    
+  MINIJ                    5     1.00000         1.00000         12.4499    
+  MOLER1                   5     1.00000         1.00000         61.8850    
+  MOLER2                   5     0.00000        0.102538E-06     101035.    
+  MOLER3                   5     1.00000         1.00000         8.66025    
+  MOLER4                   4     1.00000         1.00000         2.82843    
+  NEUMANN                 25     0.00000        0.124631E-02     23.2379    
+  ONE                      5     0.00000        -0.00000         5.00000    
+  ORTEGA                   5    -16.5253        -16.5253         244.268    
+  orthogonal_random        5     1.00000         1.00000         2.23607    
+  orthogonal_symmetric     5     1.00000         1.00000         2.23607    
+  OTO                      5     6.00000         6.00000         5.29150    
+  PARTER                   5     131.917         131.917         6.34077    
+  PASCAL1                  5     1.00000         1.00000         9.94987    
+  PASCAL2                  5     1.00000         1.00000         92.4608    
+  PASCAL3                  5     1.00000         1.00000         124.742    
+  PEI                      5     137.311         137.311         6.04036    
+  PERMUTATION_random       5    -1.00000         1.00000         2.23607    
+  PLU                      5    0.193261E+08    0.193261E+08     152.462    
+  poisson                 25    0.325655E+14    0.325655E+14     21.9089    
+  PROLATE                  5                    -5651.77         12.5984    
+  RECTANGLE_ADJ           25     0.00000         0.00000         8.94427    
+  REDHEFFER                5    -2.00000        -2.00000         3.74166    
+  REF_random               5     0.00000         0.00000         2.63560    
+  REF_random               5     0.00000         1.00000         2.81894    
+  RIEMANN                  5                     96.0000         8.83176    
+  RING_ADJ                 1     1.00000         1.00000         1.00000    
+  RING_ADJ                 2    -1.00000        -1.00000         1.41421    
+  RING_ADJ                 3     2.00000         2.00000         2.44949    
+  RING_ADJ                 4     0.00000         0.00000         2.82843    
+  RING_ADJ                 5     2.00000         2.00000         3.16228    
+  RING_ADJ                 6    -4.00000        -4.00000         3.46410    
+  RING_ADJ                 7     2.00000         2.00000         3.74166    
+  RING_ADJ                 8     0.00000         0.00000         4.00000    
+  ris                      5     4.12239         4.12239         3.17039    
+  rodman                   5    -2175.88        -2175.88         12.7897    
+  rosser1                  8     0.00000        -9480.58         2482.26    
+  routh                    5     7.85813         7.85813         5.15491    
+  rutis1                   4    -375.000        -375.000         16.6132    
+  rutis2                   4     100.000         100.000         11.4018    
+  rutis3                   4     624.000         624.000         14.1421    
+  rutis4                   5     216.000         216.000         59.1270    
+  rutis5                   4     1.00000         1.00000         23.7697    
+  schur_block              5     589.771         589.771         8.39978    
+  skew_circulant           5    -10310.4        -10310.4         14.2666    
+  spd_random               5    0.404187E-01    0.404187E-01     1.46230    
+  spline                   5    -2566.72        -2566.72         20.8244    
+  stirling                 5     1.00000         1.00000         67.9191    
+  stripe                   5                     2112.00         14.8324    
+  summation                5     1.00000         1.00000         3.87298    
+  sweet1                   6   -0.204682E+08   -0.204682E+08     70.1997    
+  sweet2                   6     9562.52         9562.52         30.1433    
+  sweet3                   6   -0.540561E+08   -0.540561E+08     73.4234    
+  sweet4                  13   -0.646348E+17   -0.646348E+17     119.704    
+  sylvester                5                    -89.6985         13.0548    
+  sylvester_kac            5     0.00000         0.00000         7.74597    
+  sylvester_KAC            6    -225.000        -225.000         10.4881    
+  symmetric_random         5     22.1228         22.1228         6.38020    
+  toeplitz                 5                    -2823.88         15.2126    
+  toeplitz_5diag           5                    -747.438         12.8468    
+  toeplitz_5s             25                   -0.151735E+18     40.3981    
+  toeplitz_spd             5                    0.849362E-01     3.41573    
+  tournament_random        5     0.00000         0.00000         4.47214    
+  transition_random        5                    0.736983E-04     1.10947    
+  trench                   5                    -37.7411         7.03032    
+  tri_upper                5     1.00000         1.00000         9.18086    
+  tribonacci2              5     1.00000         1.00000         3.31662    
+  tris                     5     6683.42         6683.42         13.3888    
+  triv                     5    -700.369        -700.369         11.1204    
+  triw                     5     1.00000         1.00000         9.39629    
+  upshift                  5     1.00000         1.00000         2.23607    
+  vand1                    5     133985.         133985.         466.164    
+  vand2                    5     133985.         133985.         466.164    
+  wathen                  96                    0.161186+269     29132.8    
+  wilk03                   3    0.900000E-20    0.900000E-20     1.39284    
+  wilk04                   4    0.442923E-16    0.442923E-16     1.89545    
+  wilk05                   5    0.379950E-14    0.379947E-14     1.51485    
+  wilk12                  12     1.00000         1.00000         53.5910    
+  wilk20                  20                    0.147630E+26     102.362    
+  wilk21                  21   -0.415825E+13   -0.415825E+13     28.4605    
+  wilson                   4     1.00000         1.00000         30.5450    
+  zero                     5     0.00000         0.00000         0.00000    
+  zielke                   5                     469.417         13.6953    
+ 
+test_eigen_left():
+  Compute the Frobenius norm of the eigenvalue error:
+    X * A - LAMBDA * X
+  given K left eigenvectors X and eigenvalues LAMBDA.
+ 
+  Title                    N     K      ||A||          ||X*A-LAMBDA*X||
+
+  a123                     3     3     16.8819        0.122715E-13
+  carry                    5     5     1.41391        0.360025E-14
+  chow                     5     5     202.501        0.470069E-12
+  DIAGONAL                 5     5     6.38020         0.00000    
+  rosser1                  8     8     2482.26        0.261994E-10
+  symmetric_random         5     5     6.38020        0.250727E-14
+ 
+test_eigen_right():
+  Compute the Frobenius norm of the eigenvalue error:
+    A * X - X * LAMBDA
+  given K right eigenvectors X and eigenvalues LAMBDA.
+ 
+  Title                    N     K      ||A||          ||A*X-X*Lambda||
+
+  a123                     3     3     16.8819        0.144309E-13
+  bab                      5     5     14.3605        0.447899E-14
+  bodewig                  4     4     12.7279        0.924790E-14
+  carry                    5     5     1.41391        0.109311E-14
+  chow                     5     5     202.501        0.254157E-12
+  combin                   5     5     20.7778        0.355271E-14
+  dif2                     5     5     5.29150        0.108488E-14
+  exchange                 5     5     2.23607         0.00000    
+  fibonacci2               5     5     3.00000        0.146869E-15
+  idempotent_random        5     5     1.73205        0.777207E-15
+  identity                 5     5     2.23607         0.00000    
+  ill3                     3     3     817.763        0.162392E-10
+  kershaw                  4     4     8.24621        0.482333E-14
+  kms                      5     5     2.32288        0.320550E-07
+  line_adj                 5     5     2.82843        0.899223E-15
+  LINE_LOOP_ADJ            5     5     3.60555        0.100728E-14
+  ONE                      5     5     5.00000         0.00000    
+  ORTEGA                   5     5     244.268        0.419295E-12
+  OTO                      5     5     5.29150        0.108488E-14
+  PEI                      5     5     6.04036         0.00000    
+  rodman                   5     5     12.7897         0.00000    
+  rosser1                  8     8     2482.26        0.261994E-10
+  rutis1                   4     4     16.6132         0.00000    
+  rutis2                   4     4     11.4018         0.00000    
+  rutis3                   4     4     14.1421         0.00000    
+  rutis5                   4     4     23.7697        0.141754E-13
+  spd_random               5     5     1.46230        0.783298E-15
+  sylvester_kac            5     5     7.74597         0.00000    
+  symmetric_random         5     5     6.38020        0.219105E-14
+  tribonacci2              5     5     3.31662        0.426290E-14
+  wilk12                  12    12     53.5910        0.387547E-12
+  wilson                   4     4     30.5450        0.242630E-13
+  zero                     5     5     0.00000         0.00000    
+ 
+test_inverse():
+  A = a test matrix of order N.
+  B = inverse as computed by a routine.
+  C = inverse as computed by R8MAT_INVERSE.
+ 
+  ||A||    = Frobenius norm of A.
+  ||C||    = Frobenius norm of C.
+  ||I-AC|| = Frobenius norm of I-A*C.
+  ||I-AB|| = Frobenius norm of I-A*B.
+ 
+  Title                    N    ||A||      ||C||        ||I-AC||      ||I-AB||
+ 
+  aegerter                 5     9.4         1.8        0.63E-15    0.29E-15
+  bab                      5     14.        0.72        0.95E-15    0.92E-15
+  bauer                    6    0.19E+03    0.21E+05    0.84E-10     0.0    
+  bernstein                5     25.         3.2         0.0         0.0    
+  bis                      5     11.         3.9        0.10E-14    0.10E-14
+  BIW                      5     2.4         26.        0.33E-14    0.12E-14
+  bodewig                  4     13.        0.68        0.89E-15    0.73E-15
+  boothroyd                5    0.89E+03    0.89E+03    0.52E-10     0.0    
+  borderband               5     2.8         6.8         0.0         0.0    
+  carry                    5     1.4        0.31E+04    0.25E-12    0.12E-12
+  CAUCHY                   5    0.68E+03     61.        0.20E-12    0.96E-13
+  cheby_T                  5     13.         1.9         0.0         0.0    
+  cheby_U                  5     22.         1.2         0.0         0.0    
+  cheby_van2               5     2.2         2.5        0.43E-15    0.60E-15
+  cheby_van3               5     3.9         1.3        0.93E-15    0.78E-15
+  chow                     5    0.20E+03    0.27E+03    0.30E-12    0.15E-12
+  circulant                5     14.        0.41        0.74E-15    0.88E-15
+  circulant2               5     17.        0.64        0.11E-14    0.15E-14
+  CLEMENT1                 6     8.4         1.5        0.66E-15    0.87E-16
+  CLEMENT2                 6     10.         2.7        0.67E-15    0.89E-15
+  combin                   5     21.        0.71        0.12E-14    0.10E-14
+  companion                5     6.7         2.9        0.91E-15    0.32E-15
+  COMPLEX_I                2     1.4         1.4         0.0         0.0    
+  conex1                   4     8.1         6.4         0.0         0.0    
+  conex2                   3     2.6         4.3        0.21E-15    0.21E-15
+  conex3                   5     3.9         11.         0.0         0.0    
+  conex4                   4     31.         99.        0.60E-12     0.0    
+  CONFERENCE               6     5.5         1.1        0.73E-15     0.0    
+  daub2                    4     2.0         2.0         0.0        0.89E-15
+  daub4                    8     2.8         2.8        0.31E-15    0.22E-14
+  daub6                   12     3.5         3.5        0.11E-14    0.16E-14
+  daub8                   16     4.0         4.0        0.17E-14    0.43E-14
+  daub10                  20     4.5         4.5        0.17E-14    0.89E-14
+  daub12                  24     4.9         4.9        0.23E-14    0.19E-13
+  DIAGONAL                 5     6.4         2.1         0.0         0.0    
+  dif1                     6     3.2         3.5         0.0         0.0    
+  dif2                     5     5.3         3.9        0.11E-14    0.69E-15
+  DORR                     5    0.53E+03    0.38E-01    0.19E-14    0.16E-14
+  DOWNSHIFT                5     2.2         2.2         0.0         0.0    
+  EULERIAN                 5     77.        0.78E+03    0.28E-12     0.0    
+  exchange                 5     2.2         2.2         0.0         0.0    
+  FIBONACCI2               5     3.0         3.5         0.0         0.0    
+  FIBONACCI3               5     3.6         1.6        0.16E-15     0.0    
+  FIEDLER                  7     30.         3.3        0.22E-13    0.48E-14
+  FORSYTHE                 5     11.        0.52        0.21E-15    0.89E-16
+  FOURIER_COSINE           5     2.2         2.2        0.11E-14    0.10E-14
+  FOURIER_SINE             5     2.2         2.2        0.73E-15    0.18E-14
+  frank                    5     12.         59.        0.36E-13     0.0    
+  GFPP                     5     9.4         1.0        0.35E-15    0.30E-13
+  givens                   5     21.         2.7         0.0         0.0    
+  GK316                    5     9.4         1.8        0.63E-15    0.29E-15
+  GK323                    5     10.         2.3         0.0         0.0    
+  GK324                    5     11.         5.6        0.28E-14    0.23E-14
+  HANKEL_N                 5     15.        0.55        0.67E-15    0.70E-16
+  HANOWA                   6     8.7        0.71        0.50E-15    0.56E-15
+  HARMAN                   8     5.1         15.        0.71E-14    0.95E-06
+  HARTLEY                  5     5.0         1.0        0.90E-15    0.26E-14
+  HELMERT                  5     2.2         2.2        0.48E-15    0.72E-15
+  HELMERT2                 5     2.2         2.2        0.65E-15    0.51E-15
+  HERMITE                  5     54.         1.8         0.0         0.0    
+  HERNDON                  5     1.8         9.4        0.17E-14    0.29E-15
+  HILBERT                  5     1.6        0.30E+06    0.20E-10    0.70E-11
+  HOUSEHOLDER              5     2.2         2.2        0.11E-14    0.91E-15
+  identity                 5     2.2         2.2         0.0         0.0    
+  ill3                     3    0.82E+03    0.34E+03    0.13E-10    0.50E-10
+  INTEGRATION              5     4.0         7.5         0.0        0.76E-15
+  involutory               5    0.19E+04    0.19E+04    0.74E-10    0.73E-11
+  JACOBI                   6     1.7         6.5        0.60E-15    0.21E-15
+  JORDAN                   5     6.6        0.84        0.22E-15    0.22E-15
+  kahan                    5    0.72        0.43E+03    0.11E-13    0.11E-13
+  KERSHAW                  4     8.2         8.2        0.43E-14     0.0    
+  KERSHAWTRI               5     8.7        0.69        0.43E-15    0.48E-15
+  kms                      5    0.10E+03     2.5        0.22E-13    0.18E-13
+  LAGUERRE                 5     6.9        0.20E+03    0.18E-13    0.13E-14
+  LEGENDRE                 5     6.8         1.9        0.29E-15    0.32E-15
+  LEHMER                   5     3.3         7.7        0.21E-14    0.16E-14
+  LESP                     5     22.        0.32        0.34E-15    0.73E-15
+  LIETZKE                  5     18.         2.4        0.49E-14    0.58E-15
+  line_adj                 6     3.2         3.5         0.0         0.0    
+  LOTKIN                   5     2.5        0.24E+06    0.25E-10    0.31E-11
+  MAXIJ                    5     20.         4.7        0.31E-14    0.99E-15
+  MILNES                   5     11.         5.6        0.28E-14    0.23E-14
+  MINIJ                    5     12.         5.0         0.0         0.0    
+  MOLER1                   5     62.        0.28E+05    0.53E-10    0.44E-10
+  MOLER3                   5     8.7        0.12E+03     0.0         0.0    
+  ORTEGA                   5    0.24E+03     91.        0.16E-11    0.31E-11
+  orthogonal_symmetric     5     2.2         2.2        0.11E-14    0.24E-14
+  OTO                      5     5.3         3.9        0.11E-14    0.69E-15
+  PARTER                   5     6.3        0.94        0.75E-15    0.89E-16
+  PASCAL1                  5     9.9         9.9         0.0         0.0    
+  PASCAL2                  5     92.         92.         0.0         0.0    
+  PASCAL3                  5    0.12E+03    0.12E+03    0.32E-12    0.45E-13
+  PEI                      5     6.0        0.85        0.12E-14    0.12E-15
+  PERMUTATION_random       5     2.2         2.2         0.0         6.3    
+  PLU                      5    0.15E+03    0.14        0.10E-14    0.90E-15
+  RIS                      5     3.2         1.9        0.74E-15    0.45E-16
+  rodman                   5     13.        0.53        0.90E-15    0.69E-15
+  rutis1                   4     17.         1.0        0.15E-14    0.11E-14
+  rutis2                   4     11.         1.1        0.54E-15    0.69E-15
+  rutis3                   4     14.        0.58        0.80E-15    0.59E-15
+  rutis4                   5     59.         52.        0.92E-12    0.29E-12
+  rutis5                   4     24.        0.19E+04    0.45E-11     0.0    
+  schur_block              5     8.4        0.65        0.79E-16    0.63E-15
+  spd_random               5     1.5         5.7        0.97E-15    0.45E-14
+  spline                   5     21.        0.97        0.79E-15    0.14E-14
+  stirling                 5     68.         32.        0.38E-13     0.0    
+  summation                5     3.9         3.0         0.0         0.0    
+  sweet1                   6     70.        0.26        0.16E-14    0.11E-12
+  sweet2                   6     30.         1.4        0.65E-14    0.34E-13
+  sweet3                   6     73.        0.34        0.12E-14    0.14E-12
+  sweet4                  13    0.12E+03    0.38        0.45E-14    0.26E-12
+  sylvester_kac            6     10.         2.5        0.11E-15    0.11E-15
+  symmetric_random         5     6.4         2.1        0.13E-14    0.42E-14
+  tri_upper                5     9.2        0.17E+03    0.17E-13    0.12E-13
+  tris                     5     13.        0.40        0.46E-15    0.69E-15
+  triv                     5     11.         1.1        0.13E-14    0.10E-14
+  triw                     5     9.4        0.46E+03     0.0         0.0    
+  upshift                  5     2.2         2.2         0.0         0.0    
+  vand1                    5    0.47E+03     1.3        0.88E-14    0.50E-14
+  vand2                    5    0.47E+03     1.3        0.45E-13    0.50E-14
+  wilk03                   3     1.4        0.18E+11    0.67E-06    0.67E-06
+  wilk04                   4     1.9        0.12E+17    0.83E-04     11.    
+  wilk05                   5     1.5        0.31E+07    0.73E-09    0.12E-08
+  wilk21                  21     28.         4.3        0.17E-14    0.39E-14
+  wilson                   4     31.         99.        0.64E-12     0.0    
+
+test_llt():
+  A = a test matrix of order M by M
+  L is an M by N lower triangular Cholesky factor.
+
+  ||A|| = Frobenius norm of A.
+  ||A-LLT|| = Frobenius norm of A-L*L'.
+
+  Title                    M     N      ||A||            ||A-LLT||
+
+  dif2                     5     5     5.29150        0.800593E-15
+  givens                   5     5     20.6155        0.329345E-14
+  KERSHAW                  4     4     8.24621        0.252200E-14
+  LEHMER                   5     5     3.28041        0.157009E-15
+  MINIJ                    5     5     12.4499         0.00000    
+  MOLER1                   5     5     61.8850         0.00000    
+  MOLER3                   5     5     8.66025         0.00000    
+  OTO                      5     5     5.29150        0.702167E-15
+  PASCAL2                  5     5     92.4608         0.00000    
+  wilson                   4     4     30.5450        0.525453E-14
+ 
+test_null_left():
+  A = a test matrix of order M by N
+  x = an M vector, candidate for a left null vector.
+ 
+  ||A|| = Frobenius norm of A.
+  ||x|| = L2 norm of x.
+  ||x'*A||/||x|| = L2 norm of x'A over L2 norm of x.
+ 
+  Title                    M     N      ||A||            ||x||        ||x'*A||/||x||
+ 
+  a123                     3     3     16.8819         2.44949         0.00000    
+  cheby_diff1              5     5     13.4722         3.74166        0.478446E-15
+  CREATION                 5     5     5.47723         1.00000         0.00000    
+  dif1                     5     5     2.82843         1.73205         0.00000    
+  dif1CYCLIC               5     5     3.16228         2.23607         0.00000    
+  dif2CYCLIC               5     5     5.47723         2.23607         0.00000    
+  EBERLEIN                 5     5     18.1002         2.23607        0.561733E-15
+  FIBONACCI1               5     5     95.3527         1.73205         0.00000    
+  LAUCHLI                  6     5     6.68163         3.59567         0.00000    
+  line_adj                 7     7     3.46410         2.00000         0.00000    
+  MOLER2                   5     5     101035.         263.820         0.00000    
+  ONE                      5     5     5.00000         1.41421         0.00000    
+  RING_ADJ                12    12     4.89898         3.46410         0.00000    
+  rosser1                  8     8     2482.26         22.3607         0.00000    
+  zero                     5     5     0.00000         2.23607         0.00000    
+ 
+test_null_right()
+  A = a test matrix of order M by N
+  x = an N vector, candidate for a right null vector.
+ 
+  ||A|| = Frobenius norm of A.
+  ||x|| = L2 norm of x.
+  ||A*x||/||x|| = L2 norm of A*x over L2 norm of x.
+ 
+  Title                    M     N      ||A||            ||x||        ||A*x||/||x||
+ 
+  a123                     3     3     16.8819         2.44949         0.00000    
+  archimedes               7     8     93.3970        0.187697E+08     0.00000    
+  cheby_diff1              5     5     13.4722         2.23607        0.642108E-15
+  CREATION                 5     5     5.47723         1.00000         0.00000    
+  dif1                     5     5     2.82843         1.73205         0.00000    
+  dif1CYCLIC               5     5     3.16228         2.23607         0.00000    
+  dif2CYCLIC               5     5     5.47723         2.23607         0.00000    
+  FIBONACCI1               5     5     95.3527         1.73205         0.00000    
+  HAMMING                  5    31     8.94427         2.44949         0.00000    
+  line_adj                 7     7     3.46410         2.00000         0.00000    
+  MOLER2                   5     5     101035.         1016.30         0.00000    
+  NEUMANN                 25    25     23.2379         5.00000         0.00000    
+  ONE                      5     5     5.00000         1.41421         0.00000    
+  RING_ADJ                12    12     4.89898         3.46410         0.00000    
+  rosser1                  8     8     2482.26         22.3607         0.00000    
+  zero                     5     5     0.00000         2.23607         0.00000    
+ 
+test_plu():
+  A = a test matrix of order M by N
+  P, L, U are the PLU factors.
+ 
+  ||A|| = Frobenius norm of A.
+  ||A-PLU|| = Frobenius norm of A-P*L*U.
+ 
+  Title                    M     N      ||A||            ||A-PLU||
+ 
+  a123                     3     3     16.8819        0.687980E-14
+  bodewig                  4     4     12.7279        0.412430E-14
+  borderband               5     5     2.76699         0.00000    
+  dif2                     5     5     5.29150         0.00000    
+  GFPP                     5     5     9.39618        0.286429E-13
+  givens                   5     5     20.6155         0.00000    
+  kms                      5     5     101.704        0.243270E-12
+  LEHMER                   5     5     3.28041         0.00000    
+  MAXIJ                    5     5     19.8746         0.00000    
+  MINIJ                    5     5     12.4499         0.00000    
+  MOLER1                   5     5     61.8850         0.00000    
+  MOLER3                   5     5     8.66025         0.00000    
+  OTO                      5     5     5.29150         0.00000    
+  PASCAL2                  5     5     92.4608         0.00000    
+  PLU                      5     5     152.462         0.00000    
+  vand2                    4     4     107.076        0.164856E-13
+  wilson                   4     4     30.5450        0.732411E-14
+ 
+test_solution():
+  Compute the Frobenius norm of the solution error:
+    A * X - B
+  given MxN matrix A, NxK solution X, MxK right hand side B.
+ 
+  Title                    M     N     K      ||A||         ||A*X-B||
+ 
+  a123                     3     3     1     16.8819         0.00000    
+  bodewig                  4     4     1     12.7279         0.00000    
+  dif2                    10    10     2     7.61577         0.00000    
+  frank                   10    10     2     38.6652         0.00000    
+  poisson                 20    20     1     19.5448         0.00000    
+  wilk03                   3     3     1     1.39284        0.360331E-06
+  wilk04                   4     4     1     1.89545        0.129463E+17
+  wilson                   4     4     1     30.5450         0.00000    
+
+test_type():
+  Test functions that query the type of a matrix.
+
+  Title                    M     N     ||A||            ||transition Error||
+
+  bodewig                  4     4     12.7279        0.100000E+31
+  snakes                 101   101     5.92077        0.980522E-15
+  transition_random        5     5     1.32331         0.00000    
+ 
+test_mat_test()
+  Normal end of execution.
+ 
+15 May 2021   8:12:33.055 PM

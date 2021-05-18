@@ -1,0 +1,50 @@
+30 July 2020   5:18:36.895 PM
+ 
+MESH_BANDWIDTH
+  FORTRAN90 version
+  Read a mesh file which defines
+  a "triangulation" of a region in the plane,
+  or a "tetrahedronization" of a region in space,
+  or any division of a regino in ND space into elements,
+  using a mesh of elements of uniform order.
+ 
+  Determine the geometric mesh bandwidth.
+ 
+    M = ML + 1 + MU.
+ 
+  which is the bandwidth of the vertex connectivity
+  matrix.
+ 
+  Note that a matrix associated with variables defined
+  at the  nodes could have a greater bandwidth than M,
+  since you might have multiple variables at a vertex,
+  or the variable might be a vector quantity,
+  or physical effects might link two variables that are
+  not associated with vertices that are connected.
+ 
+  Read the header of "hex_holes6.txt".
+ 
+  Element order ELEMENT_ORDER =        6
+  Element number ELEMENT_NUM  =      232
+ 
+  Read the data in "hex_holes6.txt".
+ 
+  First 5 elements:
+ 
+  Row       1      2      3      4      5      6
+  Col
+ 
+    1     294    373    354    325    352    323
+    2      60     95     86     73     81     71
+    3     373    374    428    410    412    411
+    4      95     96    136    114    116    115
+    5     239    294    242    268    269    248
+ 
+  Lower bandwidth ML =       83
+  Upper bandwidth MU =       83
+  Total bandwidth M  =      167
+ 
+MESH_BANDWIDTH
+  Normal end of execution.
+ 
+30 July 2020   5:18:36.897 PM

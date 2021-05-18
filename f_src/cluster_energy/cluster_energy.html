@@ -1,0 +1,218 @@
+<html>
+
+  <head>
+    <title>
+      CLUSTER_ENERGY - Clusterings with Minimal Energy
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CLUSTER_ENERGY <br> Clusterings with Minimal Energy
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CLUSTER_ENERGY</b>,
+      a FORTRAN90 code which
+      seeks to organize data into a given number of clusters,
+      in a way which minimizes the cluster energy.
+    </p>
+
+    <p>
+      Specifically, suppose we are given a set of
+      data points in NUM_DIM dimensional space.  Suppose we are told to use
+      C_NUM clusters.  Each cluster is to be represented by a CENTER
+      point.  Each data point is to be assigned to a cluster.  The
+      total energy is the sum of the cluster energies, and the energy
+      of a cluster is the sum of the squares of the distance of each
+      data point to its center point.
+    </p>
+
+    <p>
+      This code allows the user to specify a dimension, the number of
+      data points, the range of the data, a range of cluster values to
+      try, and the number of cluster iterations to carry out.  It then
+      tries to compute the minimal cluster energy for the given data,
+      and the various numbers of clusters.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CLUSTER_ENERGY</b> is available in
+      <a href = "../../f_src/cluster_energy/cluster_energy.html">a FORTRAN90 version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/asa058/asa058.html">
+      ASA058</a>,
+      a FORTRAN90 code which
+      implements the K-means algorithm of Sparks.
+    </p>
+
+    <p>
+      <a href = "../../f_src/asa136/asa136.html">
+      ASA136</a>,
+      a FORTRAN90 code which
+      contains the original text of the Hartigan
+      and Wong clustering algorithm ASA136.
+    </p>
+
+    <p>
+      <a href = "../../f_src/cluster_energy_test/cluster_energy_test.html">
+      cluster_energy_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/cvt_basis/cvt_basis.html">
+      CVT_BASIS</a>,
+      a FORTRAN90 code which
+      uses the CVT algorithm to cluster data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/cvt_basis_flow/cvt_basis_flow.html">
+      CVT_BASIS_FLOW</a>,
+      a FORTRAN90 code which
+      uses the CVT algorithm to cluster data related to fluid flow.
+    </p>
+
+    <p>
+      <a href = "../../f_src/kmeans/kmeans.html">
+      KMEANS</a>,
+      a FORTRAN90 code which
+      uses the K-Means algorithm to cluster data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lau_np/lau_np.html">
+      LAU_NP</a>,
+      a FORTRAN90 code which
+      contains heuristic algorithms for the K-center and K-median problems.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pod_basis_flow/pod_basis_flow.html">
+      POD_BASIS_FLOW</a>,
+      a FORTRAN90 code which
+      uses the POD algorithm to cluster data related to fluid flow.
+    </p>
+
+    <p>
+      <a href = "../../f_src/point_merge/point_merge.html">
+      POINT_MERGE</a>,
+      a FORTRAN90 code which
+      considers N points in M dimensional space, and counts or indexes
+      the unique or "tolerably unique" items.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spaeth/spaeth.html">
+      SPAETH</a>,
+      a FORTRAN90 code which
+      can cluster data according to various principles.
+    </p>
+
+    <p>
+      <a href = "../../datasets/spaeth/spaeth.html">
+      SPAETH</a>,
+      a dataset directory which
+      contains a set of test data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/spaeth2/spaeth2.html">
+      SPAETH2</a>,
+      a FORTRAN90 code which
+      can cluster data according to various principles.
+    </p>
+
+    <p>
+      <a href = "../../datasets/spaeth2/spaeth2.html">
+      SPAETH2</a>,
+      a dataset directory which
+      contains a set of test data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/svd_basis/svd_basis.html">
+      SVD_BASIS</a>,
+      a FORTRAN90 code which
+      uses the Singular Value Decomposition to cluster data.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          John Hartigan, Manchek Wong,<br>
+          Algorithm AS 136:
+          A K-Means Clustering Algorithm,<br>
+          Applied Statistics,<br>
+          Volume 28, Number 1, 1979, pages 100-108.
+        </li>
+        <li>
+          Wendy Martinez, Angel Martinez,<br>
+          Computational Statistics Handbook with MATLAB,<br>
+          Chapman and Hall / CRC, 2002.
+        </li>
+        <li>
+          David Sparks,<br>
+          Algorithm AS 58:
+          Euclidean Cluster Analysis,<br>
+          Applied Statistics,<br>
+          Volume 22, Number 1, 1973, pages 126-130.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cluster_energy.f90">cluster_energy.f90</a>, the
+          source code.
+        </li>
+        <li>
+          <a href = "cluster_energy.sh">cluster_energy.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

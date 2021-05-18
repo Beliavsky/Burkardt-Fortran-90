@@ -1,0 +1,261 @@
+<html>
+
+  <head>
+    <title>
+      FEM2D_HEAT - Finite Element Solution of the Heat Equation on Arbitrary 2D Region
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FEM2D_HEAT <br>
+      Finite Element Solution of the Heat Equation <br>
+      on a Triangulated Region
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FEM2D_HEAT</b>,
+      a FORTRAN90 code which
+      applies the finite element method to solve
+      a form of the time-dependent heat equation over an arbitrary
+      triangulated region.
+    </p>
+
+    <p>
+      The computational region is initially unknown by the code.  The user
+      specifies it by preparing a file containing the coordinates of
+      the nodes, and a file containing the indices of nodes that make
+      up triangles that form a triangulation of the region.
+    </p>
+
+    <p>
+      Normally, the user does not type in this information by hand, but has
+      a code fill in the nodes, and perhaps another code that
+      constructs the triangulation.  However, in the simplest case,
+      the user might construct a very crude triangulation by hand, and
+      have 
+      TRIANGULATION_REFINE refine it to something more reasonable.
+    </p>
+
+    <p>
+      For the following ridiculously small example:
+      <pre>
+       10-11-12
+        |\   |\
+        | \  | \
+        6  7 8  9
+        |   \|   \
+        1-2--3--4-5
+      </pre>
+      the node file would be:
+      <pre>
+         0.0  0.0
+         1.0  0.0
+         2.0  0.0
+         3.0  0.0
+         4.0  0.0
+         0.0  1.0
+         1.0  1.0
+         2.0  1.0
+         3.0  1.0
+         0.0  2.0
+         1.0  2.0
+         2.0  2.0
+      </pre>
+      and the triangle file would be
+      <pre>
+         1  3 10  2  7  6
+         3  5 12  4  9  8
+        12 10  3 11  7  8
+      </pre>
+    </p>
+
+    <p>
+      The code is set up to handle the time dependent heat
+      equation with a right hand side function, and nonhomogeneous
+      Dirichlet boundary conditions.   The state variable
+      U(T,X,Y) is then constrained by:
+      <pre>
+        Ut - ( Uxx + Uyy ) + K(x,y,t) * U = F(x,y,t)  in the region
+                                        U = G(x,y,t)  on the boundary
+                                        U = H(x,y,t)  at initial time TINIT.
+      </pre>
+    </p>
+
+    <p>
+      To specify the right hand side function F(x,y,t), the linear
+      coefficient K(x,y,t), the boundary condition function G(x,y,t),
+      and the initial condition H(x,y,t),
+      the user has to supply a file containing four subroutines,
+      <ul>
+        <li>
+          <b>SUBROUTINE RHS ( N, X, Y, TIME, U )</b> 
+          evaluates the right hand side forcing term F(x,y,t);
+        </li>
+        <li>
+          <b>SUBROUTINE K_COEF ( N, X, Y, TIME, U )</b> evaluates Kx,y,t);
+        </li>
+        <li>
+          <b>SUBROUTINE DIRICHLET_CONDITION ( N, X, Y, TIME, U )</b>
+          evaluates G(x,y,t), and is only called at nodes on the boundary;
+        </li>
+        <li>
+          <b>SUBROUTINE INITIAL_CONDITION ( N, X, Y, TIME, U )</b>
+          evaluates H(x,y,t), and is only called for TIME = TINIT.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      To run the code, the user compiles the user routines,
+      links them with FEM2D_HEAT, and runs the executable.
+    </p>
+
+    <p>
+      The code writes out a file containing an Encapsulated
+      PostScript image of the nodes and elements, with numbers.
+      If there are too many nodes, the plot may be too cluttered
+      to read.  For lower values, however, it is
+      a valuable map of what is going on in the geometry.
+    </p>
+
+    <p>
+      The code is also able to write out a file containing the
+      solution value at every node.  This file may be used to create
+      contour plots of the solution.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FEM2D_HEAT</b> is available in
+      <a href = "../../cpp_src/fem2d_heat/fem2d_heat.html">a C++ version</a> and
+      <a href = "../../f_src/fem2d_heat/fem2d_heat.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fem2d_heat/fem2d_heat.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fd2d_heat_steady/fd2d_heat_steady.html">
+      FD2D_HEAT_STEADY</a>,
+      a FORTRAN90 code which
+      uses the finite difference method (FDM) to solve the 
+      steady (time independent) heat equation in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem1d_heat_steady/fem1d_heat_steady.html">
+      FEM1D_HEAT_STEADY</a>,
+      a FORTRAN90 code which
+      uses the finite element method to solve the steady (time independent)
+      heat equation in 1D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_heat_test/fem2d_heat_test.html">
+      fem2d_heat_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_heat_rectangle/fem2d_heat_rectangle.html">
+      FEM2D_HEAT_RECTANGLE</a>,
+      a FORTRAN90 code which
+      solves the 2D time dependent heat equation on the unit square,
+      using a uniform grid of triangular elements.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fem2d_heat_square/fem2d_heat_square.html">
+      FEM2D_HEAT_SQUARE</a>,
+      a FORTRAN90 code which
+      defines the geometry of a square region, as well as boundary and initial
+      conditions for a given heat problem, and is called by FEM2D_HEAT
+      as part of a solution procedure.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stochastic_heat2d/stochastic_heat2d.html">
+      STOCHASTIC_HEAT2D</a>,
+      a FORTRAN90 code which
+      implements a finite difference method (FDM) for the steady
+      (time independent) 2D heat equation, 
+      with a stochastic heat diffusivity coefficient.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Hans Rudolf Schwarz,<br>
+          Finite Element Methods,<br>
+          Academic Press, 1988,<br>
+          ISBN: 0126330107,<br>
+          LC: TA347.F5.S3313.
+        </li>
+        <li>
+          Gilbert Strang, George Fix,<br>
+          An Analysis of the Finite Element Method,<br>
+          Cambridge, 1973,<br>
+          ISBN: 096140888X,<br>
+          LC: TA335.S77.
+        </li>
+        <li>
+          Olgierd Zienkiewicz,<br>
+          The Finite Element Method,<br>
+          Sixth Edition,<br>
+          Butterworth-Heinemann, 2005,<br>
+          ISBN: 0750663200,<br>
+          LC: TA640.2.Z54
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem2d_heat.f90">fem2d_heat.f90</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "fem2d_heat.sh">fem2d_heat.sh</a>,
+          compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 08 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,2773 @@
+June 10 2020  12:40:35.889 PM
+ 
+CLUSTER_ENERGY
+  FORTRAN90 version
+  Compute the cluster energy of a set of points.
+ 
+ 
+RANDOM_INITIALIZE
+  Initialize RANDOM_NUMBER with user SEED =    123456789
+ 
+Enter spatial dimension DIM_NUM
+ 
+  The region is assumed to be an interval [A,B], or
+  a rectangle [A(1),B(1)] x [A(2),B(2)], or
+  a generalized box, described by lower and upper bounds.
+ 
+Enter all the lower bounds for the region, then the upper bounds:
+ 
+  The program will place data points in the region.
+ 
+Enter the number of data points POINT_NUM
+ 
+  The data points can be randomly or regularly placed.
+ 
+Enter 1 for uniform random data, 2 for uniform grid
+ 
+  For a given number of clusters, the program seeks the
+  minimal energy.  Usually, we do this calculation for a
+  range of clusters, and tabulate their energy.
+ 
+Enter the lower and upper number of clusters
+ 
+  To seek the minimal energy, the program carries out an iteration.
+  Usually, we specify lower and upper limits for the number of iterations.
+ 
+Enter the lower and upper number of energy iterations
+ 
+INPUT_CHECK - The input data passed all checks.
+ 
+INPUT_PRINT:
+ 
+  Number of spatial dimensions =        2
+ 
+  Lower and upper region bounds:
+ 
+      0.000000  1.000000
+      0.000000  1.000000
+ 
+  Number of data points =                    25
+  Lowest number of clusters =  	       1
+  Highest number of clusters =               10
+  Least number of energy iterations =        10
+  Most number of energy iterations =         20
+ 
+  Data points will be uniform random values.
+ 
+  Number of clusters =        1
+ 
+  Initial energy =                           6.80940    
+    1   25    0.8253    0.2727
+  Energy with old centers, new clusters =    6.80940    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.8253    0.2727
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+  Energy with old centers, new clusters =    3.64644    
+  Energy with new centers, new clusters =    3.64644    
+       1      25    0.5577    0.5071
+                    0.5577    0.5071
+ 
+  Number of clusters =        2
+ 
+  Initial energy =                           3.81369    
+    1   12    0.4496    0.2597
+    2   13    0.7149    0.5695
+  Energy with old centers, new clusters =    2.61128    
+  Energy with new centers, new clusters =    2.24577    
+       1      12    0.4496    0.2597
+                    0.4667    0.2781
+       2      13    0.7149    0.5695
+                    0.6417    0.7184
+  Energy with old centers, new clusters =    2.09109    
+  Energy with new centers, new clusters =    1.94051    
+       1      12    0.4667    0.2781
+                    0.5357    0.2361
+       2      13    0.6417    0.7184
+                    0.5781    0.7572
+  Energy with old centers, new clusters =    1.89774    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5357    0.2361
+                    0.5602    0.2065
+       2      14    0.5781    0.7572
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+  Energy with old centers, new clusters =    1.87181    
+  Energy with new centers, new clusters =    1.87181    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2      14    0.5558    0.7432
+                    0.5558    0.7432
+ 
+  Number of clusters =        3
+ 
+  Initial energy =                           5.92699    
+    1   12    0.4990    0.1302
+    2    5    0.5050    0.7610
+    3    8    0.8641    0.5958
+  Energy with old centers, new clusters =    1.51050    
+  Energy with new centers, new clusters =    1.36066    
+       1      10    0.4990    0.1302
+                    0.5281    0.2019
+       2       9    0.5050    0.7610
+                    0.4181    0.7913
+       3       6    0.8641    0.5958
+                    0.8167    0.5895
+  Energy with old centers, new clusters =    1.31494    
+  Energy with new centers, new clusters =    1.28897    
+       1      10    0.5281    0.2019
+                    0.5281    0.2019
+       2       8    0.4181    0.7913
+                    0.3754    0.7829
+       3       7    0.8167    0.5895
+                    0.8085    0.6279
+  Energy with old centers, new clusters =    1.27088    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5281    0.2019
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.8085    0.6279
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =    1.23493    
+  Energy with new centers, new clusters =    1.23493    
+       1      11    0.5602    0.2065
+                    0.5602    0.2065
+       2       8    0.3754    0.7829
+                    0.3754    0.7829
+       3       6    0.7963    0.6904
+                    0.7963    0.6904
+ 
+  Number of clusters =        4
+ 
+  Initial energy =                           9.52157    
+    1    4    0.7181    0.3185
+    2    6    0.7889    0.3248
+    3    7    0.0638    0.1351
+    4    8    0.2450    0.9308
+  Energy with old centers, new clusters =    2.20081    
+  Energy with new centers, new clusters =    1.27929    
+       1       6    0.7181    0.3185
+                    0.5153    0.2986
+       2       8    0.7889    0.3248
+                    0.8437    0.4700
+       3       3    0.0638    0.1351
+                    0.2882    0.2055
+       4       8    0.2450    0.9308
+                    0.4046    0.8136
+  Energy with old centers, new clusters =    1.23306    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5153    0.2986
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.2882    0.2055
+                    0.3302    0.1803
+       4       9    0.4046    0.8136
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+  Energy with old centers, new clusters =    1.21314    
+  Energy with new centers, new clusters =    1.21314    
+       1       4    0.5275    0.2686
+                    0.5275    0.2686
+       2       8    0.8437    0.4700
+                    0.8437    0.4700
+       3       4    0.3302    0.1803
+                    0.3302    0.1803
+       4       9    0.4181    0.7913
+                    0.4181    0.7913
+ 
+  Number of clusters =        5
+ 
+  Initial energy =                           5.55372    
+    1    5    0.7971    0.5480
+    2    5    0.7054    0.1978
+    3    3    0.3143    0.5976
+    4    6    0.7696    0.7849
+    5    6    0.6637    0.6050
+  Energy with old centers, new clusters =    1.33758    
+  Energy with new centers, new clusters =    1.16554    
+       1       3    0.7971    0.5480
+                    0.8193    0.5974
+       2       7    0.7054    0.1978
+                    0.6690    0.1567
+       3       7    0.3143    0.5976
+                    0.2513    0.5421
+       4       5    0.7696    0.7849
+                    0.6852    0.8306
+       5       3    0.6637    0.6050
+                    0.5389    0.6133
+  Energy with old centers, new clusters =    1.13641    
+  Energy with new centers, new clusters =    1.08868    
+       1       4    0.8193    0.5974
+                    0.8155    0.6306
+       2       7    0.6690    0.1567
+                    0.6690    0.1567
+       3       6    0.2513    0.5421
+                    0.2344    0.4930
+       4       5    0.6852    0.8306
+                    0.6266    0.8473
+       5       3    0.5389    0.6133
+                    0.4862    0.6210
+  Energy with old centers, new clusters =    1.08510    
+  Energy with new centers, new clusters =    1.07495    
+       1       5    0.8155    0.6306
+                    0.8036    0.6568
+       2       7    0.6690    0.1567
+                    0.6690    0.1567
+       3       6    0.2344    0.4930
+                    0.2344    0.4930
+       4       4    0.6266    0.8473
+                    0.5943    0.8687
+       5       3    0.4862    0.6210
+                    0.4862    0.6210
+  Energy with old centers, new clusters =    1.06997    
+  Energy with new centers, new clusters =    1.02598    
+       1       5    0.8036    0.6568
+                    0.8036    0.6568
+       2       7    0.6690    0.1567
+                    0.6690    0.1567
+       3       6    0.2344    0.4930
+                    0.2344    0.4930
+       4       5    0.5943    0.8687
+                    0.5460    0.8623
+       5       2    0.4862    0.6210
+                    0.5528    0.5132
+  Energy with old centers, new clusters =    1.00118    
+  Energy with new centers, new clusters =   0.898175    
+       1       6    0.8036    0.6568
+                    0.7963    0.6904
+       2       7    0.6690    0.1567
+                    0.6690    0.1567
+       3       5    0.2344    0.4930
+                    0.2439    0.4159
+       4       5    0.5460    0.8623
+                    0.4314    0.8663
+       5       2    0.5528    0.5132
+                    0.5528    0.5132
+  Energy with old centers, new clusters =   0.880285    
+  Energy with new centers, new clusters =   0.853086    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       6    0.6690    0.1567
+                    0.7191    0.1533
+       3       6    0.2439    0.4159
+                    0.2647    0.3761
+       4       5    0.4314    0.8663
+                    0.4314    0.8663
+       5       2    0.5528    0.5132
+                    0.5528    0.5132
+  Energy with old centers, new clusters =   0.817324    
+  Energy with new centers, new clusters =   0.753701    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       6    0.7191    0.1533
+                    0.7191    0.1533
+       3       5    0.2647    0.3761
+                    0.3068    0.2998
+       4       6    0.4314    0.8663
+                    0.3685    0.8482
+       5       2    0.5528    0.5132
+                    0.5528    0.5132
+  Energy with old centers, new clusters =   0.742666    
+  Energy with new centers, new clusters =   0.718300    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7191    0.1533
+                    0.7716    0.1631
+       3       6    0.3068    0.2998
+                    0.3317    0.2673
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       2    0.5528    0.5132
+                    0.5528    0.5132
+  Energy with old centers, new clusters =   0.712111    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3317    0.2673
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.5528    0.5132
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+  Energy with old centers, new clusters =   0.665762    
+  Energy with new centers, new clusters =   0.665762    
+       1       6    0.7963    0.6904
+                    0.7963    0.6904
+       2       5    0.7716    0.1631
+                    0.7716    0.1631
+       3       5    0.3449    0.2085
+                    0.3449    0.2085
+       4       6    0.3685    0.8482
+                    0.3685    0.8482
+       5       3    0.4572    0.5292
+                    0.4572    0.5292
+ 
+  Number of clusters =        6
+ 
+  Initial energy =                           8.42901    
+    1    6    0.4989    0.2872
+    2    2    0.7031    0.2111
+    3    3    0.4011    0.7204
+    4    6    0.0637    0.9267
+    5    4    0.9015    0.2488
+    6    4    0.5925    0.6216
+  Energy with old centers, new clusters =   0.949100    
+  Energy with new centers, new clusters =   0.526042    
+       1       7    0.4989    0.2872
+                    0.4105    0.2478
+       2       1    0.7031    0.2111
+                    0.5572    0.0607
+       3       5    0.4011    0.7204
+                    0.4472    0.8029
+       4       2    0.0637    0.9267
+                    0.1206    0.8181
+       5       3    0.9015    0.2488
+                    0.9106    0.1588
+       6       7    0.5925    0.6216
+                    0.7576    0.6793
+  Energy with old centers, new clusters =   0.495495    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4105    0.2478
+                    0.4029    0.2717
+       2       2    0.5572    0.0607
+                    0.5067    0.0826
+       3       5    0.4472    0.8029
+                    0.4991    0.8131
+       4       3    0.1206    0.8181
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7576    0.6793
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+  Energy with old centers, new clusters =   0.432933    
+  Energy with new centers, new clusters =   0.432933    
+       1       6    0.4029    0.2717
+                    0.4029    0.2717
+       2       2    0.5067    0.0826
+                    0.5067    0.0826
+       3       5    0.4991    0.8131
+                    0.4991    0.8131
+       4       3    0.1691    0.7325
+                    0.1691    0.7325
+       5       3    0.9106    0.1588
+                    0.9106    0.1588
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+ 
+  Number of clusters =        7
+ 
+  Initial energy =                           5.21536    
+    1    4    0.1782    0.2360
+    2    1    0.5148    0.0193
+    3    5    0.4415    0.3560
+    4    3    0.4330    0.2054
+    5    6    0.6507    0.4640
+    6    5    0.7796    0.5165
+    7    1    0.6047    0.5624
+  Energy with old centers, new clusters =    1.87008    
+  Energy with new centers, new clusters =   0.876711    
+       1       3    0.1782    0.2360
+                    0.1833    0.3990
+       2       3    0.5148    0.0193
+                    0.8023    0.0947
+       3       3    0.4415    0.3560
+                    0.4129    0.3870
+       4       2    0.4330    0.2054
+                    0.4125    0.1408
+       5       1    0.6507    0.4640
+                    0.5801    0.4139
+       6       6    0.7796    0.5165
+                    0.8167    0.5895
+       7       7    0.6047    0.5624
+                    0.4918    0.8289
+  Energy with old centers, new clusters =   0.708644    
+  Energy with new centers, new clusters =   0.477732    
+       1       2    0.1833    0.3990
+                    0.1602    0.6595
+       2       3    0.8023    0.0947
+                    0.9106    0.1588
+       3       1    0.4129    0.3870
+                    0.4036    0.3214
+       4       5    0.4125    0.1408
+                    0.3756    0.1564
+       5       3    0.5801    0.4139
+                    0.5583    0.4349
+       6       5    0.8167    0.5895
+                    0.8036    0.6568
+       7       6    0.4918    0.8289
+                    0.4861    0.8650
+  Energy with old centers, new clusters =   0.404354    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1602    0.6595
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.8036    0.6568
+                    0.7963    0.6904
+       7       4    0.4861    0.8650
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+  Energy with old centers, new clusters =   0.380843    
+  Energy with new centers, new clusters =   0.380843    
+       1       3    0.1691    0.7325
+                    0.1691    0.7325
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       1    0.4036    0.3214
+                    0.4036    0.3214
+       4       5    0.3756    0.1564
+                    0.3756    0.1564
+       5       3    0.5583    0.4349
+                    0.5583    0.4349
+       6       6    0.7963    0.6904
+                    0.7963    0.6904
+       7       4    0.4925    0.8633
+                    0.4925    0.8633
+ 
+  Number of clusters =        8
+ 
+  Initial energy =                           6.89693    
+    1    2    0.5709    0.4722
+    2    2    0.7436    0.5424
+    3    3    0.7388    0.6293
+    4    4    0.8078    0.8830
+    5    7    0.2401    0.9555
+    6    3    0.5836    0.7798
+    7    3    0.6545    0.6309
+    8    1    0.0695    0.2371
+  Energy with old centers, new clusters =    1.46907    
+  Energy with new centers, new clusters =   0.611853    
+       1       6    0.5709    0.4722
+                    0.4720    0.2900
+       2       5    0.7436    0.5424
+                    0.8748    0.3277
+       3       2    0.7388    0.6293
+                    0.8097    0.6801
+       4       2    0.8078    0.8830
+                    0.7580    0.8099
+       5       3    0.2401    0.9555
+                    0.1980    0.8242
+       6       3    0.5836    0.7798
+                    0.5391    0.8722
+       7       1    0.6545    0.6309
+                    0.5255    0.6124
+       8       3    0.0695    0.2371
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.451355    
+  Energy with new centers, new clusters =   0.293748    
+       1       5    0.4720    0.2900
+                    0.5133    0.2358
+       2       3    0.8748    0.3277
+                    0.9106    0.1588
+       3       4    0.8097    0.6801
+                    0.8155    0.6306
+       4       2    0.7580    0.8099
+                    0.7580    0.8099
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.5255    0.6124
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.292112    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8155    0.6306
+                    0.8193    0.5974
+       4       3    0.7580    0.8099
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+  Energy with old centers, new clusters =   0.285937    
+  Energy with new centers, new clusters =   0.285937    
+       1       5    0.5133    0.2358
+                    0.5133    0.2358
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.8193    0.5974
+                    0.8193    0.5974
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       3    0.1980    0.8242
+                    0.1980    0.8242
+       6       3    0.5391    0.8722
+                    0.5391    0.8722
+       7       2    0.3958    0.5869
+                    0.3958    0.5869
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+ 
+  Number of clusters =        9
+ 
+  Initial energy =                           8.19181    
+    1    6    0.3842    0.0257
+    2    2    0.8443    0.2396
+    3    1    0.5274    0.6198
+    4    4    0.7265    0.6607
+    5    2    0.2580    0.4906
+    6    1    0.8426    0.6358
+    7    3    0.2490    0.8653
+    8    3    0.2885    0.1246
+    9    3    0.6280    0.0663
+  Energy with old centers, new clusters =   0.583640    
+  Energy with new centers, new clusters =   0.441269    
+       1       1    0.3842    0.0257
+                    0.4562    0.1046
+       2       3    0.8443    0.2396
+                    0.9106    0.1588
+       3       4    0.5274    0.6198
+                    0.5403    0.6627
+       4       3    0.7265    0.6607
+                    0.7516    0.7322
+       5       2    0.2580    0.4906
+                    0.3348    0.4414
+       6       3    0.8426    0.6358
+                    0.8410    0.6486
+       7       4    0.2490    0.8653
+                    0.2889    0.8662
+       8       3    0.2885    0.1246
+                    0.2882    0.2055
+       9       2    0.6280    0.0663
+                    0.5632    0.1695
+  Energy with old centers, new clusters =   0.423790    
+  Energy with new centers, new clusters =   0.364054    
+       1       1    0.4562    0.1046
+                    0.4562    0.1046
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       3    0.5403    0.6627
+                    0.5270    0.7456
+       4       3    0.7516    0.7322
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8410    0.6486
+                    0.8193    0.5974
+       7       4    0.2889    0.8662
+                    0.2889    0.8662
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       3    0.5632    0.1695
+                    0.5688    0.2510
+  Energy with old centers, new clusters =   0.311514    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.4562    0.1046
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5270    0.7456
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.2889    0.8662
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5688    0.2510
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+  Energy with old centers, new clusters =   0.241706    
+  Energy with new centers, new clusters =   0.241706    
+       1       2    0.5067    0.0826
+                    0.5067    0.0826
+       2       3    0.9106    0.1588
+                    0.9106    0.1588
+       3       4    0.5357    0.8072
+                    0.5357    0.8072
+       4       3    0.7734    0.7834
+                    0.7734    0.7834
+       5       2    0.3348    0.4414
+                    0.3348    0.4414
+       6       3    0.8193    0.5974
+                    0.8193    0.5974
+       7       3    0.1980    0.8242
+                    0.1980    0.8242
+       8       3    0.2882    0.2055
+                    0.2882    0.2055
+       9       2    0.5746    0.3461
+                    0.5746    0.3461
+ 
+  Number of clusters =       10
+ 
+  Initial energy =                           11.1252    
+    1    5    0.1431    0.9977
+    2    0    0.4567    0.4853
+    3    3    0.4478    0.6846
+    4    4    0.7149    0.2441
+    5    6    0.0554    0.1168
+    6    1    0.8786    0.1419
+    7    2    0.1287    0.7960
+    8    0    0.4492    0.8199
+    9    2    0.5443    0.2114
+   10    2    0.0994    0.6421
+  Energy with old centers, new clusters =    1.08090    
+Number of empty clusters was        1
+  Energy with new centers, new clusters =   0.434746    
+       1       0    0.1431    0.9977
+                    0.6018    0.7812
+       2       3    0.4567    0.4853
+                    0.5742    0.4374
+       3       3    0.4478    0.6846
+                    0.7150    0.6575
+       4       1    0.7149    0.2441
+                    0.9036    0.5856
+       5       1    0.0554    0.1168
+                    0.2097    0.1834
+       6       3    0.8786    0.1419
+                    0.9106    0.1588
+       7       2    0.1287    0.7960
+                    0.1206    0.8181
+       8       6    0.4492    0.8199
+                    0.5810    0.8455
+       9       5    0.5443    0.2114
+                    0.4475    0.1753
+      10       1    0.0994    0.6421
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.321801    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.6018    0.7812
+                    0.7598    0.8585
+       2       3    0.5742    0.4374
+                    0.5583    0.4349
+       3       3    0.7150    0.6575
+                    0.7663    0.6895
+       4       2    0.9036    0.5856
+                    0.8595    0.6077
+       5       2    0.2097    0.1834
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.5810    0.8455
+                    0.4925    0.8633
+       9       4    0.4475    0.1753
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+  Energy with old centers, new clusters =   0.235770    
+  Energy with new centers, new clusters =   0.235770    
+       1       1    0.7598    0.8585
+                    0.7598    0.8585
+       2       3    0.5583    0.4349
+                    0.5583    0.4349
+       3       3    0.7663    0.6895
+                    0.7663    0.6895
+       4       2    0.8595    0.6077
+                    0.8595    0.6077
+       5       2    0.2478    0.2197
+                    0.2478    0.2197
+       6       3    0.9106    0.1588
+                    0.9106    0.1588
+       7       2    0.1206    0.8181
+                    0.1206    0.8181
+       8       4    0.4925    0.8633
+                    0.4925    0.8633
+       9       4    0.4465    0.1659
+                    0.4465    0.1659
+      10       1    0.2660    0.5613
+                    0.2660    0.5613
+ 
+  Energy table:
+ 
+  Number    Total        Energy         Square
+    of      Energy        per            Root
+  Clusters               point
+ 
+     1     3.64644      0.145858      0.381913    
+     2     1.87181      0.748724E-01  0.273628    
+     3     1.23493      0.493973E-01  0.222255    
+     4     1.21314      0.485257E-01  0.220286    
+     5    0.665762      0.266305E-01  0.163188    
+     6    0.432933      0.173173E-01  0.131595    
+     7    0.380843      0.152337E-01  0.123425    
+     8    0.285937      0.114375E-01  0.106946    
+     9    0.241706      0.966823E-02  0.983272E-01
+    10    0.235770      0.943080E-02  0.971123E-01
+ 
+CLUSTER_ENERGY
+  Normal end of execution.
+ 
+June 10 2020  12:40:35.897 PM

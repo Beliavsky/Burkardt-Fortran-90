@@ -1,0 +1,10 @@
+21 June 2020  11:59:52.732 AM
+ 
+stop_message_test:
+  FORTRAN90 version.
+  Demonstrate that a FORTRAN90 STOP statement can
+  include a message.
+
+stop_message_test:
+  Normal end of execution.
+21 June 2020  11:59:52.732 AM

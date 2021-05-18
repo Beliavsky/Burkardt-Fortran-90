@@ -1,0 +1,37 @@
+18 August 2020   8:59:34.639 AM
+ 
+PATTERSON_RULE
+  FORTRAN90 version
+ 
+  Look up a Gauss-Patterson rule for approximating
+    Integral ( A <= x <= B ) f(x) dx
+  of order ORDER.
+ 
+  The user specifies ORDER, A, B, and FILENAME.
+ 
+  ORDER is 1, 3, 7, 15, 31, 63, 127, 255 or 511.
+  A is the left endpoint.
+  B is the right endpoint.
+  FILENAME is used to generate 3 files:
+ 
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+ 
+  ORDER =       15
+  A =   -1.00000    
+  B =    1.00000    
+  FILENAME = "gp_o15".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "gp_o15".
+ 
+  Weight file will be   "gp_o15_w.txt".
+  Abscissa file will be "gp_o15_x.txt".
+  Region file will be   "gp_o15_r.txt".
+ 
+PATTERSON_RULE:
+  Normal end of execution.
+ 
+18 August 2020   8:59:34.640 AM

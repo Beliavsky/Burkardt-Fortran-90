@@ -1,0 +1,128 @@
+<html>
+
+  <head>
+    <title>
+      fem_io_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem_io_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem_io_test</b>,
+      a FORTRAN90 code which
+      calls fem_io(), which
+      reads or writes FEM files,
+      which describe the nodes, elements, and function values
+      associated with a finite element method (FEM) model;
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem_io/fem_io.html">
+      fem_io</a>,
+      a FORTRAN90 code which
+      reads or writes node, element and data files defining a model
+      associated with the finite element method (FEM).
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem_io_test.f90">fem_io_test.f90</a>
+          calls all the tests.
+        </li>
+        <li>
+          <a href = "fem_io_test.sh">fem_io_test.sh</a>
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem_io_test.txt">fem_io_test.txt</a>
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ELL</b> is an example of a 2D finite element model
+      in which a scalar value is stored.
+      <ul>
+        <li>
+          <a href = "ell_nodes.txt">ell_nodes.txt</a>
+        </li>
+        <li>
+          <a href = "ell_elements.txt">ell_elements.txt</a>
+        </li>
+        <li>
+          <a href = "ell_values.txt">ell_values.txt</a>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P01</b> is a 3D rectangular channel, with dimensions 1x1x3,
+      using 584 nodes and 2568 elements. This data was created by DISTMESH.
+      <ul>
+        <li>
+          <a href = "p01_nodes.txt">p01_nodes.txt</a>
+        </li>
+        <li>
+          <a href = "p01_elements.txt">p01_elements.txt</a>
+        </li>
+        <li>
+          <a href = "p01_values.txt">p01_values.txt</a>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TINY</b> is a "tiny" example of a 2D finite element model
+      in which a vector value is stored.  This data was written
+      by the FEM_WRITE routine.
+      <ul>
+        <li>
+          <a href = "tiny_nodes.txt">tiny_nodes.txt</a>
+        </li>
+        <li>
+          <a href = "tiny_elements.txt">tiny_elements.txt</a>
+        </li>
+        <li>
+          <a href = "tiny_values.txt">tiny_values.txt</a>
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,35 @@
+26 July 2020  10:27:43.299 AM
+ 
+LEGENDRE_RULE
+  FORTRAN90 version
+ 
+  Compute a Gauss-Legendre rule for approximating
+    Integral ( A <= x <= B ) f(x) dx
+  of order ORDER.
+ 
+  The user specifies:
+  * ORDER, the number of points:
+  * A, the left endpoint:
+  * B, the right endpoint:
+  * FILENAME, used to generate 3 filenames:
+  --  filename_w.txt - the weight file
+  --  filename_x.txt - the abscissa file.
+  --  filename_r.txt - the region file.
+ 
+  ORDER =        4
+  A =   -1.00000    
+  B =    1.00000    
+  FILENAME = "leg_o4".
+ 
+  Creating quadrature files.
+ 
+  "Root" file name is   "leg_o4".
+ 
+  Weight file will be   "leg_o4_w.txt".
+  Abscissa file will be "leg_o4_x.txt".
+  Region file will be   "leg_o4_r.txt".
+ 
+LEGENDRE_RULE:
+  Normal end of execution.
+ 
+26 July 2020  10:27:43.300 AM

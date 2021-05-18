@@ -1,0 +1,298 @@
+<html>
+
+  <head>
+    <title>
+      FFTPACK4 - Fast Fourier Transform Package
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FFTPACK4 <br> Fast Fourier Transform Package
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FFTPACK4</b>,
+      a FORTRAN90 code which
+      computes Fast Fourier Transforms (FFTs).
+    </p>
+
+    <p>
+      Special features include:
+      <ul>
+        <li>
+          real or complex data can be handled;
+        </li>
+        <li>
+          separate routines for forward analysis (data => Fourier coefficients)
+          and backward analysis (Fourier coefficients => data);
+        </li>
+        <li>
+          special "easy" routines;
+        </li>
+        <li>
+          sine and cosine transform routines;
+        </li>
+        <li>
+          quarter wave sine and cosine transform routines;
+        </li>
+        <li>
+          the amount of data is NOT required to be a power of 2.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      In most cases, you will need to call several routines in
+      order to get your results.  In the simplest case, you will need to call
+      just two routines:
+      <ul>
+        <li>
+          an initialization routine;
+        </li>
+        <li>
+          the corresponding forward or backward computational routine.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      In more complicated situations, you might want to call three routines:
+      <ul>
+        <li>
+          an initialization routine;
+        </li>
+        <li>
+          the corresponding forward or backward computational routine;
+        </li>
+        <li>
+          the corresponding backward or forward computational routine.
+        </li>
+      </ul>
+      In a few cases, a single routine may be used for both the forward and
+      backward computation.
+    </p>
+
+    <p>
+      Sometimes, a routine has been so heavily optimized that it is
+      impossible to determine if it is really a correct implementation of
+      the relatively simple Fourier formulas.  In some cases, a "slow"
+      version of a transform routine has been supplied, simply to provide
+      a simple check that the formulas are correct.
+    </p>
+
+    <p>
+      The following table shows how the routines are grouped:
+      <table border = 1>
+        <tr><th>Initialization</th><th>Forward</th><th>Backward</th><th>Purpose</th></tr>
+        <tr><td>CFFTI</td><td>CFFTF</td><td>CFFTB</td><td>FFT for complex data</td></tr>
+        <tr><td>COSQI</td><td>COSQF</td><td>COSQB</td><td>Quarter wave cosine FFT</td></tr>
+        <tr><td>COSTI</td><td>COST</td><td>COST</td><td>Even function cosine FFT</td></tr>
+        <tr><td>EZFFTI</td><td>EZFFTF</td><td>EZFFTB</td><td>Easy version of RFFT routines</td></tr>
+        <tr><td>RFFTI</td><td>RFFTF</td><td>RFFTB</td><td>FFT for real data</td></tr>
+        <tr><td>SINQI</td><td>SINQF</td><td>SINQB</td><td>Quarter wave sine FFT</td></tr>
+        <tr><td>SINTI</td><td>SINT</td><td>SINT</td><td>Odd function sine FFT</td></tr>
+      </table>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      Most of the code presented here is a translation into FORTRAN90 of the
+      corresponding code in version 4.0 of the FORTRAN77 FFTPACK code.
+      According to the NCAR web site, version 4.0 of FFTPACK is in the public domain.
+    </p>
+
+    <p>
+      Routines added to the code by John Burkardt are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FFTPACK4</b> is available in 
+      <a href = "../../f_src/fftpack4/fftpack4.html">a FORTRAN90 version</a> 
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fft_serial/fft_serial.html">
+      fft_serial</a>,
+      a FORTRAN90 code which
+      demonstrates the computation of a Fast Fourier Transform,
+      and is intended as a starting point for implementing an OpenMP parallel version.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fft_openmp/fft_openmp.html">
+      FFT_OPENMP</a>,
+      a FORTRAN90 code which
+      demonstrates the computation of a Fast Fourier Transform
+      in parallel, using OpenMP.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftpack4_test/fftpack4_test.html">
+      fftpack4_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftpack5/fftpack5.html">
+      FFTPACK5</a>,
+      a FORTRAN90 code which
+      implements the Fast Fourier Transform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftpack51/fftpack51.html">
+      FFTPACK51</a>,
+      a FORTRAN90 code which
+      implements the Fast Fourier Transform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fftw_test/fftw_test.html">
+      fftw_test</a>,
+      FORTRAN90 codes which
+      illustrate the use of the FFTW3 code for Fast Fourier Transforms.
+    </p>
+
+    <p>
+      <a href = "../../f_src/nms/nms.html">
+      NMS</a>
+      a FORTRAN90 code
+      which includes a wide variety of numerical software,
+      including a copy of some of FFTPACK4.</i>
+    </p>
+
+    <p>
+      <a href = "../../f_src/sftpack/sftpack.html">
+      SFTPACK</a>
+      a FORTRAN90 code which
+      implements the "slow" Fourier transform, intended as a teaching
+      tool and comparison with the fast Fourier transform.
+    </p>
+
+    <p>
+      <a href = "../../f_src/slatec/slatec.html">
+      SLATEC</a>
+      a FORTRAN90 code which
+      collects together a number of standard numerical libraries,
+      including a copy of some of FFTPACK4.</i>
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      The code presented here is based on version 4.0 of FFTPACK, written in FORTRAN77,
+      by Paul Swarztrauber and Richard Valent, 
+      of the National Center for Atmospheric Research (NCAR).
+    </p>
+
+    <p>
+      Additions and modifications to the code, and conversion to FORTRAN90, were
+      made by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          William Briggs, Van Emden Henson,<br>
+          The DFT: An Owner's Manual for the Discrete Fourier Transform,<br>
+          SIAM, 1995,<br>
+          ISBN13: 978-0-898713-42-8,<br>
+          LC: QA403.5.B75.
+        </li>
+        <li>
+          Bill Buzbee,<br>
+          The SLATEC Common Math code,<br>
+          in Sources and Development of Mathematical Software,<br>
+          edited by Wayne Cowell,<br>
+          Prentice-Hall, 1984,<br>
+          ISBN: 0-13-823501-5,<br>
+          LC: QA76.95.S68.
+        </li>
+        <li>
+          Eleanor Chu, Alan George,<br>
+          Inside the FFT Black Box,<br>
+          CRC Press,<br>
+          ISBN: 0849302706,<br>
+          LC: QA403.5C5.
+        </li>
+        <li>
+          David Kahaner, Cleve Moler, Steven Nash,<br>
+          Numerical Methods and Software,<br>
+          Prentice Hall, 1989,<br>
+          ISBN: 0-13-627258-4,<br>
+          LC: TA345.K34.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Vectorizing the Fast Fourier Transforms,<br>
+          in Parallel Computations,<br>
+          edited by Garry Rodrigue,<br>
+          Academic Press, 1982,<br>
+          ISBN: 0125921012,<br>
+          LC: QA76.6.P348.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Fast Fourier Transform Algorithms for Vector Computers,<br>
+          Parallel Computing,<br>
+          Volume 1, Number 1, August 1984, pages 45-63.
+        </li>
+        <li>
+          Paul Swarztrauber,<br>
+          Symmetric FFT's,<br>
+          Mathematics of Computation,<br>
+          Volume 47, 1986, pages 323-346.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fftpack4.f90">fftpack4.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "fftpack4.sh">fftpack4.sh</a>,
+          commands to compile the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 15 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

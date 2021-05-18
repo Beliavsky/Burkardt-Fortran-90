@@ -1,0 +1,272 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_L2Q - 6-Node Triangulation from 3-Node Triangulation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_L2Q <br> 6-Node Triangulation from 3-Node Triangulation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_L2Q</b>,
+      a FORTRAN90 code which 
+      reads information describing a triangulation of a set of points using 3-node
+      ("linear") triangles, and creates a 6-node ("quadratic")
+      triangulation.
+    </p>
+
+    <p>
+      The same number of triangles are used, but each triangle
+      is given three extra midside nodes.  The coordinates of 
+      these nodes are determined by averaging the coordinates of
+      pairs of vertices of the triangles.
+    </p>
+
+    <p> 
+      The input and output files use the simple TABLE format;
+      comment lines begin with a "#" character.  Otherwise, each line
+      of the file contains one set of information, either the coordinates
+      of a node (for a node file), or the indices of nodes that make up
+      a triangle, (for a triangle file).
+    </p>
+
+    <p> 
+      The input file <i>prefix</i>_nodes.txt contains the node information
+      for the 3-node triangulation.  Each data line contains the X and 
+      Y coordinates of a single node.
+    </p>
+
+    <p> 
+      The input file <i>prefix</i>_elements.txt contains the triangle information
+      for the 3-node triangulation.  Each line contains the indices of three 
+      nodes that form a triangle, in counterclockwise order.
+    </p>
+
+    <p> 
+      The output file <i>prefix</i>_l2q_nodes.txt contains the node information
+      for the 6-node triangulation.  It begins with the node information
+      from <i>nodes.txt</i>, followed by the coordinates of the new nodes.
+    </p>
+
+    <p> 
+      The output file <i>prefix</i>_l2q_elements.txt contains the triangle 
+      information for the 6-node triangulation.  There are exactly
+      as many triangles as before, but now each triangle uses six nodes.
+      Each line of the file contains the indices of 6 nodes that form the
+      triangle, listed in a particular order.  The first three
+      indices are the vertices, in counterclockwise order.  The fourth
+      index is the midside node between vertices 1 and 2, the fifth
+      the midside between vertices 2 and 3, and the sixth the midside
+      between vertices 3 and 1.  It should be the case that the first
+      three columns of <i>prefix</i>_l2q_elements.txt are the same as the
+      three columns of <i>prefix</i>elements.txt.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_l2q</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common filename prefix:
+      <ul>
+        <li>
+          <i>prefix</i>_nodes.txt contains the linear node coordinates,
+        </li>
+        <li>
+          <i>prefix</i>_elements.txt contains the linear element definitions.
+        </li>
+        <li>
+          <i>prefix</i>_l2q_nodes.txt will contain the quadratic node coordinates,
+        </li>
+        <li>
+          <i>prefix</i>_l2q_elements.txt will contain the quadratic element definitions.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_L2Q</b> is available in
+      <a href = "../../cpp_src/triangulation_l2q/triangulation_l2q.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation_l2q/triangulation_l2q.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_l2q/triangulation_l2q.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/mesh_to_xml/mesh_to_xml.html">
+      MESH_TO_XML</a>,
+      a FORTRAN90 code which
+      reads information defining a 1D, 2D or 3D mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding XML file for input
+      to DOLFIN or FENICS.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation/triangulation.html">
+      TRIANGULATION</a>,
+      a FORTRAN90 code which
+      carries out various operations on order 3 ("linear") or order 6 
+      ("quadratic") triangulations.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_boundary_nodes/triangulation_boundary_nodes.html">
+      TRIANGULATION_BOUNDARY_NODES</a>, 
+      a FORTRAN90 code which 
+      reads data defining a triangulation, determines which nodes
+      lie on the boundary, and writes their coordinates to a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_l2q/triangulation_l2q.html">
+      triangulation_l2q</a>,
+      a FORTRAN90 code which
+      reads information about a 3-node (linear) triangulation and creates data
+      defining a corresponding 6-node (quadratic) triangulation;
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_l2q_test/triangulation_l2q_test.html">
+      triangulation_l2q_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_plot/triangulation_plot.html">
+      TRIANGULATION_PLOT</a>, 
+      a FORTRAN90 code which
+      reads data defining a triangulation and creates a
+      PostScript image of the nodes and triangles.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_q2l/triangulation_q2l.html">
+      TRIANGULATION_Q2L</a>, 
+      a FORTRAN90 code which
+      reads data defining a 6-node triangulation, and subdivides
+      each triangle into 4 3-node triangles, writing the resulting
+      triangulation to a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quad/triangulation_quad.html">
+      TRIANGULATION_QUAD</a>, 
+      a FORTRAN90 code which
+      estimates the integral of a function over a triangulated region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_quality/triangulation_quality.html">
+      TRIANGULATION_QUALITY</a>, 
+      a FORTRAN90 code which
+      reads data defining a triangulation and computes a number
+      of quality measures.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_l2q.f90">triangulation_l2q.f90</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "triangulation_l2q.sh">triangulation_l2q.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_l2q_test.sh">triangulation_l2q_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "triangulation_l2q_test.txt">triangulation_l2q_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EXAMPLE</b> is an example data set.
+      <ul>
+        <li>
+          <a href = "example_nodes.txt">example_nodes.txt</a>,
+          the nodes for the 3-node triangulation.
+        </li>
+        <li>
+          <a href = "example_elements.txt">example_elements.txt</a>,
+          the elements for the 3-node triangulation.
+        </li>
+        <li>
+          <a href = "example.png">example.png</a>,
+          a PNG image of
+          the 3-node triangulation, created by TRIANGULATION_PLOT.
+        </li>
+        <li>
+          <a href = "example_output.txt">example_output.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "example_l2q_nodes.txt">example_l2q_nodes.txt</a>,
+          the nodes for the 6-node triangulation.
+        </li>
+        <li>
+          <a href = "example_l2q_elements.txt">example_l2q_elements.txt</a>,
+          the elements for the 6-node triangulation.
+        </li>
+        <li>
+          <a href = "example_l2q.png">example_l2q.png</a>,
+          a PNG image of
+          the 6-node triangulation, created by
+          TRIANGULATION_PLOT.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,189 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 95.16      0.39     0.39   501499     0.00     0.00  daxpy_
+  2.44      0.40     0.01  2000000     0.00     0.00  d_random_
+  2.44      0.41     0.01        1    10.00   398.59  dgefa_
+  0.00      0.41     0.00      999     0.00     0.00  idamax_
+  0.00      0.41     0.00      993     0.00     0.00  d_swap_
+  0.00      0.41     0.00        2     0.00     5.00  d_matgen_
+  0.00      0.41     0.00        2     0.00     0.00  timestamp_
+  0.00      0.41     0.00        1     0.00   410.15  MAIN__
+  0.00      0.41     0.00        1     0.00     1.56  dgesl_
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 2.44% of 0.41 seconds
+
+index % time    self  children    called     name
+                0.00    0.41       1/1           main [2]
+[1]    100.0    0.00    0.41       1         MAIN__ [1]
+                0.01    0.39       1/1           dgefa_ [3]
+                0.00    0.01       2/2           d_matgen_ [6]
+                0.00    0.00       1/1           dgesl_ [7]
+                0.00    0.00       2/2           timestamp_ [10]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    0.41                 main [2]
+                0.00    0.41       1/1           MAIN__ [1]
+-----------------------------------------------
+                0.01    0.39       1/1           MAIN__ [1]
+[3]     97.2    0.01    0.39       1         dgefa_ [3]
+                0.39    0.00  499500/501499      daxpy_ [4]
+                0.00    0.00     999/999         idamax_ [8]
+                0.00    0.00     993/993         d_swap_ [9]
+-----------------------------------------------
+                0.00    0.00    1999/501499      dgesl_ [7]
+                0.39    0.00  499500/501499      dgefa_ [3]
+[4]     95.1    0.39    0.00  501499         daxpy_ [4]
+-----------------------------------------------
+                0.01    0.00 2000000/2000000     d_matgen_ [6]
+[5]      2.4    0.01    0.00 2000000         d_random_ [5]
+-----------------------------------------------
+                0.00    0.01       2/2           MAIN__ [1]
+[6]      2.4    0.00    0.01       2         d_matgen_ [6]
+                0.01    0.00 2000000/2000000     d_random_ [5]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[7]      0.4    0.00    0.00       1         dgesl_ [7]
+                0.00    0.00    1999/501499      daxpy_ [4]
+-----------------------------------------------
+                0.00    0.00     999/999         dgefa_ [3]
+[8]      0.0    0.00    0.00     999         idamax_ [8]
+-----------------------------------------------
+                0.00    0.00     993/993         dgefa_ [3]
+[9]      0.0    0.00    0.00     993         d_swap_ [9]
+-----------------------------------------------
+                0.00    0.00       2/2           MAIN__ [1]
+[10]     0.0    0.00    0.00       2         timestamp_ [10]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [1] MAIN__                  [9] d_swap_                 [7] dgesl_
+   [6] d_matgen_               [4] daxpy_                  [8] idamax_
+   [5] d_random_               [3] dgefa_                 [10] timestamp_

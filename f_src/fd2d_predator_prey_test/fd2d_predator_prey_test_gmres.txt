@@ -1,0 +1,140 @@
+30 June 2020   9:24:20.071 AM
+ 
+FD2D_PREDATOR_PREY
+  FORTRAN90 version
+  A two dimensional finite difference algorithm
+  for a predator-prey system.
+ 
+  Enter parameter alpha:
+  Enter parameter beta:
+  Enter parameter gamma:
+  Enter parameter delta:
+  Enter a in [a,b]:
+  Enter b in [a,b]:
+  Enter space-step h:
+  Enter maximum time t:
+  Enter time-step Delta t:
+  Enter SOLVE ( 0 = GMRES, 1 = Jacobi ):
+ 
+  Parameters:
+ 
+    ALPHA =        0.400000    
+    BETA =          2.00000    
+    GAMMA =        0.600000    
+    DELTA =         10.0000    
+ 
+    A =             0.00000    
+    B =             500.000    
+    H =             1.00000    
+    BIGJ =          500
+    (number of intervals on one side)
+    DIMJ =          501
+    (number of nodes on one side)
+    N =                251001
+    (total number of nodes)
+ 
+    T =             150.000    
+    (final time)
+    DELT =         0.416667E-01
+    (time step)
+    TIME_STEPS =         3600
+ 
+    MU =           0.416667E-01
+    SOLVE =        0.416667E-01
+          = GMRES iteration.
+ 
+  Arrays allocated.
+ 
+  Arrays initialized.
+ 
+FD2D_PREDATOR_PREY:
+  Maximum number of nonzeros =      1255991
+ 
+  Sparse matrix values assigned.
+  
+  Begin sorting.
+30 June 2020   9:24:20.130 AM
+30 June 2020   9:24:21.125 AM
+ 
+  Sorting done.
+ 
+  Compress the matrix data.
+  Initial number of matrix entries, NZ_NUM =      1255991
+  After compression,                NZ_NUM =      1253997
+ 
+  Begin time loop.
+   TIME_STEP =          360
+30 June 2020   9:24:41.622 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.207253E-05
+  Error estimate   0.225801E-07
+  Error code is      0
+   TIME_STEP =          720
+30 June 2020   9:25:00.177 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.406177E-05
+  Error estimate   0.493358E-07
+  Error code is      0
+   TIME_STEP =         1080
+30 June 2020   9:25:19.030 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.334033E-05
+  Error estimate   0.336713E-07
+  Error code is      0
+   TIME_STEP =         1440
+30 June 2020   9:25:37.973 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.183979E-04
+  Error estimate   0.156162E-06
+  Error code is      0
+   TIME_STEP =         1800
+30 June 2020   9:25:56.595 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.701653E-04
+  Error estimate   0.411304E-06
+  Error code is      0
+   TIME_STEP =         2160
+30 June 2020   9:26:16.609 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.136241E-03
+  Error estimate   0.748989E-06
+  Error code is      0
+   TIME_STEP =         2520
+30 June 2020   9:26:39.685 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.196353E-03
+  Error estimate   0.124454E-05
+  Error code is      0
+   TIME_STEP =         2880
+30 June 2020   9:27:05.277 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.259170E-03
+  Error estimate   0.177356E-05
+  Error code is      0
+   TIME_STEP =         3240
+30 June 2020   9:27:30.699 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.320912E-03
+  Error estimate   0.209634E-05
+  Error code is      0
+   TIME_STEP =         3600
+30 June 2020   9:27:56.364 AM
+ 
+  Number of iterations:       1
+  Convergence measure is   0.377503E-03
+  Error estimate   0.228983E-05
+  Error code is      0
+ 
+FD2D_PREDATOR_PREY:
+  Normal end of execution.
+ 
+30 June 2020   9:27:56.618 AM

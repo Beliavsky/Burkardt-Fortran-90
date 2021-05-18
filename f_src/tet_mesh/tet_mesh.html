@@ -1,0 +1,286 @@
+<html>
+
+  <head>
+    <title>
+      TET_MESH - Routines for a Tet Mesh
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TET_MESH <br> Routines for a Tet Mesh
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TET_MESH</b>,
+      a FORTRAN90 code which
+      constructs, describes, and modifies a mesh of tetrahedrons.
+    </p>
+
+    <h3 align = "center">
+      Linear and Quadratic Meshes
+    </h3>
+
+    <p>
+      The simplest tet mesh, which we term an order 4 
+      or <i>linear</i> mesh, uses four points to define each tetrahedron.
+      A second type of mesh, known as an <i>order 10</i> or <i>quadratic</i>
+      mesh, uses ten points.
+    </p>
+
+    <p>
+      While an order 4 mesh can naturally be constructed directly from
+      most sets of data points, a mesh of order 10 is not usually
+      constructed directly from the data; at least in the simplest case,
+      one wants the 6 extra nodes to be the midpoints of the sides
+      determined by the 4 vertices.
+    </p>
+
+    <p>
+      Thus, an order 10 tet mesh is typically generated in two steps:
+      <ul>
+        <li>
+          generate an order 4 mesh, in which every tetrahedral vertex
+          comes from a user data point;
+        </li>
+        <li>
+          generate an order 10 mesh from the order 4 mesh, in which
+          the new midside points are not user data points, but rather
+          <i>averages</i> of pairs of tetrahedral vertices.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      MATLAB has a command
+      <b>delaunay3</b> that can compute the tet mesh for a set of 3D points.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TET_MESH</b> is available in
+      <a href = "../../c_src/tet_mesh/tet_mesh.html">a C++ version</a> and
+      <a href = "../../cpp_src/tet_mesh/tet_mesh.html">a C++ version</a> and
+      <a href = "../../f_src/tet_mesh/tet_mesh.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/tet_mesh/tet_mesh.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cvt_tet_mesh/cvt_tet_mesh.html">
+      CVT_TET_MESH</a>,
+      a FORTRAN90 code which
+      uses CVT methods to compute a tet mesh in a region.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_tet_mesh/table_tet_mesh.html">
+      TABLE_TET_MESH</a>,
+      a FORTRAN90 code which
+      computes the tet mesh for a given set of points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_tet_mesh/test_tet_mesh.html">
+      TEST_TET_MESH</a>,
+      a FORTRAN90 code which
+      defines a few test regions for the generation of a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_test/tet_mesh_test.html">
+      tet_mesh_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_boundary/tet_mesh_boundary.html">
+      TET_MESH_BOUNDARY</a>,
+      a FORTRAN90 code which
+      returns the nodes and faces of the boundary of a tetrahedral mesh,
+      which themselves form a 3D triangular mesh or "TRI_SURFACE".
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_l2q/tet_mesh_l2q.html">
+      TET_MESH_L2Q</a>,
+      a FORTRAN90 code which
+      converts a linear to quadratic tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order4/tet_mesh_order4.html">
+      TET_MESH_ORDER4</a>,
+      a data directory which
+      contains a description and
+      examples of a tet mesh using order 4 elements.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order10/tet_mesh_order10.html">
+      TET_MESH_ORDER10</a>,
+      a data directory which
+      contains a description and
+      examples of a tet mesh using order 10 elements.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_q2l/tet_mesh_q2l.html">
+      TET_MESH_Q2L</a>,
+      a FORTRAN90 code which
+      converts a quadratic to linear tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a FORTRAN90 code which
+      computes the quality of a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_rcm/tet_mesh_rcm.html">
+      TET_MESH_RCM</a>,
+      a FORTRAN90 code which
+      takes a tet mesh and
+      relabels the nodes to reduce the bandwidth of the
+      corresponding adjacency matrix.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_refine/tet_mesh_refine.html">
+      TET_MESH_REFINE</a>,
+      a FORTRAN90 code which
+      refines a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">
+      TET_MESH_TET_NEIGHBORS</a>,
+      a FORTRAN90 code which
+      computes the tetrahedral adjacency information.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_volumes/tet_mesh_volumes.html">
+      TET_MESH_VOLUMES</a>,
+      a FORTRAN90 code which
+      computes the volume of each tetrahedron in a tet mesh;
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Adrian Bowyer, John Woodwark,<br>
+          A Programmer's Geometry,<br>
+          Butterworths, 1983,<br>
+          ISBN: 0408012420.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673.
+        </li>
+        <li>
+          Qiang Du, Desheng Wang,<br>
+          The Optimal Centroidal Voronoi Tesselations and the Gersho's
+          Conjecture in the Three-Dimensional Space,<br>
+          Computers and Mathematics with Applications,<br>
+          Volume 49, 2005, pages 1355-1373.
+        </li>
+        <li>
+          Herbert Edelsbrunner,<br>
+          Geometry and Topology for Mesh Generation,<br>
+          Cambridge, 2001,<br>
+          ISBN: 0-521-79309-2,<br>
+          LC: QA377.E36.
+        </li>
+        <li>
+          Barry Joe,<br>
+          GEOMPACK - a software package for the generation of meshes
+          using geometric algorithms,<br>
+          Advances in Engineering Software,<br>
+          Volume 13, Number 5, 1991, pages 325-331.
+        </li>
+        <li>
+          Anwei Liu, Barry Joe,<br>
+          Quality Local Refinement of Tetrahedral Meshes Based
+          on 8-Subtetrahedron Subdivision,<br>
+          Mathematics of Computation,<br>
+          Volume 65, Number 215, July 1996, pages 1183-1200.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, June 2004, pages 329-345.
+        </li>
+        <li>
+          Philip Schneider, David Eberly,<br>
+          Geometric Tools for Computer Graphics,<br>
+          Elsevier, 2002,<br>
+          ISBN: 1558605940.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "tet_mesh.f90">tet_mesh.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "tet_mesh.sh">tet_mesh.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 05 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

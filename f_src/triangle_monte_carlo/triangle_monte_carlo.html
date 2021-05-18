@@ -1,0 +1,201 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGLE_MONTE_CARLO - Monte Carlo Integral Estimates over a General Triangle
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGLE_MONTE_CARLO <br> Monte Carlo Integral Estimates over a General Triangle
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGLE_MONTE_CARLO</b>,
+      a FORTRAN90 code which
+      uses the Monte Carlo method to estimate the integral of a function F(X,Y)
+      over the interior of a general triangle in 2D.
+    </p>
+
+    <p>
+      The library makes it relatively easy to compare different methods of
+      producing sample points in the triangle, and to vary the triangle over
+      which integration is carried out.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGLE_MONTE_CARLO</b> is available in
+      <a href = "../../c_src/triangle_monte_carlo/triangle_monte_carlo.html">a C version</a> and
+      <a href = "../../cpp_src/triangle_monte_carlo/triangle_monte_carlo.html">a C++ version</a> and
+      <a href = "../../f_src/triangle_monte_carlo/triangle_monte_carlo.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangle_monte_carlo/triangle_monte_carlo.html">a MATLAB version</a> and
+      <a href = "../../py_src/triangle_monte_carlo/triangle_monte_carlo.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/annulus_monte_carlo/annulus_monte_carlo.html">
+      annulus_monte_carlo</a>
+      a FORTRAN90 code which
+      uses the Monte Carlo method to estimate the integral of a function 
+      over the interior of a circular annulus in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/ball_monte_carlo/ball_monte_carlo.html">
+      BALL_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate integrals of a function
+      over the interior of the unit ball in 3D;
+    </p>
+
+    <p>
+      <a href = "../../f_src/circle_monte_carlo/circle_monte_carlo.html">
+      CIRCLE_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      on the circumference of the unit circle in 2D;
+    </p>
+
+    <p>
+      <a href = "../../f_src/disk_monte_carlo/disk_monte_carlo.html">
+      DISK_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      over the interior of the unit disk in 2D;
+    </p>
+
+    <p>
+      <a href = "../../f_src/hyperball_monte_carlo/hyperball_monte_carlo.html">
+      HYPERBALL_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      over the interior of the unit hyperball in M dimensions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/hypersphere_monte_carlo/hypersphere_monte_carlo.html">
+      HYPERSPHERE_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      on the surface of the unit sphere in M dimensions;
+    </p>
+
+    <p>
+      <a href = "../../f_src/random_data/random_data.html">
+      RANDOM_DATA</a>,
+      a FORTRAN90 code which
+      generates sample points for
+      various probability distributions, spatial dimensions, and geometries;
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_monte_carlo/sphere_monte_carlo.html">
+      SPHERE_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      uses the Monte Carlo method to estimate integrals over 
+      the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_monte_carlo/tetrahedron_monte_carlo.html">
+      TETRAHEDRON_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      uses the Monte Carlo method to estimate integrals over a tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_monte_carlo_test/triangle_monte_carlo_test.html">
+      triangle_monte_carlo_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle01_monte_carlo/triangle01_monte_carlo.html">
+      TRIANGLE01_MONTE_CARLO</a>,
+      a FORTRAN90 code which
+      uses the Monte Carlo method to estimate integrals 
+      over the interior of the unit triangle in 2D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Claudio Rocchini, Paolo Cignoni,<br>
+          Generating Random Points in a Tetrahedron,<br>
+          Journal of Graphics Tools,<br>
+          Volume 5, Number 4, 2000, pages 9-12.
+        </li>
+        <li>
+          Reuven Rubinstein,<br>
+          Monte Carlo Optimization, Simulation and Sensitivity of
+          Queueing Networks,<br>
+          Krieger, 1992,<br>
+          ISBN: 0894647644,<br>
+          LC: QA298.R79.
+        </li>
+        <li>
+          Greg Turk,<br>
+          Generating Random Points in a Triangle,<br>
+          in Graphics Gems I,<br>
+          edited by Andrew Glassner,<br>
+          AP Professional, 1990,<br>
+          ISBN: 0122861663,<br>
+          LC: T385.G697
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangle_monte_carlo.f90">triangle_monte_carlo.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "triangle_monte_carlo.sh">triangle_monte_carlo.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

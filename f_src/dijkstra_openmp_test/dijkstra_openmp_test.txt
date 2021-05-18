@@ -1,0 +1,191 @@
+ 4 August 2020   3:28:36.974 PM
+ 
+DIJKSTRA_OPENMP:
+  FORTRAN90 version
+  Use Dijkstra's algorithm to determine the minimum
+  distance from node 1 to each node in a graph,
+  given the distances between each pair of nodes.
+ 
+  Although a very small example is considered, we
+  demonstrate the use of OpenMP directives for
+  parallel execution.
+ 
+  Distance matrix:
+ 
+    0   40   15  Inf  Inf  Inf
+   40    0   20   10   25    6
+   15   20    0  100  Inf  Inf
+  Inf   10  100    0  Inf  Inf
+  Inf   25  Inf  Inf    0    8
+  Inf    6  Inf  Inf    8    0
+ 
+   P           0 : Parallel region begins with            1  threads.
+ 
+   P           0 :  First=           1   Last=           6
+   P           0 : Connecting node            3
+   P           0 : Connecting node            2
+   P           0 : Connecting node            6
+   P           0 : Connecting node            4
+   P           0 : Connecting node            5
+  
+   P           0 : Exiting parallel region.
+ 
+  Minimum distances from node 1:
+ 
+   1   0
+   2  35
+   3  15
+   4  45
+   5  49
+   6  41
+ 
+DIJKSTRA_OPENMP:
+  Normal end of execution.
+ 
+ 4 August 2020   3:28:36.975 PM
+ 4 August 2020   3:28:36.980 PM
+ 
+DIJKSTRA_OPENMP:
+  FORTRAN90 version
+  Use Dijkstra's algorithm to determine the minimum
+  distance from node 1 to each node in a graph,
+  given the distances between each pair of nodes.
+ 
+  Although a very small example is considered, we
+  demonstrate the use of OpenMP directives for
+  parallel execution.
+ 
+  Distance matrix:
+ 
+    0   40   15  Inf  Inf  Inf
+   40    0   20   10   25    6
+   15   20    0  100  Inf  Inf
+  Inf   10  100    0  Inf  Inf
+  Inf   25  Inf  Inf    0    8
+  Inf    6  Inf  Inf    8    0
+ 
+   P           0 : Parallel region begins with            2  threads.
+ 
+   P           1 :  First=           4   Last=           6
+   P           0 :  First=           1   Last=           3
+   P           1 : Connecting node            3
+   P           0 : Connecting node            2
+   P           1 : Connecting node            6
+   P           0 : Connecting node            4
+   P           1 : Connecting node            5
+  
+   P           0 : Exiting parallel region.
+ 
+  Minimum distances from node 1:
+ 
+   1   0
+   2  35
+   3  15
+   4  45
+   5  49
+   6  41
+ 
+DIJKSTRA_OPENMP:
+  Normal end of execution.
+ 
+ 4 August 2020   3:28:36.981 PM
+ 4 August 2020   3:28:36.985 PM
+ 
+DIJKSTRA_OPENMP:
+  FORTRAN90 version
+  Use Dijkstra's algorithm to determine the minimum
+  distance from node 1 to each node in a graph,
+  given the distances between each pair of nodes.
+ 
+  Although a very small example is considered, we
+  demonstrate the use of OpenMP directives for
+  parallel execution.
+ 
+  Distance matrix:
+ 
+    0   40   15  Inf  Inf  Inf
+   40    0   20   10   25    6
+   15   20    0  100  Inf  Inf
+  Inf   10  100    0  Inf  Inf
+  Inf   25  Inf  Inf    0    8
+  Inf    6  Inf  Inf    8    0
+ 
+   P           1 : Parallel region begins with            4  threads.
+ 
+   P           0 :  First=           1   Last=           1
+   P           2 :  First=           4   Last=           4
+   P           3 :  First=           5   Last=           6
+   P           1 :  First=           2   Last=           3
+   P           0 : Connecting node            3
+   P           2 : Connecting node            2
+   P           1 : Connecting node            6
+   P           2 : Connecting node            4
+   P           1 : Connecting node            5
+  
+   P           3 : Exiting parallel region.
+ 
+  Minimum distances from node 1:
+ 
+   1   0
+   2  35
+   3  15
+   4  45
+   5  49
+   6  41
+ 
+DIJKSTRA_OPENMP:
+  Normal end of execution.
+ 
+ 4 August 2020   3:28:36.985 PM
+ 4 August 2020   3:28:36.990 PM
+ 
+DIJKSTRA_OPENMP:
+  FORTRAN90 version
+  Use Dijkstra's algorithm to determine the minimum
+  distance from node 1 to each node in a graph,
+  given the distances between each pair of nodes.
+ 
+  Although a very small example is considered, we
+  demonstrate the use of OpenMP directives for
+  parallel execution.
+ 
+  Distance matrix:
+ 
+    0   40   15  Inf  Inf  Inf
+   40    0   20   10   25    6
+   15   20    0  100  Inf  Inf
+  Inf   10  100    0  Inf  Inf
+  Inf   25  Inf  Inf    0    8
+  Inf    6  Inf  Inf    8    0
+ 
+   P           0 : Parallel region begins with            8  threads.
+ 
+   P           7 :  First=           6   Last=           6
+   P           4 :  First=           4   Last=           3
+   P           3 :  First=           3   Last=           3
+   P           6 :  First=           5   Last=           5
+   P           2 :  First=           2   Last=           2
+   P           1 :  First=           1   Last=           1
+   P           5 :  First=           4   Last=           4
+   P           0 :  First=           1   Last=           0
+   P           4 : Connecting node            3
+   P           5 : Connecting node            2
+   P           4 : Connecting node            6
+   P           2 : Connecting node            4
+   P           5 : Connecting node            5
+  
+   P           2 : Exiting parallel region.
+ 
+  Minimum distances from node 1:
+ 
+   1   0
+   2  35
+   3  15
+   4  45
+   5  49
+   6  41
+ 
+DIJKSTRA_OPENMP:
+  Normal end of execution.
+ 
+ 4 August 2020   3:28:36.993 PM

@@ -1,0 +1,226 @@
+<html>
+
+  <head>
+    <title>
+      TEST_INTERP_ND - Test Functions for Multidimensional Interpolation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_INTERP_ND <br> Test Functions for Multidimensional Interpolation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_INTERP_ND</b>,
+      a FORTRAN90 code which
+      provides test functions for multidimensional interpolation.
+    </p>
+
+    <p>
+      All the functions are defined over the unit hypercube [0,1]^M, for arbitrary
+      spatial dimension M.  They include:
+      <ol>
+        <li>
+          Oscillatory;
+        </li>
+        <li>
+          Product Peak;
+        </li>
+        <li>
+          Corner Peak;
+        </li>
+        <li>
+          Gaussian;
+        </li>
+        <li>
+          Continuous;
+        </li>
+        <li>
+          Discontinuous;
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      For each function, methods are provided to evaluate:
+      <ul>
+        <li>
+          the function, f(x);
+        </li>
+        <li>
+          the derivative with respect to any coordinate, dfdx(i);
+        </li>
+        <li>
+          the integral of f(x) over the unit hypercube;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Most of the functions include a shift vector w whose entries can be
+      chosen randomly in the unit hypercube, and a coefficient vector c
+      whose entries should be positive, and for which the integration problem
+      becomes harder as the sum of the entries increases.
+    </p>
+
+    <p>
+      TEST_INTERP_ND requires access to the R8LIB library.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_INTERP_ND</b> is available in
+      <a href = "../../c_src/test_interp_nd/test_interp_nd.html">a C version</a> and
+      <a href = "../../cpp_src/test_interp_nd/test_interp_nd.html">a C++ version</a> and
+      <a href = "../../f_src/test_interp_nd/test_interp_nd.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_interp_nd/test_interp_nd.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/lagrange_interp_nd/lagrange_interp_nd.html">
+      LAGRANGE_INTERP_ND</a>,
+      a FORTRAN90 code which
+      defines and evaluates the Lagrange polynomial p(x) 
+      which interpolates a set of data depending on a multidimensional argument x
+      that was evaluated on a product grid, so that p(x(i)) = z(i).
+    </p>
+
+    <p>
+      <a href = "../../f_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines using double precision real (R8) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/rbf_interp_nd/rbf_interp_nd.html">
+      RBF_INTERP_ND</a>,
+      a FORTRAN90 code which
+      defines and evaluates radial basis function (RBF) interpolants to multidimensional data.
+    </p>
+
+    <p>
+      <a href = "../../f_src/shepard_interp_nd/shepard_interp_nd.html">
+      SHEPARD_INTERP_ND</a>,
+      a FORTRAN90 code which
+      defines and evaluates Shepard interpolants to multidimensional data,
+      based on inverse distance weighting.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sparse_interp_nd/sparse_interp_nd.html">
+      SPARSE_INTERP_ND</a>
+      a FORTRAN90 code which
+      can be used to define a sparse interpolant to a function f(x) of a 
+      multidimensional argument.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp_1d/test_interp_1d.html">
+      TEST_INTERP_1D</a>,
+      a FORTRAN90 code which
+      defines test problems for interpolation of data y(x),
+      depending on a 1D argument.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp_2d/test_interp_2d.html">
+      TEST_INTERP_2D</a>,
+      a FORTRAN90 code which
+      defines test problems for interpolation of data z(x,y)),
+      depending on a 2D argument.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_interp_nd_test/test_interp_nd_test.html">
+      test_interp_nd_test</a>
+    </p>
+
+    <p>
+      <a href = "../../m_src/vandermonde_interp_2d/vandermonde_interp_2d.html">
+      VANDERMONDE_INTERP_2D</a>,
+      a MATLAB library which
+      finds a polynomial interpolant to data z(x,y) of a 2D argument
+      by setting up and solving a linear system for the polynomial coefficients,
+      involving the Vandermonde matrix.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Alan Genz,<br>
+          Testing Multidimensional Integration Routines,<br>
+          in Tools, Methods, and Languages for Scientific and
+          Engineering Computation,<br>
+          edited by B Ford, JC Rault, F Thomasset,<br>
+          North-Holland, 1984, pages 81-94,<br>
+          ISBN: 0444875700,<br>
+          LC: Q183.9.I53.
+        </li>
+        <li>
+          Alan Genz,<br>
+          A Package for Testing Multiple Integration Subroutines,<br>
+          in Numerical Integration:
+          Recent Developments, Software and Applications,<br>
+          edited by Patrick Keast, Graeme Fairweather,<br>
+          Reidel, 1987, pages 337-340,<br>
+          ISBN: 9027725144,<br>
+          LC: QA299.3.N38.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_interp_nd.f90">test_interp_nd.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_interp_nd.sh">test_interp_nd.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 September 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

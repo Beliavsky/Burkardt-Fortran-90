@@ -1,0 +1,17 @@
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 22.07.2020  Time    : 10:12:55  Pageformat: USAP  <<
+ <<  Vectors : 6034        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: random_scatter.png                                <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+22 July 2020  10:12:55.566 AM
+ 
+RANDOM_SCATTER:
+  FORTRAN90 version
+  Use DISLIN to make a scatter plot of random data.
+ 
+RANDOM_SCATTER:
+  Normal end of execution.
+22 July 2020  10:12:55.575 AM

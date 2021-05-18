@@ -1,0 +1,150 @@
+<html>
+
+  <head>
+    <title>
+      ccs_io
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ccs_io
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ccs_io</b>,
+      a FORTRAN90 library which
+      reads and writes Compressed Column Storage (CCS) sparse matrix files.
+    </p>
+
+    <p>
+      An MxN sparse matrix of NCC nonzero entries in compressed column format
+      is described by three items:
+      <ul>
+        <li>
+          <i>ccc()</i>, a list of N+1 compressed column indices.
+        </li>
+        <li>
+          <i>icc()</i>, a list of NCC row indices.
+        </li>
+        <li>
+          <i>acc()</i>, a list of NCC values.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The nonzero entries of column J are stored in locations CCC(J) through
+      CCC(J+1)-1 of ICC and ACC.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ccs_io</b> is available in
+      <a href = "../../c_src/ccs_io/ccs_io.html">a C version</a> and
+      <a href = "../../cpp_src/ccs_io/ccs_io.html">a C++ version</a> and
+      <a href = "../../f_src/ccs_io/ccs_io.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/ccs_io/ccs_io.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../data/ccs/ccs.html">
+      ccs</a>,
+      a data directory which
+      contains examples of the Compressed Column Storage (CCS)
+      sparse matrix file format;
+    </p>
+
+    <p>
+      <a href = "../../f_src/ccs_io_test/ccs_io_test.html">
+      ccs_io_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ccs_to_st/ccs_to_st.html">
+      ccs_to_st</a>,
+      a FORTRAN90 library which
+      converts a sparse matrix from Compressed Column Storage (CCS)
+      to sparse triple (ST) format.
+    </p>
+
+    <p>
+      <a href = "../../f_src/hb_io/hb_io.html">
+      HB_IO</a>,
+      a FORTRAN90 library which
+      reads and writes sparse linear systems stored in the Harwell Boeing (HB)
+      format for sparse matrices.
+    </p>
+
+    <p>
+      <a href = "../../f_src/mm_io/mm_io.html">
+      MM_IO</a>,
+      a FORTRAN90 library which
+      reads and writes sparse linear systems stored in the Matrix Market (MM)
+      format.
+    </p>
+
+    <p>
+      <a href = "../../f_src/st_io/st_io.html">
+      ST_IO</a>,
+      a FORTRAN90 library which
+      reads and writes sparse linear systems stored in the Sparse Triplet (ST)
+      format.
+    </p>
+
+    <p>
+      <a href = "../../f_src/st_to_ccs/st_to_ccs.html">
+      st_to_ccs</a>,
+      a FORTRAN90 library which
+      converts sparse matrix data from Sparse Triplet (ST) format 
+      to Compressed Column Storage (CCS) format.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "ccs_io.f90">ccs_io.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "ccs_io.f90">ccs_io.f90</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 February 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

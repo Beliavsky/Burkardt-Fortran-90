@@ -1,0 +1,167 @@
+<html>
+
+  <head>
+    <title>
+      ROW_ECHELON_INTEGER - Exact Row Echelon for Integer Matrices
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ROW_ECHELON_INTEGER <br> Exact Row Echelon for Integer Matrices
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ROW_ECHELON_INTEGER</b>,
+      a FORTRAN90 code which
+      carries out the exact computation of the integer row echelon form (IREF) 
+      and integer reduced row echelon form (IRREF) of an integer matrix.
+    </p>
+
+    <p>
+      When carried out using exact arithmetic, the REF can reveal the
+      rank of a matrix.  It exhibits a set of linearly independent rows of
+      the matrix.  It can be used to solve underdetermined systems by
+      revealing which variables can be freely assigned.  
+    </p>
+
+    <p>
+      The RREF has all the properties of the REF, but moreover exhibits 
+      linearly independent columns of the matrix.  The RREF of a matrix is
+      unique.  
+      It can be used to solve a problem in combinatorics, involving the
+      tiling of a region by a set of polyominoes.
+    </p>
+
+    <p>
+      REF and RREF algorithms rely on real arithmetic, and are susceptible to 
+      spurious results, because during the elimination process, an entry that
+      should be zero, may instead be set to a very small, but nonzero value,
+      which may then invalidate the entire procedure.  This danger exists even
+      if the matrix being analyzed consists entirely of integer values.  
+    </p>
+
+    <p>
+      By working only with integer matrices, and using only integer arithmetic,
+      such errors are avoided.  The corresponding decompositions are
+      termed the IREF and IRREF, respectively.  Because of the restriction to
+      integer values, the IREF and IRREF cannot be forced to have a leading 1 
+      in each nonzero row, since we cannot divide rows by the leading entry.  
+      Also, it is likely that the procedures will produce values of increasing
+      magnitude, especially for large, dense matrices.  Hence, at some point, 
+      the exact calculation may fail because of integer overflow.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ROW_ECHELON_INTEGER</b> is available in
+      <a href = "../../c_src/row_echelon_integer/row_echelon_integer.html">a C version</a> and
+      <a href = "../../f_src/row_echelon_integer/row_echelon_integer.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/row_echelon_integer/row_echelon_integer.html">a MATLAB version</a> and
+      <a href = "../../py_src/row_echelon_integer/row_echelon_integer.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/i4lib/i4lib.html">
+      I4LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines, using "I4" or "single precision integer"
+      arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a FORTRAN90 code which
+      contains many utility routines, using "R8" or
+      "double precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../f_src/row_echelon_integer_test/row_echelon_integer_test.html">
+      row_echelon_integer_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Howard Anton, Chris Rorres,<br>
+          Elementary Linear Algebra: Applications Version,<br>
+          Wiley, 2013,<br>
+          ISBN: 9781118879160.
+        </li>
+        <li>
+          Ward Cheney, David Kincaid,<br>
+          Linear Algebra: Theory and Applications,<br>
+          Jones & Bartlett, 2010,<br>
+          ISBN: 9781449613525.
+        </li>
+        <li>
+          Charles Cullen,<br>
+          Linear Algebra with Applications,<br>
+          Second Edition,<br>
+          Pearson, 1997,<br>
+          ISBN: 978-0673993861.
+        </li>
+        <li>
+          Gilbert Strang,<br>
+          Linear Algebra and its Applications,<br>
+          Second edition,<br>
+          Academic Press, 1980,<br>
+          ISBN: 012673660X,<br>
+          LC: QA184.88.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "row_echelon_integer.f90">row_echelon_integer.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "row_echelon_integer.sh">row_echelon_integer.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 15 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

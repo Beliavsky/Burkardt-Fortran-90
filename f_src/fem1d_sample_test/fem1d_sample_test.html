@@ -1,0 +1,130 @@
+<html>
+
+  <head>
+    <title>
+      fem1d_sample_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem1d_sample_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem1d_sample_test</b>,
+      a FORTRAN90 code which
+      calls fem1d_sample(), which
+      can evaluate a finite element function of a 1D argument.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/fem1d_sample/fem1d_sample.html">
+      fem1d_sample</a>,
+      a FORTRAN90 code which
+      samples a scalar or vector function of one variable,
+      modeled by the finite element method (FEM), and
+      returns interpolated values at sample points.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem1d_sample_test.sh">fem1d_sample_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem1d_sample_test.txt">fem1d_sample_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P1</b> is FEM data for the vector function f(x)=[ 1, x, x^2], on a grid of 11
+      evenly spaced nodes from -5 to 5, using piecewise constant basis functions.
+      <ul>
+        <li>
+          <a href = "p1_fem_nodes.txt">p1_fem_nodes.txt</a>,
+          the FEM nodes.
+        </li>
+        <li>
+          <a href = "p1_fem_elements.txt">p1_fem_elements.txt</a>,
+          the FEM elements.
+        </li>
+        <li>
+          <a href = "p1_fem_values.txt">p1_fem_values.txt</a>,
+          the FEM nodal values.
+        </li>
+        <li>
+          <a href = "p1_sample_nodes.txt">p1_sample_nodes.txt</a>,
+          the sample nodes.
+        </li>
+        <li>
+          <a href = "p1_sample_values.txt">p1_sample_values.txt</a>,
+          the sample nodal values.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P2</b> is FEM data for the vector function f(x)=[ 1, x, x^2], on a grid of 11
+      evenly spaced nodes from -5 to 5, using piecewise linear basis functions.
+      <ul>
+        <li>
+          <a href = "p2_fem_nodes.txt">p2_fem_nodes.txt</a>,
+          the FEM nodes.
+        </li>
+        <li>
+          <a href = "p2_fem_elements.txt">p2_fem_elements.txt</a>,
+          the FEM elements.
+        </li>
+        <li>
+          <a href = "p2_fem_values.txt">p2_fem_values.txt</a>,
+          the FEM nodal values.
+        </li>
+        <li>
+          <a href = "p2_sample_nodes.txt">p2_sample_nodes.txt</a>,
+          the sample nodes.
+        </li>
+        <li>
+          <a href = "p2_sample_values.txt">p2_sample_values.txt</a>,
+          the sample nodal values.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

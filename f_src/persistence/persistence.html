@@ -1,0 +1,135 @@
+<html>
+
+  <head>
+    <title>
+      persistence
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      persistence
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>persistence</b>,
+      a FORTRAN90 code which
+      demonstrates how to initialize, get, or set data stored
+      within a function, using static/persistent/saved/local memory.
+    </p>
+
+    <p>
+      This type of data storage is sometimes referred to as "static memory"
+      or "persistent memory" or "saved memory".
+    </p>
+
+    <p>
+      Several examples are offered here, each embodied in a function.
+      <ul>
+        <li>
+          constants() stores the value of three physical constants,
+          and returns them.  It is not very ambitious.
+        </li>
+        <li>
+          abc() stores the value of three real numbers, which are
+          initialized to 1, 2, and 3.  The user can request the current
+          values, or request that they be printed, or can set them to
+          new values.
+        </li>
+        <li>
+          stats() accepts, one at a time, a sequence of real numbers.
+          It internally updates the sum, min, mean, max, variance
+          and standard deviation of the entire sequence, and can report
+          the current values of these quantities at any time.
+        </li>
+        <li>
+          byname() internally stores three variables.  The user can access
+          any one of these variables, by naming the kind of access,
+          naming the variable to be accessed, and the new value if any, to
+          be assigned to it.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>persistence</b> is available in
+      <a href = "../../c_src/persistence/persistence.html">a C version</a> and
+      <a href = "../../cpp_src/persistence/persistence.html">a C++ version</a> and
+      <a href = "../../f_src/persistence/persistence.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/persistence/persistence.html">a MATLAB version</a> and
+      <a href = "../../octave_src/persistence/persistence.html">an Octave version</a> and
+      <a href = "../../py_src/persistence/persistence.html">a Python version</a> and
+      <a href = "../../r_src/persistence/persistence.html">an R version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/persistence_test/persistence_test.html">
+      persistence_test</a>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "abc.f90">abc.f90</a>,
+          stores, saves, and returns variables "a", "b", "c",
+          using the form "[aout,bout,cout]=abc(ain,bin,cin)";
+        </li>
+        <li>
+          <a href = "byname.f90">byname.f90</a>,
+          sets, gets, prints or resets any of three variables
+          "alpha", "beta", "gamma", which are referenced by name,
+          using actions "print", "get", "set", or "reset", 
+          using the form "value_out=byname(action,name,value_in)";
+        </li>
+        <li>
+          <a href = "constants.f90">constants.f90</a>,
+          saves and returns constants "g", "c", "n",
+          using the form "[g,c,h]=constants()";
+        </li>
+        <li>
+          <a href = "stats.f90">stats.f90</a>,
+          initializes, updates, and outputs running values of
+          statistical quantities of a sequence of data supplied
+          one value at a time, using the form
+          [n,x_sum,x_min,x_mean,x_max,x_var,x_std]=stats(x).
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 07 May 2021.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

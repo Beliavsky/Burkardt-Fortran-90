@@ -1,0 +1,385 @@
+<html>
+
+  <head>
+    <title>
+      PLOT_TO_PS - PostScript Graphics Creation
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      PLOT_TO_PS <br> PostScript Graphics Creation
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>PLOT_TO_PS</b>,
+      a FORTRAN90 code which
+      reads a text file of
+      plot commands and creates a PostScript file.
+    </p>
+
+    <p>
+      I often use this utility to make simple graphics illustrations.
+    </p>
+
+    <h3 align = "center">
+      Commands:
+    </h3>
+
+    <p>
+      <dl>
+        <dt>
+          <b>ARC</b> X Y R ANGLE1 ANGLE2
+        </dt>
+        <dd>
+          draw the circular arc from ANGLE1 to ANGLE2, for a circle
+          of radius R and center (X,Y).
+        </dd>
+        <dt>
+          <b>ARROW</b> X1 Y1 X2 Y2
+        </dt>
+        <dd>
+          draw an arrow from (X1,Y1) to (X2,Y2).
+        </dd>
+        <dt>
+          <b>CIRCLE</b> X Y R
+        </dt>
+        <dd>
+          draw a circle of radius R and center (X,Y).
+        </dd>
+        <dt>
+          <b>CIRCLE_FILL</b> X Y R
+        </dt>
+        <dd>
+          draw a circle of radius R and center (X,Y) and fill it with
+          the current fill color.
+        </dd>
+        <dt>
+          <b>DEBUG</b>
+        </dt>
+        <dd>
+          switch the debugging state.
+        </dd>
+        <dt>
+          <b>DRAWTO</b> X Y
+        </dt>
+        <dd>
+          draw a line from the current point to (X,Y).
+        </dd>
+        <dt>
+          <b>ELLIPSE</b> X Y R1 R2 ANGLE
+        </dt>
+        <dd>
+          draw an ellipse centered at (X,Y) with axes lengths R1 and R2,
+          an an angle ANGLE.
+        </dd>
+        <dt>
+          <b>ELLIPSE_FILL</b> X Y R1 R2 ANGLE
+        </dt>
+        <dd>
+          draw an ellipse centered at (X,Y) with axes lengths R1 and R2,
+          an an angle ANGLE, and fill it with the current color.
+        </dd>
+        <dt>
+          <b>ENDFILE</b>
+        </dt>
+        <dd>
+          indicate the end of the file.
+        </dd>
+        <dt>
+          <b>ENDPAGE</b>
+        </dt>
+        <dd>
+          indicate the end of this "page" or image.
+        </dd>
+        <dt>
+          <b>FILE</b> NAME
+        </dt>
+        <dd>
+          specifies the name of the output file.
+        </dd>
+        <dt>
+          <b>FILL_GRAY</b> GRAY
+        </dt>
+        <dd>
+          sets the fill color to the given shade of gray.
+        </dd>
+        <dt>
+          <b>FILL_RGB</b> R G B
+        </dt>
+        <dd>
+          sets the fill color to the given RGB color.
+        </dd>
+        <dt>
+          <b>FONT_SIZE</b> H
+        </dt>
+        <dd>
+          sets the font size to the given height.
+        </dd>
+        <dt>
+          <b>GRID</b> X1 Y1 X2 Y2 N1 N2
+        </dt>
+        <dd>
+          draws an N1 by N2 grid in the box from (X1,Y1) to (X2,Y2).
+        </dd>
+        <dt>
+          <b>HIST_FAT</b> W
+        </dt>
+        <dd>
+          sets the width of histogram bars to W.
+        </dd>
+        <dt>
+          <b>HISTOGRAM</b> (followed by X,Y pairs, then END)
+        </dt>
+        <dd>
+          processes histogram data.
+        </dd>
+        <dt>
+          <b>LABEL</b> text
+        </dt>
+        <dd>
+          prints the text at the current position and current font size
+          and current line color.
+        </dd>
+        <dt>
+          <b>LABEL_SLANT</b> ANGLE
+        </dt>
+        <dd>
+          sets a slant angle for a label.
+        </dd>
+        <dt>
+          <b>LINE</b> X1 Y1 X2 Y2
+        </dt>
+        <dd>
+          draws a line from (X1,Y1) to (X2,Y2).
+        </dd>
+        <dt>
+          <b>LINE_GRAY</b> GRAY
+        </dt>
+        <dd>
+          sets the line color to the given gray shade.
+        </dd>
+        <dt>
+          <b>LINE_RGB</b> R G B
+        </dt>
+        <dd>
+          sets the line color to the given RGB color.
+        </dd>
+        <dt>
+          <b>LINE_WIDTH</b> N
+        </dt>
+        <dd>
+          sets the line width.  1 is the finest.
+        </dd>
+        <dt>
+          <b>LINETO</b> X Y
+        </dt>
+        <dd>
+          draws a line from the current point to (X,Y).  Same as DRAWTO.
+        </dd>
+        <dt>
+          <b>MOVETO</b> X Y
+        </dt>
+        <dd>
+          moves to (X,Y) without drawing.
+        </dd>
+        <dt>
+          <b>PAGE</b>
+        </dt>
+        <dd>
+          begins a new page or image.
+        </dd>
+        <dt>
+          <b>POINT</b> X Y
+        </dt>
+        <dd>
+          draws a point at (X,Y).
+        </dd>
+        <dt>
+          <b>POINT_LIST</b> (followed by X,Y pairs, then END)
+        </dt>
+        <dd>
+          draws a point at each of the (X,Y) pairs that follow.
+        </dd>
+        <dt>
+          <b>POLYGON</b> (followed by X,Y pairs, then END)
+        </dt>
+        <dd>
+          draws a outlined polygon by connecting the (X,Y) pairs that follow.
+        </dd>
+        <dt>
+          <b>POLYGON_FILL</b> (followed by X,Y pairs, then END)
+        </dt>
+        <dd>
+          draws a filled polygon by connecting the (X,Y) pairs that follow.
+        </dd>
+        <dt>
+          <b>RADIUS</b> X Y R ANGLE
+        </dt>
+        <dd>
+          for the circle of radius R and center (X,Y), draw the
+          radial line at angle ANGLE.
+        </dd>
+        <dt>
+          <b>SECTOR</b> X Y R ANGLE1 ANGLE2
+        </dt>
+        <dd>
+          draws the sector of a circle centered at (X,Y) with radius R,
+          from ANGLE1 to ANGLE2.
+        </dd>
+        <dt>
+          <b>SECTOR_FILL</b> X Y R ANGLE1 ANGLE2
+        </dt>
+        <dd>
+          draws the sector of a circle centered at (X,Y) with radius R,
+          from ANGLE1 to ANGLE2, and fills it with current color.
+        </dd>
+        <dt>
+          <b>SPACE</b> X1 Y1 X2 Y2
+        </dt>
+        <dd>
+          defines the coordinate space to use in the current page.
+        </dd>
+        <dt>
+          <b>SQUARE</b> X Y R
+        </dt>
+        <dd>
+          draws a square centered at (X,Y) with radius R.
+        </dd>
+        <dt>
+          <b>SQUARE_FILL</b> X Y R
+        </dt>
+        <dd>
+          draws a square centered at (X,Y) with radius R and fills it.
+        </dd>
+        <dt>
+          <b>STAR</b> X Y R
+        </dt>
+        <dd>
+          draws a star centered at (X,Y) with radius R.
+        </dd>
+        <dt>
+          <b>STAR_CIRCLE</b> X Y R
+        </dt>
+        <dd>
+          draws open circles at the ten vertices of a star centered at (X,Y)
+          with radius R.
+        </dd>
+        <dt>
+          <b>STAR_DISK</b> X Y R
+        </dt>
+        <dd>
+          draws filled disks at the ten vertices of a star centered at (X,Y)
+          with radius R.
+        </dd>
+        <dt>
+          <b>TRIANGLE</b> X1 Y1 X2 Y2 X3 Y3
+        </dt>
+        <dd>
+          draws a triangle with the given vertices.
+        </dd>
+        <dt>
+          <b>TRIANGLE_FILL</b> X1 Y1 X2 Y2 X3 Y3
+        </dt>
+        <dd>
+          draws a triangle with the given vertices, and fills it with
+          the current color.
+        </dd>
+      </dl>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>PLOT_TO_PS</b> is available in 
+      <a href = "../../f_src/plot_to_ps/plot_to_ps.html">a FORTRAN90 version</a> 
+    </p>
+
+    <h3 align = "center">
+      Related Data and Software:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/plot_to_ps_test/plot_to_ps_test.html">
+      plot_to_ps_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/ps_write/ps_write.html">
+      PS_WRITE</a>,
+      a FORTRAN90 code which
+      implements PostScript graphics routines
+      that is used by <b>PLOT_TO_PS</b>.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangulation_plot/triangulation_plot.html">
+      TRIANGULATION_PLOT</a>,
+      a FORTRAN90 code which
+      makes a PostScript image of a triangulation of points.
+    </p>
+
+    <p>
+      <a href = "../../f_src/voronoi_plot/voronoi_plot.html">
+      VORONOI_PLOT</a>,
+      a FORTRAN90 code which
+      plots the Voronoi neighborhoods of points in the 2D unit square,
+      using L1, L2 or LInfinity norms;
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Henry McGilton, Mary Campione,<br>
+          PostScript by Example,<br>
+          Addison-Wesley,<br>
+          ISBN: 0-201-63228-4
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "plot_to_ps.f90">plot_to_ps.f90</a>, the source code;
+        </li>
+        <li>
+          <a href = "plot_to_ps.sh">plot_to_ps.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 August 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

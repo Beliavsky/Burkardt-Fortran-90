@@ -1,0 +1,126 @@
+30 August 2020   8:23:41.799 PM
+ 
+STLA_IO_TEST:
+  FORTRAN90 version
+  Test the STLA_IO library.
+ 
+TEST01
+  STLA_CHECK makes some simple checks on a file.
+ 
+  The file "cube.stl" seems to be a legal ASCII STL file.
+ 
+TEST02
+  STLA_SIZE determines the size of various objects
+  in an ASCII STL file.
+ 
+  Object sizes for STLA file "cube.stl":
+ 
+  Solids =                          1
+  Nodes (may be repeated) =        36
+  Faces (triangular only) =        12
+ 
+  Number of lines of text =        86
+ 
+TEST03
+  STLA_READ reads an object in an ASCII STL file.
+ 
+  Object sizes for STLA file "cube.stl":
+ 
+  Solids =                          1
+  Nodes (may be repeated) =        36
+  Faces (triangular only) =        12
+ 
+  Number of lines of text =        86
+ 
+    Face         Nodes
+ 
+         1         1         2         3
+         2         4         5         6
+         3         7         8         9
+         4        10        11        12
+         5        13        14        15
+         6        16        17        18
+         7        19        20        21
+         8        22        23        24
+         9        25        26        27
+        10        28        29        30
+        11        31        32        33
+        12        34        35        36
+ 
+    Face         Normal Vectors
+ 
+         1     0.00000         0.00000        -1.00000    
+         2     0.00000         0.00000        -1.00000    
+         3    -1.00000         0.00000         0.00000    
+         4    -1.00000         0.00000         0.00000    
+         5     0.00000         1.00000         0.00000    
+         6     0.00000         1.00000         0.00000    
+         7     1.00000         0.00000         0.00000    
+         8     1.00000         0.00000         0.00000    
+         9     0.00000        -1.00000         0.00000    
+        10     0.00000        -1.00000         0.00000    
+        11     0.00000         0.00000         1.00000    
+        12     0.00000         0.00000         1.00000    
+ 
+    Node         Coordinates
+ 
+         1     0.00000         0.00000         0.00000    
+         2     1.00000         1.00000         0.00000    
+         3     1.00000         0.00000         0.00000    
+         4     0.00000         0.00000         0.00000    
+         5     0.00000         1.00000         0.00000    
+         6     1.00000         1.00000         0.00000    
+         7     0.00000         0.00000         0.00000    
+         8     0.00000         1.00000         1.00000    
+         9     0.00000         1.00000         0.00000    
+        10     0.00000         0.00000         0.00000    
+        11     0.00000         0.00000         1.00000    
+        12     0.00000         1.00000         1.00000    
+        13     0.00000         1.00000         0.00000    
+        14     1.00000         1.00000         1.00000    
+        15     1.00000         1.00000         0.00000    
+        16     0.00000         1.00000         0.00000    
+        17     0.00000         1.00000         1.00000    
+        18     1.00000         1.00000         1.00000    
+        19     1.00000         0.00000         0.00000    
+        20     1.00000         1.00000         0.00000    
+        21     1.00000         1.00000         1.00000    
+        22     1.00000         0.00000         0.00000    
+        23     1.00000         1.00000         1.00000    
+        24     1.00000         0.00000         1.00000    
+        25     0.00000         0.00000         0.00000    
+        26     1.00000         0.00000         0.00000    
+        27     1.00000         0.00000         1.00000    
+        28     0.00000         0.00000         0.00000    
+        29     1.00000         0.00000         1.00000    
+        30     0.00000         0.00000         1.00000    
+        31     0.00000         0.00000         1.00000    
+        32     1.00000         0.00000         1.00000    
+        33     1.00000         1.00000         1.00000    
+        34     0.00000         0.00000         1.00000    
+        35     1.00000         1.00000         1.00000    
+        36     0.00000         1.00000         1.00000    
+ 
+TEST04
+  STLA_WRITE writes an ASCII STL file.
+ 
+  Graphics data was written to the STLA file "cube_new.stl":
+ 
+TEST05
+  STLA_FACE_NORMAL_COMPUTE computes the face normal
+  vectors for an STLA file.
+ 
+  We have an STLA solid, and its exact normals.
+  We now call STLA_FACE_NORMAL_COMPUTE to 
+  recompute the normals.
+ 
+  We print out the maximum error, defined as
+    |1 - dot ( n1, n2 )|
+  where n1 and n2 are the exact and computed normals.
+ 
+  Maximum error =    0.00000    
+ 
+STLA_IO_TEST:
+  Normal end of execution.
+ 
+30 August 2020   8:23:41.800 PM

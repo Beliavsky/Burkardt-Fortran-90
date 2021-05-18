@@ -1,0 +1,178 @@
+<html>
+
+  <head>
+    <title>
+      CLAUSEN - Chebyshev Interpolant to the Clausen Function
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CLAUSEN <br> Chebyshev Interpolant to the Clausen Function
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CLAUSEN</b>,
+      a FORTRAN90 code which
+      evaluates a Chebyshev interpolant to the Clausen function Cl2(x).
+    </p>
+
+    <p>
+      Cl2(x) = - integral ( 0 &lt; s &lt; x ) log ( abs ( 2 sin ( x / 2 ) ) ) dx
+    </p>
+
+    <p>
+      The Clausen function is periodic, with period 2 pi.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CLAUSEN</b> is available in
+      <a href = "../../c_src/clausen/clausen.html">a C version</a> and
+      <a href = "../../cpp_src/clausen/clausen.html">a C++ version</a> and
+      <a href = "../../f_src/clausen/clausen.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/clausen/clausen.html">a MATLAB version</a> and
+      <a href = "../../py_src/clausen/clausen.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/chebyshev/chebyshev.html">
+      CHEBYSHEV</a>,
+      a FORTRAN90 code which
+      computes the Chebyshev interpolant/approximant to a given function
+      over an interval.
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_interp_1d/chebyshev_interp_1d.html">
+      CHEBYSHEV_INTERP_1D</a>,
+      a FORTRAN90 code which
+      determines the combination of Chebyshev polynomials which 
+      interpolates a set of data, so that p(x(i)) = y(i).
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_polynomial/chebyshev_polynomial.html">
+      CHEBYSHEV_POLYNOMIAL</a>,
+      a FORTRAN90 code which
+      considers the Chebyshev polynomials T(i,x), U(i,x), V(i,x) and W(i,x).
+      Functions are provided to evaluate the polynomials, determine their zeros, 
+      produce their polynomial coefficients, produce related quadrature rules,
+      project other functions onto these polynomial bases, and integrate
+      double and triple products of the polynomials.
+    </p>
+
+    <p>
+      <a href = "../../f_src/chebyshev_series/chebyshev_series.html">
+      CHEBYSHEV_SERIES</a>,
+      a FORTRAN90 code which
+      can evaluate a Chebyshev series approximating a function f(x),
+      while efficiently computing one, two or three derivatives of the
+      series, which approximate f'(x), f''(x), and f'''(x),
+      by Manfred Zimmer.
+    </p>
+
+    <p>
+      <a href = "../../f_src/clausen_test/clausen_test.html">
+      clausen_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/fn/fn.html">
+      FN</a>,
+      a FORTRAN90 code which
+      approximates elementary and special functions using Chebyshev polynomials;
+      functions include Airy, Bessel I, J, K and Y, beta, 
+      confluent hypergeometric, error, gamma, log gamma, Pochhammer, Spence; 
+      integrals include hyperbolic cosine, cosine, Dawson, exponential, 
+      logarithmic, hyperbolic sine, sine; by Wayne Fullerton.
+    </p>
+
+    <p>
+      <a href = "../../f_src/polpak/polpak.html">
+      POLPAK</a>,
+      a FORTRAN90 code which
+      evaluates a variety of mathematical functions, including
+      Chebyshev, Gegenbauer, Hermite, Jacobi, Laguerre, Legendre polynomials,
+      and the Collatz sequence.
+    </p>
+
+    <p>
+      <a href = "../../f_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a FORTRAN90 code which
+      supplies test values of various mathematical functions.
+    </p>
+
+    <p>
+      <a href = "../../f_src/toms446/toms446.html">
+      TOMS446</a>,
+      a FORTRAN90 code which
+      manipulates Chebyshev series for interpolation and approximation;
+      this is ACM TOMS algorithm 446,
+      by Roger Broucke.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Kurt Koelbig,<br>
+          Chebyshev coefficients for the Clausen function Cl2(x),<br>
+          Journal of Computational and Applied Mathematics,<br>
+          Volume 64, Number 3, 1995, pages 295-297.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "clausen.f90">clausen.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "clausen.sh">clausen.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 09 June 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

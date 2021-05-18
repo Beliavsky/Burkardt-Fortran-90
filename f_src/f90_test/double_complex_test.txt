@@ -1,0 +1,44 @@
+21 June 2020  11:59:51.813 AM
+ 
+double_complex_test.
+  FORTRAN90 version.
+  Demonstrate double precision complex arithmetic.
+ 
+TEST01
+  Use complex values of the default type.
+ 
+  RANGE provides the decimal exponent range.
+    RANGE(I1) =           37
+ 
+  KIND returns the "kind" of a given integer.
+  Do you expect a value of 4, or of 8?
+    KIND(I1) =            4
+ 
+   A =              (1.00000000,1.00000000)
+   B = sqrt ( A ) =             (1.09868419,0.455089837)
+   C = A - B * B =        (-2.384185791E-07,0.00000000)
+ 
+TEST02
+  Use complex values of KIND = 8.
+ 
+  RANGE provides the decimal exponent range.
+    RANGE(A) =          307
+ 
+  KIND returns the "kind" of a given integer.
+    KIND(A) =            8
+ 
+   A =                (1.0000000000000000,1.0000000000000000)
+   B = sqrt ( A ) =               (1.0986841134678100,0.45508986056222733)
+   C = A - B * B =         (-2.22044604925031308E-016,0.0000000000000000)
+ 
+TEST03
+  Use "DOUBLE COMPLEX" values.
+ 
+   A =                (1.0000000000000000,1.0000000000000000)
+   B = sqrt ( A ) =               (1.0986841134678100,0.45508986056222733)
+   C = A - B * B =         (-2.22044604925031308E-016,0.0000000000000000)
+ 
+double_complex_test.
+  Normal end of execution.
+ 
+21 June 2020  11:59:51.813 AM

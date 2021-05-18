@@ -1,0 +1,182 @@
+<html>
+
+  <head>
+    <title>
+      FILES_MULTIPLE - How a code Can Handle Multiple Output Files
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FILES_MULTIPLE <br> How a code Can Handle Multiple Output Files
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FILES_MULTIPLE</b>,
+      a FORTRAN90 code which
+      demonstrates how a code can open multiple output files at one time,
+      and write data to any one specific file it chooses.
+    </p>
+
+    <p>
+      To write data to a file, a FORTRAN90 code needs a filename,
+      an open() statement that assigns a unique unit number to that filename,
+      and write() statements that send data to the file identified by unit number.
+    </p>
+
+    <p>
+      To handle two or three files is easy, but to handle an arbitrary number
+      of files requires a little planning.  
+    </p>
+
+    <p>
+      Supposing we need "n" files, we can create a "template" filename with
+      some zeros in it, like "file00.txt", and call a function like
+      "filename_inc()" which, each time, will return a filename with the numeric
+      text incremented by 1:
+      <pre>
+        file01.txt
+        file02.txt
+        file03.txt
+        ...
+      </pre>
+      The filenames can be stored in a character array of dimension n,
+      which might be called "filename".
+    </p>
+
+    <p>
+      In order to store the unique unit number of each file, we can simply
+      try to set the first file to unit 1, the second to unit 2, and so on.
+      (For some versions of FORTRAN, this might cause problems, in which
+      case, a function called get_unit() can be used instead.)  The unit numbers
+      can be stored in an integer vector of dimension n, which might be called
+      "fileunit".
+    </p>
+
+    <p>
+      Now we use a loop from 1 to n, to open the files:
+      <pre>
+        do i = 1, n
+          open ( unit = fileunit(i), file = filename(i), status = 'replace' )
+        end do
+      </pre>
+    </p>
+
+    <p>
+      At this point, to write data to the 17th file, we would use a statement like:
+      <pre>
+        write ( unit(17), '(2g14.6)' ) x, y
+      </pre>
+    </p>
+
+    <p>
+      When we are all done, we need to close the files:
+      <pre>
+        do i = 1, n
+          close ( unit = fileunit(i) )
+        end do
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FILES_MULTIPLE</b> is available in
+      <a href = "../../c_src/files_multiple/files_multiple.html">a C version</a> and
+      <a href = "../../cpp_src/files_multiple/files_multiple.html">a C++ version</a> and
+      <a href = "../../f_src/files_multiple/files_multiple.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/files_multiple/files_multiple.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/file_name_sequence/file_name_sequence.html">
+      FILE_NAME_SEQUENCE</a>,
+      a FORTRAN90 code which
+      demonstrates ways to generate a sequence of filenames
+      that can be used when generating images for an animation.
+    </p>
+
+    <p>
+      <a href = "../../f_src/files_multiple_test/files_multiple_test.html">
+      files_multiple_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/filum/filum.html">
+      FILUM</a>,
+      a FORTRAN90 code which
+      can work with information in text files.
+    </p>
+
+    <p>
+      <a href = "../../f_src/table_io/table_io.html">
+      TABLE_IO</a>,
+      a FORTRAN90 code which
+      reads and writes table files.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jeanne Adams, Walter Brainerd, Jeanne Martin, Brian Smith,
+          Jerrold Wagener,<br>
+          Fortran90 Handbook,<br>
+          Complete ANSI/ISO Reference,<br>
+          McGraw Hill, 1992,<br>
+          ISBN: 0-07-000406-4,<br>
+          LC: QA76.73.F28.F67.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "files_multiple.f90">files_multiple.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "files_multiple.sh">files_multiple.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 09 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

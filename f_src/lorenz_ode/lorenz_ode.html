@@ -1,0 +1,168 @@
+<html>
+
+  <head>
+    <title>
+      LORENZ_ODE - The Lorenz System
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LORENZ_ODE <br> The Lorenz System
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LORENZ_ODE</b>,
+      a FORTRAN90 code which
+      approximates solutions to the Lorenz ordinary differential equations (ODEs),
+      creating output files that can be displayed by Gnuplot.
+    </p>
+
+    <p>
+      The Lorenz system, originally intended as a simplified model of
+      atmospheric convection, has instead become a standard example of
+      sensitive dependence on initial conditions; that is, tiny differences
+      in the starting condition for the system rapidly become magnified.
+      The system also exhibits what is known as the "Lorenz attractor",
+      that is, the collection of trajectories for different starting points
+      tends to approach a peculiar butterfly-shaped region.
+    </p>
+
+    <p>
+      The Lorenz system includes three ordinary differential equations:
+      <pre>
+        dx/dt = sigma ( y - x )
+        dy/dt = x ( rho - z ) - y
+        dz/dt = xy - beta z
+      </pre>
+      where the parameters beta, rho and sigma are usually assumed to be
+      positive.  The classic case uses the parameter values
+      <pre>
+        beta = 8 / 3
+        rho = 28
+        sigma - 10
+      </pre>
+    </p>
+
+    <p>
+      The initial conditions for this system are not often specified; rather,
+      investigators simply note that the trajectories associated with two very
+      close starting points will eventually separate.  However, simply to
+      get started, we can suggest the following starting values at t=0:
+      <pre>
+        x = 8
+        y = 1
+        z = 1
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>lorenz_ode</b> is available in
+      <a href = "../../c_src/lorenz_ode/lorenz_ode.html">a C version</a> and
+      <a href = "../../cpp_src/lorenz_ode/lorenz_ode.html">a C++ version</a> and
+      <a href = "../../f_src/lorenz_ode/lorenz_ode.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/lorenz_ode/lorenz_ode.html">a MATLAB version</a> and
+      <a href = "../../octave_src/lorenz_ode/lorenz_ode.html">an Octave version</a> and
+      <a href = "../../py_src/lorenz_ode/lorenz_ode.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      FORTRAN90 codes which
+      illustrate the use of the gnuplot graphics program.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lorenz_ode_test/lorenz_ode_test.html">
+      lorenz_ode_test</a>
+    </p>
+
+    <p>
+      <a href = "../../f_src/predator_prey_ode/predator_prey_ode.html">
+      predator_prey_ode</a>,
+      a FORTRAN90 code which
+      solves a pair of predator prey ordinary differential equations (ODE's).
+    </p>
+
+    <p>
+      <a href = "../../f_src/spring_ode/spring_ode.html">
+      spring_ode</a>,
+      a FORTRAN90 code which
+      shows how gnuplot graphics can be used to illustrate
+      a solution of the ordinary differential equation (ODE) that describes
+      the motion of a weight attached to a spring.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stiff_ode/stiff_ode.html">
+      stiff_ode</a>,
+      a FORTRAN90 code which 
+      considers an ordinary differential equation (ODE) which is
+      an example of a stiff ODE.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Edward Lorenz,<br>
+          Deterministic Nonperiodic Flow,<br>
+          Journal of the Atmospheric Sciences,<br>
+          Volume 20, Number 2, 1963, pages 130-141.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "lorenz_ode.f90">lorenz_ode.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "lorenz_ode.sh">lorenz_ode.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 28 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

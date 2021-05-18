@@ -1,0 +1,23 @@
+27 July 2020   8:34:04.141 AM
+ 
+LIFE_SERIAL
+  FORTRAN90 version
+  Carry out a few steps of John Conway's
+  Game of Life.
+
+  life_000.txt
+  life_001.txt
+  life_002.txt
+  life_003.txt
+  life_004.txt
+  life_005.txt
+  life_006.txt
+  life_007.txt
+  life_008.txt
+  life_009.txt
+  life_010.txt
+ 
+LIFE_SERIAL
+  Normal end of execution.
+ 
+27 July 2020   8:34:04.144 AM

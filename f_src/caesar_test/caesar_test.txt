@@ -1,0 +1,43 @@
+08 June 2020   3:42:41.326 PM
+
+CAESAR_TEST
+  FORTRAN90 version.
+  Test the CAESAR library.
+
+  call S_TO_CAESAR ( S1, K, S2 ), varying K.
+
+   K  ---------------S1--------------  ---------------S2--------------
+
+  -5  A man, a plan, a canal: Panama!  V hvi, v kgvi, v xvivg: Kvivhv!
+  -4  A man, a plan, a canal: Panama!  W iwj, w lhwj, w ywjwh: Lwjwiw!
+  -3  A man, a plan, a canal: Panama!  X jxk, x mixk, x zxkxi: Mxkxjx!
+  -2  A man, a plan, a canal: Panama!  Y kyl, y njyl, y aylyj: Nylyky!
+  -1  A man, a plan, a canal: Panama!  Z lzm, z okzm, z bzmzk: Ozmzlz!
+   0  A man, a plan, a canal: Panama!  A man, a plan, a canal: Panama!
+   1  A man, a plan, a canal: Panama!  B nbo, b qmbo, b dbobm: Qbobnb!
+   2  A man, a plan, a canal: Panama!  C ocp, c rncp, c ecpcn: Rcpcoc!
+   3  A man, a plan, a canal: Panama!  D pdq, d sodq, d fdqdo: Sdqdpd!
+   4  A man, a plan, a canal: Panama!  E qer, e tper, e gerep: Tereqe!
+   5  A man, a plan, a canal: Panama!  F rfs, f uqfs, f hfsfq: Ufsfrf!
+
+  call S_TO_CAESAR ( S1,  K, S2 ).
+  call S_TO_CAESAR ( S2, -K, S3 )
+
+   K  ------------S1----------  ------------S2----------  ------------S3----------
+
+  -5  The key is under the mat  Ocz fzt dn piyzm ocz hvo  The key is under the mat
+  -4  The key is under the mat  Pda gau eo qjzan pda iwp  The key is under the mat
+  -3  The key is under the mat  Qeb hbv fp rkabo qeb jxq  The key is under the mat
+  -2  The key is under the mat  Rfc icw gq slbcp rfc kyr  The key is under the mat
+  -1  The key is under the mat  Sgd jdx hr tmcdq sgd lzs  The key is under the mat
+   0  The key is under the mat  The key is under the mat  The key is under the mat
+   1  The key is under the mat  Uif lfz jt voefs uif nbu  The key is under the mat
+   2  The key is under the mat  Vjg mga ku wpfgt vjg ocv  The key is under the mat
+   3  The key is under the mat  Wkh nhb lv xqghu wkh pdw  The key is under the mat
+   4  The key is under the mat  Xli oic mw yrhiv xli qex  The key is under the mat
+   5  The key is under the mat  Ymj pjd nx zsijw ymj rfy  The key is under the mat
+
+CAESAR_TEST
+  Normal end of execution.
+
+08 June 2020   3:42:41.326 PM

@@ -1,0 +1,298 @@
+<html>
+
+  <head>
+    <title>
+      SPHERE_DESIGN_RULE - Hardin and Sloane Spherical Designs
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SPHERE_DESIGN_RULE <br> Hardin and Sloane Spherical Designs
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SPHERE_DESIGN_RULE</b>,
+      a FORTRAN90 code which 
+      implements a number of Hardin and Sloane "spherical designs", which
+      can be used for numerical quadrature
+      over the surface of a sphere in 3D.
+    </p>
+
+    <p>
+      A set of N points on the surface of a 3D sphere is called a 
+      <i>spherical T-design</i> if the integral of any polynomial <b>p(x,y,z)</b>
+      of degree at most <b>T</b> over the surface of the sphere is equal to 
+      the average value of the polynomial evaluated at the set of points.
+    </p>
+
+    <p>  
+      Note that the degree of a polynomial in several variables is the 
+      highest degree of any of its terms, and that the degree of a term like 
+      <b>X<sup>A</sup>Y<sup>B</sup>Z<sup>C</sup></b> is <b>A+B+C</b>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SPHERE_DESIGN_RULE</b> is available in
+      <a href = "../../f_src/sphere_design_rule/sphere_design_rule.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/cube_felippa_rule/cube_felippa_rule.html">
+      CUBE_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns the points and weights of a Felippa quadrature rule
+      over the interior of a cube in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/pyramid_felippa_rule/pyramid_felippa_rule.html">
+      PYRAMID_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns Felippa's quadratures rules for approximating integrals
+      over the interior of a pyramid in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_cvt/sphere_cvt.html">
+      SPHERE_CVT</a>,
+      a FORTRAN90 code which 
+      creates a mesh of well-separated points on a unit sphere 
+      using Centroidal Voronoi Tessellations.
+    </p>
+
+    <p>
+      <a href = "../../m_src/sphere_delaunay/sphere_delaunay.html">
+      SPHERE_DELAUNAY</a>, 
+      a MATLAB program which
+      computes the Delaunay triangulation of points on a sphere.
+    </p>
+
+    <p>
+      <a href = "../../datasets/sphere_design_rule/sphere_design_rule.html">
+      SPHERE_DESIGN_RULE</a>,
+      a dataset directory which 
+      contains files defining point sets on the surface of the unit sphere, 
+      known as "designs", which can be useful for estimating integrals 
+      on the surface, among other uses.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_design_rule_test/sphere_design_rule_test.html">
+      sphere_design_rule_test</a>
+    </p>
+    <p>
+      <a href = "../../f_src/sphere_exactness/sphere_exactness.html">
+      SPHERE_EXACTNESS</a>, 
+      a FORTRAN90 code which 
+      tests the polynomial exactness of a quadrature rule 
+      over the surface of the unit sphere in 3D. 
+    </p>
+
+    <p>
+      <a href = "../../datasets/sphere_grid/sphere_grid.html">
+      SPHERE_GRID</a>, 
+      a dataset directory which 
+      contains grids of points, lines, triangles or quadrilaterals on a sphere;
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_integrals/sphere_integrals.html">
+      SPHERE_INTEGRALS</a>,
+      a FORTRAN90 code which
+      defines test functions for integration 
+      over the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_lebedev_rule/sphere_lebedev_rule.html">
+      SPHERE_LEBEDEV_RULE</a>, 
+      a FORTRAN90 code which 
+      computes Lebedev quadrature rules for the unit sphere;
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_monte_carlo/sphere_monte_carlo.html">
+      SPHERE_MONTE_CARLO</a>, 
+      a FORTRAN90 code which
+      applies a Monte Carlo method to estimate the integral of a function
+      over the surface of the sphere in 3D;
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_quad/sphere_quad.html">
+      SPHERE_QUAD</a>,
+      a FORTRAN90 code which
+      approximates an integral over the surface of the unit sphere
+      by applying a triangulation to the surface;
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_stereograph/sphere_stereograph.html">
+      SPHERE_STEREOGRAPH</a>,
+      a FORTRAN90 code which
+      computes the stereographic mapping between points on the unit sphere
+      and points on the plane Z = 1; a generalized mapping is also available.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_triangle_quad/sphere_triangle_quad.html">
+      SPHERE_TRIANGLE_QUAD</a>,
+      a FORTRAN90 code which 
+      estimates the integral of a function over a spherical triangle.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sphere_volume_quad/sphere_volume_quad.html">
+      SPHERE_VOLUME_QUAD</a>, 
+      a FORTRAN90 code which
+      applies a quadrature rule to estimate the volume of the unit 6D sphere;
+    </p>
+
+    <p>
+      <a href = "../../f_src/square_felippa_rule/square_felippa_rule.html">
+      SQUARE_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns the points and weights of a Felippa quadrature rule
+      over the interior of a square in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stripack/stripack.html">
+      STRIPACK</a>,
+      a FORTRAN90 code which
+      computes the Delaunay triangulation or Voronoi diagram
+      of points on a sphere.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stripack_delaunay/stripack_delaunay.html">
+      STRIPACK_DELAUNAY</a>,
+      a FORTRAN90 code which 
+      reads a set of points on the unit sphere, computes the Delaunay triangulation, 
+      and writes it to a file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/stroud/stroud.html">
+      STROUD</a>,
+      a FORTRAN90 code which
+      defines quadrature rules for
+      various geometric shapes.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sxyz_delaunay/sxyz_delaunay.html">
+      SXYZ_DELAUNAY</a>,
+      a FORTRAN90 code which 
+      computes and plots the Delaunay triangulation of points 
+      over the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/sxyz_voronoi/sxyz_voronoi.html">
+      SXYZ_VORONOI</a>,
+      a FORTRAN90 code which 
+      computes and plots Delaunay triangulations and Voronoi diagrams
+      of points on the sphere.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tetrahedron_felippa_rule/tetrahedron_felippa_rule.html">
+      TETRAHEDRON_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns Felippa's quadratures rules for approximating integrals
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/triangle_felippa_rule/triangle_felippa_rule.html">
+      TRIANGLE_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns Felippa's quadratures rules for approximating integrals
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../f_src/wedge_felippa_rule/wedge_felippa_rule.html">
+      WEDGE_FELIPPA_RULE</a>,
+      a FORTRAN90 code which
+      returns quadratures rules for approximating integrals
+      over the interior of the unit wedge in 3D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Charles Colbourn, Jeffrey Dinitz,<br>
+          The CRC Handbook of Combinatorial Designs,<br>
+          CRC Press, 1996.
+        </li>
+        <li>
+          Ronald Hardin, Neil Sloane,<br>
+          McLaren's Improved Snub Cube and Other New Spherical Designs
+          in Three Dimensions,<br>
+          Discrete and Computational Geometry,<br>
+          Volume 15, 1996, pages 429-441.
+        </li>
+        <li>
+          <a href = "http://neilsloane.com/sphdesigns/">
+          Spherical Designs Web Page</a>
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sphere_design_rule.f90">sphere_design_rule.f90</a>, the source code.
+        </li>
+        <li>
+          <a href = "sphere_design_rule.sh">sphere_design_rule.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 March 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

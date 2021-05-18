@@ -1,0 +1,329 @@
+<html>
+
+  <head>
+    <title>
+      kmeans_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      kmeans_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>kmeans_test</b>,
+      a FORTRAN90 code which
+      calls kmeans(), which
+      handles the K-Means problem,
+      which organizes a set of N points in M dimensions into K clusters;
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/kmeans/kmeans.html">
+      kmeans</a>,
+      a FORTRAN90 code which
+      solves the K-Means problem,
+      which organizes a set of N points in M dimensions into K clusters;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "kmeans_test.f90">kmeans_test.f90</a>, a sample problem.
+        </li>
+        <li>
+          <a href = "kmeans_test.sh">kmeans_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "kmeans_test.txt">kmeans_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      There are data files read by the sample code:
+      <ul>
+        <li>
+          <a href = "points_100.txt">points_100.txt</a>, 100 2D points,
+          used as a case study by the sample problem.
+        </li>
+        <li>
+          <a href = "points_100.png">points_100.png</a>, 
+          an image of the points.
+        </li>
+        <li>
+          <a href = "ruspini.txt">ruspini.txt</a>, 75 points in 2D,
+          with integer coordinates, 
+          which might naturally be grouped into 4 sets.
+        </li>
+        <li>
+          <a href = "weights_equal_100.txt">weights_equal_100.txt</a>,
+          100 equal weights, for doing equally weighted calculations when
+          a program expects weights.
+        </li>
+        <li>
+          <a href = "weights_unequal_100.txt">weights_unequal_100.txt</a>,
+          100 weights, not all equal, for testing programs that can use weights.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST01</b> applies HMEANS_01 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test01_clusters.txt">test01_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test01_centers.txt">test01_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST02</b> applies HMEANS_02 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test02_clusters.txt">test02_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test02_centers.txt">test02_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST03</b> applies KMEANS_01 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test03_clusters.txt">test03_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test03_centers.txt">test03_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST04</b> applies KMEANS_02 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test04_clusters.txt">test04_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test04_centers.txt">test04_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST05</b> applies KMEANS_03 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test05_clusters.txt">test05_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test05_centers.txt">test05_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST06</b> applies HMEANS_01 + KMEANS_01 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test06_clusters.txt">test06_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test06_centers.txt">test06_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST07</b> applies HMEANS_01 + KMEANS_02 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test07_clusters.txt">test07_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test07_centers.txt">test07_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST08</b> applies KMEANS_01 + KMEANS_03 to points_100.txt:
+      <ul>
+        <li>
+          <a href = "test08_clusters.txt">test08_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test08_centers.txt">test08_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST09</b> applies HMEANS_W_01 to points_100.txt and weights_equal_100.txt:
+      <ul>
+        <li>
+          <a href = "test09_clusters.txt">test09_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test09_centers.txt">test09_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST10</b> applies HMEANS_W_02 to points_100.txt and weights_equal_100.txt:
+      <ul>
+        <li>
+          <a href = "test10_clusters.txt">test10_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test10_centers.txt">test10_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST11</b> applies KMEANS_W_01 to points_100.txt and weights_equal_100.txt:
+      <ul>
+        <li>
+          <a href = "test11_clusters.txt">test11_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test11_centers.txt">test11_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST12</b> applies KMEANS_W_03 to points_100.txt and weights_equal_100.txt:
+      <ul>
+        <li>
+          <a href = "test12_clusters.txt">test12_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test12_centers.txt">test12_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST13</b> applies HMEANS_W_01 to points_100.txt and weights_unequal_100.txt:
+      <ul>
+        <li>
+          <a href = "test13_clusters.txt">test13_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test13_centers.txt">test13_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST14</b> applies HMEANS_W_02 to points_100.txt and weights_unequal_100.txt:
+      <ul>
+        <li>
+          <a href = "test14_clusters.txt">test14_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test14_centers.txt">test14_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST15</b> applies KMEANS_W_01 to points_100.txt and weights_unequal_100.txt:
+      <ul>
+        <li>
+          <a href = "test15_clusters.txt">test15_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test15_centers.txt">test15_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST16</b> applies KMEANS_W_03 to points_100.txt and weights_unequal_100.txt:
+      <ul>
+        <li>
+          <a href = "test16_clusters.txt">test16_clusters.txt</a>
+          the cluster assignments.
+        </li>
+        <li>
+          <a href = "test16_centers.txt">test16_centers.txt</a>
+          the cluster centers.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 22 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
