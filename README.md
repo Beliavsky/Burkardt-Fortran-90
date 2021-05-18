@@ -41,6 +41,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [nearest_interp_1d](https://people.math.sc.edu/Burkardt/f_src/nearest_interp_1d/nearest_interp_1d.html) interpolates a set of data using a piecewise constant interpolant defined by the nearest neighbor criterion, creating graphics files for processing by GNUPLOT.
 
+[newton_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/newton_interp_1d/newton_interp_1d.html) finds a polynomial interpolant to data using Newton divided differences.
+
 [sparse_interp_nd](https://people.math.sc.edu/Burkardt/f_src/sparse_interp_nd/sparse_interp_nd.html) construct a sparse interpolant to a function f(x) of a multidimensional argument x.
 
 [test_interp_nd](https://people.math.sc.edu/Burkardt/f_src/test_interp_nd/test_interp_nd.html) rovides test functions for multidimensional interpolation.
@@ -97,7 +99,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
 
-[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar nonlinear equation in a change of sign interval, using reverse communication (RC).
+[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
 
 [brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
 
