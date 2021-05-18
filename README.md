@@ -113,6 +113,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [dqed](https://people.math.sc.edu/Burkardt/f_src/dqed/dqed.html) solves (square) systems of nonlinear equations, or minimizes the residual in a set of nonlinear equations, using least squares, by Richard Hanson and Fred Krogh.
 
+[newton_rc](https://people.sc.fsu.edu/~jburkardt/f_src/newton_rc/newton_rc.html) solves a system of nonlinear equations by Newton's method, using reverse communication (RC).
+
 [roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
 
 # Optimization -- One-Dimensional
