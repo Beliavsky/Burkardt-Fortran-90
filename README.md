@@ -143,6 +143,18 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
 
+# Non-uniform Random Number Generation
+
+[asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
+
+[pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
+
+[ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
+
+[wishart](https://people.sc.fsu.edu/~jburkardt/f_src/wishart/wishart.html) produces sample matrices from the Wishart or Bartlett distributions, useful for sampling random covariance matrices.
+
+[ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
+
 # Numerical Methods -- general
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
@@ -205,30 +217,6 @@ Constrained to a Hyper-Rectangle.
 [owens](https://people.math.sc.edu/Burkardt/f_src/owens/owens.html) evaluates Owen's T function.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
-
-# Uniform Random Number Generation
-
-[asa183](https://people.sc.fsu.edu/~jburkardt/f_src/asa183/asa183.html) random number generator (RNG), by Wichman and Hill.
-
-[randlc](https://people.sc.fsu.edu/~jburkardt/f_src/randlc/randlc.html) random number generator (RNG) used by the NAS Parallel Benchmarks.
-
-[random_sorted](https://people.sc.fsu.edu/~jburkardt/f_src/random_sorted/random_sorted.html) create a vector of random values which are already sorted.
-
-[rnglib](https://people.sc.fsu.edu/~jburkardt/f_src/rnglib/rnglib.html) random number generators (RNG's) which can generate one or more streams of random numbers.
-
-[uniform](https://people.sc.fsu.edu/~jburkardt/f_src/uniform/uniform.html) random number generator is based on a simple, old, and limited linear congruential random number generator originally used in the IBM System 360.
-
-# Non-uniform Random Number Generation
-
-[asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
-
-[pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
-
-[ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
-
-[wishart](https://people.sc.fsu.edu/~jburkardt/f_src/wishart/wishart.html) produces sample matrices from the Wishart or Bartlett distributions, useful for sampling random covariance matrices.
-
-[ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
 
 # Root-finding
 
@@ -352,3 +340,15 @@ Constrained to a Hyper-Rectangle.
 [sobol](https://people.math.sc.edu/Burkardt/f_src/sobol/sobol.html) Sobol quasirandom sequence, by Bennett Fox.
 
 [van_der_corput](https://people.math.sc.edu/Burkardt/f_src/van_der_corput/van_der_corput.html) van der Corput Quasi Monte Carlo (QMC) sequence, using a simple interface.
+
+# Uniform Random Number Generation
+
+[asa183](https://people.sc.fsu.edu/~jburkardt/f_src/asa183/asa183.html) random number generator (RNG), by Wichman and Hill.
+
+[randlc](https://people.sc.fsu.edu/~jburkardt/f_src/randlc/randlc.html) random number generator (RNG) used by the NAS Parallel Benchmarks.
+
+[random_sorted](https://people.sc.fsu.edu/~jburkardt/f_src/random_sorted/random_sorted.html) create a vector of random values which are already sorted.
+
+[rnglib](https://people.sc.fsu.edu/~jburkardt/f_src/rnglib/rnglib.html) random number generators (RNG's) which can generate one or more streams of random numbers.
+
+[uniform](https://people.sc.fsu.edu/~jburkardt/f_src/uniform/uniform.html) random number generator is based on a simple, old, and limited linear congruential random number generator originally used in the IBM System 360.
