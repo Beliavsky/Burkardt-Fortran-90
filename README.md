@@ -1,6 +1,6 @@
 Classification of John Burkardt's many Fortran 90 codes into the categories
 
-cluster analysis. combinatorics, eigenvalues, graph algorithms, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, quadrature, quasirandom number generation, and uniform random number generation
+cluster analysis. combinatorics, eigenvalues, graph algorithms, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, statistics, quadrature, quasirandom number generation, and uniform random number generation
 
 # Cluster Analysis
 
@@ -398,6 +398,10 @@ Constrained to a Hyper-Rectangle.
 [sobol](https://people.math.sc.edu/Burkardt/f_src/sobol/sobol.html) Sobol quasirandom sequence, by Bennett Fox.
 
 [van_der_corput](https://people.math.sc.edu/Burkardt/f_src/van_der_corput/van_der_corput.html) van der Corput Quasi Monte Carlo (QMC) sequence, using a simple interface.
+
+# Statistics
+
+[starpac](https://people.math.sc.edu/Burkardt/f_src/starpac/starpac.html) nonlinear least squares regression, time series analysis (in both time and frequency domains), line printer graphics, basic statistical analysis, and linear least squares regression.
 
 # Uniform Random Number Generation
 
