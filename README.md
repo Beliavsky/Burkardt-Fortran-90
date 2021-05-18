@@ -61,7 +61,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [shephard_interp_nd](https://people.sc.fsu.edu/~jburkardt/f_src/shepard_interp_nd/shepard_interp_nd.html) defines and evaluates Shepard interpolants to multidimensional data, based on inverse distance weighting.
 
-[test_interp_nd](https://people.math.sc.edu/Burkardt/f_src/test_interp_nd/test_interp_nd.html) rovides test functions for multidimensional interpolation.
+[test_interp_nd](https://people.math.sc.edu/Burkardt/f_src/test_interp_nd/test_interp_nd.html) provides test functions for multidimensional interpolation.
 
 [toms446](https://people.math.sc.edu/Burkardt/f_src/toms446/toms446.html) implements ACM TOMS algorithm 446, for the manipulation of Chebyshev series, by Roger Broucke.
 
