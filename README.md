@@ -313,6 +313,8 @@ Constrained to a Hyper-Rectangle.
 
 [legendre_rule_fast](https://people.sc.fsu.edu/~jburkardt/f_src/legendre_rule_fast/legendre_rule_fast.html) uses a fast (order n) algorithm to compute a Gauss-Legendre quadrature rule of given order.
 
+[line_integrals](https://people.math.sc.edu/Burkardt/f_src/line_integrals/line_integrals.html) returns the exact value of the integral of any monomial over the length of the unit line in 1d.
+
 [line_ncc_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_ncc_rule/line_ncc_rule.html) computes a Newton Cotes Closed (ncc) quadrature rule for the line, that is, for an interval of the form [a,b], using equally spaced points which include the endpoints.
 
 [line_nco_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_nco_rule/line_nco_rule.html) computes a Newton Cotes Open (nco) quadrature rule, using equally spaced points, over the interior of a line segment in 1d.
@@ -363,17 +365,15 @@ Constrained to a Hyper-Rectangle.
 
 [disk01_integrals](https://people.math.sc.edu/Burkardt/f_src/disk01_integrals/disk01_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit disk in 2d.
 
-hyperball_integrals() returns the exact value of the integral of any monomial over the interior of the unit hyperball in m dimensions.
+[hyperball_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/hyperball_integrals/hyperball_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit hyperball in m dimensions.
 
-hypercube_integrals() returns the exact value of the integral of any monomial over the interior of the unit hypercube in m dimensions.
+[hypercube_integrals](https://people.math.sc.edu/Burkardt/f_src/hypercube_integrals/hypercube_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit hypercube in m dimensions.
 
-hypersphere_integrals() returns the exact value of the integral of any monomial over the surface of the unit hypersphere in m dimensions.
-
-line_integrals() returns the exact value of the integral of any monomial over the length of the unit line in 1d.
+[hypersphere_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/hypersphere_integrals/hypersphere_integrals.html) returns the exact value of the integral of any monomial over the surface of the unit hypersphere in m dimensions.
 
 [nintlib](https://people.sc.fsu.edu/~jburkardt/f_src/nintlib/nintlib.html) estimates integrals over multi-dimensional regions.
 
-polygon_integrals() returns the exact value of the integral of any monomial over the interior of a polygon in 2d.
+[polygon_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/polygon_integrals/polygon_integrals.html) returns the exact value of the integral of any monomial over the interior of a polygon in 2d.
 
 [pyramid_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/pyramid_felippa_rule/pyramid_felippa_rule.html) returns Felippa quadrature rules over the interior of the unit pyramid in 3D.
 
