@@ -32,8 +32,6 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [toms515](https://people.math.sc.edu/Burkardt/f_src/toms515/toms515.html) lists the subsets of size K selected from a set of size N, by Bill Buckles, Matthew Lybanon.
 
-[treepack](https://people.math.sc.edu/Burkardt/f_src/treepack/treepack.html) performs common calculations involving a special kind of graph known as a tree.
-
 [tsp_brute](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_brute/tsp_brute.html) solves small versions of the traveling salesman problem, using brute force.
 
 [tsp_lau](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_lau/tsp_lau.html) implements a heuristic algorithm for solution of the traveling salesman problem, by Hang Tong Lau.
@@ -63,6 +61,8 @@ Classification of John Burkardt's many Fortran 90 codes
 [laupack](https://people.sc.fsu.edu/~jburkardt/f_src/laupack/laupack.html) computes properties of mathematical graphs, including Euler circuits, Hamiltonian circuits, cliques, strongly connected components, minimal spanning tree, chromatic number, shortest paths, maximal flow, and planarity.
 
 [toms097](https://people.math.sc.edu/Burkardt/f_src/toms097/toms097.html) computes the distance between all pairs of nodes in a directed graph with weighted edges, using Floyd's algorithm.
+
+[treepack](https://people.math.sc.edu/Burkardt/f_src/treepack/treepack.html) performs common calculations involving a special kind of graph known as a tree.
 
 # Interpolation and Approximation
 
