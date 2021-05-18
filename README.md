@@ -44,6 +44,12 @@ Classification of John Burkardt's many Fortran 90 codes
 
 # Special Functions
 
+[asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
+
+[asa239](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) evaluates the incomplete Gamma function, by Shea.
+
+[besselj](https://people.sc.fsu.edu/~jburkardt/f_src/besselj/besselj.html) evaluates Bessel J functions of noninteger order.
+
 [cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
 
 [fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
@@ -51,6 +57,10 @@ Classification of John Burkardt's many Fortran 90 codes
 [specfun](https://people.sc.fsu.edu/~jburkardt/f_src/specfun/specfun.html) evaluates special functions, including Bessel I, J, K and Y functions, Dawson Integral, Error (Erf), Exponential Integral (E1 and EI), Gamma, log Gamma, and Psi/Digamma, by William Cody and Laura Stoltz.
 
 [special_functions](https://people.sc.fsu.edu/~jburkardt/f_src/special_functions/special_functions.html) evaluates special functions, including Airy, Associated Legendre Bessel, Beta, Complete Elliptic Integral, Confluent Hypergeometric, Cosine Integral, Elliptic Integral, Error, Exponential Integral, Fresnel Integral, Gamma, Hankel, Hypergeometric, Incomplete Beta, Incomplete Gamma, Jacobian Elliptic, Kelvin, Lambda, Legendre, Mathieu, Modified Spherical Bessel, Parabolic Cylinder, Psi, Riccati-Bessel, Sine Integral, Spheroidal Wave, Struve, Whittaker, as well as Bernoulli Numbers, Euler Numbers, Hermite Polynomials, Laguerre Polynomials, Legendre Polynomials, by Shanjie Zhang, Jianming Jin.
+
+[toms435](https://people.sc.fsu.edu/~jburkardt/f77_src/toms435/toms435.html) evaluates the modified incomplete Gamma function.
+
+[toms708](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) computes the Incomplete Beta Function ratio.
 
 [toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
@@ -317,9 +327,13 @@ Constrained to a Hyper-Rectangle.
 
 # Non-uniform Random Number Generation
 
+[asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
+
 [pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
 
 [ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
+
+[wishart](https://people.sc.fsu.edu/~jburkardt/f_src/wishart/wishart.html) produces sample matrices from the Wishart or Bartlett distributions, useful for sampling random covariance matrices.
 
 [ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
 
