@@ -1,5 +1,19 @@
 Classification of John Burkardt's many Fortran 90 codes
 
+# Cluster Analysis
+
+[asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
+
+[asa113](https://people.sc.fsu.edu/~jburkardt/f_src/asa113/asa113.html) divides M points in N dimensions into K clusters seeking the division which minimizes a user-defined criterion, by Banfield and Bassill.
+
+[cities](https://people.sc.fsu.edu/~jburkardt/f_src/cities/cities.html) works with problems involving intercity distances.
+
+[gene_cluster](https://people.sc.fsu.edu/~jburkardt/f_src/gene_cluster/gene_cluster.html) divides a set of genetic data into clusters.
+
+[kmeans](https://people.sc.fsu.edu/~jburkardt/f_src/kmeans/kmeans.html) handles the K-Means problem, which organizes a set of N points in M dimensions into K clusters
+
+[spaeth](https://people.math.sc.edu/Burkardt/f_src/spaeth/spaeth.html) analyzes data by grouping it into clusters.
+
 # Combinatorics
 
 [change_making](https://people.sc.fsu.edu/~jburkardt/f_src/change_making/change_making.html) considers the change making problem, in which a given sum is to be formed using coins of various denominations.
@@ -16,6 +30,20 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [tsp_lau](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_lau/tsp_lau.html) implements a heuristic algorithm for solution of the traveling salesman problem, by Hang Tong Lau.
 
+# Eigenvalues 
+
+[arpack](https://people.math.sc.edu/Burkardt/f_src/arpack/arpack.html) computes eigenvalues and eigenvectors of large matrices, by Richard Lehoucq, Danny Sorensen, Chao Yang.
+
+[eispack](https://people.sc.fsu.edu/~jburkardt/f77_src/eispack/eispack.html) calculates the eigenvalues and eigenvectors of a matrix.
+
+[jacobi_eigenvalue](https://people.math.sc.edu/Burkardt/f_src/jacobi_eigenvalue/jacobi_eigenvalue.html) computes the eigenvalues and eigenvectors of a real symmetric matrix.
+
+[power_method](https://people.math.sc.edu/Burkardt/f_src/power_method/power_method.html) Power Method for Eigenvalues and Eigenvectors.
+
+[test_eigen](https://people.math.sc.edu/Burkardt/f_src/test_eigen/test_eigen.html) Test Matrices for Eigenvalue Analysis.
+
+[toms384](https://people.math.sc.edu/Burkardt/f77_src/toms384/toms384.html) implements ACM TOMS algorithm 384, for computing the eigenvalues and eigenvectors of a symmetric matrix.
+
 # Graph Algorithms
 
 [bellman_ford](https://people.sc.fsu.edu/~jburkardt/f_src/bellman_ford/bellman_ford.html) implements the Bellman-Ford algorithm for finding the shortest distance from a given node to all other nodes in a directed graph whose edges have been assigned real-valued lengths.
@@ -27,42 +55,6 @@ Classification of John Burkardt's many Fortran 90 codes
 [laupack](https://people.sc.fsu.edu/~jburkardt/f_src/laupack/laupack.html) computes properties of mathematical graphs, including Euler circuits, Hamiltonian circuits, cliques, strongly connected components, minimal spanning tree, chromatic number, shortest paths, maximal flow, and planarity.
 
 [toms097](https://people.math.sc.edu/Burkardt/f_src/toms097/toms097.html) computes the distance between all pairs of nodes in a directed graph with weighted edges, using Floyd's algorithm.
-
-# Cluster Analysis
-
-[asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
-
-[asa113](https://people.sc.fsu.edu/~jburkardt/f_src/asa113/asa113.html) divides M points in N dimensions into K clusters seeking the division which minimizes a user-defined criterion, by Banfield and Bassill.
-
-[cities](https://people.sc.fsu.edu/~jburkardt/f_src/cities/cities.html) works with problems involving intercity distances.
-
-[gene_cluster](https://people.sc.fsu.edu/~jburkardt/f_src/gene_cluster/gene_cluster.html) divides a set of genetic data into clusters.
-
-[kmeans](https://people.sc.fsu.edu/~jburkardt/f_src/kmeans/kmeans.html) handles the K-Means problem, which organizes a set of N points in M dimensions into K clusters
-
-[spaeth](https://people.math.sc.edu/Burkardt/f_src/spaeth/spaeth.html) analyzes data by grouping it into clusters.
-
-# Special Functions
-
-[asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
-
-[asa239](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) evaluates the incomplete Gamma function, by Shea.
-
-[besselj](https://people.sc.fsu.edu/~jburkardt/f_src/besselj/besselj.html) evaluates Bessel J functions of noninteger order.
-
-[cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
-
-[fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
-
-[specfun](https://people.sc.fsu.edu/~jburkardt/f_src/specfun/specfun.html) evaluates special functions, including Bessel I, J, K and Y functions, Dawson Integral, Error (Erf), Exponential Integral (E1 and EI), Gamma, log Gamma, and Psi/Digamma, by William Cody and Laura Stoltz.
-
-[special_functions](https://people.sc.fsu.edu/~jburkardt/f_src/special_functions/special_functions.html) evaluates special functions, including Airy, Associated Legendre Bessel, Beta, Complete Elliptic Integral, Confluent Hypergeometric, Cosine Integral, Elliptic Integral, Error, Exponential Integral, Fresnel Integral, Gamma, Hankel, Hypergeometric, Incomplete Beta, Incomplete Gamma, Jacobian Elliptic, Kelvin, Lambda, Legendre, Mathieu, Modified Spherical Bessel, Parabolic Cylinder, Psi, Riccati-Bessel, Sine Integral, Spheroidal Wave, Struve, Whittaker, as well as Bernoulli Numbers, Euler Numbers, Hermite Polynomials, Laguerre Polynomials, Legendre Polynomials, by Shanjie Zhang, Jianming Jin.
-
-[toms435](https://people.sc.fsu.edu/~jburkardt/f77_src/toms435/toms435.html) evaluates the modified incomplete Gamma function.
-
-[toms708](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) computes the Incomplete Beta Function ratio.
-
-[toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
 # Interpolation and Approximation
 
@@ -127,12 +119,6 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [toms886](https://people.math.sc.edu/Burkardt/f_src/toms886/toms886.html) implements an interpolation procedure based on "Padua points", defined in the square [-1,+1]^2, whose interpolating power is especially good.
 
-# Numerical Methods -- general
-
-[nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
-
-[slatec](https://people.math.sc.edu/Burkardt/f_src/slatec/slatec.html) general purpose mathematical and statistical routines.
-
 # Linear Algebra
 
 [blas](https://people.math.sc.edu/Burkardt/f_src/blas/blas.html) Basic Linear Algebra Subprograms.
@@ -149,34 +135,6 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
 
-# Eigenvalues 
-
-[arpack](https://people.math.sc.edu/Burkardt/f_src/arpack/arpack.html) computes eigenvalues and eigenvectors of large matrices, by Richard Lehoucq, Danny Sorensen, Chao Yang.
-
-[eispack](https://people.sc.fsu.edu/~jburkardt/f77_src/eispack/eispack.html) calculates the eigenvalues and eigenvectors of a matrix.
-
-[jacobi_eigenvalue](https://people.math.sc.edu/Burkardt/f_src/jacobi_eigenvalue/jacobi_eigenvalue.html) computes the eigenvalues and eigenvectors of a real symmetric matrix.
-
-[power_method](https://people.math.sc.edu/Burkardt/f_src/power_method/power_method.html) Power Method for Eigenvalues and Eigenvectors.
-
-[test_eigen](https://people.math.sc.edu/Burkardt/f_src/test_eigen/test_eigen.html) Test Matrices for Eigenvalue Analysis.
-
-[toms384](https://people.math.sc.edu/Burkardt/f77_src/toms384/toms384.html) implements ACM TOMS algorithm 384, for computing the eigenvalues and eigenvectors of a symmetric matrix.
-
-# Root-finding
-
-[bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
-
-[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
-
-[brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
-
-[test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
-
-[zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
-
-[zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
-
 # Nonlinear Equations
 
 [dqed](https://people.math.sc.edu/Burkardt/f_src/dqed/dqed.html) solves (square) systems of nonlinear equations, or minimizes the residual in a set of nonlinear equations, using least squares, by Richard Hanson and Fred Krogh.
@@ -184,6 +142,12 @@ but, if i =/= j P(i)(X(j)) = 0
 [newton_rc](https://people.sc.fsu.edu/~jburkardt/f_src/newton_rc/newton_rc.html) solves a system of nonlinear equations by Newton's method, using reverse communication (RC).
 
 [roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
+
+# Numerical Methods -- general
+
+[nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
+
+[slatec](https://people.math.sc.edu/Burkardt/f_src/slatec/slatec.html) general purpose mathematical and statistical routines.
 
 # Optimization -- One-Dimensional
 
@@ -209,6 +173,98 @@ Constrained to a Hyper-Rectangle.
 [toms611](https://github.com/johannesgerer/jburkardt-f/tree/master/toms611) minimizes a scalar functional of multiple variables.
 
 [uncmin](https://people.math.sc.edu/Burkardt/f77_src/uncmin/uncmin.html) seeks to minimize a scalar function of N variables.
+
+# Probability Distributions
+
+[asa005](https://people.sc.fsu.edu/~jburkardt/f_src/asa005/asa005.html) evaluates the lower tail of the noncentral student's T cumulative density function (CDF), by BE Cooper.
+
+[asa066](https://people.sc.fsu.edu/~jburkardt/f_src/asa066/asa066.html) computes the cumulative density function (CDF) of the standard normal distribution, by David Hill.
+
+[asa076](https://people.sc.fsu.edu/~jburkardt/f_src/asa076/asa076.html) evaluates Owen's T function, by Young and Minder. The function T(h, a) gives the probability of the event (X > h and 0 < Y < aX) where X and Y are independent standard normal random variables.
+
+[asa091](https://people.sc.fsu.edu/~jburkardt/f_src/asa091/asa091.html) computes the percentage points of the Chi-Squared probability density function, by Best and Roberts.
+
+[asa111](https://people.sc.fsu.edu/~jburkardt/f_src/asa111/asa111.html) computes the percentage points of the normal probability density function, by Beasley and Springer.
+
+[asa152](https://people.sc.fsu.edu/~jburkardt/f_src/asa152/asa152.html) computes the cumulative probabilities associated with the hypergeometric probability distribution, by Richard Lund.
+
+[asa226](https://people.sc.fsu.edu/~jburkardt/f_src/asa226/asa226.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta Distribution, by Russell Lenth.
+
+[asa241](https://people.sc.fsu.edu/~jburkardt/f_src/asa241/asa241.html) computes the inverse of the Normal Cumulative Density Function (CDF), by Michael Wichura.
+
+[asa243](https://people.sc.fsu.edu/~jburkardt/f_src/asa243/asa243.html) computes the cumulative density function (CDF) of the noncentral Student's T probability density function, by Russell Lenth.
+
+[asa266](https://people.sc.fsu.edu/~jburkardt/f_src/asa266/asa266.html) estimates the parameters of a Dirichlet probability density function (PDF).
+
+[asa310](https://people.sc.fsu.edu/~jburkardt/f_src/asa310/asa310.html) computes the cumulative density function (CDF) of the noncentral Beta distribution, by Chattamvelli and Shanmugam.
+
+[beta_nc](https://people.sc.fsu.edu/~jburkardt/f_src/beta_nc/beta_nc.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta distribution.
+
+[cdflib](https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html) evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
+
+[owens](https://people.math.sc.edu/Burkardt/f_src/owens/owens.html) evaluates Owen's T function.
+
+[prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
+
+# Uniform Random Number Generation
+
+[asa183](https://people.sc.fsu.edu/~jburkardt/f_src/asa183/asa183.html) random number generator (RNG), by Wichman and Hill.
+
+[randlc](https://people.sc.fsu.edu/~jburkardt/f_src/randlc/randlc.html) random number generator (RNG) used by the NAS Parallel Benchmarks.
+
+[random_sorted](https://people.sc.fsu.edu/~jburkardt/f_src/random_sorted/random_sorted.html) create a vector of random values which are already sorted.
+
+[rnglib](https://people.sc.fsu.edu/~jburkardt/f_src/rnglib/rnglib.html) random number generators (RNG's) which can generate one or more streams of random numbers.
+
+[uniform](https://people.sc.fsu.edu/~jburkardt/f_src/uniform/uniform.html) random number generator is based on a simple, old, and limited linear congruential random number generator originally used in the IBM System 360.
+
+# Non-uniform Random Number Generation
+
+[asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
+
+[pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
+
+[ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
+
+[wishart](https://people.sc.fsu.edu/~jburkardt/f_src/wishart/wishart.html) produces sample matrices from the Wishart or Bartlett distributions, useful for sampling random covariance matrices.
+
+[ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
+
+# Root-finding
+
+[bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
+
+[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
+
+[brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
+
+[test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
+
+[zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
+
+[zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
+
+# Special Functions
+
+[asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
+
+[asa239](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) evaluates the incomplete Gamma function, by Shea.
+
+[besselj](https://people.sc.fsu.edu/~jburkardt/f_src/besselj/besselj.html) evaluates Bessel J functions of noninteger order.
+
+[cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
+
+[fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
+
+[specfun](https://people.sc.fsu.edu/~jburkardt/f_src/specfun/specfun.html) evaluates special functions, including Bessel I, J, K and Y functions, Dawson Integral, Error (Erf), Exponential Integral (E1 and EI), Gamma, log Gamma, and Psi/Digamma, by William Cody and Laura Stoltz.
+
+[special_functions](https://people.sc.fsu.edu/~jburkardt/f_src/special_functions/special_functions.html) evaluates special functions, including Airy, Associated Legendre Bessel, Beta, Complete Elliptic Integral, Confluent Hypergeometric, Cosine Integral, Elliptic Integral, Error, Exponential Integral, Fresnel Integral, Gamma, Hankel, Hypergeometric, Incomplete Beta, Incomplete Gamma, Jacobian Elliptic, Kelvin, Lambda, Legendre, Mathieu, Modified Spherical Bessel, Parabolic Cylinder, Psi, Riccati-Bessel, Sine Integral, Spheroidal Wave, Struve, Whittaker, as well as Bernoulli Numbers, Euler Numbers, Hermite Polynomials, Laguerre Polynomials, Legendre Polynomials, by Shanjie Zhang, Jianming Jin.
+
+[toms435](https://people.sc.fsu.edu/~jburkardt/f77_src/toms435/toms435.html) evaluates the modified incomplete Gamma function.
+
+[toms708](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) computes the Incomplete Beta Function ratio.
+
+[toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
 # Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
@@ -280,62 +336,6 @@ Constrained to a Hyper-Rectangle.
 [toms655](https://people.math.sc.edu/Burkardt/f_src/toms655/toms655.html) computes weights for interpolatory quadrature schemes, by Sylvan Elhay and Jaroslav Kautsky.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
-
-# Probability Distributions
-
-[asa005](https://people.sc.fsu.edu/~jburkardt/f_src/asa005/asa005.html) evaluates the lower tail of the noncentral student's T cumulative density function (CDF), by BE Cooper.
-
-[asa066](https://people.sc.fsu.edu/~jburkardt/f_src/asa066/asa066.html) computes the cumulative density function (CDF) of the standard normal distribution, by David Hill.
-
-[asa076](https://people.sc.fsu.edu/~jburkardt/f_src/asa076/asa076.html) evaluates Owen's T function, by Young and Minder. The function T(h, a) gives the probability of the event (X > h and 0 < Y < aX) where X and Y are independent standard normal random variables.
-
-[asa091](https://people.sc.fsu.edu/~jburkardt/f_src/asa091/asa091.html) computes the percentage points of the Chi-Squared probability density function, by Best and Roberts.
-
-[asa111](https://people.sc.fsu.edu/~jburkardt/f_src/asa111/asa111.html) computes the percentage points of the normal probability density function, by Beasley and Springer.
-
-[asa152](https://people.sc.fsu.edu/~jburkardt/f_src/asa152/asa152.html) computes the cumulative probabilities associated with the hypergeometric probability distribution, by Richard Lund.
-
-[asa226](https://people.sc.fsu.edu/~jburkardt/f_src/asa226/asa226.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta Distribution, by Russell Lenth.
-
-[asa241](https://people.sc.fsu.edu/~jburkardt/f_src/asa241/asa241.html) computes the inverse of the Normal Cumulative Density Function (CDF), by Michael Wichura.
-
-[asa243](https://people.sc.fsu.edu/~jburkardt/f_src/asa243/asa243.html) computes the cumulative density function (CDF) of the noncentral Student's T probability density function, by Russell Lenth.
-
-[asa266](https://people.sc.fsu.edu/~jburkardt/f_src/asa266/asa266.html) estimates the parameters of a Dirichlet probability density function (PDF).
-
-[asa310](https://people.sc.fsu.edu/~jburkardt/f_src/asa310/asa310.html) computes the cumulative density function (CDF) of the noncentral Beta distribution, by Chattamvelli and Shanmugam.
-
-[beta_nc](https://people.sc.fsu.edu/~jburkardt/f_src/beta_nc/beta_nc.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta distribution.
-
-[cdflib](https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html) evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
-
-[owens](https://people.math.sc.edu/Burkardt/f_src/owens/owens.html) evaluates Owen's T function.
-
-[prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
-
-# Uniform Random Number Generation
-
-[asa183](https://people.sc.fsu.edu/~jburkardt/f_src/asa183/asa183.html) random number generator (RNG), by Wichman and Hill.
-
-[randlc](https://people.sc.fsu.edu/~jburkardt/f_src/randlc/randlc.html) random number generator (RNG) used by the NAS Parallel Benchmarks.
-
-[random_sorted](https://people.sc.fsu.edu/~jburkardt/f_src/random_sorted/random_sorted.html) create a vector of random values which are already sorted.
-
-[rnglib](https://people.sc.fsu.edu/~jburkardt/f_src/rnglib/rnglib.html) random number generators (RNG's) which can generate one or more streams of random numbers.
-
-[uniform](https://people.sc.fsu.edu/~jburkardt/f_src/uniform/uniform.html) random number generator is based on a simple, old, and limited linear congruential random number generator originally used in the IBM System 360.
-
-# Non-uniform Random Number Generation
-
-[asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
-
-[pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
-
-[ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
-
-[wishart](https://people.sc.fsu.edu/~jburkardt/f_src/wishart/wishart.html) produces sample matrices from the Wishart or Bartlett distributions, useful for sampling random covariance matrices.
-
-[ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
 
 # Quasirandom Number Generation
 
