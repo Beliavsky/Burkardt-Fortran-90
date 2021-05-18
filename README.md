@@ -137,6 +137,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [hankel_pds](https://people.math.sc.edu/Burkardt/f_src/hankel_pds/hankel_pds.html) computes a lower triangular matrix L which is the Cholesky factor of a positive definite (symmetric) Hankel matrix H, that is, H = L * L'.
 
+[matrix_exponential](https://people.math.sc.edu/Burkardt/f_src/matrix_exponential/matrix_exponential.html) compares some algorithms for approximating the matrix exponential function.
+
 [sparsekit](https://people.math.sc.edu/Burkardt/f_src/sparsekit/sparsekit.html) carries out a number of operations on sparse matrices, particularly conversion between various sparse formats.
 
 [toeplitz_cholesky](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz_cholesky/toeplitz_cholesky.html) computes the Cholesky factorization of a positive semidefinite symmetric (PSS) Toeplitz matrix.
