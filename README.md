@@ -276,42 +276,6 @@ Constrained to a Hyper-Rectangle.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
 
-# Root-finding
-
-[bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
-
-[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
-
-[brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
-
-[test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
-
-[zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
-
-[zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
-
-# Special Functions
-
-[asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
-
-[asa239](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) evaluates the incomplete Gamma function, by Shea.
-
-[besselj](https://people.sc.fsu.edu/~jburkardt/f_src/besselj/besselj.html) evaluates Bessel J functions of noninteger order.
-
-[cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
-
-[fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
-
-[specfun](https://people.sc.fsu.edu/~jburkardt/f_src/specfun/specfun.html) evaluates special functions, including Bessel I, J, K and Y functions, Dawson Integral, Error (Erf), Exponential Integral (E1 and EI), Gamma, log Gamma, and Psi/Digamma, by William Cody and Laura Stoltz.
-
-[special_functions](https://people.sc.fsu.edu/~jburkardt/f_src/special_functions/special_functions.html) evaluates special functions, including Airy, Associated Legendre Bessel, Beta, Complete Elliptic Integral, Confluent Hypergeometric, Cosine Integral, Elliptic Integral, Error, Exponential Integral, Fresnel Integral, Gamma, Hankel, Hypergeometric, Incomplete Beta, Incomplete Gamma, Jacobian Elliptic, Kelvin, Lambda, Legendre, Mathieu, Modified Spherical Bessel, Parabolic Cylinder, Psi, Riccati-Bessel, Sine Integral, Spheroidal Wave, Struve, Whittaker, as well as Bernoulli Numbers, Euler Numbers, Hermite Polynomials, Laguerre Polynomials, Legendre Polynomials, by Shanjie Zhang, Jianming Jin.
-
-[toms435](https://people.sc.fsu.edu/~jburkardt/f77_src/toms435/toms435.html) evaluates the modified incomplete Gamma function.
-
-[toms708](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) computes the Incomplete Beta Function ratio.
-
-[toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
-
 # Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
 
@@ -398,6 +362,42 @@ Constrained to a Hyper-Rectangle.
 [sobol](https://people.math.sc.edu/Burkardt/f_src/sobol/sobol.html) Sobol quasirandom sequence, by Bennett Fox.
 
 [van_der_corput](https://people.math.sc.edu/Burkardt/f_src/van_der_corput/van_der_corput.html) van der Corput Quasi Monte Carlo (QMC) sequence, using a simple interface.
+
+# Root-finding
+
+[bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
+
+[bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
+
+[brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
+
+[test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
+
+[zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
+
+[zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
+
+# Special Functions
+
+[asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
+
+[asa239](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) evaluates the incomplete Gamma function, by Shea.
+
+[besselj](https://people.sc.fsu.edu/~jburkardt/f_src/besselj/besselj.html) evaluates Bessel J functions of noninteger order.
+
+[cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
+
+[fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
+
+[specfun](https://people.sc.fsu.edu/~jburkardt/f_src/specfun/specfun.html) evaluates special functions, including Bessel I, J, K and Y functions, Dawson Integral, Error (Erf), Exponential Integral (E1 and EI), Gamma, log Gamma, and Psi/Digamma, by William Cody and Laura Stoltz.
+
+[special_functions](https://people.sc.fsu.edu/~jburkardt/f_src/special_functions/special_functions.html) evaluates special functions, including Airy, Associated Legendre Bessel, Beta, Complete Elliptic Integral, Confluent Hypergeometric, Cosine Integral, Elliptic Integral, Error, Exponential Integral, Fresnel Integral, Gamma, Hankel, Hypergeometric, Incomplete Beta, Incomplete Gamma, Jacobian Elliptic, Kelvin, Lambda, Legendre, Mathieu, Modified Spherical Bessel, Parabolic Cylinder, Psi, Riccati-Bessel, Sine Integral, Spheroidal Wave, Struve, Whittaker, as well as Bernoulli Numbers, Euler Numbers, Hermite Polynomials, Laguerre Polynomials, Legendre Polynomials, by Shanjie Zhang, Jianming Jin.
+
+[toms435](https://people.sc.fsu.edu/~jburkardt/f77_src/toms435/toms435.html) evaluates the modified incomplete Gamma function.
+
+[toms708](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) computes the Incomplete Beta Function ratio.
+
+[toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
 # Statistics
 
