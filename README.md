@@ -137,9 +137,17 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [bvls](https://people.sc.fsu.edu/~jburkardt/f_src/bvls/bvls.html) solves a least squares problem with bounds on the variables, by Charles Lawson and Richard Hanson.
 
+[cg](https://people.sc.fsu.edu/~jburkardt/f_src/cg/cg.html) simple version of the conjugate gradient (CG) method for solving a system of linear equations of the form A*x=b, suitable for situations in which the matrix A is positive definite (only real, positive eigenvalues) and symmetric.
+
+[cg_rc](https://people.sc.fsu.edu/~jburkardt/f_src/cg_rc/cg_rc.html) conjugate gradient (CG) method for solving a positive definite sparse linear system A*x=b, using reverse communication (RC).
+
+[jacobi](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi/jacobi.html) Jacobi iteration for linear systems.
+
 [lawson](https://people.math.sc.edu/Burkardt/f77_src/lawson/lawson.html) solve least squares problems.
 
 [linpack](https://people.math.sc.edu/Burkardt/f_src/linpack/linpack.html) analyze and solve linear equations and linear least-squares problems.
+
+[mgmres](https://people.sc.fsu.edu/~jburkardt/f_src/mgmres/mgmres.html) restarted Generalized Minimum Residual (GMRES) algorithm to solve a sparse linear system, using compressed row (CR) or sparse triplet (ST) format, by Lili Ju.
 
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
 
