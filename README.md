@@ -139,6 +139,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [hankel_pds](https://people.math.sc.edu/Burkardt/f_src/hankel_pds/hankel_pds.html) computes a lower triangular matrix L which is the Cholesky factor of a positive definite (symmetric) Hankel matrix H, that is, H = L * L'.
 
+[lapack_d](https://people.sc.fsu.edu/~jburkardt/f_src/lapack_d/lapack_d.html) routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems.
+
 [matrix_exponential](https://people.math.sc.edu/Burkardt/f_src/matrix_exponential/matrix_exponential.html) compares some algorithms for approximating the matrix exponential function.
 
 [sparsekit](https://people.math.sc.edu/Burkardt/f_src/sparsekit/sparsekit.html) carries out a number of operations on sparse matrices, particularly conversion between various sparse formats.
