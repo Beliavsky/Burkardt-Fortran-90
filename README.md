@@ -143,11 +143,17 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
 
-# Nonlinear Equations
+# Nonlinear Equations and Nonlinear Least Squares
 
 [dqed](https://people.math.sc.edu/Burkardt/f_src/dqed/dqed.html) solves (square) systems of nonlinear equations, or minimizes the residual in a set of nonlinear equations, using least squares, by Richard Hanson and Fred Krogh.
 
+[fsolve](https://people.sc.fsu.edu/~jburkardt/f_src/fsolve/fsolve.html) solves systems of nonlinear equations, inspired by the fsolve() function in MATLAB, and based on the minpack() minimization package.
+
+[minpack](https://people.sc.fsu.edu/~jburkardt/f_src/minpack/minpack.html) solves systems of nonlinear equations, or carries out the least squares minimization of the residual of a set of linear or nonlinear equations, by Jorge More, Danny Sorenson, Burton Garbow, Kenneth Hillstrom.
+
 [newton_rc](https://people.sc.fsu.edu/~jburkardt/f_src/newton_rc/newton_rc.html) solves a system of nonlinear equations by Newton's method, using reverse communication (RC).
+
+[nl2sol](https://people.math.sc.edu/Burkardt/f_src/nl2sol/nl2sol.html) implements an adaptive nonlinear least-squares algorithm, by John Dennis, David Gay, Roy Welsch.
 
 [roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
 
@@ -193,6 +199,18 @@ Constrained to a Hyper-Rectangle.
 [toms611](https://github.com/johannesgerer/jburkardt-f/tree/master/toms611) minimizes a scalar functional of multiple variables.
 
 [uncmin](https://people.math.sc.edu/Burkardt/f77_src/uncmin/uncmin.html) seeks to minimize a scalar function of N variables.
+
+# Ordinary Differential Equations
+
+[etdrk4](https://people.sc.fsu.edu/~jburkardt/f_src/etdrk4/etdrk4.html) uses the ETD RK4 method to solve systems of stiff ODE's, by Aly-Khan Kassam, Lloyd Trefethen.
+
+[euler](https://people.sc.fsu.edu/~jburkardt/f_src/euler/euler.html) solves one or more ordinary differential equations (ODEs) using the forward Euler method.
+
+[midpoint_explicit](https://people.sc.fsu.edu/~jburkardt/f_src/midpoint_explicit/midpoint_explicit.html) solves one or more ordinary differential equations (ODE) using the (explicit) midpoint method, also known as the modified Euler method.
+
+[ode](https://people.sc.fsu.edu/~jburkardt/f_src/ode/ode.html) solves a system of ordinary differential equations (ODE), by Shampine and Gordon.
+
+[rk4](https://people.sc.fsu.edu/~jburkardt/f_src/rk4/rk4.html) implements a simple Runge-Kutta solver for an initial value problem.
 
 # Probability Distributions
 
