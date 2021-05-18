@@ -18,11 +18,44 @@ Classification of John Burkardt's many Fortran 90 codes
 
 [bivar](https://people.sc.fsu.edu/~jburkardt/f_src/bivar/bivar.html) interpolates scattered bivariate data, by Hiroshi Akima.
 
+[chebyshev](https://people.math.sc.edu/Burkardt/f_src/chebyshev/chebyshev.html) constructs the Chebyshev interpolant to a function.
+
+[chebyshev_interp_1d](https://people.math.sc.edu/Burkardt/f_src/chebyshev_interp_1d/chebyshev_interp_1d.html) determines the combination of Chebyshev polynomials which interpolates a set of data, so that p(x(i)) = y(i).
+
+[chebyshev_series](https://people.math.sc.edu/Burkardt/f_src/chebyshev_series/chebyshev_series.html) evaluate a Chebyshev series approximating a function f(x), while efficiently computing one, two or three derivatives of the series, which approximate f'(x), f''(x), and f'''(x), by Manfred Zimmer.
+
 [divdif](https://people.math.sc.edu/Burkardt/f_src/divdif/divdif.html) creates, prints and manipulates divided difference polynomials based on data tabulated at evenly spaced or unevenly spaced argument values.
 
 [hermite](https://people.math.sc.edu/Burkardt/f_src/hermite/hermite.html) constructs the Hermite polynomial which interpolates function and derivative values at given points.
 
 [interp](https://people.math.sc.edu/Burkardt/f_src/interp/interp.html) takes a set of data associated with successive values of a parameter, and produces an interpolating function which can be evaluated over a continuous range of the parameter.
+
+[lagrange_interp_1d](https://people.math.sc.edu/Burkardt/f_src/lagrange_interp_1d/lagrange_interp_1d.html) defines and evaluates the Lagrange polynomial p(x) which interpolates a set of data, so that p(x(i)) = y(i).
+
+[lagrange_interp_2d](https://people.math.sc.edu/Burkardt/f_src/lagrange_interp_2d/lagrange_interp_2d.html) defines and evaluates the Lagrange polynomial p(x,y) which interpolates a set of data depending on a 2D argument that was evaluated on a product grid, so that p(x(i),y(j)) = z(i,j).
+
+[lagrange_interp_nd](https://people.math.sc.edu/Burkardt/f_src/lagrange_interp_nd/lagrange_interp_nd.html) defines and evaluates the Lagrange polynomial p(x) which interpolates a set of data depending on a M-dimensional argument that was evaluated on a product grid, so that p(x(i)) = z(i).
+
+[lagrange_nd](https://people.math.sc.edu/Burkardt/f_src/lagrange_nd/lagrange_nd.html) given a set of ND points X(*) in D-dimensional space, constructs a family of ND Lagrange polynomials P(*)(X), associating polynomial P(i) with point X(i), such that, for 1 <= i <= ND, P(i)(X(i)) = 1
+but, if i =/= j P(i)(X(j)) = 0
+
+[nearest_interp_1d](https://people.math.sc.edu/Burkardt/f_src/nearest_interp_1d/nearest_interp_1d.html) interpolates a set of data using a piecewise constant interpolant defined by the nearest neighbor criterion, creating graphics files for processing by GNUPLOT.
+
+[sparse_interp_nd](https://people.math.sc.edu/Burkardt/f_src/sparse_interp_nd/sparse_interp_nd.html) construct a sparse interpolant to a function f(x) of a multidimensional argument x.
+
+[test_interp_nd](https://people.math.sc.edu/Burkardt/f_src/test_interp_nd/test_interp_nd.html) rovides test functions for multidimensional interpolation.
+
+[toms446](https://people.math.sc.edu/Burkardt/f_src/toms446/toms446.html) implements ACM TOMS algorithm 446, for the manipulation of Chebyshev series, by Roger Broucke.
+
+[toms526](https://people.math.sc.edu/Burkardt/f_src/toms526/toms526.html) interpolates scattered bivariate data, by Hiroshi Akima.
+
+[toms660](https://people.math.sc.edu/Burkardt/f_src/toms660/toms660.html) interpolates scattered 2D data, also called "qshep2d", by Robert Renka.
+
+[toms661](https://people.math.sc.edu/Burkardt/f_src/toms661/toms661.html) interpolates scattered 3D data, also known as "qshep3d", by Robert Renka.
+
+[toms790](https://people.sc.fsu.edu/~jburkardt/f_src/bivar/bivar.html) constructs an interpolant to scattered 2D data, by Robert Renka.
+
+[toms886](https://people.math.sc.edu/Burkardt/f_src/toms886/toms886.html) implements an interpolation procedure based on "Padua points", defined in the square [-1,+1]^2, whose interpolating power is especially good.
 
 # Numerical Methods -- general
 
