@@ -1,5 +1,47 @@
 Classification of John Burkardt's many Fortran 90 codes
 
+# Combinatorics
+
+[change_making](https://people.sc.fsu.edu/~jburkardt/f_src/change_making/change_making.html) considers the change making problem, in which a given sum is to be formed using coins of various denominations.
+
+[combo](https://people.sc.fsu.edu/~jburkardt/f_src/combo/combo.html) routines for ranking, unranking, enumerating and randomly selecting balanced sequences, cycles, graphs, Gray codes, subsets, partitions, permutations, restricted growth functions, Pruefer codes and trees.
+
+[lau_np](https://people.sc.fsu.edu/~jburkardt/f_src/lau_np/lau_np.html) implements heuristic algorithms for certain "hard" problems, by Hang Tong Lau.
+
+[partition_problem](https://people.sc.fsu.edu/~jburkardt/f_src/partition_problem/partition_problem.html) seeks solutions of the partition problem, splitting a set of integers into two subsets with equal sum.
+
+[subset_sum](https://people.sc.fsu.edu/~jburkardt/f_src/subset_sum/subset_sum.html) seeks solutions of the subset sum problem.
+
+[tsp_brute](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_brute/tsp_brute.html) solves small versions of the traveling salesman problem, using brute force.
+
+[tsp_lau](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_lau/tsp_lau.html) implements a heuristic algorithm for solution of the traveling salesman problem, by Hang Tong Lau.
+
+# Graph Algorithms
+
+[bellman_ford](https://people.sc.fsu.edu/~jburkardt/f_src/bellman_ford/bellman_ford.html) implements the Bellman-Ford algorithm for finding the shortest distance from a given node to all other nodes in a directed graph whose edges have been assigned real-valued lengths.
+
+[djikstra](https://people.sc.fsu.edu/~jburkardt/f_src/dijkstra/dijkstra.html) implements a simple version of Dijkstra's algorithm for determining the minimum distance from one node in a graph to all other nodes.
+
+[grafpack](https://people.sc.fsu.edu/~jburkardt/f_src/grafpack/grafpack.html) performs common calculations involving (abstract mathematical) graphs.
+
+[laupack](https://people.sc.fsu.edu/~jburkardt/f_src/laupack/laupack.html) computes properties of mathematical graphs, including Euler circuits, Hamiltonian circuits, cliques, strongly connected components, minimal spanning tree, chromatic number, shortest paths, maximal flow, and planarity.
+
+[toms097](https://people.math.sc.edu/Burkardt/f_src/toms097/toms097.html) computes the distance between all pairs of nodes in a directed graph with weighted edges, using Floyd's algorithm.
+
+# Cluster Analysis
+
+[asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
+
+[asa113](https://people.sc.fsu.edu/~jburkardt/f_src/asa113/asa113.html) divides M points in N dimensions into K clusters seeking the division which minimizes a user-defined criterion, by Banfield and Bassill.
+
+[cities](https://people.sc.fsu.edu/~jburkardt/f_src/cities/cities.html) works with problems involving intercity distances.
+
+[gene_cluster](https://people.sc.fsu.edu/~jburkardt/f_src/gene_cluster/gene_cluster.html) divides a set of genetic data into clusters.
+
+[kmeans](https://people.sc.fsu.edu/~jburkardt/f_src/kmeans/kmeans.html) handles the K-Means problem, which organizes a set of N points in M dimensions into K clusters
+
+[spaeth](https://people.math.sc.edu/Burkardt/f_src/spaeth/spaeth.html) analyzes data by grouping it into clusters.
+
 # Special Functions
 
 [cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
