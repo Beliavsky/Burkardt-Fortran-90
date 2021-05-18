@@ -1,23 +1,6 @@
 Classification of John Burkardt's many Fortran 90 codes into the categories
 
-cluster analysis
-combinatorics
-eigenvalues
-graph algorithms
-interpolation and approximation
-linear algebra
-linear equations
-nonlinear equations and nonlinear least squares
-non-uniform random number generation
-numerical methods – general
-optimization – one-dimensional
-optimization
-ordinary differential equations
-probability distributions
-root-finding
-special functions
-quadrature
-quasirandom number generation
+cluster analysis. combinatorics, eigenvalues, graph algorithms, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, quadrature, quasirandom number generation
 uniform random number generation
 
 # Cluster Analysis
