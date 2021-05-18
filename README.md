@@ -133,7 +133,13 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [condition](https://people.sc.fsu.edu/~jburkardt/f_src/condition/condition.html) computes or estimates the condition number of a matrix.
 
+[hankel_cholesky](https://people.sc.fsu.edu/~jburkardt/f_src/hankel_cholesky/hankel_cholesky.html) compute the upper Cholesky factor of a positive definite symmetric (PDS) Hankel matrix H, that is, H = R' * R.
+
+[hankel_pds](https://people.math.sc.edu/Burkardt/f_src/hankel_pds/hankel_pds.html) computes a lower triangular matrix L which is the Cholesky factor of a positive definite (symmetric) Hankel matrix H, that is, H = L * L'.
+
 [sparsekit](https://people.math.sc.edu/Burkardt/f_src/sparsekit/sparsekit.html) carries out a number of operations on sparse matrices, particularly conversion between various sparse formats.
+
+[toeplitz_cholesky](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz_cholesky/toeplitz_cholesky.html) computes the Cholesky factorization of a positive semidefinite symmetric (PSS) Toeplitz matrix.
 
 # Linear Equations
 
@@ -156,6 +162,12 @@ but, if i =/= j P(i)(X(j)) = 0
 [qr_solve](https://people.sc.fsu.edu/~jburkardt/f_src/qr_solve/qr_solve.html) computes a linear least squares (LLS) solution of a system A*x=b.
 
 [sparsepak](https://people.math.sc.edu/Burkardt/f_src/sparsepak/sparsepak.html) old version of the Waterloo Sparse Matrix Package that solves large sparse systems of linear equations.
+
+[superlu_test](https://people.math.sc.edu/Burkardt/f_src/superlu_test/superlu_test.html) illustrate the use of the SUPERLU library for the fast direct solution of large sparse systems of linear equations.
+
+[templates](https://people.math.sc.edu/Burkardt/f_src/templates/templates.html) outlines the most common iterative methods of solving a linear system.
+
+[toeplitz](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz/toeplitz.html) olves a variety of Toeplitz and circulant linear systems.
 
 # Nonlinear Equations and Nonlinear Least Squares
 
