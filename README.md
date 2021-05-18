@@ -317,8 +317,6 @@ Constrained to a Hyper-Rectangle.
 
 [line_nco_rule](https://people.sc.fsu.edu/~jburkardt/f_src/line_nco_rule/line_nco_rule.html) computes a Newton Cotes Open (nco) quadrature rule, using equally spaced points, over the interior of a line segment in 1d.
 
-[nintlib](https://people.sc.fsu.edu/~jburkardt/f_src/nintlib/nintlib.html) estimates integrals over multi-dimensional regions.
-
 [patterson_rule](https://people.sc.fsu.edu/~jburkardt/f_src/patterson_rule/patterson_rule.html) returns the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
 
 [patterson_rule_compute](https://people.math.sc.edu/Burkardt/f_src/patterson_rule_compute/patterson_rule_compute.html) computes the points and weights of a 1d Gauss-Patterson quadrature rule of order 1, 3, 7, 15, 31, 63, 127, 255 or 511.
@@ -346,6 +344,64 @@ Constrained to a Hyper-Rectangle.
 [toms655](https://people.math.sc.edu/Burkardt/f_src/toms655/toms655.html) computes weights for interpolatory quadrature schemes, by Sylvan Elhay and Jaroslav Kautsky.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
+
+# Quadrature -- multi-dimensional
+
+[ball_integrals](https://people.math.sc.edu/Burkardt/f_src/ball_integrals/ball_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit ball in 3d.
+
+[circle_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/circle_integrals/circle_integrals.html) returns the exact value of the integral of any monomial along the circumference of the unit circle in 2D.
+
+[circle_monte_carlo](https://people.math.sc.edu/Burkardt/f_src/circle_monte_carlo/circle_monte_carlo.html) uses the Monte Carlo method to estimate the integral of a function over the circumference of the unit circle in 2d.
+
+[circle_rule](https://people.sc.fsu.edu/~jburkardt/f_src/circle_rule/circle_rule.html) computes quadrature rules for approximating integrals over the circumference of the unit circle.
+
+[cube_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/cube_felippa_rule/cube_felippa_rule.html) generates the points and weights of a Felippa quadrature rule over the interior of a cube in 3D.
+
+[cube_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/cube_integrals/cube_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit cube in 3d.
+
+[disk_rule](https://people.sc.fsu.edu/~jburkardt/f_src/disk_rule/disk_rule.html) computes quadrature rules for approximating integrals over the interior of the general disk in 2D.
+
+[disk01_integrals](https://people.math.sc.edu/Burkardt/f_src/disk01_integrals/disk01_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit disk in 2d.
+
+hyperball_integrals() returns the exact value of the integral of any monomial over the interior of the unit hyperball in m dimensions.
+
+hypercube_integrals() returns the exact value of the integral of any monomial over the interior of the unit hypercube in m dimensions.
+
+hypersphere_integrals() returns the exact value of the integral of any monomial over the surface of the unit hypersphere in m dimensions.
+
+line_integrals() returns the exact value of the integral of any monomial over the length of the unit line in 1d.
+
+[nintlib](https://people.sc.fsu.edu/~jburkardt/f_src/nintlib/nintlib.html) estimates integrals over multi-dimensional regions.
+
+polygon_integrals() returns the exact value of the integral of any monomial over the interior of a polygon in 2d.
+
+[pyramid_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/pyramid_felippa_rule/pyramid_felippa_rule.html) returns Felippa quadrature rules over the interior of the unit pyramid in 3D.
+
+[pyramid_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/pyramid_integrals/pyramid_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit pyramid in 3d.
+
+[simplex_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/simplex_integrals/simplex_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit simplex in m dimensions.
+
+[sphere_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/sphere_integrals/sphere_integrals.html) returns the exact value of the integral of any monomial over the surface of the unit sphere in 3d.
+
+[sphere_lebedev_rule](https://people.sc.fsu.edu/~jburkardt/f_src/sphere_lebedev_rule/sphere_lebedev_rule.html) computes Lebedev quadrature rules on the surface of the unit sphere in 3D.
+
+[sphere_quad](https://people.sc.fsu.edu/~jburkardt/f_src/sphere_quad/sphere_quad.html) estimates the integral of a scalar function F(X,Y,Z) over the surface of the unit sphere centered at the origin.
+
+[square_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/square_felippa_rule/square_felippa_rule.html) returns the points and weights of a Felippa quadrature rule over the interior of a square in 2D.
+
+[square_integrals](https://people.math.sc.edu/Burkardt/f_src/square_integrals/square_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit square in 2d.
+
+[tetrahedron_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/tetrahedron_felippa_rule/tetrahedron_felippa_rule.html) returns Felippa's quadratures rules for approximating integrals over the interior of a tetrahedron in 3D.
+
+[tetrahedron_integrals](https://people.math.sc.edu/Burkardt/f_src/tetrahedron_integrals/tetrahedron_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit tetrahedron in 3d.
+
+[triangle_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/triangle_felippa_rule/triangle_felippa_rule.html) returns Felippa's quadratures rules for approximating integrals over the interior of a triangle in 2D.
+
+[triangle_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/triangle_integrals/triangle_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit triangle in 2d.
+
+[wedge_felippa_rule](https://people.sc.fsu.edu/~jburkardt/f_src/wedge_felippa_rule/wedge_felippa_rule.html) returns quadratures rules for approximating integrals over the interior of the unit wedge in 3D.
+
+[wedge_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/wedge_integrals/wedge_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit wedge in 3d.
 
 # Quasirandom Number Generation
 
