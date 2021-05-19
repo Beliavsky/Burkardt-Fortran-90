@@ -22,6 +22,8 @@ cluster analysis. combinatorics, eigenvalues, graph algorithms, interpolation an
 
 [combo](https://people.sc.fsu.edu/~jburkardt/f_src/combo/combo.html) routines for ranking, unranking, enumerating and randomly selecting balanced sequences, cycles, graphs, Gray codes, subsets, partitions, permutations, restricted growth functions, Pruefer codes and trees.
 
+[knapsack_01](https://people.math.sc.edu/Burkardt/f_src/knapsack_01/knapsack_01.html) uses brute force to solve small versions of the 0/1 knapsack problem.
+
 [lau_np](https://people.sc.fsu.edu/~jburkardt/f_src/lau_np/lau_np.html) implements heuristic algorithms for certain "hard" problems, by Hang Tong Lau.
 
 [partial_digest](https://people.sc.fsu.edu/~jburkardt/f_src/partial_digest/partial_digest.html) 
@@ -65,6 +67,16 @@ cluster analysis. combinatorics, eigenvalues, graph algorithms, interpolation an
 [toms097](https://people.math.sc.edu/Burkardt/f_src/toms097/toms097.html) computes the distance between all pairs of nodes in a directed graph with weighted edges, using Floyd's algorithm.
 
 [treepack](https://people.math.sc.edu/Burkardt/f_src/treepack/treepack.html) performs common calculations involving a special kind of graph known as a tree.
+
+# Graphics
+
+[dislin_test](https://people.sc.fsu.edu/~jburkardt/f_src/dislin_test/dislin_test.html) illustrates the use of the DISLIN scientific plotting package.
+
+[graphics_dislin_test](https://people.sc.fsu.edu/~jburkardt/f_src/graphics_dislin_test/graphics_dislin_test.html) illustrates how various kinds of data can be displayed and analyzed graphically, using the dislin() graphics package.
+
+[graphics_gnuplot_test](https://people.sc.fsu.edu/~jburkardt/f_src/graphics_gnuplot_test/graphics_gnuplot_test.html) illustrate how various kinds of data can be displayed and analyzed graphically, using the gnuplot() graphics package.
+
+[gnufor](https://people.math.sc.edu/Burkardt/f_src/gnufor/gnufor.html) interface to the GNUPLOT plotting software.
 
 # Interpolation and Approximation
 
@@ -426,6 +438,8 @@ Constrained to a Hyper-Rectangle.
 [bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
 
 [brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
+
+[muller](https://people.sc.fsu.edu/~jburkardt/f_src/muller/muller.html) seeks a root of a nonlinear equation using Muller's method, with complex arithmetic.
 
 [test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
 
