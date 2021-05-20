@@ -1,6 +1,6 @@
 Classification of John Burkardt's many Fortran 90 codes into the categories
 
-cluster analysis. combinatorics, eigenvalues, graph algorithms, graphics, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, statistics, quadrature, quadrature -- multi-dimensional, quasirandom number generation, and uniform random number generation
+cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, graphics, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, statistics, quadrature, quadrature -- multi-dimensional, quasirandom number generation, and uniform random number generation
 
 # Cluster Analysis
 
@@ -53,6 +53,18 @@ cluster analysis. combinatorics, eigenvalues, graph algorithms, graphics, interp
 [test_eigen](https://people.math.sc.edu/Burkardt/f_src/test_eigen/test_eigen.html) Test Matrices for Eigenvalue Analysis.
 
 [toms384](https://people.math.sc.edu/Burkardt/f77_src/toms384/toms384.html) implements ACM TOMS algorithm 384, for computing the eigenvalues and eigenvectors of a symmetric matrix.
+
+# Fortran Tools
+
+[extract](https://people.math.sc.edu/Burkardt/f_src/f90split/f90split.html) extracts a subroutine, function or module by name from a FORTRAN file.
+
+[f77_to_f90](https://people.math.sc.edu/Burkardt/f_src/f77_to_f90/f77_to_f90.html) converts fixed source form to free source form.
+
+[fixcon](https://people.math.sc.edu/Burkardt/f_src/fixcon/fixcon.html) converts the line continuation scheme used in a FORTRAN77 file to that used in FORTRAN90 files.
+
+[include_files](https://people.math.sc.edu/Burkardt/f_src/f90split/f90split.html) makes a copy of a FORTRAN file, in which INCLUDE statements are replaced by the corresponding include files.
+
+[xerror](https://people.math.sc.edu/Burkardt/f_src/xerror/xerror.html) collects information about errors that occur during a program's execution, and takes the appropriate action, which may include printing a message, diverting to a user routine, or aborting execution of the program.
 
 # Graph Algorithms
 
