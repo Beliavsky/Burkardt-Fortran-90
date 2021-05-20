@@ -155,6 +155,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [matrix_exponential](https://people.math.sc.edu/Burkardt/f_src/matrix_exponential/matrix_exponential.html) compares some algorithms for approximating the matrix exponential function.
 
+[r8ge](https://people.sc.fsu.edu/~jburkardt/f_src/r8ge/r8ge.html) basic linear algebra operations on R8GE matrices (real 64 bit precision general MxN format). There is [r8lt](https://people.sc.fsu.edu/~jburkardt/f_src/r8lt/r8lt.html) for lower triangular and [r83](https://people.sc.fsu.edu/~jburkardt/f_src/r83/r83.html) for tridiagonal matrices.
+
 [sparsekit](https://people.math.sc.edu/Burkardt/f_src/sparsekit/sparsekit.html) carries out a number of operations on sparse matrices, particularly conversion between various sparse formats.
 
 [toeplitz_cholesky](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz_cholesky/toeplitz_cholesky.html) computes the Cholesky factorization of a positive semidefinite symmetric (PSS) Toeplitz matrix.
