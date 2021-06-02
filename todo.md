@@ -1,9 +1,9 @@
-Looking at [prob.f90](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.f90), one of his codes that I am trying to incorporate in my program, and his other codes, I would like to 
+Looking at [prob.f90](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.f90), one of Burkardt's codes that I am trying to incorporate in my program, and his other codes, I would like to 
 
 (1) change declarations such as 
 `real ( kind = 8 ) a` 
 to 
-`real(kind=real64) :: a`
+`real(kind=dp) :: a` with `dp` defined at the module level 
 
 (2) declare subroutines and functions to be PURE (most of the procedures he defines are PURE but are not declared as such)
 
@@ -18,3 +18,7 @@ appears many times in prob.f90
 (6) Replace bare end statements at the ends of procedures with `end function foo` or `end subroutine foo`
 
 (7) Find procedures that are defined many times across source files and collect them in a  utility module. For example there is a subroutine timestamp that is defined in hundreds of his source files.
+
+(8) Remove lines with only ! and spaces
+
+(9) Put licensing and author information each on one line at the top. Put modification date on one line in each procedure
