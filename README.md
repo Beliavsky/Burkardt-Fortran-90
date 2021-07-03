@@ -3,8 +3,14 @@ Classification of John Burkardt's many Fortran 90 codes into the categories
 cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, graphics, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, statistics, quadrature, quadrature -- multi-dimensional, quasirandom number generation, and uniform random number generation
 
 * [Cluster Analysis](#cluster-analysis)
+* [Combinatorics](#combinatorics)
+* [Eignevalues](#eigenvalues)
+* [Fortran tools](#fortran-tools)
+* [Graph algorithms](#graph-algorithms)
+* [Interpolation and Approximation](#interpolation-and-approximation)
+* [Linear Algebra](#linear-algebra)
 
-# Cluster Analysis
+## Cluster Analysis
 
 [asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
 
@@ -18,7 +24,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 [spaeth](https://people.math.sc.edu/Burkardt/f_src/spaeth/spaeth.html) analyzes data by grouping it into clusters.
 
-# Combinatorics
+## Combinatorics
 
 [change_making](https://people.sc.fsu.edu/~jburkardt/f_src/change_making/change_making.html) considers the change making problem, in which a given sum is to be formed using coins of various denominations.
 
@@ -42,7 +48,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 [tsp_lau](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_lau/tsp_lau.html) implements a heuristic algorithm for solution of the traveling salesman problem, by Hang Tong Lau.
 
-# Eigenvalues 
+## Eigenvalues 
 
 [arpack](https://people.math.sc.edu/Burkardt/f_src/arpack/arpack.html) computes eigenvalues and eigenvectors of large matrices, by Richard Lehoucq, Danny Sorensen, Chao Yang.
 
@@ -56,7 +62,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 [toms384](https://people.math.sc.edu/Burkardt/f77_src/toms384/toms384.html) implements ACM TOMS algorithm 384, for computing the eigenvalues and eigenvectors of a symmetric matrix.
 
-# Fortran Tools
+## Fortran Tools
 
 [extract](https://people.math.sc.edu/Burkardt/f_src/f90split/f90split.html) extracts a subroutine, function or module by name from a FORTRAN file.
 
@@ -68,7 +74,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 [xerror](https://people.math.sc.edu/Burkardt/f_src/xerror/xerror.html) collects information about errors that occur during a program's execution, and takes the appropriate action, which may include printing a message, diverting to a user routine, or aborting execution of the program.
 
-# Graph Algorithms
+## Graph Algorithms
 
 [bellman_ford](https://people.sc.fsu.edu/~jburkardt/f_src/bellman_ford/bellman_ford.html) implements the Bellman-Ford algorithm for finding the shortest distance from a given node to all other nodes in a directed graph whose edges have been assigned real-valued lengths.
 
@@ -82,7 +88,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 [treepack](https://people.math.sc.edu/Burkardt/f_src/treepack/treepack.html) performs common calculations involving a special kind of graph known as a tree.
 
-# Graphics
+## Graphics
 
 [dislin_test](https://people.sc.fsu.edu/~jburkardt/f_src/dislin_test/dislin_test.html) illustrates the use of the DISLIN scientific plotting package.
 
@@ -92,7 +98,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 [gnufor](https://people.math.sc.edu/Burkardt/f_src/gnufor/gnufor.html) interface to the GNUPLOT plotting software.
 
-# Interpolation and Approximation
+## Interpolation and Approximation
 
 [barycentric_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/barycentric_interp_1d/barycentric_interp_1d.html) defines and evaluates the Lagrange polynomial p(x) which interpolates a set of data, so that p(x(i)) = y(i).
 
@@ -155,7 +161,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [toms886](https://people.math.sc.edu/Burkardt/f_src/toms886/toms886.html) implements an interpolation procedure based on "Padua points", defined in the square [-1,+1]^2, whose interpolating power is especially good.
 
-# Linear Algebra
+## Linear Algebra
 
 [blas](https://people.math.sc.edu/Burkardt/f_src/blas/blas.html) Basic Linear Algebra Subprograms.
 
