@@ -1,4 +1,4 @@
-# Classification of John Burkardt's many Fortran 90 codes
+# Fortran 90 codes of John Burkardt by category
 
 * [Cluster Analysis](#cluster-analysis)
 * [Combinatorics](#combinatorics)
