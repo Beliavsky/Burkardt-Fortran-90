@@ -12,7 +12,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 * [Linear Equations](#linear-equations)
 * [Nonlinear Equations and Nonlinear Least Squares](#nonlinear-equations-and-nonlinear-least-squares)
 * [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
-* [Numerical Methods – general](#numerical-methods–-general)
+* [Numerical Methods](#numerical-methods)
 
 ## Cluster Analysis
 
@@ -241,7 +241,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
 
-# Numerical Methods -- general
+# Numerical Methods
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
 
