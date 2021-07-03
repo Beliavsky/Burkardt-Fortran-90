@@ -13,7 +13,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 * [Nonlinear Equations and Nonlinear Least Squares](#nonlinear-equations-and-nonlinear-least-squares)
 * [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
 * [Numerical Methods](#numerical-methods)
-* [Optimization -- One-Dimensional](#Optimization -- One-Dimensional)
+* [Optimization -- 1D](#Optimization-1D)
 
 ## Cluster Analysis
 
@@ -248,7 +248,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [slatec](https://people.math.sc.edu/Burkardt/f_src/slatec/slatec.html) general purpose mathematical and statistical routines.
 
-# Optimization -- One-Dimensional
+# Optimization-1D
 
 [local_min_rc](https://people.math.sc.edu/Burkardt/f_src/local_min_rc/local_min_rc.html) seeks a local minimum of a scalar function of a scalar variable, without requiring derivatives, or assuming the function is differentiable, using reverse communication (RC), by Richard Brent.
 
