@@ -14,6 +14,16 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 * [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
 * [Numerical Methods](#numerical-methods)
 * [Optimization -- 1D](#Optimization-1D)
+* [Optimization](#Optimization)
+* [Ordinary Differential Equations](#ordinary-differential-equations)
+* [Probability Distributions](#probability-distributions)
+* [Root-Finding](#root-finding)
+* [Special functions](#special-functions)
+* [Statistics](#statistics)
+* [Quadrature](#quadrature)
+* [Quadrature-N-Dimensional](#quadrature-n-dimensional)
+* [Quasirandom Number Generation](#quasirandom-number-generation)
+* [Uniform Random Number Generation](#uniform-random-number-generation)
 
 ## Cluster Analysis
 
@@ -186,7 +196,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [toeplitz_cholesky](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz_cholesky/toeplitz_cholesky.html) computes the Cholesky factorization of a positive semidefinite symmetric (PSS) Toeplitz matrix.
 
-# Linear Equations
+## Linear Equations
 
 [bvls](https://people.sc.fsu.edu/~jburkardt/f_src/bvls/bvls.html) solves a least squares problem with bounds on the variables, by Charles Lawson and Richard Hanson.
 
@@ -214,7 +224,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [toeplitz](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz/toeplitz.html) olves a variety of Toeplitz and circulant linear systems.
 
-# Nonlinear Equations and Nonlinear Least Squares
+## Nonlinear Equations and Nonlinear Least Squares
 
 [dqed](https://people.math.sc.edu/Burkardt/f_src/dqed/dqed.html) solves (square) systems of nonlinear equations, or minimizes the residual in a set of nonlinear equations, using least squares, by Richard Hanson and Fred Krogh.
 
@@ -228,7 +238,7 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [roots_rc](https://people.math.sc.edu/Burkardt/f_src/roots_rc/roots_rc.html) seeks solutions of a system of nonlinear equations, using reverse communication (RC), by Gaston Gonnet.
 
-# Non-uniform Random Number Generation
+## Non-uniform Random Number Generation
 
 [asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
 
@@ -242,19 +252,19 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
 
-# Numerical Methods
+## Numerical Methods
 
 [nms](https://people.sc.fsu.edu/~jburkardt/f_src/nms/nms.html) accompanies the text "Numerical Methods and Software".
 
 [slatec](https://people.math.sc.edu/Burkardt/f_src/slatec/slatec.html) general purpose mathematical and statistical routines.
 
-# Optimization-1D
+## Optimization-1D
 
 [local_min_rc](https://people.math.sc.edu/Burkardt/f_src/local_min_rc/local_min_rc.html) seeks a local minimum of a scalar function of a scalar variable, without requiring derivatives, or assuming the function is differentiable, using reverse communication (RC), by Richard Brent.
 
 [test_min](https://people.math.sc.edu/Burkardt/f_src/test_min/test_min.html) defines problems involving the minimization of a scalar function of a scalar argument.
 
-# Optimization
+## Optimization
 
 [asa047](https://people.sc.fsu.edu/~jburkardt/f_src/asa047/asa047.html) minimize a scalar function of several variables using the Nelder-Mead algorithm, by R ONeill.
 
@@ -273,7 +283,7 @@ Constrained to a Hyper-Rectangle.
 
 [uncmin](https://people.math.sc.edu/Burkardt/f77_src/uncmin/uncmin.html) seeks to minimize a scalar function of N variables.
 
-# Ordinary Differential Equations
+## Ordinary Differential Equations
 
 [etdrk4](https://people.sc.fsu.edu/~jburkardt/f_src/etdrk4/etdrk4.html) uses the ETD RK4 method to solve systems of stiff ODE's, by Aly-Khan Kassam, Lloyd Trefethen.
 
@@ -285,7 +295,7 @@ Constrained to a Hyper-Rectangle.
 
 [rk4](https://people.sc.fsu.edu/~jburkardt/f_src/rk4/rk4.html) implements a simple Runge-Kutta solver for an initial value problem.
 
-# Probability Distributions
+## Probability Distributions
 
 [asa005](https://people.sc.fsu.edu/~jburkardt/f_src/asa005/asa005.html) evaluates the lower tail of the noncentral student's T cumulative density function (CDF), by BE Cooper.
 
@@ -317,7 +327,7 @@ Constrained to a Hyper-Rectangle.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
 
-# Quadrature
+## Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
 
 [ccn_rule](https://people.math.sc.edu/Burkardt/f_src/ccn_rule/ccn_rule.html) defines a nested Clenshaw Curtis quadrature rule.
@@ -388,7 +398,7 @@ Constrained to a Hyper-Rectangle.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
 
-# Quadrature -- multi-dimensional
+## Quadrature-N-Dimensional
 
 [ball_integrals](https://people.math.sc.edu/Burkardt/f_src/ball_integrals/ball_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit ball in 3d.
 
@@ -444,7 +454,7 @@ Constrained to a Hyper-Rectangle.
 
 [wedge_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/wedge_integrals/wedge_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit wedge in 3d.
 
-# Quasirandom Number Generation
+## Quasirandom Number Generation
 
 [faure](https://people.sc.fsu.edu/~jburkardt/f_src/faure/faure.html) Faure quasirandom sequence.
 
@@ -460,7 +470,7 @@ Constrained to a Hyper-Rectangle.
 
 [van_der_corput](https://people.math.sc.edu/Burkardt/f_src/van_der_corput/van_der_corput.html) van der Corput Quasi Monte Carlo (QMC) sequence, using a simple interface.
 
-# Root-finding
+## Root-finding
 
 [bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
 
@@ -476,7 +486,7 @@ Constrained to a Hyper-Rectangle.
 
 [zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
 
-# Special Functions
+## Special Functions
 
 [asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
 
@@ -498,11 +508,11 @@ Constrained to a Hyper-Rectangle.
 
 [toms715](https://people.math.sc.edu/Burkardt/f_src/toms715/toms715.html) evaluates special functions, including the Bessel I, J, K, and Y functions of order 0, of order 1, and of any real order, Dawson's integral, the error function, exponential integrals, the gamma function, the normal distribution function, the psi function.
 
-# Statistics
+## Statistics
 
 [starpac](https://people.math.sc.edu/Burkardt/f_src/starpac/starpac.html) nonlinear least squares regression, time series analysis (in both time and frequency domains), line printer graphics, basic statistical analysis, and linear least squares regression.
 
-# Uniform Random Number Generation
+## Uniform Random Number Generation
 
 [asa183](https://people.sc.fsu.edu/~jburkardt/f_src/asa183/asa183.html) random number generator (RNG), by Wichman and Hill.
 
