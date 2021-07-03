@@ -2,6 +2,8 @@ Classification of John Burkardt's many Fortran 90 codes into the categories
 
 cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, graphics, interpolation and approximation, linear algebra, linear equations, nonlinear equations and nonlinear least squares, non-uniform random number generation, numerical methods – general, optimization – one-dimensional, optimization, ordinary differential equations, probability distributions, root-finding, special functions, statistics, quadrature, quadrature -- multi-dimensional, quasirandom number generation, and uniform random number generation
 
+* [Cluster Analysis](#cluster-analysis)
+
 # Cluster Analysis
 
 [asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
