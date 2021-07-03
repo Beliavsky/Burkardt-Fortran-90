@@ -13,7 +13,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 * [Nonlinear Equations and Nonlinear Least Squares](#nonlinear-equations-and-nonlinear-least-squares)
 * [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
 * [Numerical Methods](#numerical-methods)
-* [Optimization -- One-Dimensional](# Optimization -- One-Dimensional)
+* [Optimization -- One-Dimensional](#Optimization -- One-Dimensional)
 
 ## Cluster Analysis
 
