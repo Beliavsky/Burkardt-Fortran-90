@@ -9,6 +9,10 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 * [Graph algorithms](#graph-algorithms)
 * [Interpolation and Approximation](#interpolation-and-approximation)
 * [Linear Algebra](#linear-algebra)
+* [Linear Equations](#linear-equations)
+* [Nonlinear Equations and Nonlinear Least Squares](#nonlinear-equations-and-nonlinear-least-squares)
+* [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
+
 
 ## Cluster Analysis
 
