@@ -12,7 +12,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 * [Linear Equations](#linear-equations)
 * [Nonlinear Equations and Nonlinear Least Squares](#nonlinear-equations-and-nonlinear-least-squares)
 * [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
-
+* [Numerical Methods – general](#numerical-methods–general)
 
 ## Cluster Analysis
 
