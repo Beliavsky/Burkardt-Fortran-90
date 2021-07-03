@@ -4,7 +4,7 @@ cluster analysis. combinatorics, eigenvalues, Fortran tools, graph algorithms, g
 
 * [Cluster Analysis](#cluster-analysis)
 * [Combinatorics](#combinatorics)
-* [Eignevalues](#eigenvalues)
+* [Eigenvalues](#eigenvalues)
 * [Fortran tools](#fortran-tools)
 * [Graph algorithms](#graph-algorithms)
 * [Interpolation and Approximation](#interpolation-and-approximation)
