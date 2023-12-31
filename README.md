@@ -391,6 +391,8 @@ Constrained to a Hyper-Rectangle.
 ## Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
 
+[cauchy_principal_value](https://people.sc.fsu.edu/~jburkardt/f_src/cauchy_principal_value/cauchy_principal_value.html): uses Gauss-Legendre quadrature to estimate the Cauchy Principal Value (CPV) of certain singular integrals.
+
 [ccn_rule](https://people.math.sc.edu/Burkardt/f_src/ccn_rule/ccn_rule.html) defines a nested Clenshaw Curtis quadrature rule.
 
 [chebyshev1_rule](https://people.sc.fsu.edu/~jburkardt/f_src/chebyshev1_rule/chebyshev1_rule.html) computes and prints a Gauss-Chebyshev type 1 quadrature rule.
