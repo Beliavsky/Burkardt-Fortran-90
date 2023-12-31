@@ -2,6 +2,7 @@
 
 * [Cluster Analysis](#cluster-analysis)
 * [Combinatorics](#combinatorics)
+* [Computational Geometry](#computational-geometry)
 * [Eigenvalues](#eigenvalues)
 * [Fortran tools](#fortran-tools)
 * [Graph algorithms](#graph-algorithms)
@@ -60,6 +61,60 @@
 [tsp_brute](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_brute/tsp_brute.html) solves small versions of the traveling salesman problem, using brute force.
 
 [tsp_lau](https://people.sc.fsu.edu/~jburkardt/f_src/tsp_lau/tsp_lau.html) implements a heuristic algorithm for solution of the traveling salesman problem, by Hang Tong Lau.
+
+## Computational Geometry
+
+[cvt_triangulation](https://people.math.sc.edu/Burkardt/f_src/cvt_triangulation/cvt_triangulation.html): applies Centroidal Voronoi Tessellation (CVT) methods to produce triangularizations of various test regions.
+
+[delaunay_lmap_2d](https://people.math.sc.edu/Burkardt/f_src/delaunay_lmap_2d/delaunay_lmap_2d.html): computes the Delaunay triangulation of a set of points in the plane that have been transformed by a linear map A.
+
+[dutch](https://people.sc.fsu.edu/~jburkardt/f_src/dutch/dutch.html): implements some computational geometry routines.
+
+[geometry](https://people.sc.fsu.edu/~jburkardt/f_src/geometry/geometry.html): carries out geometric calculations, including angles, areas, containment, distances, intersections, lengths, and volumes.
+
+[geompack2](https://people.math.sc.edu/Burkardt/f_src/geompack2/geompack2.html): which carries out certain geometric computations, including the Voronoi diagram, and the Delaunay triangulation of a set of points in the plane, by Barry Joe.
+
+[geompack3](https://people.math.sc.edu/Burkardt/f_src/geompack3/geompack3.html): handles certain computational geometry problems, by Barry Joe. In particular, GEOMPACK3 can compute the Voronoi diagram, and the Delaunay triangulation, of a set of points in the plane, and can carry out analogous operations for points in 3D and in N-dimensional space.
+
+[mesh_bandwidth](https://people.math.sc.edu/Burkardt/f_src/mesh_bandwidth/mesh_bandwidth.html): computes the geometric bandwidth of a mesh.
+
+[sphere_delaunay](https://people.sc.fsu.edu/~jburkardt/f_src/sphere_delaunay/sphere_delaunay.html): computes the Delaunay triangulation of points on the unit sphere.
+
+[stripack](https://people.math.sc.edu/Burkardt/f_src/stripack/stripack.html): carries out some computational geometry tasks on the unit sphere in 3D, by Robert Renka.
+
+[table_delaunay](https://people.math.sc.edu/Burkardt/f_src/table_delaunay/table_delaunay.html): computes the Delaunay triangulation of a set of points in the plane.
+
+[triangulation](https://people.math.sc.edu/Burkardt/f_src/triangulation/triangulation.html): library which computes a triangulation of a set of points in 2D, and carries out various other related operations on triangulations of order 3 or 6.
+
+[triangulation_boundary_nodes](https://people.math.sc.edu/Burkardt/f_src/triangulation_boundary_nodes/triangulation_boundary_nodes.html): analyzes the triangulation of a region, and identifies each boundary node with the label "1".
+
+[triangulation_corner](https://people.math.sc.edu/Burkardt/f_src/triangulation_corner/triangulation_corner.html): tries to correct situations in which a triangulation includes corner triangles, that is, triangles which have two sides on boundary.
+
+[triangulation_delaunay_discrepancy](https://people.math.sc.edu/Burkardt/f_src/triangulation_delaunay_discrepancy/triangulation_delaunay_discrepancy.html): computes the local Delaunay discrepancy of a triangulation.
+
+[triangulation_histogram](https://people.math.sc.edu/Burkardt/f_src/triangulation_histogram/triangulation_histogram.html): computes the number of points from a dataset that are contained in each triangle of a triangulation.
+
+[triangulation_l2q](https://people.math.sc.edu/Burkardt/f_src/triangulation_l2q/triangulation_l2q.html): reads information describing a triangulation of a set of points using 3-node ("linear") triangles, and creates a 6-node ("quadratic") triangulation.
+
+[triangulation_mask](https://people.math.sc.edu/Burkardt/f_src/triangulation_mask/triangulation_mask.html): which reads the nodes and triangles that define a triangulation, calls a user routine which determines whether each triangle is to be preserved or discarded ("masked") from the triangulation, and writes out new node and triangle files that define the masked triangulation.
+
+[triangulation_node_to_element](https://people.math.sc.edu/Burkardt/f_src/triangulation_node_to_element/triangulation_node_to_element.html): reads datafiles describing a set of nodes, their triangulation, and the value of one or more quantities at each node, and outputs a file that averages the quantities for each element.
+
+[triangulation_orient](https://people.math.sc.edu/Burkardt/f_src/triangulation_orient/triangulation_orient.html): reads a triangulation, and reorients each triangle that has a negative area. If at least one such triangle is encountered, the program writes out a new copy of the triangle file in which all the triangles have been correctly oriented.
+
+[triangulation_plot](https://people.math.sc.edu/Burkardt/f_src/triangulation_plot/triangulation_plot.html): reads one file listing the nodes, and a second file consisting of groups of 3 or 6 nodes that make up triangles, and creates an Encapsulated PostScript image of the triangulation.
+
+[triangulation_q2l](https://people.math.sc.edu/Burkardt/f_src/triangulation_q2l/triangulation_q2l.html): reads information describing a triangulation of a set of points using 6-node ("quadratic") triangles, and creates a 3-node ("linear") triangulation.
+
+[triangulation_quad](https://people.math.sc.edu/Burkardt/f_src/triangulation_quad/triangulation_quad.html): reads information defining a triangulation, and estimates the integral of a function whose values are given at the nodes.
+
+[triangulation_quality](https://people.math.sc.edu/Burkardt/f_src/triangulation_quality/triangulation_quality.html): computes and prints quality measures for a given triangulation of a set of points in 2D.
+
+[triangulation_rcm](https://people.math.sc.edu/Burkardt/f_src/triangulation_rcm/triangulation_rcm.html): computes the Reverse Cuthill-McKee (RCM) reordering for nodes in a triangulation composed of 3-node or 6-node triangles.
+
+[triangulation_refine](https://people.math.sc.edu/Burkardt/f_src/triangulation_refine/triangulation_refine.html): reads information describing a triangulation of a set of points and creates a refined triangulation.
+
+[triangulation_triangle_neighbors](https://people.math.sc.edu/Burkardt/f_src/triangulation_triangle_neighbors/triangulation_triangle_neighbors.html): computes the three neighboring triangles of each triangle in a triangulation.
 
 ## Eigenvalues 
 
