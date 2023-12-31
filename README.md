@@ -64,6 +64,14 @@
 
 ## Computational Geometry
 
+[cvt](https://people.sc.fsu.edu/~jburkardt/f_src/cvt/cvt.html): computes Centroidal Voronoi Tessellation (CVT) datasets.
+
+[cvt_basis](https://people.sc.fsu.edu/~jburkardt/f_src/cvt_basis/cvt_basis.html): uses discrete Centroidal Voronoi Tessellation (CVT) techniques to produce a small set of basis vectors that are good cluster centers for a large set of data vectors.
+
+[cvt_basis_flow](https://people.sc.fsu.edu/~jburkardt/f_src/cvt_basis_flow/cvt_basis_flow.html): extracts representative solution modes of a set of solutions to a fluid flow PDE. The selection process uses K-Means clustering, which can be considered to be a discrete version of the CVT algorithm (Centroidal Voronoi Tessellation).
+
+[cvtp](https://people.sc.fsu.edu/~jburkardt/f_src/cvtp/cvtp.html): creates CVTP's, that is, Centroidal Voronoi Tessellations of a periodic region.
+
 [cvt_triangulation](https://people.math.sc.edu/Burkardt/f_src/cvt_triangulation/cvt_triangulation.html): applies Centroidal Voronoi Tessellation (CVT) methods to produce triangularizations of various test regions.
 
 [delaunay_lmap_2d](https://people.math.sc.edu/Burkardt/f_src/delaunay_lmap_2d/delaunay_lmap_2d.html): computes the Delaunay triangulation of a set of points in the plane that have been transformed by a linear map A.
