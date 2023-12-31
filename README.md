@@ -48,7 +48,7 @@
 
 [lau_np](https://people.sc.fsu.edu/~jburkardt/f_src/lau_np/lau_np.html) implements heuristic algorithms for certain "hard" problems, by Hang Tong Lau.
 
-[partial_digest](https://people.sc.fsu.edu/~jburkardt/f_src/partial_digest/partial_digest.html) 
+[partial_digest](https://people.math.sc.edu/Burkardt/f_src/partial_digest/partial_digest.html) recursive solutions of the partial digest problem.
 
 [partition_problem](https://people.sc.fsu.edu/~jburkardt/f_src/partition_problem/partition_problem.html) seeks solutions of the partition problem, splitting a set of integers into two subsets with equal sum.
 
