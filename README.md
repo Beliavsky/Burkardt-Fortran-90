@@ -309,6 +309,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [ranlib](https://people.sc.fsu.edu/~jburkardt/f_src/ranlib/ranlib.html) produces random samples from Probability Density Functions (PDF's), including Beta, Chi-square Exponential, F, Gamma, Multivariate normal, Noncentral chi-square, Noncentral F, Univariate normal, random permutations, Real uniform, Binomial, Negative Binomial, Multinomial, Poisson and Integer uniform, by Barry Brown and James Lovato.
 
+[walker_sample](https://people.sc.fsu.edu/~jburkardt/f_src/walker_sample/walker_sample.html): efficiently samples a discrete probability vector.
+
 [wishart](https://people.sc.fsu.edu/~jburkardt/f_src/wishart/wishart.html) produces sample matrices from the Wishart or Bartlett distributions, useful for sampling random covariance matrices.
 
 [ziggurat](https://people.sc.fsu.edu/~jburkardt/f_src/ziggurat/ziggurat.html) random number generator (RNG) for the uniform, normal or exponential distributions, by Marsaglia and Tsang.
