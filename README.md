@@ -303,6 +303,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [asa053](https://people.sc.fsu.edu/~jburkardt/f_src/asa053/asa053.html) returns samples from the Wishart distribution.
 
+[normal](https://people.sc.fsu.edu/~jburkardt/f_src/normal/normal.html): returns a sequence of normally distributed pseudorandom numbers.
+
 [pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
 
 [random_data](https://people.sc.fsu.edu/~jburkardt/f_src/random_data/random_data.html) uses a random number generator (RNG) to sample points for various probability distributions, spatial dimensions, and geometries, including the M-dimensional cube, ellipsoid, simplex and sphere.
