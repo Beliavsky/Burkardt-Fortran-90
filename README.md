@@ -390,6 +390,8 @@ Constrained to a Hyper-Rectangle.
 
 [log_normal](https://people.sc.fsu.edu/~jburkardt/f_src/log_normal/log_normal.html): evaluate quantities associated with the log normal Probability Density Function (PDF).
 
+[log_normal_truncated_ab](https://people.sc.fsu.edu/~jburkardt/f_src/log_normal_truncated_ab/log_normal_truncated_ab.html): evaluate quantities associated with the log normal Probability Density Function (PDF) truncated to the interval [A,B].
+
 [owens](https://people.math.sc.edu/Burkardt/f_src/owens/owens.html) evaluates Owen's T function.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
