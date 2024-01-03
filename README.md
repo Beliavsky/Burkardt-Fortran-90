@@ -392,6 +392,8 @@ Constrained to a Hyper-Rectangle.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
 
+[truncated_normal](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal/truncated_normal.html): computes quantities associated with the truncated normal distribution.
+
 ## Quadrature
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
 
