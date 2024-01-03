@@ -54,7 +54,7 @@
 
 [subset](https://people.sc.fsu.edu/~jburkardt/f_src/subset/subset.html) enumerates, generates, randomizes, ranks and unranks combinatorial objects including combinations, compositions, Gray codes, index sets, partitions, permutations, polynomials, subsets, and Young tables.
 
-[subset_sum](https://people.sc.fsu.edu/~jburkardt/f_src/subset_sum/subset_sum.html) seeks solutions of the subset sum problem.
+[subset_sum](https://people.math.sc.edu/Burkardt/f_src/subset_sum/subset_sum.html) seeks solutions of the subset sum problem.
 
 [toms515](https://people.math.sc.edu/Burkardt/f_src/toms515/toms515.html) lists the subsets of size K selected from a set of size N, by Bill Buckles, Matthew Lybanon.
 
