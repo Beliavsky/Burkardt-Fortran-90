@@ -388,6 +388,8 @@ Constrained to a Hyper-Rectangle.
 
 [cdflib](https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html) evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
 
+[log_normal](https://people.sc.fsu.edu/~jburkardt/f_src/log_normal/log_normal.html): evaluate quantities associated with the log normal Probability Density Function (PDF).
+
 [owens](https://people.math.sc.edu/Burkardt/f_src/owens/owens.html) evaluates Owen's T function.
 
 [prob](https://people.sc.fsu.edu/~jburkardt/f_src/prob/prob.html) routines for evaluating and inverting the normal CDF, and many other distributions.
