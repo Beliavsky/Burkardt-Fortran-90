@@ -52,6 +52,8 @@
 
 [partition_problem](https://people.sc.fsu.edu/~jburkardt/f_src/partition_problem/partition_problem.html) seeks solutions of the partition problem, splitting a set of integers into two subsets with equal sum.
 
+[set_theory](https://people.math.sc.edu/Burkardt/f_src/set_theory/set_theory.html): implements some of the operations of set theory.
+
 [subset](https://people.sc.fsu.edu/~jburkardt/f_src/subset/subset.html) enumerates, generates, randomizes, ranks and unranks combinatorial objects including combinations, compositions, Gray codes, index sets, partitions, permutations, polynomials, subsets, and Young tables.
 
 [subset_sum](https://people.math.sc.edu/Burkardt/f_src/subset_sum/subset_sum.html) seeks solutions of the subset sum problem.
