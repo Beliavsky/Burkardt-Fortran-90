@@ -156,6 +156,8 @@
 
 [bellman_ford](https://people.sc.fsu.edu/~jburkardt/f_src/bellman_ford/bellman_ford.html) implements the Bellman-Ford algorithm for finding the shortest distance from a given node to all other nodes in a directed graph whose edges have been assigned real-valued lengths.
 
+[codepack](https://people.math.sc.edu/Burkardt/f_src/codepack/codepack.html): computes and compares "codes" for graphs, directed graphs, multigraphs, and other generalizations of an abstract graph.
+
 [djikstra](https://people.sc.fsu.edu/~jburkardt/f_src/dijkstra/dijkstra.html) implements a simple version of Dijkstra's algorithm for determining the minimum distance from one node in a graph to all other nodes.
 
 [grafpack](https://people.sc.fsu.edu/~jburkardt/f_src/grafpack/grafpack.html) performs common calculations involving (abstract mathematical) graphs.
