@@ -160,6 +160,8 @@
 
 [djikstra](https://people.sc.fsu.edu/~jburkardt/f_src/dijkstra/dijkstra.html) implements a simple version of Dijkstra's algorithm for determining the minimum distance from one node in a graph to all other nodes.
 
+[floyd](https://people.math.sc.edu/Burkardt/f_src/floyd/floyd.html): implements Floyd's algorithm for finding the shortest distance between every pair of nodes in a directed graph.
+
 [grafpack](https://people.sc.fsu.edu/~jburkardt/f_src/grafpack/grafpack.html) performs common calculations involving (abstract mathematical) graphs.
 
 [laupack](https://people.sc.fsu.edu/~jburkardt/f_src/laupack/laupack.html) computes properties of mathematical graphs, including Euler circuits, Hamiltonian circuits, cliques, strongly connected components, minimal spanning tree, chromatic number, shortest paths, maximal flow, and planarity.
