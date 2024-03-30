@@ -8,6 +8,7 @@
 * [Graph algorithms](#graph-algorithms)
 * [Interpolation and Approximation](#interpolation-and-approximation)
 * [Linear Algebra](#linear-algebra)
+* [Linear Algebra (Sparse)](#linear-algebra-sparse)
 * [Linear Equations](#linear-equations)
 * [Nonlinear Equations and Nonlinear Least Squares](#nonlinear-equations-and-nonlinear-least-squares)
 * [Non-Uniform Random Number Generation](#non-uniform-random-number-generation)
@@ -262,6 +263,8 @@ but, if i =/= j P(i)(X(j)) = 0
 [sparsekit](https://people.math.sc.edu/Burkardt/f_src/sparsekit/sparsekit.html) carries out a number of operations on sparse matrices, particularly conversion between various sparse formats.
 
 [toeplitz_cholesky](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz_cholesky/toeplitz_cholesky.html) computes the Cholesky factorization of a positive semidefinite symmetric (PSS) Toeplitz matrix.
+
+## Linear Algebra (Sparse)
 
 ## Linear Equations
 
