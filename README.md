@@ -565,6 +565,8 @@ Constrained to a Hyper-Rectangle.
 
 [zero_chandrupatla](https://people.sc.fsu.edu/~jburkardt/f_src/zero_chandrupatla/zero_chandrupatla.html): finds a zero of a scalar function of a scalar variable, starting from a change of sign interval, using the Chandrupatla method, which can converge faster than bisection, regula falsi, or Brent's method.
 
+[zero_itp](https://people.sc.fsu.edu/~jburkardt/f_src/zero_itp/zero_itp.html): finds a zero of a scalar function of a scalar variable, starting from a change of sign interval, using the Interpolate/Truncate/Project (ITP) method, which has faster convergence than the bisection method.
+
 [zero_laguerre](https://people.sc.fsu.edu/~jburkardt/f_src/zero_laguerre/zero_laguerre.html): uses Laguerre's method to find the zero of a function. The method needs first and second derivative information. The method almost always works when the function is a polynomial.
 
 [zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
