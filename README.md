@@ -559,6 +559,8 @@ Constrained to a Hyper-Rectangle.
 
 [muller](https://people.sc.fsu.edu/~jburkardt/f_src/muller/muller.html) seeks a root of a nonlinear equation using Muller's method, with complex arithmetic.
 
+[root_rc](https://people.sc.fsu.edu/~jburkardt/f_src/root_rc/root_rc.html): solves a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Gaston Gonnet.
+
 [test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
 
 [zero_chandrupatla](https://people.sc.fsu.edu/~jburkardt/f_src/zero_chandrupatla/zero_chandrupatla.html): finds a zero of a scalar function of a scalar variable, starting from a change of sign interval, using the Chandrupatla method, which can converge faster than bisection, regula falsi, or Brent's method.
