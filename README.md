@@ -274,6 +274,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [hb_to_st](https://people.math.sc.edu/Burkardt/f_src/hb_to_st/hb_to_st.html) reads the definition of a sparse matrix from a file in Harwell-Boeing format, and writes the information into a Sparse Triplet file.
 
+[mm_io](https://people.math.sc.edu/Burkardt/f_src/mm_io/mm_io.html) reads and writes files in the Matrix Market (MM) format.
+
 [st_io](https://people.math.sc.edu/Burkardt/f_src/st_io/st_io.html): reads and writes files in the Sparse Triplet (ST) format used for storing sparse matrices.
 
 ## Linear Equations
