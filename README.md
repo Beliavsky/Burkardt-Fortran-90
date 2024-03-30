@@ -550,6 +550,7 @@ Constrained to a Hyper-Rectangle.
 [van_der_corput](https://people.math.sc.edu/Burkardt/f_src/van_der_corput/van_der_corput.html) van der Corput Quasi Monte Carlo (QMC) sequence, using a simple interface.
 
 ## Root-finding
+[bisection](https://people.sc.fsu.edu/~jburkardt/f_src/bisection/bisection.html) applies the bisection method to seek a root of f(x) over a change-of-sign interval a <= x <= b.
 
 [bisection_integer](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_integer/bisection_integer.html) seeks an integer solution to the equation F(X)=0, using bisection within a user-supplied change of sign interval [A,B].
 
