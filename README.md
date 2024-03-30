@@ -270,6 +270,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [cc_to_st](https://people.math.sc.edu/Burkardt/f_src/cc_to_st/cc_to_st.html) converts sparse matrix information from compressed column (CC) to sparse triplet (ST) format.
 
+[hb_io](https://people.math.sc.edu/Burkardt/f_src/hb_io/hb_io.html) reads and writes files in the Harwell Boeing sparse matrix format.
+
 [st_io](https://people.math.sc.edu/Burkardt/f_src/st_io/st_io.html): reads and writes files in the Sparse Triplet (ST) format used for storing sparse matrices.
 
 ## Linear Equations
