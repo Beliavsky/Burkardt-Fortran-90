@@ -555,7 +555,7 @@ Constrained to a Hyper-Rectangle.
 
 [bisection_rc](https://people.sc.fsu.edu/~jburkardt/f_src/bisection_rc/bisection_rc.html) bisection method for solving a scalar equation in a change of sign interval, using reverse communication (RC).
 
-[brent](https://people.sc.fsu.edu/~jburkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
+[brent](https://people.math.sc.edu/Burkardt/f_src/brent/brent.html) finds zeros or minima of a scalar function of a scalar variable, by Richard Brent.
 
 [muller](https://people.sc.fsu.edu/~jburkardt/f_src/muller/muller.html) seeks a root of a nonlinear equation using Muller's method, with complex arithmetic.
 
