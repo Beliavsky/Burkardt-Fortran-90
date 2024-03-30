@@ -18,6 +18,7 @@
 * [Ordinary Differential Equations](#ordinary-differential-equations)
 * [Probability Distributions](#probability-distributions)
 * [Root-Finding](#root-finding)
+* [Sorting](#sorting)
 * [Special functions](#special-functions)
 * [Statistics](#statistics)
 * [Quadrature](#quadrature)
@@ -590,6 +591,10 @@ Constrained to a Hyper-Rectangle.
 [zero_rc](https://people.sc.fsu.edu/~jburkardt/f_src/zero_rc/zero_rc.html) seeks a solution of a scalar nonlinear equation f(x)=0, using reverse communication (RC), by Richard Brent.
 
 [zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
+
+## Sorting
+
+[sort_rc](https://people.math.sc.edu/Burkardt/f_src/sort_rc/sort_rc.html) sorts a list of any kind of objects, using reverse communication (RC).
 
 ## Special Functions
 
