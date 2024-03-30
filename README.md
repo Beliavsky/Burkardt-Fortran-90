@@ -268,6 +268,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [cc_io](https://people.math.sc.edu/Burkardt/f_src/cc_io/cc_io.html) reads and writes compressed column (CC) sparse matrix files.
 
+[cc_to_st](https://people.math.sc.edu/Burkardt/f_src/cc_to_st/cc_to_st.html) converts sparse matrix information from compressed column (CC) to sparse triplet (ST) format.
+
 ## Linear Equations
 
 [bvls](https://people.sc.fsu.edu/~jburkardt/f_src/bvls/bvls.html) solves a least squares problem with bounds on the variables, by Charles Lawson and Richard Hanson.
