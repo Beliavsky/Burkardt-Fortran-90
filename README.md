@@ -362,6 +362,7 @@ but, if i =/= j P(i)(X(j)) = 0
 [slatec](https://people.math.sc.edu/Burkardt/f_src/slatec/slatec.html) general purpose mathematical and statistical routines.
 
 ## Optimization-1D
+[glomin](https://people.sc.fsu.edu/~jburkardt/f_src/glomin/glomin.html) finds a global minimizer of a scalar function of a scalar variable, by Richard Brent. The method does not require the use of derivatives, and does not assume that the function is differentiable.
 
 [local_min_rc](https://people.math.sc.edu/Burkardt/f_src/local_min_rc/local_min_rc.html) seeks a local minimum of a scalar function of a scalar variable, without requiring derivatives, or assuming the function is differentiable, using reverse communication (RC), by Richard Brent.
 
