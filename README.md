@@ -146,6 +146,8 @@
 ## Fast Fourier Transform
 [fftpack5](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack5/fftpack5.html) computes Fast Fourier Transforms, by Paul Swarztrauber and Dick Valent. Real or complex data can be handled, there are separate routines for forward analysis (data => Fourier coefficients) and backward analysis (Fourier coefficients => data), there are sine and cosine transform routines, there are quarter wave sine and cosine transform routines, and the amount of data is NOT required to be a power of 2.
 
+[fftpack51](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack51/fftpack51.html) is a double precision version of fftpack5. 
+
 ## Fortran Tools
 
 [extract](https://people.math.sc.edu/Burkardt/f_src/f90split/f90split.html) extracts a subroutine, function or module by name from a FORTRAN file.
