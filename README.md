@@ -655,6 +655,6 @@ Constrained to a Hyper-Rectangle.
 
 ## Wavelet Transforms
 
-[haar](https://people.sc.fsu.edu/~jburkardt/f_src/haar/haar.html) computes the [Haar transform](https://en.wikipedia.org/wiki/Haar_wavelet) of data.
+[haar_transform](https://people.sc.fsu.edu/~jburkardt/f_src/haar_transform/haar_transform.html) computes the [Haar transform](https://en.wikipedia.org/wiki/Haar_wavelet) of data.
 
 [wavelet](https://people.sc.fsu.edu/~jburkardt/f_src/wavelet/wavelet.html) utilities for computations involving wavelets.
