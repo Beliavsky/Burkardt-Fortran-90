@@ -26,6 +26,7 @@
 * [Quadrature-N-Dimensional](#quadrature-n-dimensional)
 * [Quasirandom Number Generation](#quasirandom-number-generation)
 * [Uniform Random Number Generation](#uniform-random-number-generation)
+* [Wavelet Transforms](#wavelet-transforms)
 
 ## Cluster Analysis
 
@@ -646,3 +647,7 @@ Constrained to a Hyper-Rectangle.
 [rnglib](https://people.sc.fsu.edu/~jburkardt/f_src/rnglib/rnglib.html) random number generators (RNG's) which can generate one or more streams of random numbers.
 
 [uniform](https://people.sc.fsu.edu/~jburkardt/f_src/uniform/uniform.html) random number generator is based on a simple, old, and limited linear congruential random number generator originally used in the IBM System 360.
+
+## Wavelet Transforms
+
+[haar](https://people.sc.fsu.edu/~jburkardt/f_src/haar/haar.html) computes the [Haar transform](https://en.wikipedia.org/wiki/Haar_wavelet) of data.
