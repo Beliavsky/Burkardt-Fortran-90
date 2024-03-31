@@ -4,7 +4,7 @@
 * [Combinatorics](#combinatorics)
 * [Computational Geometry](#computational-geometry)
 * [Eigenvalues](#eigenvalues)
-* [Fast Fourier Transform](#fast-fourier-transform)
+* [Fast Fourier Transform and other transforms](#fast-fourier-transform-and-other-transforms)
 * [Fortran tools](#fortran-tools)
 * [Graph algorithms](#graph-algorithms)
 * [Interpolation and Approximation](#interpolation-and-approximation)
@@ -143,7 +143,9 @@
 
 [toms384](https://people.math.sc.edu/Burkardt/f77_src/toms384/toms384.html) implements ACM TOMS algorithm 384, for computing the eigenvalues and eigenvectors of a symmetric matrix.
 
-## Fast Fourier Transform
+## Fast Fourier Transform and other Transforms
+[cosine_transform](https://people.sc.fsu.edu/~jburkardt/f_src/cosine_transform/cosine_transform.html) demonstrates some simple properties of the discrete cosine transform (DCT) for real data.
+
 [fftpack5](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack5/fftpack5.html) computes Fast Fourier Transforms, by Paul Swarztrauber and Dick Valent. Real or complex data can be handled, there are separate routines for forward analysis (data => Fourier coefficients) and backward analysis (Fourier coefficients => data), there are sine and cosine transform routines, there are quarter wave sine and cosine transform routines, and the amount of data is NOT required to be a power of 2.
 
 [fftpack51](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack51/fftpack51.html) is a double precision version of fftpack5. 
