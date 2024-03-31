@@ -462,6 +462,8 @@ Constrained to a Hyper-Rectangle.
 
 [gen_laguerre_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gen_laguerre_rule/gen_laguerre_rule.html) computes and prints a generalized Gauss-Laguerre quadrature rule.
 
+[gl_fast_rule](https://people.sc.fsu.edu/~jburkardt/f_src/gl_fast_rule/gl_fast_rule.html) carries out the fast computation of the K-th value and weight of an N-point Gauss-Legendre quadrature rule, by Ignace Bogaert.
+
 [hermite_rule](https://people.sc.fsu.edu/~jburkardt/f_src/hermite_rule/hermite_rule.html) computes and prints a Gauss-Hermite quadrature rule
 
 [intlib](https://people.math.sc.edu/Burkardt/f_src/intlib/intlib.html) contains routines for numerical estimation of integrals in 1d.
