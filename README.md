@@ -154,6 +154,8 @@
 
 [sftpack](https://people.sc.fsu.edu/~jburkardt/f_src/sftpack/sftpack.html) implements the slow Fourier transform, intended as a teaching tool and comparison with the Fast Fourier Transform (FFT).
 
+[sine_transform](https://people.sc.fsu.edu/~jburkardt/f_src/sine_transform/sine_transform.html) demonstrates some simple properties of the discrete sine transform for real data.
+
 ## Fortran Tools
 [extract](https://people.math.sc.edu/Burkardt/f_src/f90split/f90split.html) extracts a subroutine, function or module by name from a FORTRAN file.
 
