@@ -150,6 +150,8 @@
 
 [fftw_test](https://people.sc.fsu.edu/~jburkardt/f_src/fftw_test/fftw_test.html) calls [fftw()](https://www.fftw.org/), which computes fast Fourier transforms, written by Matteo Frigo and Steven Johnson.
 
+[sftpack](https://people.sc.fsu.edu/~jburkardt/f_src/sftpack/sftpack.html) implements the slow Fourier transform, intended as a teaching tool and comparison with the Fast Fourier Transform (FFT).
+
 ## Fortran Tools
 [extract](https://people.math.sc.edu/Burkardt/f_src/f90split/f90split.html) extracts a subroutine, function or module by name from a FORTRAN file.
 
