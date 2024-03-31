@@ -149,7 +149,9 @@
 
 [fftpack5](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack5/fftpack5.html) computes Fast Fourier Transforms, by Paul Swarztrauber and Dick Valent. Real or complex data can be handled, there are separate routines for forward analysis (data => Fourier coefficients) and backward analysis (Fourier coefficients => data), there are sine and cosine transform routines, there are quarter wave sine and cosine transform routines, and the amount of data is NOT required to be a power of 2.
 
-[fftpack51](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack51/fftpack51.html) is a double precision version of fftpack5. 
+[fftpack51](https://people.sc.fsu.edu/~jburkardt/f_src/fftpack51/fftpack51.html) is a double precision version of fftpack5.
+
+[fft_serial](https://people.sc.fsu.edu/~jburkardt/f_src/fft_serial/fft_serial.html) computes a Fast Fourier Transform, and is intended as a starting point for developing a parallel version.
 
 [fftw_test](https://people.sc.fsu.edu/~jburkardt/f_src/fftw_test/fftw_test.html) calls [fftw()](https://www.fftw.org/), which computes fast Fourier transforms, written by Matteo Frigo and Steven Johnson.
 
