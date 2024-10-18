@@ -32,6 +32,8 @@
 ## Calendrical Calculations
 [calpak](https://people.math.sc.edu/Burkardt/f_src/calpak/calpak.html) computes various simple calendrical quantities. These include converting from day-number/year to day/month/year format, calculating the time difference between two dates, finding the day of the week of a given date, and other feats.
 
+[doomsday](https://people.sc.fsu.edu/~jburkardt/f_src/doomsday/doomsday.html) given the year, month and day of a date, uses John Conway's [doomsday algorithm](https://en.wikipedia.org/wiki/Doomsday_rule) to determine the corresponding day of the week.
+
 ## Cluster Analysis
 
 [asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
