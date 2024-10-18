@@ -1,5 +1,6 @@
 # Fortran 90 codes of John Burkardt by category
 
+* [Calendrical Calculations](#calendrical-calculations)
 * [Cluster Analysis](#cluster-analysis)
 * [Combinatorics](#combinatorics)
 * [Computational Geometry](#computational-geometry)
@@ -27,6 +28,9 @@
 * [Quasirandom Number Generation](#quasirandom-number-generation)
 * [Uniform Random Number Generation](#uniform-random-number-generation)
 * [Wavelet Transforms](#wavelet-transforms)
+
+## Calendrical Calculations
+[calpak](https://people.math.sc.edu/Burkardt/f_src/calpak/calpak.html) computes various simple calendrical quantities. These include converting from day-number/year to day/month/year format, calculating the time difference between two dates, finding the day of the week of a given date, and other feats.
 
 ## Cluster Analysis
 
