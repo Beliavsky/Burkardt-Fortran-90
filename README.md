@@ -34,6 +34,8 @@
 
 [doomsday](https://people.sc.fsu.edu/~jburkardt/f_src/doomsday/doomsday.html) given the year, month and day of a date, uses John Conway's [doomsday algorithm](https://en.wikipedia.org/wiki/Doomsday_rule) to determine the corresponding day of the week.
 
+[weekday](https://people.sc.fsu.edu/~jburkardt/f_src/weekday/weekday.html) determines the day of the week corresponding to a given date.
+
 ## Cluster Analysis
 
 [asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
