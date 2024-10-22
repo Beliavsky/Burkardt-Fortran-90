@@ -51,6 +51,7 @@
 [spaeth](https://people.math.sc.edu/Burkardt/f_src/spaeth/spaeth.html) analyzes data by grouping it into clusters.
 
 ## Combinatorics
+[asa172](https://people.sc.fsu.edu/~jburkardt/f_src/asa172/asa172.html) generates all multidimensional indices in a given range, simulating the behavior of an arbitrary number of nested loops, by [O'Flaherty and MacKenzie](https://www.jstor.org/stable/2347080).
 
 [change_making](https://people.sc.fsu.edu/~jburkardt/f_src/change_making/change_making.html) considers the change making problem, in which a given sum is to be formed using coins of various denominations.
 
