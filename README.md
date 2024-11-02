@@ -636,7 +636,7 @@ Constrained to a Hyper-Rectangle.
 
 [fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
 
-[hyper_2f1](https://people.sc.fsu.edu/~jburkardt/f_src/hyper_2f1/hyper_2f1.html): valuates the hypergeometric functions 2F1(a,b,c;x) for real or complex parameters a, b, c, and argument x, by N. Michel and M. Stoitsov.
+[hyper_2f1](https://people.sc.fsu.edu/~jburkardt/f_src/hyper_2f1/hyper_2f1.html): evaluates the hypergeometric functions 2F1(a,b,c;x) for real or complex parameters a, b, c, and argument x, by N. Michel and M. Stoitsov.
 
 [hypergeometric](https://people.sc.fsu.edu/~jburkardt/f_src/hypergeometric/hypergeometric.html): evaluates the generalized hypergeometric functions pFq, for integer p and q, for complex arguments of large magnitude, by Warren Perger, Atul Bhalla, and Mark Nardin.
 
