@@ -316,6 +316,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [dlap_io](https://people.math.sc.edu/Burkardt/f_src/dlap_io/dlap_io.html): reads and writes files in the DLAP sparse matrix format.
 
+[gauss_seidel](https://people.sc.fsu.edu/~jburkardt/f_src/gauss_seidel/gauss_seidel.html): uses the Gauss-Seidel iteration to solve a linear system with a symmetric positive definite (SPD) matrix.
+
 [jacobi](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi/jacobi.html) Jacobi iteration for linear systems.
 
 [lawson](https://people.math.sc.edu/Burkardt/f77_src/lawson/lawson.html) solve least squares problems.
