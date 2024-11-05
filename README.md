@@ -45,6 +45,8 @@
 
 [cities](https://people.sc.fsu.edu/~jburkardt/f_src/cities/cities.html) works with problems involving intercity distances.
 
+[cluster_energy](https://people.sc.fsu.edu/~jburkardt/f_src/cluster_energy/cluster_energy.html): organizes data into a given number of clusters, in a way which minimizes the cluster energy.
+
 [gene_cluster](https://people.sc.fsu.edu/~jburkardt/f_src/gene_cluster/gene_cluster.html) divides a set of genetic data into clusters.
 
 [kmeans](https://people.sc.fsu.edu/~jburkardt/f_src/kmeans/kmeans.html) handles the K-Means problem, which organizes a set of N points in M dimensions into K clusters
