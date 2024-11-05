@@ -186,6 +186,8 @@
 
 [digraph_adj](https://people.sc.fsu.edu/~jburkardt/f_src/digraph_adj/digraph_adj.html): carries out operations on digraphs, a directed graph. Information is stored in an adjacency matrix. Operations include computing in- and out-degrees, computing the in- and out-degree sequences, counting the edges, printing the adjacency matrix, generating fixed and random examples.
 
+[digraph_arc](https://people.sc.fsu.edu/~jburkardt/f_src/digraph_arc/digraph_arc.html): carries out operations on digraphs, a directed graph. Information is stored in an arc list, pairs of nodes forming edges. Operations include computing in- and out-degrees, computing the in- and out-degree sequences, counting the edges, printing the arc list, generating fixed and random examples.
+
 [djikstra](https://people.sc.fsu.edu/~jburkardt/f_src/dijkstra/dijkstra.html) implements a simple version of Dijkstra's algorithm for determining the minimum distance from one node in a graph to all other nodes.
 
 [floyd](https://people.math.sc.edu/Burkardt/f_src/floyd/floyd.html): implements Floyd's algorithm for finding the shortest distance between every pair of nodes in a directed graph.
