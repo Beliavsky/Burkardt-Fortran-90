@@ -455,6 +455,8 @@ Constrained to a Hyper-Rectangle.
 
 [cdflib](https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html) evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
 
+[getwgt](https://people.math.sc.edu/Burkardt/f_src/getwgt/getwgt.html): library which handles Dirichlet Mixture estimation.
+
 [log_normal](https://people.sc.fsu.edu/~jburkardt/f_src/log_normal/log_normal.html): evaluate quantities associated with the log normal Probability Density Function (PDF).
 
 [log_normal_truncated_ab](https://people.sc.fsu.edu/~jburkardt/f_src/log_normal_truncated_ab/log_normal_truncated_ab.html): evaluate quantities associated with the log normal Probability Density Function (PDF) truncated to the interval [A,B].
