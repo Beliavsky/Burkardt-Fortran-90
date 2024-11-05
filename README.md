@@ -37,10 +37,11 @@
 [weekday](https://people.sc.fsu.edu/~jburkardt/f_src/weekday/weekday.html) determines the day of the week corresponding to a given date.
 
 ## Cluster Analysis
-
 [asa058](https://people.sc.fsu.edu/~jburkardt/f_src/asa058/asa058.html) handles the K-Means problem, by David Sparks.
 
 [asa113](https://people.sc.fsu.edu/~jburkardt/f_src/asa113/asa113.html) divides M points in N dimensions into K clusters seeking the division which minimizes a user-defined criterion, by Banfield and Bassill.
+
+[asa136](https://people.sc.fsu.edu/~jburkardt/f_src/asa136/asa136.html): divides M points in N dimensions into K clusters so that the within-clusters sum of squares is minimized, by Hartigan and Wong.
 
 [cities](https://people.sc.fsu.edu/~jburkardt/f_src/cities/cities.html) works with problems involving intercity distances.
 
