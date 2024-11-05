@@ -635,12 +635,13 @@ Constrained to a Hyper-Rectangle.
 [zoomin](https://people.sc.fsu.edu/~jburkardt/f_src/zoomin/zoomin.html) seeks a root of a scalar function.
 
 ## Sorting
-
 [sort_rc](https://people.math.sc.edu/Burkardt/f_src/sort_rc/sort_rc.html) sorts a list of any kind of objects, using reverse communication (RC).
 
 ## Special Functions
 
 [asa103](https://people.sc.fsu.edu/~jburkardt/f_src/asa103/asa103.html) evaluates the digamma or psi function, by Jose Bernardo.
+
+[asa121](https://people.sc.fsu.edu/~jburkardt/f_src/asa121/asa121.html): evaluates the trigamma function, by BE Schneider.
 
 [asa239](https://people.sc.fsu.edu/~jburkardt/f_src/asa239/asa239.html) evaluates the incomplete Gamma function, by Shea.
 
