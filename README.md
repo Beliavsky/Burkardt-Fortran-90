@@ -200,6 +200,8 @@
 
 [laupack](https://people.sc.fsu.edu/~jburkardt/f_src/laupack/laupack.html) computes properties of mathematical graphs, including Euler circuits, Hamiltonian circuits, cliques, strongly connected components, minimal spanning tree, chromatic number, shortest paths, maximal flow, and planarity.
 
+[maze](https://people.sc.fsu.edu/~jburkardt/f_src/maze/maze.html): carries out some simple operations on mazes. It can generate a random maze, determine the diameter of a maze, or find a path through a maze.
+
 [toms097](https://people.math.sc.edu/Burkardt/f_src/toms097/toms097.html) computes the distance between all pairs of nodes in a directed graph with weighted edges, using Floyd's algorithm.
 
 [treepack](https://people.math.sc.edu/Burkardt/f_src/treepack/treepack.html) performs common calculations involving a special kind of graph known as a tree.
