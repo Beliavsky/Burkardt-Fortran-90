@@ -180,7 +180,6 @@
 [xerror](https://people.math.sc.edu/Burkardt/f_src/xerror/xerror.html) collects information about errors that occur during a program's execution, and takes the appropriate action, which may include printing a message, diverting to a user routine, or aborting execution of the program.
 
 ## Graph Algorithms
-
 [bellman_ford](https://people.sc.fsu.edu/~jburkardt/f_src/bellman_ford/bellman_ford.html) implements the Bellman-Ford algorithm for finding the shortest distance from a given node to all other nodes in a directed graph whose edges have been assigned real-valued lengths.
 
 [codepack](https://people.math.sc.edu/Burkardt/f_src/codepack/codepack.html): computes and compares "codes" for graphs, directed graphs, multigraphs, and other generalizations of an abstract graph.
@@ -192,6 +191,8 @@
 [floyd](https://people.math.sc.edu/Burkardt/f_src/floyd/floyd.html): implements Floyd's algorithm for finding the shortest distance between every pair of nodes in a directed graph.
 
 [grafpack](https://people.sc.fsu.edu/~jburkardt/f_src/grafpack/grafpack.html) performs common calculations involving (abstract mathematical) graphs.
+
+[graph_arc](https://people.sc.fsu.edu/~jburkardt/f_src/graph_arc/graph_arc.html): carries out operations on graphs. Information is stored in an arc list, pairs of nodes forming edges. Operations include the chromatic polynomial, computing degrees, computing the degree sequence, counting the edges, determining edge and node connectivity, Euler circuits, spanning trees, shortest path, printing the arc list, generating fixed and random examples.
 
 [graph_theory](https://people.sc.fsu.edu/~jburkardt/f_src/graph_theory/graph_theory.html): carries out operations on abstract graphs, such as a breadth-first-search, the computation of a minimum spanning tree, an Euler or Hamilton circuit, blocks, chromatic polynomial, or transitive closure. Objects include undirected and directed graphs, weighted graphs, and trees.
 
