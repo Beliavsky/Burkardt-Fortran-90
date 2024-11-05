@@ -438,6 +438,8 @@ Constrained to a Hyper-Rectangle.
 
 [asa152](https://people.sc.fsu.edu/~jburkardt/f_src/asa152/asa152.html) computes the cumulative probabilities associated with the hypergeometric probability distribution, by Richard Lund.
 
+[asa189](https://people.sc.fsu.edu/~jburkardt/f_src/asa189/asa189.html): does a maximum likelihood estimation of the parameters of a Beta Binomial Probability Density Function (PDF), by D Smith.
+
 [asa226](https://people.sc.fsu.edu/~jburkardt/f_src/asa226/asa226.html) evaluates the cumulative distribution function (CDF) of the noncentral Beta Distribution, by Russell Lenth.
 
 [asa241](https://people.sc.fsu.edu/~jburkardt/f_src/asa241/asa241.html) computes the inverse of the Normal Cumulative Density Function (CDF), by Michael Wichura.
