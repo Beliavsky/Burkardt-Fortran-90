@@ -193,6 +193,8 @@
 
 [grafpack](https://people.sc.fsu.edu/~jburkardt/f_src/grafpack/grafpack.html) performs common calculations involving (abstract mathematical) graphs.
 
+[graph_theory](https://people.sc.fsu.edu/~jburkardt/f_src/graph_theory/graph_theory.html): carries out operations on abstract graphs, such as a breadth-first-search, the computation of a minimum spanning tree, an Euler or Hamilton circuit, blocks, chromatic polynomial, or transitive closure. Objects include undirected and directed graphs, weighted graphs, and trees.
+
 [laupack](https://people.sc.fsu.edu/~jburkardt/f_src/laupack/laupack.html) computes properties of mathematical graphs, including Euler circuits, Hamiltonian circuits, cliques, strongly connected components, minimal spanning tree, chromatic number, shortest paths, maximal flow, and planarity.
 
 [toms097](https://people.math.sc.edu/Burkardt/f_src/toms097/toms097.html) computes the distance between all pairs of nodes in a directed graph with weighted edges, using Floyd's algorithm.
