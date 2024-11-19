@@ -264,9 +264,12 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [rbf_interp_nd](https://people.sc.fsu.edu/~jburkardt/f_src/rbf_interp_nd/rbf_interp_nd.html) defines and evaluates radial basis function (RBF) interpolants to multidimensional data.
 
+[shephard_interp_nd](https://people.sc.fsu.edu/~jburkardt/f_src/shepard_interp_nd/shepard_interp_nd.html) defines and evaluates Shepard interpolants to multidimensional data, based on inverse distance weighting.
+
 [sparse_interp_nd](https://people.math.sc.edu/Burkardt/f_src/sparse_interp_nd/sparse_interp_nd.html) construct a sparse interpolant to a function f(x) of a multidimensional argument x.
 
-[shephard_interp_nd](https://people.sc.fsu.edu/~jburkardt/f_src/shepard_interp_nd/shepard_interp_nd.html) defines and evaluates Shepard interpolants to multidimensional data, based on inverse distance weighting.
+[spline](https://people.sc.fsu.edu/~jburkardt/f_src/spline/spline.html): interpolates and approximates via splines. There are a variety of types of approximation curves available, including least squares polynomials, divided difference polynomials, piecewise polynomials, B splines, Bernstein splines, beta splines, Bezier splines, Hermite splines, and Overhauser (or Catmull-Rom) splines.
+Also included are a set of routines that return the local "basis matrix", which allows the evaluation of the spline in terms of local function data.
 
 [test_interp_nd](https://people.math.sc.edu/Burkardt/f_src/test_interp_nd/test_interp_nd.html) provides test functions for multidimensional interpolation.
 
