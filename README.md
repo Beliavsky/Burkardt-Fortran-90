@@ -660,6 +660,8 @@ Constrained to a Hyper-Rectangle.
 
 [hypergeometric](https://people.sc.fsu.edu/~jburkardt/f_src/hypergeometric/hypergeometric.html): evaluates the generalized hypergeometric functions pFq, for integer p and q, for complex arguments of large magnitude, by Warren Perger, Atul Bhalla, and Mark Nardin.
 
+[sncndn](https://people.sc.fsu.edu/~jburkardt/f_src/sncndn/sncndn.html): evaluates the Jacobi elliptic functions SN, CN, and DN.
+
 [specfun](https://people.sc.fsu.edu/~jburkardt/f_src/specfun/specfun.html) evaluates special functions, including Bessel I, J, K and Y functions, Dawson Integral, Error (Erf), Exponential Integral (E1 and EI), Gamma, log Gamma, and Psi/Digamma, by William Cody and Laura Stoltz.
 
 [special_functions](https://people.sc.fsu.edu/~jburkardt/f_src/special_functions/special_functions.html) evaluates special functions, including Airy, Associated Legendre Bessel, Beta, Complete Elliptic Integral, Confluent Hypergeometric, Cosine Integral, Elliptic Integral, Error, Exponential Integral, Fresnel Integral, Gamma, Hankel, Hypergeometric, Incomplete Beta, Incomplete Gamma, Jacobian Elliptic, Kelvin, Lambda, Legendre, Mathieu, Modified Spherical Bessel, Parabolic Cylinder, Psi, Riccati-Bessel, Sine Integral, Spheroidal Wave, Struve, Whittaker, as well as Bernoulli Numbers, Euler Numbers, Hermite Polynomials, Laguerre Polynomials, Legendre Polynomials, by Shanjie Zhang, Jianming Jin.
