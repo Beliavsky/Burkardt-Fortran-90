@@ -250,6 +250,8 @@ but, if i =/= j P(i)(X(j)) = 0
 
 [newton_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/newton_interp_1d/newton_interp_1d.html) finds a polynomial interpolant to data using Newton divided differences.
 
+[pppack](https://people.sc.fsu.edu/~jburkardt/f_src/pppack/pppack.html): evaluates piecewise polynomial functions, including cubic splines. The original FORTRAN77 library is by Carl de Boor.
+
 [pwl_approx_1d](https://people.sc.fsu.edu/~jburkardt/f_src/pwl_approx_1d/pwl_approx_1d.html) defines and evaluates a piecewise linear function, using NC "control points", which approximates a set of ND data points (x(i),y(i)).
 
 [pwl_interp_1d](https://people.sc.fsu.edu/~jburkardt/f_src/pwl_interp_1d/pwl_interp_1d.html) interpolates a set of data with a piecewise linear function.
