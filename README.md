@@ -579,6 +579,8 @@ Constrained to a Hyper-Rectangle.
 
 [pyramid_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/pyramid_integrals/pyramid_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit pyramid in 3d.
 
+[simpack](https://people.sc.fsu.edu/~jburkardt/f77_src/simpack/simpack.html): approximates the integral of a vector of functions over a multidimensional simplex, or a region which is the sum of multidimensional simplexes, by Alan Genz.
+
 [simplex_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/simplex_integrals/simplex_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit simplex in m dimensions.
 
 [sphere_integrals](https://people.sc.fsu.edu/~jburkardt/f_src/sphere_integrals/sphere_integrals.html) returns the exact value of the integral of any monomial over the surface of the unit sphere in 3d.
