@@ -351,7 +351,7 @@ Also included are a set of routines that return the local "basis matrix", which 
 
 [templates](https://people.math.sc.edu/Burkardt/f_src/templates/templates.html) outlines the most common iterative methods of solving a linear system.
 
-[toeplitz](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz/toeplitz.html) olves a variety of Toeplitz and circulant linear systems.
+[toeplitz](https://people.sc.fsu.edu/~jburkardt/f_src/toeplitz/toeplitz.html) solves a variety of Toeplitz and circulant linear systems.
 
 ## Nonlinear Equations and Nonlinear Least Squares
 
