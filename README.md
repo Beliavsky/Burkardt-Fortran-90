@@ -681,6 +681,8 @@ Constrained to a Hyper-Rectangle.
 
 ## Statistics
 
+[regression](https://people.math.sc.edu/Burkardt/f_src/regression/regression.html) routines for linear regression by Helmut Spaeth, for L2 (least-squares), L1 (least-absolute), and L-infinity norms.
+
 [starpac](https://people.math.sc.edu/Burkardt/f_src/starpac/starpac.html) nonlinear least squares regression, time series analysis (in both time and frequency domains), line printer graphics, basic statistical analysis, and linear least squares regression.
 
 ## Uniform Random Number Generation
