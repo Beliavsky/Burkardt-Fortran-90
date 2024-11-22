@@ -472,7 +472,7 @@ Constrained to a Hyper-Rectangle.
 
 [truncated_normal](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal/truncated_normal.html): computes quantities associated with the truncated normal distribution.
 
-## Quadrature
+## Quadrature (Numerical Integration)
 [alpert_rule](https://people.sc.fsu.edu/~jburkardt/f_src/alpert_rule/alpert_rule.html) sets up an Alpert quadrature rule for functions which are regular, log(x) singular, or 1/sqrt(x) singular.
 
 [cauchy_principal_value](https://people.sc.fsu.edu/~jburkardt/f_src/cauchy_principal_value/cauchy_principal_value.html): uses Gauss-Legendre quadrature to estimate the Cauchy Principal Value (CPV) of certain singular integrals.
@@ -547,7 +547,7 @@ Constrained to a Hyper-Rectangle.
 
 [truncated_normal_rule](https://people.sc.fsu.edu/~jburkardt/f_src/truncated_normal_rule/truncated_normal_rule.html) computes a quadrature rule for a normal distribution that has been truncated to [A,+oo), (-oo,B] or [a,b].
 
-## Quadrature-N-Dimensional
+## Quadrature-N-Dimensional (Numerical Integration)
 
 [ball_integrals](https://people.math.sc.edu/Burkardt/f_src/ball_integrals/ball_integrals.html) returns the exact value of the integral of any monomial over the interior of the unit ball in 3d.
 
