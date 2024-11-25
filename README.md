@@ -445,6 +445,8 @@ Constrained to a Hyper-Rectangle.
 
 [lobatto_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/lobatto_polynomial/lobatto_polynomial.html) evaluates the completed Lobatto polynomial and associated functions.
 
+[polpak](https://people.sc.fsu.edu/~jburkardt/f_src/polpak/polpak.html) evaluates a variety of mathematical functions, polynomials, and sequences, including Bell, Benford, Bernoulli, Bernstein, Cardan, Catalan, Charlier, Chebyshev, Collatz, Delannoy, Euler, Fibonacci, Gegenbauer, Gudermannian, Harmonic, Hermite, Hofstadter, Jacobi, Krawtchouk, Laguerre, Lambert, Legendre, Lerch, Meixner, Mertens, Moebius, Motzkin, Phi, Stirling, Tau, Tribonacci, Zernike.
+
 ## Probability Distributions
 [asa005](https://people.sc.fsu.edu/~jburkardt/f_src/asa005/asa005.html) evaluates the lower tail of the noncentral student's T cumulative density function (CDF), by BE Cooper.
 
