@@ -18,6 +18,7 @@
 * [Optimization -- 1D](#Optimization-1D)
 * [Optimization](#Optimization)
 * [Ordinary Differential Equations](#ordinary-differential-equations)
+* [Polynomials](#polynomials)
 * [Probability Distributions](#probability-distributions)
 * [Quadrature (Numerical Integration)](#quadrature)
 * [Quadrature-N-Dimensional (Numerical Integration)](#quadrature-n-dimensional)
@@ -428,6 +429,21 @@ Constrained to a Hyper-Rectangle.
 [ode](https://people.sc.fsu.edu/~jburkardt/f_src/ode/ode.html) solves a system of ordinary differential equations (ODE), by Shampine and Gordon.
 
 [rk4](https://people.sc.fsu.edu/~jburkardt/f_src/rk4/rk4.html) implements a simple Runge-Kutta solver for an initial value problem.
+
+## Polynomials
+[bernstein_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/bernstein_polynomial/bernstein_polynomial.html) evaluates the Bernstein polynomials, useful for uniform approximation of functions.
+
+[chebyshev_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/chebyshev_polynomial/chebyshev_polynomial.html) considers the Chebyshev polynomials T(i,x), U(i,x), V(i,x) and W(i,x). Functions are provided to evaluate the polynomials, determine their zeros, produce their polynomial coefficients, produce related quadrature rules, project other functions onto these polynomial bases, and integrate double and triple products of the polynomials.
+
+[gegenbauer_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/gegenbauer_polynomial/gegenbauer_polynomial.html) evaluates Gegenbauer polynomials and associated functions.
+
+[hermite_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/hermite_polynomial/hermite_polynomial.html) evaluates the physicist's Hermite polynomial, the probabilist's Hermite polynomial, the Hermite function, and related functions.
+
+[jacobi_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/jacobi_polynomial/jacobi_polynomial.html) evaluates the Jacobi polynomial. The definition of the Jacobi polynomials is general enough that it includes the Legendre, Chebyshev, and Gegenbauer polynomials as special cases.
+
+[laguerre_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/laguerre_polynomial/laguerre_polynomial.html) evaluates the Laguerre polynomial, the generalized Laguerre polynomials, and the Laguerre function.
+
+[lobatto_polynomial](https://people.sc.fsu.edu/~jburkardt/f_src/lobatto_polynomial/lobatto_polynomial.html) evaluates the completed Lobatto polynomial and associated functions.
 
 ## Probability Distributions
 [asa005](https://people.sc.fsu.edu/~jburkardt/f_src/asa005/asa005.html) evaluates the lower tail of the noncentral student's T cumulative density function (CDF), by BE Cooper.
