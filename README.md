@@ -677,6 +677,8 @@ Constrained to a Hyper-Rectangle.
 
 [besselj](https://people.sc.fsu.edu/~jburkardt/f_src/besselj/besselj.html) evaluates Bessel J functions of noninteger order.
 
+[clausen](https://people.sc.fsu.edu/~jburkardt/f_src/clausen/clausen.html) evaluates a Chebyshev interpolant to the Clausen function Cl2(x).
+
 [cordic](https://people.sc.fsu.edu/~jburkardt/f_src/cordic/cordic.html) uses the CORDIC algorithm to evaluate certain functions, in particular the sine and cosine.
 
 [fn](https://people.sc.fsu.edu/~jburkardt/f_src/fn/fn.html) evaluates elementary and special functions using Chebyshev polynomials.
