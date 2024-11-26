@@ -652,7 +652,9 @@ Constrained to a Hyper-Rectangle.
 
 [test_zero](https://people.sc.fsu.edu/~jburkardt/f_src/test_zero/test_zero.html) defines nonlinear functions that may be used to test zero finders.
 
-[toms365](https://people.sc.fsu.edu/~jburkardt/f77_src/toms365/toms365.html): finds a root of a complex analytic function.
+[toms365](https://people.sc.fsu.edu/~jburkardt/f77_src/toms365/toms365.html) finds a root of a complex analytic function.
+
+[toms429](https://people.sc.fsu.edu/~jburkardt/f77_src/toms429/toms429.html) localization of the roots of a polynomial.
 
 [zero_chandrupatla](https://people.sc.fsu.edu/~jburkardt/f_src/zero_chandrupatla/zero_chandrupatla.html): finds a zero of a scalar function of a scalar variable, starting from a change of sign interval, using the Chandrupatla method, which can converge faster than bisection, regula falsi, or Brent's method.
 
