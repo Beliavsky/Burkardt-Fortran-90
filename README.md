@@ -656,6 +656,8 @@ Constrained to a Hyper-Rectangle.
 
 [toms429](https://people.sc.fsu.edu/~jburkardt/f77_src/toms429/toms429.html) localization of the roots of a polynomial.
 
+[toms493](https://people.sc.fsu.edu/~jburkardt/f77_src/toms493/toms493.html) seeks the roots of a real polynomial
+
 [zero_chandrupatla](https://people.sc.fsu.edu/~jburkardt/f_src/zero_chandrupatla/zero_chandrupatla.html): finds a zero of a scalar function of a scalar variable, starting from a change of sign interval, using the Chandrupatla method, which can converge faster than bisection, regula falsi, or Brent's method.
 
 [zero_itp](https://people.sc.fsu.edu/~jburkardt/f_src/zero_itp/zero_itp.html): finds a zero of a scalar function of a scalar variable, starting from a change of sign interval, using the Interpolate/Truncate/Project (ITP) method, which has faster convergence than the bisection method.
