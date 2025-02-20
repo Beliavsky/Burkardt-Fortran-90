@@ -374,6 +374,8 @@ Also included are a set of routines that return the local "basis matrix", which 
 
 [normal](https://people.sc.fsu.edu/~jburkardt/f_src/normal/normal.html): returns a sequence of normally distributed pseudorandom numbers.
 
+[normal_dataset](https://people.math.sc.edu/Burkardt/f_src/normal_dataset/normal_dataset.html): creates a multivariate normal random dataset, computing the Cholesky decomposition of the covariance matrix, and writes it to a file.
+
 [pdflib](https://people.sc.fsu.edu/~jburkardt/f_src/pdflib/pdflib.html) evaluates Probability Density Functions (PDF's) and produces random samples from them, including beta, binomial, chi, exponential, gamma, inverse chi, inverse gamma, multinomial, normal, scaled inverse chi, and uniform.
 
 [random_data](https://people.sc.fsu.edu/~jburkardt/f_src/random_data/random_data.html) uses a random number generator (RNG) to sample points for various probability distributions, spatial dimensions, and geometries, including the M-dimensional cube, ellipsoid, simplex and sphere.
